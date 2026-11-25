@@ -1,0 +1,19 @@
+# Copyright (c) 2026 kraynux - kraynux@proton.me - Licence MIT (voir fichier LICENSE)
+"""Veille automatique : son etat (compteurs, signe de vie), son journal, ses fichiers de service."""
+from __future__ import annotations
+
+from typing import Protocol
+
+from omega_tail.domain.watch import WatchState
+
+
+class WatchStore(Protocol):
+    @property
+    def folder(self) -> str: ...
+    def load(self) -> WatchState: ...
+    def save(self, state: WatchState) -> None: ...
+    def log(self, line: str) -> None: ...
+    def last_lines(self, count: int) -> list[str]: ...
+    def write_file(self, name: str, text: str) -> str:
+        """Fichier de service a installer par sudo ; renvoie son chemin."""
+        ...

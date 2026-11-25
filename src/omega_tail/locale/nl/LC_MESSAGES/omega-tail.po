@@ -1,0 +1,4669 @@
+# Statut X-Omega-Status : validated (2026-11-25, choix de vocabulaire et de ton arbitrés par Claude à la demande de l'auteur).
+msgid ""
+msgstr ""
+"Project-Id-Version: omega-tail\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Omega-Status: validated\n"
+
+msgid ""
+"omega-tail : pas de terminal interactif ; utilisez « omega-tail etat »."
+msgstr "omega-tail: geen interactieve terminal; gebruik „omega-tail etat”."
+
+msgid "Nom de la machine inconnu : Tailscale est-il connecté ?"
+msgstr "Naam van de machine onbekend: is Tailscale verbonden?"
+
+#, python-brace-format
+msgid "Certificat refusé ({error}). Êtes-vous opérateur de Tailscale ?"
+msgstr "Certificaat geweigerd ({error}). Bent u operator van Tailscale?"
+
+#, python-brace-format
+msgid "Certificat renouvelé, mais la porte ne l'a pas repris ({error})."
+msgstr ""
+"Certificaat vernieuwd, maar de slagboom heeft het niet overgenomen "
+"({error})."
+
+#, python-brace-format
+msgid "Certificat de {name} à jour."
+msgstr "Certificaat van {name} is actueel."
+
+#, python-brace-format
+msgid "Publication non prise en charge : {reason}."
+msgstr "Publicatie niet ondersteund: {reason}."
+
+#, python-brace-format
+msgid "Publication illisible ({error})."
+msgstr "Publicatie onleesbaar ({error})."
+
+msgid "HAProxy n'est pas installé : « Installer HAProxy » d'abord."
+msgstr "HAProxy is niet geïnstalleerd: eerst „HAProxy installeren”."
+
+#, python-brace-format
+msgid "Configuration de la porte refusée par HAProxy : {error}"
+msgstr "Configuratie van de slagboom geweigerd door HAProxy: {error}"
+
+#, python-brace-format
+msgid "Renouvellement du certificat non programmé (crontab : {error})."
+msgstr "Vernieuwing van het certificaat niet gepland (crontab: {error})."
+
+msgid "Porte prête : certificat, listes et configuration vérifiés."
+msgstr "Slagboom gereed: certificaat, lijsten en configuratie gecontroleerd."
+
+msgid "La porte protège déjà Funnel."
+msgstr "De slagboom beschermt Funnel al."
+
+#, python-brace-format
+msgid "La porte ne répond pas en local ({detail}) : rien n'a été basculé."
+msgstr ""
+"De slagboom antwoordt niet lokaal ({detail}): er is niets omgeschakeld."
+
+#, python-brace-format
+msgid "Bascule refusée ({error}) : publication d'origine remise."
+msgstr ""
+"Omschakeling geweigerd ({error}): oorspronkelijke publicatie teruggezet."
+
+#, python-brace-format
+msgid "Funnel passe par la porte : essai public réussi ({detail})."
+msgstr "Funnel loopt via de slagboom: publieke test geslaagd ({detail})."
+
+#, python-brace-format
+msgid "Essai public échoué ({detail}) : publication d'origine remise."
+msgstr ""
+"Publieke test mislukt ({detail}): oorspronkelijke publicatie teruggezet."
+
+msgid "La porte ne protège pas Funnel : rien à remettre."
+msgstr "De slagboom beschermt Funnel niet: niets terug te zetten."
+
+#, python-brace-format
+msgid ""
+"Publication d'origine incomplète ({errors}) : sauvegarde gardée dans {path}."
+msgstr ""
+"Oorspronkelijke publicatie onvolledig ({errors}): back-up bewaard in {path}."
+
+msgid "Publication d'origine remise, à l'identique."
+msgstr "Oorspronkelijke publicatie ongewijzigd teruggezet."
+
+msgid "Règles enregistrées ; elles s'appliqueront à l'activation."
+msgstr "Regels opgeslagen; ze gaan in bij de activering."
+
+#, python-brace-format
+msgid "Règles enregistrées, configuration non régénérée ({error})."
+msgstr "Regels opgeslagen, configuratie niet opnieuw gegenereerd ({error})."
+
+#, python-brace-format
+msgid "Règles refusées par HAProxy ({error}) : ancienne configuration gardée."
+msgstr "Regels geweigerd door HAProxy ({error}): oude configuratie behouden."
+
+#, python-brace-format
+msgid "Règles écrites, rechargement impossible ({error})."
+msgstr "Regels geschreven, herladen onmogelijk ({error})."
+
+#, python-brace-format
+msgid "Règles appliquées à chaud (mode {mode})."
+msgstr "Regels live toegepast (modus {mode})."
+
+msgid "Regroupements indisponibles."
+msgstr "Groeperingen niet beschikbaar."
+
+#, python-brace-format
+msgid ""
+"Apprentissage des empreintes en cours (encore {days} jour(s)) : les "
+"regroupements restent en observation jusqu'à la fin ; « appliqués » sera "
+"possible ensuite."
+msgstr ""
+"Leerfase van de vingerafdrukken bezig (nog {days} dag(en)): de groeperingen "
+"blijven tot het einde in observatie; „toegepast” is daarna mogelijk."
+
+msgid "appliqués"
+msgstr "toegepast"
+
+msgid "en observation"
+msgstr "in observatie"
+
+#, python-brace-format
+msgid "Regroupements appliqués à chaud ({mode})."
+msgstr "Groeperingen live toegepast ({mode})."
+
+#, python-brace-format
+msgid ""
+"Apprentissage recommencé : regroupements repassés en observation pour les "
+"{days} jours d'apprentissage."
+msgstr ""
+"Leerfase opnieuw gestart: groeperingen terug in observatie voor de {days} "
+"leerdagen."
+
+msgid ""
+"Base AS / pays : trop longue (plus de 15 minutes), abandonnée ; l'ancienne "
+"reste en place."
+msgstr ""
+"AS-/landendatabase: te lang (meer dan 15 minuten), afgebroken; de oude "
+"blijft staan."
+
+#, python-brace-format
+msgid "{text}"
+msgstr "{text}"
+
+#, python-brace-format
+msgid ""
+"Liste noire pleine ({max} entrées) : purgez ou exportez-la dans « Gestion de"
+" la liste noire » avant d'en ajouter."
+msgstr ""
+"Blokkeerlijst vol ({max} items): schoon haar op of exporteer haar in „Beheer"
+" van de blokkeerlijst” voordat u er meer toevoegt."
+
+#, python-brace-format
+msgid "Adresse ou réseau invalide : {text}"
+msgstr "Ongeldig adres of netwerk: {text}"
+
+#, python-brace-format
+msgid ""
+"{address} fait partie du tailnet : la porte admet toujours les machines "
+"Tailscale, elle ne peut pas être bloquée."
+msgstr ""
+"{address} hoort bij het tailnet: de slagboom laat Tailscale-machines altijd "
+"toe, het kan niet geblokkeerd worden."
+
+#, python-brace-format
+msgid "{address} est déjà dans la liste noire (ou dans un de ses réseaux)."
+msgstr ""
+"{address} staat al in de blokkeerlijst (of in een van haar netwerken)."
+
+#, python-brace-format
+msgid "{address} → liste noire (refusée jusqu'au retrait)."
+msgstr "{address} → blokkeerlijst (geweigerd tot verwijdering)."
+
+#, python-brace-format
+msgid "{count} entrée(s) retirée(s) de la liste noire ; il en reste {left}."
+msgstr ""
+"{count} item(s) uit de blokkeerlijst verwijderd; er blijven er {left} over."
+
+#, python-brace-format
+msgid ""
+"Import : {added} ajoutée(s), {duplicates} doublon(s), {tailnet} du tailnet "
+"écartée(s), {invalid} ligne(s) invalide(s)."
+msgstr ""
+"Import: {added} toegevoegd, {duplicates} dubbel(s), {tailnet} uit het "
+"tailnet uitgesloten, {invalid} ongeldige regel(s)."
+
+#, python-brace-format
+msgid ""
+"Import : {added} ajoutée(s), {duplicates} doublon(s), {tailnet} du tailnet "
+"écartée(s), {invalid} ligne(s) invalide(s), {over} au-delà du plafond de "
+"{max}."
+msgstr ""
+"Import: {added} toegevoegd, {duplicates} dubbel(s), {tailnet} uit het "
+"tailnet uitgesloten, {invalid} ongeldige regel(s), {over} boven het plafond "
+"van {max}."
+
+msgid "Aucune entrée ne correspond : rien n'a été retiré."
+msgstr "Geen enkel item komt overeen: er is niets verwijderd."
+
+#, python-brace-format
+msgid ""
+"Purge : {count} entrée(s) retirée(s) de la liste noire ; il en reste {left}."
+msgstr ""
+"Opschoning: {count} item(s) uit de blokkeerlijst verwijderd; er blijven er "
+"{left} over."
+
+#, python-brace-format
+msgid "Adresse invalide : {text}"
+msgstr "Ongeldig adres: {text}"
+
+#, python-brace-format
+msgid ""
+"{address} → liste noire (refusée jusqu'au retrait), retirée de la confiance."
+msgstr ""
+"{address} → blokkeerlijst (geweigerd tot verwijdering), uit het vertrouwen "
+"gehaald."
+
+#, python-brace-format
+msgid ""
+"{address} est en confiance (jamais limitée) : la confiance passe avant le "
+"blocage. Retirez-la de la confiance d'abord."
+msgstr ""
+"{address} staat in het vertrouwen (nooit beperkt): vertrouwen gaat voor "
+"blokkering. Haal het eerst uit het vertrouwen."
+
+#, python-brace-format
+msgid ""
+"Porte injoignable ({error}) : blocage temporaire impossible porte arrêtée."
+msgstr ""
+"Slagboom onbereikbaar ({error}): tijdelijke blokkering onmogelijk bij "
+"gestopte slagboom."
+
+#, python-brace-format
+msgid "{address} → bloquée {minutes} min (blocage temporaire)."
+msgstr "{address} → {minutes} min geblokkeerd (tijdelijke blokkering)."
+
+#, python-brace-format
+msgid ""
+"{address} → toujours refusée : elle fait partie d'un réseau en liste noire."
+msgstr ""
+"{address} → nog steeds geweigerd: het hoort bij een netwerk in de "
+"blokkeerlijst."
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles), retirée de la liste noire."
+msgstr ""
+"{address} → toegelaten (onderworpen aan de regels), uit de blokkeerlijst "
+"verwijderd."
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles), blocage temporaire levé."
+msgstr ""
+"{address} → toegelaten (onderworpen aan de regels), tijdelijke blokkering "
+"opgeheven."
+
+#, python-brace-format
+msgid "{address} → confiance (jamais limitée), retirée de la liste noire."
+msgstr ""
+"{address} → vertrouwen (nooit beperkt), uit de blokkeerlijst verwijderd."
+
+#, python-brace-format
+msgid "{address} → confiance (jamais limitée)."
+msgstr "{address} → vertrouwen (nooit beperkt)."
+
+#, python-brace-format
+msgid "{address} → toujours admise : elle fait partie du tailnet."
+msgstr "{address} → altijd toegelaten: het hoort bij het tailnet."
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles)."
+msgstr "{address} → toegelaten (onderworpen aan de regels)."
+
+#, python-brace-format
+msgid "Apprentissage recommencé : {days} jours avant que la référence compte."
+msgstr "Leerfase opnieuw gestart: {days} dagen voordat de referentie telt."
+
+#, python-brace-format
+msgid "Base AS / pays non mise à jour ({error}) : l'ancienne reste en place."
+msgstr "AS-/landendatabase niet bijgewerkt ({error}): de oude blijft staan."
+
+#, python-brace-format
+msgid "Base AS / pays à jour ({countries} plages pays, {asns} plages AS)."
+msgstr ""
+"AS-/landendatabase actueel ({countries} landenbereiken, {asns} AS-bereiken)."
+
+msgid "habituelle"
+msgstr "gebruikelijk"
+
+msgid "limité en attaque"
+msgstr "beperkt bij aanval"
+
+msgid "Funnel est coupé par le disjoncteur : rétablissez-le d'abord (Survie)."
+msgstr ""
+"Funnel is uitgeschakeld door de stroomonderbreker: herstel het eerst "
+"(Overleven)."
+
+#, python-brace-format
+msgid "Refusé par Tailscale ({error}) : rien n'a changé."
+msgstr "Geweigerd door Tailscale ({error}): er is niets veranderd."
+
+#, python-brace-format
+msgid "Changement impossible ({error}) : publication d'avant remise."
+msgstr "Wijziging onmogelijk ({error}): vorige publicatie teruggezet."
+
+#, python-brace-format
+msgid "Publication incomplète ({error}) : restaurez la sauvegarde {path}."
+msgstr "Publicatie onvolledig ({error}): zet de back-up {path} terug."
+
+#, python-brace-format
+msgid "Ajout refusé : {reason}."
+msgstr "Toevoegen geweigerd: {reason}."
+
+#, python-brace-format
+msgid "Publié : {kind} {port}{path} → {target} ({who})."
+msgstr "Gepubliceerd: {kind} {port}{path} → {target} ({who})."
+
+msgid ""
+"Ce port passe par la porte : « Désactiver la protection » (Pare-feu Funnel) "
+"d'abord."
+msgstr ""
+"Deze poort loopt via de slagboom: eerst „Bescherming deactiveren” (Funnel-"
+"firewall)."
+
+msgid "Ce point n'est plus publié."
+msgstr "Dit punt is niet meer gepubliceerd."
+
+#, python-brace-format
+msgid "Retiré : {kind} {port}{path}."
+msgstr "Verwijderd: {kind} {port}{path}."
+
+#, python-brace-format
+msgid "Sauvegarde illisible ({error})."
+msgstr "Back-up onleesbaar ({error})."
+
+msgid ""
+"La protection est active : « Désactiver la protection » (Pare-feu Funnel) "
+"d'abord, puis restaurez."
+msgstr ""
+"De bescherming is actief: eerst „Bescherming deactiveren” (Funnel-firewall),"
+" daarna terugzetten."
+
+msgid ""
+"Cette sauvegarde passe par la porte, arrêtée : « Activer la protection » "
+"(Pare-feu Funnel) la recrée proprement."
+msgstr ""
+"Deze back-up loopt via de slagboom, die gestopt is: „Bescherming activeren” "
+"(Funnel-firewall) maakt hem netjes opnieuw aan."
+
+#, python-brace-format
+msgid "Sauvegarde du {when} restaurée."
+msgstr "Back-up van {when} teruggezet."
+
+msgid "essai public indisponible"
+msgstr "publieke test niet beschikbaar"
+
+msgid "adresse du tailnet inconnue"
+msgstr "tailnet-adres onbekend"
+
+msgid "Funnel encore autorisé sur les ports"
+msgstr "Funnel nog toegestaan op de poorten"
+
+msgid "Funnel est déjà coupé par omega-tail."
+msgstr "Funnel is al uitgeschakeld door omega-tail."
+
+msgid "Rien à couper : aucun port n'est ouvert à Internet."
+msgstr "Niets uit te schakelen: geen enkele poort staat open naar internet."
+
+msgid "Remise en route programmée impossible ici."
+msgstr "Geplande herinschakeling hier onmogelijk."
+
+#, python-brace-format
+msgid ""
+"Minuterie de remise en route refusée (code {code}) : rien n'a été coupé."
+msgstr ""
+"Timer voor herinschakeling geweigerd (code {code}): er is niets "
+"uitgeschakeld."
+
+#, python-brace-format
+msgid "Coupure impossible ({error}) : la publication a été remise."
+msgstr "Uitschakeling onmogelijk ({error}): de publicatie is teruggezet."
+
+#, python-brace-format
+msgid ""
+"Funnel coupé ({ports}) pour {minutes} min, puis remis en route "
+"automatiquement."
+msgstr ""
+"Funnel uitgeschakeld ({ports}) voor {minutes} min, daarna automatisch weer "
+"ingeschakeld."
+
+#, python-brace-format
+msgid "Funnel coupé ({ports}) jusqu'à votre remise en route."
+msgstr "Funnel uitgeschakeld ({ports}) tot u het weer inschakelt."
+
+msgid "Rien à rétablir : Funnel n'est pas coupé par omega-tail."
+msgstr "Niets te herstellen: Funnel is niet uitgeschakeld door omega-tail."
+
+msgid "Minuterie d'une ancienne coupure : rien à faire."
+msgstr "Timer van een oude uitschakeling: niets te doen."
+
+#, python-brace-format
+msgid "Remise en route incomplète ({errors}) : sauvegarde gardée dans {path}."
+msgstr "Herinschakeling onvolledig ({errors}): back-up bewaard in {path}."
+
+msgid "Funnel remis en route, à l'identique."
+msgstr "Funnel ongewijzigd weer ingeschakeld."
+
+msgid "Tailscale n'est pas installé sur cette machine."
+msgstr "Tailscale is niet geïnstalleerd op deze machine."
+
+msgid "Le service tailscaled ne répond pas (arrêté ou en échec)."
+msgstr "De dienst tailscaled antwoordt niet (gestopt of mislukt)."
+
+#, python-brace-format
+msgid ""
+"tailscaled n'a pas été redémarré après la mise à jour : {daemon} en marche, "
+"{client} installé."
+msgstr ""
+"tailscaled is na de update niet herstart: {daemon} draait, {client} "
+"geïnstalleerd."
+
+msgid "Tailscale attend la connexion d'un compte."
+msgstr "Tailscale wacht op de aanmelding van een account."
+
+msgid "Tailscale est déconnecté (« tailscale down »)."
+msgstr "Tailscale is afgemeld („tailscale down”)."
+
+#, python-brace-format
+msgid "La clé de cette machine expire dans {days} jour(s)."
+msgstr "De sleutel van deze machine verloopt over {days} dag(en)."
+
+msgid ""
+"Site en panne : Funnel passe par la porte (pare-feu), mais la porte est "
+"arrêtée."
+msgstr ""
+"Site plat: Funnel loopt via de slagboom (firewall), maar de slagboom is "
+"gestopt."
+
+msgid ""
+"La porte est en MODE ATTAQUE : trop de connexions entrantes ; les "
+"regroupements (empreintes, AS, pays) s'appliquent jusqu'au retour au calme."
+msgstr ""
+"De slagboom staat in AANVALSMODUS: te veel inkomende verbindingen; de "
+"groeperingen (vingerafdrukken, AS, landen) gelden tot de rust terugkeert."
+
+#, python-brace-format
+msgid ""
+"Funnel publié sans protection sur le port {port} : tailscaled fait le TLS de"
+" chaque connexion (une rafale peut saturer la machine)."
+msgstr ""
+"Funnel gepubliceerd zonder bescherming op poort {port}: tailscaled doet de "
+"TLS van elke verbinding (een vloedgolf kan de machine verzadigen)."
+
+#, python-brace-format
+msgid "Température élevée : {temperature:.0f} °C."
+msgstr "Hoge temperatuur: {temperature:.0f} °C."
+
+#, python-brace-format
+msgid "tailscaled consomme {cpu:.0f} % d'un cœur."
+msgstr "tailscaled verbruikt {cpu:.0f} % van een kern."
+
+msgid ""
+"La veille automatique est activée mais ne tourne plus : Funnel ne sera pas "
+"coupé seul sous attaque."
+msgstr ""
+"De automatische bewaking is geactiveerd maar draait niet meer: Funnel wordt "
+"bij een aanval niet vanzelf uitgeschakeld."
+
+#, python-brace-format
+msgid ""
+"Liste noire de la porte : {count} entrées (plafond {max}). Exportez-la puis "
+"purgez les plus anciennes : « Attaques et décisions » → « Gestion de la "
+"liste noire »."
+msgstr ""
+"Blokkeerlijst van de slagboom: {count} items (plafond {max}). Exporteer haar"
+" en schoon daarna de oudste op: „Aanvallen en beslissingen” → „Beheer van de"
+" blokkeerlijst”."
+
+msgid ""
+"Bouclier du port WireGuard ABSENT : un autre outil a effacé sa table (nft "
+"flush ruleset, pare-feu relancé…). Il n'est pas reposé seul : « Survie » → «"
+" Bouclier du port WireGuard » → « Reposer »."
+msgstr ""
+"Schild van de WireGuard-poort AFWEZIG: een ander hulpmiddel heeft zijn tabel"
+" gewist (nft flush ruleset, firewall herstart…). Het wordt niet vanzelf "
+"opnieuw geplaatst: „Overleven” → „Schild van de WireGuard-poort” → „Opnieuw "
+"plaatsen”."
+
+msgid ""
+"Bouclier du port WireGuard : état non mis à jour depuis plus de 3 minutes "
+"(service omega-bouclier-wg arrêté ?)."
+msgstr ""
+"Schild van de WireGuard-poort: status al meer dan 3 minuten niet bijgewerkt "
+"(dienst omega-bouclier-wg gestopt?)."
+
+msgid ""
+"Le démarrage de tailscaled lance « tailscale up » : si un réglage change "
+"(opérateur, nom, routes…), Tailscale le refusera et tailscaled ne "
+"redémarrera plus. « Service » → « Corriger le démarrage »."
+msgstr ""
+"Het opstarten van tailscaled voert „tailscale up” uit: als een instelling "
+"verandert (operator, naam, routes…), weigert Tailscale het en start "
+"tailscaled niet meer. „Dienst” → „Opstart herstellen”."
+
+msgid ""
+"Confinement de tailscaled perdu (le service a redémarré) : « Survie » → « "
+"Appliquer le confinement »."
+msgstr ""
+"Inperking van tailscaled verloren (de dienst is herstart): „Overleven” → "
+"„Inperking toepassen”."
+
+msgid ""
+"tailscaled n'est pas confiné : sous attaque, il peut prendre tous les cœurs."
+msgstr ""
+"tailscaled is niet ingeperkt: bij een aanval kan het alle kernen innemen."
+
+msgid ""
+"Vous n'êtes pas opérateur de Tailscale : chaque réglage demandera sudo."
+msgstr "U bent geen operator van Tailscale: elke instelling vraagt om sudo."
+
+msgid ""
+"Funnel coupé par omega-tail (coupure totale) : remise en route manuelle, "
+"dans « Survie »."
+msgstr ""
+"Funnel uitgeschakeld door omega-tail (volledige uitschakeling): handmatig "
+"weer inschakelen in „Overleven”."
+
+#, python-brace-format
+msgid ""
+"Funnel devait être remis en route à {time} et ne l'est pas : « Rétablir » "
+"dans « Survie »."
+msgstr ""
+"Funnel had om {time} weer ingeschakeld moeten worden en is dat niet: "
+"„Herstellen” in „Overleven”."
+
+#, python-brace-format
+msgid ""
+"Funnel coupé par omega-tail jusqu'à {time}, puis remis en route "
+"automatiquement."
+msgstr ""
+"Funnel uitgeschakeld door omega-tail tot {time}, daarna automatisch weer "
+"ingeschakeld."
+
+#, python-brace-format
+msgid "Tailscale signale : {message}"
+msgstr "Tailscale meldt: {message}"
+
+msgid "ajout manuel"
+msgstr "handmatig toegevoegd"
+
+msgid "import"
+msgstr "import"
+
+msgid "écran Attaques"
+msgstr "scherm Aanvallen"
+
+msgid "avant les dates"
+msgstr "vóór de datums"
+
+#, python-brace-format
+msgid "Température de {temperature:.0f} °C (seuil {threshold:.0f} °C)."
+msgstr "Temperatuur van {temperature:.0f} °C (drempel {threshold:.0f} °C)."
+
+#, python-brace-format
+msgid ""
+"tailscaled au-dessus de {threshold:.0f} % d'un cœur depuis {seconds} s "
+"(moyenne {average:.0f} %)."
+msgstr ""
+"tailscaled boven {threshold:.0f} % van een kern sinds {seconds} s (gemiddeld"
+" {average:.0f} %)."
+
+msgid "cible non prise en charge"
+msgstr "doel niet ondersteund"
+
+msgid "nom de machine inattendu"
+msgstr "onverwachte machinenaam"
+
+msgid "aucun port n'est ouvert à Internet (Funnel)"
+msgstr "geen enkele poort staat open naar internet (Funnel)"
+
+msgid "plusieurs ports Funnel : la porte n'en protège qu'un pour l'instant"
+msgstr "meerdere Funnel-poorten: de slagboom beschermt er voorlopig maar één"
+
+msgid "Funnel passe déjà par une porte (TCP + PROXY v2)"
+msgstr "Funnel loopt al via een slagboom (TCP + PROXY v2)"
+
+msgid "seule une publication HTTPS avec le chemin « / » est prise en charge"
+msgstr "alleen een HTTPS-publicatie met het pad „/” wordt ondersteund"
+
+msgid "Chrome, Edge, Firefox récent"
+msgstr "Chrome, Edge, recente Firefox"
+
+msgid "Firefox (ancien)"
+msgstr "Firefox (oud)"
+
+msgid "empreinte"
+msgstr "vingerafdruk"
+
+msgid "hébergeur"
+msgstr "hoster"
+
+msgid "pays"
+msgstr "land"
+
+msgid "Identité"
+msgstr "Identiteit"
+
+msgid "Réseau"
+msgstr "Netwerk"
+
+msgid "Sortie"
+msgstr "Exit"
+
+msgid "Services Tailscale"
+msgstr "Tailscale-diensten"
+
+msgid "Opérateur"
+msgstr "Operator"
+
+msgid "Nom de la machine"
+msgstr "Naam van de machine"
+
+msgid ""
+"Nom dans le tailnet (vide : celui du système). Change aussi l'adresse "
+"*.ts.net : les liens publiés et le certificat suivent."
+msgstr ""
+"Naam in het tailnet (leeg: die van het systeem). Verandert ook het adres "
+"*.ts.net: gepubliceerde links en certificaat volgen."
+
+msgid "ex. serveur-maison"
+msgstr "bijv. thuisserver"
+
+msgid "Surnom du compte"
+msgstr "Bijnaam van het account"
+
+msgid ""
+"Surnom du compte en cours, pour le reconnaître dans « Changer de compte »."
+msgstr ""
+"Bijnaam van het huidige account, om het te herkennen in „Van account "
+"wisselen”."
+
+msgid "ex. maison"
+msgstr "bijv. thuis"
+
+msgid "Accepter les routes"
+msgstr "Routes accepteren"
+
+msgid ""
+"Utiliser les sous-réseaux annoncés par les autres machines. À éviter sur une"
+" machine du même réseau local que le routeur qui l'annonce."
+msgstr ""
+"De subnetten gebruiken die door andere machines worden aangekondigd. "
+"Vermijden op een machine in hetzelfde lokale netwerk als de router die het "
+"aankondigt."
+
+msgid "Accepter le DNS du tailnet"
+msgstr "DNS van het tailnet accepteren"
+
+msgid "MagicDNS : les noms des machines du tailnet se résolvent ici."
+msgstr "MagicDNS: de namen van de tailnet-machines worden hier opgelost."
+
+msgid "Bouclier (refuser les connexions entrantes)"
+msgstr "Schild (inkomende verbindingen weigeren)"
+
+msgid ""
+"Aucune machine du tailnet ne peut se connecter à celle-ci (SSH et Serve "
+"compris). Funnel n'est pas concerné."
+msgstr ""
+"Geen enkele machine van het tailnet kan met deze verbinden (SSH en Serve "
+"inbegrepen). Funnel valt hier niet onder."
+
+msgid "Filtrage avec état"
+msgstr "Stateful filtering"
+
+msgid ""
+"Pour un routeur de sous-réseau ou un nœud de sortie : ne laisse revenir que "
+"les réponses."
+msgstr ""
+"Voor een subnetrouter of een exitnode: laat alleen de antwoorden terugkomen."
+
+msgid "Mode netfilter"
+msgstr "Netfilter-modus"
+
+msgid ""
+"on : Tailscale gère ses règles de pare-feu ; nodivert : ses chaînes sans les"
+" brancher ; off : aucune règle (à vos risques)."
+msgstr ""
+"on: Tailscale beheert zijn firewallregels; nodivert: zijn ketens zonder ze "
+"aan te koppelen; off: geen enkele regel (op eigen risico)."
+
+msgid "Nœud de sortie utilisé"
+msgstr "Gebruikte exitnode"
+
+msgid ""
+"Faire passer le trafic Internet de cette machine par une autre machine du "
+"tailnet (vide : aucun)."
+msgstr ""
+"Het internetverkeer van deze machine via een andere machine van het tailnet "
+"laten lopen (leeg: geen)."
+
+msgid "Garder l'accès au réseau local"
+msgstr "Toegang tot het lokale netwerk behouden"
+
+msgid "Avec un nœud de sortie : le réseau local reste joignable directement."
+msgstr "Met een exitnode: het lokale netwerk blijft direct bereikbaar."
+
+msgid "Proposer cette machine comme nœud de sortie"
+msgstr "Deze machine aanbieden als exitnode"
+
+msgid ""
+"Les autres machines pourront sortir sur Internet par celle-ci (à approuver "
+"dans la console d'administration)."
+msgstr ""
+"De andere machines kunnen via deze het internet op (goed te keuren in de "
+"beheerconsole)."
+
+msgid "Sous-réseaux annoncés"
+msgstr "Aangekondigde subnetten"
+
+msgid ""
+"Réseaux locaux rendus joignables au tailnet, séparés par des virgules "
+"(192.168.1.0/24) ; vide : aucun."
+msgstr ""
+"Lokale netwerken die bereikbaar worden gemaakt voor het tailnet, gescheiden "
+"door komma's (192.168.1.0/24); leeg: geen."
+
+msgid "ex. 192.168.1.0/24, 10.0.0.0/8"
+msgstr "bijv. 192.168.1.0/24, 10.0.0.0/8"
+
+msgid "SSH Tailscale"
+msgstr "Tailscale-SSH"
+
+msgid ""
+"Serveur SSH de Tailscale, selon les règles du tailnet. Votre SSH habituel "
+"n'est pas touché."
+msgstr ""
+"SSH-server van Tailscale, volgens de regels van het tailnet. Uw gewone SSH "
+"blijft onaangeroerd."
+
+msgid "Interface web (port 5252)"
+msgstr "Webinterface (poort 5252)"
+
+msgid "Page de gestion de cette machine, joignable par le tailnet seulement."
+msgstr "Beheerpagina van deze machine, alleen bereikbaar via het tailnet."
+
+msgid "Mises à jour automatiques"
+msgstr "Automatische updates"
+
+msgid ""
+"Tailscale se met à jour seul quand sa distribution le permet. Sinon : "
+"gestionnaire de paquets."
+msgstr ""
+"Tailscale werkt zichzelf bij als de distributie het toestaat. Anders: "
+"pakketbeheerder."
+
+msgid "Signaler les mises à jour"
+msgstr "Updates melden"
+
+msgid "Tailscale prévient quand une version plus récente existe."
+msgstr "Tailscale waarschuwt als er een nieuwere versie bestaat."
+
+msgid "Port du relais pair (UDP)"
+msgstr "Poort van de peer-relay (UDP)"
+
+msgid ""
+"Cette machine relaie les connexions d'autres machines du tailnet sur ce port"
+" UDP ; vide : non."
+msgstr ""
+"Deze machine relayeert verbindingen van andere tailnet-machines op deze UDP-"
+"poort; leeg: nee."
+
+msgid "ex. 40000"
+msgstr "bijv. 40000"
+
+msgid ""
+"Nom du compte Linux qui pilote Tailscale sans sudo (« Mon compte » le "
+"remplit) ; vide : root seul. Changer l'opérateur demande sudo une fois."
+msgstr ""
+"Naam van het Linux-account dat Tailscale zonder sudo aanstuurt („Mijn "
+"account” vult het in); leeg: alleen root. De operator wijzigen vraagt "
+"eenmaal om sudo."
+
+msgid "ex. votre compte Linux"
+msgstr "bijv. uw Linux-account"
+
+msgid "réglage inconnu"
+msgstr "onbekende instelling"
+
+msgid "caractère de contrôle"
+msgstr "stuurteken"
+
+msgid "valeur hors liste"
+msgstr "waarde niet in de lijst"
+
+msgid "lettres, chiffres et tirets seulement (63 au plus)"
+msgstr "alleen letters, cijfers en koppeltekens (hoogstens 63)"
+
+msgid "64 caractères au plus"
+msgstr "hoogstens 64 tekens"
+
+msgid "nom de compte Unix attendu"
+msgstr "Unix-accountnaam verwacht"
+
+msgid "adresse ou nom de machine attendu"
+msgstr "adres of machinenaam verwacht"
+
+msgid "port de 0 à 65535"
+msgstr "poort van 0 tot 65535"
+
+#, python-brace-format
+msgid "réseau invalide : {value}"
+msgstr "ongeldig netwerk: {value}"
+
+msgid "port de 1 à 65535 attendu"
+msgstr "poort van 1 tot 65535 verwacht"
+
+msgid "cible locale attendue : un port, ou http://127.0.0.1:PORT"
+msgstr "lokaal doel verwacht: een poort, of http://127.0.0.1:PORT"
+
+msgid "cible locale attendue : un port, ou tcp://127.0.0.1:PORT"
+msgstr "lokaal doel verwacht: een poort, of tcp://127.0.0.1:PORT"
+
+msgid "mode inconnu"
+msgstr "onbekende modus"
+
+msgid "Funnel n'ouvre que les ports 443, 8443 et 10000"
+msgstr "Funnel opent alleen de poorten 443, 8443 en 10000"
+
+msgid "chemin attendu : /, /site, /api/v1…"
+msgstr "pad verwacht: /, /site, /api/v1…"
+
+msgid "ce port est déjà publié pour un autre public (tailnet / Internet)"
+msgstr ""
+"deze poort is al gepubliceerd voor een ander publiek (tailnet / internet)"
+
+msgid "ce port est déjà publié"
+msgstr "deze poort is al gepubliceerd"
+
+msgid "ce port est déjà publié dans un autre mode"
+msgstr "deze poort is al gepubliceerd in een andere modus"
+
+msgid "ce chemin est déjà publié sur ce port"
+msgstr "dit pad is al gepubliceerd op deze poort"
+
+msgid "pare-feu"
+msgstr "firewall"
+
+msgid "publication"
+msgstr "publicatie"
+
+msgid "veille automatique"
+msgstr "automatische bewaking"
+
+msgid "disjoncteur"
+msgstr "stroomonderbreker"
+
+msgid ""
+"Cette session passe par Tailscale : arrêter tailscaled la coupera, et vous "
+"ne pourrez pas le relancer d'ici. Accès de secours : le réseau local ou la "
+"machine elle-même."
+msgstr ""
+"Deze sessie loopt via Tailscale: tailscaled stoppen verbreekt haar, en u "
+"kunt het van hieruit niet opnieuw starten. Noodtoegang: het lokale netwerk "
+"of de machine zelf."
+
+msgid ""
+"Cette session passe par Tailscale : pendant le redémarrage elle se figera "
+"quelques secondes, puis reviendra en général d'elle-même."
+msgstr ""
+"Deze sessie loopt via Tailscale: tijdens de herstart bevriest ze enkele "
+"seconden en komt daarna meestal vanzelf terug."
+
+msgid "réponse DNS invalide"
+msgstr "ongeldig DNS-antwoord"
+
+msgid "aucune adresse publique pour ce nom"
+msgstr "geen publiek adres voor deze naam"
+
+msgid "HAProxy absent"
+msgstr "HAProxy ontbreekt"
+
+msgid "crontab absent (installez cronie ou un autre cron)"
+msgstr "crontab ontbreekt (installeer cronie of een andere cron)"
+
+msgid "fichier trop gros"
+msgstr "bestand te groot"
+
+msgid "téléchargement impossible"
+msgstr "downloaden onmogelijk"
+
+msgid "base incomplète (trop peu de plages) : ancienne base gardée"
+msgstr "onvolledige database (te weinig bereiken): oude database behouden"
+
+msgid "contient l'installation d'omega-tail"
+msgstr "bevat de installatie van omega-tail"
+
+msgid "lecture refusée"
+msgstr "lezen geweigerd"
+
+msgid "aucun journal trouvé"
+msgstr "geen log gevonden"
+
+msgid ""
+"Votre compte ne peut pas lire le journal du système. Ajoutez-le au groupe « "
+"systemd-journal » (ou « adm » / « wheel » selon la distribution), puis "
+"rouvrez votre session."
+msgstr ""
+"Uw account kan het systeemlog niet lezen. Voeg het toe aan de groep "
+"„systemd-journal” (of „adm” / „wheel”, afhankelijk van de distributie) en "
+"meld u daarna opnieuw aan."
+
+msgid ""
+"Ce journal est réservé à root sur cette machine : ajoutez votre compte au "
+"groupe qui peut le lire (souvent « adm » ou « wheel »), ou lisez-le avec "
+"sudo."
+msgstr ""
+"Dit log is op deze machine voorbehouden aan root: voeg uw account toe aan de"
+" groep die het mag lezen (vaak „adm” of „wheel”), of lees het met sudo."
+
+msgid "journal vide ou illisible pour ce compte"
+msgstr "log leeg of onleesbaar voor dit account"
+
+msgid "DNS public"
+msgstr "Publieke DNS"
+
+msgid "réponse vide"
+msgstr "leeg antwoord"
+
+msgid "Pilotage de Tailscale et protection de Funnel."
+msgstr "Beheer van Tailscale en bescherming van Funnel."
+
+msgid "état de Tailscale, de la machine et alertes"
+msgstr "status van Tailscale, van de machine en waarschuwingen"
+
+msgid "aide complète en texte"
+msgstr "volledige help als tekst"
+
+msgid "rapport de la machine (faits seulement)"
+msgstr "rapport van de machine (alleen feiten)"
+
+msgid "enregistrer dans le dossier des exports (sinon : affiché)"
+msgstr "opslaan in de exportmap (anders: weergegeven)"
+
+msgid ""
+"inclure le compte Tailscale et les noms / adresses des appareils du tailnet"
+msgstr ""
+"Tailscale-account en namen / adressen van de tailnet-apparaten opnemen"
+
+msgid "couper ou remettre Funnel (Survie)"
+msgstr "Funnel uitschakelen of herstellen (Overleven)"
+
+msgid "coupure en cours"
+msgstr "lopende uitschakeling"
+
+msgid "couper Funnel"
+msgstr "Funnel uitschakelen"
+
+msgid "coupure momentanée, remise en route automatique (minuterie)"
+msgstr "tijdelijke uitschakeling, automatisch weer ingeschakeld (timer)"
+
+msgid "coupure jusqu'à « retablir »"
+msgstr "uitschakeling tot „retablir”"
+
+msgid "remettre Funnel à l'identique"
+msgstr "Funnel ongewijzigd herstellen"
+
+msgid "coupure visée (minuterie) ; une autre coupure est ignorée"
+msgstr ""
+"betreffende uitschakeling (timer); een andere uitschakeling wordt genegeerd"
+
+msgid "secondes d'attente avant (hors systemd)"
+msgstr "wachtseconden vooraf (buiten systemd)"
+
+msgid "veille automatique (coupe Funnel seule sous attaque)"
+msgstr "automatische bewaking (schakelt Funnel bij een aanval vanzelf uit)"
+
+msgid "tourner en continu (lancé par le service de la veille)"
+msgstr "doorlopend draaien (gestart door de bewakingsdienst)"
+
+msgid "état de la veille et dernières lignes du journal"
+msgstr "status van de bewaking en laatste regels van haar log"
+
+msgid "pare-feu Funnel (porte HAProxy)"
+msgstr "Funnel-firewall (HAProxy-slagboom)"
+
+msgid "état de la porte et compteurs"
+msgstr "status van de slagboom en tellers"
+
+msgid "renouveler le certificat *.ts.net de la porte"
+msgstr "het *.ts.net-certificaat van de slagboom vernieuwen"
+
+msgid "seulement s'il expire dans moins de 30 jours"
+msgstr "alleen als het binnen 30 dagen verloopt"
+
+msgid "regroupements : mode attaque, empreintes, AS, pays (lot 6)"
+msgstr "groeperingen: aanvalsmodus, vingerafdrukken, AS, landen (lot 6)"
+
+msgid "mettre à jour la base AS / pays (DB-IP Lite)"
+msgstr "de AS-/landendatabase bijwerken (DB-IP Lite)"
+
+msgid "bloquer une adresse (durée de blocage) ou un réseau"
+msgstr "een adres (voor de blokkeerduur) of een netwerk blokkeren"
+
+msgid "liste noire, jusqu'à « debloquer »"
+msgstr "blokkeerlijst, tot „debloquer”"
+
+msgid "débloquer une adresse ou un réseau"
+msgstr "een adres of een netwerk deblokkeren"
+
+msgid "mettre en confiance (jamais limitée)"
+msgstr "in het vertrouwen opnemen (nooit beperkt)"
+
+#, python-brace-format
+msgid "Export impossible : {error}"
+msgstr "Exporteren mislukt: {error}"
+
+#, python-brace-format
+msgid "Rapport enregistré : {path}"
+msgstr "Rapport opgeslagen: {path}"
+
+msgid "Funnel n'est pas coupé par omega-tail."
+msgstr "Funnel is niet uitgeschakeld door omega-tail."
+
+#, python-brace-format
+msgid "remise en route prévue {when}"
+msgstr "herinschakeling gepland {when}"
+
+msgid "coupure totale"
+msgstr "volledige uitschakeling"
+
+#, python-brace-format
+msgid ""
+"Funnel coupé depuis {since} ({until}), ports {ports} ; sauvegarde {saved}"
+msgstr ""
+"Funnel uitgeschakeld sinds {since} ({until}), poorten {ports}; back-up "
+"{saved}"
+
+msgid "--minutes : 1 au moins."
+msgstr "--minutes: minstens 1."
+
+msgid ""
+"La porte n'est pas active : les listes s'appliqueront à son activation."
+msgstr "De slagboom is niet actief: de lijsten gaan in bij zijn activering."
+
+msgid "Veille automatique : désactivée."
+msgstr "Automatische bewaking: gedeactiveerd."
+
+msgid "ARRÊTÉE (signe de vie trop vieux)"
+msgstr "GESTOPT (levensteken te oud)"
+
+msgid "en marche"
+msgstr "draait"
+
+#, python-brace-format
+msgid ""
+"Veille automatique : {state} ; dépassements récents {strikes}/3 ; prochaine "
+"coupure {minutes} min"
+msgstr ""
+"Automatische bewaking: {state}; recente overschrijdingen {strikes}/3; "
+"volgende uitschakeling {minutes} min"
+
+msgid "Porte inactive : Funnel ne passe pas par elle."
+msgstr "Slagboom inactief: Funnel loopt niet via de slagboom."
+
+#, python-brace-format
+msgid ""
+"Porte active depuis {since} : Funnel {port} -> 127.0.0.1:{gate} -> {backend}"
+msgstr ""
+"Slagboom actief sinds {since}: Funnel {port} -> 127.0.0.1:{gate} -> "
+"{backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions : {total} reçues, {refused} refusées avant chiffrement, {current}"
+" en cours"
+msgstr ""
+"Verbindingen: {total} ontvangen, {refused} geweigerd vóór versleuteling, "
+"{current} lopend"
+
+#, python-brace-format
+msgid "{days} jour(s) restants"
+msgstr "nog {days} dag(en)"
+
+#, python-brace-format
+msgid "Certificat : {left}"
+msgstr "Certificaat: {left}"
+
+#, python-brace-format
+msgid "Certificat valable encore {days} jour(s) : rien à faire."
+msgstr "Certificaat nog {days} dag(en) geldig: niets te doen."
+
+msgid ""
+"HAProxy sans Lua : regroupements (JA4, AS, pays) indisponibles, porte du lot"
+" 4 seule."
+msgstr ""
+"HAProxy zonder Lua: groeperingen (JA4, AS, landen) niet beschikbaar, alleen "
+"de slagboom van lot 4."
+
+msgid "observation (rien n'est refusé par ces règles)"
+msgstr "observatie (niets wordt door deze regels geweigerd)"
+
+#, python-brace-format
+msgid "ATTAQUE (retour au normal dans {seconds} s sans dépassement)"
+msgstr "AANVAL (terug naar normaal over {seconds} s zonder overschrijding)"
+
+msgid "normal"
+msgstr "normaal"
+
+#, python-brace-format
+msgid "Regroupements : {mode} ; mode {attack}"
+msgstr "Groeperingen: {mode}; modus {attack}"
+
+#, python-brace-format
+msgid ""
+"Mode attaque au-delà de {rate} connexions entrantes / s ; calme {minutes} "
+"min"
+msgstr ""
+"Aanvalsmodus vanaf {rate} inkomende verbindingen / s; rust {minutes} min"
+
+msgid "référence prête"
+msgstr "referentie gereed"
+
+#, python-brace-format
+msgid "apprentissage : encore {days} jour(s)"
+msgstr "leerfase: nog {days} dag(en)"
+
+#, python-brace-format
+msgid "Empreintes habituelles : {known} ({learning})"
+msgstr "Gebruikelijke vingerafdrukken: {known} ({learning})"
+
+#, python-brace-format
+msgid "mise à jour il y a {days} jour(s)"
+msgstr "{days} dag(en) geleden bijgewerkt"
+
+msgid "absente (« omega-tail porte base »)"
+msgstr "afwezig („omega-tail porte base”)"
+
+#, python-brace-format
+msgid "Base AS / pays : {base}"
+msgstr "AS-/landendatabase: {base}"
+
+#, python-brace-format
+msgid "Connexions refusées (7 j) : {found}"
+msgstr "Geweigerde verbindingen (7 d): {found}"
+
+#, python-brace-format
+msgid "Connexions qui auraient été refusées (7 j) : {found}"
+msgstr "Verbindingen die geweigerd zouden zijn (7 d): {found}"
+
+msgid "Empreintes les plus actives (connexions / 10 s, total) :"
+msgstr "Actiefste vingerafdrukken (verbindingen / 10 s, totaal):"
+
+msgid "AS les plus actifs (connexions / 10 s, total) :"
+msgstr "Actiefste AS (verbindingen / 10 s, totaal):"
+
+msgid "Pays les plus actifs (connexions / 10 s, total) :"
+msgstr "Actiefste landen (verbindingen / 10 s, totaal):"
+
+msgid "Tailscale n'est pas installé."
+msgstr "Tailscale is niet geïnstalleerd."
+
+#, python-brace-format
+msgid "Service tailscaled : {state}"
+msgstr "Dienst tailscaled: {state}"
+
+#, python-brace-format
+msgid "Version : {daemon} en marche, {client} installée"
+msgstr "Versie: {daemon} draait, {client} geïnstalleerd"
+
+#, python-brace-format
+msgid "Nom : {name}"
+msgstr "Naam: {name}"
+
+#, python-brace-format
+msgid "Adresses : {addresses}"
+msgstr "Adressen: {addresses}"
+
+#, python-brace-format
+msgid "Opérateur : {operator}"
+msgstr "Operator: {operator}"
+
+#, python-brace-format
+msgid "tailscaled : {cpu} d'un cœur, {memory}"
+msgstr "tailscaled: {cpu} van een kern, {memory}"
+
+#, python-brace-format
+msgid "Température : {value}"
+msgstr "Temperatuur: {value}"
+
+msgid "PUBLICATION"
+msgstr "PUBLICATIE"
+
+msgid "rien de publié"
+msgstr "niets gepubliceerd"
+
+msgid "ALERTES"
+msgstr "WAARSCHUWINGEN"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — LISTE NOIRE DE LA PORTE ({machine})"
+msgstr "OMEGA-TAIL {version} — BLOKKEERLIJST VAN DE SLAGBOOM ({machine})"
+
+#, python-brace-format
+msgid ""
+"Établie le {date} : {count} entrée(s), la plus ancienne d'abord. L'export "
+"TXT se réimporte tel quel."
+msgstr ""
+"Opgesteld op {date}: {count} item(s), het oudste eerst. De TXT-export kan "
+"ongewijzigd opnieuw worden geïmporteerd."
+
+msgid "Adresse ou réseau"
+msgstr "Adres of netwerk"
+
+msgid "Ajoutée le"
+msgstr "Toegevoegd op"
+
+msgid "Origine"
+msgstr "Herkomst"
+
+msgid "Liste noire - Omega-Tail"
+msgstr "Blokkeerlijst - Omega-Tail"
+
+msgid "Passer d'un élément à l'autre (lignes d'un tableau, boutons)"
+msgstr ""
+"Van het ene element naar het andere gaan (regels van een tabel, knoppen)"
+
+msgid "Passer d'une zone de l'écran à l'autre"
+msgstr "Van de ene schermzone naar de andere gaan"
+
+msgid "Activer le bouton choisi ; dans le tableau des alertes, « Corriger »"
+msgstr "De gekozen knop activeren; in de tabel met waarschuwingen „Oplossen”"
+
+msgid "Entrée / Clic"
+msgstr "Enter / Klik"
+
+msgid "Revenir à l'écran précédent (au menu : quitter)"
+msgstr "Terug naar het vorige scherm (in het menu: afsluiten)"
+
+msgid "Cette aide, depuis n'importe quel écran"
+msgstr "Deze help, vanuit elk scherm"
+
+msgid "Réglages, depuis n'importe quel écran"
+msgstr "Instellingen, vanuit elk scherm"
+
+msgid "Thème suivant (enregistré)"
+msgstr "Volgend thema (opgeslagen)"
+
+msgid "Redessiner l'écran, afficher la taille du terminal et relire l'état"
+msgstr "Scherm opnieuw tekenen, terminalgrootte tonen en status opnieuw lezen"
+
+msgid ""
+"Commandes : thème, capture d'écran (SVG, dans le dossier des captures), "
+"quitter"
+msgstr ""
+"Opdrachten: thema, schermafbeelding (SVG, in de map voor "
+"schermafbeeldingen), afsluiten"
+
+msgid "Ctrl+P"
+msgstr "Ctrl+P"
+
+msgid ""
+"omega-tail pilote Tailscale sur cette machine et la protège quand elle publie un service sur Internet par Tailscale Funnel.\n"
+"\n"
+"1. [b]Tableau de bord[/b] : l'état de Tailscale, de la machine et de ce qui est publié, puis les alertes. Choisissez une alerte et « Corriger » : omega-tail ouvre l'écran qui la corrige.\n"
+"2. [b]Service tailscaled[/b] : démarrer, arrêter ou redémarrer le service (par exemple pour appliquer une mise à jour déjà installée).\n"
+"3. [b]Connexion et réglages[/b] : connexion, compte et réglages de Tailscale, vérifiés avant d'être appliqués.\n"
+"4. [b]Publication[/b] : ce que Serve et Funnel publient ; publier, retirer, essayer, restaurer.\n"
+"5. [b]Journaux[/b] : ce que tailscaled a écrit, filtrable et exportable.\n"
+"6. [b]Survie[/b] : confiner tailscaled, et couper Funnel un moment (puis le remettre tout seul) ou totalement quand la machine est attaquée.\n"
+"7. [b]Pare-feu Funnel[/b] : une porte qui refuse les connexions abusives avant tout chiffrement ; [b]Attaques et décisions[/b] pour voir et décider en direct.\n"
+"\n"
+"La [b]bande d'état[/b] (cadre « État », sous le titre de chaque écran) résume tout : service, consommation de tailscaled, température, mémoire vive utilisée (RAM), Funnel, pare-feu (actif, arrêté, inactif), veille automatique (active, arrêtée, inactive) et connexion. Elle est relue toutes les 5 secondes. La taille de la fenêtre est affichée à côté du thème, en haut ; « r » la relit après un redimensionnement.\n"
+"\n"
+"Chaque action qui change la machine montre d'abord sa commande ; le mot de passe sudo se saisit dans le terminal, l'interface revient ensuite. Rien n'est jamais lancé en arrière-plan sans vous."
+msgstr ""
+"omega-tail stuurt Tailscale aan op deze machine en beschermt haar wanneer ze via Tailscale Funnel een dienst op internet publiceert.\n"
+"\n"
+"1. [b]Dashboard[/b]: de status van Tailscale, van de machine en van wat gepubliceerd is, daarna de waarschuwingen. Kies een waarschuwing en „Oplossen”: omega-tail opent het scherm dat haar oplost.\n"
+"2. [b]Dienst tailscaled[/b]: de dienst starten, stoppen of herstarten (bijvoorbeeld om een al geïnstalleerde update toe te passen).\n"
+"3. [b]Verbinding en instellingen[/b]: verbinding, account en instellingen van Tailscale, gecontroleerd voordat ze worden toegepast.\n"
+"4. [b]Publicatie[/b]: wat Serve en Funnel publiceren; publiceren, verwijderen, testen, terugzetten.\n"
+"5. [b]Logs[/b]: wat tailscaled heeft geschreven, filterbaar en exporteerbaar.\n"
+"6. [b]Overleven[/b]: tailscaled inperken, en Funnel een tijdje (daarna vanzelf weer aan) of volledig uitschakelen wanneer de machine wordt aangevallen.\n"
+"7. [b]Funnel-firewall[/b]: een slagboom die misbruikende verbindingen weigert vóór elke versleuteling; [b]Aanvallen en beslissingen[/b] om live te zien en te beslissen.\n"
+"\n"
+"De [b]statusbalk[/b] (kader „Status”, onder de titel van elk scherm) vat alles samen: dienst, verbruik van tailscaled, temperatuur, gebruikt werkgeheugen (RAM), Funnel, firewall (actief, gestopt, inactief), automatische bewaking (actief, gestopt, inactief) en verbinding. Hij wordt elke 5 seconden opnieuw gelezen. De venstergrootte wordt bovenaan naast het thema getoond; „r” leest haar opnieuw na het wijzigen van de grootte.\n"
+"\n"
+"Elke actie die de machine wijzigt, toont eerst haar commando; het sudo-wachtwoord wordt in de terminal ingevoerd, daarna komt de interface terug. Niets wordt ooit zonder u op de achtergrond gestart."
+
+msgid "Tableau de bord"
+msgstr "Dashboard"
+
+msgid ""
+"Trois cadres et une liste d'alertes.\n"
+"- [b]Tailscale[/b] : service, état de la connexion, version (en marche et installée), nom de la machine, adresses, compte, appareils en ligne, expiration de la clé, opérateur.\n"
+"- [b]Tailscale[/b] dit aussi si la machine se propose comme nœud de sortie, lequel elle utilise, et les sous-réseaux qu'elle annonce.\n"
+"- [b]Machine[/b] : CPU de toute la machine, charge, température, mémoire, CPU et mémoire de tailscaled (en % d'un cœur), confinement, puis l'état des protections : Funnel, pare-feu (porte, mode attaque), liste noire, veille, bouclier du port WireGuard.\n"
+"- Libellés dans la couleur d'accent du thème, valeurs en vert, orange ou rouge selon les seuils (CPU machine 70 / 90 %, charge 1 / 2 par cœur, température 75 / 85 °C, mémoire 85 / 95 %, tailscaled 50 / 90 % d'un cœur, liste noire 25 000 / 50 000 entrées).\n"
+"- [b]Publication[/b] : chaque port publié, pour Internet (Funnel) ou le tailnet seul (Serve), son mode et sa cible.\n"
+"- [b]Alertes[/b] : de la plus grave à la moins grave. « Corriger » (ou Entrée) ouvre l'écran qui corrige ; un écran pas encore construit le dit.\n"
+"\n"
+"Alertes possibles : service arrêté ; mise à jour installée mais pas appliquée (redémarrer le service) ; compte à connecter ; clé qui expire ; Funnel publié sans protection (tailscaled fait le chiffrement de chaque visiteur : une rafale peut saturer la machine) ; température élevée ; tailscaled trop gourmand ; tailscaled non confiné ; vous n'êtes pas opérateur ; liste noire de plus de 25 000 entrées ; messages de Tailscale lui-même.\n"
+"\n"
+"La bande d'état en haut de chaque écran sépare [b]CPU machine[/b] (toute la machine, en % de tous ses cœurs) et [b]CPU tailscaled[/b] (le seul service, en % d'un cœur)."
+msgstr ""
+"Drie kaders en een lijst met waarschuwingen.\n"
+"- [b]Tailscale[/b]: dienst, verbindingsstatus, versie (draaiend en geïnstalleerd), naam van de machine, adressen, account, apparaten online, verloop van de sleutel, operator.\n"
+"- [b]Tailscale[/b] zegt ook of de machine zich aanbiedt als exitnode, welke ze gebruikt en welke subnetten ze aankondigt.\n"
+"- [b]Machine[/b]: CPU van de hele machine, belasting, temperatuur, geheugen, CPU en geheugen van tailscaled (in % van een kern), inperking, daarna de status van de beschermingen: Funnel, firewall (slagboom, aanvalsmodus), blokkeerlijst, bewaking, schild van de WireGuard-poort.\n"
+"- Labels in de accentkleur van het thema, waarden in groen, oranje of rood volgens de drempels (CPU machine 70 / 90 %, belasting 1 / 2 per kern, temperatuur 75 / 85 °C, geheugen 85 / 95 %, tailscaled 50 / 90 % van een kern, blokkeerlijst 25 000 / 50 000 items).\n"
+"- [b]Publicatie[/b]: elke gepubliceerde poort, voor internet (Funnel) of alleen het tailnet (Serve), de modus en het doel.\n"
+"- [b]Waarschuwingen[/b]: van de ernstigste naar de minst ernstige. „Oplossen” (of Enter) opent het scherm dat haar oplost; een nog niet gebouwd scherm zegt dat.\n"
+"\n"
+"Mogelijke waarschuwingen: dienst gestopt; update geïnstalleerd maar niet toegepast (dienst herstarten); account aan te melden; sleutel die verloopt; Funnel gepubliceerd zonder bescherming (tailscaled doet de versleuteling van elke bezoeker: een vloedgolf kan de machine verzadigen); hoge temperatuur; tailscaled te gulzig; tailscaled niet ingeperkt; u bent geen operator; blokkeerlijst met meer dan 25 000 items; berichten van Tailscale zelf.\n"
+"\n"
+"De statusbalk bovenaan elk scherm scheidt [b]CPU machine[/b] (de hele machine, in % van al haar kernen) en [b]CPU tailscaled[/b] (alleen de dienst, in % van een kern)."
+
+msgid "Service tailscaled"
+msgstr "Dienst tailscaled"
+
+msgid ""
+"L'état du service vu par systemd : actif ou non, lancé au démarrage, depuis quand, mémoire ; la version en marche et la version installée ; la commande de lancement ; les fichiers d'ajout (affichés, modifiés seulement par « Corriger le démarrage », sur votre accord) ; le confinement.\n"
+"\n"
+"[b]Démarrer[/b], [b]Arrêter[/b], [b]Redémarrer[/b] : la commande s'affiche avant d'être lancée.\n"
+"[b]Garde-fou[/b] : si votre session passe par Tailscale (SSH par le tailnet), Arrêter vous couperait sans pouvoir relancer : omega-tail demande une seconde confirmation. Redémarrer fige la session quelques secondes, puis elle revient en général.\n"
+"\n"
+"[b]Corriger le démarrage[/b] (affiché seulement si besoin) : un de vos fichiers d'ajout lance « tailscale up » après le démarrage. Dès qu'un réglage change ensuite (opérateur, nom, routes…), Tailscale refuse ce « up » incomplet ; systemd arrête alors tailscaled et abandonne après cinq essais : la machine sort du tailnet au premier redémarrage. La correction ajoute « - » devant la commande (son refus n'arrête plus le service ; vos réglages restent gardés par Tailscale), et rien d'autre ; l'original est gardé dans var/survie. Avant tout redémarrage qu'il lance (Redémarrer, confinement, opérateur), omega-tail fait d'abord cette correction, commandes montrées."
+msgstr ""
+"De status van de dienst volgens systemd: actief of niet, gestart bij het opstarten, sinds wanneer, geheugen; de draaiende en de geïnstalleerde versie; het startcommando; de aanvullende bestanden (getoond, alleen gewijzigd door „Opstart herstellen”, met uw akkoord); de inperking.\n"
+"\n"
+"[b]Starten[/b], [b]Stoppen[/b], [b]Herstarten[/b]: het commando wordt getoond voordat het wordt uitgevoerd.\n"
+"[b]Vangnet[/b]: als uw sessie via Tailscale loopt (SSH via het tailnet), zou Stoppen u afsluiten zonder te kunnen herstarten: omega-tail vraagt een tweede bevestiging. Herstarten bevriest de sessie enkele seconden, daarna komt ze meestal terug.\n"
+"\n"
+"[b]Opstart herstellen[/b] (alleen getoond indien nodig): een van uw aanvullende bestanden voert na het opstarten „tailscale up” uit. Zodra daarna een instelling verandert (operator, naam, routes…), weigert Tailscale deze onvolledige „up”; systemd stopt dan tailscaled en geeft het na vijf pogingen op: de machine verlaat het tailnet bij de eerste herstart. De correctie zet „-” voor het commando (de weigering ervan stopt de dienst niet meer; uw instellingen blijven door Tailscale bewaard), en verder niets; het origineel wordt bewaard in var/survie. Vóór elke herstart die het start (Herstarten, inperking, operator), voert omega-tail eerst deze correctie uit, met getoonde commando's."
+
+msgid "Connexion et réglages"
+msgstr "Verbinding en instellingen"
+
+msgid ""
+"L'état de la connexion (connecté ou non, compte, tailnet, nom et adresses de la machine, expiration de la clé, opérateur).\n"
+"\n"
+"[b]Se connecter[/b] / [b]Se déconnecter[/b] : la machine rejoint ou quitte le tailnet ; le compte reste enregistré. [b]Ajouter un compte[/b] : Tailscale affiche dans le terminal l'adresse à ouvrir pour s'identifier. [b]Changer de compte[/b] : choisissez un compte déjà connu de la machine. [b]Déconnexion définitive[/b] : la machine est retirée du compte (clé révoquée) ; il faut taper son nom pour confirmer.\n"
+"[b]Garde-fou[/b] : si votre session passe par Tailscale, se déconnecter la coupe sans retour possible ; omega-tail le dit avant.\n"
+"\n"
+"[b]Réglages[/b] (ceux de tailscale set), chacun avec sa phrase d'explication : nom de la machine, surnom, routes, DNS du tailnet, bouclier, filtrage avec état, mode netfilter, nœud de sortie, accès au réseau local, proposer la machine comme nœud de sortie, sous-réseaux annoncés, SSH Tailscale, interface web, mises à jour, relais pair, opérateur. Les valeurs sont vérifiées ; pendant la saisie, un cadre au-dessus des boutons montre avant → après et la commande ; « Appliquer » la lance dans le terminal (sans sudo si vous êtes opérateur ; changer l'opérateur demande sudo). Un avertissement s'affiche quand un changement peut couper une session passée par Tailscale (bouclier, SSH Tailscale coupé, nœud de sortie, netfilter). Après application, le cadre garde le résultat, vérifié sur les valeurs relues (✔ pris en compte, ✖ non). « Relire » reprend les valeurs actuelles.\n"
+"\n"
+"[b]Nœud de sortie[/b] : la liste ne propose que les machines du tailnet qui se proposent comme nœud de sortie (et approuvées dans la console d'administration de Tailscale) ; s'il n'y en a aucune, l'écran le dit.\n"
+"[b]Transfert IP[/b] : une machine qui se propose comme nœud de sortie ou annonce des sous-réseaux doit faire suivre les paquets. S'il est désactivé, un avertissement et le bouton « Activer le transfert IP » apparaissent : un fichier à part (/etc/sysctl.d/99-omega-tail-forwarding.conf), appliqué tout de suite et relu au démarrage (systemd, OpenRC, runit). Pour annuler : supprimer ce fichier puis redémarrer."
+msgstr ""
+"De status van de verbinding (verbonden of niet, account, tailnet, naam en adressen van de machine, verloop van de sleutel, operator).\n"
+"\n"
+"[b]Aanmelden[/b] / [b]Afmelden[/b]: de machine treedt toe tot het tailnet of verlaat het; het account blijft opgeslagen. [b]Account toevoegen[/b]: Tailscale toont in de terminal het adres dat u moet openen om u te identificeren. [b]Van account wisselen[/b]: kies een account dat de machine al kent. [b]Definitief afmelden[/b]: de machine wordt uit het account verwijderd (sleutel ingetrokken); u moet haar naam typen om te bevestigen.\n"
+"[b]Vangnet[/b]: als uw sessie via Tailscale loopt, verbreekt afmelden haar zonder weg terug; omega-tail zegt het vooraf.\n"
+"\n"
+"[b]Instellingen[/b] (die van tailscale set), elk met een uitleg: naam van de machine, bijnaam, routes, DNS van het tailnet, schild, stateful filtering, netfilter-modus, exitnode, toegang tot het lokale netwerk, de machine aanbieden als exitnode, aangekondigde subnetten, Tailscale-SSH, webinterface, updates, peer-relay, operator. De waarden worden gecontroleerd; tijdens het invoeren toont een kader boven de knoppen voor → na en het commando; „Toepassen” voert het uit in de terminal (zonder sudo als u operator bent; de operator wijzigen vraagt om sudo). Er verschijnt een waarschuwing wanneer een wijziging een via Tailscale lopende sessie kan verbreken (schild, Tailscale-SSH uit, exitnode, netfilter). Na het toepassen houdt het kader het resultaat vast, gecontroleerd op de opnieuw gelezen waarden (✔ doorgevoerd, ✖ niet). „Opnieuw lezen” haalt de huidige waarden op.\n"
+"\n"
+"[b]Exitnode[/b]: de lijst biedt alleen de machines van het tailnet aan die zich aanbieden als exitnode (en goedgekeurd zijn in de beheerconsole van Tailscale); als er geen is, zegt het scherm dat.\n"
+"[b]IP-doorsturing[/b]: een machine die zich aanbiedt als exitnode of subnetten aankondigt, moet pakketten doorsturen. Als die gedeactiveerd is, verschijnen een waarschuwing en de knop „IP-doorsturing activeren”: een apart bestand (/etc/sysctl.d/99-omega-tail-forwarding.conf), meteen toegepast en bij het opstarten opnieuw gelezen (systemd, OpenRC, runit). Ongedaan maken: dit bestand verwijderen en daarna herstarten."
+
+msgid "Publication"
+msgstr "Publicatie"
+
+msgid ""
+"Tout ce que la machine publie : port, pour qui (le tailnet seul avec Serve, Internet avec Funnel), mode, chemin, cible, et si la porte du pare-feu protège le port.\n"
+"\n"
+"[b]Publier[/b] : un service local (un port, ou http://127.0.0.1:PORT), pour le tailnet ou pour Internet (Funnel n'ouvre que les ports 443, 8443 et 10000), en HTTPS, HTTP, TCP ou TLS terminé, sur un chemin. Pour Internet, le plus sûr est HTTPS sur 443 puis « Activer la protection » (Pare-feu Funnel).\n"
+"[b]Retirer[/b] : la ligne choisie (un chemin seul si le port en publie d'autres). Le port protégé par la porte se retire par « Désactiver la protection ».\n"
+"[b]Suspendre Funnel[/b] / [b]Rétablir Funnel[/b] : coupe les ports ouverts à Internet sans perdre leur configuration (même mécanisme que le disjoncteur de Survie), puis les remet à l'identique.\n"
+"[b]Essai de bout en bout[/b] : une vraie connexion, comme un visiteur (par Internet pour un port public, par le tailnet sinon) : réponse, temps, certificat (émetteur, échéance) et version de TLS.\n"
+"[b]Sauvegardes[/b] : l'état d'avant chaque changement (publication, pare-feu, disjoncteur), les 50 plus récentes ; « Restaurer » remet celle choisie, après avoir sauvegardé l'état actuel.\n"
+"\n"
+"Chaque changement est vérifié. Si le résultat n'est pas celui voulu, la publication est reconstruite (remise à zéro puis chaque point recréé) ; si cela échoue aussi, l'état d'avant est remis. Changer la publication demande d'être opérateur de Tailscale."
+msgstr ""
+"Alles wat de machine publiceert: poort, voor wie (alleen het tailnet met Serve, internet met Funnel), modus, pad, doel, en of de slagboom van de firewall de poort beschermt.\n"
+"\n"
+"[b]Publiceren[/b]: een lokale dienst (een poort, of http://127.0.0.1:PORT), voor het tailnet of voor internet (Funnel opent alleen de poorten 443, 8443 en 10000), in HTTPS, HTTP, TCP of afgesloten TLS, op een pad. Voor internet is HTTPS op 443 en daarna „Bescherming activeren” (Funnel-firewall) het veiligst.\n"
+"[b]Verwijderen[/b]: de gekozen regel (alleen een pad als de poort er nog andere publiceert). De poort die door de slagboom wordt beschermd, wordt verwijderd via „Bescherming deactiveren”.\n"
+"[b]Funnel opschorten[/b] / [b]Funnel herstellen[/b]: schakelt de poorten uit die open staan naar internet zonder hun configuratie te verliezen (hetzelfde mechanisme als de stroomonderbreker van Overleven), en zet ze daarna ongewijzigd terug.\n"
+"[b]End-to-end-test[/b]: een echte verbinding, zoals een bezoeker (via internet voor een publieke poort, anders via het tailnet): antwoord, tijd, certificaat (uitgever, vervaldatum) en TLS-versie.\n"
+"[b]Back-ups[/b]: de toestand vóór elke wijziging (publicatie, firewall, stroomonderbreker), de 50 recentste; „Terugzetten” zet de gekozen terug, nadat de huidige toestand is opgeslagen.\n"
+"\n"
+"Elke wijziging wordt gecontroleerd. Als het resultaat niet het gewenste is, wordt de publicatie opnieuw opgebouwd (gereset en elk punt opnieuw aangemaakt); als ook dat mislukt, wordt de vorige toestand teruggezet. De publicatie wijzigen vereist dat u operator van Tailscale bent."
+
+msgid "Journaux"
+msgstr "Logs"
+
+msgid ""
+"Le journal de tailscaled (journalctl) ou celui de la porte. Choisissez le nombre de lignes, filtrez par texte. Chaque information a sa couleur, prise dans le thème : la date, la machine en grisé, le processus, puis la catégorie du message, une couleur par famille (contrôle et connexion, réseau et relais, DNS, moteur WireGuard) ; les adresses en gras ; le message en rouge s'il signale une erreur, en orange pour un avertissement. Pour la porte : l'adresse du visiteur, le motif de refus en rouge, le regroupement en orange, puis l'AS et le pays. « Exporter » enregistre les lignes affichées dans le dossier des exports ; « Voir les exports » les ouvre (voir Rapport).\n"
+"Si rien ne s'affiche : votre compte doit pouvoir lire le journal du système (groupe systemd-journal, adm ou wheel selon la distribution)."
+msgstr ""
+"Het log van tailscaled (journalctl) of dat van de slagboom. Kies het aantal regels, filter op tekst. Elk gegeven heeft zijn eigen kleur uit het thema: de datum, de machine gedimd, het proces, daarna de categorie van het bericht, één kleur per familie (besturing en verbinding, netwerk en relays, DNS, WireGuard-engine); adressen vet; het bericht rood als het een fout meldt, oranje bij een waarschuwing. Voor de slagboom: het adres van de bezoeker, de reden van weigering in rood, de groepering in oranje, daarna het AS en het land. „Exporteren” slaat de getoonde regels op in de exportmap; „Exports bekijken” opent ze (zie Rapport).\n"
+"Als er niets verschijnt: uw account moet het systeemlog kunnen lezen (groep systemd-journal, adm of wheel, afhankelijk van de distributie)."
+
+msgid "Devenir opérateur"
+msgstr "Operator worden"
+
+msgid ""
+"Par défaut, chaque réglage de Tailscale demande sudo. Devenir opérateur (une"
+" seule fois, par sudo) permet à votre compte de régler Tailscale sans sudo. "
+"Le bouton apparaît dans le tableau de bord tant que ce n'est pas fait ; dans"
+" « Connexion et réglages », le bouton « Mon compte » met votre nom dans le "
+"champ Opérateur, puis « Appliquer ». Pour annuler : vider le champ et "
+"appliquer, ou sudo tailscale set --operator="
+msgstr ""
+"Standaard vraagt elke instelling van Tailscale om sudo. Operator worden (één"
+" keer, via sudo) laat uw account Tailscale zonder sudo instellen. De knop "
+"verschijnt in het dashboard zolang dat niet gedaan is; in „Verbinding en "
+"instellingen” zet de knop „Mijn account” uw naam in het veld Operator, "
+"daarna „Toepassen”. Ongedaan maken: het veld leegmaken en toepassen, of sudo"
+" tailscale set --operator="
+
+msgid "Survie"
+msgstr "Overleven"
+
+msgid ""
+"Garder la machine debout sous attaque : le confinement, le disjoncteur et la veille automatique, toujours proposés, jamais imposés.\n"
+"\n"
+"[b]Confinement de tailscaled[/b] : un fichier d'ajout systemd à part (50-omega-tail.conf) plafonne tailscaled (par exemple un cœur entier sur une machine à 4 fils), baisse son poids et sa priorité. Sous attaque, il ne peut plus prendre toute la machine : l'administration et les autres services restent utilisables. Option : donner la priorité à l'accès SSH. Votre propre override.conf n'est jamais modifié ; « Retirer le confinement » supprime seulement les fichiers d'omega-tail. Le plafond s'applique au rechargement ; la priorité au redémarrage de tailscaled (case cochée par défaut).\n"
+"\n"
+"[b]Disjoncteur Funnel[/b] : quand tailscaled reste au-dessus du seuil CPU pendant toute la durée choisie (80 % d'un cœur pendant 60 s par défaut), ou quand la température atteint son seuil (85 °C), omega-tail ouvert vous propose :\n"
+"- [b]Couper 10 min[/b] (durée réglable) : les ports ouverts à Internet sont coupés, puis remis en route automatiquement, à l'identique, même si omega-tail est fermé (minuterie systemd, sudo une fois) ;\n"
+"- [b]Coupure totale[/b] : Funnel reste coupé jusqu'à « Rétablir maintenant » ;\n"
+"- [b]Pas maintenant[/b] : plus de proposition pendant 15 minutes.\n"
+"Le tailnet (Serve, SSH par Tailscale) n'est jamais coupé. La publication est sauvegardée avant chaque coupure (var/funnel/sauvegardes/) et la remise en route est vérifiée identique. Un port Funnel en TCP (celui de la porte) garde son autorisation Funnel après « off » : la coupure repart alors de zéro avec les seuls points du tailnet et vérifie que plus rien n'est ouvert à Internet. Le disjoncteur demande d'être opérateur de Tailscale : la remise en route tourne sous votre compte, jamais en root.\n"
+"En ligne de commande : omega-tail disjoncteur etat | couper --minutes 10 | couper --totale | retablir.\n"
+"\n"
+"[b]Veille automatique[/b] (désactivée par défaut) : pour une machine sans personne devant. Un service tourne en permanence sous votre compte, même omega-tail fermé (systemd, OpenRC ou runit). Un dépassement : un seuil du disjoncteur tenu. 3 dépassements dans la fenêtre (10 min, réglable) : la veille coupe Funnel seule, 15 min la première fois, 30 min la deuxième, puis 1 h à chaque fois, et le remet en route seule, à l'identique. Retour à 15 min après 24 h sans coupure ; après chaque remise en route, 2 min de calme avant de mesurer de nouveau. Seul Funnel est coupé : tailscaled, le tailnet et SSH restent joignables. Quand la veille tourne, omega-tail ouvert ne propose plus la coupure (elle agit seule). Les 6 dernières lignes de son journal s'affichent dans Survie (le fichier var/veille/journal.log garde 512 Ko, puis passe en journal.log.1) ; une veille activée mais arrêtée est signalée au tableau de bord.\n"
+"En ligne de commande : omega-tail veille etat.\n"
+"\n"
+"[b]Bouclier du port WireGuard[/b] (bouton dans Survie) : tailscaled dépense environ un cœur de processeur pour 100 000 paquets par seconde reçus sur son port, même invalides, Funnel ouvert ou non. Le bouclier est une table nftables posée devant lui, sur les cartes réseau matérielles : les pairs connus (ceux à qui tailscaled écrit, appris par le noyau) ne sont jamais limités ; les poignées de main sont limitées à 20 par seconde et par source ; les autres sources ont un budget (500 paquets par seconde chacune, 5 000 en tout) ; les paquets qui ne sont pas du WireGuard sont refusés. Mesuré : un flot qui prenait un cœur entier à tailscaled n'en prend plus que 1 %.\n"
+"- [b]Observation[/b] d'abord : rien n'est refusé, les compteurs disent ce qui l'aurait été ; « Passer en actif » quand ils ne montrent que des attaques.\n"
+"- [b]Qui le pose[/b] : omega-fire 3.7.0 ou plus récent s'il est relié par omega-connect (sa liste des règles l'affiche avec l'origine omega-tail) ; sinon omega-tail lui-même, même si ufw ou firewalld sont présents. C'est la même table dans les deux cas : « Confier à omega-fire » ou, dans omega-fire, « Reprendre la gestion » la fait changer de mains sans la toucher ; si omega-fire n'est plus relié, « Reprendre la gestion » la rend à omega-tail.\n"
+"- Un service (omega-bouclier-wg) la remet en place à chaque démarrage et écrit son état chaque minute.\n"
+"- Si un autre outil efface la table (nft flush ruleset, pare-feu relancé), le tableau de bord et la veille le signalent ; elle n'est jamais reposée seule : « Reposer ».\n"
+"- Retiré depuis omega-fire : omega-tail l'affiche."
+msgstr ""
+"De machine overeind houden bij een aanval: de inperking, de stroomonderbreker en de automatische bewaking, altijd aangeboden, nooit opgelegd.\n"
+"\n"
+"[b]Inperking van tailscaled[/b]: een apart aanvullend systemd-bestand (50-omega-tail.conf) begrenst tailscaled (bijvoorbeeld een hele kern op een machine met 4 threads), verlaagt zijn gewicht en zijn prioriteit. Bij een aanval kan het niet meer de hele machine innemen: het beheer en de andere diensten blijven bruikbaar. Optie: voorrang geven aan de SSH-toegang. Uw eigen override.conf wordt nooit gewijzigd; „Inperking verwijderen” verwijdert alleen de bestanden van omega-tail. Het plafond geldt bij het herladen; de prioriteit bij de herstart van tailscaled (vakje standaard aangevinkt).\n"
+"\n"
+"[b]Funnel-stroomonderbreker[/b]: wanneer tailscaled gedurende de hele gekozen duur boven de CPU-drempel blijft (standaard 80 % van een kern gedurende 60 s), of wanneer de temperatuur haar drempel bereikt (85 °C), stelt het geopende omega-tail u voor:\n"
+"- [b]10 min uitschakelen[/b] (duur instelbaar): de poorten die open staan naar internet worden uitgeschakeld en daarna automatisch ongewijzigd weer ingeschakeld, zelfs als omega-tail gesloten is (systemd-timer, eenmaal sudo);\n"
+"- [b]Volledige uitschakeling[/b]: Funnel blijft uitgeschakeld tot „Nu herstellen”;\n"
+"- [b]Niet nu[/b]: 15 minuten lang geen voorstel meer.\n"
+"Het tailnet (Serve, SSH via Tailscale) wordt nooit uitgeschakeld. De publicatie wordt vóór elke uitschakeling opgeslagen (var/funnel/sauvegardes/) en de herinschakeling wordt als identiek gecontroleerd. Een Funnel-poort in TCP (die van de slagboom) behoudt zijn Funnel-toestemming na „off”: de uitschakeling begint dan bij nul met alleen de punten van het tailnet en controleert dat niets meer open staat naar internet. De stroomonderbreker vereist dat u operator van Tailscale bent: de herinschakeling draait onder uw account, nooit als root.\n"
+"Via de opdrachtregel: omega-tail disjoncteur etat | couper --minutes 10 | couper --totale | retablir.\n"
+"\n"
+"[b]Automatische bewaking[/b] (standaard gedeactiveerd): voor een machine zonder iemand ervoor. Een dienst draait doorlopend onder uw account, ook als omega-tail gesloten is (systemd, OpenRC of runit). Een overschrijding: een aangehouden drempel van de stroomonderbreker. 3 overschrijdingen binnen het venster (10 min, instelbaar): de bewaking schakelt Funnel vanzelf uit, 15 min de eerste keer, 30 min de tweede, daarna telkens 1 u, en schakelt het vanzelf ongewijzigd weer in. Terug naar 15 min na 24 u zonder uitschakeling; na elke herinschakeling 2 min rust voordat er opnieuw gemeten wordt. Alleen Funnel wordt uitgeschakeld: tailscaled, het tailnet en SSH blijven bereikbaar. Wanneer de bewaking draait, stelt het geopende omega-tail de uitschakeling niet meer voor (ze handelt zelf). De laatste 6 regels van haar log worden getoond in Overleven (het bestand var/veille/journal.log bewaart 512 KB en gaat daarna over in journal.log.1); een geactiveerde maar gestopte bewaking wordt gemeld in het dashboard.\n"
+"Via de opdrachtregel: omega-tail veille etat.\n"
+"\n"
+"[b]Schild van de WireGuard-poort[/b] (knop in Overleven): tailscaled besteedt ongeveer een processorkern aan 100 000 pakketten per seconde die op zijn poort binnenkomen, zelfs ongeldige, of Funnel nu open is of niet. Het schild is een nftables-tabel ervoor, op de fysieke netwerkkaarten: bekende peers (die waarnaar tailscaled schrijft, geleerd door de kernel) worden nooit beperkt; handshakes zijn beperkt tot 20 per seconde per bron; de andere bronnen hebben een budget (500 pakketten per seconde elk, 5 000 in totaal); pakketten die geen WireGuard zijn, worden geweigerd. Gemeten: een stroom die tailscaled een hele kern kostte, kost nog maar 1 %.\n"
+"- Eerst [b]observatie[/b]: niets wordt geweigerd, de tellers zeggen wat geweigerd zou zijn; „Naar actief” wanneer ze alleen aanvallen tonen.\n"
+"- [b]Wie het plaatst[/b]: omega-fire 3.7.0 of recenter als het via omega-connect gekoppeld is (zijn lijst met regels toont het met de herkomst omega-tail); anders omega-tail zelf, ook als ufw of firewalld aanwezig zijn. In beide gevallen is het dezelfde tabel: „Overdragen aan omega-fire” of, in omega-fire, „Beheer overnemen” laat haar van eigenaar wisselen zonder haar aan te raken; als omega-fire niet meer gekoppeld is, geeft „Beheer overnemen” haar terug aan omega-tail.\n"
+"- Een dienst (omega-bouclier-wg) zet haar bij elke opstart terug en schrijft elke minuut haar status.\n"
+"- Als een ander hulpmiddel de tabel wist (nft flush ruleset, firewall herstart), melden het dashboard en de bewaking het; ze wordt nooit vanzelf opnieuw geplaatst: „Opnieuw plaatsen”.\n"
+"- Verwijderd vanuit omega-fire: omega-tail toont het."
+
+msgid "Pare-feu Funnel"
+msgstr "Funnel-firewall"
+
+msgid ""
+"En Funnel ordinaire, tailscaled fait le chiffrement (TLS) de chaque visiteur : une rafale sature la machine. La protection place une porte (HAProxy, installé par le gestionnaire de paquets) entre Funnel et votre site : Funnel lui transmet le flux encore chiffré avec l'adresse réelle du visiteur, la porte décide AVANT tout chiffrement, puis ne chiffre que pour les connexions admises. Mesuré : une connexion refusée coûte 4,6 fois moins, une connexion admise 2 fois moins.\n"
+"\n"
+"[b]Activer la protection[/b] : préparation (certificat *.ts.net par Tailscale, listes, configuration vérifiée), services de la porte et de son certificat (sudo, dans le terminal ; la porte tourne sous votre compte, jamais en root), bascule de Funnel puis essai depuis Internet. En cas d'échec, la publication d'origine est remise aussitôt. Prérequis : être opérateur de Tailscale ; Funnel publié en HTTPS sur un seul port avec le chemin « / ».\n"
+"[b]Désactiver la protection[/b] : Funnel est remis exactement comme avant, vérifié, puis la porte est arrêtée ; réglages et listes sont gardés.\n"
+"\n"
+"[b]Règles[/b], appliquées à chaud (les adresses bloquées le restent) :\n"
+"- machines du tailnet (100.64.0.0/10 et fd7a:115c:a1e0::/48) : toujours admises, avant toute règle ; seuls les visiteurs de Funnel sont filtrés ;\n"
+"- liste de confiance : jamais limitée ; liste noire : refusée jusqu'à son retrait ;\n"
+"- débit par adresse (40 connexions / 10 s par défaut) : au-delà, l'adresse est bloquée pour la durée choisie (60 min) ;\n"
+"- débit par préfixe /24 (IPv4) ou /64 (IPv6) ;\n"
+"- budget global de connexions admises par seconde : le processeur n'est jamais débordé ;\n"
+"- nom visé : une connexion qui ne vise pas le nom de la machine est refusée.\n"
+"Mode [b]observation[/b] : tout est compté, rien n'est refusé (pour régler les seuils sans risque).\n"
+"\n"
+"Le certificat est vérifié chaque jour et renouvelé à chaud 30 jours avant son échéance.\n"
+"\n"
+"[b]Regroupements[/b] (empreintes, AS, pays) : contre les attaques à adresses dispersées, que les règles par adresse ne voient qu'une fois chacune. Avant tout chiffrement, la porte calcule l'[b]empreinte JA4[/b] du client (la façon dont son logiciel se présente : un navigateur et un outil d'attaque n'ont pas la même), son [b]AS[/b] (le réseau d'origine : fournisseur d'accès, hébergeur, nuage) et son [b]pays[/b], et compte le débit de chaque groupe.\n"
+"- [b]Mode attaque automatique[/b] : quand les connexions entrantes dépassent le seuil (80 / s par défaut), la porte passe seule en mode attaque, et y reste jusqu'à 5 minutes de calme. Rien à faire, même à distance.\n"
+"- En mode attaque seulement : une empreinte inconnue qui explose, un AS d'hébergeur ou de nuage (liste modifiable) ou un pays de votre liste (vide par défaut) qui dépasse son débit est refusé.\n"
+"- Les [b]navigateurs courants[/b] (Chrome, Edge, Firefox) ne sont jamais touchés par ces règles, et les [b]clients connus[/b] (admis dans les dernières 24 h) passent avant le budget global.\n"
+"- [b]Référence apprise[/b] : pendant 7 jours, la porte apprend les empreintes habituelles de votre site (jamais pendant une attaque) ; pendant ce temps, les regroupements restent en [b]observation[/b], même si « appliqués » est choisi. « Recommencer l'apprentissage » repart de zéro et les remet en observation.\n"
+"- [b]Observation[/b] (par défaut) : tout est compté (« aurait été refusée »), rien n'est refusé ; une fois l'apprentissage fini, passez en « appliqués » quand les chiffres vous conviennent.\n"
+"- Hors attaque, une connexion sur dix seulement est classée (assez pour apprendre, dix fois moins de calcul) ; en attaque, toutes. Il faut un HAProxy avec Lua (cas des distributions courantes).\n"
+"- [b]Base AS / pays[/b] : DB-IP Lite, téléchargée et mise à jour une fois par mois par la veille automatique, ou par « Mettre à jour la base ». IP Geolocation by DB-IP (https://db-ip.com), licence CC BY 4.0."
+msgstr ""
+"In gewone Funnel doet tailscaled de versleuteling (TLS) van elke bezoeker: een vloedgolf verzadigt de machine. De bescherming plaatst een slagboom (HAProxy, geïnstalleerd via de pakketbeheerder) tussen Funnel en uw site: Funnel geeft hem de nog versleutelde stroom door met het echte adres van de bezoeker, de slagboom beslist VÓÓR elke versleuteling en versleutelt alleen voor de toegelaten verbindingen. Gemeten: een geweigerde verbinding kost 4,6 keer minder, een toegelaten verbinding 2 keer minder.\n"
+"\n"
+"[b]Bescherming activeren[/b]: voorbereiding (certificaat *.ts.net via Tailscale, lijsten, gecontroleerde configuratie), diensten van de slagboom en zijn certificaat (sudo, in de terminal; de slagboom draait onder uw account, nooit als root), omschakeling van Funnel en daarna test vanaf internet. Bij een mislukking wordt de oorspronkelijke publicatie meteen teruggezet. Vereisten: operator van Tailscale zijn; Funnel gepubliceerd in HTTPS op één enkele poort met het pad „/”.\n"
+"[b]Bescherming deactiveren[/b]: Funnel wordt precies zoals voorheen teruggezet, gecontroleerd, daarna wordt de slagboom gestopt; instellingen en lijsten blijven bewaard.\n"
+"\n"
+"[b]Regels[/b], live toegepast (geblokkeerde adressen blijven dat):\n"
+"- machines van het tailnet (100.64.0.0/10 en fd7a:115c:a1e0::/48): altijd toegelaten, vóór elke regel; alleen de bezoekers van Funnel worden gefilterd;\n"
+"- vertrouwenslijst: nooit beperkt; blokkeerlijst: geweigerd tot verwijdering;\n"
+"- rate per adres (standaard 40 verbindingen / 10 s): daarboven wordt het adres geblokkeerd voor de gekozen duur (60 min);\n"
+"- rate per prefix /24 (IPv4) of /64 (IPv6);\n"
+"- globaal budget aan toegelaten verbindingen per seconde: de processor raakt nooit overbelast;\n"
+"- doelnaam: een verbinding die niet op de naam van de machine mikt, wordt geweigerd.\n"
+"[b]Observatiemodus[/b]: alles wordt geteld, niets geweigerd (om de drempels zonder risico in te stellen).\n"
+"\n"
+"Het certificaat wordt elke dag gecontroleerd en 30 dagen voor de vervaldatum live vernieuwd.\n"
+"\n"
+"[b]Groeperingen[/b] (vingerafdrukken, AS, landen): tegen aanvallen met verspreide adressen, die de regels per adres elk maar één keer zien. Vóór elke versleuteling berekent de slagboom de [b]JA4-vingerafdruk[/b] van de client (de manier waarop zijn software zich voorstelt: een browser en een aanvalstool hebben niet dezelfde), zijn [b]AS[/b] (het netwerk van herkomst: internetprovider, hoster, cloud) en zijn [b]land[/b], en telt de rate van elke groep.\n"
+"- [b]Automatische aanvalsmodus[/b]: wanneer de inkomende verbindingen de drempel overschrijden (standaard 80 / s), gaat de slagboom vanzelf in aanvalsmodus en blijft daar tot 5 minuten rust. Niets te doen, zelfs niet op afstand.\n"
+"- Alleen in aanvalsmodus: een onbekende vingerafdruk die explodeert, een AS van een hoster of cloud (lijst aanpasbaar) of een land uit uw lijst (standaard leeg) dat zijn rate overschrijdt, wordt geweigerd.\n"
+"- De [b]gangbare browsers[/b] (Chrome, Edge, Firefox) worden nooit door deze regels geraakt, en de [b]bekende clients[/b] (toegelaten in de laatste 24 u) gaan vóór het globale budget.\n"
+"- [b]Geleerde referentie[/b]: gedurende 7 dagen leert de slagboom de gebruikelijke vingerafdrukken van uw site (nooit tijdens een aanval); intussen blijven de groeperingen in [b]observatie[/b], ook als „toegepast” is gekozen. „Leerfase opnieuw starten” begint bij nul en zet ze terug in observatie.\n"
+"- [b]Observatie[/b] (standaard): alles wordt geteld („zou geweigerd zijn”), niets geweigerd; schakel na de leerfase over naar „toegepast” wanneer de cijfers u bevallen.\n"
+"- Buiten een aanval wordt slechts één op de tien verbindingen ingedeeld (genoeg om te leren, tien keer minder rekenwerk); bij een aanval allemaal. Er is een HAProxy met Lua nodig (het geval bij de gangbare distributies).\n"
+"- [b]AS-/landendatabase[/b]: DB-IP Lite, eenmaal per maand gedownload en bijgewerkt door de automatische bewaking, of via „Database bijwerken”. IP Geolocation by DB-IP (https://db-ip.com), licentie CC BY 4.0."
+
+msgid "Attaques et décisions"
+msgstr "Aanvallen en beslissingen"
+
+#, python-format
+msgid ""
+"Les compteurs de la porte (connexions reçues, refusées avant chiffrement, admises, en cours) et les adresses les plus actives, relus toutes les 2 secondes. La colonne État dit où se trouve chaque adresse : liste noire (refusée jusqu'au retrait), bloquée (pour la durée de blocage), admise, ou confiance (jamais limitée) ; les adresses des listes sans connexion récente apparaissent aussi. Choisissez une ligne puis [b]Bloquer[/b], [b]Liste noire[/b], [b]Débloquer[/b] ou [b]Confiance[/b] / [b]Retirer la confiance[/b] : appliqué tout de suite, sans redémarrer la porte ; la notification dit en une ligne l'action et la place de l'adresse (ex. « 1.2.3.4 → liste noire »). Une adresse n'est jamais dans les deux listes : la mettre en liste noire la retire de la confiance, et l'inverse. Une adresse en confiance ou du tailnet ne peut pas être bloquée (elle passe avant). Porte arrêtée : les listes s'appliqueront à son activation.\n"
+"\n"
+"Chaque adresse affiche son pays et son AS. La ligne sous les compteurs dit si la porte est en [b]mode attaque[/b] (et dans combien de temps elle revient au normal) et combien de connexions les regroupements ont refusées (ou auraient refusées, en observation) sur 7 jours. Les vues [b]Empreintes[/b], [b]AS[/b] et [b]Pays[/b] montrent les groupes les plus actifs (connexions / 10 s, total), avec le navigateur reconnu, le nom de l'AS (hébergeur ou non) ou « limité en attaque ». Hors attaque, ces chiffres portent sur une connexion sur dix.\n"
+"\n"
+"[b]Gestion de la liste noire[/b] (seconde ligne de boutons) : toute la liste, avec la date d'ajout et l'origine de chaque entrée, filtrable.\n"
+"- [b]Ajouter[/b] une adresse ou un réseau en prévision ; [b]Supprimer[/b] la ligne choisie.\n"
+"- [b]Importer[/b] un fichier TXT (une adresse ou un réseau par ligne, # = commentaire) : doublons, adresses déjà couvertes par un réseau de la liste et adresses du tailnet écartés et comptés ; les lignes invalides sont citées, comme une adresse IPv6 suivie d'un identifiant de zone (« %eth0 »), refusée par sécurité.\n"
+"- [b]Purger[/b], avec aperçu puis confirmation : plus anciennes que N jours, les N plus anciennes, de la ligne A à la ligne B, par origine, ou toute la liste (confirmation tapée).\n"
+"- [b]Exporter[/b] TXT (réimportable tel quel, pour une récidive), HTML (thème d'export choisi) ou JSON.\n"
+"- Plafond : 50 000 entrées (alerte au tableau de bord à 25 000). HAProxy en tiendrait bien plus ; c'est omega-tail qui ralentirait. Au plafond, l'ajout est refusé : exportez puis purgez."
+msgstr ""
+"De tellers van de slagboom (ontvangen, vóór versleuteling geweigerde, toegelaten en lopende verbindingen) en de actiefste adressen, elke 2 seconden opnieuw gelezen. De kolom Status zegt waar elk adres staat: blokkeerlijst (geweigerd tot verwijdering), geblokkeerd (voor de blokkeerduur), toegelaten of vertrouwen (nooit beperkt); de adressen uit de lijsten zonder recente verbinding verschijnen ook. Kies een regel en daarna [b]Blokkeren[/b], [b]Blokkeerlijst[/b], [b]Deblokkeren[/b] of [b]Vertrouwen[/b] / [b]Vertrouwen intrekken[/b]: meteen toegepast, zonder de slagboom te herstarten; de melding geeft in één regel de actie en de plaats van het adres (bijv. „1.2.3.4 → blokkeerlijst”). Een adres staat nooit in beide lijsten: het op de blokkeerlijst zetten haalt het uit het vertrouwen, en omgekeerd. Een adres in het vertrouwen of uit het tailnet kan niet geblokkeerd worden (het gaat voor). Slagboom gestopt: de lijsten gaan in bij zijn activering.\n"
+"\n"
+"Elk adres toont zijn land en zijn AS. De regel onder de tellers zegt of de slagboom in [b]aanvalsmodus[/b] staat (en over hoeveel tijd hij terugkeert naar normaal) en hoeveel verbindingen de groeperingen over 7 dagen hebben geweigerd (of in observatie zouden hebben geweigerd). De weergaven [b]Vingerafdrukken[/b], [b]AS[/b] en [b]Landen[/b] tonen de actiefste groepen (verbindingen / 10 s, totaal), met de herkende browser, de naam van het AS (hoster of niet) of „beperkt bij aanval”. Buiten een aanval gaan deze cijfers over één op de tien verbindingen.\n"
+"\n"
+"[b]Beheer van de blokkeerlijst[/b] (tweede rij knoppen): de hele lijst, met de datum van toevoeging en de herkomst van elk item, filterbaar.\n"
+"- Een adres of een netwerk vooraf [b]toevoegen[/b]; de gekozen regel [b]verwijderen[/b].\n"
+"- Een TXT-bestand [b]importeren[/b] (één adres of netwerk per regel, # = commentaar): dubbels, adressen die al door een netwerk uit de lijst gedekt zijn en adressen van het tailnet worden uitgesloten en geteld; ongeldige regels worden genoemd, zoals een IPv6-adres gevolgd door een zone-ID („%eth0”), uit veiligheidsoverwegingen geweigerd.\n"
+"- [b]Opschonen[/b], met voorbeeld en daarna bevestiging: ouder dan N dagen, de N oudste, van regel A tot regel B, per herkomst, of de hele lijst (getypte bevestiging).\n"
+"- [b]Exporteren[/b] als TXT (ongewijzigd opnieuw te importeren, voor een herhaling), HTML (gekozen exportthema) of JSON.\n"
+"- Plafond: 50 000 items (waarschuwing in het dashboard vanaf 25 000). HAProxy zou veel meer aankunnen; omega-tail zou trager worden. Bij het plafond wordt toevoegen geweigerd: exporteer en schoon daarna op."
+
+msgid "Réseau et appareils"
+msgstr "Netwerk en apparaten"
+
+msgid ""
+"Ce que voit Tailscale depuis cette machine. Lecture seule : rien n'y change un réglage.\n"
+"- [b]Appareils[/b] : nom, système, en ligne ou non, [b]chemin[/b] (direct, ou par un relais de Tailscale quand la connexion directe est impossible), dernière fois vu, adresse, trafic échangé. Filtrez par nom, système ou adresse. Les [b]relais Funnel de Tailscale[/b] (« funnel-ingress-node ») apparaissent dans le tailnet dès que Funnel est actif : ce ne sont pas vos appareils, ils sont cachés sauf si vous cochez la case.\n"
+"- [b]Ping Tailscale[/b] : dit si le chemin vers l'appareil est direct ou relayé, et sa latence (3 essais). [b]Qui est-ce ?[/b] : à quelle machine et quel compte appartient une adresse du tailnet. Sans texte tapé, la ligne choisie est utilisée.\n"
+"- [b]Diagnostic réseau[/b] (quelques secondes) : UDP, IPv4 / IPv6, type de NAT (simple : connexions directes faciles ; difficile : plus de relais), ouverture de port par la box (UPnP, NAT-PMP, PCP), relais le plus proche et latences.\n"
+"- [b]DNS[/b], [b]verrou du tailnet[/b] et [b]compteurs internes[/b] (octets reçus et envoyés en direct ou par relais, paquets jetés, messages de santé) : tels que Tailscale les donne."
+msgstr ""
+"Wat Tailscale vanaf deze machine ziet. Alleen lezen: niets hier wijzigt een instelling.\n"
+"- [b]Apparaten[/b]: naam, systeem, online of niet, [b]pad[/b] (direct, of via een relay van Tailscale wanneer de directe verbinding onmogelijk is), laatst gezien, adres, uitgewisseld verkeer. Filter op naam, systeem of adres. De [b]Funnel-relays van Tailscale[/b] („funnel-ingress-node”) verschijnen in het tailnet zodra Funnel actief is: het zijn niet uw apparaten, ze zijn verborgen tenzij u het vakje aanvinkt.\n"
+"- [b]Tailscale-ping[/b]: zegt of het pad naar het apparaat direct of via een relay loopt, en de latentie (3 pogingen). [b]Wie is dit?[/b]: bij welke machine en welk account een tailnet-adres hoort. Zonder getypte tekst wordt de gekozen regel gebruikt.\n"
+"- [b]Netwerkdiagnose[/b] (enkele seconden): UDP, IPv4 / IPv6, type NAT (eenvoudig: directe verbindingen makkelijk; moeilijk: meer relays), poortopening door de router (UPnP, NAT-PMP, PCP), dichtstbijzijnde relay en latenties.\n"
+"- [b]DNS[/b], [b]tailnet-slot[/b] en [b]interne tellers[/b] (bytes direct of via relay ontvangen en verzonden, weggegooide pakketten, gezondheidsberichten): zoals Tailscale ze geeft."
+
+msgid "Rapport"
+msgstr "Rapport"
+
+msgid ""
+"Tout ce qu'omega-tail sait de la machine, en faits : Tailscale (version, préférences), publication, machine, pare-feu (règles, compteurs, listes, regroupements), survie (confinement, veille, disjoncteur), alertes, et les [b]attaques des 7 derniers jours[/b] lues dans le journal de la porte (connexions marquées par motif, par jour, adresses les plus marquées avec leur AS et leur pays).\n"
+"- [b]Vie privée[/b] : par défaut, le compte Tailscale et les noms / adresses des appareils du tailnet n'y figurent pas (seulement leur nombre), pour pouvoir envoyer le rapport à quelqu'un. Cochez la case pour les inclure. Les adresses des attaquants y restent toujours.\n"
+"- [b]Exporter[/b] en TXT, HTML (thème au choix) ou JSON, dans le dossier des exports. [b]Voir les exports[/b] ouvre ce dossier dans votre navigateur (chaque export se lit d'un clic) ; sans navigateur ni bureau (serveur, SSH), la liste et la lecture se font dans omega-tail.\n"
+"- Le journal de la porte doit être lisible par votre compte (groupe systemd-journal, adm ou wheel selon la distribution), sinon le rapport le dit."
+msgstr ""
+"Alles wat omega-tail van de machine weet, in feiten: Tailscale (versie, voorkeuren), publicatie, machine, firewall (regels, tellers, lijsten, groeperingen), overleven (inperking, bewaking, stroomonderbreker), waarschuwingen, en de [b]aanvallen van de laatste 7 dagen[/b], gelezen in het log van de slagboom (gemarkeerde verbindingen per reden, per dag, meest gemarkeerde adressen met hun AS en hun land).\n"
+"- [b]Privacy[/b]: standaard staan het Tailscale-account en de namen / adressen van de tailnet-apparaten er niet in (alleen hun aantal), zodat u het rapport naar iemand kunt sturen. Vink het vakje aan om ze op te nemen. De adressen van de aanvallers blijven er altijd in.\n"
+"- [b]Exporteren[/b] als TXT, HTML (thema naar keuze) of JSON, in de exportmap. [b]Exports bekijken[/b] opent deze map in uw browser (elke export is met één klik te lezen); zonder browser of bureaublad (server, SSH) gebeuren de lijst en het lezen in omega-tail.\n"
+"- Het log van de slagboom moet leesbaar zijn voor uw account (groep systemd-journal, adm of wheel, afhankelijk van de distributie), anders zegt het rapport dat."
+
+msgid "systemd, OpenRC, runit"
+msgstr "systemd, OpenRC, runit"
+
+msgid ""
+"omega-tail reconnaît le système d'init de la machine et s'y adapte :\n"
+"- [b]service tailscaled[/b] : systemctl, rc-service ou sv ;\n"
+"- [b]journaux[/b] : journalctl, ou les fichiers du service (/var/log/tailscaled.log, svlogd, socklog…) ;\n"
+"- [b]confinement[/b] : fichier d'ajout systemd ; ailleurs, un groupe de contrôle à part (cgroup v2), perdu si tailscaled redémarre (une alerte propose alors de le remettre) ;\n"
+"- [b]coupure momentanée[/b] : minuterie systemd ; ailleurs, un processus détaché sous votre compte ;\n"
+"- [b]porte du pare-feu[/b] : service systemd, OpenRC ou runit ; certificat renouvelé par minuterie systemd ou par une ligne de votre crontab (marquée omega-tail, retirée à la désactivation)."
+msgstr ""
+"omega-tail herkent het init-systeem van de machine en past zich aan:\n"
+"- [b]dienst tailscaled[/b]: systemctl, rc-service of sv;\n"
+"- [b]logs[/b]: journalctl, of de bestanden van de dienst (/var/log/tailscaled.log, svlogd, socklog…);\n"
+"- [b]inperking[/b]: aanvullend systemd-bestand; elders een aparte controlegroep (cgroup v2), verloren als tailscaled herstart (een waarschuwing stelt dan voor haar terug te zetten);\n"
+"- [b]tijdelijke uitschakeling[/b]: systemd-timer; elders een losgekoppeld proces onder uw account;\n"
+"- [b]slagboom van de firewall[/b]: dienst onder systemd, OpenRC of runit; certificaat vernieuwd door een systemd-timer of door een regel in uw crontab (gemarkeerd omega-tail, verwijderd bij het deactiveren)."
+
+msgid ""
+"Langue de l'interface et des exports, thème de l'interface et des exports, "
+"dossiers des exports et des captures d'écran (par défaut var/exports/ et "
+"var/screenshots/), et leur purge après confirmation."
+msgstr ""
+"Taal van de interface en de exports, thema van de interface en de exports, "
+"mappen voor de exports en de schermafbeeldingen (standaard var/exports/ en "
+"var/screenshots/), en hun opschoning na bevestiging."
+
+msgid "Ligne de commande"
+msgstr "Opdrachtregel"
+
+msgid ""
+"- omega-tail : l'interface.\n"
+"- omega-tail etat : l'état et les alertes en texte ; --format json pour un script.\n"
+"- omega-tail aide : cette aide en texte.\n"
+"- omega-tail rapport [--format txt|html|json] [--prive] [--exporter] : le rapport, affiché ou enregistré dans le dossier des exports ; --prive ajoute le compte et les appareils du tailnet.\n"
+"- omega-tail disjoncteur etat | couper --minutes N | couper --totale | retablir\n"
+"- omega-tail porte etat | certificat [--si-besoin] | bloquer ADRESSE [--toujours] | debloquer ADRESSE | confiance ADRESSE\n"
+"- omega-tail --version"
+msgstr ""
+"- omega-tail: de interface.\n"
+"- omega-tail etat: de status en de waarschuwingen als tekst; --format json voor een script.\n"
+"- omega-tail aide: deze help als tekst.\n"
+"- omega-tail rapport [--format txt|html|json] [--prive] [--exporter]: het rapport, getoond of opgeslagen in de exportmap; --prive voegt het account en de apparaten van het tailnet toe.\n"
+"- omega-tail disjoncteur etat | couper --minutes N | couper --totale | retablir\n"
+"- omega-tail porte etat | certificat [--si-besoin] | bloquer ADRESSE [--toujours] | debloquer ADRESSE | confiance ADRESSE\n"
+"- omega-tail --version"
+
+msgid ""
+"Depuis cette aide : écrire à l'auteur, le formulaire du site, un café, et "
+"vérifier les mises à jour."
+msgstr ""
+"Vanuit deze help: de auteur schrijven, het formulier van de site, een "
+"koffie, en controleren op updates."
+
+msgid "DÉMARRAGE RAPIDE"
+msgstr "SNEL AAN DE SLAG"
+
+msgid "RACCOURCIS"
+msgstr "SNELTOETSEN"
+
+msgid "Aide d’omega-tail"
+msgstr "Help van omega-tail"
+
+msgid "Aide complète : chaque menu, sa fonction et le détail."
+msgstr "Volledige help: elk menu, zijn functie en de details."
+
+msgid "Démarrage rapide"
+msgstr "Snel aan de slag"
+
+msgid "Raccourcis"
+msgstr "Sneltoetsen"
+
+msgid "Touche"
+msgstr "Toets"
+
+msgid "Action"
+msgstr "Actie"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — aide."
+msgstr "OMEGA-TAIL {version} — help."
+
+msgid "Aide - Omega-Tail"
+msgstr "Help - Omega-Tail"
+
+#, python-brace-format
+msgid "{name} (hébergeur)"
+msgstr "{name} (hoster)"
+
+msgid "connecté"
+msgstr "verbonden"
+
+msgid "déconnecté"
+msgstr "afgemeld"
+
+msgid "connexion du compte attendue"
+msgstr "aanmelding van het account verwacht"
+
+msgid "machine à approuver dans la console"
+msgstr "machine goed te keuren in de console"
+
+msgid "démarrage"
+msgstr "opstarten"
+
+msgid "sans état"
+msgstr "zonder status"
+
+msgid "inconnu"
+msgstr "onbekend"
+
+msgid "HTTP"
+msgstr "HTTP"
+
+msgid "HTTPS (TLS par tailscaled)"
+msgstr "HTTPS (TLS door tailscaled)"
+
+msgid "TCP (TLS transmis tel quel)"
+msgstr "TCP (TLS ongewijzigd doorgegeven)"
+
+msgid "TCP, TLS par tailscaled"
+msgstr "TCP, TLS door tailscaled"
+
+msgid "Go"
+msgstr "GB"
+
+msgid "Ko"
+msgstr "KB"
+
+msgid "Mo"
+msgstr "MB"
+
+msgid "o"
+msgstr "B"
+
+msgid "Internet (Funnel)"
+msgstr "Internet (Funnel)"
+
+msgid "tailnet seul (Serve)"
+msgstr "alleen tailnet (Serve)"
+
+msgid "inconnu de systemd"
+msgstr "onbekend bij systemd"
+
+msgid "actif"
+msgstr "actief"
+
+msgid "arrêté"
+msgstr "gestopt"
+
+msgid "en échec"
+msgstr "mislukt"
+
+msgid "arrêt en cours"
+msgstr "wordt gestopt"
+
+msgid "lancé au démarrage"
+msgstr "gestart bij het opstarten"
+
+msgid "pas lancé au démarrage"
+msgstr "niet gestart bij het opstarten"
+
+msgid "observation"
+msgstr "observatie"
+
+msgid "Bouclier du port WireGuard : état illisible."
+msgstr "Schild van de WireGuard-poort: status onleesbaar."
+
+msgid "Bouclier du port WireGuard : retiré depuis omega-fire (ou à la main)."
+msgstr ""
+"Schild van de WireGuard-poort: verwijderd vanuit omega-fire (of handmatig)."
+
+msgid ""
+"Bouclier du port WireGuard : aucun. Sans lui, tailscaled dépense environ un "
+"cœur pour 100 000 paquets par seconde, même invalides."
+msgstr ""
+"Schild van de WireGuard-poort: geen. Zonder schild besteedt tailscaled "
+"ongeveer een kern aan 100 000 pakketten per seconde, zelfs ongeldige."
+
+msgid ""
+"Bouclier du port WireGuard ABSENT : un autre outil a effacé sa table ; « "
+"Reposer » la remet."
+msgstr ""
+"Schild van de WireGuard-poort AFWEZIG: een ander hulpmiddel heeft zijn tabel"
+" gewist; „Opnieuw plaatsen” zet haar terug."
+
+msgid ""
+"Bouclier du port WireGuard : état non mis à jour (service omega-bouclier-wg "
+"arrêté ?)."
+msgstr ""
+"Schild van de WireGuard-poort: status niet bijgewerkt (dienst omega-"
+"bouclier-wg gestopt?)."
+
+#, python-brace-format
+msgid ""
+"Bouclier du port WireGuard : {mode}, géré par {manager} ; {count} paquet(s) "
+"refusé(s)"
+msgstr ""
+"Schild van de WireGuard-poort: {mode}, beheerd door {manager}; {count} "
+"pakket(ten) geweigerd"
+
+#, python-brace-format
+msgid ""
+"Bouclier du port WireGuard : {mode}, géré par {manager} ; {count} paquet(s) "
+"auraient été refusés"
+msgstr ""
+"Schild van de WireGuard-poort: {mode}, beheerd door {manager}; {count} "
+"pakket(ten) zouden geweigerd zijn"
+
+msgid "adresse bloquée"
+msgstr "adres geblokkeerd"
+
+msgid "budget global dépassé"
+msgstr "globaal budget overschreden"
+
+msgid "liste noire"
+msgstr "blokkeerlijst"
+
+msgid "trop de connexions d'un réseau"
+msgstr "te veel verbindingen van een netwerk"
+
+msgid "trop de connexions d'une adresse"
+msgstr "te veel verbindingen van een adres"
+
+msgid "mauvais nom de site (SNI)"
+msgstr "verkeerde sitenaam (SNI)"
+
+msgid "pas une connexion TLS"
+msgstr "geen TLS-verbinding"
+
+msgid "AS d'hébergeur en rafale"
+msgstr "hoster-AS in vloedgolf"
+
+msgid "empreinte inconnue en rafale"
+msgstr "onbekende vingerafdruk in vloedgolf"
+
+msgid "pays limité en rafale"
+msgstr "beperkt land in vloedgolf"
+
+#, python-brace-format
+msgid "tailscaled ne répond pas : {error}"
+msgstr "tailscaled antwoordt niet: {error}"
+
+#, python-brace-format
+msgid "État : {state}"
+msgstr "Status: {state}"
+
+#, python-brace-format
+msgid "Version : {daemon} en marche, {client} installé"
+msgstr "Versie: {daemon} draait, {client} geïnstalleerd"
+
+#, python-brace-format
+msgid "Nom de la machine : {name}"
+msgstr "Naam van de machine: {name}"
+
+#, python-brace-format
+msgid "Compte : {user}"
+msgstr "Account: {user}"
+
+msgid "Compte : masqué (non inclus dans ce rapport)"
+msgstr "Account: verborgen (niet opgenomen in dit rapport)"
+
+#, python-brace-format
+msgid ""
+"Appareils du tailnet : {online} en ligne sur {total} (plus {relays} relais "
+"Funnel de Tailscale)"
+msgstr ""
+"Tailnet-apparaten: {online} online van {total} (plus {relays} Funnel-relays "
+"van Tailscale)"
+
+#, python-brace-format
+msgid "Appareils du tailnet : {online} en ligne sur {total}"
+msgstr "Tailnet-apparaten: {online} online van {total}"
+
+#, python-brace-format
+msgid "Clé de la machine : {expiry}"
+msgstr "Sleutel van de machine: {expiry}"
+
+msgid "sans expiration"
+msgstr "verloopt niet"
+
+msgid "aucun"
+msgstr "geen"
+
+msgid "Préférence"
+msgstr "Voorkeur"
+
+msgid "Valeur"
+msgstr "Waarde"
+
+msgid "Rien n'est publié (ni Serve, ni Funnel)."
+msgstr "Er is niets gepubliceerd (geen Serve, geen Funnel)."
+
+#, python-brace-format
+msgid "Machine : {name} ({count} fils)"
+msgstr "Machine: {name} ({count} threads)"
+
+#, python-brace-format
+msgid "Charge : {a:.2f} {b:.2f} {c:.2f}"
+msgstr "Belasting: {a:.2f} {b:.2f} {c:.2f}"
+
+msgid "pas de capteur"
+msgstr "geen sensor"
+
+#, python-brace-format
+msgid "Mémoire vive utilisée : {value}"
+msgstr "Gebruikt werkgeheugen: {value}"
+
+msgid "MACHINE"
+msgstr "MACHINE"
+
+msgid "PARE-FEU FUNNEL"
+msgstr "FUNNEL-FIREWALL"
+
+msgid "Pare-feu indisponible sur cette machine."
+msgstr "Firewall niet beschikbaar op deze machine."
+
+#, python-brace-format
+msgid "Service de la porte : {state}"
+msgstr "Dienst van de slagboom: {state}"
+
+#, python-brace-format
+msgid "Protection active depuis {since} : Funnel {port} → porte → {backend}"
+msgstr ""
+"Bescherming actief sinds {since}: Funnel {port} → slagboom → {backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions depuis le démarrage de la porte : {total} reçues · {refused} "
+"refusées avant chiffrement · {admitted} admises · {current} en cours"
+msgstr ""
+"Verbindingen sinds de start van de slagboom: {total} ontvangen · {refused} "
+"geweigerd vóór versleuteling · {admitted} toegelaten · {current} lopend"
+
+msgid "Protection inactive : Funnel ne passe pas par la porte."
+msgstr "Bescherming inactief: Funnel loopt niet via de slagboom."
+
+#, python-brace-format
+msgid "Mode : {mode}"
+msgstr "Modus: {mode}"
+
+msgid "observation (rien n'est refusé)"
+msgstr "observatie (niets wordt geweigerd)"
+
+msgid "normal (les règles refusent)"
+msgstr "normaal (de regels weigeren)"
+
+#, python-brace-format
+msgid ""
+"Règles : {ip} connexions / 10 s par adresse · {prefix} / 10 s par réseau · "
+"budget global {budget} / s · {maximum} connexions au plus · blocage {block} "
+"min · nom du site {sni}"
+msgstr ""
+"Regels: {ip} verbindingen / 10 s per adres · {prefix} / 10 s per netwerk · "
+"globaal budget {budget} / s · hoogstens {maximum} verbindingen · blokkering "
+"{block} min · sitenaam {sni}"
+
+msgid "non vérifié"
+msgstr "niet gecontroleerd"
+
+msgid "vérifié"
+msgstr "gecontroleerd"
+
+#, python-brace-format
+msgid "Certificat : encore {days} jour(s)"
+msgstr "Certificaat: nog {days} dag(en)"
+
+#, python-brace-format
+msgid "Confiance : {count} adresse(s) ou réseau(x)"
+msgstr "Vertrouwen: {count} adres(sen) of netwerk(en)"
+
+#, python-brace-format
+msgid "Liste noire : {entries}"
+msgstr "Blokkeerlijst: {entries}"
+
+msgid "vide"
+msgstr "leeg"
+
+#, python-brace-format
+msgid "Bloquées en ce moment : {entries}"
+msgstr "Nu geblokkeerd: {entries}"
+
+msgid "Bloquées en ce moment : aucune"
+msgstr "Nu geblokkeerd: geen"
+
+#, python-brace-format
+msgid "Regroupements : {mode} · {attack}"
+msgstr "Groeperingen: {mode} · {attack}"
+
+msgid "MODE ATTAQUE en cours"
+msgstr "AANVALSMODUS bezig"
+
+msgid "mode normal"
+msgstr "normale modus"
+
+#, python-brace-format
+msgid "Empreintes : apprentissage, encore {days} jour(s)"
+msgstr "Vingerafdrukken: leerfase, nog {days} dag(en)"
+
+#, python-brace-format
+msgid "Empreintes habituelles : {count} (référence prête)"
+msgstr "Gebruikelijke vingerafdrukken: {count} (referentie gereed)"
+
+#, python-brace-format
+msgid "Base AS / pays : à jour il y a {days} jour(s)"
+msgstr "AS-/landendatabase: {days} dag(en) geleden bijgewerkt"
+
+msgid "Base AS / pays : absente"
+msgstr "AS-/landendatabase: afwezig"
+
+msgid "Empreintes les plus actives"
+msgstr "Actiefste vingerafdrukken"
+
+msgid "AS les plus actifs"
+msgstr "Actiefste AS"
+
+msgid "Pays les plus actifs"
+msgstr "Actiefste landen"
+
+msgid "Adresse la plus active"
+msgstr "Actiefste adres"
+
+msgid "Connexions / 10 s"
+msgstr "Verbindingen / 10 s"
+
+msgid "confiance"
+msgstr "vertrouwen"
+
+msgid "admise"
+msgstr "toegelaten"
+
+msgid "bloquée"
+msgstr "geblokkeerd"
+
+#, python-brace-format
+msgid "Confinement de tailscaled : {state}"
+msgstr "Inperking van tailscaled: {state}"
+
+msgid "Veille automatique : désactivée"
+msgstr "Automatische bewaking: gedeactiveerd"
+
+msgid "Veille automatique : activée mais arrêtée (aucun signe de vie)"
+msgstr "Automatische bewaking: geactiveerd maar gestopt (geen levensteken)"
+
+#, python-brace-format
+msgid ""
+"Veille automatique : active · {strikes} dépassement(s) récent(s) · prochaine"
+" coupure {minutes} min"
+msgstr ""
+"Automatische bewaking: actief · {strikes} recente overschrijding(en) · "
+"volgende uitschakeling {minutes} min"
+
+#, python-brace-format
+msgid ""
+"Disjoncteur : tailscaled au-delà de {cpu:.0f} % d'un cœur pendant {seconds} "
+"s, ou machine au-delà de {temperature:.0f} °C ; coupure proposée de "
+"{minutes} min"
+msgstr ""
+"Stroomonderbreker: tailscaled boven {cpu:.0f} % van een kern gedurende "
+"{seconds} s, of machine boven {temperature:.0f} °C; voorgestelde "
+"uitschakeling {minutes} min"
+
+#, python-brace-format
+msgid "Funnel coupé depuis {since} ; remise en route {until}"
+msgstr "Funnel uitgeschakeld sinds {since}; herinschakeling {until}"
+
+msgid "manuelle"
+msgstr "handmatig"
+
+msgid "Aucune coupure de Funnel en cours."
+msgstr "Geen lopende uitschakeling van Funnel."
+
+#, python-brace-format
+msgid "  origine : {tool} · géré par {manager} · pairs connus : {peers}"
+msgstr "  herkomst: {tool} · beheerd door {manager} · bekende peers: {peers}"
+
+msgid "Journal de la veille (derniers événements) :"
+msgstr "Log van de bewaking (laatste gebeurtenissen):"
+
+msgid "SURVIE"
+msgstr "OVERLEVEN"
+
+msgid "Aucune alerte."
+msgstr "Geen waarschuwingen."
+
+#, python-brace-format
+msgid "ATTAQUES DES {days} DERNIERS JOURS"
+msgstr "AANVALLEN VAN DE LAATSTE {days} DAGEN"
+
+msgid "Pare-feu indisponible : rien à compter."
+msgstr "Firewall niet beschikbaar: niets te tellen."
+
+#, python-brace-format
+msgid "Journal de la porte illisible : {error}"
+msgstr "Log van de slagboom onleesbaar: {error}"
+
+msgid ""
+"Lu dans le journal de la porte : chaque connexion marquée par une règle "
+"(refusée, ou seulement comptée en observation, selon le mode du moment)."
+msgstr ""
+"Gelezen in het log van de slagboom: elke verbinding die door een regel is "
+"gemarkeerd (geweigerd, of in observatie alleen geteld, afhankelijk van de "
+"modus op dat moment)."
+
+msgid "Aucune connexion marquée sur la période."
+msgstr "Geen gemarkeerde verbinding in de periode."
+
+#, python-brace-format
+msgid "Connexions marquées : {count}{floor}"
+msgstr "Gemarkeerde verbindingen: {count}{floor}"
+
+msgid " (au moins : journal trop long, seules les plus récentes ont été lues)"
+msgstr " (minstens: log te lang, alleen de recentste zijn gelezen)"
+
+#, python-brace-format
+msgid ""
+"Règles de la porte, connexions qui auraient été refusées (observation) : "
+"{reasons}"
+msgstr ""
+"Regels van de slagboom, verbindingen die geweigerd zouden zijn (observatie):"
+" {reasons}"
+
+#, python-brace-format
+msgid "Règles de la porte, connexions refusées : {reasons}"
+msgstr "Regels van de slagboom, geweigerde verbindingen: {reasons}"
+
+#, python-brace-format
+msgid "Regroupements, connexions refusées : {reasons}"
+msgstr "Groeperingen, geweigerde verbindingen: {reasons}"
+
+#, python-brace-format
+msgid ""
+"Regroupements, connexions qui auraient été refusées (observation) : "
+"{reasons}"
+msgstr ""
+"Groeperingen, verbindingen die geweigerd zouden zijn (observatie): {reasons}"
+
+#, python-brace-format
+msgid "Par jour : {days}"
+msgstr "Per dag: {days}"
+
+msgid "AS"
+msgstr "AS"
+
+msgid "Adresse"
+msgstr "Adres"
+
+msgid "Connexions marquées"
+msgstr "Gemarkeerde verbindingen"
+
+msgid "Pays"
+msgstr "Land"
+
+msgid "en ligne"
+msgstr "online"
+
+msgid "hors ligne"
+msgstr "offline"
+
+msgid "APPAREILS DU TAILNET"
+msgstr "APPARATEN VAN HET TAILNET"
+
+msgid "Aucun appareil lu."
+msgstr "Geen apparaten gelezen."
+
+msgid "Système"
+msgstr "Systeem"
+
+msgid "Compte et appareils du tailnet inclus."
+msgstr "Account en tailnet-apparaten opgenomen."
+
+msgid ""
+"Compte et appareils du tailnet non inclus (seulement leur nombre) ; les "
+"adresses des attaquants restent."
+msgstr ""
+"Account en tailnet-apparaten niet opgenomen (alleen hun aantal); de adressen"
+" van de aanvallers blijven."
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — RAPPORT DE LA MACHINE {machine}"
+msgstr "OMEGA-TAIL {version} — RAPPORT VAN DE MACHINE {machine}"
+
+#, python-brace-format
+msgid "Établi le {date} (lecture seule, sans droits)."
+msgstr "Opgesteld op {date} (alleen lezen, zonder rechten)."
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — rapport."
+msgstr "OMEGA-TAIL {version} — rapport."
+
+msgid "Rapport - Omega-Tail"
+msgstr "Rapport - Omega-Tail"
+
+msgid ""
+"Le démarrage de tailscaled lance « tailscale up » (votre fichier d'ajout). "
+"Depuis qu'un réglage a changé (opérateur, nom, routes…), Tailscale refuse ce"
+" « up » incomplet : systemd arrête alors tailscaled et abandonne après cinq "
+"essais (la machine sort du tailnet). omega-tail ajoute « - » devant cette "
+"commande : son refus n'arrête plus le service, et vos réglages restent "
+"gardés par Tailscale. Rien d'autre ne change ; l'original est gardé dans "
+"var/survie."
+msgstr ""
+"Het opstarten van tailscaled voert „tailscale up” uit (uw aanvullende "
+"bestand). Sinds een instelling is veranderd (operator, naam, routes…), "
+"weigert Tailscale deze onvolledige „up”: systemd stopt dan tailscaled en "
+"geeft het na vijf pogingen op (de machine verlaat het tailnet). omega-tail "
+"zet „-” voor dit commando: de weigering ervan stopt de dienst niet meer, en "
+"uw instellingen blijven door Tailscale bewaard. Verder verandert er niets; "
+"het origineel wordt bewaard in var/survie."
+
+msgid "Lecture de l'état"
+msgstr "Status wordt gelezen"
+
+#, python-brace-format
+msgid "Valeurs refusées (nombre hors limites) : {keys}"
+msgstr "Geweigerde waarden (getal buiten de grenzen): {keys}"
+
+msgid "Seuils enregistrés."
+msgstr "Drempels opgeslagen."
+
+#, python-brace-format
+msgid "Pas de nouvelle proposition pendant {minutes} min."
+msgstr "Geen nieuw voorstel gedurende {minutes} min."
+
+#, python-brace-format
+msgid ""
+"Funnel sera coupé {minutes} min puis remis en route automatiquement, à "
+"l'identique (minuterie systemd : sudo une fois, dans le terminal)."
+msgstr ""
+"Funnel wordt {minutes} min uitgeschakeld en daarna automatisch ongewijzigd "
+"weer ingeschakeld (systemd-timer: eenmaal sudo, in de terminal)."
+
+msgid ""
+"Funnel sera coupé jusqu'à ce que vous le rétablissiez (« Rétablir maintenant"
+" »)."
+msgstr "Funnel wordt uitgeschakeld tot u het herstelt („Nu herstellen”)."
+
+msgid "COUPER FUNNEL ?"
+msgstr "FUNNEL UITSCHAKELEN?"
+
+msgid ""
+"Les connexions venues d'Internet s'arrêtent aussitôt ; le tailnet (Serve, "
+"SSH) n'est pas touché."
+msgstr ""
+"De verbindingen vanaf internet stoppen meteen; het tailnet (Serve, SSH) "
+"wordt niet geraakt."
+
+msgid "Couper"
+msgstr "Uitschakelen"
+
+msgid "Disjoncteur"
+msgstr "Stroomonderbreker"
+
+msgid "Pare-feu indisponible."
+msgstr "Firewall niet beschikbaar."
+
+#, python-brace-format
+msgid "HAProxy : {path}"
+msgstr "HAProxy: {path}"
+
+msgid "non installé (« Installer HAProxy »)"
+msgstr "niet geïnstalleerd („HAProxy installeren”)"
+
+#, python-brace-format
+msgid ""
+"Protection ACTIVE depuis {since} : Funnel {port} → porte 127.0.0.1:{gate} → "
+"{backend}"
+msgstr ""
+"Bescherming ACTIEF sinds {since}: Funnel {port} → slagboom 127.0.0.1:{gate} "
+"→ {backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions : {total} reçues · {refused} refusées avant chiffrement · "
+"{current} en cours"
+msgstr ""
+"Verbindingen: {total} ontvangen · {refused} geweigerd vóór versleuteling · "
+"{current} lopend"
+
+#, python-brace-format
+msgid ""
+"Protection inactive. Funnel {port} (HTTPS par tailscaled) → {backend} : pris"
+" en charge."
+msgstr ""
+"Bescherming inactief. Funnel {port} (HTTPS door tailscaled) → {backend}: "
+"ondersteund."
+
+#, python-brace-format
+msgid "Protection inactive : {reason}."
+msgstr "Bescherming inactief: {reason}."
+
+#, python-brace-format
+msgid "Certificat : encore {days} jour(s) (renouvelé chaque jour si besoin)"
+msgstr "Certificaat: nog {days} dag(en) (indien nodig elke dag vernieuwd)"
+
+#, python-brace-format
+msgid ""
+"Mode : {mode} · {ip} connexions / 10 s par adresse · budget {budget} / s · "
+"blocage {block} min"
+msgstr ""
+"Modus: {mode} · {ip} verbindingen / 10 s per adres · budget {budget} / s · "
+"blokkering {block} min"
+
+msgid ""
+"⚠ Devenez opérateur de Tailscale (tableau de bord) : la porte en a besoin."
+msgstr ""
+"⚠ Word operator van Tailscale (dashboard): de slagboom heeft het nodig."
+
+msgid "Pare-feu"
+msgstr "Firewall"
+
+msgid "Changement en cours, puis vérification…"
+msgstr "Wijziging bezig, daarna controle…"
+
+msgid ""
+"Gestionnaire de paquets inconnu : installez HAProxy avec celui de votre "
+"système."
+msgstr "Onbekende pakketbeheerder: installeer HAProxy met die van uw systeem."
+
+msgid "INSTALLER HAPROXY ?"
+msgstr "HAPROXY INSTALLEREN?"
+
+msgid ""
+"HAProxy est installé par le gestionnaire de paquets de la distribution "
+"(mises à jour de sécurité comprises)."
+msgstr ""
+"HAProxy wordt geïnstalleerd door de pakketbeheerder van de distributie "
+"(beveiligingsupdates inbegrepen)."
+
+msgid "ACTIVER LA PROTECTION ?"
+msgstr "BESCHERMING ACTIVEREN?"
+
+msgid ""
+"1. Préparation (certificat *.ts.net, listes, configuration vérifiée).\n"
+"2. Services de la porte et de son certificat (sudo, dans le terminal ; la porte tourne sous votre compte, jamais en root).\n"
+"3. Bascule de Funnel vers la porte, puis essai depuis Internet. En cas d'échec, la publication d'origine est remise aussitôt.\n"
+"\n"
+"Coupure du site : quelques secondes pendant la bascule."
+msgstr ""
+"1. Voorbereiding (certificaat *.ts.net, lijsten, gecontroleerde configuratie).\n"
+"2. Diensten van de slagboom en zijn certificaat (sudo, in de terminal; de slagboom draait onder uw account, nooit als root).\n"
+"3. Omschakeling van Funnel naar de slagboom, daarna test vanaf internet. Bij een mislukking wordt de oorspronkelijke publicatie meteen teruggezet.\n"
+"\n"
+"Onderbreking van de site: enkele seconden tijdens de omschakeling."
+
+msgid "Activer"
+msgstr "Activeren"
+
+msgid "Préparation de la porte…"
+msgstr "Voorbereiding van de slagboom…"
+
+msgid "Porte lancée ; bascule de Funnel et essai depuis Internet…"
+msgstr "Slagboom gestart; omschakeling van Funnel en test vanaf internet…"
+
+msgid "DÉSACTIVER LA PROTECTION ?"
+msgstr "BESCHERMING DEACTIVEREN?"
+
+msgid ""
+"Funnel est remis exactement comme avant (HTTPS par tailscaled), vérifié, "
+"puis la porte est arrêtée (sudo, dans le terminal). Vos réglages et vos "
+"listes sont gardés."
+msgstr ""
+"Funnel wordt precies zoals voorheen teruggezet (HTTPS door tailscaled), "
+"gecontroleerd, daarna wordt de slagboom gestopt (sudo, in de terminal). Uw "
+"instellingen en lijsten blijven bewaard."
+
+msgid "Désactiver"
+msgstr "Deactiveren"
+
+msgid "tailscaled ne tourne pas : rien à confiner."
+msgstr "tailscaled draait niet: niets in te perken."
+
+#, python-brace-format
+msgid ""
+"Pose le fichier d'ajout {path} (votre propre override.conf n'est pas "
+"modifié), recharge systemd{restart}."
+msgstr ""
+"Plaatst het aanvullende bestand {path} (uw eigen override.conf wordt niet "
+"gewijzigd), herlaadt systemd{restart}."
+
+msgid ", puis redémarre tailscaled"
+msgstr ", herstart daarna tailscaled"
+
+msgid ""
+"Place tailscaled dans un groupe de contrôle à part (cgroup v2), avec son "
+"plafond et sa priorité. Aucun de vos fichiers n'est modifié. Perdu si "
+"tailscaled redémarre : omega-tail le signalera."
+msgstr ""
+"Plaatst tailscaled in een aparte controlegroep (cgroup v2), met zijn plafond"
+" en zijn prioriteit. Geen van uw bestanden wordt gewijzigd. Verloren als "
+"tailscaled herstart: omega-tail meldt het."
+
+msgid "CONFINER TAILSCALED ?"
+msgstr "TAILSCALED INPERKEN?"
+
+msgid ""
+"Supprime les fichiers d'ajout posés par omega-tail, puis recharge systemd."
+msgstr ""
+"Verwijdert de aanvullende bestanden die omega-tail heeft geplaatst en "
+"herlaadt daarna systemd."
+
+msgid "RETIRER LE CONFINEMENT ?"
+msgstr "INPERKING VERWIJDEREN?"
+
+msgid ""
+"Rien à corriger ici : la commande n'est pas dans un fichier de /etc/systemd "
+"(à corriger à la main, avec « - » devant la commande)."
+msgstr ""
+"Hier niets te herstellen: het commando staat niet in een bestand van "
+"/etc/systemd (handmatig te herstellen, met „-” voor het commando)."
+
+msgid "CORRIGER LE DÉMARRAGE DE TAILSCALED ?"
+msgstr "OPSTART VAN TAILSCALED HERSTELLEN?"
+
+msgid ""
+"Cette session passe par Tailscale : elle se figera quelques secondes pendant"
+" le redémarrage, puis reviendra en général."
+msgstr ""
+"Deze sessie loopt via Tailscale: ze bevriest enkele seconden tijdens de "
+"herstart en komt daarna meestal terug."
+
+msgid "Commandes :"
+msgstr "Commando's:"
+
+msgid ""
+"La veille coupe et remet Funnel sous votre compte : devenez d'abord "
+"opérateur de Tailscale (tableau de bord)."
+msgstr ""
+"De bewaking schakelt Funnel uit en weer in onder uw account: word eerst "
+"operator van Tailscale (dashboard)."
+
+msgid ""
+"La veille tournera en permanence, sous votre compte (jamais root), même "
+"omega-tail fermé. Sous attaque, elle coupe Funnel seule par paliers (15 min,"
+" 30 min, puis 1 h renouvelable) et le remet en route seule."
+msgstr ""
+"De bewaking draait doorlopend onder uw account (nooit root), ook als omega-"
+"tail gesloten is. Bij een aanval schakelt ze Funnel vanzelf in stappen uit "
+"(15 min, 30 min, daarna telkens 1 u) en schakelt het vanzelf weer in."
+
+msgid ""
+"La veille s'arrête : sous attaque, omega-tail ouvert vous proposera de "
+"nouveau la coupure."
+msgstr ""
+"De bewaking stopt: bij een aanval stelt het geopende omega-tail u de "
+"uitschakeling weer voor."
+
+msgid "ACTIVER LA VEILLE AUTOMATIQUE ?"
+msgstr "AUTOMATISCHE BEWAKING ACTIVEREN?"
+
+msgid "DÉSACTIVER LA VEILLE AUTOMATIQUE ?"
+msgstr "AUTOMATISCHE BEWAKING DEACTIVEREN?"
+
+msgid "Veille automatique activée."
+msgstr "Automatische bewaking geactiveerd."
+
+msgid "Veille automatique désactivée."
+msgstr "Automatische bewaking gedeactiveerd."
+
+#, python-brace-format
+msgid "Commande refusée (code {code}) : rien n'a changé."
+msgstr "Commando geweigerd (code {code}): er is niets veranderd."
+
+msgid "omega-tail — commandes lancées une à une :"
+msgstr "omega-tail — commando's één voor één uitgevoerd:"
+
+msgid "Le mot de passe sudo ne s'affiche pas pendant la saisie."
+msgstr "Het sudo-wachtwoord wordt tijdens het typen niet getoond."
+
+msgid "✔ Terminé."
+msgstr "✔ Klaar."
+
+#, python-brace-format
+msgid "✖ Échec (code {code})."
+msgstr "✖ Mislukt (code {code})."
+
+msgid "Entrée pour revenir à omega-tail… "
+msgstr "Enter om terug te keren naar omega-tail… "
+
+#, python-brace-format
+msgid "Fait : {command}"
+msgstr "Gedaan: {command}"
+
+#, python-brace-format
+msgid "Échec (code {code}) : {command}"
+msgstr "Mislukt (code {code}): {command}"
+
+msgid "Compte inconnu ou root : rien à faire."
+msgstr "Account onbekend of root: niets te doen."
+
+#, python-brace-format
+msgid ""
+"Le compte « {user} » pourra régler Tailscale (connexion, publication, "
+"préférences) sans sudo. Une seule fois ; annulable ensuite avec « sudo "
+"tailscale set --operator= »."
+msgstr ""
+"Het account „{user}” kan Tailscale (verbinding, publicatie, voorkeuren) "
+"zonder sudo instellen. Eén keer; daarna terug te draaien met „sudo tailscale"
+" set --operator=”."
+
+msgid "DEVENIR OPÉRATEUR DE TAILSCALE ?"
+msgstr "OPERATOR VAN TAILSCALE WORDEN?"
+
+msgid "Dossier des captures non configuré."
+msgstr "Map voor schermafbeeldingen niet ingesteld."
+
+msgid "Redémarrer"
+msgstr "Herstarten"
+
+msgid "PROTECTION"
+msgstr "BESCHERMING"
+
+msgid "TAILSCALE"
+msgstr "TAILSCALE"
+
+msgid ""
+"omega-tail — authentification sudo pour les commandes affichées (le mot de "
+"passe ne s'affiche pas pendant la saisie). L'interface revient ensuite."
+msgstr ""
+"omega-tail — sudo-authenticatie voor de getoonde commando's (het wachtwoord "
+"wordt tijdens het typen niet getoond). De interface komt daarna terug."
+
+msgid "Aucune commande à copier."
+msgstr "Geen opdracht om te kopiëren."
+
+#, python-brace-format
+msgid ""
+"{count} commande(s) copiée(s) dans le presse-papiers ({tool}) : collez-les "
+"dans un terminal (Ctrl+Maj+V)."
+msgstr ""
+"{count} opdracht(en) gekopieerd naar het klembord ({tool}): plak ze in een "
+"terminal (Ctrl+Shift+V)."
+
+msgid ""
+"omega-tail — commandes à copier. Sélectionnez-les à la souris puis copiez "
+"avec le raccourci de votre terminal (souvent Ctrl+Maj+C) :"
+msgstr ""
+"omega-tail — commando's om te kopiëren. Selecteer ze met de muis en kopieer "
+"ze met de sneltoets van uw terminal (vaak Ctrl+Shift+C):"
+
+msgid "Adresses"
+msgstr "Adressen"
+
+msgid "Empreintes"
+msgstr "Vingerafdrukken"
+
+#, python-brace-format
+msgid "MODE ATTAQUE (retour au normal après {seconds} s de calme)"
+msgstr "AANVALSMODUS (terug naar normaal na {seconds} s rust)"
+
+msgid "regroupements appliqués"
+msgstr "groeperingen toegepast"
+
+msgid "regroupements en observation"
+msgstr "groeperingen in observatie"
+
+#, python-brace-format
+msgid "auraient été refusées (7 j) : {reasons}"
+msgstr "zouden geweigerd zijn (7 d): {reasons}"
+
+#, python-brace-format
+msgid "refusées (7 j) : {reasons}"
+msgstr "geweigerd (7 d): {reasons}"
+
+msgid "ATTAQUES ET DÉCISIONS"
+msgstr "AANVALLEN EN BESLISSINGEN"
+
+msgid ""
+"La liste noire d'abord, puis les adresses bloquées, les plus actives, et la "
+"confiance. Choisissez une ligne puis une action."
+msgstr ""
+"Eerst de blokkeerlijst, daarna de geblokkeerde adressen, de actiefste en het"
+" vertrouwen. Kies een regel en daarna een actie."
+
+msgid "Bloquer"
+msgstr "Blokkeren"
+
+msgid "Liste noire"
+msgstr "Blokkeerlijst"
+
+msgid "Débloquer"
+msgstr "Deblokkeren"
+
+msgid "Gestion de la liste noire"
+msgstr "Beheer van de blokkeerlijst"
+
+msgid "Expire dans"
+msgstr "Verloopt over"
+
+msgid "Empreinte JA4"
+msgstr "JA4-vingerafdruk"
+
+msgid "Remarque"
+msgstr "Opmerking"
+
+msgid "Total"
+msgstr "Totaal"
+
+#, python-brace-format
+msgid ""
+"Connexions reçues : {total} · refusées avant chiffrement : {refused} · "
+"admises : {admitted} · en cours : {current}"
+msgstr ""
+"Ontvangen verbindingen: {total} · geweigerd vóór versleuteling: {refused} · "
+"toegelaten: {admitted} · lopend: {current}"
+
+msgid "jusqu'au retrait"
+msgstr "tot verwijdering"
+
+msgid "Retirer la confiance"
+msgstr "Vertrouwen intrekken"
+
+msgid "Aucune adresse choisie."
+msgstr "Geen adres gekozen."
+
+msgid "Plus anciennes que N jours"
+msgstr "Ouder dan N dagen"
+
+msgid "Les N plus anciennes"
+msgstr "De N oudste"
+
+msgid "De la ligne A à la ligne B"
+msgstr "Van regel A tot regel B"
+
+msgid "Origine : import"
+msgstr "Herkomst: import"
+
+msgid "Origine : écran Attaques"
+msgstr "Herkomst: scherm Aanvallen"
+
+msgid "Origine : ajout manuel"
+msgstr "Herkomst: handmatig toegevoegd"
+
+msgid "Origine : avant les dates"
+msgstr "Herkomst: vóór de datums"
+
+msgid "Toute la liste"
+msgstr "De hele lijst"
+
+msgid "GESTION DE LA LISTE NOIRE"
+msgstr "BEHEER VAN DE BLOKKEERLIJST"
+
+msgid "AJOUTER OU IMPORTER"
+msgstr "TOEVOEGEN OF IMPORTEREN"
+
+msgid "adresse ou réseau (ex. 203.0.113.7 ou 198.51.100.0/24)"
+msgstr "adres of netwerk (bijv. 203.0.113.7 of 198.51.100.0/24)"
+
+msgid "fichier TXT : une adresse ou un réseau par ligne, # = commentaire"
+msgstr "TXT-bestand: één adres of netwerk per regel, # = commentaar"
+
+msgid "Importer"
+msgstr "Importeren"
+
+msgid ""
+"Les doublons, les adresses déjà couvertes par un réseau de la liste et "
+"celles du tailnet sont écartés et comptés. Un export TXT se réimporte tel "
+"quel (récidive)."
+msgstr ""
+"Dubbels, adressen die al door een netwerk uit de lijst gedekt zijn en die "
+"van het tailnet worden uitgesloten en geteld. Een TXT-export kan ongewijzigd"
+" opnieuw worden geïmporteerd (herhaling)."
+
+msgid "LISTE"
+msgstr "LIJST"
+
+msgid "filtrer : début d'adresse, réseau, date (2026-11), origine"
+msgstr "filteren: begin van adres, netwerk, datum (2026-11), herkomst"
+
+msgid "PURGER"
+msgstr "OPSCHONEN"
+
+msgid "N ou A"
+msgstr "N of A"
+
+msgid "Aperçu"
+msgstr "Voorbeeld"
+
+msgid "Purger"
+msgstr "Opschonen"
+
+msgid ""
+"Les lignes sont numérotées de la plus ancienne à la plus récente, comme dans"
+" le tableau sans filtre. L'aperçu dit combien d'entrées partiraient ; rien "
+"n'est retiré sans confirmation."
+msgstr ""
+"De regels zijn genummerd van de oudste tot de recentste, zoals in de tabel "
+"zonder filter. Het voorbeeld zegt hoeveel items zouden verdwijnen; niets "
+"wordt zonder bevestiging verwijderd."
+
+msgid "THÈME DE LA PAGE HTML"
+msgstr "THEMA VAN DE HTML-PAGINA"
+
+msgid "Exporter HTML"
+msgstr "HTML exporteren"
+
+msgid "Exporter TXT"
+msgstr "TXT exporteren"
+
+msgid "Exporter JSON"
+msgstr "JSON exporteren"
+
+msgid "Voir les exports"
+msgstr "Exports bekijken"
+
+#, python-brace-format
+msgid ""
+"{count} entrée(s) sur {max} au plus. Refusées par la porte avant tout "
+"chiffrement, jusqu'à leur retrait."
+msgstr ""
+"{count} item(s) van hoogstens {max}. Door de slagboom geweigerd vóór elke "
+"versleuteling, tot ze verwijderd worden."
+
+msgid "La liste grossit : exportez-la puis purgez les plus anciennes."
+msgstr "De lijst groeit: exporteer haar en schoon daarna de oudste op."
+
+#, python-brace-format
+msgid ""
+"{shown} premières lignes affichées sur {total} : affinez le filtre, ou "
+"exportez pour tout voir."
+msgstr ""
+"Eerste {shown} regels van {total} getoond: verfijn het filter, of exporteer "
+"om alles te zien."
+
+#, python-brace-format
+msgid "{count} entrée(s) correspondent au filtre."
+msgstr "{count} item(s) komen overeen met het filter."
+
+msgid "La liste noire est vide."
+msgstr "De blokkeerlijst is leeg."
+
+#, python-brace-format
+msgid "{error}"
+msgstr "{error}"
+
+#, python-brace-format
+msgid "Lignes invalides : {lines}"
+msgstr "Ongeldige regels: {lines}"
+
+msgid "Tapez une adresse ou un réseau."
+msgstr "Typ een adres of een netwerk."
+
+msgid "Indiquez le chemin du fichier TXT à importer."
+msgstr "Geef het pad op van het TXT-bestand om te importeren."
+
+#, python-brace-format
+msgid "Fichier introuvable : {path}"
+msgstr "Bestand niet gevonden: {path}"
+
+#, python-brace-format
+msgid "Fichier trop gros (plus de {size} Mo) : découpez-le."
+msgstr "Bestand te groot (meer dan {size} MB): splits het op."
+
+msgid "Import en cours…"
+msgstr "Importeren bezig…"
+
+msgid "Aucune entrée choisie."
+msgstr "Geen item gekozen."
+
+msgid "Tapez N (un nombre entier) dans le premier champ."
+msgstr "Typ N (een geheel getal) in het eerste veld."
+
+msgid "Tapez A et B (numéros de ligne) dans les deux champs."
+msgstr "Typ A en B (regelnummers) in de twee velden."
+
+#, python-brace-format
+msgid "Aperçu : {count} entrée(s) sur {total} partiraient."
+msgstr "Voorbeeld: {count} van {total} items zouden verdwijnen."
+
+#, python-brace-format
+msgid "De {first} à {last}."
+msgstr "Van {first} tot {last}."
+
+msgid "Aucune entrée ne correspond : rien à purger."
+msgstr "Geen enkel item komt overeen: niets op te schonen."
+
+#, python-brace-format
+msgid ""
+"{count} entrée(s) vont quitter la liste noire : ces adresses seront de "
+"nouveau admises (soumises aux règles). Exportez la liste avant si vous "
+"voulez pouvoir les réinjecter."
+msgstr ""
+"{count} item(s) verlaten de blokkeerlijst: deze adressen worden weer "
+"toegelaten (onderworpen aan de regels). Exporteer de lijst vooraf als u ze "
+"opnieuw wilt kunnen invoeren."
+
+msgid "Purge en cours…"
+msgstr "Opschonen bezig…"
+
+msgid "VIDER"
+msgstr "LEEGMAKEN"
+
+msgid "VIDER LA LISTE NOIRE ?"
+msgstr "BLOKKEERLIJST LEEGMAKEN?"
+
+msgid "Vider"
+msgstr "Leegmaken"
+
+msgid "PURGER LA LISTE NOIRE ?"
+msgstr "BLOKKEERLIJST OPSCHONEN?"
+
+#, python-brace-format
+msgid "Liste noire enregistrée ({count} entrée(s)) : {path}"
+msgstr "Blokkeerlijst opgeslagen ({count} item(s)): {path}"
+
+msgid "ATTAQUE PROBABLE — COUPER FUNNEL ?"
+msgstr "WAARSCHIJNLIJKE AANVAL — FUNNEL UITSCHAKELEN?"
+
+#, python-brace-format
+msgid ""
+"{reason}\n"
+"\n"
+"Couper Funnel (port {ports}) arrête aussitôt les connexions venues d'Internet : la machine respire. Le tailnet (Serve, SSH) n'est pas touché.\n"
+"\n"
+"• Coupure de {minutes} min : Funnel est remis en route tout seul, à l'identique, même si omega-tail est fermé.\n"
+"• Coupure totale : Funnel reste coupé jusqu'à ce que vous le rétablissiez (menu Survie)."
+msgstr ""
+"{reason}\n"
+"\n"
+"Funnel uitschakelen (poort {ports}) stopt meteen de verbindingen vanaf internet: de machine ademt weer. Het tailnet (Serve, SSH) wordt niet geraakt.\n"
+"\n"
+"• Uitschakeling van {minutes} min: Funnel wordt vanzelf ongewijzigd weer ingeschakeld, ook als omega-tail gesloten is.\n"
+"• Volledige uitschakeling: Funnel blijft uitgeschakeld tot u het herstelt (menu Overleven)."
+
+#, python-brace-format
+msgid "Couper {minutes} min"
+msgstr "{minutes} min uitschakelen"
+
+msgid "Coupure totale"
+msgstr "Volledig uit"
+
+msgid "Pas maintenant"
+msgstr "Niet nu"
+
+msgid "déconnecté (tailscale down)"
+msgstr "afgemeld (tailscale down)"
+
+msgid "compte à connecter"
+msgstr "account aan te melden"
+
+msgid "machine à approuver"
+msgstr "machine goed te keuren"
+
+msgid "CONNEXION ET RÉGLAGES"
+msgstr "VERBINDING EN INSTELLINGEN"
+
+msgid ""
+"La connexion de cette machine au tailnet, son compte, et les réglages de "
+"Tailscale. Chaque commande s'affiche avant d'être lancée, dans le terminal "
+"(sans sudo si vous êtes opérateur)."
+msgstr ""
+"De verbinding van deze machine met het tailnet, haar account en de "
+"instellingen van Tailscale. Elk commando wordt getoond voordat het in de "
+"terminal wordt uitgevoerd (zonder sudo als u operator bent)."
+
+msgid "Se connecter"
+msgstr "Aanmelden"
+
+msgid "Se déconnecter"
+msgstr "Afmelden"
+
+msgid "Ajouter un compte"
+msgstr "Account toevoegen"
+
+msgid "Déconnexion définitive"
+msgstr "Definitief afmelden"
+
+msgid "COMPTE"
+msgstr "ACCOUNT"
+
+msgid "Comptes de cette machine (lecture…)"
+msgstr "Accounts van deze machine (lezen…)"
+
+msgid "Changer de compte"
+msgstr "Van account wisselen"
+
+msgid "Appliquer"
+msgstr "Toepassen"
+
+msgid "Relire"
+msgstr "Opnieuw lezen"
+
+msgid "Mon compte"
+msgstr "Mijn account"
+
+msgid "Activer le transfert IP"
+msgstr "IP-doorsturing activeren"
+
+msgid " (en cours)"
+msgstr " (huidig)"
+
+#, python-brace-format
+msgid "Comptes illisibles ({error}) : devenez opérateur (tableau de bord)."
+msgstr "Accounts onleesbaar ({error}): word operator (dashboard)."
+
+msgid ""
+"Un seul compte sur cette machine : « Ajouter un compte » pour en connecter "
+"un autre."
+msgstr ""
+"Slechts één account op deze machine: „Account toevoegen” om er nog een aan "
+"te melden."
+
+msgid ""
+"Aucune machine du tailnet ne se propose comme nœud de sortie. Sur la machine"
+" voulue : cocher « Proposer cette machine comme nœud de sortie », appliquer,"
+" puis l'approuver dans la console d'administration de Tailscale (Machines → "
+"Edit route settings)."
+msgstr ""
+"Geen enkele machine van het tailnet biedt zich aan als exitnode. Op de "
+"gewenste machine: „Deze machine aanbieden als exitnode” aanvinken, toepassen"
+" en haar daarna goedkeuren in de beheerconsole van Tailscale (Machines → "
+"Edit route settings)."
+
+#, python-brace-format
+msgid "ex. {user}"
+msgstr "bijv. {user}"
+
+msgid "tailscaled ne répond pas"
+msgstr "tailscaled antwoordt niet"
+
+#, python-brace-format
+msgid "Compte : {user} · tailnet : {tailnet}"
+msgstr "Account: {user} · tailnet: {tailnet}"
+
+#, python-brace-format
+msgid "Machine : {name} · {addresses}"
+msgstr "Machine: {name} · {addresses}"
+
+#, python-brace-format
+msgid "Expiration de la clé : {expiry} · opérateur : {operator}"
+msgstr "Verloop van de sleutel: {expiry} · operator: {operator}"
+
+msgid "aucun (sudo)"
+msgstr "geen (sudo)"
+
+msgid "Votre session passe par Tailscale : se déconnecter vous couperait."
+msgstr "Uw sessie loopt via Tailscale: afmelden zou u afsluiten."
+
+#, python-brace-format
+msgid ""
+"Transfert IP désactivé ({keys}) : le nœud de sortie et les sous-réseaux "
+"annoncés ne transmettront rien. « Activer le transfert IP » écrit un fichier"
+" à part ({path}), gardé au redémarrage."
+msgstr ""
+"IP-doorsturing gedeactiveerd ({keys}): de exitnode en de aangekondigde "
+"subnetten sturen niets door. „IP-doorsturing activeren” schrijft een apart "
+"bestand ({path}), dat een herstart overleeft."
+
+msgid ""
+"Compte inconnu ou root : tapez le nom du compte Linux à rendre opérateur."
+msgstr ""
+"Account onbekend of root: typ de naam van het Linux-account dat operator "
+"moet worden."
+
+#, python-brace-format
+msgid "{name} : {reason}"
+msgstr "{name}: {reason}"
+
+#, python-brace-format
+msgid "{label} : {before} → {after}"
+msgstr "{label}: {before} → {after}"
+
+msgid "Aucun changement."
+msgstr "Geen wijziging."
+
+msgid "Commande :"
+msgstr "Commando:"
+
+#, python-brace-format
+msgid "Transfert IP désactivé ({keys}) : « Activer le transfert IP » aussi."
+msgstr ""
+"IP-doorsturing gedeactiveerd ({keys}): ook „IP-doorsturing activeren”."
+
+#, python-brace-format
+msgid ""
+"Votre session passe par Tailscale ; ces changements peuvent la couper : "
+"{names}."
+msgstr ""
+"Uw sessie loopt via Tailscale; deze wijzigingen kunnen haar verbreken: "
+"{names}."
+
+#, python-brace-format
+msgid "Dernière application ({time}) : la commande a échoué (code {code})."
+msgstr "Laatste toepassing ({time}): het commando is mislukt (code {code})."
+
+#, python-brace-format
+msgid "Dernière application ({time}) :"
+msgstr "Laatste toepassing ({time}):"
+
+#, python-brace-format
+msgid "{label} : {after}"
+msgstr "{label}: {after}"
+
+#, python-brace-format
+msgid "{label} : {after} demandé, {now} lu"
+msgstr "{label}: {after} gevraagd, {now} gelezen"
+
+msgid "À appliquer :"
+msgstr "Toe te passen:"
+
+msgid "Valeur refusée : corrigez la ligne marquée ✖."
+msgstr "Waarde geweigerd: corrigeer de regel gemarkeerd met ✖."
+
+msgid "APPLIQUER LES RÉGLAGES ?"
+msgstr "INSTELLINGEN TOEPASSEN?"
+
+msgid ""
+"Votre session passe par Tailscale : elle sera COUPÉE et ne reviendra pas. Il"
+" faudra un accès local (ou un autre chemin) pour vous reconnecter."
+msgstr ""
+"Uw sessie loopt via Tailscale: ze wordt VERBROKEN en komt niet terug. U hebt"
+" lokale toegang (of een andere weg) nodig om opnieuw verbinding te maken."
+
+msgid "Ce qui est publié (Serve et Funnel) ne sera plus joignable."
+msgstr "Wat gepubliceerd is (Serve en Funnel), is niet meer bereikbaar."
+
+msgid "ACTIVER LE TRANSFERT IP ?"
+msgstr "IP-DOORSTURING ACTIVEREN?"
+
+#, python-brace-format
+msgid ""
+"Le noyau fera suivre les paquets (IPv4 et IPv6) : nécessaire pour un nœud de"
+" sortie ou des sous-réseaux annoncés. Fichier à part {path}, relu au "
+"démarrage (systemd, OpenRC, runit) ; pour annuler : supprimer ce fichier "
+"puis redémarrer."
+msgstr ""
+"De kernel stuurt pakketten door (IPv4 en IPv6): nodig voor een exitnode of "
+"aangekondigde subnetten. Apart bestand {path}, bij het opstarten opnieuw "
+"gelezen (systemd, OpenRC, runit); ongedaan maken: dit bestand verwijderen en"
+" daarna herstarten."
+
+msgid "SE CONNECTER ?"
+msgstr "AANMELDEN?"
+
+msgid ""
+"Remet cette machine dans le tailnet. Si un compte doit s'identifier, "
+"Tailscale affiche dans le terminal l'adresse à ouvrir dans un navigateur."
+msgstr ""
+"Brengt deze machine terug in het tailnet. Als een account zich moet "
+"identificeren, toont Tailscale in de terminal het adres dat u in een browser"
+" moet openen."
+
+msgid "SE DÉCONNECTER ?"
+msgstr "AFMELDEN?"
+
+msgid ""
+"La machine quitte le tailnet (le compte reste enregistré : « Se connecter » "
+"la remet)."
+msgstr ""
+"De machine verlaat het tailnet (het account blijft opgeslagen: „Aanmelden” "
+"brengt haar terug)."
+
+msgid "AJOUTER UN COMPTE ?"
+msgstr "ACCOUNT TOEVOEGEN?"
+
+msgid ""
+"Connecte un autre compte (ou un autre tailnet) sur cette machine ; il "
+"devient le compte en cours. Tailscale affiche l'adresse à ouvrir pour vous "
+"identifier. L'ancien compte reste dans « Changer de compte »."
+msgstr ""
+"Meldt een ander account (of een ander tailnet) aan op deze machine; het "
+"wordt het huidige account. Tailscale toont het adres dat u moet openen om u "
+"te identificeren. Het oude account blijft in „Van account wisselen”."
+
+msgid "Choisissez un autre compte que le compte en cours."
+msgstr "Kies een ander account dan het huidige."
+
+msgid "CHANGER DE COMPTE ?"
+msgstr "VAN ACCOUNT WISSELEN?"
+
+#, python-brace-format
+msgid ""
+"La machine passe sur le compte {account} (tailnet {tailnet}). Son adresse et"
+" ce qu'elle voit du tailnet changent."
+msgstr ""
+"De machine schakelt over naar het account {account} (tailnet {tailnet}). "
+"Haar adres en wat ze van het tailnet ziet, veranderen."
+
+#, python-brace-format
+msgid ""
+"La machine est retirée du compte : sa clé est révoquée, il faudra s'identifier à nouveau (et peut-être la réapprouver) pour la remettre dans le tailnet.\n"
+"\n"
+"Commande : {command}"
+msgstr ""
+"De machine wordt uit het account verwijderd: haar sleutel wordt ingetrokken, u moet zich opnieuw identificeren (en haar misschien opnieuw goedkeuren) om haar terug in het tailnet te brengen.\n"
+"\n"
+"Commando: {command}"
+
+#, python-brace-format
+msgid "Pour confirmer, tapez le nom de la machine : {word}"
+msgstr "Typ ter bevestiging de naam van de machine: {word}"
+
+msgid "DÉCONNEXION DÉFINITIVE ?"
+msgstr "DEFINITIEF AFMELDEN?"
+
+msgid "Déconnecter"
+msgstr "Afmelden"
+
+msgid "bouton « Devenir opérateur »"
+msgstr "knop „Operator worden”"
+
+#, python-brace-format
+msgid "lot {lot}"
+msgstr "lot {lot}"
+
+msgid "Tailscale"
+msgstr "Tailscale"
+
+msgid "n'est pas installé"
+msgstr "is niet geïnstalleerd"
+
+#, python-brace-format
+msgid "ne répond pas : {error}"
+msgstr "antwoordt niet: {error}"
+
+msgid "tailscaled"
+msgstr "tailscaled"
+
+msgid "Client installé"
+msgstr "Geïnstalleerde client"
+
+#, python-brace-format
+msgid "{daemon} en marche, {client} installé"
+msgstr "{daemon} draait, {client} geïnstalleerd"
+
+msgid "Version"
+msgstr "Versie"
+
+msgid "Compte"
+msgstr "Account"
+
+msgid "Appareils du tailnet"
+msgstr "Tailnet-apparaten"
+
+#, python-brace-format
+msgid "{online} en ligne sur {total}"
+msgstr "{online} online van {total}"
+
+msgid "Clé de la machine"
+msgstr "Sleutel van de machine"
+
+msgid "aucun (sudo requis)"
+msgstr "geen (sudo vereist)"
+
+msgid "Nœud de sortie proposé"
+msgstr "Aangeboden als exitnode"
+
+msgid "Machine"
+msgstr "Machine"
+
+#, python-brace-format
+msgid "{name} ({count} fils)"
+msgstr "{name} ({count} threads)"
+
+msgid "CPU machine"
+msgstr "CPU machine"
+
+msgid "Charge"
+msgstr "Belasting"
+
+msgid "Température"
+msgstr "Temperatuur"
+
+msgid "Mémoire"
+msgstr "Geheugen"
+
+#, python-brace-format
+msgid "{used} utilisés sur {total}"
+msgstr "{used} van {total} gebruikt"
+
+msgid "CPU tailscaled"
+msgstr "CPU tailscaled"
+
+#, python-brace-format
+msgid "{cpu} d'un cœur, {memory}"
+msgstr "{cpu} van een kern, {memory}"
+
+msgid "Confinement"
+msgstr "Inperking"
+
+msgid "Funnel"
+msgstr "Funnel"
+
+msgid "coupé par le disjoncteur"
+msgstr "uitgeschakeld door de stroomonderbreker"
+
+#, python-brace-format
+msgid "ouvert sur {ports}"
+msgstr "open op {ports}"
+
+msgid "sans porte"
+msgstr "zonder slagboom"
+
+msgid "fermé"
+msgstr "gesloten"
+
+msgid "actif · MODE ATTAQUE"
+msgstr "actief · AANVALSMODUS"
+
+msgid "Pare-feu (porte)"
+msgstr "Firewall (slagboom)"
+
+msgid "inactif"
+msgstr "inactief"
+
+#, python-brace-format
+msgid "{count} entrée(s)"
+msgstr "{count} item(s)"
+
+msgid "Veille"
+msgstr "Bewaking"
+
+msgid "inactive"
+msgstr "inactief"
+
+msgid "arrêtée"
+msgstr "gestopt"
+
+#, python-brace-format
+msgid "active, palier {level}"
+msgstr "actief, niveau {level}"
+
+msgid "Bouclier WireGuard"
+msgstr "WireGuard-schild"
+
+msgid "non posé"
+msgstr "niet geplaatst"
+
+msgid "ABSENT (table effacée)"
+msgstr "AFWEZIG (tabel gewist)"
+
+msgid "état non mis à jour"
+msgstr "status niet bijgewerkt"
+
+#, python-brace-format
+msgid "posé, mode {mode}"
+msgstr "geplaatst, modus {mode}"
+
+msgid "TABLEAU DE BORD"
+msgstr "DASHBOARD"
+
+msgid "Corriger"
+msgstr "Oplossen"
+
+msgid "Alerte"
+msgstr "Waarschuwing"
+
+msgid "Où corriger"
+msgstr "Waar oplossen"
+
+#, python-brace-format
+msgid "Lu à {time} · relu toutes les 5 s"
+msgstr "Gelezen om {time} · elke 5 s opnieuw gelezen"
+
+msgid "Choisissez une alerte puis « Corriger » (ou Entrée)."
+msgstr "Kies een waarschuwing en daarna „Oplossen” (of Enter)."
+
+msgid "Aucune alerte choisie."
+msgstr "Geen waarschuwing gekozen."
+
+msgid "Rien à ouvrir pour cette alerte : elle vient de Tailscale lui-même."
+msgstr "Niets te openen voor deze waarschuwing: ze komt van Tailscale zelf."
+
+#, python-brace-format
+msgid "Fichier trop volumineux pour être lu ici : {path}"
+msgstr "Bestand te groot om hier te lezen: {path}"
+
+#, python-brace-format
+msgid "Lecture impossible : {error}"
+msgstr "Lezen onmogelijk: {error}"
+
+msgid "EXPORTS"
+msgstr "EXPORTS"
+
+msgid ""
+"Pas de navigateur dans cette session (serveur, connexion SSH) : les exports "
+"sont listés et lus ici. Choisissez une ligne (Entrée) pour la lire."
+msgstr ""
+"Geen browser in deze sessie (server, SSH-verbinding): de exports worden hier"
+" opgesomd en gelezen. Kies een regel (Enter) om hem te lezen."
+
+msgid "Lire"
+msgstr "Lezen"
+
+msgid "Taille"
+msgstr "Grootte"
+
+msgid "Aucun export pour l'instant."
+msgstr "Nog geen exports."
+
+#, python-brace-format
+msgid "Dossier des exports ouvert dans le navigateur : {path}"
+msgstr "Exportmap geopend in de browser: {path}"
+
+msgid "Connexions par adresse / 10 s"
+msgstr "Verbindingen per adres / 10 s"
+
+msgid "Par préfixe /24 ou /64 / 10 s"
+msgstr "Per prefix /24 of /64 / 10 s"
+
+msgid "Budget global (admises / s)"
+msgstr "Globaal budget (toegelaten / s)"
+
+msgid "Connexions simultanées"
+msgstr "Gelijktijdige verbindingen"
+
+msgid "Durée de blocage (min)"
+msgstr "Blokkeerduur (min)"
+
+msgid "Mode attaque au-delà de (entrantes / s)"
+msgstr "Aanvalsmodus vanaf (inkomend / s)"
+
+msgid "Retour au normal après (min de calme)"
+msgstr "Terug naar normaal na (min rust)"
+
+msgid "AS d'hébergeur / 10 s"
+msgstr "Hoster-AS / 10 s"
+
+msgid "Empreinte inconnue / 10 s"
+msgstr "Onbekende vingerafdruk / 10 s"
+
+msgid "Pays limité / 10 s"
+msgstr "Beperkt land / 10 s"
+
+msgid ""
+"HAProxy sans Lua : regroupements indisponibles (la porte du lot 4 protège "
+"seule)."
+msgstr ""
+"HAProxy zonder Lua: groeperingen niet beschikbaar (de slagboom van lot 4 "
+"beschermt alleen)."
+
+msgid "Regroupements : appliqués (refusent en mode attaque)"
+msgstr "Groeperingen: toegepast (weigeren in aanvalsmodus)"
+
+msgid ""
+"Regroupements : en observation (comptent « aurait refusé », ne refusent "
+"rien)"
+msgstr ""
+"Groeperingen: in observatie (tellen „zou geweigerd hebben”, weigeren niets)"
+
+#, python-brace-format
+msgid "Mode : ATTAQUE — retour au normal après {seconds} s de calme"
+msgstr "Modus: AANVAL — terug naar normaal na {seconds} s rust"
+
+msgid "Mode : normal"
+msgstr "Modus: normaal"
+
+#, python-brace-format
+msgid ""
+"Empreintes : apprentissage, encore {days} jour(s) ; les regroupements "
+"restent en observation jusqu'à la fin."
+msgstr ""
+"Vingerafdrukken: leerfase, nog {days} dag(en); de groeperingen blijven tot "
+"het einde in observatie."
+
+#, python-brace-format
+msgid ""
+"Empreintes habituelles : {count} (référence prête) ; « appliqués » est "
+"maintenant possible."
+msgstr ""
+"Gebruikelijke vingerafdrukken: {count} (referentie gereed); „toegepast” is "
+"nu mogelijk."
+
+msgid ""
+"Base AS / pays : absente (« Mettre à jour la base », ou la veille une fois "
+"par mois)"
+msgstr ""
+"AS-/landendatabase: afwezig („Database bijwerken”, of de bewaking eenmaal "
+"per maand)"
+
+#, python-brace-format
+msgid ""
+"Base AS / pays : à jour il y a {days} jour(s) ; renouvelée chaque mois par "
+"la veille"
+msgstr ""
+"AS-/landendatabase: {days} dag(en) geleden bijgewerkt; elke maand vernieuwd "
+"door de bewaking"
+
+msgid ""
+"Navigateurs courants (Chrome, Edge, Firefox) jamais limités par ces règles."
+msgstr ""
+"Gangbare browsers (Chrome, Edge, Firefox) worden nooit door deze regels "
+"beperkt."
+
+msgid ""
+"Une porte (HAProxy) se place entre Funnel et votre site : elle voit "
+"l'adresse réelle de chaque visiteur et refuse les abus AVANT tout "
+"chiffrement (4,6 fois moins de calcul par connexion refusée, mesuré). "
+"Activation et désactivation avec retour arrière automatique."
+msgstr ""
+"Een slagboom (HAProxy) plaatst zich tussen Funnel en uw site: hij ziet het "
+"echte adres van elke bezoeker en weigert misbruik VÓÓR elke versleuteling "
+"(4,6 keer minder rekenwerk per geweigerde verbinding, gemeten). Activering "
+"en deactivering met automatisch terugdraaien."
+
+msgid "Installer HAProxy"
+msgstr "HAProxy installeren"
+
+msgid "Activer la protection"
+msgstr "Bescherming activeren"
+
+msgid "Désactiver la protection"
+msgstr "Bescherming deactiveren"
+
+msgid "Renouveler le certificat"
+msgstr "Certificaat vernieuwen"
+
+msgid "RÈGLES (appliquées à chaud)"
+msgstr "REGELS (live toegepast)"
+
+msgid "Mode"
+msgstr "Modus"
+
+msgid "normal : refuse"
+msgstr "normaal: weigert"
+
+msgid "observation : compte sans refuser"
+msgstr "observatie: telt zonder te weigeren"
+
+msgid "Vérifier le nom visé"
+msgstr "Doelnaam controleren"
+
+msgid "nombre"
+msgstr "aantal"
+
+msgid "Appliquer les règles"
+msgstr "Regels toepassen"
+
+msgid "LISTES"
+msgstr "LIJSTEN"
+
+msgid "Adresse ou réseau (203.0.113.7, 198.51.100.0/24, 2001:db8::/48)"
+msgstr "Adres of netwerk (203.0.113.7, 198.51.100.0/24, 2001:db8::/48)"
+
+msgid "Mettre en confiance"
+msgstr "Vertrouwen geven"
+
+msgid "REGROUPEMENTS : EMPREINTES, AS, PAYS"
+msgstr "GROEPERINGEN: VINGERAFDRUKKEN, AS, LANDEN"
+
+msgid ""
+"Contre les attaques à adresses dispersées : chaque connexion reçoit, avant "
+"tout chiffrement, son empreinte (JA4), son AS et son pays. Quand les "
+"connexions entrantes dépassent le seuil, la porte passe seule en MODE "
+"ATTAQUE : une empreinte inconnue qui explose, un AS d'hébergeur ou un pays "
+"choisi qui dépasse son débit est alors refusé. Les navigateurs courants ne "
+"sont jamais touchés ; les clients connus passent avant le budget. En "
+"observation, tout est compté (« aurait refusé ») et rien n'est refusé."
+msgstr ""
+"Tegen aanvallen met verspreide adressen: elke verbinding krijgt vóór elke "
+"versleuteling haar vingerafdruk (JA4), haar AS en haar land. Wanneer de "
+"inkomende verbindingen de drempel overschrijden, gaat de slagboom vanzelf in"
+" AANVALSMODUS: een onbekende vingerafdruk die explodeert, een hoster-AS of "
+"een gekozen land dat zijn rate overschrijdt, wordt dan geweigerd. Gangbare "
+"browsers worden nooit geraakt; bekende clients gaan vóór het budget. In "
+"observatie wordt alles geteld („zou geweigerd hebben”) en niets geweigerd."
+
+msgid "Regroupements"
+msgstr "Groeperingen"
+
+msgid "observation : comptent sans refuser"
+msgstr "observatie: tellen zonder te weigeren"
+
+msgid "appliqués : refusent en mode attaque (après l'apprentissage)"
+msgstr "toegepast: weigeren in aanvalsmodus (na de leerfase)"
+
+msgid "Clients connus avant le budget"
+msgstr "Bekende clients vóór het budget"
+
+msgid "Pays limités en mode attaque"
+msgstr "Beperkte landen in aanvalsmodus"
+
+msgid "ex. CN, RU (vide : aucun)"
+msgstr "bijv. CN, RU (leeg: geen)"
+
+msgid "AS d'hébergeurs"
+msgstr "Hoster-AS"
+
+msgid "ex. 16509 24940 (numéros d'AS)"
+msgstr "bijv. 16509 24940 (AS-nummers)"
+
+msgid "Appliquer les regroupements"
+msgstr "Groeperingen toepassen"
+
+msgid "Mettre à jour la base"
+msgstr "Database bijwerken"
+
+msgid "Recommencer l'apprentissage"
+msgstr "Leerfase opnieuw starten"
+
+#, python-brace-format
+msgid ""
+"Confiance (jamais limitées) : {trusted}\n"
+"Liste noire (refusées jusqu'à leur retrait) : {black}"
+msgstr ""
+"Vertrouwen (nooit beperkt): {trusted}\n"
+"Blokkeerlijst (geweigerd tot verwijdering): {black}"
+
+msgid ""
+"Téléchargement et préparation de la base AS / pays (DB-IP Lite) : une à "
+"quelques minutes, l'écran reste utilisable…"
+msgstr ""
+"Downloaden en voorbereiden van de AS-/landendatabase (DB-IP Lite): één tot "
+"enkele minuten, het scherm blijft bruikbaar…"
+
+msgid ""
+"Chaque menu, sa fonction et le détail. Cliquez sur un titre pour l'ouvrir."
+msgstr ""
+"Elk menu, zijn functie en de details. Klik op een titel om hem te openen."
+
+msgid "Exporter l'aide en HTML"
+msgstr "Help als HTML exporteren"
+
+#, python-brace-format
+msgid "Aide exportée : {path}"
+msgstr "Help geëxporteerd: {path}"
+
+#, python-brace-format
+msgid "Cet écran arrive dans une prochaine version (lot {lot})."
+msgstr "Dit scherm komt in een volgende versie (lot {lot})."
+
+msgid "Cet écran n'est pas disponible dans cette session."
+msgstr "Dit scherm is niet beschikbaar in deze sessie."
+
+msgid "JOURNAUX"
+msgstr "LOGS"
+
+msgid "porte (pare-feu)"
+msgstr "slagboom (firewall)"
+
+#, python-brace-format
+msgid "{count} lignes"
+msgstr "{count} regels"
+
+msgid "Filtrer (texte, adresse…)"
+msgstr "Filteren (tekst, adres…)"
+
+msgid "Lecture du journal…"
+msgstr "Log wordt gelezen…"
+
+msgid "Aucune ligne lue."
+msgstr "Geen regel gelezen."
+
+#, python-brace-format
+msgid "{shown} ligne(s) affichée(s) sur {total} lue(s)."
+msgstr "{shown} regel(s) getoond van {total} gelezen."
+
+msgid "Rien à exporter."
+msgstr "Niets te exporteren."
+
+#, python-brace-format
+msgid "Journal exporté : {path}"
+msgstr "Log geëxporteerd: {path}"
+
+msgid "maintenant"
+msgstr "nu"
+
+#, python-brace-format
+msgid "il y a {count} min"
+msgstr "{count} min geleden"
+
+#, python-brace-format
+msgid "il y a {count} h"
+msgstr "{count} u geleden"
+
+#, python-brace-format
+msgid "il y a {count} j"
+msgstr "{count} d geleden"
+
+msgid "direct"
+msgstr "direct"
+
+msgid "relais"
+msgstr "relay"
+
+#, python-brace-format
+msgid "relais {code}"
+msgstr "relay {code}"
+
+msgid "sortie Internet"
+msgstr "internetuitgang"
+
+#, python-brace-format
+msgid "Diagnostic impossible : {error}"
+msgstr "Diagnose onmogelijk: {error}"
+
+msgid "Tailscale n'a rien répondu."
+msgstr "Tailscale heeft niets geantwoord."
+
+#, python-brace-format
+msgid "oui, adresse publique {address}"
+msgstr "ja, publiek adres {address}"
+
+#, python-brace-format
+msgid "UDP : {value}"
+msgstr "UDP: {value}"
+
+msgid "non — tout passe par les relais de Tailscale (plus lent)"
+msgstr "nee — alles loopt via de relays van Tailscale (trager)"
+
+#, python-brace-format
+msgid "IPv4 : {value}"
+msgstr "IPv4: {value}"
+
+#, python-brace-format
+msgid "IPv6 : {value}"
+msgstr "IPv6: {value}"
+
+#, python-brace-format
+msgid "NAT : {value}"
+msgstr "NAT: {value}"
+
+msgid ""
+"difficile — le port change selon la destination, les relais seront plus "
+"fréquents"
+msgstr "moeilijk — de poort verandert per bestemming, relays komen vaker voor"
+
+msgid "simple — les connexions directes se font facilement"
+msgstr "eenvoudig — directe verbindingen komen makkelijk tot stand"
+
+#, python-brace-format
+msgid "Ouverture de port par la box : {value}"
+msgstr "Poortopening door de router: {value}"
+
+#, python-brace-format
+msgid "Relais le plus proche : {value}"
+msgstr "Dichtstbijzijnde relay: {value}"
+
+#, python-brace-format
+msgid "Latence des relais : {values}"
+msgstr "Latentie van de relays: {values}"
+
+msgid "Compteurs internes illisibles (Tailscale trop ancien ?)."
+msgstr "Interne tellers onleesbaar (Tailscale te oud?)."
+
+msgid "Reçu"
+msgstr "Ontvangen"
+
+msgid "Envoyé"
+msgstr "Verzonden"
+
+#, python-brace-format
+msgid ""
+"{title} depuis le démarrage : direct {direct} · relais DERP {derp} · relais "
+"d'un pair {peer}"
+msgstr ""
+"{title} sinds de start: direct {direct} · DERP-relay {derp} · peer-relay "
+"{peer}"
+
+#, python-brace-format
+msgid "Paquets jetés en sortie : {count}"
+msgstr "Weggegooide uitgaande pakketten: {count}"
+
+#, python-brace-format
+msgid "Messages de santé : {count}"
+msgstr "Gezondheidsberichten: {count}"
+
+msgid "RÉSEAU ET APPAREILS"
+msgstr "NETWERK EN APPARATEN"
+
+msgid ""
+"Ce que voit Tailscale depuis cette machine : les appareils du tailnet, le "
+"chemin vers chacun (direct ou par un relais), et l'état du réseau. Lecture "
+"seule : rien n'est changé ici."
+msgstr ""
+"Wat Tailscale vanaf deze machine ziet: de apparaten van het tailnet, het pad"
+" naar elk ervan (direct of via een relay) en de toestand van het netwerk. "
+"Alleen lezen: hier wordt niets gewijzigd."
+
+msgid "APPAREILS"
+msgstr "APPARATEN"
+
+msgid "filtrer : nom, système, adresse"
+msgstr "filteren: naam, systeem, adres"
+
+msgid "Relais Funnel de Tailscale"
+msgstr "Funnel-relays van Tailscale"
+
+msgid "Chemin"
+msgstr "Pad"
+
+msgid "Vu"
+msgstr "Gezien"
+
+msgid "nom ou adresse (vide : la ligne choisie)"
+msgstr "naam of adres (leeg: de gekozen regel)"
+
+msgid "Ping Tailscale"
+msgstr "Tailscale-ping"
+
+msgid "Qui est-ce ?"
+msgstr "Wie is dit?"
+
+msgid "DIAGNOSTIC RÉSEAU"
+msgstr "NETWERKDIAGNOSE"
+
+msgid ""
+"UDP, IPv4 / IPv6, type de NAT, ouverture de port par la box, relais le plus "
+"proche : ce qui décide si les connexions sont directes. Prend quelques "
+"secondes."
+msgstr ""
+"UDP, IPv4 / IPv6, type NAT, poortopening door de router, dichtstbijzijnde "
+"relay: dit bepaalt of verbindingen direct zijn. Duurt enkele seconden."
+
+msgid "Lancer le diagnostic"
+msgstr "Diagnose starten"
+
+msgid "DIAGNOSTIC"
+msgstr "DIAGNOSE"
+
+msgid "VERROU DU TAILNET"
+msgstr "TAILNET-SLOT"
+
+msgid "COMPTEURS INTERNES"
+msgstr "INTERNE TELLERS"
+
+#, python-brace-format
+msgid "Illisible : {error}"
+msgstr "Onleesbaar: {error}"
+
+#, python-brace-format
+msgid ""
+"{online} en ligne sur {total} appareil(s) ; {relays} relais Funnel de "
+"Tailscale (cochez pour les voir)."
+msgstr ""
+"{online} online van {total} apparaat/apparaten; {relays} Funnel-relays van "
+"Tailscale (aanvinken om ze te zien)."
+
+#, python-brace-format
+msgid "Appareils illisibles : {error}"
+msgstr "Apparaten onleesbaar: {error}"
+
+msgid "Choisissez un appareil, ou tapez un nom ou une adresse."
+msgstr "Kies een apparaat, of typ een naam of een adres."
+
+#, python-brace-format
+msgid "PING {target}"
+msgstr "PING {target}"
+
+#, python-brace-format
+msgid "QUI EST-CE ? {target}"
+msgstr "WIE IS DIT? {target}"
+
+msgid "Lecture…"
+msgstr "Lezen…"
+
+msgid "Ping en cours (3 essais au plus)…"
+msgstr "Ping bezig (hoogstens 3 pogingen)…"
+
+#, python-brace-format
+msgid "« {target} » n'est pas un nom ou une adresse valable."
+msgstr "„{target}” is geen geldige naam of geldig adres."
+
+msgid "Diagnostic en cours (quelques secondes)…"
+msgstr "Diagnose bezig (enkele seconden)…"
+
+msgid "tailnet seul"
+msgstr "alleen tailnet"
+
+msgid "par la porte ✔"
+msgstr "via de slagboom ✔"
+
+msgid "non protégé"
+msgstr "niet beschermd"
+
+#, python-brace-format
+msgid "depuis Internet (relais Funnel {via})"
+msgstr "vanaf internet (Funnel-relay {via})"
+
+#, python-brace-format
+msgid "par le tailnet ({via})"
+msgstr "via het tailnet ({via})"
+
+#, python-brace-format
+msgid "{kind} {port}{path} {where} : {detail}"
+msgstr "{kind} {port}{path} {where}: {detail}"
+
+#, python-brace-format
+msgid "Temps : {ms:.0f} ms"
+msgstr "Tijd: {ms:.0f} ms"
+
+#, python-brace-format
+msgid "Certificat : {subject} · émis par {issuer} · échéance {expiry} · {tls}"
+msgstr ""
+"Certificaat: {subject} · uitgegeven door {issuer} · vervaldatum {expiry} · "
+"{tls}"
+
+msgid ""
+"Le nom n'est pas encore publié pour Internet : juste après un ajout, Funnel "
+"met parfois une minute. Réessayez."
+msgstr ""
+"De naam is nog niet gepubliceerd voor internet: vlak na een toevoeging heeft"
+" Funnel soms een minuut nodig. Probeer het opnieuw."
+
+msgid ""
+"Un essai par le tailnet depuis la machine elle-même peut échouer selon le "
+"système : essayez aussi depuis un autre appareil."
+msgstr ""
+"Een test via het tailnet vanaf de machine zelf kan afhankelijk van het "
+"systeem mislukken: probeer het ook vanaf een ander apparaat."
+
+msgid ""
+"Ce que cette machine publie : pour le tailnet seul (Serve) ou pour Internet "
+"(Funnel). Chaque changement est vérifié, et l'état d'avant est sauvegardé "
+"(restaurable en un bouton)."
+msgstr ""
+"Wat deze machine publiceert: alleen voor het tailnet (Serve) of voor "
+"internet (Funnel). Elke wijziging wordt gecontroleerd, en de vorige toestand"
+" wordt opgeslagen (terug te zetten met één knop)."
+
+msgid "Essai de bout en bout"
+msgstr "End-to-end-test"
+
+msgid "Retirer"
+msgstr "Verwijderen"
+
+msgid "Suspendre Funnel"
+msgstr "Funnel opschorten"
+
+msgid "Rétablir Funnel"
+msgstr "Funnel herstellen"
+
+msgid "AJOUTER"
+msgstr "TOEVOEGEN"
+
+msgid ""
+"Pour Internet, le plus sûr : HTTPS sur le port 443, puis « Activer la "
+"protection » (Pare-feu Funnel) pour que la porte filtre avant tout "
+"chiffrement."
+msgstr ""
+"Voor internet het veiligst: HTTPS op poort 443, daarna „Bescherming "
+"activeren” (Funnel-firewall) zodat de slagboom filtert vóór elke "
+"versleuteling."
+
+msgid "Service local"
+msgstr "Lokale dienst"
+
+msgid "8080 ou http://127.0.0.1:8080"
+msgstr "8080 of http://127.0.0.1:8080"
+
+msgid "Pour"
+msgstr "Voor"
+
+msgid "le tailnet seul (Serve)"
+msgstr "alleen het tailnet (Serve)"
+
+msgid "Port (Funnel : 443, 8443, 10000)"
+msgstr "Poort (Funnel: 443, 8443, 10000)"
+
+msgid "Chemin (HTTPS / HTTP)"
+msgstr "Pad (HTTPS / HTTP)"
+
+msgid "Publier"
+msgstr "Publiceren"
+
+msgid "SAUVEGARDES"
+msgstr "BACK-UPS"
+
+msgid ""
+"L'état d'avant chaque changement (publication, pare-feu, disjoncteur) ; les "
+"50 plus récentes sont gardées dans var/funnel/sauvegardes/."
+msgstr ""
+"De toestand vóór elke wijziging (publicatie, firewall, stroomonderbreker); "
+"de 50 recentste worden bewaard in var/funnel/sauvegardes/."
+
+msgid "Aucune sauvegarde"
+msgstr "Geen back-up"
+
+msgid "Restaurer"
+msgstr "Herstellen"
+
+#, python-brace-format
+msgid "Publication illisible : {error}"
+msgstr "Publicatie onleesbaar: {error}"
+
+msgid "Internet"
+msgstr "Internet"
+
+msgid "tailnet"
+msgstr "tailnet"
+
+msgid "Rien n'est publié. « Publier » ci-dessous pour commencer."
+msgstr "Er is niets gepubliceerd. „Publiceren” hieronder om te beginnen."
+
+msgid ""
+"Pour changer la publication, devenez opérateur de Tailscale (tableau de "
+"bord)."
+msgstr "Word operator van Tailscale (dashboard) om de publicatie te wijzigen."
+
+msgid "Essai en cours…"
+msgstr "Test bezig…"
+
+#, python-brace-format
+msgid ""
+"Retire {kind} {port}{path} → {target} ({who}). L'état d'avant est sauvegardé.\n"
+"\n"
+"Commande : {command}"
+msgstr ""
+"Verwijdert {kind} {port}{path} → {target} ({who}). De vorige toestand wordt opgeslagen.\n"
+"\n"
+"Commando: {command}"
+
+msgid "RETIRER CETTE PUBLICATION ?"
+msgstr "DEZE PUBLICATIE VERWIJDEREN?"
+
+#, python-brace-format
+msgid ""
+"Le service {target} sera joignable depuis Internet (Funnel, port {port}). "
+"Pensez ensuite à « Activer la protection » (Pare-feu Funnel)."
+msgstr ""
+"De dienst {target} wordt bereikbaar vanaf internet (Funnel, poort {port}). "
+"Denk daarna aan „Bescherming activeren” (Funnel-firewall)."
+
+msgid "PUBLIER SUR INTERNET ?"
+msgstr "PUBLICEREN OP INTERNET?"
+
+msgid "Choisissez une sauvegarde."
+msgstr "Kies een back-up."
+
+#, python-brace-format
+msgid ""
+"La publication redevient celle du {when} ({origin}) : {summary}.\n"
+"L'état actuel est sauvegardé d'abord ; tout est vérifié, et remis comme avant en cas d'échec."
+msgstr ""
+"De publicatie wordt weer die van {when} ({origin}): {summary}.\n"
+"De huidige toestand wordt eerst opgeslagen; alles wordt gecontroleerd en bij een mislukking teruggezet zoals voorheen."
+
+msgid "RESTAURER CETTE SAUVEGARDE ?"
+msgstr "DEZE BACK-UP TERUGZETTEN?"
+
+msgid "QUITTER OMEGA-TAIL ?"
+msgstr "OMEGA-TAIL AFSLUITEN?"
+
+msgid "RAPPORT"
+msgstr "RAPPORT"
+
+msgid ""
+"Tout ce qu'omega-tail sait de cette machine, en faits : Tailscale, "
+"publication, machine, pare-feu, survie, alertes, et les attaques des 7 "
+"derniers jours (journal de la porte). Enregistré dans le dossier des exports"
+" ; « Voir les exports » les ouvre pour les lire."
+msgstr ""
+"Alles wat omega-tail van deze machine weet, in feiten: Tailscale, "
+"publicatie, machine, firewall, overleven, waarschuwingen en de aanvallen van"
+" de laatste 7 dagen (log van de slagboom). Opgeslagen in de exportmap; "
+"„Exports bekijken” opent ze om ze te lezen."
+
+msgid ""
+"Inclure le compte Tailscale et les appareils du tailnet (noms, adresses)"
+msgstr "Tailscale-account en tailnet-apparaten opnemen (namen, adressen)"
+
+msgid ""
+"Sans cette case, seul leur nombre figure : le rapport peut être envoyé à "
+"quelqu'un sans dévoiler votre tailnet. Les adresses des attaquants y restent"
+" toujours."
+msgstr ""
+"Zonder dit vakje staat alleen hun aantal erin: het rapport kan naar iemand "
+"worden gestuurd zonder uw tailnet prijs te geven. De adressen van de "
+"aanvallers blijven er altijd in."
+
+msgid "APERÇU"
+msgstr "VOORBEELD"
+
+msgid "Actualiser"
+msgstr "Vernieuwen"
+
+msgid ""
+"Rapport en préparation (journal de la porte des 7 derniers jours compris)…"
+msgstr ""
+"Rapport wordt voorbereid (inclusief het log van de slagboom van de laatste 7"
+" dagen)…"
+
+#, python-brace-format
+msgid "Erreur : {message}"
+msgstr "Fout: {message}"
+
+#, python-brace-format
+msgid "Rapport prêt ({time})."
+msgstr "Rapport gereed ({time})."
+
+msgid "ARRÊTER TAILSCALED ?"
+msgstr "TAILSCALED STOPPEN?"
+
+msgid "DÉMARRER TAILSCALED ?"
+msgstr "TAILSCALED STARTEN?"
+
+msgid "REDÉMARRER TAILSCALED ?"
+msgstr "TAILSCALED HERSTARTEN?"
+
+msgid ""
+"Tailscale se reconnecte au tailnet ; les publications (Serve, Funnel) "
+"reprennent."
+msgstr ""
+"Tailscale maakt opnieuw verbinding met het tailnet; de publicaties (Serve, "
+"Funnel) worden hervat."
+
+msgid ""
+"Tailscale est coupé : plus d'accès par le tailnet, publications (Serve, "
+"Funnel) interrompues jusqu'au prochain démarrage."
+msgstr ""
+"Tailscale is uitgeschakeld: geen toegang meer via het tailnet, publicaties "
+"(Serve, Funnel) onderbroken tot de volgende start."
+
+msgid ""
+"Coupure de quelques secondes : le tailnet et les publications (Serve, "
+"Funnel) reviennent d'eux-mêmes. Applique une mise à jour déjà installée."
+msgstr ""
+"Onderbreking van enkele seconden: het tailnet en de publicaties (Serve, "
+"Funnel) komen vanzelf terug. Past een al geïnstalleerde update toe."
+
+msgid "systemd ne connaît pas le service tailscaled sur cette machine."
+msgstr "systemd kent de dienst tailscaled niet op deze machine."
+
+#, python-brace-format
+msgid "Depuis : {since}"
+msgstr "Sinds: {since}"
+
+#, python-brace-format
+msgid "Processus : {pid} · mémoire {memory}"
+msgstr "Proces: {pid} · geheugen {memory}"
+
+#, python-brace-format
+msgid "Version en marche : {version}"
+msgstr "Draaiende versie: {version}"
+
+msgid ""
+"→ La mise à jour est installée mais pas appliquée : « Redémarrer » "
+"l'applique."
+msgstr ""
+"→ De update is geïnstalleerd maar niet toegepast: „Herstarten” past hem toe."
+
+#, python-brace-format
+msgid "Système d'init : {init} · service « {name} »"
+msgstr "Init-systeem: {init} · dienst „{name}”"
+
+#, python-brace-format
+msgid "Lancement : {command}"
+msgstr "Start: {command}"
+
+#, python-brace-format
+msgid "Fichier du service : {path}"
+msgstr "Dienstbestand: {path}"
+
+msgid "Fichiers d'ajout (lus, jamais modifiés par omega-tail) :"
+msgstr "Aanvullende bestanden (gelezen, nooit gewijzigd door omega-tail):"
+
+msgid "Fichiers d'ajout : aucun."
+msgstr "Aanvullende bestanden: geen."
+
+msgid ""
+"⚠ Le démarrage lance « tailscale up » : si un réglage change (opérateur, "
+"nom, routes…), Tailscale le refusera et tailscaled ne redémarrera plus. « "
+"Corriger le démarrage » ajoute « - » devant la commande (son refus n'arrête "
+"plus le service)."
+msgstr ""
+"⚠ Het opstarten voert „tailscale up” uit: als een instelling verandert "
+"(operator, naam, routes…), weigert Tailscale het en start tailscaled niet "
+"meer. „Opstart herstellen” zet „-” voor het commando (de weigering ervan "
+"stopt de dienst niet meer)."
+
+#, python-brace-format
+msgid "Confinement : {state}"
+msgstr "Inperking: {state}"
+
+#, python-brace-format
+msgid ""
+"  plafond CPU {quota} · poids {weight} · cœurs {cpus} · priorité {nice}"
+msgstr ""
+"  CPU-plafond {quota} · gewicht {weight} · kernen {cpus} · prioriteit {nice}"
+
+msgid "tous"
+msgstr "alle"
+
+msgid ""
+"  ⚠ Confinement perdu au redémarrage de tailscaled : « Survie » → « "
+"Appliquer le confinement »."
+msgstr ""
+"  ⚠ Inperking verloren bij de herstart van tailscaled: „Overleven” → "
+"„Inperking toepassen”."
+
+msgid "  Le confinement se règle dans « Survie »."
+msgstr "  De inperking wordt ingesteld in „Overleven”."
+
+msgid "⚠ Cette session passe par Tailscale : arrêter tailscaled la couperait."
+msgstr ""
+"⚠ Deze sessie loopt via Tailscale: tailscaled stoppen zou haar verbreken."
+
+msgid "SERVICE TAILSCALED"
+msgstr "DIENST TAILSCALED"
+
+msgid ""
+"Chaque action montre sa commande avant d'être lancée ; le mot de passe sudo "
+"se saisit dans le terminal."
+msgstr ""
+"Elke actie toont haar commando voordat ze wordt uitgevoerd; het sudo-"
+"wachtwoord wordt in de terminal ingevoerd."
+
+msgid "Démarrer"
+msgstr "Starten"
+
+msgid "Corriger le démarrage"
+msgstr "Opstart herstellen"
+
+msgid "VOUS ALLEZ PERDRE CETTE SESSION"
+msgstr "U GAAT DEZE SESSIE VERLIEZEN"
+
+msgid ""
+"Dernière confirmation : tailscaled sera arrêté et cette session coupée. Vous"
+" devrez le relancer depuis le réseau local ou la machine elle-même."
+msgstr ""
+"Laatste bevestiging: tailscaled wordt gestopt en deze sessie verbroken. U "
+"moet het opnieuw starten vanaf het lokale netwerk of op de machine zelf."
+
+msgid "Arrêter quand même"
+msgstr "Toch stoppen"
+
+msgid "Enregistrés dans var/settings.json, appliqués tout de suite."
+msgstr "Opgeslagen in var/settings.json, direct toegepast."
+
+msgid "Thème de l'interface"
+msgstr "Thema van de interface"
+
+msgid "Thème des exports (rapport HTML, aide exportée)"
+msgstr "Thema van de exports (HTML-rapport, geëxporteerde help)"
+
+msgid "Dossier des exports"
+msgstr "Exportmap"
+
+#, python-brace-format
+msgid "Par défaut : {path}. Laissez vide pour revenir au dossier par défaut."
+msgstr "Standaard: {path}. Laat leeg om terug te gaan naar de standaardmap."
+
+msgid "Dossier des captures d'écran"
+msgstr "Map voor schermafbeeldingen"
+
+#, python-brace-format
+msgid "Par défaut : {path}. Capture : Ctrl+P → « Capture d'écran »."
+msgstr "Standaard: {path}. Schermafbeelding: Ctrl+P → „Schermafbeelding”."
+
+msgid "Enregistrer les dossiers"
+msgstr "Mappen opslaan"
+
+msgid "Maintenance des dossiers"
+msgstr "Onderhoud van de mappen"
+
+msgid ""
+"Supprime définitivement le contenu du dossier configuré ; le dossier reste."
+msgstr "Verwijdert de inhoud van de ingestelde map definitief; de map blijft."
+
+msgid "Vider le dossier des exports"
+msgstr "Exportmap legen"
+
+msgid "Vider le dossier des captures"
+msgstr "Map voor schermafbeeldingen legen"
+
+msgid "des exports"
+msgstr "voor exports"
+
+msgid "des captures"
+msgstr "voor schermafbeeldingen"
+
+#, python-brace-format
+msgid "Chemin à donner en entier (commençant par / ou ~) : {path}"
+msgstr "Volledig pad opgeven (beginnend met / of ~): {path}"
+
+#, python-brace-format
+msgid "Dossiers enregistrés : {paths}"
+msgstr "Mappen opgeslagen: {paths}"
+
+#, python-brace-format
+msgid "VIDER LE DOSSIER {label} ?"
+msgstr "MAP {label} LEGEN?"
+
+#, python-brace-format
+msgid ""
+"Supprime définitivement tout le contenu de {directory}. Le dossier reste."
+msgstr ""
+"Verwijdert de volledige inhoud van {directory} definitief. De map blijft."
+
+#, python-brace-format
+msgid "Refusé — {path} : {reason}"
+msgstr "Geweigerd — {path}: {reason}"
+
+#, python-brace-format
+msgid "{count} élément(s) supprimé(s) dans {path}."
+msgstr "{count} element(en) verwijderd in {path}."
+
+#, python-brace-format
+msgid "Non supprimés : {items}"
+msgstr "Niet verwijderd: {items}"
+
+msgid "Pairs connus"
+msgstr "Bekende peers"
+
+msgid "Poignées de main"
+msgstr "Handshakes"
+
+msgid "Poignées de main en excès (par source)"
+msgstr "Handshakes te veel (per bron)"
+
+msgid "Sources inconnues, paquets bien formés"
+msgstr "Onbekende bronnen, goed gevormde pakketten"
+
+msgid "Sources inconnues en excès (par source)"
+msgstr "Onbekende bronnen te veel (per bron)"
+
+msgid "Excès de l'ensemble des sources inconnues"
+msgstr "Overschot van alle onbekende bronnen samen"
+
+msgid "Paquets qui ne sont pas du WireGuard"
+msgstr "Pakketten die geen WireGuard zijn"
+
+msgid "Poser (observation)"
+msgstr "Plaatsen (observatie)"
+
+msgid "Passer en actif"
+msgstr "Naar actief"
+
+msgid "Reposer"
+msgstr "Opnieuw plaatsen"
+
+msgid "Confier à omega-fire"
+msgstr "Overdragen aan omega-fire"
+
+msgid "Reprendre la gestion"
+msgstr "Beheer overnemen"
+
+msgid "POSER LE BOUCLIER DU PORT WIREGUARD ?"
+msgstr "SCHILD VAN DE WIREGUARD-POORT PLAATSEN?"
+
+msgid "CHANGER LE MODE DU BOUCLIER ?"
+msgstr "MODUS VAN HET SCHILD WIJZIGEN?"
+
+msgid "REPOSER LE BOUCLIER ?"
+msgstr "SCHILD OPNIEUW PLAATSEN?"
+
+msgid "CONFIER LE BOUCLIER À OMEGA-FIRE ?"
+msgstr "SCHILD OVERDRAGEN AAN OMEGA-FIRE?"
+
+msgid "REPRENDRE LA GESTION DU BOUCLIER ?"
+msgstr "BEHEER VAN HET SCHILD OVERNEMEN?"
+
+msgid "RETIRER LE BOUCLIER ?"
+msgstr "SCHILD VERWIJDEREN?"
+
+msgid ""
+"Une table nftables devant tailscaled, en OBSERVATION : rien n'est refusé, "
+"les compteurs disent ce qui l'aurait été. Un service la remet en place à "
+"chaque démarrage."
+msgstr ""
+"Een nftables-tabel vóór tailscaled, in OBSERVATIE: niets wordt geweigerd, de"
+" tellers zeggen wat geweigerd zou zijn. Een dienst zet haar bij elke opstart"
+" terug."
+
+msgid ""
+"La table enregistrée est remise ; ses compteurs et la liste des pairs "
+"repartent de zéro."
+msgstr ""
+"De opgeslagen tabel wordt teruggezet; haar tellers en de lijst met peers "
+"beginnen weer bij nul."
+
+msgid ""
+"omega-fire gérera le bouclier (remise au démarrage, commandes, liste des "
+"règles). La table, ses compteurs et les pairs connus ne sont pas touchés."
+msgstr ""
+"omega-fire gaat het schild beheren (terugzetten bij opstart, commando's, "
+"lijst met regels). De tabel, haar tellers en de bekende peers worden niet "
+"aangeraakt."
+
+msgid ""
+"omega-fire n'est plus relié : omega-tail gère de nouveau le bouclier. La "
+"table n'est pas touchée."
+msgstr ""
+"omega-fire is niet meer gekoppeld: omega-tail beheert het schild weer. De "
+"tabel wordt niet aangeraakt."
+
+msgid ""
+"La table, ses fichiers et son service sont supprimés : tailscaled ne sera "
+"plus protégé contre les flots de paquets."
+msgstr ""
+"De tabel, haar bestanden en haar dienst worden verwijderd: tailscaled is "
+"niet meer beschermd tegen pakketstromen."
+
+msgid ""
+"tailscaled tire son port au hasard (--port 0) : aucun bouclier possible. "
+"Fixez un port (PORT= dans /etc/default/tailscaled), puis redémarrez "
+"tailscaled."
+msgstr ""
+"tailscaled kiest zijn poort willekeurig (--port 0): geen schild mogelijk. "
+"Leg een poort vast (PORT= in /etc/default/tailscaled) en herstart daarna "
+"tailscaled."
+
+msgid "Aucune carte réseau matérielle trouvée : rien à protéger."
+msgstr "Geen fysieke netwerkkaart gevonden: niets te beschermen."
+
+msgid "Port ou nom de carte réseau refusé."
+msgstr "Poort of naam van netwerkkaart geweigerd."
+
+msgid "Aucun bouclier enregistré sur cette machine."
+msgstr "Geen schild opgeslagen op deze machine."
+
+msgid ""
+"Le noyau a été mis à jour sans redémarrage : ses modules ne peuvent plus "
+"être chargés et la table serait refusée. Redémarrez la machine, puis "
+"recommencez."
+msgstr ""
+"De kernel is bijgewerkt zonder herstart: zijn modules kunnen niet meer "
+"geladen worden en de tabel zou geweigerd worden. Herstart de machine en "
+"probeer het daarna opnieuw."
+
+#, python-brace-format
+msgid ""
+"Origine : {tool} (outil qui l'a demandé) · port {port}/udp · cartes réseau :"
+" {devices}"
+msgstr ""
+"Herkomst: {tool} (hulpmiddel dat het vroeg) · poort {port}/udp · "
+"netwerkkaarten: {devices}"
+
+#, python-brace-format
+msgid "Pairs connus : {count} (jamais limités)."
+msgstr "Bekende peers: {count} (nooit beperkt)."
+
+#, python-brace-format
+msgid "Détecté : port de tailscaled {port}, cartes réseau {devices}."
+msgstr "Gedetecteerd: poort van tailscaled {port}, netwerkkaarten {devices}."
+
+msgid "au hasard"
+msgstr "willekeurig"
+
+msgid ""
+"Noyau antérieur à 5.16 : sans liste des pairs, seuls le tri des paquets et "
+"la limite des poignées de main sont posés."
+msgstr ""
+"Kernel ouder dan 5.16: zonder lijst met peers worden alleen de "
+"pakketsortering en de beperking van handshakes geplaatst."
+
+#, python-brace-format
+msgid ""
+"omega-fire {version} relié : il pose et gère le bouclier ; sa liste des "
+"règles l'affiche avec l'origine omega-tail."
+msgstr ""
+"omega-fire {version} gekoppeld: het plaatst en beheert het schild; zijn "
+"lijst met regels toont het met de herkomst omega-tail."
+
+#, python-brace-format
+msgid ""
+"omega-fire {version} relié, mais trop ancien pour le bouclier (il faut "
+"{needed} ou plus récent) : omega-tail le gère lui-même. Mettez omega-fire à "
+"jour."
+msgstr ""
+"omega-fire {version} gekoppeld, maar te oud voor het schild ({needed} of "
+"recenter nodig): omega-tail beheert het zelf. Werk omega-fire bij."
+
+msgid ""
+"omega-fire n'est pas relié par omega-connect : omega-tail pose et gère le "
+"bouclier lui-même, même si ufw ou firewalld sont présents."
+msgstr ""
+"omega-fire is niet gekoppeld via omega-connect: omega-tail plaatst en "
+"beheert het schild zelf, ook als ufw of firewalld aanwezig zijn."
+
+msgid ""
+"Géré par omega-fire, qui n'est plus relié : « Reprendre la gestion » le rend"
+" à omega-tail."
+msgstr ""
+"Beheerd door omega-fire, dat niet meer gekoppeld is: „Beheer overnemen” "
+"geeft het terug aan omega-tail."
+
+msgid ""
+"Noyau mis à jour sans redémarrage : la table ne peut pas être posée avant un"
+" redémarrage."
+msgstr ""
+"Kernel bijgewerkt zonder herstart: de tabel kan niet worden geplaatst vóór "
+"een herstart."
+
+msgid ""
+"Système d'init inconnu : le bouclier ne sera pas remis en place au "
+"redémarrage."
+msgstr ""
+"Onbekend init-systeem: het schild wordt bij een herstart niet teruggezet."
+
+msgid "BOUCLIER DU PORT WIREGUARD"
+msgstr "SCHILD VAN DE WIREGUARD-POORT"
+
+msgid ""
+"Devant tailscaled : poignées de main limitées par source, budget pour les "
+"sources qui ne sont pas des pairs connus, paquets qui ne sont pas du "
+"WireGuard refusés. Mesuré : un flot qui prenait un cœur entier à tailscaled "
+"n'en prend plus que 1 %. Commencez en observation."
+msgstr ""
+"Vóór tailscaled: handshakes beperkt per bron, budget voor bronnen die geen "
+"bekende peers zijn, pakketten die geen WireGuard zijn geweigerd. Gemeten: "
+"een stroom die tailscaled een hele kern kostte, kost nog maar 1 %. Begin in "
+"observatie."
+
+msgid "COMPTEURS DEPUIS LA POSE"
+msgstr "TELLERS SINDS HET PLAATSEN"
+
+msgid "Compteur"
+msgstr "Teller"
+
+msgid "Effet"
+msgstr "Effect"
+
+msgid "Paquets"
+msgstr "Pakketten"
+
+msgid "admis"
+msgstr "toegelaten"
+
+msgid "auraient été refusés"
+msgstr "zouden geweigerd zijn"
+
+msgid "refusés"
+msgstr "geweigerd"
+
+msgid "Passer en observation"
+msgstr "Naar observatie"
+
+#, python-brace-format
+msgid ""
+"En observation, {count} paquet(s) auraient été refusés : en actif, ils le "
+"seront. Les pairs connus ne sont jamais limités."
+msgstr ""
+"In observatie zouden {count} pakket(ten) geweigerd zijn: in actief worden ze"
+" dat. Bekende peers worden nooit beperkt."
+
+msgid ""
+"Plus rien n'est refusé ; les compteurs continuent de dire ce qui l'aurait "
+"été."
+msgstr ""
+"Er wordt niets meer geweigerd; de tellers blijven zeggen wat geweigerd zou "
+"zijn."
+
+#, python-brace-format
+msgid ""
+"Par omega-fire (il garde l'origine {tool} et l'inscrit à son journal "
+"d'audit)."
+msgstr ""
+"Door omega-fire (het behoudt de herkomst {tool} en schrijft die in zijn "
+"auditlog)."
+
+msgid "systemd ne connaît pas tailscaled : confinement impossible ici."
+msgstr "systemd kent tailscaled niet: inperking hier onmogelijk."
+
+msgid "perdu (tailscaled a redémarré) : « Appliquer le confinement » le remet"
+msgstr ""
+"verloren (tailscaled is herstart): „Inperking toepassen” zet haar terug"
+
+msgid "actif (groupe de contrôle d'omega-tail)"
+msgstr "actief (controlegroep van omega-tail)"
+
+#, python-brace-format
+msgid "Confinement actuel : {state}"
+msgstr "Huidige inperking: {state}"
+
+#, python-brace-format
+msgid "  plafond {quota} · poids {weight} · système d'init {init}"
+msgstr "  plafond {quota} · gewicht {weight} · init-systeem {init}"
+
+msgid "actif, posé par omega-tail"
+msgstr "actief, geplaatst door omega-tail"
+
+msgid "posé par omega-tail, pas encore appliqué (rechargement ou redémarrage)"
+msgstr "geplaatst door omega-tail, nog niet toegepast (herladen of herstart)"
+
+msgid "actif, posé hors d'omega-tail"
+msgstr "actief, buiten omega-tail geplaatst"
+
+#, python-brace-format
+msgid "  plafond {quota} · poids {weight} · priorité {nice}"
+msgstr "  plafond {quota} · gewicht {weight} · prioriteit {nice}"
+
+#, python-brace-format
+msgid "  Vos fichiers d'ajout (jamais modifiés) : {paths}"
+msgstr "  Uw aanvullende bestanden (nooit gewijzigd): {paths}"
+
+#, python-brace-format
+msgid ""
+"Funnel COUPÉ par omega-tail depuis {since} (coupure totale) : « Rétablir "
+"maintenant » le remet à l'identique."
+msgstr ""
+"Funnel UITGESCHAKELD door omega-tail sinds {since} (volledige "
+"uitschakeling): „Nu herstellen” zet het ongewijzigd terug."
+
+#, python-brace-format
+msgid ""
+"Funnel COUPÉ par omega-tail depuis {since}, remis en route automatiquement à"
+" {until}."
+msgstr ""
+"Funnel UITGESCHAKELD door omega-tail sinds {since}, automatisch weer "
+"ingeschakeld om {until}."
+
+#, python-brace-format
+msgid "Funnel ouvert : port {ports}."
+msgstr "Funnel open: poort {ports}."
+
+msgid "Funnel n'est pas ouvert : rien à couper."
+msgstr "Funnel is niet open: niets uit te schakelen."
+
+msgid ""
+"Désactivée : sous attaque, omega-tail ouvert PROPOSE la coupure (il faut "
+"être devant la machine)."
+msgstr ""
+"Gedeactiveerd: bij een aanval STELT het geopende omega-tail de uitschakeling"
+" VOOR (u moet bij de machine zitten)."
+
+msgid ""
+"Activée mais arrêtée (aucun signe de vie) : « Activer la veille » la "
+"relance."
+msgstr ""
+"Geactiveerd maar gestopt (geen levensteken): „Bewaking activeren” start haar"
+" opnieuw."
+
+msgid ""
+"En marche, même omega-tail fermé : sous attaque, elle coupe Funnel seule et "
+"le remet seule."
+msgstr ""
+"Actief, ook als omega-tail gesloten is: bij een aanval schakelt ze Funnel "
+"vanzelf uit en weer in."
+
+#, python-brace-format
+msgid ""
+"  Dépassements récents : {strikes}/{total} (fenêtre de {window} min) · "
+"prochaine coupure : {minutes} min"
+msgstr ""
+"  Recente overschrijdingen: {strikes}/{total} (venster van {window} min) · "
+"volgende uitschakeling: {minutes} min"
+
+msgid ""
+"Garder la machine debout sous attaque. Chaque action montre ses commandes "
+"avant ; le mot de passe sudo se saisit dans le terminal."
+msgstr ""
+"De machine overeind houden bij een aanval. Elke actie toont vooraf haar "
+"commando's; het sudo-wachtwoord wordt in de terminal ingevoerd."
+
+msgid "CONFINEMENT DE TAILSCALED"
+msgstr "INPERKING VAN TAILSCALED"
+
+#, python-brace-format
+msgid "Proposé pour cette machine ({count} fils), dans {path} :"
+msgstr "Voorgesteld voor deze machine ({count} threads), in {path}:"
+
+#, python-brace-format
+msgid ""
+"Proposé pour cette machine ({count} fils), dans un groupe de contrôle à part"
+" :"
+msgstr ""
+"Voorgesteld voor deze machine ({count} threads), in een aparte "
+"controlegroep:"
+
+#, python-brace-format
+msgid "Donner la priorité à l'accès SSH ({unit})"
+msgstr "Voorrang geven aan de SSH-toegang ({unit})"
+
+msgid ""
+"Redémarrer tailscaled tout de suite (la priorité ne s'applique qu'au "
+"redémarrage ; coupure de quelques secondes)"
+msgstr ""
+"tailscaled meteen herstarten (de prioriteit geldt pas na een herstart; "
+"onderbreking van enkele seconden)"
+
+msgid "Appliquer le confinement"
+msgstr "Inperking toepassen"
+
+msgid "Retirer le confinement"
+msgstr "Inperking verwijderen"
+
+msgid "VEILLE AUTOMATIQUE"
+msgstr "AUTOMATISCHE BEWAKING"
+
+#, python-brace-format
+msgid ""
+"Pour une machine sans personne devant. Un dépassement : un seuil du "
+"disjoncteur tenu (plus bas). {strikes} dépassements dans la fenêtre : Funnel"
+" coupé {first} min, puis {second} min la fois suivante, puis {last} min à "
+"chaque fois ; toujours remis en route seul, à l'identique. Retour à {first} "
+"min après {hours} h sans coupure. Seul Funnel est coupé : tailscaled, le "
+"tailnet et SSH restent joignables."
+msgstr ""
+"Voor een machine zonder iemand ervoor. Een overschrijding: een aangehouden "
+"drempel van de stroomonderbreker (verderop). {strikes} overschrijdingen "
+"binnen het venster: Funnel {first} min uitgeschakeld, daarna {second} min de"
+" volgende keer, daarna telkens {last} min; altijd vanzelf ongewijzigd weer "
+"ingeschakeld. Terug naar {first} min na {hours} u zonder uitschakeling. "
+"Alleen Funnel wordt uitgeschakeld: tailscaled, het tailnet en SSH blijven "
+"bereikbaar."
+
+msgid "Fenêtre (min)"
+msgstr "Venster (min)"
+
+msgid "Enregistrer"
+msgstr "Opslaan"
+
+msgid "Activer la veille"
+msgstr "Bewaking activeren"
+
+msgid "Désactiver la veille"
+msgstr "Bewaking deactiveren"
+
+msgid ""
+"Protège tailscaled des flots de paquets envoyés sur son port (même sans "
+"Funnel)."
+msgstr ""
+"Beschermt tailscaled tegen pakketstromen naar zijn poort (ook zonder "
+"Funnel)."
+
+msgid "Bouclier du port WireGuard"
+msgstr "Schild van de WireGuard-poort"
+
+msgid "DISJONCTEUR FUNNEL"
+msgstr "FUNNEL-STROOMONDERBREKER"
+
+msgid ""
+"Sans veille, il propose, il ne coupe jamais seul : quand un seuil est "
+"dépassé, omega-tail ouvert vous propose une coupure momentanée ou totale. "
+"Avec la veille automatique (ci-dessus), il agit seul."
+msgstr ""
+"Zonder bewaking stelt hij voor, hij schakelt nooit vanzelf uit: wanneer een "
+"drempel wordt overschreden, stelt het geopende omega-tail u een tijdelijke "
+"of volledige uitschakeling voor. Met de automatische bewaking (hierboven) "
+"handelt hij zelf."
+
+msgid "CPU tailscaled ≥ (% d'un cœur)"
+msgstr "CPU tailscaled ≥ (% van een kern)"
+
+msgid "pendant (s)"
+msgstr "gedurende (s)"
+
+msgid "ou température ≥ (°C)"
+msgstr "of temperatuur ≥ (°C)"
+
+msgid "coupure momentanée (min)"
+msgstr "tijdelijke uitschakeling (min)"
+
+msgid "Enregistrer les seuils"
+msgstr "Drempels opslaan"
+
+msgid "Rétablir maintenant"
+msgstr "Nu herstellen"
+
+msgid "Journal de la veille :"
+msgstr "Log van de bewaking:"
+
+msgid ""
+"Le disjoncteur demande d'être opérateur de Tailscale (tableau de bord, « "
+"Devenir opérateur ») : la remise en route programmée tourne sous votre "
+"compte, jamais en root."
+msgstr ""
+"De stroomonderbreker vereist dat u operator van Tailscale bent (dashboard, "
+"„Operator worden”): de geplande herinschakeling draait onder uw account, "
+"nooit als root."
+
+msgid "Tailscale absent"
+msgstr "Tailscale ontbreekt"
+
+#, python-brace-format
+msgid "CPU machine {cpu:.0f} %"
+msgstr "CPU machine {cpu:.0f} %"
+
+#, python-brace-format
+msgid "CPU tailscaled {cpu:.0f} %"
+msgstr "CPU tailscaled {cpu:.0f} %"
+
+#, python-brace-format
+msgid "RAM {used:.0f} %"
+msgstr "RAM {used:.0f} %"
+
+msgid "Funnel coupé"
+msgstr "Funnel uitgeschakeld"
+
+msgid "Funnel fermé"
+msgstr "Funnel gesloten"
+
+msgid "Pare-feu actif · attaque"
+msgstr "Firewall actief · aanval"
+
+msgid "Pare-feu actif"
+msgstr "Firewall actief"
+
+msgid "Pare-feu arrêté"
+msgstr "Firewall gestopt"
+
+msgid "Pare-feu inactif"
+msgstr "Firewall inactief"
+
+msgid "Veille active"
+msgstr "Bewaking actief"
+
+msgid "Veille arrêtée"
+msgstr "Bewaking gestopt"
+
+msgid "Veille inactive"
+msgstr "Bewaking inactief"
+
+msgid "Tailscale injoignable"
+msgstr "Tailscale onbereikbaar"
+
+msgid "Lecture de l'état…"
+msgstr "Status wordt gelezen…"

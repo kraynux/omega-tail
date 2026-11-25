@@ -1,0 +1,4576 @@
+# Statut X-Omega-Status : validated (2026-11-25, choix de vocabulaire et de ton arbitrés par Claude à la demande de l'auteur).
+msgid ""
+msgstr ""
+"Project-Id-Version: omega-tail\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Omega-Status: validated\n"
+
+msgid ""
+"omega-tail : pas de terminal interactif ; utilisez « omega-tail etat »."
+msgstr ""
+"omega-tail: कोई इंटरैक्टिव टर्मिनल नहीं; « omega-tail etat » का उपयोग करें।"
+
+msgid "Nom de la machine inconnu : Tailscale est-il connecté ?"
+msgstr "मशीन का नाम अज्ञात: क्या Tailscale कनेक्टेड है?"
+
+#, python-brace-format
+msgid "Certificat refusé ({error}). Êtes-vous opérateur de Tailscale ?"
+msgstr "प्रमाणपत्र अस्वीकृत ({error})। क्या आप Tailscale के ऑपरेटर हैं?"
+
+#, python-brace-format
+msgid "Certificat renouvelé, mais la porte ne l'a pas repris ({error})."
+msgstr "प्रमाणपत्र नवीनीकृत, लेकिन गेट ने उसे नहीं लिया ({error})।"
+
+#, python-brace-format
+msgid "Certificat de {name} à jour."
+msgstr "{name} का प्रमाणपत्र अद्यतन है।"
+
+#, python-brace-format
+msgid "Publication non prise en charge : {reason}."
+msgstr "प्रकाशन समर्थित नहीं: {reason}।"
+
+#, python-brace-format
+msgid "Publication illisible ({error})."
+msgstr "प्रकाशन पढ़ा नहीं जा सका ({error})।"
+
+msgid "HAProxy n'est pas installé : « Installer HAProxy » d'abord."
+msgstr "HAProxy इंस्टॉल नहीं है: पहले « HAProxy इंस्टॉल करें »।"
+
+#, python-brace-format
+msgid "Configuration de la porte refusée par HAProxy : {error}"
+msgstr "HAProxy ने गेट का कॉन्फ़िगरेशन अस्वीकार किया: {error}"
+
+#, python-brace-format
+msgid "Renouvellement du certificat non programmé (crontab : {error})."
+msgstr "प्रमाणपत्र का नवीनीकरण शेड्यूल नहीं हुआ (crontab: {error})।"
+
+msgid "Porte prête : certificat, listes et configuration vérifiés."
+msgstr "गेट तैयार: प्रमाणपत्र, सूचियाँ और कॉन्फ़िगरेशन जाँचे गए।"
+
+msgid "La porte protège déjà Funnel."
+msgstr "गेट पहले से Funnel की रक्षा कर रहा है।"
+
+#, python-brace-format
+msgid "La porte ne répond pas en local ({detail}) : rien n'a été basculé."
+msgstr "गेट स्थानीय रूप से जवाब नहीं दे रहा ({detail}): कुछ भी नहीं बदला गया।"
+
+#, python-brace-format
+msgid "Bascule refusée ({error}) : publication d'origine remise."
+msgstr "स्विच अस्वीकृत ({error}): मूल प्रकाशन वापस लगाया गया।"
+
+#, python-brace-format
+msgid "Funnel passe par la porte : essai public réussi ({detail})."
+msgstr "Funnel गेट से होकर जाता है: सार्वजनिक परीक्षण सफल ({detail})।"
+
+#, python-brace-format
+msgid "Essai public échoué ({detail}) : publication d'origine remise."
+msgstr "सार्वजनिक परीक्षण विफल ({detail}): मूल प्रकाशन वापस लगाया गया।"
+
+msgid "La porte ne protège pas Funnel : rien à remettre."
+msgstr "गेट Funnel की रक्षा नहीं कर रहा: वापस लगाने को कुछ नहीं।"
+
+#, python-brace-format
+msgid ""
+"Publication d'origine incomplète ({errors}) : sauvegarde gardée dans {path}."
+msgstr "मूल प्रकाशन अधूरा ({errors}): बैकअप {path} में रखा गया।"
+
+msgid "Publication d'origine remise, à l'identique."
+msgstr "मूल प्रकाशन हूबहू वापस लगाया गया।"
+
+msgid "Règles enregistrées ; elles s'appliqueront à l'activation."
+msgstr "नियम सहेजे गए; वे सक्रिय करने पर लागू होंगे।"
+
+#, python-brace-format
+msgid "Règles enregistrées, configuration non régénérée ({error})."
+msgstr "नियम सहेजे गए, कॉन्फ़िगरेशन दोबारा नहीं बना ({error})।"
+
+#, python-brace-format
+msgid "Règles refusées par HAProxy ({error}) : ancienne configuration gardée."
+msgstr "HAProxy ने नियम अस्वीकार किए ({error}): पुराना कॉन्फ़िगरेशन रखा गया।"
+
+#, python-brace-format
+msgid "Règles écrites, rechargement impossible ({error})."
+msgstr "नियम लिखे गए, रीलोड संभव नहीं ({error})।"
+
+#, python-brace-format
+msgid "Règles appliquées à chaud (mode {mode})."
+msgstr "नियम चलते-चलते लागू किए गए ({mode} मोड)।"
+
+msgid "Regroupements indisponibles."
+msgstr "समूहन उपलब्ध नहीं।"
+
+#, python-brace-format
+msgid ""
+"Apprentissage des empreintes en cours (encore {days} jour(s)) : les "
+"regroupements restent en observation jusqu'à la fin ; « appliqués » sera "
+"possible ensuite."
+msgstr ""
+"फ़िंगरप्रिंट सीखना जारी है (अभी {days} दिन): अंत तक समूहन निरीक्षण में रहते "
+"हैं; उसके बाद « लागू » संभव होगा।"
+
+msgid "appliqués"
+msgstr "लागू"
+
+msgid "en observation"
+msgstr "निरीक्षण में"
+
+#, python-brace-format
+msgid "Regroupements appliqués à chaud ({mode})."
+msgstr "समूहन चलते-चलते लागू किए गए ({mode})।"
+
+#, python-brace-format
+msgid ""
+"Apprentissage recommencé : regroupements repassés en observation pour les "
+"{days} jours d'apprentissage."
+msgstr ""
+"सीखना फिर से शुरू: समूहन {days} दिन के सीखने के लिए फिर से निरीक्षण में।"
+
+msgid ""
+"Base AS / pays : trop longue (plus de 15 minutes), abandonnée ; l'ancienne "
+"reste en place."
+msgstr ""
+"AS / देश डेटाबेस: बहुत लंबा (15 मिनट से अधिक), छोड़ दिया गया; पुराना बना "
+"रहता है।"
+
+#, python-brace-format
+msgid "{text}"
+msgstr "{text}"
+
+#, python-brace-format
+msgid ""
+"Liste noire pleine ({max} entrées) : purgez ou exportez-la dans « Gestion de"
+" la liste noire » avant d'en ajouter."
+msgstr ""
+"ब्लैकलिस्ट भरी हुई है ({max} प्रविष्टियाँ): नई जोड़ने से पहले « ब्लैकलिस्ट "
+"प्रबंधन » में उसकी सफ़ाई करें या एक्सपोर्ट करें।"
+
+#, python-brace-format
+msgid "Adresse ou réseau invalide : {text}"
+msgstr "अमान्य पता या नेटवर्क: {text}"
+
+#, python-brace-format
+msgid ""
+"{address} fait partie du tailnet : la porte admet toujours les machines "
+"Tailscale, elle ne peut pas être bloquée."
+msgstr ""
+"{address} tailnet का हिस्सा है: गेट हमेशा Tailscale मशीनों को अनुमति देता "
+"है, इसे ब्लॉक नहीं किया जा सकता।"
+
+#, python-brace-format
+msgid "{address} est déjà dans la liste noire (ou dans un de ses réseaux)."
+msgstr "{address} पहले से ब्लैकलिस्ट में है (या उसके किसी नेटवर्क में)।"
+
+#, python-brace-format
+msgid "{address} → liste noire (refusée jusqu'au retrait)."
+msgstr "{address} → ब्लैकलिस्ट (हटाए जाने तक अस्वीकृत)।"
+
+#, python-brace-format
+msgid "{count} entrée(s) retirée(s) de la liste noire ; il en reste {left}."
+msgstr "ब्लैकलिस्ट से {count} प्रविष्टि(याँ) हटाई गईं; {left} बची हैं।"
+
+#, python-brace-format
+msgid ""
+"Import : {added} ajoutée(s), {duplicates} doublon(s), {tailnet} du tailnet "
+"écartée(s), {invalid} ligne(s) invalide(s)."
+msgstr ""
+"इम्पोर्ट: {added} जोड़ी गईं, {duplicates} डुप्लिकेट, {tailnet} tailnet की "
+"छोड़ी गईं, {invalid} अमान्य पंक्ति(याँ)।"
+
+#, python-brace-format
+msgid ""
+"Import : {added} ajoutée(s), {duplicates} doublon(s), {tailnet} du tailnet "
+"écartée(s), {invalid} ligne(s) invalide(s), {over} au-delà du plafond de "
+"{max}."
+msgstr ""
+"इम्पोर्ट: {added} जोड़ी गईं, {duplicates} डुप्लिकेट, {tailnet} tailnet की "
+"छोड़ी गईं, {invalid} अमान्य पंक्ति(याँ), {over} {max} की सीमा से ऊपर।"
+
+msgid "Aucune entrée ne correspond : rien n'a été retiré."
+msgstr "कोई प्रविष्टि मेल नहीं खाती: कुछ भी नहीं हटाया गया।"
+
+#, python-brace-format
+msgid ""
+"Purge : {count} entrée(s) retirée(s) de la liste noire ; il en reste {left}."
+msgstr "सफ़ाई: ब्लैकलिस्ट से {count} प्रविष्टि(याँ) हटाई गईं; {left} बची हैं।"
+
+#, python-brace-format
+msgid "Adresse invalide : {text}"
+msgstr "अमान्य पता: {text}"
+
+#, python-brace-format
+msgid ""
+"{address} → liste noire (refusée jusqu'au retrait), retirée de la confiance."
+msgstr ""
+"{address} → ब्लैकलिस्ट (हटाए जाने तक अस्वीकृत), विश्वसनीय सूची से हटाया गया।"
+
+#, python-brace-format
+msgid ""
+"{address} est en confiance (jamais limitée) : la confiance passe avant le "
+"blocage. Retirez-la de la confiance d'abord."
+msgstr ""
+"{address} विश्वसनीय है (कभी सीमित नहीं): विश्वसनीयता ब्लॉक से पहले आती है। "
+"पहले इसे विश्वसनीय सूची से हटाएँ।"
+
+#, python-brace-format
+msgid ""
+"Porte injoignable ({error}) : blocage temporaire impossible porte arrêtée."
+msgstr "गेट तक पहुँच नहीं ({error}): गेट बंद होने पर अस्थायी ब्लॉक संभव नहीं।"
+
+#, python-brace-format
+msgid "{address} → bloquée {minutes} min (blocage temporaire)."
+msgstr "{address} → {minutes} मिनट के लिए ब्लॉक (अस्थायी ब्लॉक)।"
+
+#, python-brace-format
+msgid ""
+"{address} → toujours refusée : elle fait partie d'un réseau en liste noire."
+msgstr ""
+"{address} → अब भी अस्वीकृत: यह ब्लैकलिस्ट के किसी नेटवर्क का हिस्सा है।"
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles), retirée de la liste noire."
+msgstr "{address} → अनुमत (नियमों के अधीन), ब्लैकलिस्ट से हटाया गया।"
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles), blocage temporaire levé."
+msgstr "{address} → अनुमत (नियमों के अधीन), अस्थायी ब्लॉक हटाया गया।"
+
+#, python-brace-format
+msgid "{address} → confiance (jamais limitée), retirée de la liste noire."
+msgstr "{address} → विश्वसनीय (कभी सीमित नहीं), ब्लैकलिस्ट से हटाया गया।"
+
+#, python-brace-format
+msgid "{address} → confiance (jamais limitée)."
+msgstr "{address} → विश्वसनीय (कभी सीमित नहीं)।"
+
+#, python-brace-format
+msgid "{address} → toujours admise : elle fait partie du tailnet."
+msgstr "{address} → हमेशा अनुमत: यह tailnet का हिस्सा है।"
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles)."
+msgstr "{address} → अनुमत (नियमों के अधीन)।"
+
+#, python-brace-format
+msgid "Apprentissage recommencé : {days} jours avant que la référence compte."
+msgstr "सीखना फिर से शुरू: संदर्भ के गिने जाने से पहले {days} दिन।"
+
+#, python-brace-format
+msgid "Base AS / pays non mise à jour ({error}) : l'ancienne reste en place."
+msgstr "AS / देश डेटाबेस अपडेट नहीं हुआ ({error}): पुराना बना रहता है।"
+
+#, python-brace-format
+msgid "Base AS / pays à jour ({countries} plages pays, {asns} plages AS)."
+msgstr "AS / देश डेटाबेस अद्यतन ({countries} देश रेंज, {asns} AS रेंज)।"
+
+msgid "habituelle"
+msgstr "सामान्य"
+
+msgid "limité en attaque"
+msgstr "हमले में सीमित"
+
+msgid "Funnel est coupé par le disjoncteur : rétablissez-le d'abord (Survie)."
+msgstr "Funnel सर्किट ब्रेकर द्वारा बंद है: पहले उसे बहाल करें (उत्तरजीविता)।"
+
+#, python-brace-format
+msgid "Refusé par Tailscale ({error}) : rien n'a changé."
+msgstr "Tailscale द्वारा अस्वीकृत ({error}): कुछ नहीं बदला।"
+
+#, python-brace-format
+msgid "Changement impossible ({error}) : publication d'avant remise."
+msgstr "बदलाव संभव नहीं ({error}): पिछला प्रकाशन वापस लगाया गया।"
+
+#, python-brace-format
+msgid "Publication incomplète ({error}) : restaurez la sauvegarde {path}."
+msgstr "प्रकाशन अधूरा ({error}): बैकअप {path} बहाल करें।"
+
+#, python-brace-format
+msgid "Ajout refusé : {reason}."
+msgstr "जोड़ना अस्वीकृत: {reason}।"
+
+#, python-brace-format
+msgid "Publié : {kind} {port}{path} → {target} ({who})."
+msgstr "प्रकाशित: {kind} {port}{path} → {target} ({who})।"
+
+msgid ""
+"Ce port passe par la porte : « Désactiver la protection » (Pare-feu Funnel) "
+"d'abord."
+msgstr ""
+"यह पोर्ट गेट से होकर जाता है: पहले « संरक्षण निष्क्रिय करें » (Funnel "
+"फ़ायरवॉल)।"
+
+msgid "Ce point n'est plus publié."
+msgstr "यह बिंदु अब प्रकाशित नहीं है।"
+
+#, python-brace-format
+msgid "Retiré : {kind} {port}{path}."
+msgstr "हटाया गया: {kind} {port}{path}।"
+
+#, python-brace-format
+msgid "Sauvegarde illisible ({error})."
+msgstr "बैकअप पढ़ा नहीं जा सका ({error})।"
+
+msgid ""
+"La protection est active : « Désactiver la protection » (Pare-feu Funnel) "
+"d'abord, puis restaurez."
+msgstr ""
+"संरक्षण सक्रिय है: पहले « संरक्षण निष्क्रिय करें » (Funnel फ़ायरवॉल), फिर "
+"बहाल करें।"
+
+msgid ""
+"Cette sauvegarde passe par la porte, arrêtée : « Activer la protection » "
+"(Pare-feu Funnel) la recrée proprement."
+msgstr ""
+"यह बैकअप गेट से होकर जाता है, जो बंद है: « संरक्षण सक्रिय करें » (Funnel "
+"फ़ायरवॉल) इसे ठीक से फिर बनाता है।"
+
+#, python-brace-format
+msgid "Sauvegarde du {when} restaurée."
+msgstr "{when} का बैकअप बहाल किया गया।"
+
+msgid "essai public indisponible"
+msgstr "सार्वजनिक परीक्षण उपलब्ध नहीं"
+
+msgid "adresse du tailnet inconnue"
+msgstr "tailnet पता अज्ञात"
+
+msgid "Funnel encore autorisé sur les ports"
+msgstr "Funnel अभी भी इन पोर्ट पर अनुमत है"
+
+msgid "Funnel est déjà coupé par omega-tail."
+msgstr "Funnel पहले से omega-tail द्वारा बंद है।"
+
+msgid "Rien à couper : aucun port n'est ouvert à Internet."
+msgstr "बंद करने को कुछ नहीं: इंटरनेट के लिए कोई पोर्ट खुला नहीं है।"
+
+msgid "Remise en route programmée impossible ici."
+msgstr "यहाँ निर्धारित पुनः-चालू संभव नहीं।"
+
+#, python-brace-format
+msgid ""
+"Minuterie de remise en route refusée (code {code}) : rien n'a été coupé."
+msgstr "पुनः-चालू टाइमर अस्वीकृत (कोड {code}): कुछ भी बंद नहीं किया गया।"
+
+#, python-brace-format
+msgid "Coupure impossible ({error}) : la publication a été remise."
+msgstr "बंद करना संभव नहीं ({error}): प्रकाशन वापस लगाया गया।"
+
+#, python-brace-format
+msgid ""
+"Funnel coupé ({ports}) pour {minutes} min, puis remis en route "
+"automatiquement."
+msgstr "Funnel बंद ({ports}) {minutes} मिनट के लिए, फिर अपने-आप फिर से चालू।"
+
+#, python-brace-format
+msgid "Funnel coupé ({ports}) jusqu'à votre remise en route."
+msgstr "Funnel बंद ({ports}) जब तक आप उसे फिर से चालू न करें।"
+
+msgid "Rien à rétablir : Funnel n'est pas coupé par omega-tail."
+msgstr "बहाल करने को कुछ नहीं: Funnel omega-tail द्वारा बंद नहीं है।"
+
+msgid "Minuterie d'une ancienne coupure : rien à faire."
+msgstr "पुराने बंद का टाइमर: करने को कुछ नहीं।"
+
+#, python-brace-format
+msgid "Remise en route incomplète ({errors}) : sauvegarde gardée dans {path}."
+msgstr "पुनः-चालू अधूरा ({errors}): बैकअप {path} में रखा गया।"
+
+msgid "Funnel remis en route, à l'identique."
+msgstr "Funnel हूबहू फिर से चालू किया गया।"
+
+msgid "Tailscale n'est pas installé sur cette machine."
+msgstr "इस मशीन पर Tailscale इंस्टॉल नहीं है।"
+
+msgid "Le service tailscaled ne répond pas (arrêté ou en échec)."
+msgstr "tailscaled सेवा जवाब नहीं दे रही (बंद या विफल)।"
+
+#, python-brace-format
+msgid ""
+"tailscaled n'a pas été redémarré après la mise à jour : {daemon} en marche, "
+"{client} installé."
+msgstr ""
+"अपडेट के बाद tailscaled रीस्टार्ट नहीं हुआ: {daemon} चल रहा है, {client} "
+"इंस्टॉल है।"
+
+msgid "Tailscale attend la connexion d'un compte."
+msgstr "Tailscale किसी खाते के कनेक्ट होने की प्रतीक्षा में है।"
+
+msgid "Tailscale est déconnecté (« tailscale down »)."
+msgstr "Tailscale डिसकनेक्टेड है (« tailscale down »)।"
+
+#, python-brace-format
+msgid "La clé de cette machine expire dans {days} jour(s)."
+msgstr "इस मशीन की कुंजी {days} दिन में समाप्त होगी।"
+
+msgid ""
+"Site en panne : Funnel passe par la porte (pare-feu), mais la porte est "
+"arrêtée."
+msgstr "साइट डाउन: Funnel गेट (फ़ायरवॉल) से होकर जाता है, लेकिन गेट बंद है।"
+
+msgid ""
+"La porte est en MODE ATTAQUE : trop de connexions entrantes ; les "
+"regroupements (empreintes, AS, pays) s'appliquent jusqu'au retour au calme."
+msgstr ""
+"गेट हमला मोड में है: बहुत अधिक आने वाले कनेक्शन; शांति लौटने तक समूहन "
+"(फ़िंगरप्रिंट, AS, देश) लागू रहते हैं।"
+
+#, python-brace-format
+msgid ""
+"Funnel publié sans protection sur le port {port} : tailscaled fait le TLS de"
+" chaque connexion (une rafale peut saturer la machine)."
+msgstr ""
+"Funnel पोर्ट {port} पर बिना संरक्षण के प्रकाशित है: tailscaled हर कनेक्शन का"
+" TLS करता है (एक बौछार मशीन को ठप कर सकती है)।"
+
+#, python-brace-format
+msgid "Température élevée : {temperature:.0f} °C."
+msgstr "उच्च तापमान: {temperature:.0f} °C।"
+
+#, python-brace-format
+msgid "tailscaled consomme {cpu:.0f} % d'un cœur."
+msgstr "tailscaled एक कोर का {cpu:.0f} % उपयोग कर रहा है।"
+
+msgid ""
+"La veille automatique est activée mais ne tourne plus : Funnel ne sera pas "
+"coupé seul sous attaque."
+msgstr ""
+"स्वचालित निगरानी सक्रिय है लेकिन अब चल नहीं रही: हमले के समय Funnel अपने-आप "
+"बंद नहीं होगा।"
+
+#, python-brace-format
+msgid ""
+"Liste noire de la porte : {count} entrées (plafond {max}). Exportez-la puis "
+"purgez les plus anciennes : « Attaques et décisions » → « Gestion de la "
+"liste noire »."
+msgstr ""
+"गेट की ब्लैकलिस्ट: {count} प्रविष्टियाँ (सीमा {max})। उसे एक्सपोर्ट करें, "
+"फिर सबसे पुरानी की सफ़ाई करें: « हमले और निर्णय » → « ब्लैकलिस्ट प्रबंधन »।"
+
+msgid ""
+"Bouclier du port WireGuard ABSENT : un autre outil a effacé sa table (nft "
+"flush ruleset, pare-feu relancé…). Il n'est pas reposé seul : « Survie » → «"
+" Bouclier du port WireGuard » → « Reposer »."
+msgstr ""
+"WireGuard पोर्ट का कवच अनुपस्थित: किसी अन्य टूल ने उसकी तालिका मिटा दी (nft "
+"flush ruleset, फ़ायरवॉल फिर से चालू…)। यह अपने-आप दोबारा नहीं लगता: « "
+"उत्तरजीविता » → « WireGuard पोर्ट का कवच » → « फिर से लगाएँ »।"
+
+msgid ""
+"Bouclier du port WireGuard : état non mis à jour depuis plus de 3 minutes "
+"(service omega-bouclier-wg arrêté ?)."
+msgstr ""
+"WireGuard पोर्ट का कवच: 3 मिनट से अधिक से स्थिति अपडेट नहीं हुई (omega-"
+"bouclier-wg सेवा बंद?)।"
+
+msgid ""
+"Le démarrage de tailscaled lance « tailscale up » : si un réglage change "
+"(opérateur, nom, routes…), Tailscale le refusera et tailscaled ne "
+"redémarrera plus. « Service » → « Corriger le démarrage »."
+msgstr ""
+"tailscaled के शुरू होने पर « tailscale up » चलता है: यदि कोई सेटिंग बदलती है"
+" (ऑपरेटर, नाम, रूट…), तो Tailscale उसे अस्वीकार करेगा और tailscaled फिर से "
+"शुरू नहीं होगा। « सेवा » → « स्टार्टअप ठीक करें »।"
+
+msgid ""
+"Confinement de tailscaled perdu (le service a redémarré) : « Survie » → « "
+"Appliquer le confinement »."
+msgstr ""
+"tailscaled की सीमाबंदी खो गई (सेवा रीस्टार्ट हुई): « उत्तरजीविता » → « "
+"सीमाबंदी लागू करें »।"
+
+msgid ""
+"tailscaled n'est pas confiné : sous attaque, il peut prendre tous les cœurs."
+msgstr "tailscaled सीमाबंद नहीं है: हमले में यह सभी कोर ले सकता है।"
+
+msgid ""
+"Vous n'êtes pas opérateur de Tailscale : chaque réglage demandera sudo."
+msgstr "आप Tailscale के ऑपरेटर नहीं हैं: हर सेटिंग sudo माँगेगी।"
+
+msgid ""
+"Funnel coupé par omega-tail (coupure totale) : remise en route manuelle, "
+"dans « Survie »."
+msgstr ""
+"Funnel omega-tail द्वारा बंद (पूर्ण बंदी): « उत्तरजीविता » में मैन्युअल रूप "
+"से फिर से चालू करें।"
+
+#, python-brace-format
+msgid ""
+"Funnel devait être remis en route à {time} et ne l'est pas : « Rétablir » "
+"dans « Survie »."
+msgstr ""
+"Funnel को {time} पर फिर से चालू होना था और नहीं हुआ: « उत्तरजीविता » में « "
+"बहाल करें »।"
+
+#, python-brace-format
+msgid ""
+"Funnel coupé par omega-tail jusqu'à {time}, puis remis en route "
+"automatiquement."
+msgstr "Funnel omega-tail द्वारा {time} तक बंद, फिर अपने-आप फिर से चालू।"
+
+#, python-brace-format
+msgid "Tailscale signale : {message}"
+msgstr "Tailscale की सूचना: {message}"
+
+msgid "ajout manuel"
+msgstr "मैन्युअल जोड़"
+
+msgid "import"
+msgstr "इम्पोर्ट"
+
+msgid "écran Attaques"
+msgstr "हमले स्क्रीन"
+
+msgid "avant les dates"
+msgstr "तारीखों से पहले"
+
+#, python-brace-format
+msgid "Température de {temperature:.0f} °C (seuil {threshold:.0f} °C)."
+msgstr "तापमान {temperature:.0f} °C (सीमा {threshold:.0f} °C)।"
+
+#, python-brace-format
+msgid ""
+"tailscaled au-dessus de {threshold:.0f} % d'un cœur depuis {seconds} s "
+"(moyenne {average:.0f} %)."
+msgstr ""
+"tailscaled {seconds} s से एक कोर के {threshold:.0f} % से ऊपर (औसत "
+"{average:.0f} %)।"
+
+msgid "cible non prise en charge"
+msgstr "लक्ष्य समर्थित नहीं"
+
+msgid "nom de machine inattendu"
+msgstr "अप्रत्याशित मशीन नाम"
+
+msgid "aucun port n'est ouvert à Internet (Funnel)"
+msgstr "इंटरनेट के लिए कोई पोर्ट खुला नहीं है (Funnel)"
+
+msgid "plusieurs ports Funnel : la porte n'en protège qu'un pour l'instant"
+msgstr "कई Funnel पोर्ट: गेट अभी केवल एक की रक्षा करता है"
+
+msgid "Funnel passe déjà par une porte (TCP + PROXY v2)"
+msgstr "Funnel पहले से एक गेट से होकर जाता है (TCP + PROXY v2)"
+
+msgid "seule une publication HTTPS avec le chemin « / » est prise en charge"
+msgstr "केवल « / » पाथ वाला HTTPS प्रकाशन समर्थित है"
+
+msgid "Chrome, Edge, Firefox récent"
+msgstr "Chrome, Edge, नया Firefox"
+
+msgid "Firefox (ancien)"
+msgstr "Firefox (पुराना)"
+
+msgid "empreinte"
+msgstr "फ़िंगरप्रिंट"
+
+msgid "hébergeur"
+msgstr "होस्टिंग"
+
+msgid "pays"
+msgstr "देश"
+
+msgid "Identité"
+msgstr "पहचान"
+
+msgid "Réseau"
+msgstr "नेटवर्क"
+
+msgid "Sortie"
+msgstr "निकास"
+
+msgid "Services Tailscale"
+msgstr "Tailscale सेवाएँ"
+
+msgid "Opérateur"
+msgstr "ऑपरेटर"
+
+msgid "Nom de la machine"
+msgstr "मशीन का नाम"
+
+msgid ""
+"Nom dans le tailnet (vide : celui du système). Change aussi l'adresse "
+"*.ts.net : les liens publiés et le certificat suivent."
+msgstr ""
+"tailnet में नाम (खाली: सिस्टम का नाम)। *.ts.net पता भी बदलता है: प्रकाशित "
+"लिंक और प्रमाणपत्र साथ बदलते हैं।"
+
+msgid "ex. serveur-maison"
+msgstr "उदा. ghar-server"
+
+msgid "Surnom du compte"
+msgstr "खाते का उपनाम"
+
+msgid ""
+"Surnom du compte en cours, pour le reconnaître dans « Changer de compte »."
+msgstr "वर्तमान खाते का उपनाम, ताकि « खाता बदलें » में उसे पहचाना जा सके।"
+
+msgid "ex. maison"
+msgstr "उदा. ghar"
+
+msgid "Accepter les routes"
+msgstr "रूट स्वीकार करें"
+
+msgid ""
+"Utiliser les sous-réseaux annoncés par les autres machines. À éviter sur une"
+" machine du même réseau local que le routeur qui l'annonce."
+msgstr ""
+"अन्य मशीनों द्वारा घोषित सबनेट का उपयोग करें। उस राउटर के साथ एक ही स्थानीय "
+"नेटवर्क वाली मशीन पर इससे बचें जो उसे घोषित करता है।"
+
+msgid "Accepter le DNS du tailnet"
+msgstr "tailnet का DNS स्वीकार करें"
+
+msgid "MagicDNS : les noms des machines du tailnet se résolvent ici."
+msgstr "MagicDNS: tailnet की मशीनों के नाम यहाँ रिज़ॉल्व होते हैं।"
+
+msgid "Bouclier (refuser les connexions entrantes)"
+msgstr "कवच (आने वाले कनेक्शन अस्वीकार करें)"
+
+msgid ""
+"Aucune machine du tailnet ne peut se connecter à celle-ci (SSH et Serve "
+"compris). Funnel n'est pas concerné."
+msgstr ""
+"tailnet की कोई मशीन इससे कनेक्ट नहीं हो सकती (SSH और Serve सहित)। Funnel पर "
+"असर नहीं।"
+
+msgid "Filtrage avec état"
+msgstr "स्टेटफ़ुल फ़िल्टरिंग"
+
+msgid ""
+"Pour un routeur de sous-réseau ou un nœud de sortie : ne laisse revenir que "
+"les réponses."
+msgstr "सबनेट राउटर या निकास नोड के लिए: केवल जवाबों को वापस आने देता है।"
+
+msgid "Mode netfilter"
+msgstr "netfilter मोड"
+
+msgid ""
+"on : Tailscale gère ses règles de pare-feu ; nodivert : ses chaînes sans les"
+" brancher ; off : aucune règle (à vos risques)."
+msgstr ""
+"on: Tailscale अपने फ़ायरवॉल नियम संभालता है; nodivert: उसकी चेन, बिना जोड़े;"
+" off: कोई नियम नहीं (आपके जोखिम पर)।"
+
+msgid "Nœud de sortie utilisé"
+msgstr "उपयोग में निकास नोड"
+
+msgid ""
+"Faire passer le trafic Internet de cette machine par une autre machine du "
+"tailnet (vide : aucun)."
+msgstr ""
+"इस मशीन का इंटरनेट ट्रैफ़िक tailnet की किसी अन्य मशीन से होकर भेजें (खाली: "
+"कोई नहीं)।"
+
+msgid "Garder l'accès au réseau local"
+msgstr "स्थानीय नेटवर्क तक पहुँच बनाए रखें"
+
+msgid "Avec un nœud de sortie : le réseau local reste joignable directement."
+msgstr "निकास नोड के साथ: स्थानीय नेटवर्क सीधे पहुँच में रहता है।"
+
+msgid "Proposer cette machine comme nœud de sortie"
+msgstr "इस मशीन को निकास नोड के रूप में पेश करें"
+
+msgid ""
+"Les autres machines pourront sortir sur Internet par celle-ci (à approuver "
+"dans la console d'administration)."
+msgstr ""
+"अन्य मशीनें इसके ज़रिए इंटरनेट पर जा सकेंगी (एडमिन कंसोल में स्वीकृत करना "
+"होगा)।"
+
+msgid "Sous-réseaux annoncés"
+msgstr "घोषित सबनेट"
+
+msgid ""
+"Réseaux locaux rendus joignables au tailnet, séparés par des virgules "
+"(192.168.1.0/24) ; vide : aucun."
+msgstr ""
+"tailnet के लिए पहुँच-योग्य बनाए गए स्थानीय नेटवर्क, अल्पविराम से अलग "
+"(192.168.1.0/24); खाली: कोई नहीं।"
+
+msgid "ex. 192.168.1.0/24, 10.0.0.0/8"
+msgstr "उदा. 192.168.1.0/24, 10.0.0.0/8"
+
+msgid "SSH Tailscale"
+msgstr "Tailscale SSH"
+
+msgid ""
+"Serveur SSH de Tailscale, selon les règles du tailnet. Votre SSH habituel "
+"n'est pas touché."
+msgstr ""
+"Tailscale का SSH सर्वर, tailnet के नियमों के अनुसार। आपका सामान्य SSH नहीं "
+"छुआ जाता।"
+
+msgid "Interface web (port 5252)"
+msgstr "वेब इंटरफ़ेस (पोर्ट 5252)"
+
+msgid "Page de gestion de cette machine, joignable par le tailnet seulement."
+msgstr "इस मशीन का प्रबंधन पेज, केवल tailnet से पहुँच-योग्य।"
+
+msgid "Mises à jour automatiques"
+msgstr "स्वचालित अपडेट"
+
+msgid ""
+"Tailscale se met à jour seul quand sa distribution le permet. Sinon : "
+"gestionnaire de paquets."
+msgstr ""
+"जब उसका वितरण अनुमति देता है, Tailscale अपने-आप अपडेट होता है। अन्यथा: पैकेज"
+" मैनेजर।"
+
+msgid "Signaler les mises à jour"
+msgstr "अपडेट की सूचना दें"
+
+msgid "Tailscale prévient quand une version plus récente existe."
+msgstr "नया संस्करण उपलब्ध होने पर Tailscale सूचित करता है।"
+
+msgid "Port du relais pair (UDP)"
+msgstr "पीयर रिले पोर्ट (UDP)"
+
+msgid ""
+"Cette machine relaie les connexions d'autres machines du tailnet sur ce port"
+" UDP ; vide : non."
+msgstr ""
+"यह मशीन इस UDP पोर्ट पर tailnet की अन्य मशीनों के कनेक्शन रिले करती है; "
+"खाली: नहीं।"
+
+msgid "ex. 40000"
+msgstr "उदा. 40000"
+
+msgid ""
+"Nom du compte Linux qui pilote Tailscale sans sudo (« Mon compte » le "
+"remplit) ; vide : root seul. Changer l'opérateur demande sudo une fois."
+msgstr ""
+"उस Linux खाते का नाम जो sudo के बिना Tailscale चलाता है (« मेरा खाता » इसे "
+"भरता है); खाली: केवल root। ऑपरेटर बदलने के लिए एक बार sudo चाहिए।"
+
+msgid "ex. votre compte Linux"
+msgstr "उदा. आपका Linux खाता"
+
+msgid "réglage inconnu"
+msgstr "अज्ञात सेटिंग"
+
+msgid "caractère de contrôle"
+msgstr "नियंत्रण वर्ण"
+
+msgid "valeur hors liste"
+msgstr "सूची से बाहर का मान"
+
+msgid "lettres, chiffres et tirets seulement (63 au plus)"
+msgstr "केवल अक्षर, अंक और हाइफ़न (अधिकतम 63)"
+
+msgid "64 caractères au plus"
+msgstr "अधिकतम 64 वर्ण"
+
+msgid "nom de compte Unix attendu"
+msgstr "Unix खाते का नाम अपेक्षित"
+
+msgid "adresse ou nom de machine attendu"
+msgstr "पता या मशीन का नाम अपेक्षित"
+
+msgid "port de 0 à 65535"
+msgstr "0 से 65535 तक पोर्ट"
+
+#, python-brace-format
+msgid "réseau invalide : {value}"
+msgstr "अमान्य नेटवर्क: {value}"
+
+msgid "port de 1 à 65535 attendu"
+msgstr "1 से 65535 तक पोर्ट अपेक्षित"
+
+msgid "cible locale attendue : un port, ou http://127.0.0.1:PORT"
+msgstr "स्थानीय लक्ष्य अपेक्षित: एक पोर्ट, या http://127.0.0.1:PORT"
+
+msgid "cible locale attendue : un port, ou tcp://127.0.0.1:PORT"
+msgstr "स्थानीय लक्ष्य अपेक्षित: एक पोर्ट, या tcp://127.0.0.1:PORT"
+
+msgid "mode inconnu"
+msgstr "अज्ञात मोड"
+
+msgid "Funnel n'ouvre que les ports 443, 8443 et 10000"
+msgstr "Funnel केवल 443, 8443 और 10000 पोर्ट खोलता है"
+
+msgid "chemin attendu : /, /site, /api/v1…"
+msgstr "पाथ अपेक्षित: /, /site, /api/v1…"
+
+msgid "ce port est déjà publié pour un autre public (tailnet / Internet)"
+msgstr ""
+"यह पोर्ट पहले से किसी अन्य दर्शक के लिए प्रकाशित है (tailnet / इंटरनेट)"
+
+msgid "ce port est déjà publié"
+msgstr "यह पोर्ट पहले से प्रकाशित है"
+
+msgid "ce port est déjà publié dans un autre mode"
+msgstr "यह पोर्ट पहले से किसी अन्य मोड में प्रकाशित है"
+
+msgid "ce chemin est déjà publié sur ce port"
+msgstr "यह पाथ इस पोर्ट पर पहले से प्रकाशित है"
+
+msgid "pare-feu"
+msgstr "फ़ायरवॉल"
+
+msgid "publication"
+msgstr "प्रकाशन"
+
+msgid "veille automatique"
+msgstr "स्वचालित निगरानी"
+
+msgid "disjoncteur"
+msgstr "सर्किट ब्रेकर"
+
+msgid ""
+"Cette session passe par Tailscale : arrêter tailscaled la coupera, et vous "
+"ne pourrez pas le relancer d'ici. Accès de secours : le réseau local ou la "
+"machine elle-même."
+msgstr ""
+"यह सत्र Tailscale से होकर जाता है: tailscaled रोकने से यह कट जाएगा, और आप "
+"इसे यहाँ से फिर से शुरू नहीं कर पाएँगे। आपातकालीन पहुँच: स्थानीय नेटवर्क या "
+"स्वयं मशीन।"
+
+msgid ""
+"Cette session passe par Tailscale : pendant le redémarrage elle se figera "
+"quelques secondes, puis reviendra en général d'elle-même."
+msgstr ""
+"यह सत्र Tailscale से होकर जाता है: रीस्टार्ट के दौरान यह कुछ सेकंड के लिए "
+"रुकेगा, फिर आमतौर पर अपने-आप लौट आएगा।"
+
+msgid "réponse DNS invalide"
+msgstr "अमान्य DNS जवाब"
+
+msgid "aucune adresse publique pour ce nom"
+msgstr "इस नाम के लिए कोई सार्वजनिक पता नहीं"
+
+msgid "HAProxy absent"
+msgstr "HAProxy अनुपस्थित"
+
+msgid "crontab absent (installez cronie ou un autre cron)"
+msgstr "crontab अनुपस्थित (cronie या कोई अन्य cron इंस्टॉल करें)"
+
+msgid "fichier trop gros"
+msgstr "फ़ाइल बहुत बड़ी"
+
+msgid "téléchargement impossible"
+msgstr "डाउनलोड संभव नहीं"
+
+msgid "base incomplète (trop peu de plages) : ancienne base gardée"
+msgstr "अधूरा डेटाबेस (बहुत कम रेंज): पुराना डेटाबेस रखा गया"
+
+msgid "contient l'installation d'omega-tail"
+msgstr "इसमें omega-tail का इंस्टॉलेशन है"
+
+msgid "lecture refusée"
+msgstr "पढ़ना अस्वीकृत"
+
+msgid "aucun journal trouvé"
+msgstr "कोई लॉग नहीं मिला"
+
+msgid ""
+"Votre compte ne peut pas lire le journal du système. Ajoutez-le au groupe « "
+"systemd-journal » (ou « adm » / « wheel » selon la distribution), puis "
+"rouvrez votre session."
+msgstr ""
+"आपका खाता सिस्टम लॉग नहीं पढ़ सकता। इसे « systemd-journal » समूह में जोड़ें "
+"(या वितरण के अनुसार « adm » / « wheel »), फिर अपना सत्र दोबारा खोलें।"
+
+msgid ""
+"Ce journal est réservé à root sur cette machine : ajoutez votre compte au "
+"groupe qui peut le lire (souvent « adm » ou « wheel »), ou lisez-le avec "
+"sudo."
+msgstr ""
+"इस मशीन पर यह लॉग root के लिए आरक्षित है: अपने खाते को उस समूह में जोड़ें जो"
+" इसे पढ़ सकता है (अक्सर « adm » या « wheel »), या इसे sudo के साथ पढ़ें।"
+
+msgid "journal vide ou illisible pour ce compte"
+msgstr "इस खाते के लिए लॉग खाली या अपठनीय"
+
+msgid "DNS public"
+msgstr "सार्वजनिक DNS"
+
+msgid "réponse vide"
+msgstr "खाली जवाब"
+
+msgid "Pilotage de Tailscale et protection de Funnel."
+msgstr "Tailscale का संचालन और Funnel का संरक्षण।"
+
+msgid "état de Tailscale, de la machine et alertes"
+msgstr "Tailscale, मशीन और अलर्ट की स्थिति"
+
+msgid "aide complète en texte"
+msgstr "टेक्स्ट में पूरी सहायता"
+
+msgid "rapport de la machine (faits seulement)"
+msgstr "मशीन की रिपोर्ट (केवल तथ्य)"
+
+msgid "enregistrer dans le dossier des exports (sinon : affiché)"
+msgstr "एक्सपोर्ट फ़ोल्डर में सहेजें (अन्यथा: दिखाया जाता है)"
+
+msgid ""
+"inclure le compte Tailscale et les noms / adresses des appareils du tailnet"
+msgstr "Tailscale खाता और tailnet के डिवाइस के नाम / पते शामिल करें"
+
+msgid "couper ou remettre Funnel (Survie)"
+msgstr "Funnel बंद करें या फिर से चालू करें (उत्तरजीविता)"
+
+msgid "coupure en cours"
+msgstr "बंदी जारी"
+
+msgid "couper Funnel"
+msgstr "Funnel बंद करें"
+
+msgid "coupure momentanée, remise en route automatique (minuterie)"
+msgstr "अस्थायी बंदी, अपने-आप फिर से चालू (टाइमर)"
+
+msgid "coupure jusqu'à « retablir »"
+msgstr "« retablir » तक बंदी"
+
+msgid "remettre Funnel à l'identique"
+msgstr "Funnel को हूबहू फिर से चालू करें"
+
+msgid "coupure visée (minuterie) ; une autre coupure est ignorée"
+msgstr "लक्षित बंदी (टाइमर); कोई अन्य बंदी अनदेखी की जाती है"
+
+msgid "secondes d'attente avant (hors systemd)"
+msgstr "पहले प्रतीक्षा के सेकंड (systemd के बाहर)"
+
+msgid "veille automatique (coupe Funnel seule sous attaque)"
+msgstr "स्वचालित निगरानी (हमले में Funnel अपने-आप बंद करती है)"
+
+msgid "tourner en continu (lancé par le service de la veille)"
+msgstr "लगातार चलना (निगरानी सेवा द्वारा शुरू)"
+
+msgid "état de la veille et dernières lignes du journal"
+msgstr "निगरानी की स्थिति और लॉग की अंतिम पंक्तियाँ"
+
+msgid "pare-feu Funnel (porte HAProxy)"
+msgstr "Funnel फ़ायरवॉल (HAProxy गेट)"
+
+msgid "état de la porte et compteurs"
+msgstr "गेट की स्थिति और काउंटर"
+
+msgid "renouveler le certificat *.ts.net de la porte"
+msgstr "गेट का *.ts.net प्रमाणपत्र नवीनीकृत करें"
+
+msgid "seulement s'il expire dans moins de 30 jours"
+msgstr "केवल यदि यह 30 दिन से कम में समाप्त हो रहा है"
+
+msgid "regroupements : mode attaque, empreintes, AS, pays (lot 6)"
+msgstr "समूहन: हमला मोड, फ़िंगरप्रिंट, AS, देश (चरण 6)"
+
+msgid "mettre à jour la base AS / pays (DB-IP Lite)"
+msgstr "AS / देश डेटाबेस अपडेट करें (DB-IP Lite)"
+
+msgid "bloquer une adresse (durée de blocage) ou un réseau"
+msgstr "किसी पते (ब्लॉक अवधि) या नेटवर्क को ब्लॉक करें"
+
+msgid "liste noire, jusqu'à « debloquer »"
+msgstr "ब्लैकलिस्ट, « debloquer » तक"
+
+msgid "débloquer une adresse ou un réseau"
+msgstr "किसी पते या नेटवर्क को अनब्लॉक करें"
+
+msgid "mettre en confiance (jamais limitée)"
+msgstr "विश्वसनीय बनाएँ (कभी सीमित नहीं)"
+
+#, python-brace-format
+msgid "Export impossible : {error}"
+msgstr "एक्सपोर्ट नहीं हो सका: {error}"
+
+#, python-brace-format
+msgid "Rapport enregistré : {path}"
+msgstr "रिपोर्ट सेव की गई: {path}"
+
+msgid "Funnel n'est pas coupé par omega-tail."
+msgstr "Funnel omega-tail द्वारा बंद नहीं है।"
+
+#, python-brace-format
+msgid "remise en route prévue {when}"
+msgstr "फिर से चालू होना निर्धारित {when}"
+
+msgid "coupure totale"
+msgstr "पूर्ण बंदी"
+
+#, python-brace-format
+msgid ""
+"Funnel coupé depuis {since} ({until}), ports {ports} ; sauvegarde {saved}"
+msgstr "Funnel {since} से बंद ({until}), पोर्ट {ports}; बैकअप {saved}"
+
+msgid "--minutes : 1 au moins."
+msgstr "--minutes: कम से कम 1।"
+
+msgid ""
+"La porte n'est pas active : les listes s'appliqueront à son activation."
+msgstr "गेट सक्रिय नहीं है: सूचियाँ उसके सक्रिय होने पर लागू होंगी।"
+
+msgid "Veille automatique : désactivée."
+msgstr "स्वचालित निगरानी: निष्क्रिय।"
+
+msgid "ARRÊTÉE (signe de vie trop vieux)"
+msgstr "रुकी हुई (जीवन संकेत बहुत पुराना)"
+
+msgid "en marche"
+msgstr "चल रही है"
+
+#, python-brace-format
+msgid ""
+"Veille automatique : {state} ; dépassements récents {strikes}/3 ; prochaine "
+"coupure {minutes} min"
+msgstr ""
+"स्वचालित निगरानी: {state}; हाल की सीमा-लाँघ {strikes}/3; अगली बंदी {minutes}"
+" मिनट"
+
+msgid "Porte inactive : Funnel ne passe pas par elle."
+msgstr "गेट निष्क्रिय: Funnel उससे होकर नहीं जाता।"
+
+#, python-brace-format
+msgid ""
+"Porte active depuis {since} : Funnel {port} -> 127.0.0.1:{gate} -> {backend}"
+msgstr "गेट {since} से सक्रिय: Funnel {port} -> 127.0.0.1:{gate} -> {backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions : {total} reçues, {refused} refusées avant chiffrement, {current}"
+" en cours"
+msgstr ""
+"कनेक्शन: {total} प्राप्त, {refused} एन्क्रिप्शन से पहले अस्वीकृत, {current} "
+"जारी"
+
+#, python-brace-format
+msgid "{days} jour(s) restants"
+msgstr "{days} दिन शेष"
+
+#, python-brace-format
+msgid "Certificat : {left}"
+msgstr "प्रमाणपत्र: {left}"
+
+#, python-brace-format
+msgid "Certificat valable encore {days} jour(s) : rien à faire."
+msgstr "प्रमाणपत्र अभी {days} दिन मान्य है: करने को कुछ नहीं।"
+
+msgid ""
+"HAProxy sans Lua : regroupements (JA4, AS, pays) indisponibles, porte du lot"
+" 4 seule."
+msgstr ""
+"Lua के बिना HAProxy: समूहन (JA4, AS, देश) उपलब्ध नहीं, केवल चरण 4 का गेट।"
+
+msgid "observation (rien n'est refusé par ces règles)"
+msgstr "निरीक्षण (ये नियम कुछ भी अस्वीकार नहीं करते)"
+
+#, python-brace-format
+msgid "ATTAQUE (retour au normal dans {seconds} s sans dépassement)"
+msgstr "हमला (सीमा-लाँघ के बिना {seconds} s में सामान्य पर वापसी)"
+
+msgid "normal"
+msgstr "सामान्य"
+
+#, python-brace-format
+msgid "Regroupements : {mode} ; mode {attack}"
+msgstr "समूहन: {mode}; मोड {attack}"
+
+#, python-brace-format
+msgid ""
+"Mode attaque au-delà de {rate} connexions entrantes / s ; calme {minutes} "
+"min"
+msgstr "{rate} आने वाले कनेक्शन / s से ऊपर हमला मोड; शांति {minutes} मिनट"
+
+msgid "référence prête"
+msgstr "संदर्भ तैयार"
+
+#, python-brace-format
+msgid "apprentissage : encore {days} jour(s)"
+msgstr "सीखना: अभी {days} दिन"
+
+#, python-brace-format
+msgid "Empreintes habituelles : {known} ({learning})"
+msgstr "सामान्य फ़िंगरप्रिंट: {known} ({learning})"
+
+#, python-brace-format
+msgid "mise à jour il y a {days} jour(s)"
+msgstr "{days} दिन पहले अपडेट"
+
+msgid "absente (« omega-tail porte base »)"
+msgstr "अनुपस्थित (« omega-tail porte base »)"
+
+#, python-brace-format
+msgid "Base AS / pays : {base}"
+msgstr "AS / देश डेटाबेस: {base}"
+
+#, python-brace-format
+msgid "Connexions refusées (7 j) : {found}"
+msgstr "अस्वीकृत कनेक्शन (7 दिन): {found}"
+
+#, python-brace-format
+msgid "Connexions qui auraient été refusées (7 j) : {found}"
+msgstr "कनेक्शन जो अस्वीकृत होते (7 दिन): {found}"
+
+msgid "Empreintes les plus actives (connexions / 10 s, total) :"
+msgstr "सबसे सक्रिय फ़िंगरप्रिंट (कनेक्शन / 10 s, कुल):"
+
+msgid "AS les plus actifs (connexions / 10 s, total) :"
+msgstr "सबसे सक्रिय AS (कनेक्शन / 10 s, कुल):"
+
+msgid "Pays les plus actifs (connexions / 10 s, total) :"
+msgstr "सबसे सक्रिय देश (कनेक्शन / 10 s, कुल):"
+
+msgid "Tailscale n'est pas installé."
+msgstr "Tailscale इंस्टॉल नहीं है।"
+
+#, python-brace-format
+msgid "Service tailscaled : {state}"
+msgstr "tailscaled सेवा: {state}"
+
+#, python-brace-format
+msgid "Version : {daemon} en marche, {client} installée"
+msgstr "संस्करण: {daemon} चल रहा, {client} इंस्टॉल"
+
+#, python-brace-format
+msgid "Nom : {name}"
+msgstr "नाम: {name}"
+
+#, python-brace-format
+msgid "Adresses : {addresses}"
+msgstr "पते: {addresses}"
+
+#, python-brace-format
+msgid "Opérateur : {operator}"
+msgstr "ऑपरेटर: {operator}"
+
+#, python-brace-format
+msgid "tailscaled : {cpu} d'un cœur, {memory}"
+msgstr "tailscaled: एक कोर का {cpu}, {memory}"
+
+#, python-brace-format
+msgid "Température : {value}"
+msgstr "तापमान: {value}"
+
+msgid "PUBLICATION"
+msgstr "प्रकाशन"
+
+msgid "rien de publié"
+msgstr "कुछ प्रकाशित नहीं"
+
+msgid "ALERTES"
+msgstr "अलर्ट"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — LISTE NOIRE DE LA PORTE ({machine})"
+msgstr "OMEGA-TAIL {version} — गेट की ब्लैकलिस्ट ({machine})"
+
+#, python-brace-format
+msgid ""
+"Établie le {date} : {count} entrée(s), la plus ancienne d'abord. L'export "
+"TXT se réimporte tel quel."
+msgstr ""
+"{date} को बनाई गई: {count} प्रविष्टि(याँ), सबसे पुरानी पहले। TXT एक्सपोर्ट "
+"जैसा है वैसा ही फिर से इम्पोर्ट होता है।"
+
+msgid "Adresse ou réseau"
+msgstr "पता या नेटवर्क"
+
+msgid "Ajoutée le"
+msgstr "जोड़ने की तारीख"
+
+msgid "Origine"
+msgstr "स्रोत"
+
+msgid "Liste noire - Omega-Tail"
+msgstr "ब्लैकलिस्ट - Omega-Tail"
+
+msgid "Passer d'un élément à l'autre (lignes d'un tableau, boutons)"
+msgstr "एक तत्व से दूसरे पर जाएँ (तालिका की पंक्तियाँ, बटन)"
+
+msgid "Passer d'une zone de l'écran à l'autre"
+msgstr "स्क्रीन के एक क्षेत्र से दूसरे पर जाएँ"
+
+msgid "Activer le bouton choisi ; dans le tableau des alertes, « Corriger »"
+msgstr "चुना गया बटन सक्रिय करें; अलर्ट तालिका में, « ठीक करें »"
+
+msgid "Entrée / Clic"
+msgstr "Enter / क्लिक"
+
+msgid "Revenir à l'écran précédent (au menu : quitter)"
+msgstr "पिछली स्क्रीन पर लौटें (मेन्यू में: बाहर निकलें)"
+
+msgid "Cette aide, depuis n'importe quel écran"
+msgstr "यह सहायता, किसी भी स्क्रीन से"
+
+msgid "Réglages, depuis n'importe quel écran"
+msgstr "सेटिंग्स, किसी भी स्क्रीन से"
+
+msgid "Thème suivant (enregistré)"
+msgstr "अगली थीम (सेव की जाती है)"
+
+msgid "Redessiner l'écran, afficher la taille du terminal et relire l'état"
+msgstr "स्क्रीन फिर से बनाएँ, टर्मिनल का आकार दिखाएँ और स्थिति फिर से पढ़ें"
+
+msgid ""
+"Commandes : thème, capture d'écran (SVG, dans le dossier des captures), "
+"quitter"
+msgstr "कमांड: थीम, स्क्रीनशॉट (SVG, स्क्रीनशॉट फ़ोल्डर में), बाहर निकलें"
+
+msgid "Ctrl+P"
+msgstr "Ctrl+P"
+
+msgid ""
+"omega-tail pilote Tailscale sur cette machine et la protège quand elle publie un service sur Internet par Tailscale Funnel.\n"
+"\n"
+"1. [b]Tableau de bord[/b] : l'état de Tailscale, de la machine et de ce qui est publié, puis les alertes. Choisissez une alerte et « Corriger » : omega-tail ouvre l'écran qui la corrige.\n"
+"2. [b]Service tailscaled[/b] : démarrer, arrêter ou redémarrer le service (par exemple pour appliquer une mise à jour déjà installée).\n"
+"3. [b]Connexion et réglages[/b] : connexion, compte et réglages de Tailscale, vérifiés avant d'être appliqués.\n"
+"4. [b]Publication[/b] : ce que Serve et Funnel publient ; publier, retirer, essayer, restaurer.\n"
+"5. [b]Journaux[/b] : ce que tailscaled a écrit, filtrable et exportable.\n"
+"6. [b]Survie[/b] : confiner tailscaled, et couper Funnel un moment (puis le remettre tout seul) ou totalement quand la machine est attaquée.\n"
+"7. [b]Pare-feu Funnel[/b] : une porte qui refuse les connexions abusives avant tout chiffrement ; [b]Attaques et décisions[/b] pour voir et décider en direct.\n"
+"\n"
+"La [b]bande d'état[/b] (cadre « État », sous le titre de chaque écran) résume tout : service, consommation de tailscaled, température, mémoire vive utilisée (RAM), Funnel, pare-feu (actif, arrêté, inactif), veille automatique (active, arrêtée, inactive) et connexion. Elle est relue toutes les 5 secondes. La taille de la fenêtre est affichée à côté du thème, en haut ; « r » la relit après un redimensionnement.\n"
+"\n"
+"Chaque action qui change la machine montre d'abord sa commande ; le mot de passe sudo se saisit dans le terminal, l'interface revient ensuite. Rien n'est jamais lancé en arrière-plan sans vous."
+msgstr ""
+"omega-tail इस मशीन पर Tailscale चलाता है और जब यह Tailscale Funnel के ज़रिए इंटरनेट पर कोई सेवा प्रकाशित करती है, तब इसकी रक्षा करता है।\n"
+"\n"
+"1. [b]डैशबोर्ड[/b]: Tailscale, मशीन और प्रकाशित चीज़ों की स्थिति, फिर अलर्ट। कोई अलर्ट चुनें और « ठीक करें »: omega-tail वह स्क्रीन खोलता है जो उसे ठीक करती है।\n"
+"2. [b]tailscaled सेवा[/b]: सेवा शुरू करें, रोकें या फिर से शुरू करें (उदाहरण के लिए, पहले से इंस्टॉल किया गया अपडेट लागू करने के लिए)।\n"
+"3. [b]कनेक्शन और सेटिंग्स[/b]: Tailscale का कनेक्शन, खाता और सेटिंग्स, लागू करने से पहले जाँची गईं।\n"
+"4. [b]प्रकाशन[/b]: Serve और Funnel क्या प्रकाशित करते हैं; प्रकाशित करें, हटाएँ, परखें, बहाल करें।\n"
+"5. [b]लॉग[/b]: tailscaled ने जो लिखा, फ़िल्टर और एक्सपोर्ट करने योग्य।\n"
+"6. [b]उत्तरजीविता[/b]: tailscaled को सीमाबंद करें, और मशीन पर हमला होने पर Funnel को कुछ समय के लिए (फिर वह अपने-आप वापस आता है) या पूरी तरह बंद करें।\n"
+"7. [b]Funnel फ़ायरवॉल[/b]: एक गेट जो किसी भी एन्क्रिप्शन से पहले दुरुपयोग वाले कनेक्शन अस्वीकार करता है; लाइव देखने और निर्णय लेने के लिए [b]हमले और निर्णय[/b]।\n"
+"\n"
+"[b]स्थिति पट्टी[/b] (हर स्क्रीन के शीर्षक के नीचे « स्थिति » फ़्रेम) सब कुछ सारांश में दिखाती है: सेवा, tailscaled की खपत, तापमान, उपयोग की गई मेमोरी (RAM), Funnel, फ़ायरवॉल (सक्रिय, रुका हुआ, निष्क्रिय), स्वचालित निगरानी (सक्रिय, रुकी हुई, निष्क्रिय) और कनेक्शन। यह हर 5 सेकंड में फिर से पढ़ी जाती है। विंडो का आकार ऊपर, थीम के पास दिखाया जाता है; « r » आकार बदलने के बाद उसे फिर से पढ़ता है।\n"
+"\n"
+"मशीन को बदलने वाली हर क्रिया पहले अपना कमांड दिखाती है; sudo पासवर्ड टर्मिनल में डाला जाता है, फिर इंटरफ़ेस लौट आता है। आपकी जानकारी के बिना पृष्ठभूमि में कभी कुछ नहीं चलाया जाता।"
+
+msgid "Tableau de bord"
+msgstr "डैशबोर्ड"
+
+msgid ""
+"Trois cadres et une liste d'alertes.\n"
+"- [b]Tailscale[/b] : service, état de la connexion, version (en marche et installée), nom de la machine, adresses, compte, appareils en ligne, expiration de la clé, opérateur.\n"
+"- [b]Tailscale[/b] dit aussi si la machine se propose comme nœud de sortie, lequel elle utilise, et les sous-réseaux qu'elle annonce.\n"
+"- [b]Machine[/b] : CPU de toute la machine, charge, température, mémoire, CPU et mémoire de tailscaled (en % d'un cœur), confinement, puis l'état des protections : Funnel, pare-feu (porte, mode attaque), liste noire, veille, bouclier du port WireGuard.\n"
+"- Libellés dans la couleur d'accent du thème, valeurs en vert, orange ou rouge selon les seuils (CPU machine 70 / 90 %, charge 1 / 2 par cœur, température 75 / 85 °C, mémoire 85 / 95 %, tailscaled 50 / 90 % d'un cœur, liste noire 25 000 / 50 000 entrées).\n"
+"- [b]Publication[/b] : chaque port publié, pour Internet (Funnel) ou le tailnet seul (Serve), son mode et sa cible.\n"
+"- [b]Alertes[/b] : de la plus grave à la moins grave. « Corriger » (ou Entrée) ouvre l'écran qui corrige ; un écran pas encore construit le dit.\n"
+"\n"
+"Alertes possibles : service arrêté ; mise à jour installée mais pas appliquée (redémarrer le service) ; compte à connecter ; clé qui expire ; Funnel publié sans protection (tailscaled fait le chiffrement de chaque visiteur : une rafale peut saturer la machine) ; température élevée ; tailscaled trop gourmand ; tailscaled non confiné ; vous n'êtes pas opérateur ; liste noire de plus de 25 000 entrées ; messages de Tailscale lui-même.\n"
+"\n"
+"La bande d'état en haut de chaque écran sépare [b]CPU machine[/b] (toute la machine, en % de tous ses cœurs) et [b]CPU tailscaled[/b] (le seul service, en % d'un cœur)."
+msgstr ""
+"तीन फ़्रेम और अलर्ट की एक सूची।\n"
+"- [b]Tailscale[/b]: सेवा, कनेक्शन की स्थिति, संस्करण (चालू और इंस्टॉल), मशीन का नाम, पते, खाता, ऑनलाइन डिवाइस, कुंजी की समाप्ति, ऑपरेटर।\n"
+"- [b]Tailscale[/b] यह भी बताता है कि मशीन स्वयं को निकास नोड के रूप में पेश करती है या नहीं, कौन-सा निकास नोड उपयोग करती है, और कौन-से सबनेट घोषित करती है।\n"
+"- [b]मशीन[/b]: पूरी मशीन का CPU, लोड, तापमान, मेमोरी, tailscaled का CPU और मेमोरी (एक कोर के % में), सीमाबंदी, फिर संरक्षणों की स्थिति: Funnel, फ़ायरवॉल (गेट, हमला मोड), ब्लैकलिस्ट, निगरानी, WireGuard पोर्ट का कवच।\n"
+"- लेबल थीम के एक्सेंट रंग में, मान सीमाओं के अनुसार हरे, नारंगी या लाल में (मशीन CPU 70 / 90 %, लोड प्रति कोर 1 / 2, तापमान 75 / 85 °C, मेमोरी 85 / 95 %, tailscaled एक कोर का 50 / 90 %, ब्लैकलिस्ट 25 000 / 50 000 प्रविष्टियाँ)।\n"
+"- [b]प्रकाशन[/b]: हर प्रकाशित पोर्ट, इंटरनेट (Funnel) या केवल tailnet (Serve) के लिए, उसका मोड और लक्ष्य।\n"
+"- [b]अलर्ट[/b]: सबसे गंभीर से सबसे कम गंभीर तक। « ठीक करें » (या Enter) वह स्क्रीन खोलता है जो ठीक करती है; जो स्क्रीन अभी नहीं बनी, वह यह बताती है।\n"
+"\n"
+"संभावित अलर्ट: सेवा रुकी हुई; अपडेट इंस्टॉल लेकिन लागू नहीं (सेवा फिर से शुरू करें); खाता कनेक्ट करना है; कुंजी समाप्त हो रही है; Funnel बिना संरक्षण के प्रकाशित (tailscaled हर आगंतुक का एन्क्रिप्शन करता है: एक बौछार मशीन को ठप कर सकती है); उच्च तापमान; tailscaled बहुत अधिक खपत; tailscaled सीमाबंद नहीं; आप ऑपरेटर नहीं हैं; 25 000 से अधिक प्रविष्टियों वाली ब्लैकलिस्ट; स्वयं Tailscale के संदेश।\n"
+"\n"
+"हर स्क्रीन के ऊपर की स्थिति पट्टी [b]मशीन CPU[/b] (पूरी मशीन, उसके सभी कोर के % में) और [b]tailscaled CPU[/b] (केवल यह सेवा, एक कोर के % में) को अलग दिखाती है।"
+
+msgid "Service tailscaled"
+msgstr "tailscaled सेवा"
+
+msgid ""
+"L'état du service vu par systemd : actif ou non, lancé au démarrage, depuis quand, mémoire ; la version en marche et la version installée ; la commande de lancement ; les fichiers d'ajout (affichés, modifiés seulement par « Corriger le démarrage », sur votre accord) ; le confinement.\n"
+"\n"
+"[b]Démarrer[/b], [b]Arrêter[/b], [b]Redémarrer[/b] : la commande s'affiche avant d'être lancée.\n"
+"[b]Garde-fou[/b] : si votre session passe par Tailscale (SSH par le tailnet), Arrêter vous couperait sans pouvoir relancer : omega-tail demande une seconde confirmation. Redémarrer fige la session quelques secondes, puis elle revient en général.\n"
+"\n"
+"[b]Corriger le démarrage[/b] (affiché seulement si besoin) : un de vos fichiers d'ajout lance « tailscale up » après le démarrage. Dès qu'un réglage change ensuite (opérateur, nom, routes…), Tailscale refuse ce « up » incomplet ; systemd arrête alors tailscaled et abandonne après cinq essais : la machine sort du tailnet au premier redémarrage. La correction ajoute « - » devant la commande (son refus n'arrête plus le service ; vos réglages restent gardés par Tailscale), et rien d'autre ; l'original est gardé dans var/survie. Avant tout redémarrage qu'il lance (Redémarrer, confinement, opérateur), omega-tail fait d'abord cette correction, commandes montrées."
+msgstr ""
+"systemd द्वारा देखी गई सेवा की स्थिति: सक्रिय या नहीं, स्टार्टअप पर शुरू, कब से, मेमोरी; चालू संस्करण और इंस्टॉल संस्करण; लॉन्च कमांड; ऐड-ऑन फ़ाइलें (दिखाई जाती हैं, केवल « स्टार्टअप ठीक करें » द्वारा, आपकी सहमति से, बदली जाती हैं); सीमाबंदी।\n"
+"\n"
+"[b]शुरू करें[/b], [b]रोकें[/b], [b]फिर से शुरू करें[/b]: कमांड चलाने से पहले दिखाया जाता है।\n"
+"[b]सुरक्षा-जाँच[/b]: यदि आपका सत्र Tailscale से होकर जाता है (tailnet के ज़रिए SSH), तो रोकना आपको काट देगा और आप फिर से शुरू नहीं कर पाएँगे: omega-tail दूसरी पुष्टि माँगता है। फिर से शुरू करने पर सत्र कुछ सेकंड के लिए रुकता है, फिर आमतौर पर लौट आता है।\n"
+"\n"
+"[b]स्टार्टअप ठीक करें[/b] (केवल ज़रूरत होने पर दिखाया जाता है): आपकी कोई ऐड-ऑन फ़ाइल स्टार्टअप के बाद « tailscale up » चलाती है। उसके बाद जैसे ही कोई सेटिंग बदलती है (ऑपरेटर, नाम, रूट…), Tailscale इस अधूरे « up » को अस्वीकार करता है; तब systemd tailscaled को रोक देता है और पाँच प्रयासों के बाद छोड़ देता है: पहले रीस्टार्ट पर मशीन tailnet से बाहर हो जाती है। सुधार कमांड के आगे « - » जोड़ता है (उसका अस्वीकार अब सेवा को नहीं रोकता; आपकी सेटिंग्स Tailscale द्वारा रखी रहती हैं), और कुछ नहीं; मूल फ़ाइल var/survie में रखी जाती है। अपने द्वारा शुरू किए गए किसी भी रीस्टार्ट (फिर से शुरू करें, सीमाबंदी, ऑपरेटर) से पहले, omega-tail पहले यह सुधार करता है, कमांड दिखाकर।"
+
+msgid "Connexion et réglages"
+msgstr "कनेक्शन और सेटिंग्स"
+
+msgid ""
+"L'état de la connexion (connecté ou non, compte, tailnet, nom et adresses de la machine, expiration de la clé, opérateur).\n"
+"\n"
+"[b]Se connecter[/b] / [b]Se déconnecter[/b] : la machine rejoint ou quitte le tailnet ; le compte reste enregistré. [b]Ajouter un compte[/b] : Tailscale affiche dans le terminal l'adresse à ouvrir pour s'identifier. [b]Changer de compte[/b] : choisissez un compte déjà connu de la machine. [b]Déconnexion définitive[/b] : la machine est retirée du compte (clé révoquée) ; il faut taper son nom pour confirmer.\n"
+"[b]Garde-fou[/b] : si votre session passe par Tailscale, se déconnecter la coupe sans retour possible ; omega-tail le dit avant.\n"
+"\n"
+"[b]Réglages[/b] (ceux de tailscale set), chacun avec sa phrase d'explication : nom de la machine, surnom, routes, DNS du tailnet, bouclier, filtrage avec état, mode netfilter, nœud de sortie, accès au réseau local, proposer la machine comme nœud de sortie, sous-réseaux annoncés, SSH Tailscale, interface web, mises à jour, relais pair, opérateur. Les valeurs sont vérifiées ; pendant la saisie, un cadre au-dessus des boutons montre avant → après et la commande ; « Appliquer » la lance dans le terminal (sans sudo si vous êtes opérateur ; changer l'opérateur demande sudo). Un avertissement s'affiche quand un changement peut couper une session passée par Tailscale (bouclier, SSH Tailscale coupé, nœud de sortie, netfilter). Après application, le cadre garde le résultat, vérifié sur les valeurs relues (✔ pris en compte, ✖ non). « Relire » reprend les valeurs actuelles.\n"
+"\n"
+"[b]Nœud de sortie[/b] : la liste ne propose que les machines du tailnet qui se proposent comme nœud de sortie (et approuvées dans la console d'administration de Tailscale) ; s'il n'y en a aucune, l'écran le dit.\n"
+"[b]Transfert IP[/b] : une machine qui se propose comme nœud de sortie ou annonce des sous-réseaux doit faire suivre les paquets. S'il est désactivé, un avertissement et le bouton « Activer le transfert IP » apparaissent : un fichier à part (/etc/sysctl.d/99-omega-tail-forwarding.conf), appliqué tout de suite et relu au démarrage (systemd, OpenRC, runit). Pour annuler : supprimer ce fichier puis redémarrer."
+msgstr ""
+"कनेक्शन की स्थिति (कनेक्टेड या नहीं, खाता, tailnet, मशीन का नाम और पते, कुंजी की समाप्ति, ऑपरेटर)।\n"
+"\n"
+"[b]कनेक्ट करें[/b] / [b]डिसकनेक्ट करें[/b]: मशीन tailnet से जुड़ती या उसे छोड़ती है; खाता सहेजा रहता है। [b]खाता जोड़ें[/b]: Tailscale टर्मिनल में पहचान के लिए खोला जाने वाला पता दिखाता है। [b]खाता बदलें[/b]: मशीन को पहले से ज्ञात कोई खाता चुनें। [b]स्थायी लॉग आउट[/b]: मशीन खाते से हटा दी जाती है (कुंजी रद्द); पुष्टि के लिए उसका नाम टाइप करना होगा।\n"
+"[b]सुरक्षा-जाँच[/b]: यदि आपका सत्र Tailscale से होकर जाता है, तो डिसकनेक्ट करना उसे बिना वापसी के काट देता है; omega-tail पहले यह बताता है।\n"
+"\n"
+"[b]सेटिंग्स[/b] (tailscale set वाली), हर एक अपने व्याख्या वाक्य के साथ: मशीन का नाम, उपनाम, रूट, tailnet का DNS, कवच, स्टेटफ़ुल फ़िल्टरिंग, netfilter मोड, निकास नोड, स्थानीय नेटवर्क तक पहुँच, मशीन को निकास नोड के रूप में पेश करना, घोषित सबनेट, Tailscale SSH, वेब इंटरफ़ेस, अपडेट, पीयर रिले, ऑपरेटर। मान जाँचे जाते हैं; टाइप करते समय, बटनों के ऊपर एक फ़्रेम पहले → बाद और कमांड दिखाता है; « लागू करें » उसे टर्मिनल में चलाता है (यदि आप ऑपरेटर हैं तो sudo के बिना; ऑपरेटर बदलने के लिए sudo चाहिए)। जब कोई बदलाव Tailscale से होकर जाने वाले सत्र को काट सकता है (कवच, Tailscale SSH बंद, निकास नोड, netfilter), तो एक चेतावनी दिखती है। लागू करने के बाद, फ़्रेम परिणाम रखता है, फिर से पढ़े गए मानों पर जाँचा हुआ (✔ लागू, ✖ नहीं)। « फिर से पढ़ें » वर्तमान मान दोबारा लेता है।\n"
+"\n"
+"[b]निकास नोड[/b]: सूची केवल tailnet की उन मशीनों को दिखाती है जो स्वयं को निकास नोड के रूप में पेश करती हैं (और Tailscale के एडमिन कंसोल में स्वीकृत हैं); यदि कोई नहीं है, तो स्क्रीन यह बताती है।\n"
+"[b]IP फ़ॉरवर्डिंग[/b]: जो मशीन स्वयं को निकास नोड के रूप में पेश करती है या सबनेट घोषित करती है, उसे पैकेट आगे भेजने होते हैं। यदि यह निष्क्रिय है, तो एक चेतावनी और « IP फ़ॉरवर्डिंग सक्रिय करें » बटन दिखते हैं: एक अलग फ़ाइल (/etc/sysctl.d/99-omega-tail-forwarding.conf), तुरंत लागू और स्टार्टअप पर फिर से पढ़ी जाती है (systemd, OpenRC, runit)। रद्द करने के लिए: यह फ़ाइल हटाएँ, फिर रीस्टार्ट करें।"
+
+msgid "Publication"
+msgstr "प्रकाशन"
+
+msgid ""
+"Tout ce que la machine publie : port, pour qui (le tailnet seul avec Serve, Internet avec Funnel), mode, chemin, cible, et si la porte du pare-feu protège le port.\n"
+"\n"
+"[b]Publier[/b] : un service local (un port, ou http://127.0.0.1:PORT), pour le tailnet ou pour Internet (Funnel n'ouvre que les ports 443, 8443 et 10000), en HTTPS, HTTP, TCP ou TLS terminé, sur un chemin. Pour Internet, le plus sûr est HTTPS sur 443 puis « Activer la protection » (Pare-feu Funnel).\n"
+"[b]Retirer[/b] : la ligne choisie (un chemin seul si le port en publie d'autres). Le port protégé par la porte se retire par « Désactiver la protection ».\n"
+"[b]Suspendre Funnel[/b] / [b]Rétablir Funnel[/b] : coupe les ports ouverts à Internet sans perdre leur configuration (même mécanisme que le disjoncteur de Survie), puis les remet à l'identique.\n"
+"[b]Essai de bout en bout[/b] : une vraie connexion, comme un visiteur (par Internet pour un port public, par le tailnet sinon) : réponse, temps, certificat (émetteur, échéance) et version de TLS.\n"
+"[b]Sauvegardes[/b] : l'état d'avant chaque changement (publication, pare-feu, disjoncteur), les 50 plus récentes ; « Restaurer » remet celle choisie, après avoir sauvegardé l'état actuel.\n"
+"\n"
+"Chaque changement est vérifié. Si le résultat n'est pas celui voulu, la publication est reconstruite (remise à zéro puis chaque point recréé) ; si cela échoue aussi, l'état d'avant est remis. Changer la publication demande d'être opérateur de Tailscale."
+msgstr ""
+"मशीन जो कुछ प्रकाशित करती है: पोर्ट, किसके लिए (Serve के साथ केवल tailnet, Funnel के साथ इंटरनेट), मोड, पाथ, लक्ष्य, और क्या फ़ायरवॉल का गेट पोर्ट की रक्षा करता है।\n"
+"\n"
+"[b]प्रकाशित करें[/b]: एक स्थानीय सेवा (एक पोर्ट, या http://127.0.0.1:PORT), tailnet के लिए या इंटरनेट के लिए (Funnel केवल 443, 8443 और 10000 पोर्ट खोलता है), HTTPS, HTTP, TCP या समाप्त TLS में, किसी पाथ पर। इंटरनेट के लिए सबसे सुरक्षित है 443 पर HTTPS, फिर « संरक्षण सक्रिय करें » (Funnel फ़ायरवॉल)।\n"
+"[b]हटाएँ[/b]: चुनी गई पंक्ति (केवल एक पाथ, यदि पोर्ट दूसरे भी प्रकाशित करता है)। गेट द्वारा संरक्षित पोर्ट « संरक्षण निष्क्रिय करें » से हटाया जाता है।\n"
+"[b]Funnel निलंबित करें[/b] / [b]Funnel बहाल करें[/b]: इंटरनेट के लिए खुले पोर्ट को उनका कॉन्फ़िगरेशन खोए बिना बंद करता है (उत्तरजीविता के सर्किट ब्रेकर जैसी ही प्रणाली), फिर उन्हें हूबहू वापस लगाता है।\n"
+"[b]एंड-टू-एंड परीक्षण[/b]: एक असली कनेक्शन, आगंतुक की तरह (सार्वजनिक पोर्ट के लिए इंटरनेट से, अन्यथा tailnet से): जवाब, समय, प्रमाणपत्र (जारीकर्ता, समाप्ति) और TLS संस्करण।\n"
+"[b]बैकअप[/b]: हर बदलाव (प्रकाशन, फ़ायरवॉल, सर्किट ब्रेकर) से पहले की स्थिति, 50 सबसे हाल के; « बहाल करें » वर्तमान स्थिति का बैकअप लेने के बाद चुना गया बैकअप वापस लगाता है।\n"
+"\n"
+"हर बदलाव जाँचा जाता है। यदि परिणाम अपेक्षित नहीं है, तो प्रकाशन फिर से बनाया जाता है (रीसेट, फिर हर बिंदु फिर से बनाया जाता है); यदि यह भी विफल होता है, तो पहले की स्थिति वापस लगाई जाती है। प्रकाशन बदलने के लिए Tailscale का ऑपरेटर होना ज़रूरी है।"
+
+msgid "Journaux"
+msgstr "लॉग"
+
+msgid ""
+"Le journal de tailscaled (journalctl) ou celui de la porte. Choisissez le nombre de lignes, filtrez par texte. Chaque information a sa couleur, prise dans le thème : la date, la machine en grisé, le processus, puis la catégorie du message, une couleur par famille (contrôle et connexion, réseau et relais, DNS, moteur WireGuard) ; les adresses en gras ; le message en rouge s'il signale une erreur, en orange pour un avertissement. Pour la porte : l'adresse du visiteur, le motif de refus en rouge, le regroupement en orange, puis l'AS et le pays. « Exporter » enregistre les lignes affichées dans le dossier des exports ; « Voir les exports » les ouvre (voir Rapport).\n"
+"Si rien ne s'affiche : votre compte doit pouvoir lire le journal du système (groupe systemd-journal, adm ou wheel selon la distribution)."
+msgstr ""
+"tailscaled का लॉग (journalctl) या गेट का लॉग। पंक्तियों की संख्या चुनें, टेक्स्ट से फ़िल्टर करें। हर जानकारी का अपना रंग है, जो थीम से लिया जाता है: तारीख, धुंधले रंग में मशीन, प्रोसेस, फिर संदेश की श्रेणी, हर परिवार का एक रंग (नियंत्रण और कनेक्शन, नेटवर्क और रिले, DNS, WireGuard इंजन); पते बोल्ड में; संदेश लाल में यदि वह त्रुटि बताता है, चेतावनी हो तो नारंगी में। गेट के लिए: विज़िटर का पता, अस्वीकृति का कारण लाल में, समूहन नारंगी में, फिर AS और देश। « एक्सपोर्ट » दिखाई गई पंक्तियों को एक्सपोर्ट फ़ोल्डर में सहेजता है; « एक्सपोर्ट देखें » उन्हें खोलता है (रिपोर्ट देखें)।\n"
+"यदि कुछ नहीं दिखता: आपके खाते को सिस्टम लॉग पढ़ने में सक्षम होना चाहिए (वितरण के अनुसार systemd-journal, adm या wheel समूह)।"
+
+msgid "Devenir opérateur"
+msgstr "ऑपरेटर बनें"
+
+msgid ""
+"Par défaut, chaque réglage de Tailscale demande sudo. Devenir opérateur (une"
+" seule fois, par sudo) permet à votre compte de régler Tailscale sans sudo. "
+"Le bouton apparaît dans le tableau de bord tant que ce n'est pas fait ; dans"
+" « Connexion et réglages », le bouton « Mon compte » met votre nom dans le "
+"champ Opérateur, puis « Appliquer ». Pour annuler : vider le champ et "
+"appliquer, ou sudo tailscale set --operator="
+msgstr ""
+"डिफ़ॉल्ट रूप से, Tailscale की हर सेटिंग sudo माँगती है। ऑपरेटर बनने से (केवल"
+" एक बार, sudo द्वारा) आपका खाता sudo के बिना Tailscale सेट कर सकता है। जब तक"
+" यह नहीं होता, बटन डैशबोर्ड में दिखता है; « कनेक्शन और सेटिंग्स » में, « "
+"मेरा खाता » बटन आपका नाम ऑपरेटर फ़ील्ड में डालता है, फिर « लागू करें »। रद्द"
+" करने के लिए: फ़ील्ड खाली करें और लागू करें, या sudo tailscale set "
+"--operator="
+
+msgid "Survie"
+msgstr "उत्तरजीविता"
+
+msgid ""
+"Garder la machine debout sous attaque : le confinement, le disjoncteur et la veille automatique, toujours proposés, jamais imposés.\n"
+"\n"
+"[b]Confinement de tailscaled[/b] : un fichier d'ajout systemd à part (50-omega-tail.conf) plafonne tailscaled (par exemple un cœur entier sur une machine à 4 fils), baisse son poids et sa priorité. Sous attaque, il ne peut plus prendre toute la machine : l'administration et les autres services restent utilisables. Option : donner la priorité à l'accès SSH. Votre propre override.conf n'est jamais modifié ; « Retirer le confinement » supprime seulement les fichiers d'omega-tail. Le plafond s'applique au rechargement ; la priorité au redémarrage de tailscaled (case cochée par défaut).\n"
+"\n"
+"[b]Disjoncteur Funnel[/b] : quand tailscaled reste au-dessus du seuil CPU pendant toute la durée choisie (80 % d'un cœur pendant 60 s par défaut), ou quand la température atteint son seuil (85 °C), omega-tail ouvert vous propose :\n"
+"- [b]Couper 10 min[/b] (durée réglable) : les ports ouverts à Internet sont coupés, puis remis en route automatiquement, à l'identique, même si omega-tail est fermé (minuterie systemd, sudo une fois) ;\n"
+"- [b]Coupure totale[/b] : Funnel reste coupé jusqu'à « Rétablir maintenant » ;\n"
+"- [b]Pas maintenant[/b] : plus de proposition pendant 15 minutes.\n"
+"Le tailnet (Serve, SSH par Tailscale) n'est jamais coupé. La publication est sauvegardée avant chaque coupure (var/funnel/sauvegardes/) et la remise en route est vérifiée identique. Un port Funnel en TCP (celui de la porte) garde son autorisation Funnel après « off » : la coupure repart alors de zéro avec les seuls points du tailnet et vérifie que plus rien n'est ouvert à Internet. Le disjoncteur demande d'être opérateur de Tailscale : la remise en route tourne sous votre compte, jamais en root.\n"
+"En ligne de commande : omega-tail disjoncteur etat | couper --minutes 10 | couper --totale | retablir.\n"
+"\n"
+"[b]Veille automatique[/b] (désactivée par défaut) : pour une machine sans personne devant. Un service tourne en permanence sous votre compte, même omega-tail fermé (systemd, OpenRC ou runit). Un dépassement : un seuil du disjoncteur tenu. 3 dépassements dans la fenêtre (10 min, réglable) : la veille coupe Funnel seule, 15 min la première fois, 30 min la deuxième, puis 1 h à chaque fois, et le remet en route seule, à l'identique. Retour à 15 min après 24 h sans coupure ; après chaque remise en route, 2 min de calme avant de mesurer de nouveau. Seul Funnel est coupé : tailscaled, le tailnet et SSH restent joignables. Quand la veille tourne, omega-tail ouvert ne propose plus la coupure (elle agit seule). Les 6 dernières lignes de son journal s'affichent dans Survie (le fichier var/veille/journal.log garde 512 Ko, puis passe en journal.log.1) ; une veille activée mais arrêtée est signalée au tableau de bord.\n"
+"En ligne de commande : omega-tail veille etat.\n"
+"\n"
+"[b]Bouclier du port WireGuard[/b] (bouton dans Survie) : tailscaled dépense environ un cœur de processeur pour 100 000 paquets par seconde reçus sur son port, même invalides, Funnel ouvert ou non. Le bouclier est une table nftables posée devant lui, sur les cartes réseau matérielles : les pairs connus (ceux à qui tailscaled écrit, appris par le noyau) ne sont jamais limités ; les poignées de main sont limitées à 20 par seconde et par source ; les autres sources ont un budget (500 paquets par seconde chacune, 5 000 en tout) ; les paquets qui ne sont pas du WireGuard sont refusés. Mesuré : un flot qui prenait un cœur entier à tailscaled n'en prend plus que 1 %.\n"
+"- [b]Observation[/b] d'abord : rien n'est refusé, les compteurs disent ce qui l'aurait été ; « Passer en actif » quand ils ne montrent que des attaques.\n"
+"- [b]Qui le pose[/b] : omega-fire 3.7.0 ou plus récent s'il est relié par omega-connect (sa liste des règles l'affiche avec l'origine omega-tail) ; sinon omega-tail lui-même, même si ufw ou firewalld sont présents. C'est la même table dans les deux cas : « Confier à omega-fire » ou, dans omega-fire, « Reprendre la gestion » la fait changer de mains sans la toucher ; si omega-fire n'est plus relié, « Reprendre la gestion » la rend à omega-tail.\n"
+"- Un service (omega-bouclier-wg) la remet en place à chaque démarrage et écrit son état chaque minute.\n"
+"- Si un autre outil efface la table (nft flush ruleset, pare-feu relancé), le tableau de bord et la veille le signalent ; elle n'est jamais reposée seule : « Reposer ».\n"
+"- Retiré depuis omega-fire : omega-tail l'affiche."
+msgstr ""
+"हमले के दौरान मशीन को खड़ा रखना: सीमाबंदी, सर्किट ब्रेकर और स्वचालित निगरानी, हमेशा प्रस्तावित, कभी थोपे नहीं जाते।\n"
+"\n"
+"[b]tailscaled की सीमाबंदी[/b]: एक अलग systemd ऐड-ऑन फ़ाइल (50-omega-tail.conf) tailscaled की सीमा तय करती है (उदाहरण के लिए 4 थ्रेड वाली मशीन पर एक पूरा कोर), उसका भार और प्राथमिकता घटाती है। हमले के दौरान, यह अब पूरी मशीन नहीं ले सकता: प्रशासन और अन्य सेवाएँ उपयोग योग्य रहती हैं। विकल्प: SSH पहुँच को प्राथमिकता देना। आपका अपना override.conf कभी नहीं बदला जाता; « सीमाबंदी हटाएँ » केवल omega-tail की फ़ाइलें हटाता है। सीमा रीलोड पर लागू होती है; प्राथमिकता tailscaled के रीस्टार्ट पर (बॉक्स डिफ़ॉल्ट रूप से चिह्नित)।\n"
+"\n"
+"[b]Funnel सर्किट ब्रेकर[/b]: जब tailscaled चुनी गई पूरी अवधि तक CPU सीमा से ऊपर रहता है (डिफ़ॉल्ट रूप से 60 s तक एक कोर का 80 %), या जब तापमान अपनी सीमा (85 °C) तक पहुँचता है, तो खुला omega-tail आपको प्रस्ताव देता है:\n"
+"- [b]10 मिनट बंद करें[/b] (अवधि समायोज्य): इंटरनेट के लिए खुले पोर्ट बंद किए जाते हैं, फिर अपने-आप, हूबहू, फिर से चालू होते हैं, भले ही omega-tail बंद हो (systemd टाइमर, एक बार sudo);\n"
+"- [b]पूर्ण बंदी[/b]: Funnel « अभी बहाल करें » तक बंद रहता है;\n"
+"- [b]अभी नहीं[/b]: 15 मिनट तक कोई और प्रस्ताव नहीं।\n"
+"tailnet (Serve, Tailscale के ज़रिए SSH) कभी बंद नहीं होता। हर बंदी से पहले प्रकाशन का बैकअप लिया जाता है (var/funnel/sauvegardes/) और पुनः-चालू होने की हूबहू जाँच होती है। TCP में एक Funnel पोर्ट (गेट वाला) « off » के बाद भी अपनी Funnel अनुमति रखता है: तब बंदी शून्य से, केवल tailnet के बिंदुओं के साथ, फिर से शुरू होती है और जाँचती है कि इंटरनेट के लिए अब कुछ भी खुला नहीं है। सर्किट ब्रेकर के लिए Tailscale का ऑपरेटर होना ज़रूरी है: पुनः-चालू आपके खाते के अंतर्गत चलता है, कभी root के रूप में नहीं।\n"
+"कमांड लाइन में: omega-tail disjoncteur etat | couper --minutes 10 | couper --totale | retablir.\n"
+"\n"
+"[b]स्वचालित निगरानी[/b] (डिफ़ॉल्ट रूप से निष्क्रिय): ऐसी मशीन के लिए जिसके सामने कोई नहीं रहता। एक सेवा आपके खाते के अंतर्गत लगातार चलती है, omega-tail बंद होने पर भी (systemd, OpenRC या runit)। एक सीमा-लाँघ: सर्किट ब्रेकर की एक सीमा का बना रहना। विंडो (10 मिनट, समायोज्य) में 3 सीमा-लाँघ: निगरानी अपने-आप Funnel बंद करती है, पहली बार 15 मिनट, दूसरी बार 30 मिनट, फिर हर बार 1 घंटा, और उसे अपने-आप, हूबहू, फिर से चालू करती है। बिना बंदी के 24 घंटे बाद 15 मिनट पर वापसी; हर पुनः-चालू के बाद, फिर से मापने से पहले 2 मिनट की शांति। केवल Funnel बंद होता है: tailscaled, tailnet और SSH पहुँच में रहते हैं। जब निगरानी चल रही होती है, तो खुला omega-tail बंदी का प्रस्ताव नहीं देता (वह स्वयं कार्य करती है)। उसके लॉग की अंतिम 6 पंक्तियाँ उत्तरजीविता में दिखती हैं (var/veille/journal.log फ़ाइल 512 KB रखती है, फिर journal.log.1 में जाती है); सक्रिय लेकिन रुकी हुई निगरानी डैशबोर्ड पर सूचित की जाती है।\n"
+"कमांड लाइन में: omega-tail veille etat.\n"
+"\n"
+"[b]WireGuard पोर्ट का कवच[/b] (उत्तरजीविता में बटन): tailscaled अपने पोर्ट पर प्राप्त हर 100 000 पैकेट प्रति सेकंड के लिए लगभग एक प्रोसेसर कोर खर्च करता है, अमान्य होने पर भी, Funnel खुला हो या नहीं। कवच उसके सामने, हार्डवेयर नेटवर्क कार्ड पर लगाई गई एक nftables तालिका है: ज्ञात पीयर (जिन्हें tailscaled लिखता है, कर्नेल द्वारा सीखे गए) कभी सीमित नहीं होते; हैंडशेक प्रति सेकंड प्रति स्रोत 20 तक सीमित हैं; अन्य स्रोतों का एक बजट है (प्रत्येक 500 पैकेट प्रति सेकंड, कुल 5 000); जो पैकेट WireGuard नहीं हैं, वे अस्वीकार किए जाते हैं। मापा गया: जो प्रवाह tailscaled का पूरा कोर लेता था, अब केवल 1 % लेता है।\n"
+"- पहले [b]निरीक्षण[/b]: कुछ भी अस्वीकार नहीं होता, काउंटर बताते हैं कि क्या अस्वीकार होता; जब वे केवल हमले दिखाएँ तो « सक्रिय पर डालें »।\n"
+"- [b]इसे कौन लगाता है[/b]: omega-fire 3.7.0 या नया, यदि वह omega-connect द्वारा जुड़ा है (उसकी नियमों की सूची इसे omega-tail मूल के साथ दिखाती है); अन्यथा स्वयं omega-tail, भले ही ufw या firewalld मौजूद हों। दोनों स्थितियों में यह वही तालिका है: « omega-fire को सौंपें » या, omega-fire में, « प्रबंधन वापस लें » इसे बिना छुए हाथ बदलवाता है; यदि omega-fire अब जुड़ा नहीं है, तो « प्रबंधन वापस लें » इसे omega-tail को लौटाता है।\n"
+"- एक सेवा (omega-bouclier-wg) इसे हर स्टार्टअप पर फिर से लगाती है और हर मिनट अपनी स्थिति लिखती है।\n"
+"- यदि कोई अन्य टूल तालिका मिटा देता है (nft flush ruleset, फ़ायरवॉल फिर से चालू), तो डैशबोर्ड और निगरानी इसकी सूचना देते हैं; यह कभी अपने-आप दोबारा नहीं लगती: « फिर से लगाएँ »।\n"
+"- omega-fire से हटाया गया: omega-tail इसे दिखाता है।"
+
+msgid "Pare-feu Funnel"
+msgstr "Funnel फ़ायरवॉल"
+
+msgid ""
+"En Funnel ordinaire, tailscaled fait le chiffrement (TLS) de chaque visiteur : une rafale sature la machine. La protection place une porte (HAProxy, installé par le gestionnaire de paquets) entre Funnel et votre site : Funnel lui transmet le flux encore chiffré avec l'adresse réelle du visiteur, la porte décide AVANT tout chiffrement, puis ne chiffre que pour les connexions admises. Mesuré : une connexion refusée coûte 4,6 fois moins, une connexion admise 2 fois moins.\n"
+"\n"
+"[b]Activer la protection[/b] : préparation (certificat *.ts.net par Tailscale, listes, configuration vérifiée), services de la porte et de son certificat (sudo, dans le terminal ; la porte tourne sous votre compte, jamais en root), bascule de Funnel puis essai depuis Internet. En cas d'échec, la publication d'origine est remise aussitôt. Prérequis : être opérateur de Tailscale ; Funnel publié en HTTPS sur un seul port avec le chemin « / ».\n"
+"[b]Désactiver la protection[/b] : Funnel est remis exactement comme avant, vérifié, puis la porte est arrêtée ; réglages et listes sont gardés.\n"
+"\n"
+"[b]Règles[/b], appliquées à chaud (les adresses bloquées le restent) :\n"
+"- machines du tailnet (100.64.0.0/10 et fd7a:115c:a1e0::/48) : toujours admises, avant toute règle ; seuls les visiteurs de Funnel sont filtrés ;\n"
+"- liste de confiance : jamais limitée ; liste noire : refusée jusqu'à son retrait ;\n"
+"- débit par adresse (40 connexions / 10 s par défaut) : au-delà, l'adresse est bloquée pour la durée choisie (60 min) ;\n"
+"- débit par préfixe /24 (IPv4) ou /64 (IPv6) ;\n"
+"- budget global de connexions admises par seconde : le processeur n'est jamais débordé ;\n"
+"- nom visé : une connexion qui ne vise pas le nom de la machine est refusée.\n"
+"Mode [b]observation[/b] : tout est compté, rien n'est refusé (pour régler les seuils sans risque).\n"
+"\n"
+"Le certificat est vérifié chaque jour et renouvelé à chaud 30 jours avant son échéance.\n"
+"\n"
+"[b]Regroupements[/b] (empreintes, AS, pays) : contre les attaques à adresses dispersées, que les règles par adresse ne voient qu'une fois chacune. Avant tout chiffrement, la porte calcule l'[b]empreinte JA4[/b] du client (la façon dont son logiciel se présente : un navigateur et un outil d'attaque n'ont pas la même), son [b]AS[/b] (le réseau d'origine : fournisseur d'accès, hébergeur, nuage) et son [b]pays[/b], et compte le débit de chaque groupe.\n"
+"- [b]Mode attaque automatique[/b] : quand les connexions entrantes dépassent le seuil (80 / s par défaut), la porte passe seule en mode attaque, et y reste jusqu'à 5 minutes de calme. Rien à faire, même à distance.\n"
+"- En mode attaque seulement : une empreinte inconnue qui explose, un AS d'hébergeur ou de nuage (liste modifiable) ou un pays de votre liste (vide par défaut) qui dépasse son débit est refusé.\n"
+"- Les [b]navigateurs courants[/b] (Chrome, Edge, Firefox) ne sont jamais touchés par ces règles, et les [b]clients connus[/b] (admis dans les dernières 24 h) passent avant le budget global.\n"
+"- [b]Référence apprise[/b] : pendant 7 jours, la porte apprend les empreintes habituelles de votre site (jamais pendant une attaque) ; pendant ce temps, les regroupements restent en [b]observation[/b], même si « appliqués » est choisi. « Recommencer l'apprentissage » repart de zéro et les remet en observation.\n"
+"- [b]Observation[/b] (par défaut) : tout est compté (« aurait été refusée »), rien n'est refusé ; une fois l'apprentissage fini, passez en « appliqués » quand les chiffres vous conviennent.\n"
+"- Hors attaque, une connexion sur dix seulement est classée (assez pour apprendre, dix fois moins de calcul) ; en attaque, toutes. Il faut un HAProxy avec Lua (cas des distributions courantes).\n"
+"- [b]Base AS / pays[/b] : DB-IP Lite, téléchargée et mise à jour une fois par mois par la veille automatique, ou par « Mettre à jour la base ». IP Geolocation by DB-IP (https://db-ip.com), licence CC BY 4.0."
+msgstr ""
+"सामान्य Funnel में, tailscaled हर आगंतुक का एन्क्रिप्शन (TLS) करता है: एक बौछार मशीन को ठप कर देती है। संरक्षण Funnel और आपकी साइट के बीच एक गेट (HAProxy, पैकेज मैनेजर द्वारा इंस्टॉल) रखता है: Funnel उसे आगंतुक के वास्तविक पते के साथ अभी भी एन्क्रिप्टेड प्रवाह भेजता है, गेट किसी भी एन्क्रिप्शन से पहले निर्णय लेता है, फिर केवल अनुमत कनेक्शनों के लिए एन्क्रिप्ट करता है। मापा गया: अस्वीकृत कनेक्शन की लागत 4.6 गुना कम, अनुमत कनेक्शन की 2 गुना कम।\n"
+"\n"
+"[b]संरक्षण सक्रिय करें[/b]: तैयारी (Tailscale द्वारा *.ts.net प्रमाणपत्र, सूचियाँ, जाँचा गया कॉन्फ़िगरेशन), गेट और उसके प्रमाणपत्र की सेवाएँ (sudo, टर्मिनल में; गेट आपके खाते के अंतर्गत चलता है, कभी root के रूप में नहीं), Funnel का स्विच, फिर इंटरनेट से परीक्षण। विफलता होने पर, मूल प्रकाशन तुरंत वापस लगाया जाता है। पूर्व-आवश्यकताएँ: Tailscale का ऑपरेटर होना; Funnel एक ही पोर्ट पर « / » पाथ के साथ HTTPS में प्रकाशित।\n"
+"[b]संरक्षण निष्क्रिय करें[/b]: Funnel ठीक पहले जैसा वापस लगाया जाता है, जाँचा जाता है, फिर गेट रोका जाता है; सेटिंग्स और सूचियाँ रखी जाती हैं।\n"
+"\n"
+"[b]नियम[/b], चलते-चलते लागू (ब्लॉक किए गए पते ब्लॉक ही रहते हैं):\n"
+"- tailnet की मशीनें (100.64.0.0/10 और fd7a:115c:a1e0::/48): हमेशा अनुमत, किसी भी नियम से पहले; केवल Funnel के आगंतुक फ़िल्टर होते हैं;\n"
+"- विश्वसनीय सूची: कभी सीमित नहीं; ब्लैकलिस्ट: हटाए जाने तक अस्वीकृत;\n"
+"- प्रति पता दर (डिफ़ॉल्ट रूप से 40 कनेक्शन / 10 s): इससे ऊपर, पता चुनी गई अवधि (60 मिनट) के लिए ब्लॉक होता है;\n"
+"- प्रति /24 (IPv4) या /64 (IPv6) प्रीफ़िक्स दर;\n"
+"- प्रति सेकंड अनुमत कनेक्शनों का कुल बजट: प्रोसेसर कभी अभिभूत नहीं होता;\n"
+"- लक्षित नाम: जो कनेक्शन मशीन के नाम को लक्षित नहीं करता, वह अस्वीकार होता है।\n"
+"[b]निरीक्षण[/b] मोड: सब कुछ गिना जाता है, कुछ भी अस्वीकार नहीं होता (बिना जोखिम सीमाएँ समायोजित करने के लिए)।\n"
+"\n"
+"प्रमाणपत्र हर दिन जाँचा जाता है और समाप्ति से 30 दिन पहले चलते-चलते नवीनीकृत होता है।\n"
+"\n"
+"[b]समूहन[/b] (फ़िंगरप्रिंट, AS, देश): बिखरे पतों वाले हमलों के विरुद्ध, जिन्हें प्रति-पता नियम हर एक को केवल एक बार देखते हैं। किसी भी एन्क्रिप्शन से पहले, गेट क्लाइंट का [b]JA4 फ़िंगरप्रिंट[/b] (उसका सॉफ़्टवेयर स्वयं को कैसे प्रस्तुत करता है: ब्राउज़र और हमले के टूल का अलग होता है), उसका [b]AS[/b] (मूल नेटवर्क: इंटरनेट प्रदाता, होस्टिंग, क्लाउड) और उसका [b]देश[/b] निकालता है, और हर समूह की दर गिनता है।\n"
+"- [b]स्वचालित हमला मोड[/b]: जब आने वाले कनेक्शन सीमा (डिफ़ॉल्ट रूप से 80 / s) पार करते हैं, तो गेट अपने-आप हमला मोड में जाता है, और 5 मिनट की शांति तक उसमें रहता है। कुछ करने की ज़रूरत नहीं, दूर से भी नहीं।\n"
+"- केवल हमला मोड में: अचानक बढ़ता अज्ञात फ़िंगरप्रिंट, होस्टिंग या क्लाउड का AS (संपादन योग्य सूची) या आपकी सूची का देश (डिफ़ॉल्ट रूप से खाली) जो अपनी दर पार करता है, अस्वीकार होता है।\n"
+"- [b]सामान्य ब्राउज़र[/b] (Chrome, Edge, Firefox) इन नियमों से कभी प्रभावित नहीं होते, और [b]ज्ञात क्लाइंट[/b] (पिछले 24 घंटों में अनुमत) कुल बजट से पहले आते हैं।\n"
+"- [b]सीखा गया संदर्भ[/b]: 7 दिनों तक गेट आपकी साइट के सामान्य फ़िंगरप्रिंट सीखता है (हमले के दौरान कभी नहीं); इस दौरान समूहन [b]निरीक्षण[/b] में रहते हैं, भले ही « लागू » चुना गया हो। « सीखना फिर से शुरू करें » शून्य से शुरू करता है और उन्हें वापस निरीक्षण में डालता है।\n"
+"- [b]निरीक्षण[/b] (डिफ़ॉल्ट): सब कुछ गिना जाता है (« अस्वीकृत होता »), कुछ भी अस्वीकार नहीं होता; सीखना पूरा होने के बाद, जब आँकड़े आपको ठीक लगें तो « लागू » पर जाएँ।\n"
+"- हमले के बाहर, दस में से केवल एक कनेक्शन वर्गीकृत होता है (सीखने के लिए पर्याप्त, दस गुना कम गणना); हमले में, सभी। Lua वाला HAProxy चाहिए (सामान्य वितरणों में यही होता है)।\n"
+"- [b]AS / देश डेटाबेस[/b]: DB-IP Lite, स्वचालित निगरानी द्वारा महीने में एक बार, या « डेटाबेस अपडेट करें » द्वारा डाउनलोड और अपडेट किया जाता है। IP Geolocation by DB-IP (https://db-ip.com), लाइसेंस CC BY 4.0।"
+
+msgid "Attaques et décisions"
+msgstr "हमले और निर्णय"
+
+#, python-format
+msgid ""
+"Les compteurs de la porte (connexions reçues, refusées avant chiffrement, admises, en cours) et les adresses les plus actives, relus toutes les 2 secondes. La colonne État dit où se trouve chaque adresse : liste noire (refusée jusqu'au retrait), bloquée (pour la durée de blocage), admise, ou confiance (jamais limitée) ; les adresses des listes sans connexion récente apparaissent aussi. Choisissez une ligne puis [b]Bloquer[/b], [b]Liste noire[/b], [b]Débloquer[/b] ou [b]Confiance[/b] / [b]Retirer la confiance[/b] : appliqué tout de suite, sans redémarrer la porte ; la notification dit en une ligne l'action et la place de l'adresse (ex. « 1.2.3.4 → liste noire »). Une adresse n'est jamais dans les deux listes : la mettre en liste noire la retire de la confiance, et l'inverse. Une adresse en confiance ou du tailnet ne peut pas être bloquée (elle passe avant). Porte arrêtée : les listes s'appliqueront à son activation.\n"
+"\n"
+"Chaque adresse affiche son pays et son AS. La ligne sous les compteurs dit si la porte est en [b]mode attaque[/b] (et dans combien de temps elle revient au normal) et combien de connexions les regroupements ont refusées (ou auraient refusées, en observation) sur 7 jours. Les vues [b]Empreintes[/b], [b]AS[/b] et [b]Pays[/b] montrent les groupes les plus actifs (connexions / 10 s, total), avec le navigateur reconnu, le nom de l'AS (hébergeur ou non) ou « limité en attaque ». Hors attaque, ces chiffres portent sur une connexion sur dix.\n"
+"\n"
+"[b]Gestion de la liste noire[/b] (seconde ligne de boutons) : toute la liste, avec la date d'ajout et l'origine de chaque entrée, filtrable.\n"
+"- [b]Ajouter[/b] une adresse ou un réseau en prévision ; [b]Supprimer[/b] la ligne choisie.\n"
+"- [b]Importer[/b] un fichier TXT (une adresse ou un réseau par ligne, # = commentaire) : doublons, adresses déjà couvertes par un réseau de la liste et adresses du tailnet écartés et comptés ; les lignes invalides sont citées, comme une adresse IPv6 suivie d'un identifiant de zone (« %eth0 »), refusée par sécurité.\n"
+"- [b]Purger[/b], avec aperçu puis confirmation : plus anciennes que N jours, les N plus anciennes, de la ligne A à la ligne B, par origine, ou toute la liste (confirmation tapée).\n"
+"- [b]Exporter[/b] TXT (réimportable tel quel, pour une récidive), HTML (thème d'export choisi) ou JSON.\n"
+"- Plafond : 50 000 entrées (alerte au tableau de bord à 25 000). HAProxy en tiendrait bien plus ; c'est omega-tail qui ralentirait. Au plafond, l'ajout est refusé : exportez puis purgez."
+msgstr ""
+"गेट के काउंटर (प्राप्त कनेक्शन, एन्क्रिप्शन से पहले अस्वीकृत, अनुमत, जारी) और सबसे सक्रिय पते, हर 2 सेकंड में फिर से पढ़े जाते हैं। स्थिति कॉलम बताता है कि हर पता कहाँ है: ब्लैकलिस्ट (हटाए जाने तक अस्वीकृत), ब्लॉक (ब्लॉक अवधि के लिए), अनुमत, या विश्वसनीय (कभी सीमित नहीं); हाल के कनेक्शन के बिना सूचियों के पते भी दिखते हैं। एक पंक्ति चुनें, फिर [b]ब्लॉक करें[/b], [b]ब्लैकलिस्ट[/b], [b]अनब्लॉक करें[/b] या [b]विश्वसनीय[/b] / [b]विश्वसनीयता हटाएँ[/b]: तुरंत लागू, गेट को रीस्टार्ट किए बिना; सूचना एक पंक्ति में क्रिया और पते का स्थान बताती है (उदा. « 1.2.3.4 → ब्लैकलिस्ट »)। कोई पता कभी दोनों सूचियों में नहीं होता: उसे ब्लैकलिस्ट में डालने से वह विश्वसनीय सूची से हट जाता है, और उलटा भी। विश्वसनीय या tailnet का पता ब्लॉक नहीं किया जा सकता (वह पहले आता है)। गेट रुका हुआ: सूचियाँ उसके सक्रिय होने पर लागू होंगी।\n"
+"\n"
+"हर पता अपना देश और AS दिखाता है। काउंटर के नीचे की पंक्ति बताती है कि क्या गेट [b]हमला मोड[/b] में है (और कितनी देर में सामान्य पर लौटेगा) और 7 दिनों में समूहन ने कितने कनेक्शन अस्वीकार किए (या निरीक्षण में, अस्वीकार करते)। [b]फ़िंगरप्रिंट[/b], [b]AS[/b] और [b]देश[/b] दृश्य सबसे सक्रिय समूह दिखाते हैं (कनेक्शन / 10 s, कुल), पहचाने गए ब्राउज़र, AS के नाम (होस्टिंग या नहीं) या « हमले में सीमित » के साथ। हमले के बाहर, ये आँकड़े दस में से एक कनेक्शन पर आधारित होते हैं।\n"
+"\n"
+"[b]ब्लैकलिस्ट प्रबंधन[/b] (बटनों की दूसरी पंक्ति): पूरी सूची, हर प्रविष्टि की जोड़ने की तारीख और मूल के साथ, फ़िल्टर योग्य।\n"
+"- पहले से एक पता या नेटवर्क [b]जोड़ें[/b]; चुनी गई पंक्ति [b]हटाएँ[/b]।\n"
+"- एक TXT फ़ाइल [b]इम्पोर्ट करें[/b] (प्रति पंक्ति एक पता या नेटवर्क, # = टिप्पणी): डुप्लिकेट, सूची के किसी नेटवर्क द्वारा पहले से कवर पते और tailnet के पते छोड़े और गिने जाते हैं; अमान्य पंक्तियाँ बताई जाती हैं, जैसे ज़ोन पहचानकर्ता (« %eth0 ») वाला IPv6 पता, जो सुरक्षा के लिए अस्वीकार होता है।\n"
+"- [b]सफ़ाई करें[/b], पूर्वावलोकन फिर पुष्टि के साथ: N दिन से पुरानी, N सबसे पुरानी, पंक्ति A से पंक्ति B तक, मूल के अनुसार, या पूरी सूची (टाइप की गई पुष्टि)।\n"
+"- TXT (दोबारा होने पर जैसा है वैसा ही फिर से इम्पोर्ट योग्य), HTML (चुनी गई एक्सपोर्ट थीम) या JSON [b]एक्सपोर्ट करें[/b]।\n"
+"- सीमा: 50 000 प्रविष्टियाँ (25 000 पर डैशबोर्ड पर अलर्ट)। HAProxy इससे कहीं अधिक संभाल लेगा; धीमा omega-tail होगा। सीमा पर जोड़ना अस्वीकार होता है: एक्सपोर्ट करें, फिर सफ़ाई करें।"
+
+msgid "Réseau et appareils"
+msgstr "नेटवर्क और डिवाइस"
+
+msgid ""
+"Ce que voit Tailscale depuis cette machine. Lecture seule : rien n'y change un réglage.\n"
+"- [b]Appareils[/b] : nom, système, en ligne ou non, [b]chemin[/b] (direct, ou par un relais de Tailscale quand la connexion directe est impossible), dernière fois vu, adresse, trafic échangé. Filtrez par nom, système ou adresse. Les [b]relais Funnel de Tailscale[/b] (« funnel-ingress-node ») apparaissent dans le tailnet dès que Funnel est actif : ce ne sont pas vos appareils, ils sont cachés sauf si vous cochez la case.\n"
+"- [b]Ping Tailscale[/b] : dit si le chemin vers l'appareil est direct ou relayé, et sa latence (3 essais). [b]Qui est-ce ?[/b] : à quelle machine et quel compte appartient une adresse du tailnet. Sans texte tapé, la ligne choisie est utilisée.\n"
+"- [b]Diagnostic réseau[/b] (quelques secondes) : UDP, IPv4 / IPv6, type de NAT (simple : connexions directes faciles ; difficile : plus de relais), ouverture de port par la box (UPnP, NAT-PMP, PCP), relais le plus proche et latences.\n"
+"- [b]DNS[/b], [b]verrou du tailnet[/b] et [b]compteurs internes[/b] (octets reçus et envoyés en direct ou par relais, paquets jetés, messages de santé) : tels que Tailscale les donne."
+msgstr ""
+"इस मशीन से Tailscale क्या देखता है। केवल पढ़ने के लिए: यहाँ कुछ भी कोई सेटिंग नहीं बदलता।\n"
+"- [b]डिवाइस[/b]: नाम, सिस्टम, ऑनलाइन या नहीं, [b]पाथ[/b] (सीधा, या सीधा कनेक्शन संभव न होने पर Tailscale के रिले से), अंतिम बार देखा गया, पता, आदान-प्रदान किया गया ट्रैफ़िक। नाम, सिस्टम या पते से फ़िल्टर करें। [b]Tailscale के Funnel रिले[/b] (« funnel-ingress-node ») Funnel सक्रिय होते ही tailnet में दिखते हैं: ये आपके डिवाइस नहीं हैं, ये तब तक छिपे रहते हैं जब तक आप बॉक्स चिह्नित न करें।\n"
+"- [b]Tailscale पिंग[/b]: बताता है कि डिवाइस तक पाथ सीधा है या रिले से, और उसकी विलंबता (3 प्रयास)। [b]यह कौन है?[/b]: tailnet का कोई पता किस मशीन और किस खाते का है। बिना टाइप किए टेक्स्ट के, चुनी गई पंक्ति का उपयोग होता है।\n"
+"- [b]नेटवर्क निदान[/b] (कुछ सेकंड): UDP, IPv4 / IPv6, NAT का प्रकार (सरल: सीधे कनेक्शन आसान; कठिन: अधिक रिले), राउटर द्वारा पोर्ट खोलना (UPnP, NAT-PMP, PCP), निकटतम रिले और विलंबता।\n"
+"- [b]DNS[/b], [b]tailnet लॉक[/b] और [b]आंतरिक काउंटर[/b] (सीधे या रिले से प्राप्त और भेजे गए बाइट, गिराए गए पैकेट, स्वास्थ्य संदेश): जैसे Tailscale उन्हें देता है।"
+
+msgid "Rapport"
+msgstr "रिपोर्ट"
+
+msgid ""
+"Tout ce qu'omega-tail sait de la machine, en faits : Tailscale (version, préférences), publication, machine, pare-feu (règles, compteurs, listes, regroupements), survie (confinement, veille, disjoncteur), alertes, et les [b]attaques des 7 derniers jours[/b] lues dans le journal de la porte (connexions marquées par motif, par jour, adresses les plus marquées avec leur AS et leur pays).\n"
+"- [b]Vie privée[/b] : par défaut, le compte Tailscale et les noms / adresses des appareils du tailnet n'y figurent pas (seulement leur nombre), pour pouvoir envoyer le rapport à quelqu'un. Cochez la case pour les inclure. Les adresses des attaquants y restent toujours.\n"
+"- [b]Exporter[/b] en TXT, HTML (thème au choix) ou JSON, dans le dossier des exports. [b]Voir les exports[/b] ouvre ce dossier dans votre navigateur (chaque export se lit d'un clic) ; sans navigateur ni bureau (serveur, SSH), la liste et la lecture se font dans omega-tail.\n"
+"- Le journal de la porte doit être lisible par votre compte (groupe systemd-journal, adm ou wheel selon la distribution), sinon le rapport le dit."
+msgstr ""
+"omega-tail मशीन के बारे में जो कुछ जानता है, तथ्यों के रूप में: Tailscale (संस्करण, प्राथमिकताएँ), प्रकाशन, मशीन, फ़ायरवॉल (नियम, काउंटर, सूचियाँ, समूहन), उत्तरजीविता (सीमाबंदी, निगरानी, सर्किट ब्रेकर), अलर्ट, और गेट के लॉग से पढ़े गए [b]पिछले 7 दिनों के हमले[/b] (कारण के अनुसार, प्रति दिन चिह्नित कनेक्शन, सबसे अधिक चिह्नित पते उनके AS और देश के साथ)।\n"
+"- [b]गोपनीयता[/b]: डिफ़ॉल्ट रूप से, Tailscale खाता और tailnet के डिवाइस के नाम / पते इसमें शामिल नहीं होते (केवल उनकी संख्या), ताकि रिपोर्ट किसी को भेजी जा सके। उन्हें शामिल करने के लिए बॉक्स चिह्नित करें। हमलावरों के पते हमेशा इसमें रहते हैं।\n"
+"- एक्सपोर्ट फ़ोल्डर में TXT, HTML (पसंद की थीम) या JSON में [b]एक्सपोर्ट करें[/b]। [b]एक्सपोर्ट देखें[/b] यह फ़ोल्डर आपके ब्राउज़र में खोलता है (हर एक्सपोर्ट एक क्लिक में पढ़ा जाता है); ब्राउज़र या डेस्कटॉप के बिना (सर्वर, SSH), सूची और पढ़ना omega-tail में होते हैं।\n"
+"- गेट का लॉग आपके खाते द्वारा पढ़ने योग्य होना चाहिए (वितरण के अनुसार systemd-journal, adm या wheel समूह), अन्यथा रिपोर्ट यह बताती है।"
+
+msgid "systemd, OpenRC, runit"
+msgstr "systemd, OpenRC, runit"
+
+msgid ""
+"omega-tail reconnaît le système d'init de la machine et s'y adapte :\n"
+"- [b]service tailscaled[/b] : systemctl, rc-service ou sv ;\n"
+"- [b]journaux[/b] : journalctl, ou les fichiers du service (/var/log/tailscaled.log, svlogd, socklog…) ;\n"
+"- [b]confinement[/b] : fichier d'ajout systemd ; ailleurs, un groupe de contrôle à part (cgroup v2), perdu si tailscaled redémarre (une alerte propose alors de le remettre) ;\n"
+"- [b]coupure momentanée[/b] : minuterie systemd ; ailleurs, un processus détaché sous votre compte ;\n"
+"- [b]porte du pare-feu[/b] : service systemd, OpenRC ou runit ; certificat renouvelé par minuterie systemd ou par une ligne de votre crontab (marquée omega-tail, retirée à la désactivation)."
+msgstr ""
+"omega-tail मशीन के init सिस्टम को पहचानता है और उसके अनुसार ढलता है:\n"
+"- [b]tailscaled सेवा[/b]: systemctl, rc-service या sv;\n"
+"- [b]लॉग[/b]: journalctl, या सेवा की फ़ाइलें (/var/log/tailscaled.log, svlogd, socklog…);\n"
+"- [b]सीमाबंदी[/b]: systemd ऐड-ऑन फ़ाइल; अन्यत्र, एक अलग नियंत्रण समूह (cgroup v2), जो tailscaled के रीस्टार्ट होने पर खो जाता है (तब एक अलर्ट उसे फिर से लगाने का प्रस्ताव देता है);\n"
+"- [b]अस्थायी बंदी[/b]: systemd टाइमर; अन्यत्र, आपके खाते के अंतर्गत एक अलग प्रक्रिया;\n"
+"- [b]फ़ायरवॉल का गेट[/b]: systemd, OpenRC या runit सेवा; प्रमाणपत्र systemd टाइमर द्वारा या आपके crontab की एक पंक्ति (omega-tail चिह्नित, निष्क्रिय करने पर हटाई जाती है) द्वारा नवीनीकृत।"
+
+msgid ""
+"Langue de l'interface et des exports, thème de l'interface et des exports, "
+"dossiers des exports et des captures d'écran (par défaut var/exports/ et "
+"var/screenshots/), et leur purge après confirmation."
+msgstr ""
+"इंटरफ़ेस और एक्सपोर्ट की भाषा, इंटरफ़ेस और एक्सपोर्ट की थीम, एक्सपोर्ट और "
+"स्क्रीनशॉट के फ़ोल्डर (डिफ़ॉल्ट रूप से var/exports/ और var/screenshots/), और"
+" पुष्टि के बाद उनकी सफ़ाई।"
+
+msgid "Ligne de commande"
+msgstr "कमांड लाइन"
+
+msgid ""
+"- omega-tail : l'interface.\n"
+"- omega-tail etat : l'état et les alertes en texte ; --format json pour un script.\n"
+"- omega-tail aide : cette aide en texte.\n"
+"- omega-tail rapport [--format txt|html|json] [--prive] [--exporter] : le rapport, affiché ou enregistré dans le dossier des exports ; --prive ajoute le compte et les appareils du tailnet.\n"
+"- omega-tail disjoncteur etat | couper --minutes N | couper --totale | retablir\n"
+"- omega-tail porte etat | certificat [--si-besoin] | bloquer ADRESSE [--toujours] | debloquer ADRESSE | confiance ADRESSE\n"
+"- omega-tail --version"
+msgstr ""
+"- omega-tail: इंटरफ़ेस।\n"
+"- omega-tail etat: टेक्स्ट में स्थिति और अलर्ट; स्क्रिप्ट के लिए --format json।\n"
+"- omega-tail aide: टेक्स्ट में यह सहायता।\n"
+"- omega-tail rapport [--format txt|html|json] [--prive] [--exporter]: रिपोर्ट, दिखाई गई या एक्सपोर्ट फ़ोल्डर में सहेजी गई; --prive खाता और tailnet के डिवाइस जोड़ता है।\n"
+"- omega-tail disjoncteur etat | couper --minutes N | couper --totale | retablir\n"
+"- omega-tail porte etat | certificat [--si-besoin] | bloquer ADRESSE [--toujours] | debloquer ADRESSE | confiance ADRESSE\n"
+"- omega-tail --version"
+
+msgid ""
+"Depuis cette aide : écrire à l'auteur, le formulaire du site, un café, et "
+"vérifier les mises à jour."
+msgstr ""
+"इस सहायता से: लेखक को लिखें, साइट का फ़ॉर्म, एक कॉफ़ी, और अपडेट जाँचें।"
+
+msgid "DÉMARRAGE RAPIDE"
+msgstr "त्वरित शुरुआत"
+
+msgid "RACCOURCIS"
+msgstr "शॉर्टकट"
+
+msgid "Aide d’omega-tail"
+msgstr "omega-tail सहायता"
+
+msgid "Aide complète : chaque menu, sa fonction et le détail."
+msgstr "पूरी सहायता: हर मेनू, उसका काम और विवरण।"
+
+msgid "Démarrage rapide"
+msgstr "त्वरित शुरुआत"
+
+msgid "Raccourcis"
+msgstr "शॉर्टकट"
+
+msgid "Touche"
+msgstr "कुंजी"
+
+msgid "Action"
+msgstr "एक्शन"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — aide."
+msgstr "OMEGA-TAIL {version} — सहायता।"
+
+msgid "Aide - Omega-Tail"
+msgstr "सहायता - Omega-Tail"
+
+#, python-brace-format
+msgid "{name} (hébergeur)"
+msgstr "{name} (होस्टिंग)"
+
+msgid "connecté"
+msgstr "कनेक्टेड"
+
+msgid "déconnecté"
+msgstr "डिसकनेक्टेड"
+
+msgid "connexion du compte attendue"
+msgstr "खाते के कनेक्शन की प्रतीक्षा"
+
+msgid "machine à approuver dans la console"
+msgstr "मशीन को कंसोल में स्वीकृत करना है"
+
+msgid "démarrage"
+msgstr "शुरू हो रहा है"
+
+msgid "sans état"
+msgstr "कोई स्थिति नहीं"
+
+msgid "inconnu"
+msgstr "अज्ञात"
+
+msgid "HTTP"
+msgstr "HTTP"
+
+msgid "HTTPS (TLS par tailscaled)"
+msgstr "HTTPS (tailscaled द्वारा TLS)"
+
+msgid "TCP (TLS transmis tel quel)"
+msgstr "TCP (TLS जैसा है वैसा आगे भेजा गया)"
+
+msgid "TCP, TLS par tailscaled"
+msgstr "TCP, tailscaled द्वारा TLS"
+
+msgid "Go"
+msgstr "GB"
+
+msgid "Ko"
+msgstr "KB"
+
+msgid "Mo"
+msgstr "MB"
+
+msgid "o"
+msgstr "B"
+
+msgid "Internet (Funnel)"
+msgstr "इंटरनेट (Funnel)"
+
+msgid "tailnet seul (Serve)"
+msgstr "केवल tailnet (Serve)"
+
+msgid "inconnu de systemd"
+msgstr "systemd के लिए अज्ञात"
+
+msgid "actif"
+msgstr "सक्रिय"
+
+msgid "arrêté"
+msgstr "रुका हुआ"
+
+msgid "en échec"
+msgstr "विफल"
+
+msgid "arrêt en cours"
+msgstr "रुक रहा है"
+
+msgid "lancé au démarrage"
+msgstr "स्टार्टअप पर शुरू"
+
+msgid "pas lancé au démarrage"
+msgstr "स्टार्टअप पर शुरू नहीं"
+
+msgid "observation"
+msgstr "निरीक्षण"
+
+msgid "Bouclier du port WireGuard : état illisible."
+msgstr "WireGuard पोर्ट का कवच: स्थिति अपठनीय।"
+
+msgid "Bouclier du port WireGuard : retiré depuis omega-fire (ou à la main)."
+msgstr "WireGuard पोर्ट का कवच: omega-fire से (या हाथ से) हटाया गया।"
+
+msgid ""
+"Bouclier du port WireGuard : aucun. Sans lui, tailscaled dépense environ un "
+"cœur pour 100 000 paquets par seconde, même invalides."
+msgstr ""
+"WireGuard पोर्ट का कवच: कोई नहीं। इसके बिना, tailscaled हर 100 000 पैकेट "
+"प्रति सेकंड के लिए लगभग एक कोर खर्च करता है, अमान्य होने पर भी।"
+
+msgid ""
+"Bouclier du port WireGuard ABSENT : un autre outil a effacé sa table ; « "
+"Reposer » la remet."
+msgstr ""
+"WireGuard पोर्ट का कवच अनुपस्थित: किसी अन्य टूल ने उसकी तालिका मिटा दी; « "
+"फिर से लगाएँ » उसे वापस लगाता है।"
+
+msgid ""
+"Bouclier du port WireGuard : état non mis à jour (service omega-bouclier-wg "
+"arrêté ?)."
+msgstr ""
+"WireGuard पोर्ट का कवच: स्थिति अपडेट नहीं हुई (omega-bouclier-wg सेवा बंद?)।"
+
+#, python-brace-format
+msgid ""
+"Bouclier du port WireGuard : {mode}, géré par {manager} ; {count} paquet(s) "
+"refusé(s)"
+msgstr ""
+"WireGuard पोर्ट का कवच: {mode}, {manager} द्वारा प्रबंधित; {count} पैकेट "
+"अस्वीकृत"
+
+#, python-brace-format
+msgid ""
+"Bouclier du port WireGuard : {mode}, géré par {manager} ; {count} paquet(s) "
+"auraient été refusés"
+msgstr ""
+"WireGuard पोर्ट का कवच: {mode}, {manager} द्वारा प्रबंधित; {count} पैकेट "
+"अस्वीकृत होते"
+
+msgid "adresse bloquée"
+msgstr "पता ब्लॉक"
+
+msgid "budget global dépassé"
+msgstr "कुल बजट पार"
+
+msgid "liste noire"
+msgstr "ब्लैकलिस्ट"
+
+msgid "trop de connexions d'un réseau"
+msgstr "एक नेटवर्क से बहुत अधिक कनेक्शन"
+
+msgid "trop de connexions d'une adresse"
+msgstr "एक पते से बहुत अधिक कनेक्शन"
+
+msgid "mauvais nom de site (SNI)"
+msgstr "गलत साइट नाम (SNI)"
+
+msgid "pas une connexion TLS"
+msgstr "TLS कनेक्शन नहीं"
+
+msgid "AS d'hébergeur en rafale"
+msgstr "होस्टिंग AS की बौछार"
+
+msgid "empreinte inconnue en rafale"
+msgstr "अज्ञात फ़िंगरप्रिंट की बौछार"
+
+msgid "pays limité en rafale"
+msgstr "सीमित देश की बौछार"
+
+#, python-brace-format
+msgid "tailscaled ne répond pas : {error}"
+msgstr "tailscaled जवाब नहीं दे रहा: {error}"
+
+#, python-brace-format
+msgid "État : {state}"
+msgstr "स्थिति: {state}"
+
+#, python-brace-format
+msgid "Version : {daemon} en marche, {client} installé"
+msgstr "संस्करण: {daemon} चल रहा, {client} इंस्टॉल"
+
+#, python-brace-format
+msgid "Nom de la machine : {name}"
+msgstr "मशीन का नाम: {name}"
+
+#, python-brace-format
+msgid "Compte : {user}"
+msgstr "खाता: {user}"
+
+msgid "Compte : masqué (non inclus dans ce rapport)"
+msgstr "खाता: छिपा हुआ (इस रिपोर्ट में शामिल नहीं)"
+
+#, python-brace-format
+msgid ""
+"Appareils du tailnet : {online} en ligne sur {total} (plus {relays} relais "
+"Funnel de Tailscale)"
+msgstr ""
+"tailnet के डिवाइस: {total} में से {online} ऑनलाइन (साथ में Tailscale के "
+"{relays} Funnel रिले)"
+
+#, python-brace-format
+msgid "Appareils du tailnet : {online} en ligne sur {total}"
+msgstr "tailnet के डिवाइस: {total} में से {online} ऑनलाइन"
+
+#, python-brace-format
+msgid "Clé de la machine : {expiry}"
+msgstr "मशीन की कुंजी: {expiry}"
+
+msgid "sans expiration"
+msgstr "कोई समाप्ति नहीं"
+
+msgid "aucun"
+msgstr "कोई नहीं"
+
+msgid "Préférence"
+msgstr "प्राथमिकता"
+
+msgid "Valeur"
+msgstr "मान"
+
+msgid "Rien n'est publié (ni Serve, ni Funnel)."
+msgstr "कुछ भी प्रकाशित नहीं (न Serve, न Funnel)।"
+
+#, python-brace-format
+msgid "Machine : {name} ({count} fils)"
+msgstr "मशीन: {name} ({count} थ्रेड)"
+
+#, python-brace-format
+msgid "Charge : {a:.2f} {b:.2f} {c:.2f}"
+msgstr "लोड: {a:.2f} {b:.2f} {c:.2f}"
+
+msgid "pas de capteur"
+msgstr "कोई सेंसर नहीं"
+
+#, python-brace-format
+msgid "Mémoire vive utilisée : {value}"
+msgstr "उपयोग की गई मेमोरी: {value}"
+
+msgid "MACHINE"
+msgstr "मशीन"
+
+msgid "PARE-FEU FUNNEL"
+msgstr "FUNNEL फ़ायरवॉल"
+
+msgid "Pare-feu indisponible sur cette machine."
+msgstr "इस मशीन पर फ़ायरवॉल उपलब्ध नहीं।"
+
+#, python-brace-format
+msgid "Service de la porte : {state}"
+msgstr "गेट सेवा: {state}"
+
+#, python-brace-format
+msgid "Protection active depuis {since} : Funnel {port} → porte → {backend}"
+msgstr "{since} से संरक्षण सक्रिय: Funnel {port} → गेट → {backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions depuis le démarrage de la porte : {total} reçues · {refused} "
+"refusées avant chiffrement · {admitted} admises · {current} en cours"
+msgstr ""
+"गेट के शुरू होने से कनेक्शन: {total} प्राप्त · {refused} एन्क्रिप्शन से पहले"
+" अस्वीकृत · {admitted} अनुमत · {current} जारी"
+
+msgid "Protection inactive : Funnel ne passe pas par la porte."
+msgstr "संरक्षण निष्क्रिय: Funnel गेट से होकर नहीं जाता।"
+
+#, python-brace-format
+msgid "Mode : {mode}"
+msgstr "मोड: {mode}"
+
+msgid "observation (rien n'est refusé)"
+msgstr "निरीक्षण (कुछ भी अस्वीकार नहीं)"
+
+msgid "normal (les règles refusent)"
+msgstr "सामान्य (नियम अस्वीकार करते हैं)"
+
+#, python-brace-format
+msgid ""
+"Règles : {ip} connexions / 10 s par adresse · {prefix} / 10 s par réseau · "
+"budget global {budget} / s · {maximum} connexions au plus · blocage {block} "
+"min · nom du site {sni}"
+msgstr ""
+"नियम: प्रति पता {ip} कनेक्शन / 10 s · प्रति नेटवर्क {prefix} / 10 s · कुल "
+"बजट {budget} / s · अधिकतम {maximum} कनेक्शन · ब्लॉक {block} मिनट · साइट का "
+"नाम {sni}"
+
+msgid "non vérifié"
+msgstr "जाँचा नहीं गया"
+
+msgid "vérifié"
+msgstr "जाँचा गया"
+
+#, python-brace-format
+msgid "Certificat : encore {days} jour(s)"
+msgstr "प्रमाणपत्र: अभी {days} दिन"
+
+#, python-brace-format
+msgid "Confiance : {count} adresse(s) ou réseau(x)"
+msgstr "विश्वसनीय: {count} पता(ते) या नेटवर्क"
+
+#, python-brace-format
+msgid "Liste noire : {entries}"
+msgstr "ब्लैकलिस्ट: {entries}"
+
+msgid "vide"
+msgstr "खाली"
+
+#, python-brace-format
+msgid "Bloquées en ce moment : {entries}"
+msgstr "अभी ब्लॉक: {entries}"
+
+msgid "Bloquées en ce moment : aucune"
+msgstr "अभी ब्लॉक: कोई नहीं"
+
+#, python-brace-format
+msgid "Regroupements : {mode} · {attack}"
+msgstr "समूहन: {mode} · {attack}"
+
+msgid "MODE ATTAQUE en cours"
+msgstr "हमला मोड जारी"
+
+msgid "mode normal"
+msgstr "सामान्य मोड"
+
+#, python-brace-format
+msgid "Empreintes : apprentissage, encore {days} jour(s)"
+msgstr "फ़िंगरप्रिंट: सीखना, अभी {days} दिन"
+
+#, python-brace-format
+msgid "Empreintes habituelles : {count} (référence prête)"
+msgstr "सामान्य फ़िंगरप्रिंट: {count} (संदर्भ तैयार)"
+
+#, python-brace-format
+msgid "Base AS / pays : à jour il y a {days} jour(s)"
+msgstr "AS / देश डेटाबेस: {days} दिन पहले अपडेट"
+
+msgid "Base AS / pays : absente"
+msgstr "AS / देश डेटाबेस: अनुपस्थित"
+
+msgid "Empreintes les plus actives"
+msgstr "सबसे सक्रिय फ़िंगरप्रिंट"
+
+msgid "AS les plus actifs"
+msgstr "सबसे सक्रिय AS"
+
+msgid "Pays les plus actifs"
+msgstr "सबसे सक्रिय देश"
+
+msgid "Adresse la plus active"
+msgstr "सबसे सक्रिय पता"
+
+msgid "Connexions / 10 s"
+msgstr "कनेक्शन / 10 s"
+
+msgid "confiance"
+msgstr "विश्वसनीय"
+
+msgid "admise"
+msgstr "अनुमत"
+
+msgid "bloquée"
+msgstr "ब्लॉक"
+
+#, python-brace-format
+msgid "Confinement de tailscaled : {state}"
+msgstr "tailscaled की सीमाबंदी: {state}"
+
+msgid "Veille automatique : désactivée"
+msgstr "स्वचालित निगरानी: निष्क्रिय"
+
+msgid "Veille automatique : activée mais arrêtée (aucun signe de vie)"
+msgstr "स्वचालित निगरानी: सक्रिय लेकिन रुकी हुई (कोई जीवन संकेत नहीं)"
+
+#, python-brace-format
+msgid ""
+"Veille automatique : active · {strikes} dépassement(s) récent(s) · prochaine"
+" coupure {minutes} min"
+msgstr ""
+"स्वचालित निगरानी: सक्रिय · {strikes} हाल की सीमा-लाँघ · अगली बंदी {minutes} "
+"मिनट"
+
+#, python-brace-format
+msgid ""
+"Disjoncteur : tailscaled au-delà de {cpu:.0f} % d'un cœur pendant {seconds} "
+"s, ou machine au-delà de {temperature:.0f} °C ; coupure proposée de "
+"{minutes} min"
+msgstr ""
+"सर्किट ब्रेकर: tailscaled {seconds} s तक एक कोर के {cpu:.0f} % से ऊपर, या "
+"मशीन {temperature:.0f} °C से ऊपर; {minutes} मिनट की बंदी प्रस्तावित"
+
+#, python-brace-format
+msgid "Funnel coupé depuis {since} ; remise en route {until}"
+msgstr "Funnel {since} से बंद; फिर से चालू {until}"
+
+msgid "manuelle"
+msgstr "मैन्युअल"
+
+msgid "Aucune coupure de Funnel en cours."
+msgstr "Funnel की कोई बंदी जारी नहीं।"
+
+#, python-brace-format
+msgid "  origine : {tool} · géré par {manager} · pairs connus : {peers}"
+msgstr "  मूल: {tool} · {manager} द्वारा प्रबंधित · ज्ञात पीयर: {peers}"
+
+msgid "Journal de la veille (derniers événements) :"
+msgstr "निगरानी का लॉग (अंतिम घटनाएँ):"
+
+msgid "SURVIE"
+msgstr "उत्तरजीविता"
+
+msgid "Aucune alerte."
+msgstr "कोई अलर्ट नहीं।"
+
+#, python-brace-format
+msgid "ATTAQUES DES {days} DERNIERS JOURS"
+msgstr "पिछले {days} दिनों के हमले"
+
+msgid "Pare-feu indisponible : rien à compter."
+msgstr "फ़ायरवॉल उपलब्ध नहीं: गिनने को कुछ नहीं।"
+
+#, python-brace-format
+msgid "Journal de la porte illisible : {error}"
+msgstr "गेट का लॉग अपठनीय: {error}"
+
+msgid ""
+"Lu dans le journal de la porte : chaque connexion marquée par une règle "
+"(refusée, ou seulement comptée en observation, selon le mode du moment)."
+msgstr ""
+"गेट के लॉग से पढ़ा गया: किसी नियम द्वारा चिह्नित हर कनेक्शन (उस समय के मोड "
+"के अनुसार अस्वीकृत, या निरीक्षण में केवल गिना गया)।"
+
+msgid "Aucune connexion marquée sur la période."
+msgstr "इस अवधि में कोई चिह्नित कनेक्शन नहीं।"
+
+#, python-brace-format
+msgid "Connexions marquées : {count}{floor}"
+msgstr "चिह्नित कनेक्शन: {count}{floor}"
+
+msgid " (au moins : journal trop long, seules les plus récentes ont été lues)"
+msgstr " (कम से कम: लॉग बहुत लंबा, केवल सबसे हाल के पढ़े गए)"
+
+#, python-brace-format
+msgid ""
+"Règles de la porte, connexions qui auraient été refusées (observation) : "
+"{reasons}"
+msgstr "गेट के नियम, कनेक्शन जो अस्वीकृत होते (निरीक्षण): {reasons}"
+
+#, python-brace-format
+msgid "Règles de la porte, connexions refusées : {reasons}"
+msgstr "गेट के नियम, अस्वीकृत कनेक्शन: {reasons}"
+
+#, python-brace-format
+msgid "Regroupements, connexions refusées : {reasons}"
+msgstr "समूहन, अस्वीकृत कनेक्शन: {reasons}"
+
+#, python-brace-format
+msgid ""
+"Regroupements, connexions qui auraient été refusées (observation) : "
+"{reasons}"
+msgstr "समूहन, कनेक्शन जो अस्वीकृत होते (निरीक्षण): {reasons}"
+
+#, python-brace-format
+msgid "Par jour : {days}"
+msgstr "प्रति दिन: {days}"
+
+msgid "AS"
+msgstr "AS"
+
+msgid "Adresse"
+msgstr "पता"
+
+msgid "Connexions marquées"
+msgstr "चिह्नित कनेक्शन"
+
+msgid "Pays"
+msgstr "देश"
+
+msgid "en ligne"
+msgstr "ऑनलाइन"
+
+msgid "hors ligne"
+msgstr "ऑफ़लाइन"
+
+msgid "APPAREILS DU TAILNET"
+msgstr "TAILNET के डिवाइस"
+
+msgid "Aucun appareil lu."
+msgstr "कोई डिवाइस नहीं पढ़ा गया।"
+
+msgid "Système"
+msgstr "सिस्टम"
+
+msgid "Compte et appareils du tailnet inclus."
+msgstr "खाता और tailnet के डिवाइस शामिल।"
+
+msgid ""
+"Compte et appareils du tailnet non inclus (seulement leur nombre) ; les "
+"adresses des attaquants restent."
+msgstr ""
+"खाता और tailnet के डिवाइस शामिल नहीं (केवल उनकी संख्या); हमलावरों के पते बने"
+" रहते हैं।"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — RAPPORT DE LA MACHINE {machine}"
+msgstr "OMEGA-TAIL {version} — मशीन {machine} की रिपोर्ट"
+
+#, python-brace-format
+msgid "Établi le {date} (lecture seule, sans droits)."
+msgstr "{date} को बनाई गई (केवल पढ़ना, बिना अधिकारों के)।"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — rapport."
+msgstr "OMEGA-TAIL {version} — रिपोर्ट।"
+
+msgid "Rapport - Omega-Tail"
+msgstr "रिपोर्ट - Omega-Tail"
+
+msgid ""
+"Le démarrage de tailscaled lance « tailscale up » (votre fichier d'ajout). "
+"Depuis qu'un réglage a changé (opérateur, nom, routes…), Tailscale refuse ce"
+" « up » incomplet : systemd arrête alors tailscaled et abandonne après cinq "
+"essais (la machine sort du tailnet). omega-tail ajoute « - » devant cette "
+"commande : son refus n'arrête plus le service, et vos réglages restent "
+"gardés par Tailscale. Rien d'autre ne change ; l'original est gardé dans "
+"var/survie."
+msgstr ""
+"tailscaled के शुरू होने पर « tailscale up » चलता है (आपकी ऐड-ऑन फ़ाइल)। जब "
+"से कोई सेटिंग बदली है (ऑपरेटर, नाम, रूट…), Tailscale इस अधूरे « up » को "
+"अस्वीकार करता है: तब systemd tailscaled को रोक देता है और पाँच प्रयासों के "
+"बाद छोड़ देता है (मशीन tailnet से बाहर हो जाती है)। omega-tail इस कमांड के "
+"आगे « - » जोड़ता है: उसका अस्वीकार अब सेवा को नहीं रोकता, और आपकी सेटिंग्स "
+"Tailscale द्वारा रखी रहती हैं। और कुछ नहीं बदलता; मूल फ़ाइल var/survie में "
+"रखी जाती है।"
+
+msgid "Lecture de l'état"
+msgstr "स्थिति पढ़ी जा रही है"
+
+#, python-brace-format
+msgid "Valeurs refusées (nombre hors limites) : {keys}"
+msgstr "अस्वीकृत मान (सीमा से बाहर संख्या): {keys}"
+
+msgid "Seuils enregistrés."
+msgstr "सीमाएँ सहेजी गईं।"
+
+#, python-brace-format
+msgid "Pas de nouvelle proposition pendant {minutes} min."
+msgstr "{minutes} मिनट तक कोई नया प्रस्ताव नहीं।"
+
+#, python-brace-format
+msgid ""
+"Funnel sera coupé {minutes} min puis remis en route automatiquement, à "
+"l'identique (minuterie systemd : sudo une fois, dans le terminal)."
+msgstr ""
+"Funnel {minutes} मिनट के लिए बंद होगा, फिर अपने-आप, हूबहू, फिर से चालू होगा "
+"(systemd टाइमर: टर्मिनल में एक बार sudo)।"
+
+msgid ""
+"Funnel sera coupé jusqu'à ce que vous le rétablissiez (« Rétablir maintenant"
+" »)."
+msgstr "Funnel तब तक बंद रहेगा जब तक आप उसे बहाल न करें (« अभी बहाल करें »)।"
+
+msgid "COUPER FUNNEL ?"
+msgstr "FUNNEL बंद करें?"
+
+msgid ""
+"Les connexions venues d'Internet s'arrêtent aussitôt ; le tailnet (Serve, "
+"SSH) n'est pas touché."
+msgstr ""
+"इंटरनेट से आने वाले कनेक्शन तुरंत रुक जाते हैं; tailnet (Serve, SSH) "
+"प्रभावित नहीं होता।"
+
+msgid "Couper"
+msgstr "बंद करें"
+
+msgid "Disjoncteur"
+msgstr "सर्किट ब्रेकर"
+
+msgid "Pare-feu indisponible."
+msgstr "फ़ायरवॉल उपलब्ध नहीं।"
+
+#, python-brace-format
+msgid "HAProxy : {path}"
+msgstr "HAProxy: {path}"
+
+msgid "non installé (« Installer HAProxy »)"
+msgstr "इंस्टॉल नहीं (« HAProxy इंस्टॉल करें »)"
+
+#, python-brace-format
+msgid ""
+"Protection ACTIVE depuis {since} : Funnel {port} → porte 127.0.0.1:{gate} → "
+"{backend}"
+msgstr ""
+"{since} से संरक्षण सक्रिय: Funnel {port} → गेट 127.0.0.1:{gate} → {backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions : {total} reçues · {refused} refusées avant chiffrement · "
+"{current} en cours"
+msgstr ""
+"कनेक्शन: {total} प्राप्त · {refused} एन्क्रिप्शन से पहले अस्वीकृत · "
+"{current} जारी"
+
+#, python-brace-format
+msgid ""
+"Protection inactive. Funnel {port} (HTTPS par tailscaled) → {backend} : pris"
+" en charge."
+msgstr ""
+"संरक्षण निष्क्रिय। Funnel {port} (tailscaled द्वारा HTTPS) → {backend}: "
+"समर्थित।"
+
+#, python-brace-format
+msgid "Protection inactive : {reason}."
+msgstr "संरक्षण निष्क्रिय: {reason}।"
+
+#, python-brace-format
+msgid "Certificat : encore {days} jour(s) (renouvelé chaque jour si besoin)"
+msgstr "प्रमाणपत्र: अभी {days} दिन (ज़रूरत होने पर हर दिन नवीनीकृत)"
+
+#, python-brace-format
+msgid ""
+"Mode : {mode} · {ip} connexions / 10 s par adresse · budget {budget} / s · "
+"blocage {block} min"
+msgstr ""
+"मोड: {mode} · प्रति पता {ip} कनेक्शन / 10 s · बजट {budget} / s · ब्लॉक "
+"{block} मिनट"
+
+msgid ""
+"⚠ Devenez opérateur de Tailscale (tableau de bord) : la porte en a besoin."
+msgstr "⚠ Tailscale के ऑपरेटर बनें (डैशबोर्ड): गेट को इसकी ज़रूरत है।"
+
+msgid "Pare-feu"
+msgstr "फ़ायरवॉल"
+
+msgid "Changement en cours, puis vérification…"
+msgstr "बदलाव जारी, फिर जाँच…"
+
+msgid ""
+"Gestionnaire de paquets inconnu : installez HAProxy avec celui de votre "
+"système."
+msgstr ""
+"अज्ञात पैकेज मैनेजर: अपने सिस्टम के पैकेज मैनेजर से HAProxy इंस्टॉल करें।"
+
+msgid "INSTALLER HAPROXY ?"
+msgstr "HAPROXY इंस्टॉल करें?"
+
+msgid ""
+"HAProxy est installé par le gestionnaire de paquets de la distribution "
+"(mises à jour de sécurité comprises)."
+msgstr ""
+"HAProxy वितरण के पैकेज मैनेजर द्वारा इंस्टॉल किया जाता है (सुरक्षा अपडेट "
+"सहित)।"
+
+msgid "ACTIVER LA PROTECTION ?"
+msgstr "संरक्षण सक्रिय करें?"
+
+msgid ""
+"1. Préparation (certificat *.ts.net, listes, configuration vérifiée).\n"
+"2. Services de la porte et de son certificat (sudo, dans le terminal ; la porte tourne sous votre compte, jamais en root).\n"
+"3. Bascule de Funnel vers la porte, puis essai depuis Internet. En cas d'échec, la publication d'origine est remise aussitôt.\n"
+"\n"
+"Coupure du site : quelques secondes pendant la bascule."
+msgstr ""
+"1. तैयारी (*.ts.net प्रमाणपत्र, सूचियाँ, जाँचा गया कॉन्फ़िगरेशन)।\n"
+"2. गेट और उसके प्रमाणपत्र की सेवाएँ (sudo, टर्मिनल में; गेट आपके खाते के अंतर्गत चलता है, कभी root के रूप में नहीं)।\n"
+"3. Funnel का गेट की ओर स्विच, फिर इंटरनेट से परीक्षण। विफलता होने पर, मूल प्रकाशन तुरंत वापस लगाया जाता है।\n"
+"\n"
+"साइट की रुकावट: स्विच के दौरान कुछ सेकंड।"
+
+msgid "Activer"
+msgstr "सक्रिय करें"
+
+msgid "Préparation de la porte…"
+msgstr "गेट की तैयारी…"
+
+msgid "Porte lancée ; bascule de Funnel et essai depuis Internet…"
+msgstr "गेट शुरू; Funnel का स्विच और इंटरनेट से परीक्षण…"
+
+msgid "DÉSACTIVER LA PROTECTION ?"
+msgstr "संरक्षण निष्क्रिय करें?"
+
+msgid ""
+"Funnel est remis exactement comme avant (HTTPS par tailscaled), vérifié, "
+"puis la porte est arrêtée (sudo, dans le terminal). Vos réglages et vos "
+"listes sont gardés."
+msgstr ""
+"Funnel ठीक पहले जैसा वापस लगाया जाता है (tailscaled द्वारा HTTPS), जाँचा "
+"जाता है, फिर गेट रोका जाता है (sudo, टर्मिनल में)। आपकी सेटिंग्स और सूचियाँ "
+"रखी जाती हैं।"
+
+msgid "Désactiver"
+msgstr "निष्क्रिय करें"
+
+msgid "tailscaled ne tourne pas : rien à confiner."
+msgstr "tailscaled नहीं चल रहा: सीमाबंद करने को कुछ नहीं।"
+
+#, python-brace-format
+msgid ""
+"Pose le fichier d'ajout {path} (votre propre override.conf n'est pas "
+"modifié), recharge systemd{restart}."
+msgstr ""
+"ऐड-ऑन फ़ाइल {path} लगाता है (आपका अपना override.conf नहीं बदला जाता), "
+"systemd रीलोड करता है{restart}।"
+
+msgid ", puis redémarre tailscaled"
+msgstr ", फिर tailscaled रीस्टार्ट करता है"
+
+msgid ""
+"Place tailscaled dans un groupe de contrôle à part (cgroup v2), avec son "
+"plafond et sa priorité. Aucun de vos fichiers n'est modifié. Perdu si "
+"tailscaled redémarre : omega-tail le signalera."
+msgstr ""
+"tailscaled को उसकी सीमा और प्राथमिकता के साथ एक अलग नियंत्रण समूह (cgroup "
+"v2) में रखता है। आपकी कोई फ़ाइल नहीं बदली जाती। tailscaled के रीस्टार्ट होने"
+" पर खो जाता है: omega-tail इसकी सूचना देगा।"
+
+msgid "CONFINER TAILSCALED ?"
+msgstr "TAILSCALED को सीमाबंद करें?"
+
+msgid ""
+"Supprime les fichiers d'ajout posés par omega-tail, puis recharge systemd."
+msgstr ""
+"omega-tail द्वारा लगाई गई ऐड-ऑन फ़ाइलें हटाता है, फिर systemd रीलोड करता है।"
+
+msgid "RETIRER LE CONFINEMENT ?"
+msgstr "सीमाबंदी हटाएँ?"
+
+msgid ""
+"Rien à corriger ici : la commande n'est pas dans un fichier de /etc/systemd "
+"(à corriger à la main, avec « - » devant la commande)."
+msgstr ""
+"यहाँ ठीक करने को कुछ नहीं: कमांड /etc/systemd की किसी फ़ाइल में नहीं है (हाथ"
+" से ठीक करें, कमांड के आगे « - » लगाकर)।"
+
+msgid "CORRIGER LE DÉMARRAGE DE TAILSCALED ?"
+msgstr "TAILSCALED का स्टार्टअप ठीक करें?"
+
+msgid ""
+"Cette session passe par Tailscale : elle se figera quelques secondes pendant"
+" le redémarrage, puis reviendra en général."
+msgstr ""
+"यह सत्र Tailscale से होकर जाता है: रीस्टार्ट के दौरान यह कुछ सेकंड के लिए "
+"रुकेगा, फिर आमतौर पर लौट आएगा।"
+
+msgid "Commandes :"
+msgstr "कमांड:"
+
+msgid ""
+"La veille coupe et remet Funnel sous votre compte : devenez d'abord "
+"opérateur de Tailscale (tableau de bord)."
+msgstr ""
+"निगरानी आपके खाते के अंतर्गत Funnel बंद और फिर से चालू करती है: पहले "
+"Tailscale के ऑपरेटर बनें (डैशबोर्ड)।"
+
+msgid ""
+"La veille tournera en permanence, sous votre compte (jamais root), même "
+"omega-tail fermé. Sous attaque, elle coupe Funnel seule par paliers (15 min,"
+" 30 min, puis 1 h renouvelable) et le remet en route seule."
+msgstr ""
+"निगरानी आपके खाते के अंतर्गत (कभी root नहीं) लगातार चलेगी, omega-tail बंद "
+"होने पर भी। हमले के दौरान, यह चरणों में (15 मिनट, 30 मिनट, फिर नवीकरणीय 1 "
+"घंटा) अपने-आप Funnel बंद करती है और अपने-आप उसे फिर से चालू करती है।"
+
+msgid ""
+"La veille s'arrête : sous attaque, omega-tail ouvert vous proposera de "
+"nouveau la coupure."
+msgstr ""
+"निगरानी रुकती है: हमले के दौरान, खुला omega-tail आपको फिर से बंदी का "
+"प्रस्ताव देगा।"
+
+msgid "ACTIVER LA VEILLE AUTOMATIQUE ?"
+msgstr "स्वचालित निगरानी सक्रिय करें?"
+
+msgid "DÉSACTIVER LA VEILLE AUTOMATIQUE ?"
+msgstr "स्वचालित निगरानी निष्क्रिय करें?"
+
+msgid "Veille automatique activée."
+msgstr "स्वचालित निगरानी सक्रिय की गई।"
+
+msgid "Veille automatique désactivée."
+msgstr "स्वचालित निगरानी निष्क्रिय की गई।"
+
+#, python-brace-format
+msgid "Commande refusée (code {code}) : rien n'a changé."
+msgstr "कमांड अस्वीकृत (कोड {code}): कुछ नहीं बदला।"
+
+msgid "omega-tail — commandes lancées une à une :"
+msgstr "omega-tail — एक-एक करके चलाए गए कमांड:"
+
+msgid "Le mot de passe sudo ne s'affiche pas pendant la saisie."
+msgstr "टाइप करते समय sudo पासवर्ड नहीं दिखता।"
+
+msgid "✔ Terminé."
+msgstr "✔ पूरा हुआ।"
+
+#, python-brace-format
+msgid "✖ Échec (code {code})."
+msgstr "✖ विफल (कोड {code})।"
+
+msgid "Entrée pour revenir à omega-tail… "
+msgstr "omega-tail पर लौटने के लिए Enter… "
+
+#, python-brace-format
+msgid "Fait : {command}"
+msgstr "हो गया: {command}"
+
+#, python-brace-format
+msgid "Échec (code {code}) : {command}"
+msgstr "विफल (कोड {code}): {command}"
+
+msgid "Compte inconnu ou root : rien à faire."
+msgstr "अज्ञात खाता या root: करने को कुछ नहीं।"
+
+#, python-brace-format
+msgid ""
+"Le compte « {user} » pourra régler Tailscale (connexion, publication, "
+"préférences) sans sudo. Une seule fois ; annulable ensuite avec « sudo "
+"tailscale set --operator= »."
+msgstr ""
+"खाता « {user} » sudo के बिना Tailscale (कनेक्शन, प्रकाशन, प्राथमिकताएँ) सेट "
+"कर सकेगा। केवल एक बार; बाद में « sudo tailscale set --operator= » से रद्द "
+"किया जा सकता है।"
+
+msgid "DEVENIR OPÉRATEUR DE TAILSCALE ?"
+msgstr "TAILSCALE के ऑपरेटर बनें?"
+
+msgid "Dossier des captures non configuré."
+msgstr "स्क्रीनशॉट फ़ोल्डर सेट नहीं है।"
+
+msgid "Redémarrer"
+msgstr "फिर से शुरू करें"
+
+msgid "PROTECTION"
+msgstr "संरक्षण"
+
+msgid "TAILSCALE"
+msgstr "TAILSCALE"
+
+msgid ""
+"omega-tail — authentification sudo pour les commandes affichées (le mot de "
+"passe ne s'affiche pas pendant la saisie). L'interface revient ensuite."
+msgstr ""
+"omega-tail — दिखाए गए कमांड के लिए sudo प्रमाणीकरण (टाइप करते समय पासवर्ड "
+"नहीं दिखता)। फिर इंटरफ़ेस लौट आता है।"
+
+msgid "Aucune commande à copier."
+msgstr "कॉपी करने के लिए कोई कमांड नहीं।"
+
+#, python-brace-format
+msgid ""
+"{count} commande(s) copiée(s) dans le presse-papiers ({tool}) : collez-les "
+"dans un terminal (Ctrl+Maj+V)."
+msgstr ""
+"{count} कमांड क्लिपबोर्ड में कॉपी की गईं ({tool}): उन्हें टर्मिनल में पेस्ट "
+"करें (Ctrl+Shift+V)।"
+
+msgid ""
+"omega-tail — commandes à copier. Sélectionnez-les à la souris puis copiez "
+"avec le raccourci de votre terminal (souvent Ctrl+Maj+C) :"
+msgstr ""
+"omega-tail — कॉपी करने के लिए कमांड। उन्हें माउस से चुनें, फिर अपने टर्मिनल "
+"के शॉर्टकट से कॉपी करें (अक्सर Ctrl+Shift+C):"
+
+msgid "Adresses"
+msgstr "पते"
+
+msgid "Empreintes"
+msgstr "फ़िंगरप्रिंट"
+
+#, python-brace-format
+msgid "MODE ATTAQUE (retour au normal après {seconds} s de calme)"
+msgstr "हमला मोड ({seconds} s की शांति के बाद सामान्य पर वापसी)"
+
+msgid "regroupements appliqués"
+msgstr "समूहन लागू"
+
+msgid "regroupements en observation"
+msgstr "समूहन निरीक्षण में"
+
+#, python-brace-format
+msgid "auraient été refusées (7 j) : {reasons}"
+msgstr "अस्वीकृत होते (7 दिन): {reasons}"
+
+#, python-brace-format
+msgid "refusées (7 j) : {reasons}"
+msgstr "अस्वीकृत (7 दिन): {reasons}"
+
+msgid "ATTAQUES ET DÉCISIONS"
+msgstr "हमले और निर्णय"
+
+msgid ""
+"La liste noire d'abord, puis les adresses bloquées, les plus actives, et la "
+"confiance. Choisissez une ligne puis une action."
+msgstr ""
+"पहले ब्लैकलिस्ट, फिर ब्लॉक किए गए पते, सबसे सक्रिय, और विश्वसनीय। एक पंक्ति "
+"चुनें, फिर एक क्रिया।"
+
+msgid "Bloquer"
+msgstr "ब्लॉक करें"
+
+msgid "Liste noire"
+msgstr "ब्लैकलिस्ट"
+
+msgid "Débloquer"
+msgstr "अनब्लॉक करें"
+
+msgid "Gestion de la liste noire"
+msgstr "ब्लैकलिस्ट प्रबंधन"
+
+msgid "Expire dans"
+msgstr "समाप्ति में"
+
+msgid "Empreinte JA4"
+msgstr "JA4 फ़िंगरप्रिंट"
+
+msgid "Remarque"
+msgstr "टिप्पणी"
+
+msgid "Total"
+msgstr "कुल"
+
+#, python-brace-format
+msgid ""
+"Connexions reçues : {total} · refusées avant chiffrement : {refused} · "
+"admises : {admitted} · en cours : {current}"
+msgstr ""
+"प्राप्त कनेक्शन: {total} · एन्क्रिप्शन से पहले अस्वीकृत: {refused} · अनुमत: "
+"{admitted} · जारी: {current}"
+
+msgid "jusqu'au retrait"
+msgstr "हटाए जाने तक"
+
+msgid "Retirer la confiance"
+msgstr "विश्वसनीयता हटाएँ"
+
+msgid "Aucune adresse choisie."
+msgstr "कोई पता नहीं चुना गया।"
+
+msgid "Plus anciennes que N jours"
+msgstr "N दिन से पुरानी"
+
+msgid "Les N plus anciennes"
+msgstr "N सबसे पुरानी"
+
+msgid "De la ligne A à la ligne B"
+msgstr "पंक्ति A से पंक्ति B तक"
+
+msgid "Origine : import"
+msgstr "मूल: इम्पोर्ट"
+
+msgid "Origine : écran Attaques"
+msgstr "मूल: हमले स्क्रीन"
+
+msgid "Origine : ajout manuel"
+msgstr "मूल: मैन्युअल जोड़"
+
+msgid "Origine : avant les dates"
+msgstr "मूल: तारीखों से पहले"
+
+msgid "Toute la liste"
+msgstr "पूरी सूची"
+
+msgid "GESTION DE LA LISTE NOIRE"
+msgstr "ब्लैकलिस्ट प्रबंधन"
+
+msgid "AJOUTER OU IMPORTER"
+msgstr "जोड़ें या इम्पोर्ट करें"
+
+msgid "adresse ou réseau (ex. 203.0.113.7 ou 198.51.100.0/24)"
+msgstr "पता या नेटवर्क (उदा. 203.0.113.7 या 198.51.100.0/24)"
+
+msgid "fichier TXT : une adresse ou un réseau par ligne, # = commentaire"
+msgstr "TXT फ़ाइल: प्रति पंक्ति एक पता या नेटवर्क, # = टिप्पणी"
+
+msgid "Importer"
+msgstr "इम्पोर्ट करें"
+
+msgid ""
+"Les doublons, les adresses déjà couvertes par un réseau de la liste et "
+"celles du tailnet sont écartés et comptés. Un export TXT se réimporte tel "
+"quel (récidive)."
+msgstr ""
+"डुप्लिकेट, सूची के किसी नेटवर्क द्वारा पहले से कवर पते और tailnet के पते "
+"छोड़े और गिने जाते हैं। TXT एक्सपोर्ट जैसा है वैसा ही फिर से इम्पोर्ट होता "
+"है (दोबारा होने पर)।"
+
+msgid "LISTE"
+msgstr "सूची"
+
+msgid "filtrer : début d'adresse, réseau, date (2026-11), origine"
+msgstr "फ़िल्टर: पते की शुरुआत, नेटवर्क, तारीख (2026-11), मूल"
+
+msgid "PURGER"
+msgstr "सफ़ाई"
+
+msgid "N ou A"
+msgstr "N या A"
+
+msgid "Aperçu"
+msgstr "पूर्वावलोकन"
+
+msgid "Purger"
+msgstr "साफ़ करें"
+
+msgid ""
+"Les lignes sont numérotées de la plus ancienne à la plus récente, comme dans"
+" le tableau sans filtre. L'aperçu dit combien d'entrées partiraient ; rien "
+"n'est retiré sans confirmation."
+msgstr ""
+"पंक्तियाँ सबसे पुरानी से सबसे नई तक क्रमांकित हैं, जैसे बिना फ़िल्टर वाली "
+"तालिका में। पूर्वावलोकन बताता है कि कितनी प्रविष्टियाँ हटेंगी; पुष्टि के "
+"बिना कुछ भी नहीं हटाया जाता।"
+
+msgid "THÈME DE LA PAGE HTML"
+msgstr "HTML पेज की थीम"
+
+msgid "Exporter HTML"
+msgstr "HTML एक्सपोर्ट करें"
+
+msgid "Exporter TXT"
+msgstr "TXT एक्सपोर्ट करें"
+
+msgid "Exporter JSON"
+msgstr "JSON एक्सपोर्ट करें"
+
+msgid "Voir les exports"
+msgstr "एक्सपोर्ट देखें"
+
+#, python-brace-format
+msgid ""
+"{count} entrée(s) sur {max} au plus. Refusées par la porte avant tout "
+"chiffrement, jusqu'à leur retrait."
+msgstr ""
+"अधिकतम {max} में से {count} प्रविष्टि(याँ)। हटाए जाने तक किसी भी एन्क्रिप्शन"
+" से पहले गेट द्वारा अस्वीकृत।"
+
+msgid "La liste grossit : exportez-la puis purgez les plus anciennes."
+msgstr "सूची बढ़ रही है: उसे एक्सपोर्ट करें, फिर सबसे पुरानी की सफ़ाई करें।"
+
+#, python-brace-format
+msgid ""
+"{shown} premières lignes affichées sur {total} : affinez le filtre, ou "
+"exportez pour tout voir."
+msgstr ""
+"{total} में से पहली {shown} पंक्तियाँ दिखाई गईं: फ़िल्टर को सटीक करें, या सब"
+" देखने के लिए एक्सपोर्ट करें।"
+
+#, python-brace-format
+msgid "{count} entrée(s) correspondent au filtre."
+msgstr "{count} प्रविष्टि(याँ) फ़िल्टर से मेल खाती हैं।"
+
+msgid "La liste noire est vide."
+msgstr "ब्लैकलिस्ट खाली है।"
+
+#, python-brace-format
+msgid "{error}"
+msgstr "{error}"
+
+#, python-brace-format
+msgid "Lignes invalides : {lines}"
+msgstr "अमान्य पंक्तियाँ: {lines}"
+
+msgid "Tapez une adresse ou un réseau."
+msgstr "एक पता या नेटवर्क टाइप करें।"
+
+msgid "Indiquez le chemin du fichier TXT à importer."
+msgstr "इम्पोर्ट की जाने वाली TXT फ़ाइल का पाथ बताएँ।"
+
+#, python-brace-format
+msgid "Fichier introuvable : {path}"
+msgstr "फ़ाइल नहीं मिली: {path}"
+
+#, python-brace-format
+msgid "Fichier trop gros (plus de {size} Mo) : découpez-le."
+msgstr "फ़ाइल बहुत बड़ी ({size} MB से अधिक): इसे विभाजित करें।"
+
+msgid "Import en cours…"
+msgstr "इम्पोर्ट जारी…"
+
+msgid "Aucune entrée choisie."
+msgstr "कोई प्रविष्टि नहीं चुनी गई।"
+
+msgid "Tapez N (un nombre entier) dans le premier champ."
+msgstr "पहले फ़ील्ड में N (एक पूर्णांक) टाइप करें।"
+
+msgid "Tapez A et B (numéros de ligne) dans les deux champs."
+msgstr "दोनों फ़ील्ड में A और B (पंक्ति संख्याएँ) टाइप करें।"
+
+#, python-brace-format
+msgid "Aperçu : {count} entrée(s) sur {total} partiraient."
+msgstr "पूर्वावलोकन: {total} में से {count} प्रविष्टि(याँ) हटेंगी।"
+
+#, python-brace-format
+msgid "De {first} à {last}."
+msgstr "{first} से {last} तक।"
+
+msgid "Aucune entrée ne correspond : rien à purger."
+msgstr "कोई प्रविष्टि मेल नहीं खाती: सफ़ाई को कुछ नहीं।"
+
+#, python-brace-format
+msgid ""
+"{count} entrée(s) vont quitter la liste noire : ces adresses seront de "
+"nouveau admises (soumises aux règles). Exportez la liste avant si vous "
+"voulez pouvoir les réinjecter."
+msgstr ""
+"{count} प्रविष्टि(याँ) ब्लैकलिस्ट छोड़ेंगी: ये पते फिर से अनुमत होंगे "
+"(नियमों के अधीन)। यदि आप उन्हें फिर से डालना चाहते हैं, तो पहले सूची "
+"एक्सपोर्ट करें।"
+
+msgid "Purge en cours…"
+msgstr "सफ़ाई जारी…"
+
+msgid "VIDER"
+msgstr "खाली करें"
+
+msgid "VIDER LA LISTE NOIRE ?"
+msgstr "ब्लैकलिस्ट खाली करें?"
+
+msgid "Vider"
+msgstr "खाली करें"
+
+msgid "PURGER LA LISTE NOIRE ?"
+msgstr "ब्लैकलिस्ट की सफ़ाई करें?"
+
+#, python-brace-format
+msgid "Liste noire enregistrée ({count} entrée(s)) : {path}"
+msgstr "ब्लैकलिस्ट सहेजी गई ({count} प्रविष्टि(याँ)): {path}"
+
+msgid "ATTAQUE PROBABLE — COUPER FUNNEL ?"
+msgstr "संभावित हमला — FUNNEL बंद करें?"
+
+#, python-brace-format
+msgid ""
+"{reason}\n"
+"\n"
+"Couper Funnel (port {ports}) arrête aussitôt les connexions venues d'Internet : la machine respire. Le tailnet (Serve, SSH) n'est pas touché.\n"
+"\n"
+"• Coupure de {minutes} min : Funnel est remis en route tout seul, à l'identique, même si omega-tail est fermé.\n"
+"• Coupure totale : Funnel reste coupé jusqu'à ce que vous le rétablissiez (menu Survie)."
+msgstr ""
+"{reason}\n"
+"\n"
+"Funnel (पोर्ट {ports}) बंद करने से इंटरनेट से आने वाले कनेक्शन तुरंत रुक जाते हैं: मशीन को राहत मिलती है। tailnet (Serve, SSH) प्रभावित नहीं होता।\n"
+"\n"
+"• {minutes} मिनट की बंदी: Funnel अपने-आप, हूबहू, फिर से चालू होता है, भले ही omega-tail बंद हो।\n"
+"• पूर्ण बंदी: Funnel तब तक बंद रहता है जब तक आप उसे बहाल न करें (उत्तरजीविता मेन्यू)।"
+
+#, python-brace-format
+msgid "Couper {minutes} min"
+msgstr "{minutes} मिनट बंद करें"
+
+msgid "Coupure totale"
+msgstr "पूर्ण बंदी"
+
+msgid "Pas maintenant"
+msgstr "अभी नहीं"
+
+msgid "déconnecté (tailscale down)"
+msgstr "डिसकनेक्टेड (tailscale down)"
+
+msgid "compte à connecter"
+msgstr "खाता कनेक्ट करना है"
+
+msgid "machine à approuver"
+msgstr "मशीन स्वीकृत करनी है"
+
+msgid "CONNEXION ET RÉGLAGES"
+msgstr "कनेक्शन और सेटिंग्स"
+
+msgid ""
+"La connexion de cette machine au tailnet, son compte, et les réglages de "
+"Tailscale. Chaque commande s'affiche avant d'être lancée, dans le terminal "
+"(sans sudo si vous êtes opérateur)."
+msgstr ""
+"इस मशीन का tailnet से कनेक्शन, उसका खाता, और Tailscale की सेटिंग्स। हर कमांड"
+" चलाने से पहले टर्मिनल में दिखाया जाता है (यदि आप ऑपरेटर हैं तो sudo के "
+"बिना)।"
+
+msgid "Se connecter"
+msgstr "कनेक्ट करें"
+
+msgid "Se déconnecter"
+msgstr "डिसकनेक्ट करें"
+
+msgid "Ajouter un compte"
+msgstr "खाता जोड़ें"
+
+msgid "Déconnexion définitive"
+msgstr "स्थायी लॉग आउट"
+
+msgid "COMPTE"
+msgstr "खाता"
+
+msgid "Comptes de cette machine (lecture…)"
+msgstr "इस मशीन के खाते (पढ़ा जा रहा है…)"
+
+msgid "Changer de compte"
+msgstr "खाता बदलें"
+
+msgid "Appliquer"
+msgstr "लागू करें"
+
+msgid "Relire"
+msgstr "फिर से पढ़ें"
+
+msgid "Mon compte"
+msgstr "मेरा खाता"
+
+msgid "Activer le transfert IP"
+msgstr "IP फ़ॉरवर्डिंग सक्रिय करें"
+
+msgid " (en cours)"
+msgstr " (वर्तमान)"
+
+#, python-brace-format
+msgid "Comptes illisibles ({error}) : devenez opérateur (tableau de bord)."
+msgstr "खाते अपठनीय ({error}): ऑपरेटर बनें (डैशबोर्ड)।"
+
+msgid ""
+"Un seul compte sur cette machine : « Ajouter un compte » pour en connecter "
+"un autre."
+msgstr "इस मशीन पर केवल एक खाता: दूसरा कनेक्ट करने के लिए « खाता जोड़ें »।"
+
+msgid ""
+"Aucune machine du tailnet ne se propose comme nœud de sortie. Sur la machine"
+" voulue : cocher « Proposer cette machine comme nœud de sortie », appliquer,"
+" puis l'approuver dans la console d'administration de Tailscale (Machines → "
+"Edit route settings)."
+msgstr ""
+"tailnet की कोई मशीन स्वयं को निकास नोड के रूप में पेश नहीं करती। इच्छित मशीन"
+" पर: « इस मशीन को निकास नोड के रूप में पेश करें » चिह्नित करें, लागू करें, "
+"फिर Tailscale के एडमिन कंसोल में उसे स्वीकृत करें (Machines → Edit route "
+"settings)।"
+
+#, python-brace-format
+msgid "ex. {user}"
+msgstr "उदा. {user}"
+
+msgid "tailscaled ne répond pas"
+msgstr "tailscaled जवाब नहीं दे रहा"
+
+#, python-brace-format
+msgid "Compte : {user} · tailnet : {tailnet}"
+msgstr "खाता: {user} · tailnet: {tailnet}"
+
+#, python-brace-format
+msgid "Machine : {name} · {addresses}"
+msgstr "मशीन: {name} · {addresses}"
+
+#, python-brace-format
+msgid "Expiration de la clé : {expiry} · opérateur : {operator}"
+msgstr "कुंजी की समाप्ति: {expiry} · ऑपरेटर: {operator}"
+
+msgid "aucun (sudo)"
+msgstr "कोई नहीं (sudo)"
+
+msgid "Votre session passe par Tailscale : se déconnecter vous couperait."
+msgstr "आपका सत्र Tailscale से होकर जाता है: डिसकनेक्ट करने से आप कट जाएँगे।"
+
+#, python-brace-format
+msgid ""
+"Transfert IP désactivé ({keys}) : le nœud de sortie et les sous-réseaux "
+"annoncés ne transmettront rien. « Activer le transfert IP » écrit un fichier"
+" à part ({path}), gardé au redémarrage."
+msgstr ""
+"IP फ़ॉरवर्डिंग निष्क्रिय ({keys}): निकास नोड और घोषित सबनेट कुछ भी आगे नहीं "
+"भेजेंगे। « IP फ़ॉरवर्डिंग सक्रिय करें » एक अलग फ़ाइल ({path}) लिखता है, जो "
+"रीस्टार्ट पर बनी रहती है।"
+
+msgid ""
+"Compte inconnu ou root : tapez le nom du compte Linux à rendre opérateur."
+msgstr ""
+"अज्ञात खाता या root: ऑपरेटर बनाए जाने वाले Linux खाते का नाम टाइप करें।"
+
+#, python-brace-format
+msgid "{name} : {reason}"
+msgstr "{name}: {reason}"
+
+#, python-brace-format
+msgid "{label} : {before} → {after}"
+msgstr "{label}: {before} → {after}"
+
+msgid "Aucun changement."
+msgstr "कोई बदलाव नहीं।"
+
+msgid "Commande :"
+msgstr "कमांड:"
+
+#, python-brace-format
+msgid "Transfert IP désactivé ({keys}) : « Activer le transfert IP » aussi."
+msgstr "IP फ़ॉरवर्डिंग निष्क्रिय ({keys}): « IP फ़ॉरवर्डिंग सक्रिय करें » भी।"
+
+#, python-brace-format
+msgid ""
+"Votre session passe par Tailscale ; ces changements peuvent la couper : "
+"{names}."
+msgstr ""
+"आपका सत्र Tailscale से होकर जाता है; ये बदलाव उसे काट सकते हैं: {names}।"
+
+#, python-brace-format
+msgid "Dernière application ({time}) : la commande a échoué (code {code})."
+msgstr "अंतिम बार लागू ({time}): कमांड विफल हुआ (कोड {code})।"
+
+#, python-brace-format
+msgid "Dernière application ({time}) :"
+msgstr "अंतिम बार लागू ({time}):"
+
+#, python-brace-format
+msgid "{label} : {after}"
+msgstr "{label}: {after}"
+
+#, python-brace-format
+msgid "{label} : {after} demandé, {now} lu"
+msgstr "{label}: {after} माँगा गया, {now} पढ़ा गया"
+
+msgid "À appliquer :"
+msgstr "लागू करना है:"
+
+msgid "Valeur refusée : corrigez la ligne marquée ✖."
+msgstr "मान अस्वीकृत: ✖ से चिह्नित पंक्ति ठीक करें।"
+
+msgid "APPLIQUER LES RÉGLAGES ?"
+msgstr "सेटिंग्स लागू करें?"
+
+msgid ""
+"Votre session passe par Tailscale : elle sera COUPÉE et ne reviendra pas. Il"
+" faudra un accès local (ou un autre chemin) pour vous reconnecter."
+msgstr ""
+"आपका सत्र Tailscale से होकर जाता है: यह कट जाएगा और वापस नहीं आएगा। फिर से "
+"कनेक्ट होने के लिए स्थानीय पहुँच (या कोई अन्य रास्ता) चाहिए होगा।"
+
+msgid "Ce qui est publié (Serve et Funnel) ne sera plus joignable."
+msgstr "जो प्रकाशित है (Serve और Funnel) वह अब पहुँच में नहीं रहेगा।"
+
+msgid "ACTIVER LE TRANSFERT IP ?"
+msgstr "IP फ़ॉरवर्डिंग सक्रिय करें?"
+
+#, python-brace-format
+msgid ""
+"Le noyau fera suivre les paquets (IPv4 et IPv6) : nécessaire pour un nœud de"
+" sortie ou des sous-réseaux annoncés. Fichier à part {path}, relu au "
+"démarrage (systemd, OpenRC, runit) ; pour annuler : supprimer ce fichier "
+"puis redémarrer."
+msgstr ""
+"कर्नेल पैकेट आगे भेजेगा (IPv4 और IPv6): निकास नोड या घोषित सबनेट के लिए "
+"आवश्यक। अलग फ़ाइल {path}, स्टार्टअप पर फिर से पढ़ी जाती है (systemd, OpenRC,"
+" runit); रद्द करने के लिए: यह फ़ाइल हटाएँ, फिर रीस्टार्ट करें।"
+
+msgid "SE CONNECTER ?"
+msgstr "कनेक्ट करें?"
+
+msgid ""
+"Remet cette machine dans le tailnet. Si un compte doit s'identifier, "
+"Tailscale affiche dans le terminal l'adresse à ouvrir dans un navigateur."
+msgstr ""
+"इस मशीन को tailnet में वापस लाता है। यदि किसी खाते को पहचान करनी है, तो "
+"Tailscale टर्मिनल में ब्राउज़र में खोला जाने वाला पता दिखाता है।"
+
+msgid "SE DÉCONNECTER ?"
+msgstr "डिसकनेक्ट करें?"
+
+msgid ""
+"La machine quitte le tailnet (le compte reste enregistré : « Se connecter » "
+"la remet)."
+msgstr ""
+"मशीन tailnet छोड़ती है (खाता सहेजा रहता है: « कनेक्ट करें » उसे वापस लाता "
+"है)।"
+
+msgid "AJOUTER UN COMPTE ?"
+msgstr "खाता जोड़ें?"
+
+msgid ""
+"Connecte un autre compte (ou un autre tailnet) sur cette machine ; il "
+"devient le compte en cours. Tailscale affiche l'adresse à ouvrir pour vous "
+"identifier. L'ancien compte reste dans « Changer de compte »."
+msgstr ""
+"इस मशीन पर एक अन्य खाता (या अन्य tailnet) कनेक्ट करता है; यह वर्तमान खाता बन"
+" जाता है। Tailscale आपकी पहचान के लिए खोला जाने वाला पता दिखाता है। पुराना "
+"खाता « खाता बदलें » में रहता है।"
+
+msgid "Choisissez un autre compte que le compte en cours."
+msgstr "वर्तमान खाते के अलावा कोई अन्य खाता चुनें।"
+
+msgid "CHANGER DE COMPTE ?"
+msgstr "खाता बदलें?"
+
+#, python-brace-format
+msgid ""
+"La machine passe sur le compte {account} (tailnet {tailnet}). Son adresse et"
+" ce qu'elle voit du tailnet changent."
+msgstr ""
+"मशीन खाते {account} (tailnet {tailnet}) पर जाती है। उसका पता और वह tailnet "
+"से जो देखती है, बदल जाते हैं।"
+
+#, python-brace-format
+msgid ""
+"La machine est retirée du compte : sa clé est révoquée, il faudra s'identifier à nouveau (et peut-être la réapprouver) pour la remettre dans le tailnet.\n"
+"\n"
+"Commande : {command}"
+msgstr ""
+"मशीन खाते से हटा दी जाती है: उसकी कुंजी रद्द होती है, उसे tailnet में वापस लाने के लिए फिर से पहचान करनी होगी (और शायद फिर से स्वीकृत करना होगा)।\n"
+"\n"
+"कमांड: {command}"
+
+#, python-brace-format
+msgid "Pour confirmer, tapez le nom de la machine : {word}"
+msgstr "पुष्टि के लिए, मशीन का नाम टाइप करें: {word}"
+
+msgid "DÉCONNEXION DÉFINITIVE ?"
+msgstr "स्थायी लॉग आउट?"
+
+msgid "Déconnecter"
+msgstr "डिसकनेक्ट"
+
+msgid "bouton « Devenir opérateur »"
+msgstr "« ऑपरेटर बनें » बटन"
+
+#, python-brace-format
+msgid "lot {lot}"
+msgstr "चरण {lot}"
+
+msgid "Tailscale"
+msgstr "Tailscale"
+
+msgid "n'est pas installé"
+msgstr "इंस्टॉल नहीं है"
+
+#, python-brace-format
+msgid "ne répond pas : {error}"
+msgstr "जवाब नहीं दे रहा: {error}"
+
+msgid "tailscaled"
+msgstr "tailscaled"
+
+msgid "Client installé"
+msgstr "इंस्टॉल क्लाइंट"
+
+#, python-brace-format
+msgid "{daemon} en marche, {client} installé"
+msgstr "{daemon} चल रहा, {client} इंस्टॉल"
+
+msgid "Version"
+msgstr "संस्करण"
+
+msgid "Compte"
+msgstr "खाता"
+
+msgid "Appareils du tailnet"
+msgstr "tailnet के डिवाइस"
+
+#, python-brace-format
+msgid "{online} en ligne sur {total}"
+msgstr "{total} में से {online} ऑनलाइन"
+
+msgid "Clé de la machine"
+msgstr "मशीन की कुंजी"
+
+msgid "aucun (sudo requis)"
+msgstr "कोई नहीं (sudo आवश्यक)"
+
+msgid "Nœud de sortie proposé"
+msgstr "प्रस्तावित निकास नोड"
+
+msgid "Machine"
+msgstr "मशीन"
+
+#, python-brace-format
+msgid "{name} ({count} fils)"
+msgstr "{name} ({count} थ्रेड)"
+
+msgid "CPU machine"
+msgstr "मशीन CPU"
+
+msgid "Charge"
+msgstr "लोड"
+
+msgid "Température"
+msgstr "तापमान"
+
+msgid "Mémoire"
+msgstr "मेमोरी"
+
+#, python-brace-format
+msgid "{used} utilisés sur {total}"
+msgstr "{total} में से {used} उपयोग में"
+
+msgid "CPU tailscaled"
+msgstr "tailscaled CPU"
+
+#, python-brace-format
+msgid "{cpu} d'un cœur, {memory}"
+msgstr "एक कोर का {cpu}, {memory}"
+
+msgid "Confinement"
+msgstr "सीमाबंदी"
+
+msgid "Funnel"
+msgstr "Funnel"
+
+msgid "coupé par le disjoncteur"
+msgstr "सर्किट ब्रेकर द्वारा बंद"
+
+#, python-brace-format
+msgid "ouvert sur {ports}"
+msgstr "{ports} पर खुला"
+
+msgid "sans porte"
+msgstr "बिना गेट"
+
+msgid "fermé"
+msgstr "बंद"
+
+msgid "actif · MODE ATTAQUE"
+msgstr "सक्रिय · हमला मोड"
+
+msgid "Pare-feu (porte)"
+msgstr "फ़ायरवॉल (गेट)"
+
+msgid "inactif"
+msgstr "निष्क्रिय"
+
+#, python-brace-format
+msgid "{count} entrée(s)"
+msgstr "{count} प्रविष्टि(याँ)"
+
+msgid "Veille"
+msgstr "निगरानी"
+
+msgid "inactive"
+msgstr "निष्क्रिय"
+
+msgid "arrêtée"
+msgstr "रुकी हुई"
+
+#, python-brace-format
+msgid "active, palier {level}"
+msgstr "सक्रिय, चरण {level}"
+
+msgid "Bouclier WireGuard"
+msgstr "WireGuard कवच"
+
+msgid "non posé"
+msgstr "नहीं लगा"
+
+msgid "ABSENT (table effacée)"
+msgstr "अनुपस्थित (तालिका मिटी)"
+
+msgid "état non mis à jour"
+msgstr "स्थिति अपडेट नहीं हुई"
+
+#, python-brace-format
+msgid "posé, mode {mode}"
+msgstr "लगा हुआ, मोड {mode}"
+
+msgid "TABLEAU DE BORD"
+msgstr "डैशबोर्ड"
+
+msgid "Corriger"
+msgstr "ठीक करें"
+
+msgid "Alerte"
+msgstr "अलर्ट"
+
+msgid "Où corriger"
+msgstr "कहाँ ठीक करें"
+
+#, python-brace-format
+msgid "Lu à {time} · relu toutes les 5 s"
+msgstr "{time} पर पढ़ा गया · हर 5 s में फिर से पढ़ा जाता है"
+
+msgid "Choisissez une alerte puis « Corriger » (ou Entrée)."
+msgstr "एक अलर्ट चुनें, फिर « ठीक करें » (या Enter)।"
+
+msgid "Aucune alerte choisie."
+msgstr "कोई अलर्ट नहीं चुना गया।"
+
+msgid "Rien à ouvrir pour cette alerte : elle vient de Tailscale lui-même."
+msgstr "इस अलर्ट के लिए खोलने को कुछ नहीं: यह स्वयं Tailscale से आता है।"
+
+#, python-brace-format
+msgid "Fichier trop volumineux pour être lu ici : {path}"
+msgstr "फ़ाइल यहाँ पढ़ने के लिए बहुत बड़ी है: {path}"
+
+#, python-brace-format
+msgid "Lecture impossible : {error}"
+msgstr "पढ़ना संभव नहीं: {error}"
+
+msgid "EXPORTS"
+msgstr "एक्सपोर्ट"
+
+msgid ""
+"Pas de navigateur dans cette session (serveur, connexion SSH) : les exports "
+"sont listés et lus ici. Choisissez une ligne (Entrée) pour la lire."
+msgstr ""
+"इस सत्र में ब्राउज़र नहीं है (सर्वर, SSH कनेक्शन): एक्सपोर्ट यहीं सूचीबद्ध "
+"होते हैं और पढ़े जाते हैं। पढ़ने के लिए एक पंक्ति चुनें (Enter)।"
+
+msgid "Lire"
+msgstr "पढ़ें"
+
+msgid "Taille"
+msgstr "आकार"
+
+msgid "Aucun export pour l'instant."
+msgstr "अभी कोई एक्सपोर्ट नहीं।"
+
+#, python-brace-format
+msgid "Dossier des exports ouvert dans le navigateur : {path}"
+msgstr "एक्सपोर्ट फ़ोल्डर ब्राउज़र में खोला गया: {path}"
+
+msgid "Connexions par adresse / 10 s"
+msgstr "प्रति पता कनेक्शन / 10 s"
+
+msgid "Par préfixe /24 ou /64 / 10 s"
+msgstr "प्रति /24 या /64 प्रीफ़िक्स / 10 s"
+
+msgid "Budget global (admises / s)"
+msgstr "कुल बजट (अनुमत / s)"
+
+msgid "Connexions simultanées"
+msgstr "एक साथ कनेक्शन"
+
+msgid "Durée de blocage (min)"
+msgstr "ब्लॉक अवधि (मिनट)"
+
+msgid "Mode attaque au-delà de (entrantes / s)"
+msgstr "हमला मोड इससे ऊपर (आने वाले / s)"
+
+msgid "Retour au normal après (min de calme)"
+msgstr "सामान्य पर वापसी (शांति के मिनट)"
+
+msgid "AS d'hébergeur / 10 s"
+msgstr "होस्टिंग AS / 10 s"
+
+msgid "Empreinte inconnue / 10 s"
+msgstr "अज्ञात फ़िंगरप्रिंट / 10 s"
+
+msgid "Pays limité / 10 s"
+msgstr "सीमित देश / 10 s"
+
+msgid ""
+"HAProxy sans Lua : regroupements indisponibles (la porte du lot 4 protège "
+"seule)."
+msgstr ""
+"Lua के बिना HAProxy: समूहन उपलब्ध नहीं (केवल चरण 4 का गेट रक्षा करता है)।"
+
+msgid "Regroupements : appliqués (refusent en mode attaque)"
+msgstr "समूहन: लागू (हमला मोड में अस्वीकार करते हैं)"
+
+msgid ""
+"Regroupements : en observation (comptent « aurait refusé », ne refusent "
+"rien)"
+msgstr ""
+"समूहन: निरीक्षण में (« अस्वीकार करता » गिनते हैं, कुछ अस्वीकार नहीं करते)"
+
+#, python-brace-format
+msgid "Mode : ATTAQUE — retour au normal après {seconds} s de calme"
+msgstr "मोड: हमला — {seconds} s की शांति के बाद सामान्य पर वापसी"
+
+msgid "Mode : normal"
+msgstr "मोड: सामान्य"
+
+#, python-brace-format
+msgid ""
+"Empreintes : apprentissage, encore {days} jour(s) ; les regroupements "
+"restent en observation jusqu'à la fin."
+msgstr ""
+"फ़िंगरप्रिंट: सीखना, अभी {days} दिन; अंत तक समूहन निरीक्षण में रहते हैं।"
+
+#, python-brace-format
+msgid ""
+"Empreintes habituelles : {count} (référence prête) ; « appliqués » est "
+"maintenant possible."
+msgstr "सामान्य फ़िंगरप्रिंट: {count} (संदर्भ तैयार); « लागू » अब संभव है।"
+
+msgid ""
+"Base AS / pays : absente (« Mettre à jour la base », ou la veille une fois "
+"par mois)"
+msgstr ""
+"AS / देश डेटाबेस: अनुपस्थित (« डेटाबेस अपडेट करें », या महीने में एक बार "
+"निगरानी)"
+
+#, python-brace-format
+msgid ""
+"Base AS / pays : à jour il y a {days} jour(s) ; renouvelée chaque mois par "
+"la veille"
+msgstr ""
+"AS / देश डेटाबेस: {days} दिन पहले अपडेट; निगरानी द्वारा हर महीने नवीनीकृत"
+
+msgid ""
+"Navigateurs courants (Chrome, Edge, Firefox) jamais limités par ces règles."
+msgstr ""
+"सामान्य ब्राउज़र (Chrome, Edge, Firefox) इन नियमों से कभी सीमित नहीं होते।"
+
+msgid ""
+"Une porte (HAProxy) se place entre Funnel et votre site : elle voit "
+"l'adresse réelle de chaque visiteur et refuse les abus AVANT tout "
+"chiffrement (4,6 fois moins de calcul par connexion refusée, mesuré). "
+"Activation et désactivation avec retour arrière automatique."
+msgstr ""
+"एक गेट (HAProxy) Funnel और आपकी साइट के बीच लगता है: यह हर आगंतुक का "
+"वास्तविक पता देखता है और किसी भी एन्क्रिप्शन से पहले दुरुपयोग अस्वीकार करता "
+"है (प्रति अस्वीकृत कनेक्शन 4.6 गुना कम गणना, मापा गया)। स्वचालित रोलबैक के "
+"साथ सक्रिय और निष्क्रिय करना।"
+
+msgid "Installer HAProxy"
+msgstr "HAProxy इंस्टॉल करें"
+
+msgid "Activer la protection"
+msgstr "संरक्षण सक्रिय करें"
+
+msgid "Désactiver la protection"
+msgstr "संरक्षण निष्क्रिय करें"
+
+msgid "Renouveler le certificat"
+msgstr "प्रमाणपत्र नवीनीकृत करें"
+
+msgid "RÈGLES (appliquées à chaud)"
+msgstr "नियम (चलते-चलते लागू)"
+
+msgid "Mode"
+msgstr "मोड"
+
+msgid "normal : refuse"
+msgstr "सामान्य: अस्वीकार करता है"
+
+msgid "observation : compte sans refuser"
+msgstr "निरीक्षण: बिना अस्वीकार किए गिनता है"
+
+msgid "Vérifier le nom visé"
+msgstr "लक्षित नाम जाँचें"
+
+msgid "nombre"
+msgstr "संख्या"
+
+msgid "Appliquer les règles"
+msgstr "नियम लागू करें"
+
+msgid "LISTES"
+msgstr "सूचियाँ"
+
+msgid "Adresse ou réseau (203.0.113.7, 198.51.100.0/24, 2001:db8::/48)"
+msgstr "पता या नेटवर्क (203.0.113.7, 198.51.100.0/24, 2001:db8::/48)"
+
+msgid "Mettre en confiance"
+msgstr "विश्वसनीय बनाएँ"
+
+msgid "REGROUPEMENTS : EMPREINTES, AS, PAYS"
+msgstr "समूहन: फ़िंगरप्रिंट, AS, देश"
+
+msgid ""
+"Contre les attaques à adresses dispersées : chaque connexion reçoit, avant "
+"tout chiffrement, son empreinte (JA4), son AS et son pays. Quand les "
+"connexions entrantes dépassent le seuil, la porte passe seule en MODE "
+"ATTAQUE : une empreinte inconnue qui explose, un AS d'hébergeur ou un pays "
+"choisi qui dépasse son débit est alors refusé. Les navigateurs courants ne "
+"sont jamais touchés ; les clients connus passent avant le budget. En "
+"observation, tout est compté (« aurait refusé ») et rien n'est refusé."
+msgstr ""
+"बिखरे पतों वाले हमलों के विरुद्ध: हर कनेक्शन को, किसी भी एन्क्रिप्शन से "
+"पहले, उसका फ़िंगरप्रिंट (JA4), AS और देश मिलता है। जब आने वाले कनेक्शन सीमा "
+"पार करते हैं, तो गेट अपने-आप हमला मोड में जाता है: तब अचानक बढ़ता अज्ञात "
+"फ़िंगरप्रिंट, होस्टिंग AS या चुना गया देश जो अपनी दर पार करता है, अस्वीकार "
+"होता है। सामान्य ब्राउज़र कभी प्रभावित नहीं होते; ज्ञात क्लाइंट बजट से पहले "
+"आते हैं। निरीक्षण में, सब कुछ गिना जाता है (« अस्वीकार करता ») और कुछ भी "
+"अस्वीकार नहीं होता।"
+
+msgid "Regroupements"
+msgstr "समूहन"
+
+msgid "observation : comptent sans refuser"
+msgstr "निरीक्षण: बिना अस्वीकार किए गिनते हैं"
+
+msgid "appliqués : refusent en mode attaque (après l'apprentissage)"
+msgstr "लागू: हमला मोड में अस्वीकार करते हैं (सीखने के बाद)"
+
+msgid "Clients connus avant le budget"
+msgstr "ज्ञात क्लाइंट बजट से पहले"
+
+msgid "Pays limités en mode attaque"
+msgstr "हमला मोड में सीमित देश"
+
+msgid "ex. CN, RU (vide : aucun)"
+msgstr "उदा. CN, RU (खाली: कोई नहीं)"
+
+msgid "AS d'hébergeurs"
+msgstr "होस्टिंग AS"
+
+msgid "ex. 16509 24940 (numéros d'AS)"
+msgstr "उदा. 16509 24940 (AS संख्याएँ)"
+
+msgid "Appliquer les regroupements"
+msgstr "समूहन लागू करें"
+
+msgid "Mettre à jour la base"
+msgstr "डेटाबेस अपडेट करें"
+
+msgid "Recommencer l'apprentissage"
+msgstr "सीखना फिर से शुरू करें"
+
+#, python-brace-format
+msgid ""
+"Confiance (jamais limitées) : {trusted}\n"
+"Liste noire (refusées jusqu'à leur retrait) : {black}"
+msgstr ""
+"विश्वसनीय (कभी सीमित नहीं): {trusted}\n"
+"ब्लैकलिस्ट (हटाए जाने तक अस्वीकृत): {black}"
+
+msgid ""
+"Téléchargement et préparation de la base AS / pays (DB-IP Lite) : une à "
+"quelques minutes, l'écran reste utilisable…"
+msgstr ""
+"AS / देश डेटाबेस (DB-IP Lite) का डाउनलोड और तैयारी: एक से कुछ मिनट, स्क्रीन "
+"उपयोग योग्य रहती है…"
+
+msgid ""
+"Chaque menu, sa fonction et le détail. Cliquez sur un titre pour l'ouvrir."
+msgstr "हर मेनू, उसका काम और विवरण। खोलने के लिए किसी शीर्षक पर क्लिक करें।"
+
+msgid "Exporter l'aide en HTML"
+msgstr "सहायता HTML में एक्सपोर्ट करें"
+
+#, python-brace-format
+msgid "Aide exportée : {path}"
+msgstr "सहायता एक्सपोर्ट की गई: {path}"
+
+#, python-brace-format
+msgid "Cet écran arrive dans une prochaine version (lot {lot})."
+msgstr "यह स्क्रीन अगले संस्करण में आएगी (चरण {lot})।"
+
+msgid "Cet écran n'est pas disponible dans cette session."
+msgstr "यह स्क्रीन इस सत्र में उपलब्ध नहीं है।"
+
+msgid "JOURNAUX"
+msgstr "लॉग"
+
+msgid "porte (pare-feu)"
+msgstr "गेट (फ़ायरवॉल)"
+
+#, python-brace-format
+msgid "{count} lignes"
+msgstr "{count} पंक्तियाँ"
+
+msgid "Filtrer (texte, adresse…)"
+msgstr "फ़िल्टर (टेक्स्ट, पता…)"
+
+msgid "Lecture du journal…"
+msgstr "लॉग पढ़ा जा रहा है…"
+
+msgid "Aucune ligne lue."
+msgstr "कोई पंक्ति नहीं पढ़ी गई।"
+
+#, python-brace-format
+msgid "{shown} ligne(s) affichée(s) sur {total} lue(s)."
+msgstr "{total} पढ़ी गई में से {shown} पंक्ति(याँ) दिखाई गईं।"
+
+msgid "Rien à exporter."
+msgstr "एक्सपोर्ट करने को कुछ नहीं।"
+
+#, python-brace-format
+msgid "Journal exporté : {path}"
+msgstr "लॉग एक्सपोर्ट किया गया: {path}"
+
+msgid "maintenant"
+msgstr "अभी-अभी"
+
+#, python-brace-format
+msgid "il y a {count} min"
+msgstr "{count} मिनट पहले"
+
+#, python-brace-format
+msgid "il y a {count} h"
+msgstr "{count} घं. पहले"
+
+#, python-brace-format
+msgid "il y a {count} j"
+msgstr "{count} दिन पहले"
+
+msgid "direct"
+msgstr "सीधा"
+
+msgid "relais"
+msgstr "रिले"
+
+#, python-brace-format
+msgid "relais {code}"
+msgstr "रिले {code}"
+
+msgid "sortie Internet"
+msgstr "इंटरनेट निकास"
+
+#, python-brace-format
+msgid "Diagnostic impossible : {error}"
+msgstr "निदान संभव नहीं: {error}"
+
+msgid "Tailscale n'a rien répondu."
+msgstr "Tailscale ने कोई जवाब नहीं दिया।"
+
+#, python-brace-format
+msgid "oui, adresse publique {address}"
+msgstr "हाँ, सार्वजनिक पता {address}"
+
+#, python-brace-format
+msgid "UDP : {value}"
+msgstr "UDP: {value}"
+
+msgid "non — tout passe par les relais de Tailscale (plus lent)"
+msgstr "नहीं — सब कुछ Tailscale के रिले से होकर जाता है (धीमा)"
+
+#, python-brace-format
+msgid "IPv4 : {value}"
+msgstr "IPv4: {value}"
+
+#, python-brace-format
+msgid "IPv6 : {value}"
+msgstr "IPv6: {value}"
+
+#, python-brace-format
+msgid "NAT : {value}"
+msgstr "NAT: {value}"
+
+msgid ""
+"difficile — le port change selon la destination, les relais seront plus "
+"fréquents"
+msgstr "कठिन — गंतव्य के अनुसार पोर्ट बदलता है, रिले अधिक बार होंगे"
+
+msgid "simple — les connexions directes se font facilement"
+msgstr "सरल — सीधे कनेक्शन आसानी से बनते हैं"
+
+#, python-brace-format
+msgid "Ouverture de port par la box : {value}"
+msgstr "राउटर द्वारा पोर्ट खोलना: {value}"
+
+#, python-brace-format
+msgid "Relais le plus proche : {value}"
+msgstr "निकटतम रिले: {value}"
+
+#, python-brace-format
+msgid "Latence des relais : {values}"
+msgstr "रिले की विलंबता: {values}"
+
+msgid "Compteurs internes illisibles (Tailscale trop ancien ?)."
+msgstr "आंतरिक काउंटर अपठनीय (Tailscale बहुत पुराना?)।"
+
+msgid "Reçu"
+msgstr "प्राप्त"
+
+msgid "Envoyé"
+msgstr "भेजा गया"
+
+#, python-brace-format
+msgid ""
+"{title} depuis le démarrage : direct {direct} · relais DERP {derp} · relais "
+"d'un pair {peer}"
+msgstr ""
+"{title} शुरू होने से: सीधा {direct} · DERP रिले {derp} · पीयर रिले {peer}"
+
+#, python-brace-format
+msgid "Paquets jetés en sortie : {count}"
+msgstr "आउटपुट पर गिराए गए पैकेट: {count}"
+
+#, python-brace-format
+msgid "Messages de santé : {count}"
+msgstr "स्वास्थ्य संदेश: {count}"
+
+msgid "RÉSEAU ET APPAREILS"
+msgstr "नेटवर्क और डिवाइस"
+
+msgid ""
+"Ce que voit Tailscale depuis cette machine : les appareils du tailnet, le "
+"chemin vers chacun (direct ou par un relais), et l'état du réseau. Lecture "
+"seule : rien n'est changé ici."
+msgstr ""
+"इस मशीन से Tailscale क्या देखता है: tailnet के डिवाइस, हर एक तक का पाथ (सीधा"
+" या रिले से), और नेटवर्क की स्थिति। केवल पढ़ने के लिए: यहाँ कुछ भी नहीं बदला"
+" जाता।"
+
+msgid "APPAREILS"
+msgstr "डिवाइस"
+
+msgid "filtrer : nom, système, adresse"
+msgstr "फ़िल्टर: नाम, सिस्टम, पता"
+
+msgid "Relais Funnel de Tailscale"
+msgstr "Tailscale के Funnel रिले"
+
+msgid "Chemin"
+msgstr "पाथ"
+
+msgid "Vu"
+msgstr "देखा गया"
+
+msgid "nom ou adresse (vide : la ligne choisie)"
+msgstr "नाम या पता (खाली: चुनी गई पंक्ति)"
+
+msgid "Ping Tailscale"
+msgstr "Tailscale पिंग"
+
+msgid "Qui est-ce ?"
+msgstr "यह कौन है?"
+
+msgid "DIAGNOSTIC RÉSEAU"
+msgstr "नेटवर्क निदान"
+
+msgid ""
+"UDP, IPv4 / IPv6, type de NAT, ouverture de port par la box, relais le plus "
+"proche : ce qui décide si les connexions sont directes. Prend quelques "
+"secondes."
+msgstr ""
+"UDP, IPv4 / IPv6, NAT का प्रकार, राउटर द्वारा पोर्ट खोलना, निकटतम रिले: यही "
+"तय करते हैं कि कनेक्शन सीधे हैं या नहीं। कुछ सेकंड लगते हैं।"
+
+msgid "Lancer le diagnostic"
+msgstr "निदान शुरू करें"
+
+msgid "DIAGNOSTIC"
+msgstr "निदान"
+
+msgid "VERROU DU TAILNET"
+msgstr "TAILNET लॉक"
+
+msgid "COMPTEURS INTERNES"
+msgstr "आंतरिक काउंटर"
+
+#, python-brace-format
+msgid "Illisible : {error}"
+msgstr "अपठनीय: {error}"
+
+#, python-brace-format
+msgid ""
+"{online} en ligne sur {total} appareil(s) ; {relays} relais Funnel de "
+"Tailscale (cochez pour les voir)."
+msgstr ""
+"{total} डिवाइस में से {online} ऑनलाइन; Tailscale के {relays} Funnel रिले "
+"(देखने के लिए चिह्नित करें)।"
+
+#, python-brace-format
+msgid "Appareils illisibles : {error}"
+msgstr "डिवाइस अपठनीय: {error}"
+
+msgid "Choisissez un appareil, ou tapez un nom ou une adresse."
+msgstr "एक डिवाइस चुनें, या कोई नाम या पता टाइप करें।"
+
+#, python-brace-format
+msgid "PING {target}"
+msgstr "PING {target}"
+
+#, python-brace-format
+msgid "QUI EST-CE ? {target}"
+msgstr "यह कौन है? {target}"
+
+msgid "Lecture…"
+msgstr "पढ़ा जा रहा है…"
+
+msgid "Ping en cours (3 essais au plus)…"
+msgstr "पिंग जारी (अधिकतम 3 प्रयास)…"
+
+#, python-brace-format
+msgid "« {target} » n'est pas un nom ou une adresse valable."
+msgstr "« {target} » मान्य नाम या पता नहीं है।"
+
+msgid "Diagnostic en cours (quelques secondes)…"
+msgstr "निदान जारी (कुछ सेकंड)…"
+
+msgid "tailnet seul"
+msgstr "केवल tailnet"
+
+msgid "par la porte ✔"
+msgstr "गेट से ✔"
+
+msgid "non protégé"
+msgstr "असंरक्षित"
+
+#, python-brace-format
+msgid "depuis Internet (relais Funnel {via})"
+msgstr "इंटरनेट से (Funnel रिले {via})"
+
+#, python-brace-format
+msgid "par le tailnet ({via})"
+msgstr "tailnet से ({via})"
+
+#, python-brace-format
+msgid "{kind} {port}{path} {where} : {detail}"
+msgstr "{kind} {port}{path} {where}: {detail}"
+
+#, python-brace-format
+msgid "Temps : {ms:.0f} ms"
+msgstr "समय: {ms:.0f} ms"
+
+#, python-brace-format
+msgid "Certificat : {subject} · émis par {issuer} · échéance {expiry} · {tls}"
+msgstr "प्रमाणपत्र: {subject} · जारीकर्ता {issuer} · समाप्ति {expiry} · {tls}"
+
+msgid ""
+"Le nom n'est pas encore publié pour Internet : juste après un ajout, Funnel "
+"met parfois une minute. Réessayez."
+msgstr ""
+"नाम अभी इंटरनेट के लिए प्रकाशित नहीं है: जोड़ने के ठीक बाद, Funnel को "
+"कभी-कभी एक मिनट लगता है। फिर से प्रयास करें।"
+
+msgid ""
+"Un essai par le tailnet depuis la machine elle-même peut échouer selon le "
+"système : essayez aussi depuis un autre appareil."
+msgstr ""
+"स्वयं मशीन से tailnet के ज़रिए परीक्षण सिस्टम के अनुसार विफल हो सकता है: "
+"किसी अन्य डिवाइस से भी प्रयास करें।"
+
+msgid ""
+"Ce que cette machine publie : pour le tailnet seul (Serve) ou pour Internet "
+"(Funnel). Chaque changement est vérifié, et l'état d'avant est sauvegardé "
+"(restaurable en un bouton)."
+msgstr ""
+"यह मशीन क्या प्रकाशित करती है: केवल tailnet के लिए (Serve) या इंटरनेट के लिए"
+" (Funnel)। हर बदलाव जाँचा जाता है, और पहले की स्थिति का बैकअप लिया जाता है "
+"(एक बटन से बहाल करने योग्य)।"
+
+msgid "Essai de bout en bout"
+msgstr "एंड-टू-एंड परीक्षण"
+
+msgid "Retirer"
+msgstr "हटाएँ"
+
+msgid "Suspendre Funnel"
+msgstr "Funnel निलंबित करें"
+
+msgid "Rétablir Funnel"
+msgstr "Funnel बहाल करें"
+
+msgid "AJOUTER"
+msgstr "जोड़ें"
+
+msgid ""
+"Pour Internet, le plus sûr : HTTPS sur le port 443, puis « Activer la "
+"protection » (Pare-feu Funnel) pour que la porte filtre avant tout "
+"chiffrement."
+msgstr ""
+"इंटरनेट के लिए, सबसे सुरक्षित: पोर्ट 443 पर HTTPS, फिर « संरक्षण सक्रिय करें"
+" » (Funnel फ़ायरवॉल) ताकि गेट किसी भी एन्क्रिप्शन से पहले फ़िल्टर करे।"
+
+msgid "Service local"
+msgstr "स्थानीय सेवा"
+
+msgid "8080 ou http://127.0.0.1:8080"
+msgstr "8080 या http://127.0.0.1:8080"
+
+msgid "Pour"
+msgstr "किसके लिए"
+
+msgid "le tailnet seul (Serve)"
+msgstr "केवल tailnet (Serve)"
+
+msgid "Port (Funnel : 443, 8443, 10000)"
+msgstr "पोर्ट (Funnel: 443, 8443, 10000)"
+
+msgid "Chemin (HTTPS / HTTP)"
+msgstr "पाथ (HTTPS / HTTP)"
+
+msgid "Publier"
+msgstr "प्रकाशित करें"
+
+msgid "SAUVEGARDES"
+msgstr "बैकअप"
+
+msgid ""
+"L'état d'avant chaque changement (publication, pare-feu, disjoncteur) ; les "
+"50 plus récentes sont gardées dans var/funnel/sauvegardes/."
+msgstr ""
+"हर बदलाव (प्रकाशन, फ़ायरवॉल, सर्किट ब्रेकर) से पहले की स्थिति; 50 सबसे हाल "
+"के var/funnel/sauvegardes/ में रखे जाते हैं।"
+
+msgid "Aucune sauvegarde"
+msgstr "कोई बैकअप नहीं"
+
+msgid "Restaurer"
+msgstr "बहाल करें"
+
+#, python-brace-format
+msgid "Publication illisible : {error}"
+msgstr "प्रकाशन अपठनीय: {error}"
+
+msgid "Internet"
+msgstr "इंटरनेट"
+
+msgid "tailnet"
+msgstr "tailnet"
+
+msgid "Rien n'est publié. « Publier » ci-dessous pour commencer."
+msgstr "कुछ भी प्रकाशित नहीं। शुरू करने के लिए नीचे « प्रकाशित करें »।"
+
+msgid ""
+"Pour changer la publication, devenez opérateur de Tailscale (tableau de "
+"bord)."
+msgstr "प्रकाशन बदलने के लिए, Tailscale के ऑपरेटर बनें (डैशबोर्ड)।"
+
+msgid "Essai en cours…"
+msgstr "परीक्षण जारी…"
+
+#, python-brace-format
+msgid ""
+"Retire {kind} {port}{path} → {target} ({who}). L'état d'avant est sauvegardé.\n"
+"\n"
+"Commande : {command}"
+msgstr ""
+"{kind} {port}{path} → {target} ({who}) हटाता है। पहले की स्थिति का बैकअप लिया जाता है।\n"
+"\n"
+"कमांड: {command}"
+
+msgid "RETIRER CETTE PUBLICATION ?"
+msgstr "यह प्रकाशन हटाएँ?"
+
+#, python-brace-format
+msgid ""
+"Le service {target} sera joignable depuis Internet (Funnel, port {port}). "
+"Pensez ensuite à « Activer la protection » (Pare-feu Funnel)."
+msgstr ""
+"सेवा {target} इंटरनेट से पहुँच में होगी (Funnel, पोर्ट {port})। उसके बाद « "
+"संरक्षण सक्रिय करें » (Funnel फ़ायरवॉल) याद रखें।"
+
+msgid "PUBLIER SUR INTERNET ?"
+msgstr "इंटरनेट पर प्रकाशित करें?"
+
+msgid "Choisissez une sauvegarde."
+msgstr "एक बैकअप चुनें।"
+
+#, python-brace-format
+msgid ""
+"La publication redevient celle du {when} ({origin}) : {summary}.\n"
+"L'état actuel est sauvegardé d'abord ; tout est vérifié, et remis comme avant en cas d'échec."
+msgstr ""
+"प्रकाशन फिर से {when} वाला ({origin}) हो जाता है: {summary}।\n"
+"वर्तमान स्थिति का पहले बैकअप लिया जाता है; सब कुछ जाँचा जाता है, और विफलता होने पर पहले जैसा वापस लगाया जाता है।"
+
+msgid "RESTAURER CETTE SAUVEGARDE ?"
+msgstr "यह बैकअप बहाल करें?"
+
+msgid "QUITTER OMEGA-TAIL ?"
+msgstr "OMEGA-TAIL से बाहर निकलें?"
+
+msgid "RAPPORT"
+msgstr "रिपोर्ट"
+
+msgid ""
+"Tout ce qu'omega-tail sait de cette machine, en faits : Tailscale, "
+"publication, machine, pare-feu, survie, alertes, et les attaques des 7 "
+"derniers jours (journal de la porte). Enregistré dans le dossier des exports"
+" ; « Voir les exports » les ouvre pour les lire."
+msgstr ""
+"omega-tail इस मशीन के बारे में जो कुछ जानता है, तथ्यों के रूप में: "
+"Tailscale, प्रकाशन, मशीन, फ़ायरवॉल, उत्तरजीविता, अलर्ट, और पिछले 7 दिनों के "
+"हमले (गेट का लॉग)। एक्सपोर्ट फ़ोल्डर में सहेजा जाता है; « एक्सपोर्ट देखें » "
+"उन्हें पढ़ने के लिए खोलता है।"
+
+msgid ""
+"Inclure le compte Tailscale et les appareils du tailnet (noms, adresses)"
+msgstr "Tailscale खाता और tailnet के डिवाइस (नाम, पते) शामिल करें"
+
+msgid ""
+"Sans cette case, seul leur nombre figure : le rapport peut être envoyé à "
+"quelqu'un sans dévoiler votre tailnet. Les adresses des attaquants y restent"
+" toujours."
+msgstr ""
+"इस बॉक्स के बिना, केवल उनकी संख्या दिखती है: रिपोर्ट आपका tailnet उजागर किए "
+"बिना किसी को भेजी जा सकती है। हमलावरों के पते हमेशा इसमें रहते हैं।"
+
+msgid "APERÇU"
+msgstr "पूर्वावलोकन"
+
+msgid "Actualiser"
+msgstr "ताज़ा करें"
+
+msgid ""
+"Rapport en préparation (journal de la porte des 7 derniers jours compris)…"
+msgstr "रिपोर्ट तैयार हो रही है (पिछले 7 दिनों के गेट लॉग सहित)…"
+
+#, python-brace-format
+msgid "Erreur : {message}"
+msgstr "त्रुटि: {message}"
+
+#, python-brace-format
+msgid "Rapport prêt ({time})."
+msgstr "रिपोर्ट तैयार ({time})।"
+
+msgid "ARRÊTER TAILSCALED ?"
+msgstr "TAILSCALED रोकें?"
+
+msgid "DÉMARRER TAILSCALED ?"
+msgstr "TAILSCALED शुरू करें?"
+
+msgid "REDÉMARRER TAILSCALED ?"
+msgstr "TAILSCALED फिर से शुरू करें?"
+
+msgid ""
+"Tailscale se reconnecte au tailnet ; les publications (Serve, Funnel) "
+"reprennent."
+msgstr ""
+"Tailscale tailnet से फिर से जुड़ता है; प्रकाशन (Serve, Funnel) फिर से शुरू "
+"होते हैं।"
+
+msgid ""
+"Tailscale est coupé : plus d'accès par le tailnet, publications (Serve, "
+"Funnel) interrompues jusqu'au prochain démarrage."
+msgstr ""
+"Tailscale बंद है: tailnet से कोई पहुँच नहीं, प्रकाशन (Serve, Funnel) अगले "
+"स्टार्टअप तक बाधित।"
+
+msgid ""
+"Coupure de quelques secondes : le tailnet et les publications (Serve, "
+"Funnel) reviennent d'eux-mêmes. Applique une mise à jour déjà installée."
+msgstr ""
+"कुछ सेकंड की रुकावट: tailnet और प्रकाशन (Serve, Funnel) अपने-आप लौट आते हैं।"
+" पहले से इंस्टॉल किया गया अपडेट लागू करता है।"
+
+msgid "systemd ne connaît pas le service tailscaled sur cette machine."
+msgstr "systemd इस मशीन पर tailscaled सेवा को नहीं जानता।"
+
+#, python-brace-format
+msgid "Depuis : {since}"
+msgstr "से: {since}"
+
+#, python-brace-format
+msgid "Processus : {pid} · mémoire {memory}"
+msgstr "प्रक्रिया: {pid} · मेमोरी {memory}"
+
+#, python-brace-format
+msgid "Version en marche : {version}"
+msgstr "चालू संस्करण: {version}"
+
+msgid ""
+"→ La mise à jour est installée mais pas appliquée : « Redémarrer » "
+"l'applique."
+msgstr ""
+"→ अपडेट इंस्टॉल है लेकिन लागू नहीं: « फिर से शुरू करें » उसे लागू करता है।"
+
+#, python-brace-format
+msgid "Système d'init : {init} · service « {name} »"
+msgstr "init सिस्टम: {init} · सेवा « {name} »"
+
+#, python-brace-format
+msgid "Lancement : {command}"
+msgstr "लॉन्च: {command}"
+
+#, python-brace-format
+msgid "Fichier du service : {path}"
+msgstr "सेवा फ़ाइल: {path}"
+
+msgid "Fichiers d'ajout (lus, jamais modifiés par omega-tail) :"
+msgstr "ऐड-ऑन फ़ाइलें (पढ़ी गईं, omega-tail द्वारा कभी नहीं बदली गईं):"
+
+msgid "Fichiers d'ajout : aucun."
+msgstr "ऐड-ऑन फ़ाइलें: कोई नहीं।"
+
+msgid ""
+"⚠ Le démarrage lance « tailscale up » : si un réglage change (opérateur, "
+"nom, routes…), Tailscale le refusera et tailscaled ne redémarrera plus. « "
+"Corriger le démarrage » ajoute « - » devant la commande (son refus n'arrête "
+"plus le service)."
+msgstr ""
+"⚠ स्टार्टअप « tailscale up » चलाता है: यदि कोई सेटिंग बदलती है (ऑपरेटर, नाम,"
+" रूट…), तो Tailscale उसे अस्वीकार करेगा और tailscaled फिर से शुरू नहीं होगा।"
+" « स्टार्टअप ठीक करें » कमांड के आगे « - » जोड़ता है (उसका अस्वीकार अब सेवा "
+"को नहीं रोकता)।"
+
+#, python-brace-format
+msgid "Confinement : {state}"
+msgstr "सीमाबंदी: {state}"
+
+#, python-brace-format
+msgid ""
+"  plafond CPU {quota} · poids {weight} · cœurs {cpus} · priorité {nice}"
+msgstr "  CPU सीमा {quota} · भार {weight} · कोर {cpus} · प्राथमिकता {nice}"
+
+msgid "tous"
+msgstr "सभी"
+
+msgid ""
+"  ⚠ Confinement perdu au redémarrage de tailscaled : « Survie » → « "
+"Appliquer le confinement »."
+msgstr ""
+"  ⚠ tailscaled के रीस्टार्ट पर सीमाबंदी खो गई: « उत्तरजीविता » → « सीमाबंदी "
+"लागू करें »।"
+
+msgid "  Le confinement se règle dans « Survie »."
+msgstr "  सीमाबंदी « उत्तरजीविता » में सेट की जाती है।"
+
+msgid "⚠ Cette session passe par Tailscale : arrêter tailscaled la couperait."
+msgstr "⚠ यह सत्र Tailscale से होकर जाता है: tailscaled रोकने से यह कट जाएगा।"
+
+msgid "SERVICE TAILSCALED"
+msgstr "TAILSCALED सेवा"
+
+msgid ""
+"Chaque action montre sa commande avant d'être lancée ; le mot de passe sudo "
+"se saisit dans le terminal."
+msgstr ""
+"हर क्रिया चलाने से पहले अपना कमांड दिखाती है; sudo पासवर्ड टर्मिनल में डाला "
+"जाता है।"
+
+msgid "Démarrer"
+msgstr "शुरू करें"
+
+msgid "Corriger le démarrage"
+msgstr "स्टार्टअप ठीक करें"
+
+msgid "VOUS ALLEZ PERDRE CETTE SESSION"
+msgstr "आप यह सत्र खो देंगे"
+
+msgid ""
+"Dernière confirmation : tailscaled sera arrêté et cette session coupée. Vous"
+" devrez le relancer depuis le réseau local ou la machine elle-même."
+msgstr ""
+"अंतिम पुष्टि: tailscaled रोका जाएगा और यह सत्र कट जाएगा। आपको इसे स्थानीय "
+"नेटवर्क या स्वयं मशीन से फिर से शुरू करना होगा।"
+
+msgid "Arrêter quand même"
+msgstr "फिर भी रोकें"
+
+msgid "Enregistrés dans var/settings.json, appliqués tout de suite."
+msgstr "var/settings.json में सेव, तुरंत लागू।"
+
+msgid "Thème de l'interface"
+msgstr "इंटरफ़ेस की थीम"
+
+msgid "Thème des exports (rapport HTML, aide exportée)"
+msgstr "एक्सपोर्ट की थीम (HTML रिपोर्ट, एक्सपोर्ट की गई सहायता)"
+
+msgid "Dossier des exports"
+msgstr "एक्सपोर्ट फ़ोल्डर"
+
+#, python-brace-format
+msgid "Par défaut : {path}. Laissez vide pour revenir au dossier par défaut."
+msgstr "डिफ़ॉल्ट: {path}। डिफ़ॉल्ट फ़ोल्डर पर लौटने के लिए खाली छोड़ें।"
+
+msgid "Dossier des captures d'écran"
+msgstr "स्क्रीनशॉट फ़ोल्डर"
+
+#, python-brace-format
+msgid "Par défaut : {path}. Capture : Ctrl+P → « Capture d'écran »."
+msgstr "डिफ़ॉल्ट: {path}। स्क्रीनशॉट: Ctrl+P → « स्क्रीनशॉट »।"
+
+msgid "Enregistrer les dossiers"
+msgstr "फ़ोल्डर सेव करें"
+
+msgid "Maintenance des dossiers"
+msgstr "फ़ोल्डरों का रखरखाव"
+
+msgid ""
+"Supprime définitivement le contenu du dossier configuré ; le dossier reste."
+msgstr ""
+"सेट किए गए फ़ोल्डर की सामग्री स्थायी रूप से मिटाता है; फ़ोल्डर बना रहता है।"
+
+msgid "Vider le dossier des exports"
+msgstr "एक्सपोर्ट फ़ोल्डर खाली करें"
+
+msgid "Vider le dossier des captures"
+msgstr "स्क्रीनशॉट फ़ोल्डर खाली करें"
+
+msgid "des exports"
+msgstr "एक्सपोर्ट"
+
+msgid "des captures"
+msgstr "स्क्रीनशॉट"
+
+#, python-brace-format
+msgid "Chemin à donner en entier (commençant par / ou ~) : {path}"
+msgstr "पूरा पथ दें (/ या ~ से शुरू): {path}"
+
+#, python-brace-format
+msgid "Dossiers enregistrés : {paths}"
+msgstr "फ़ोल्डर सेव किए गए: {paths}"
+
+#, python-brace-format
+msgid "VIDER LE DOSSIER {label} ?"
+msgstr "{label} फ़ोल्डर खाली करें?"
+
+#, python-brace-format
+msgid ""
+"Supprime définitivement tout le contenu de {directory}. Le dossier reste."
+msgstr ""
+"{directory} की पूरी सामग्री स्थायी रूप से मिटाता है। फ़ोल्डर बना रहता है।"
+
+#, python-brace-format
+msgid "Refusé — {path} : {reason}"
+msgstr "अस्वीकृत — {path}: {reason}"
+
+#, python-brace-format
+msgid "{count} élément(s) supprimé(s) dans {path}."
+msgstr "{path} में {count} तत्व मिटाए गए।"
+
+#, python-brace-format
+msgid "Non supprimés : {items}"
+msgstr "नहीं मिटाए गए: {items}"
+
+msgid "Pairs connus"
+msgstr "ज्ञात पीयर"
+
+msgid "Poignées de main"
+msgstr "हैंडशेक"
+
+msgid "Poignées de main en excès (par source)"
+msgstr "अधिक हैंडशेक (प्रति स्रोत)"
+
+msgid "Sources inconnues, paquets bien formés"
+msgstr "अज्ञात स्रोत, सही बने पैकेट"
+
+msgid "Sources inconnues en excès (par source)"
+msgstr "अधिक अज्ञात स्रोत (प्रति स्रोत)"
+
+msgid "Excès de l'ensemble des sources inconnues"
+msgstr "सभी अज्ञात स्रोतों की अधिकता"
+
+msgid "Paquets qui ne sont pas du WireGuard"
+msgstr "जो पैकेट WireGuard नहीं हैं"
+
+msgid "Poser (observation)"
+msgstr "लगाएँ (निरीक्षण)"
+
+msgid "Passer en actif"
+msgstr "सक्रिय पर डालें"
+
+msgid "Reposer"
+msgstr "फिर से लगाएँ"
+
+msgid "Confier à omega-fire"
+msgstr "omega-fire को सौंपें"
+
+msgid "Reprendre la gestion"
+msgstr "प्रबंधन वापस लें"
+
+msgid "POSER LE BOUCLIER DU PORT WIREGUARD ?"
+msgstr "WIREGUARD पोर्ट का कवच लगाएँ?"
+
+msgid "CHANGER LE MODE DU BOUCLIER ?"
+msgstr "कवच का मोड बदलें?"
+
+msgid "REPOSER LE BOUCLIER ?"
+msgstr "कवच फिर से लगाएँ?"
+
+msgid "CONFIER LE BOUCLIER À OMEGA-FIRE ?"
+msgstr "कवच OMEGA-FIRE को सौंपें?"
+
+msgid "REPRENDRE LA GESTION DU BOUCLIER ?"
+msgstr "कवच का प्रबंधन वापस लें?"
+
+msgid "RETIRER LE BOUCLIER ?"
+msgstr "कवच हटाएँ?"
+
+msgid ""
+"Une table nftables devant tailscaled, en OBSERVATION : rien n'est refusé, "
+"les compteurs disent ce qui l'aurait été. Un service la remet en place à "
+"chaque démarrage."
+msgstr ""
+"tailscaled के सामने एक nftables तालिका, निरीक्षण में: कुछ भी अस्वीकार नहीं "
+"होता, काउंटर बताते हैं कि क्या अस्वीकार होता। एक सेवा इसे हर स्टार्टअप पर "
+"फिर से लगाती है।"
+
+msgid ""
+"La table enregistrée est remise ; ses compteurs et la liste des pairs "
+"repartent de zéro."
+msgstr ""
+"सहेजी गई तालिका फिर से लगाई जाती है; उसके काउंटर और पीयर की सूची शून्य से "
+"शुरू होते हैं।"
+
+msgid ""
+"omega-fire gérera le bouclier (remise au démarrage, commandes, liste des "
+"règles). La table, ses compteurs et les pairs connus ne sont pas touchés."
+msgstr ""
+"omega-fire कवच का प्रबंधन करेगा (स्टार्टअप पर फिर से लगाना, कमांड, नियमों की"
+" सूची)। तालिका, उसके काउंटर और ज्ञात पीयर नहीं छुए जाते।"
+
+msgid ""
+"omega-fire n'est plus relié : omega-tail gère de nouveau le bouclier. La "
+"table n'est pas touchée."
+msgstr ""
+"omega-fire अब जुड़ा नहीं है: omega-tail फिर से कवच का प्रबंधन करता है। "
+"तालिका नहीं छुई जाती।"
+
+msgid ""
+"La table, ses fichiers et son service sont supprimés : tailscaled ne sera "
+"plus protégé contre les flots de paquets."
+msgstr ""
+"तालिका, उसकी फ़ाइलें और उसकी सेवा हटा दी जाती हैं: tailscaled अब पैकेट की "
+"बाढ़ से सुरक्षित नहीं रहेगा।"
+
+msgid ""
+"tailscaled tire son port au hasard (--port 0) : aucun bouclier possible. "
+"Fixez un port (PORT= dans /etc/default/tailscaled), puis redémarrez "
+"tailscaled."
+msgstr ""
+"tailscaled अपना पोर्ट यादृच्छिक रूप से चुनता है (--port 0): कोई कवच संभव "
+"नहीं। एक पोर्ट तय करें (/etc/default/tailscaled में PORT=), फिर tailscaled "
+"रीस्टार्ट करें।"
+
+msgid "Aucune carte réseau matérielle trouvée : rien à protéger."
+msgstr "कोई हार्डवेयर नेटवर्क कार्ड नहीं मिला: रक्षा करने को कुछ नहीं।"
+
+msgid "Port ou nom de carte réseau refusé."
+msgstr "पोर्ट या नेटवर्क कार्ड का नाम अस्वीकृत।"
+
+msgid "Aucun bouclier enregistré sur cette machine."
+msgstr "इस मशीन पर कोई कवच सहेजा नहीं गया।"
+
+msgid ""
+"Le noyau a été mis à jour sans redémarrage : ses modules ne peuvent plus "
+"être chargés et la table serait refusée. Redémarrez la machine, puis "
+"recommencez."
+msgstr ""
+"कर्नेल बिना रीस्टार्ट के अपडेट हुआ: उसके मॉड्यूल अब लोड नहीं हो सकते और "
+"तालिका अस्वीकार होगी। मशीन रीस्टार्ट करें, फिर दोबारा प्रयास करें।"
+
+#, python-brace-format
+msgid ""
+"Origine : {tool} (outil qui l'a demandé) · port {port}/udp · cartes réseau :"
+" {devices}"
+msgstr ""
+"मूल: {tool} (जिस टूल ने इसे माँगा) · पोर्ट {port}/udp · नेटवर्क कार्ड: "
+"{devices}"
+
+#, python-brace-format
+msgid "Pairs connus : {count} (jamais limités)."
+msgstr "ज्ञात पीयर: {count} (कभी सीमित नहीं)।"
+
+#, python-brace-format
+msgid "Détecté : port de tailscaled {port}, cartes réseau {devices}."
+msgstr "पता चला: tailscaled का पोर्ट {port}, नेटवर्क कार्ड {devices}।"
+
+msgid "au hasard"
+msgstr "यादृच्छिक"
+
+msgid ""
+"Noyau antérieur à 5.16 : sans liste des pairs, seuls le tri des paquets et "
+"la limite des poignées de main sont posés."
+msgstr ""
+"5.16 से पुराना कर्नेल: पीयर सूची के बिना, केवल पैकेट की छँटाई और हैंडशेक की "
+"सीमा लगाई जाती है।"
+
+#, python-brace-format
+msgid ""
+"omega-fire {version} relié : il pose et gère le bouclier ; sa liste des "
+"règles l'affiche avec l'origine omega-tail."
+msgstr ""
+"omega-fire {version} जुड़ा है: वह कवच लगाता और प्रबंधित करता है; उसकी नियमों"
+" की सूची इसे omega-tail मूल के साथ दिखाती है।"
+
+#, python-brace-format
+msgid ""
+"omega-fire {version} relié, mais trop ancien pour le bouclier (il faut "
+"{needed} ou plus récent) : omega-tail le gère lui-même. Mettez omega-fire à "
+"jour."
+msgstr ""
+"omega-fire {version} जुड़ा है, लेकिन कवच के लिए बहुत पुराना है ({needed} या "
+"नया चाहिए): omega-tail स्वयं इसका प्रबंधन करता है। omega-fire अपडेट करें।"
+
+msgid ""
+"omega-fire n'est pas relié par omega-connect : omega-tail pose et gère le "
+"bouclier lui-même, même si ufw ou firewalld sont présents."
+msgstr ""
+"omega-fire omega-connect द्वारा जुड़ा नहीं है: omega-tail स्वयं कवच लगाता और"
+" प्रबंधित करता है, भले ही ufw या firewalld मौजूद हों।"
+
+msgid ""
+"Géré par omega-fire, qui n'est plus relié : « Reprendre la gestion » le rend"
+" à omega-tail."
+msgstr ""
+"omega-fire द्वारा प्रबंधित, जो अब जुड़ा नहीं है: « प्रबंधन वापस लें » इसे "
+"omega-tail को लौटाता है।"
+
+msgid ""
+"Noyau mis à jour sans redémarrage : la table ne peut pas être posée avant un"
+" redémarrage."
+msgstr ""
+"कर्नेल बिना रीस्टार्ट के अपडेट हुआ: रीस्टार्ट से पहले तालिका नहीं लगाई जा "
+"सकती।"
+
+msgid ""
+"Système d'init inconnu : le bouclier ne sera pas remis en place au "
+"redémarrage."
+msgstr "अज्ञात init सिस्टम: रीस्टार्ट पर कवच फिर से नहीं लगेगा।"
+
+msgid "BOUCLIER DU PORT WIREGUARD"
+msgstr "WIREGUARD पोर्ट का कवच"
+
+msgid ""
+"Devant tailscaled : poignées de main limitées par source, budget pour les "
+"sources qui ne sont pas des pairs connus, paquets qui ne sont pas du "
+"WireGuard refusés. Mesuré : un flot qui prenait un cœur entier à tailscaled "
+"n'en prend plus que 1 %. Commencez en observation."
+msgstr ""
+"tailscaled के सामने: प्रति स्रोत सीमित हैंडशेक, उन स्रोतों के लिए बजट जो "
+"ज्ञात पीयर नहीं हैं, जो पैकेट WireGuard नहीं हैं वे अस्वीकृत। मापा गया: जो "
+"प्रवाह tailscaled का पूरा कोर लेता था, अब केवल 1 % लेता है। निरीक्षण से शुरू"
+" करें।"
+
+msgid "COMPTEURS DEPUIS LA POSE"
+msgstr "लगाने के बाद से काउंटर"
+
+msgid "Compteur"
+msgstr "काउंटर"
+
+msgid "Effet"
+msgstr "प्रभाव"
+
+msgid "Paquets"
+msgstr "पैकेट"
+
+msgid "admis"
+msgstr "अनुमत"
+
+msgid "auraient été refusés"
+msgstr "अस्वीकृत होते"
+
+msgid "refusés"
+msgstr "अस्वीकृत"
+
+msgid "Passer en observation"
+msgstr "निरीक्षण पर डालें"
+
+#, python-brace-format
+msgid ""
+"En observation, {count} paquet(s) auraient été refusés : en actif, ils le "
+"seront. Les pairs connus ne sont jamais limités."
+msgstr ""
+"निरीक्षण में, {count} पैकेट अस्वीकृत होते: सक्रिय में, वे अस्वीकृत होंगे। "
+"ज्ञात पीयर कभी सीमित नहीं होते।"
+
+msgid ""
+"Plus rien n'est refusé ; les compteurs continuent de dire ce qui l'aurait "
+"été."
+msgstr ""
+"अब कुछ भी अस्वीकार नहीं होता; काउंटर बताते रहते हैं कि क्या अस्वीकार होता।"
+
+#, python-brace-format
+msgid ""
+"Par omega-fire (il garde l'origine {tool} et l'inscrit à son journal "
+"d'audit)."
+msgstr ""
+"omega-fire द्वारा (वह मूल {tool} रखता है और इसे अपने ऑडिट लॉग में दर्ज करता "
+"है)।"
+
+msgid "systemd ne connaît pas tailscaled : confinement impossible ici."
+msgstr "systemd tailscaled को नहीं जानता: यहाँ सीमाबंदी संभव नहीं।"
+
+msgid "perdu (tailscaled a redémarré) : « Appliquer le confinement » le remet"
+msgstr ""
+"खो गई (tailscaled रीस्टार्ट हुआ): « सीमाबंदी लागू करें » इसे वापस लगाता है"
+
+msgid "actif (groupe de contrôle d'omega-tail)"
+msgstr "सक्रिय (omega-tail का नियंत्रण समूह)"
+
+#, python-brace-format
+msgid "Confinement actuel : {state}"
+msgstr "वर्तमान सीमाबंदी: {state}"
+
+#, python-brace-format
+msgid "  plafond {quota} · poids {weight} · système d'init {init}"
+msgstr "  सीमा {quota} · भार {weight} · init सिस्टम {init}"
+
+msgid "actif, posé par omega-tail"
+msgstr "सक्रिय, omega-tail द्वारा लगाई गई"
+
+msgid "posé par omega-tail, pas encore appliqué (rechargement ou redémarrage)"
+msgstr "omega-tail द्वारा लगाई गई, अभी लागू नहीं (रीलोड या रीस्टार्ट)"
+
+msgid "actif, posé hors d'omega-tail"
+msgstr "सक्रिय, omega-tail के बाहर लगाई गई"
+
+#, python-brace-format
+msgid "  plafond {quota} · poids {weight} · priorité {nice}"
+msgstr "  सीमा {quota} · भार {weight} · प्राथमिकता {nice}"
+
+#, python-brace-format
+msgid "  Vos fichiers d'ajout (jamais modifiés) : {paths}"
+msgstr "  आपकी ऐड-ऑन फ़ाइलें (कभी नहीं बदली गईं): {paths}"
+
+#, python-brace-format
+msgid ""
+"Funnel COUPÉ par omega-tail depuis {since} (coupure totale) : « Rétablir "
+"maintenant » le remet à l'identique."
+msgstr ""
+"Funnel {since} से omega-tail द्वारा बंद (पूर्ण बंदी): « अभी बहाल करें » उसे "
+"हूबहू वापस लगाता है।"
+
+#, python-brace-format
+msgid ""
+"Funnel COUPÉ par omega-tail depuis {since}, remis en route automatiquement à"
+" {until}."
+msgstr ""
+"Funnel {since} से omega-tail द्वारा बंद, {until} पर अपने-आप फिर से चालू।"
+
+#, python-brace-format
+msgid "Funnel ouvert : port {ports}."
+msgstr "Funnel खुला: पोर्ट {ports}।"
+
+msgid "Funnel n'est pas ouvert : rien à couper."
+msgstr "Funnel खुला नहीं है: बंद करने को कुछ नहीं।"
+
+msgid ""
+"Désactivée : sous attaque, omega-tail ouvert PROPOSE la coupure (il faut "
+"être devant la machine)."
+msgstr ""
+"निष्क्रिय: हमले के दौरान, खुला omega-tail बंदी का प्रस्ताव देता है (मशीन के "
+"सामने होना ज़रूरी है)।"
+
+msgid ""
+"Activée mais arrêtée (aucun signe de vie) : « Activer la veille » la "
+"relance."
+msgstr ""
+"सक्रिय लेकिन रुकी हुई (कोई जीवन संकेत नहीं): « निगरानी सक्रिय करें » उसे फिर"
+" से शुरू करता है।"
+
+msgid ""
+"En marche, même omega-tail fermé : sous attaque, elle coupe Funnel seule et "
+"le remet seule."
+msgstr ""
+"चालू, omega-tail बंद होने पर भी: हमले के दौरान, यह अपने-आप Funnel बंद करती "
+"है और अपने-आप फिर से चालू करती है।"
+
+#, python-brace-format
+msgid ""
+"  Dépassements récents : {strikes}/{total} (fenêtre de {window} min) · "
+"prochaine coupure : {minutes} min"
+msgstr ""
+"  हाल की सीमा-लाँघ: {strikes}/{total} ({window} मिनट की विंडो) · अगली बंदी: "
+"{minutes} मिनट"
+
+msgid ""
+"Garder la machine debout sous attaque. Chaque action montre ses commandes "
+"avant ; le mot de passe sudo se saisit dans le terminal."
+msgstr ""
+"हमले के दौरान मशीन को खड़ा रखना। हर क्रिया पहले अपने कमांड दिखाती है; sudo "
+"पासवर्ड टर्मिनल में डाला जाता है।"
+
+msgid "CONFINEMENT DE TAILSCALED"
+msgstr "TAILSCALED की सीमाबंदी"
+
+#, python-brace-format
+msgid "Proposé pour cette machine ({count} fils), dans {path} :"
+msgstr "इस मशीन ({count} थ्रेड) के लिए प्रस्तावित, {path} में:"
+
+#, python-brace-format
+msgid ""
+"Proposé pour cette machine ({count} fils), dans un groupe de contrôle à part"
+" :"
+msgstr "इस मशीन ({count} थ्रेड) के लिए प्रस्तावित, एक अलग नियंत्रण समूह में:"
+
+#, python-brace-format
+msgid "Donner la priorité à l'accès SSH ({unit})"
+msgstr "SSH पहुँच को प्राथमिकता दें ({unit})"
+
+msgid ""
+"Redémarrer tailscaled tout de suite (la priorité ne s'applique qu'au "
+"redémarrage ; coupure de quelques secondes)"
+msgstr ""
+"tailscaled तुरंत रीस्टार्ट करें (प्राथमिकता केवल रीस्टार्ट पर लागू होती है; "
+"कुछ सेकंड की रुकावट)"
+
+msgid "Appliquer le confinement"
+msgstr "सीमाबंदी लागू करें"
+
+msgid "Retirer le confinement"
+msgstr "सीमाबंदी हटाएँ"
+
+msgid "VEILLE AUTOMATIQUE"
+msgstr "स्वचालित निगरानी"
+
+#, python-brace-format
+msgid ""
+"Pour une machine sans personne devant. Un dépassement : un seuil du "
+"disjoncteur tenu (plus bas). {strikes} dépassements dans la fenêtre : Funnel"
+" coupé {first} min, puis {second} min la fois suivante, puis {last} min à "
+"chaque fois ; toujours remis en route seul, à l'identique. Retour à {first} "
+"min après {hours} h sans coupure. Seul Funnel est coupé : tailscaled, le "
+"tailnet et SSH restent joignables."
+msgstr ""
+"ऐसी मशीन के लिए जिसके सामने कोई नहीं रहता। एक सीमा-लाँघ: सर्किट ब्रेकर की एक"
+" सीमा का बना रहना (नीचे)। विंडो में {strikes} सीमा-लाँघ: Funnel {first} मिनट"
+" के लिए बंद, फिर अगली बार {second} मिनट, फिर हर बार {last} मिनट; हमेशा "
+"अपने-आप, हूबहू, फिर से चालू। बिना बंदी के {hours} घंटे बाद {first} मिनट पर "
+"वापसी। केवल Funnel बंद होता है: tailscaled, tailnet और SSH पहुँच में रहते "
+"हैं।"
+
+msgid "Fenêtre (min)"
+msgstr "विंडो (मिनट)"
+
+msgid "Enregistrer"
+msgstr "सेव करें"
+
+msgid "Activer la veille"
+msgstr "निगरानी सक्रिय करें"
+
+msgid "Désactiver la veille"
+msgstr "निगरानी निष्क्रिय करें"
+
+msgid ""
+"Protège tailscaled des flots de paquets envoyés sur son port (même sans "
+"Funnel)."
+msgstr ""
+"tailscaled को उसके पोर्ट पर भेजे गए पैकेट की बाढ़ से बचाता है (Funnel के "
+"बिना भी)।"
+
+msgid "Bouclier du port WireGuard"
+msgstr "WireGuard पोर्ट का कवच"
+
+msgid "DISJONCTEUR FUNNEL"
+msgstr "FUNNEL सर्किट ब्रेकर"
+
+msgid ""
+"Sans veille, il propose, il ne coupe jamais seul : quand un seuil est "
+"dépassé, omega-tail ouvert vous propose une coupure momentanée ou totale. "
+"Avec la veille automatique (ci-dessus), il agit seul."
+msgstr ""
+"निगरानी के बिना, यह प्रस्ताव देता है, कभी अपने-आप बंद नहीं करता: जब कोई सीमा"
+" पार होती है, तो खुला omega-tail आपको अस्थायी या पूर्ण बंदी का प्रस्ताव देता"
+" है। स्वचालित निगरानी (ऊपर) के साथ, यह स्वयं कार्य करता है।"
+
+msgid "CPU tailscaled ≥ (% d'un cœur)"
+msgstr "tailscaled CPU ≥ (एक कोर का %)"
+
+msgid "pendant (s)"
+msgstr "अवधि (s)"
+
+msgid "ou température ≥ (°C)"
+msgstr "या तापमान ≥ (°C)"
+
+msgid "coupure momentanée (min)"
+msgstr "अस्थायी बंदी (मिनट)"
+
+msgid "Enregistrer les seuils"
+msgstr "सीमाएँ सहेजें"
+
+msgid "Rétablir maintenant"
+msgstr "अभी बहाल करें"
+
+msgid "Journal de la veille :"
+msgstr "निगरानी का लॉग:"
+
+msgid ""
+"Le disjoncteur demande d'être opérateur de Tailscale (tableau de bord, « "
+"Devenir opérateur ») : la remise en route programmée tourne sous votre "
+"compte, jamais en root."
+msgstr ""
+"सर्किट ब्रेकर के लिए Tailscale का ऑपरेटर होना ज़रूरी है (डैशबोर्ड, « ऑपरेटर "
+"बनें »): निर्धारित पुनः-चालू आपके खाते के अंतर्गत चलता है, कभी root के रूप "
+"में नहीं।"
+
+msgid "Tailscale absent"
+msgstr "Tailscale अनुपस्थित"
+
+#, python-brace-format
+msgid "CPU machine {cpu:.0f} %"
+msgstr "मशीन CPU {cpu:.0f} %"
+
+#, python-brace-format
+msgid "CPU tailscaled {cpu:.0f} %"
+msgstr "tailscaled CPU {cpu:.0f} %"
+
+#, python-brace-format
+msgid "RAM {used:.0f} %"
+msgstr "RAM {used:.0f} %"
+
+msgid "Funnel coupé"
+msgstr "Funnel बंद किया"
+
+msgid "Funnel fermé"
+msgstr "Funnel खुला नहीं"
+
+msgid "Pare-feu actif · attaque"
+msgstr "फ़ायरवॉल सक्रिय · हमला"
+
+msgid "Pare-feu actif"
+msgstr "फ़ायरवॉल सक्रिय"
+
+msgid "Pare-feu arrêté"
+msgstr "फ़ायरवॉल रुका हुआ"
+
+msgid "Pare-feu inactif"
+msgstr "फ़ायरवॉल निष्क्रिय"
+
+msgid "Veille active"
+msgstr "निगरानी सक्रिय"
+
+msgid "Veille arrêtée"
+msgstr "निगरानी रुकी हुई"
+
+msgid "Veille inactive"
+msgstr "निगरानी निष्क्रिय"
+
+msgid "Tailscale injoignable"
+msgstr "Tailscale पहुँच से बाहर"
+
+msgid "Lecture de l'état…"
+msgstr "स्थिति पढ़ी जा रही है…"

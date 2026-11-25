@@ -1,0 +1,23 @@
+# Copyright (c) 2026 kraynux - kraynux@proton.me - Licence MIT (voir fichier LICENSE)
+"""Survie : etat de la coupure de Funnel, sauvegardes de la publication, commandes sans terminal."""
+from __future__ import annotations
+
+from collections.abc import Callable, Mapping, Sequence
+from typing import Any, Protocol
+
+from omega_tail.domain.funnel import Cut
+
+QuietCommand = Callable[[Sequence[str]], tuple[int, str]]
+"""Commande SANS terminal (jamais d'invite) : (code, derniere ligne d'erreur)."""
+
+
+class CutStore(Protocol):
+    def current(self) -> Cut | None: ...
+    def save_publication(self, cut_id: str, config: Mapping[str, Any]) -> str: ...
+    def load_publication(self, path: str) -> dict[str, Any]: ...
+    def start(self, cut: Cut) -> None: ...
+    def finish(self) -> None: ...
+    def log(self, line: str) -> None: ...
+    def write_private(self, name: str, text: str) -> str:
+        """Fichier a installer par sudo (fichier d'ajout systemd) ; renvoie son chemin."""
+        ...

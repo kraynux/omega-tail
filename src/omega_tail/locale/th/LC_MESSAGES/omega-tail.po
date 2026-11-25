@@ -1,0 +1,4553 @@
+# Statut X-Omega-Status : validated (2026-11-25, choix de vocabulaire et de ton arbitrés par Claude à la demande de l'auteur).
+msgid ""
+msgstr ""
+"Project-Id-Version: omega-tail\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Omega-Status: validated\n"
+
+msgid ""
+"omega-tail : pas de terminal interactif ; utilisez « omega-tail etat »."
+msgstr "omega-tail: ไม่มีเทอร์มินัลแบบโต้ตอบ; ใช้ « omega-tail etat »"
+
+msgid "Nom de la machine inconnu : Tailscale est-il connecté ?"
+msgstr "ไม่ทราบชื่อเครื่อง: Tailscale เชื่อมต่ออยู่หรือไม่?"
+
+#, python-brace-format
+msgid "Certificat refusé ({error}). Êtes-vous opérateur de Tailscale ?"
+msgstr "ใบรับรองถูกปฏิเสธ ({error}) คุณเป็นผู้ควบคุมของ Tailscale หรือไม่?"
+
+#, python-brace-format
+msgid "Certificat renouvelé, mais la porte ne l'a pas repris ({error})."
+msgstr "ต่ออายุใบรับรองแล้ว แต่ประตูยังไม่ได้นำไปใช้ ({error})"
+
+#, python-brace-format
+msgid "Certificat de {name} à jour."
+msgstr "ใบรับรองของ {name} เป็นปัจจุบัน"
+
+#, python-brace-format
+msgid "Publication non prise en charge : {reason}."
+msgstr "ไม่รองรับการเผยแพร่นี้: {reason}"
+
+#, python-brace-format
+msgid "Publication illisible ({error})."
+msgstr "อ่านการเผยแพร่ไม่ได้ ({error})"
+
+msgid "HAProxy n'est pas installé : « Installer HAProxy » d'abord."
+msgstr "ยังไม่ได้ติดตั้ง HAProxy: ใช้ « ติดตั้ง HAProxy » ก่อน"
+
+#, python-brace-format
+msgid "Configuration de la porte refusée par HAProxy : {error}"
+msgstr "HAProxy ปฏิเสธการกำหนดค่าของประตู: {error}"
+
+#, python-brace-format
+msgid "Renouvellement du certificat non programmé (crontab : {error})."
+msgstr "ไม่ได้ตั้งเวลาการต่ออายุใบรับรอง (crontab: {error})"
+
+msgid "Porte prête : certificat, listes et configuration vérifiés."
+msgstr "ประตูพร้อมแล้ว: ตรวจสอบใบรับรอง รายการ และการกำหนดค่าแล้ว"
+
+msgid "La porte protège déjà Funnel."
+msgstr "ประตูป้องกัน Funnel อยู่แล้ว"
+
+#, python-brace-format
+msgid "La porte ne répond pas en local ({detail}) : rien n'a été basculé."
+msgstr "ประตูไม่ตอบสนองภายในเครื่อง ({detail}): ไม่มีการสลับใด ๆ"
+
+#, python-brace-format
+msgid "Bascule refusée ({error}) : publication d'origine remise."
+msgstr "การสลับถูกปฏิเสธ ({error}): คืนการเผยแพร่เดิมแล้ว"
+
+#, python-brace-format
+msgid "Funnel passe par la porte : essai public réussi ({detail})."
+msgstr "Funnel ผ่านประตูแล้ว: ทดสอบสาธารณะสำเร็จ ({detail})"
+
+#, python-brace-format
+msgid "Essai public échoué ({detail}) : publication d'origine remise."
+msgstr "ทดสอบสาธารณะล้มเหลว ({detail}): คืนการเผยแพร่เดิมแล้ว"
+
+msgid "La porte ne protège pas Funnel : rien à remettre."
+msgstr "ประตูไม่ได้ป้องกัน Funnel: ไม่มีอะไรต้องคืน"
+
+#, python-brace-format
+msgid ""
+"Publication d'origine incomplète ({errors}) : sauvegarde gardée dans {path}."
+msgstr "การเผยแพร่เดิมไม่ครบถ้วน ({errors}): เก็บสำรองไว้ที่ {path}"
+
+msgid "Publication d'origine remise, à l'identique."
+msgstr "คืนการเผยแพร่เดิมแล้ว เหมือนเดิมทุกประการ"
+
+msgid "Règles enregistrées ; elles s'appliqueront à l'activation."
+msgstr "บันทึกกฎแล้ว; จะมีผลเมื่อเปิดการป้องกัน"
+
+#, python-brace-format
+msgid "Règles enregistrées, configuration non régénérée ({error})."
+msgstr "บันทึกกฎแล้ว แต่ไม่ได้สร้างการกำหนดค่าใหม่ ({error})"
+
+#, python-brace-format
+msgid "Règles refusées par HAProxy ({error}) : ancienne configuration gardée."
+msgstr "HAProxy ปฏิเสธกฎ ({error}): เก็บการกำหนดค่าเดิมไว้"
+
+#, python-brace-format
+msgid "Règles écrites, rechargement impossible ({error})."
+msgstr "เขียนกฎแล้ว แต่โหลดใหม่ไม่ได้ ({error})"
+
+#, python-brace-format
+msgid "Règles appliquées à chaud (mode {mode})."
+msgstr "ใช้กฎขณะทำงานแล้ว (โหมด {mode})"
+
+msgid "Regroupements indisponibles."
+msgstr "การจัดกลุ่มไม่พร้อมใช้งาน"
+
+#, python-brace-format
+msgid ""
+"Apprentissage des empreintes en cours (encore {days} jour(s)) : les "
+"regroupements restent en observation jusqu'à la fin ; « appliqués » sera "
+"possible ensuite."
+msgstr ""
+"กำลังเรียนรู้ลายนิ้วมือ (เหลืออีก {days} วัน): "
+"การจัดกลุ่มยังอยู่ในโหมดสังเกตการณ์จนกว่าจะเสร็จ; จากนั้นจึงเลือก « "
+"บังคับใช้ » ได้"
+
+msgid "appliqués"
+msgstr "บังคับใช้"
+
+msgid "en observation"
+msgstr "สังเกตการณ์อยู่"
+
+#, python-brace-format
+msgid "Regroupements appliqués à chaud ({mode})."
+msgstr "ใช้การจัดกลุ่มขณะทำงานแล้ว ({mode})"
+
+#, python-brace-format
+msgid ""
+"Apprentissage recommencé : regroupements repassés en observation pour les "
+"{days} jours d'apprentissage."
+msgstr ""
+"เริ่มการเรียนรู้ใหม่: การจัดกลุ่มกลับเป็นโหมดสังเกตการณ์ตลอด {days} "
+"วันของการเรียนรู้"
+
+msgid ""
+"Base AS / pays : trop longue (plus de 15 minutes), abandonnée ; l'ancienne "
+"reste en place."
+msgstr ""
+"ฐานข้อมูล AS / ประเทศ: ใช้เวลานานเกินไป (เกิน 15 นาที) จึงยกเลิก; "
+"ฐานข้อมูลเดิมยังใช้อยู่"
+
+#, python-brace-format
+msgid "{text}"
+msgstr "{text}"
+
+#, python-brace-format
+msgid ""
+"Liste noire pleine ({max} entrées) : purgez ou exportez-la dans « Gestion de"
+" la liste noire » avant d'en ajouter."
+msgstr ""
+"บัญชีดำเต็ม ({max} รายการ): ล้างหรือส่งออกใน « การจัดการบัญชีดำ » "
+"ก่อนเพิ่มรายการใหม่"
+
+#, python-brace-format
+msgid "Adresse ou réseau invalide : {text}"
+msgstr "ที่อยู่หรือเครือข่ายไม่ถูกต้อง: {text}"
+
+#, python-brace-format
+msgid ""
+"{address} fait partie du tailnet : la porte admet toujours les machines "
+"Tailscale, elle ne peut pas être bloquée."
+msgstr ""
+"{address} อยู่ใน tailnet: ประตูอนุญาตเครื่อง Tailscale เสมอ จึงบล็อกไม่ได้"
+
+#, python-brace-format
+msgid "{address} est déjà dans la liste noire (ou dans un de ses réseaux)."
+msgstr "{address} อยู่ในบัญชีดำแล้ว (หรืออยู่ในเครือข่ายหนึ่งของบัญชีดำ)"
+
+#, python-brace-format
+msgid "{address} → liste noire (refusée jusqu'au retrait)."
+msgstr "{address} → บัญชีดำ (ถูกปฏิเสธจนกว่าจะนำออก)"
+
+#, python-brace-format
+msgid "{count} entrée(s) retirée(s) de la liste noire ; il en reste {left}."
+msgstr "นำ {count} รายการออกจากบัญชีดำแล้ว; เหลือ {left} รายการ"
+
+#, python-brace-format
+msgid ""
+"Import : {added} ajoutée(s), {duplicates} doublon(s), {tailnet} du tailnet "
+"écartée(s), {invalid} ligne(s) invalide(s)."
+msgstr ""
+"นำเข้า: เพิ่ม {added} รายการ, ซ้ำ {duplicates} รายการ, ตัดที่อยู่ tailnet "
+"{tailnet} รายการ, บรรทัดไม่ถูกต้อง {invalid} บรรทัด"
+
+#, python-brace-format
+msgid ""
+"Import : {added} ajoutée(s), {duplicates} doublon(s), {tailnet} du tailnet "
+"écartée(s), {invalid} ligne(s) invalide(s), {over} au-delà du plafond de "
+"{max}."
+msgstr ""
+"นำเข้า: เพิ่ม {added} รายการ, ซ้ำ {duplicates} รายการ, ตัดที่อยู่ tailnet "
+"{tailnet} รายการ, บรรทัดไม่ถูกต้อง {invalid} บรรทัด, เกินเพดาน {max} อีก "
+"{over} รายการ"
+
+msgid "Aucune entrée ne correspond : rien n'a été retiré."
+msgstr "ไม่มีรายการที่ตรงกัน: ไม่ได้นำสิ่งใดออก"
+
+#, python-brace-format
+msgid ""
+"Purge : {count} entrée(s) retirée(s) de la liste noire ; il en reste {left}."
+msgstr "ล้าง: นำ {count} รายการออกจากบัญชีดำแล้ว; เหลือ {left} รายการ"
+
+#, python-brace-format
+msgid "Adresse invalide : {text}"
+msgstr "ที่อยู่ไม่ถูกต้อง: {text}"
+
+#, python-brace-format
+msgid ""
+"{address} → liste noire (refusée jusqu'au retrait), retirée de la confiance."
+msgstr ""
+"{address} → บัญชีดำ (ถูกปฏิเสธจนกว่าจะนำออก) นำออกจากรายการที่เชื่อถือแล้ว"
+
+#, python-brace-format
+msgid ""
+"{address} est en confiance (jamais limitée) : la confiance passe avant le "
+"blocage. Retirez-la de la confiance d'abord."
+msgstr ""
+"{address} อยู่ในรายการที่เชื่อถือ (ไม่เคยถูกจำกัด): "
+"การเชื่อถือมาก่อนการบล็อก นำออกจากรายการที่เชื่อถือก่อน"
+
+#, python-brace-format
+msgid ""
+"Porte injoignable ({error}) : blocage temporaire impossible porte arrêtée."
+msgstr "ติดต่อประตูไม่ได้ ({error}): บล็อกชั่วคราวไม่ได้เมื่อประตูหยุดอยู่"
+
+#, python-brace-format
+msgid "{address} → bloquée {minutes} min (blocage temporaire)."
+msgstr "{address} → บล็อก {minutes} นาที (บล็อกชั่วคราว)"
+
+#, python-brace-format
+msgid ""
+"{address} → toujours refusée : elle fait partie d'un réseau en liste noire."
+msgstr "{address} → ยังถูกปฏิเสธ: อยู่ในเครือข่ายที่อยู่ในบัญชีดำ"
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles), retirée de la liste noire."
+msgstr "{address} → ได้รับอนุญาต (อยู่ภายใต้กฎ) นำออกจากบัญชีดำแล้ว"
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles), blocage temporaire levé."
+msgstr "{address} → ได้รับอนุญาต (อยู่ภายใต้กฎ) ยกเลิกการบล็อกชั่วคราวแล้ว"
+
+#, python-brace-format
+msgid "{address} → confiance (jamais limitée), retirée de la liste noire."
+msgstr "{address} → เชื่อถือ (ไม่เคยถูกจำกัด) นำออกจากบัญชีดำแล้ว"
+
+#, python-brace-format
+msgid "{address} → confiance (jamais limitée)."
+msgstr "{address} → เชื่อถือ (ไม่เคยถูกจำกัด)"
+
+#, python-brace-format
+msgid "{address} → toujours admise : elle fait partie du tailnet."
+msgstr "{address} → ได้รับอนุญาตเสมอ: อยู่ใน tailnet"
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles)."
+msgstr "{address} → ได้รับอนุญาต (อยู่ภายใต้กฎ)"
+
+#, python-brace-format
+msgid "Apprentissage recommencé : {days} jours avant que la référence compte."
+msgstr "เริ่มการเรียนรู้ใหม่: อีก {days} วันก่อนที่ค่าอ้างอิงจะมีผล"
+
+#, python-brace-format
+msgid "Base AS / pays non mise à jour ({error}) : l'ancienne reste en place."
+msgstr "ไม่ได้อัปเดตฐานข้อมูล AS / ประเทศ ({error}): ฐานข้อมูลเดิมยังใช้อยู่"
+
+#, python-brace-format
+msgid "Base AS / pays à jour ({countries} plages pays, {asns} plages AS)."
+msgstr ""
+"ฐานข้อมูล AS / ประเทศเป็นปัจจุบัน ({countries} ช่วงประเทศ, {asns} ช่วง AS)"
+
+msgid "habituelle"
+msgstr "ปกติ"
+
+msgid "limité en attaque"
+msgstr "จำกัดเมื่อถูกโจมตี"
+
+msgid "Funnel est coupé par le disjoncteur : rétablissez-le d'abord (Survie)."
+msgstr "Funnel ถูกเบรกเกอร์ตัดอยู่: คืนค่าก่อน (การอยู่รอด)"
+
+#, python-brace-format
+msgid "Refusé par Tailscale ({error}) : rien n'a changé."
+msgstr "Tailscale ปฏิเสธ ({error}): ไม่มีอะไรเปลี่ยนแปลง"
+
+#, python-brace-format
+msgid "Changement impossible ({error}) : publication d'avant remise."
+msgstr "เปลี่ยนไม่ได้ ({error}): คืนการเผยแพร่ก่อนหน้าแล้ว"
+
+#, python-brace-format
+msgid "Publication incomplète ({error}) : restaurez la sauvegarde {path}."
+msgstr "การเผยแพร่ไม่ครบถ้วน ({error}): กู้คืนข้อมูลสำรอง {path}"
+
+#, python-brace-format
+msgid "Ajout refusé : {reason}."
+msgstr "การเพิ่มถูกปฏิเสธ: {reason}"
+
+#, python-brace-format
+msgid "Publié : {kind} {port}{path} → {target} ({who})."
+msgstr "เผยแพร่แล้ว: {kind} {port}{path} → {target} ({who})"
+
+msgid ""
+"Ce port passe par la porte : « Désactiver la protection » (Pare-feu Funnel) "
+"d'abord."
+msgstr "พอร์ตนี้ผ่านประตู: ใช้ « ปิดการป้องกัน » (ไฟร์วอลล์ Funnel) ก่อน"
+
+msgid "Ce point n'est plus publié."
+msgstr "จุดนี้ไม่ได้เผยแพร่อีกต่อไป"
+
+#, python-brace-format
+msgid "Retiré : {kind} {port}{path}."
+msgstr "ถอนแล้ว: {kind} {port}{path}"
+
+#, python-brace-format
+msgid "Sauvegarde illisible ({error})."
+msgstr "อ่านข้อมูลสำรองไม่ได้ ({error})"
+
+msgid ""
+"La protection est active : « Désactiver la protection » (Pare-feu Funnel) "
+"d'abord, puis restaurez."
+msgstr ""
+"การป้องกันทำงานอยู่: ใช้ « ปิดการป้องกัน » (ไฟร์วอลล์ Funnel) ก่อน "
+"แล้วจึงกู้คืน"
+
+msgid ""
+"Cette sauvegarde passe par la porte, arrêtée : « Activer la protection » "
+"(Pare-feu Funnel) la recrée proprement."
+msgstr ""
+"ข้อมูลสำรองนี้ผ่านประตูซึ่งหยุดอยู่: « เปิดการป้องกัน » (ไฟร์วอลล์ Funnel) "
+"จะสร้างใหม่อย่างถูกต้อง"
+
+#, python-brace-format
+msgid "Sauvegarde du {when} restaurée."
+msgstr "กู้คืนข้อมูลสำรองของ {when} แล้ว"
+
+msgid "essai public indisponible"
+msgstr "ทดสอบสาธารณะไม่พร้อมใช้งาน"
+
+msgid "adresse du tailnet inconnue"
+msgstr "ไม่ทราบที่อยู่ใน tailnet"
+
+msgid "Funnel encore autorisé sur les ports"
+msgstr "Funnel ยังได้รับอนุญาตบนพอร์ต"
+
+msgid "Funnel est déjà coupé par omega-tail."
+msgstr "Funnel ถูก omega-tail ตัดอยู่แล้ว"
+
+msgid "Rien à couper : aucun port n'est ouvert à Internet."
+msgstr "ไม่มีอะไรต้องตัด: ไม่มีพอร์ตใดเปิดสู่อินเทอร์เน็ต"
+
+msgid "Remise en route programmée impossible ici."
+msgstr "ตั้งเวลาเปิดกลับที่นี่ไม่ได้"
+
+#, python-brace-format
+msgid ""
+"Minuterie de remise en route refusée (code {code}) : rien n'a été coupé."
+msgstr "ตัวจับเวลาเปิดกลับถูกปฏิเสธ (รหัส {code}): ไม่ได้ตัดสิ่งใด"
+
+#, python-brace-format
+msgid "Coupure impossible ({error}) : la publication a été remise."
+msgstr "ตัดไม่ได้ ({error}): คืนการเผยแพร่แล้ว"
+
+#, python-brace-format
+msgid ""
+"Funnel coupé ({ports}) pour {minutes} min, puis remis en route "
+"automatiquement."
+msgstr "ตัด Funnel ({ports}) เป็นเวลา {minutes} นาที แล้วเปิดกลับอัตโนมัติ"
+
+#, python-brace-format
+msgid "Funnel coupé ({ports}) jusqu'à votre remise en route."
+msgstr "ตัด Funnel ({ports}) จนกว่าคุณจะเปิดกลับ"
+
+msgid "Rien à rétablir : Funnel n'est pas coupé par omega-tail."
+msgstr "ไม่มีอะไรต้องคืนค่า: Funnel ไม่ได้ถูก omega-tail ตัด"
+
+msgid "Minuterie d'une ancienne coupure : rien à faire."
+msgstr "ตัวจับเวลาของการตัดครั้งก่อน: ไม่ต้องทำอะไร"
+
+#, python-brace-format
+msgid "Remise en route incomplète ({errors}) : sauvegarde gardée dans {path}."
+msgstr "การเปิดกลับไม่ครบถ้วน ({errors}): เก็บสำรองไว้ที่ {path}"
+
+msgid "Funnel remis en route, à l'identique."
+msgstr "เปิด Funnel กลับแล้ว เหมือนเดิมทุกประการ"
+
+msgid "Tailscale n'est pas installé sur cette machine."
+msgstr "เครื่องนี้ไม่ได้ติดตั้ง Tailscale"
+
+msgid "Le service tailscaled ne répond pas (arrêté ou en échec)."
+msgstr "บริการ tailscaled ไม่ตอบสนอง (หยุดอยู่หรือล้มเหลว)"
+
+#, python-brace-format
+msgid ""
+"tailscaled n'a pas été redémarré après la mise à jour : {daemon} en marche, "
+"{client} installé."
+msgstr ""
+"ไม่ได้รีสตาร์ท tailscaled หลังอัปเดต: {daemon} กำลังทำงาน, {client} "
+"ติดตั้งแล้ว"
+
+msgid "Tailscale attend la connexion d'un compte."
+msgstr "Tailscale รอการเข้าสู่ระบบด้วยบัญชี"
+
+msgid "Tailscale est déconnecté (« tailscale down »)."
+msgstr "Tailscale ตัดการเชื่อมต่ออยู่ (« tailscale down »)"
+
+#, python-brace-format
+msgid "La clé de cette machine expire dans {days} jour(s)."
+msgstr "คีย์ของเครื่องนี้จะหมดอายุใน {days} วัน"
+
+msgid ""
+"Site en panne : Funnel passe par la porte (pare-feu), mais la porte est "
+"arrêtée."
+msgstr "เว็บไซต์ล่ม: Funnel ผ่านประตู (ไฟร์วอลล์) แต่ประตูหยุดอยู่"
+
+msgid ""
+"La porte est en MODE ATTAQUE : trop de connexions entrantes ; les "
+"regroupements (empreintes, AS, pays) s'appliquent jusqu'au retour au calme."
+msgstr ""
+"ประตูอยู่ในโหมดโจมตี: มีการเชื่อมต่อขาเข้ามากเกินไป; การจัดกลุ่ม "
+"(ลายนิ้วมือ, AS, ประเทศ) มีผลจนกว่าจะกลับสู่ความสงบ"
+
+#, python-brace-format
+msgid ""
+"Funnel publié sans protection sur le port {port} : tailscaled fait le TLS de"
+" chaque connexion (une rafale peut saturer la machine)."
+msgstr ""
+"Funnel เผยแพร่โดยไม่มีการป้องกันบนพอร์ต {port}: tailscaled ทำ TLS "
+"ให้ทุกการเชื่อมต่อ (การยิงถี่ ๆ อาจทำให้เครื่องอิ่มตัว)"
+
+#, python-brace-format
+msgid "Température élevée : {temperature:.0f} °C."
+msgstr "อุณหภูมิสูง: {temperature:.0f} °C"
+
+#, python-brace-format
+msgid "tailscaled consomme {cpu:.0f} % d'un cœur."
+msgstr "tailscaled ใช้ {cpu:.0f} % ของหนึ่งคอร์"
+
+msgid ""
+"La veille automatique est activée mais ne tourne plus : Funnel ne sera pas "
+"coupé seul sous attaque."
+msgstr ""
+"การเฝ้าระวังอัตโนมัติเปิดอยู่แต่ไม่ทำงานแล้ว: Funnel "
+"จะไม่ถูกตัดเองเมื่อถูกโจมตี"
+
+#, python-brace-format
+msgid ""
+"Liste noire de la porte : {count} entrées (plafond {max}). Exportez-la puis "
+"purgez les plus anciennes : « Attaques et décisions » → « Gestion de la "
+"liste noire »."
+msgstr ""
+"บัญชีดำของประตู: {count} รายการ (เพดาน {max}) "
+"ส่งออกแล้วล้างรายการที่เก่าที่สุด: « การโจมตีและการตัดสินใจ » → « "
+"การจัดการบัญชีดำ »"
+
+msgid ""
+"Bouclier du port WireGuard ABSENT : un autre outil a effacé sa table (nft "
+"flush ruleset, pare-feu relancé…). Il n'est pas reposé seul : « Survie » → «"
+" Bouclier du port WireGuard » → « Reposer »."
+msgstr ""
+"ไม่พบโล่ป้องกันพอร์ต WireGuard: เครื่องมืออื่นลบตารางของมันไปแล้ว (nft flush"
+" ruleset, รีสตาร์ทไฟร์วอลล์…) ระบบจะไม่วางใหม่เอง: « การอยู่รอด » → « "
+"โล่ป้องกันพอร์ต WireGuard » → « วางใหม่ »"
+
+msgid ""
+"Bouclier du port WireGuard : état non mis à jour depuis plus de 3 minutes "
+"(service omega-bouclier-wg arrêté ?)."
+msgstr ""
+"โล่ป้องกันพอร์ต WireGuard: สถานะไม่ได้อัปเดตมานานกว่า 3 นาที (บริการ omega-"
+"bouclier-wg หยุดอยู่?)"
+
+msgid ""
+"Le démarrage de tailscaled lance « tailscale up » : si un réglage change "
+"(opérateur, nom, routes…), Tailscale le refusera et tailscaled ne "
+"redémarrera plus. « Service » → « Corriger le démarrage »."
+msgstr ""
+"การเริ่มต้น tailscaled รัน « tailscale up »: หากการตั้งค่าเปลี่ยน (ผู้ควบคุม"
+" ชื่อ เส้นทาง…) Tailscale จะปฏิเสธและ tailscaled จะเริ่มใหม่ไม่ได้อีก « "
+"บริการ » → « แก้ไขการเริ่มต้น »"
+
+msgid ""
+"Confinement de tailscaled perdu (le service a redémarré) : « Survie » → « "
+"Appliquer le confinement »."
+msgstr ""
+"การจำกัดทรัพยากรของ tailscaled หายไป (บริการรีสตาร์ทแล้ว): « การอยู่รอด » → "
+"« ใช้การจำกัดทรัพยากร »"
+
+msgid ""
+"tailscaled n'est pas confiné : sous attaque, il peut prendre tous les cœurs."
+msgstr "tailscaled ไม่ถูกจำกัดทรัพยากร: เมื่อถูกโจมตี มันอาจใช้ทุกคอร์"
+
+msgid ""
+"Vous n'êtes pas opérateur de Tailscale : chaque réglage demandera sudo."
+msgstr "คุณไม่ใช่ผู้ควบคุมของ Tailscale: ทุกการตั้งค่าจะต้องใช้ sudo"
+
+msgid ""
+"Funnel coupé par omega-tail (coupure totale) : remise en route manuelle, "
+"dans « Survie »."
+msgstr ""
+"Funnel ถูก omega-tail ตัด (ตัดทั้งหมด): เปิดกลับด้วยตนเองใน « การอยู่รอด »"
+
+#, python-brace-format
+msgid ""
+"Funnel devait être remis en route à {time} et ne l'est pas : « Rétablir » "
+"dans « Survie »."
+msgstr ""
+"Funnel ควรเปิดกลับเมื่อ {time} แต่ยังไม่เปิด: « คืนค่า » ใน « การอยู่รอด »"
+
+#, python-brace-format
+msgid ""
+"Funnel coupé par omega-tail jusqu'à {time}, puis remis en route "
+"automatiquement."
+msgstr "Funnel ถูก omega-tail ตัดจนถึง {time} แล้วจะเปิดกลับอัตโนมัติ"
+
+#, python-brace-format
+msgid "Tailscale signale : {message}"
+msgstr "Tailscale แจ้ง: {message}"
+
+msgid "ajout manuel"
+msgstr "เพิ่มด้วยตนเอง"
+
+msgid "import"
+msgstr "นำเข้า"
+
+msgid "écran Attaques"
+msgstr "หน้าจอการโจมตี"
+
+msgid "avant les dates"
+msgstr "ก่อนมีวันที่"
+
+#, python-brace-format
+msgid "Température de {temperature:.0f} °C (seuil {threshold:.0f} °C)."
+msgstr "อุณหภูมิ {temperature:.0f} °C (เกณฑ์ {threshold:.0f} °C)"
+
+#, python-brace-format
+msgid ""
+"tailscaled au-dessus de {threshold:.0f} % d'un cœur depuis {seconds} s "
+"(moyenne {average:.0f} %)."
+msgstr ""
+"tailscaled เกิน {threshold:.0f} % ของหนึ่งคอร์มา {seconds} วินาที (เฉลี่ย "
+"{average:.0f} %)"
+
+msgid "cible non prise en charge"
+msgstr "ไม่รองรับปลายทางนี้"
+
+msgid "nom de machine inattendu"
+msgstr "ชื่อเครื่องไม่ตรงตามที่คาด"
+
+msgid "aucun port n'est ouvert à Internet (Funnel)"
+msgstr "ไม่มีพอร์ตใดเปิดสู่อินเทอร์เน็ต (Funnel)"
+
+msgid "plusieurs ports Funnel : la porte n'en protège qu'un pour l'instant"
+msgstr "มีหลายพอร์ต Funnel: ขณะนี้ประตูป้องกันได้เพียงพอร์ตเดียว"
+
+msgid "Funnel passe déjà par une porte (TCP + PROXY v2)"
+msgstr "Funnel ผ่านประตูอยู่แล้ว (TCP + PROXY v2)"
+
+msgid "seule une publication HTTPS avec le chemin « / » est prise en charge"
+msgstr "รองรับเฉพาะการเผยแพร่ HTTPS ที่มีพาธ « / » เท่านั้น"
+
+msgid "Chrome, Edge, Firefox récent"
+msgstr "Chrome, Edge, Firefox รุ่นใหม่"
+
+msgid "Firefox (ancien)"
+msgstr "Firefox (รุ่นเก่า)"
+
+msgid "empreinte"
+msgstr "ลายนิ้วมือ"
+
+msgid "hébergeur"
+msgstr "ผู้ให้บริการโฮสติ้ง"
+
+msgid "pays"
+msgstr "ประเทศ"
+
+msgid "Identité"
+msgstr "ข้อมูลระบุตัวตน"
+
+msgid "Réseau"
+msgstr "เครือข่าย"
+
+msgid "Sortie"
+msgstr "ทางออก"
+
+msgid "Services Tailscale"
+msgstr "บริการของ Tailscale"
+
+msgid "Opérateur"
+msgstr "ผู้ควบคุม"
+
+msgid "Nom de la machine"
+msgstr "ชื่อเครื่อง"
+
+msgid ""
+"Nom dans le tailnet (vide : celui du système). Change aussi l'adresse "
+"*.ts.net : les liens publiés et le certificat suivent."
+msgstr ""
+"ชื่อใน tailnet (ว่าง: ใช้ชื่อของระบบ) เปลี่ยนที่อยู่ *.ts.net ด้วย: "
+"ลิงก์ที่เผยแพร่และใบรับรองจะเปลี่ยนตาม"
+
+msgid "ex. serveur-maison"
+msgstr "เช่น server-home"
+
+msgid "Surnom du compte"
+msgstr "ชื่อเล่นของบัญชี"
+
+msgid ""
+"Surnom du compte en cours, pour le reconnaître dans « Changer de compte »."
+msgstr "ชื่อเล่นของบัญชีปัจจุบัน เพื่อให้จำได้ใน « สลับบัญชี »"
+
+msgid "ex. maison"
+msgstr "เช่น home"
+
+msgid "Accepter les routes"
+msgstr "ยอมรับเส้นทาง"
+
+msgid ""
+"Utiliser les sous-réseaux annoncés par les autres machines. À éviter sur une"
+" machine du même réseau local que le routeur qui l'annonce."
+msgstr ""
+"ใช้ซับเน็ตที่เครื่องอื่นประกาศ "
+"ควรหลีกเลี่ยงบนเครื่องที่อยู่ในเครือข่ายภายในเดียวกับเราเตอร์ที่ประกาศ"
+
+msgid "Accepter le DNS du tailnet"
+msgstr "ยอมรับ DNS ของ tailnet"
+
+msgid "MagicDNS : les noms des machines du tailnet se résolvent ici."
+msgstr "MagicDNS: ชื่อของเครื่องใน tailnet จะถูกแปลงที่นี่"
+
+msgid "Bouclier (refuser les connexions entrantes)"
+msgstr "โล่ป้องกัน (ปฏิเสธการเชื่อมต่อขาเข้า)"
+
+msgid ""
+"Aucune machine du tailnet ne peut se connecter à celle-ci (SSH et Serve "
+"compris). Funnel n'est pas concerné."
+msgstr ""
+"ไม่มีเครื่องใดใน tailnet เชื่อมต่อมายังเครื่องนี้ได้ (รวม SSH และ Serve) "
+"ไม่มีผลต่อ Funnel"
+
+msgid "Filtrage avec état"
+msgstr "การกรองแบบมีสถานะ"
+
+msgid ""
+"Pour un routeur de sous-réseau ou un nœud de sortie : ne laisse revenir que "
+"les réponses."
+msgstr ""
+"สำหรับเราเตอร์ซับเน็ตหรือโหนดทางออก: อนุญาตให้กลับเข้ามาเฉพาะการตอบกลับ"
+
+msgid "Mode netfilter"
+msgstr "โหมด netfilter"
+
+msgid ""
+"on : Tailscale gère ses règles de pare-feu ; nodivert : ses chaînes sans les"
+" brancher ; off : aucune règle (à vos risques)."
+msgstr ""
+"on: Tailscale จัดการกฎไฟร์วอลล์ของตน; nodivert: สร้างเชนโดยไม่เชื่อมต่อ; "
+"off: ไม่มีกฎ (คุณรับความเสี่ยงเอง)"
+
+msgid "Nœud de sortie utilisé"
+msgstr "โหนดทางออกที่ใช้"
+
+msgid ""
+"Faire passer le trafic Internet de cette machine par une autre machine du "
+"tailnet (vide : aucun)."
+msgstr ""
+"ส่งทราฟฟิกอินเทอร์เน็ตของเครื่องนี้ผ่านเครื่องอื่นใน tailnet (ว่าง: ไม่ใช้)"
+
+msgid "Garder l'accès au réseau local"
+msgstr "คงการเข้าถึงเครือข่ายภายใน"
+
+msgid "Avec un nœud de sortie : le réseau local reste joignable directement."
+msgstr "เมื่อใช้โหนดทางออก: ยังเข้าถึงเครือข่ายภายในได้โดยตรง"
+
+msgid "Proposer cette machine comme nœud de sortie"
+msgstr "เสนอเครื่องนี้เป็นโหนดทางออก"
+
+msgid ""
+"Les autres machines pourront sortir sur Internet par celle-ci (à approuver "
+"dans la console d'administration)."
+msgstr ""
+"เครื่องอื่นจะออกอินเทอร์เน็ตผ่านเครื่องนี้ได้ "
+"(ต้องอนุมัติในคอนโซลผู้ดูแลระบบ)"
+
+msgid "Sous-réseaux annoncés"
+msgstr "ซับเน็ตที่ประกาศ"
+
+msgid ""
+"Réseaux locaux rendus joignables au tailnet, séparés par des virgules "
+"(192.168.1.0/24) ; vide : aucun."
+msgstr ""
+"เครือข่ายภายในที่ให้ tailnet เข้าถึงได้ คั่นด้วยจุลภาค (192.168.1.0/24); "
+"ว่าง: ไม่มี"
+
+msgid "ex. 192.168.1.0/24, 10.0.0.0/8"
+msgstr "เช่น 192.168.1.0/24, 10.0.0.0/8"
+
+msgid "SSH Tailscale"
+msgstr "SSH ของ Tailscale"
+
+msgid ""
+"Serveur SSH de Tailscale, selon les règles du tailnet. Votre SSH habituel "
+"n'est pas touché."
+msgstr ""
+"เซิร์ฟเวอร์ SSH ของ Tailscale ตามกฎของ tailnet SSH ปกติของคุณไม่ถูกแตะต้อง"
+
+msgid "Interface web (port 5252)"
+msgstr "อินเทอร์เฟซเว็บ (พอร์ต 5252)"
+
+msgid "Page de gestion de cette machine, joignable par le tailnet seulement."
+msgstr "หน้าจัดการเครื่องนี้ เข้าถึงได้ผ่าน tailnet เท่านั้น"
+
+msgid "Mises à jour automatiques"
+msgstr "อัปเดตอัตโนมัติ"
+
+msgid ""
+"Tailscale se met à jour seul quand sa distribution le permet. Sinon : "
+"gestionnaire de paquets."
+msgstr ""
+"Tailscale อัปเดตตัวเองเมื่อดิสทริบิวชันอนุญาต มิฉะนั้น: ตัวจัดการแพ็กเกจ"
+
+msgid "Signaler les mises à jour"
+msgstr "แจ้งการอัปเดต"
+
+msgid "Tailscale prévient quand une version plus récente existe."
+msgstr "Tailscale แจ้งเมื่อมีเวอร์ชันใหม่กว่า"
+
+msgid "Port du relais pair (UDP)"
+msgstr "พอร์ตรีเลย์เพียร์ (UDP)"
+
+msgid ""
+"Cette machine relaie les connexions d'autres machines du tailnet sur ce port"
+" UDP ; vide : non."
+msgstr ""
+"เครื่องนี้ส่งต่อการเชื่อมต่อของเครื่องอื่นใน tailnet บนพอร์ต UDP นี้; ว่าง: "
+"ไม่"
+
+msgid "ex. 40000"
+msgstr "เช่น 40000"
+
+msgid ""
+"Nom du compte Linux qui pilote Tailscale sans sudo (« Mon compte » le "
+"remplit) ; vide : root seul. Changer l'opérateur demande sudo une fois."
+msgstr ""
+"ชื่อบัญชี Linux ที่ควบคุม Tailscale โดยไม่ต้องใช้ sudo (« บัญชีของฉัน » "
+"จะกรอกให้); ว่าง: root เท่านั้น การเปลี่ยนผู้ควบคุมต้องใช้ sudo หนึ่งครั้ง"
+
+msgid "ex. votre compte Linux"
+msgstr "เช่น บัญชี Linux ของคุณ"
+
+msgid "réglage inconnu"
+msgstr "ไม่รู้จักการตั้งค่านี้"
+
+msgid "caractère de contrôle"
+msgstr "อักขระควบคุม"
+
+msgid "valeur hors liste"
+msgstr "ค่าไม่อยู่ในรายการ"
+
+msgid "lettres, chiffres et tirets seulement (63 au plus)"
+msgstr "ตัวอักษร ตัวเลข และขีดกลางเท่านั้น (ไม่เกิน 63)"
+
+msgid "64 caractères au plus"
+msgstr "ไม่เกิน 64 อักขระ"
+
+msgid "nom de compte Unix attendu"
+msgstr "ต้องเป็นชื่อบัญชี Unix"
+
+msgid "adresse ou nom de machine attendu"
+msgstr "ต้องเป็นที่อยู่หรือชื่อเครื่อง"
+
+msgid "port de 0 à 65535"
+msgstr "พอร์ต 0 ถึง 65535"
+
+#, python-brace-format
+msgid "réseau invalide : {value}"
+msgstr "เครือข่ายไม่ถูกต้อง: {value}"
+
+msgid "port de 1 à 65535 attendu"
+msgstr "ต้องเป็นพอร์ต 1 ถึง 65535"
+
+msgid "cible locale attendue : un port, ou http://127.0.0.1:PORT"
+msgstr "ต้องเป็นปลายทางภายในเครื่อง: พอร์ต หรือ http://127.0.0.1:PORT"
+
+msgid "cible locale attendue : un port, ou tcp://127.0.0.1:PORT"
+msgstr "ต้องเป็นปลายทางภายในเครื่อง: พอร์ต หรือ tcp://127.0.0.1:PORT"
+
+msgid "mode inconnu"
+msgstr "ไม่รู้จักโหมดนี้"
+
+msgid "Funnel n'ouvre que les ports 443, 8443 et 10000"
+msgstr "Funnel เปิดได้เฉพาะพอร์ต 443, 8443 และ 10000"
+
+msgid "chemin attendu : /, /site, /api/v1…"
+msgstr "ต้องเป็นพาธ: /, /site, /api/v1…"
+
+msgid "ce port est déjà publié pour un autre public (tailnet / Internet)"
+msgstr "พอร์ตนี้เผยแพร่ให้ผู้ชมกลุ่มอื่นอยู่แล้ว (tailnet / อินเทอร์เน็ต)"
+
+msgid "ce port est déjà publié"
+msgstr "พอร์ตนี้เผยแพร่อยู่แล้ว"
+
+msgid "ce port est déjà publié dans un autre mode"
+msgstr "พอร์ตนี้เผยแพร่ในโหมดอื่นอยู่แล้ว"
+
+msgid "ce chemin est déjà publié sur ce port"
+msgstr "พาธนี้เผยแพร่บนพอร์ตนี้อยู่แล้ว"
+
+msgid "pare-feu"
+msgstr "ไฟร์วอลล์"
+
+msgid "publication"
+msgstr "การเผยแพร่"
+
+msgid "veille automatique"
+msgstr "การเฝ้าระวังอัตโนมัติ"
+
+msgid "disjoncteur"
+msgstr "เบรกเกอร์"
+
+msgid ""
+"Cette session passe par Tailscale : arrêter tailscaled la coupera, et vous "
+"ne pourrez pas le relancer d'ici. Accès de secours : le réseau local ou la "
+"machine elle-même."
+msgstr ""
+"เซสชันนี้ผ่าน Tailscale: การหยุด tailscaled จะตัดเซสชัน "
+"และคุณจะเริ่มใหม่จากที่นี่ไม่ได้ ทางเข้าสำรอง: "
+"เครือข่ายภายในหรือตัวเครื่องเอง"
+
+msgid ""
+"Cette session passe par Tailscale : pendant le redémarrage elle se figera "
+"quelques secondes, puis reviendra en général d'elle-même."
+msgstr ""
+"เซสชันนี้ผ่าน Tailscale: ระหว่างรีสตาร์ท เซสชันจะค้างไม่กี่วินาที "
+"แล้วโดยทั่วไปจะกลับมาเอง"
+
+msgid "réponse DNS invalide"
+msgstr "การตอบกลับ DNS ไม่ถูกต้อง"
+
+msgid "aucune adresse publique pour ce nom"
+msgstr "ไม่มีที่อยู่สาธารณะสำหรับชื่อนี้"
+
+msgid "HAProxy absent"
+msgstr "ไม่มี HAProxy"
+
+msgid "crontab absent (installez cronie ou un autre cron)"
+msgstr "ไม่มี crontab (ติดตั้ง cronie หรือ cron อื่น)"
+
+msgid "fichier trop gros"
+msgstr "ไฟล์ใหญ่เกินไป"
+
+msgid "téléchargement impossible"
+msgstr "ดาวน์โหลดไม่ได้"
+
+msgid "base incomplète (trop peu de plages) : ancienne base gardée"
+msgstr "ฐานข้อมูลไม่ครบถ้วน (ช่วงน้อยเกินไป): เก็บฐานข้อมูลเดิมไว้"
+
+msgid "contient l'installation d'omega-tail"
+msgstr "มีการติดตั้ง omega-tail อยู่ภายใน"
+
+msgid "lecture refusée"
+msgstr "ถูกปฏิเสธการอ่าน"
+
+msgid "aucun journal trouvé"
+msgstr "ไม่พบล็อก"
+
+msgid ""
+"Votre compte ne peut pas lire le journal du système. Ajoutez-le au groupe « "
+"systemd-journal » (ou « adm » / « wheel » selon la distribution), puis "
+"rouvrez votre session."
+msgstr ""
+"บัญชีของคุณอ่านล็อกของระบบไม่ได้ เพิ่มบัญชีเข้ากลุ่ม « systemd-journal » "
+"(หรือ « adm » / « wheel » ตามดิสทริบิวชัน) แล้วเปิดเซสชันใหม่"
+
+msgid ""
+"Ce journal est réservé à root sur cette machine : ajoutez votre compte au "
+"groupe qui peut le lire (souvent « adm » ou « wheel »), ou lisez-le avec "
+"sudo."
+msgstr ""
+"ล็อกนี้สงวนไว้สำหรับ root บนเครื่องนี้: เพิ่มบัญชีของคุณเข้ากลุ่มที่อ่านได้ "
+"(มักเป็น « adm » หรือ « wheel ») หรืออ่านด้วย sudo"
+
+msgid "journal vide ou illisible pour ce compte"
+msgstr "ล็อกว่างเปล่าหรือบัญชีนี้อ่านไม่ได้"
+
+msgid "DNS public"
+msgstr "DNS สาธารณะ"
+
+msgid "réponse vide"
+msgstr "การตอบกลับว่างเปล่า"
+
+msgid "Pilotage de Tailscale et protection de Funnel."
+msgstr "ควบคุม Tailscale และป้องกัน Funnel"
+
+msgid "état de Tailscale, de la machine et alertes"
+msgstr "สถานะของ Tailscale เครื่อง และการแจ้งเตือน"
+
+msgid "aide complète en texte"
+msgstr "ช่วยเหลือฉบับเต็มแบบข้อความ"
+
+msgid "rapport de la machine (faits seulement)"
+msgstr "รายงานของเครื่อง (ข้อเท็จจริงเท่านั้น)"
+
+msgid "enregistrer dans le dossier des exports (sinon : affiché)"
+msgstr "บันทึกลงโฟลเดอร์การส่งออก (มิฉะนั้น: แสดงผล)"
+
+msgid ""
+"inclure le compte Tailscale et les noms / adresses des appareils du tailnet"
+msgstr "รวมบัญชี Tailscale และชื่อ / ที่อยู่ของอุปกรณ์ใน tailnet"
+
+msgid "couper ou remettre Funnel (Survie)"
+msgstr "ตัดหรือเปิด Funnel กลับ (การอยู่รอด)"
+
+msgid "coupure en cours"
+msgstr "การตัดที่กำลังดำเนินอยู่"
+
+msgid "couper Funnel"
+msgstr "ตัด Funnel"
+
+msgid "coupure momentanée, remise en route automatique (minuterie)"
+msgstr "ตัดชั่วคราว เปิดกลับอัตโนมัติ (ตัวจับเวลา)"
+
+msgid "coupure jusqu'à « retablir »"
+msgstr "ตัดจนกว่าจะ « retablir »"
+
+msgid "remettre Funnel à l'identique"
+msgstr "เปิด Funnel กลับให้เหมือนเดิมทุกประการ"
+
+msgid "coupure visée (minuterie) ; une autre coupure est ignorée"
+msgstr "การตัดเป้าหมาย (ตัวจับเวลา); การตัดอื่นจะถูกละเว้น"
+
+msgid "secondes d'attente avant (hors systemd)"
+msgstr "วินาทีที่รอก่อนหน้า (นอก systemd)"
+
+msgid "veille automatique (coupe Funnel seule sous attaque)"
+msgstr "การเฝ้าระวังอัตโนมัติ (ตัด Funnel เองเมื่อถูกโจมตี)"
+
+msgid "tourner en continu (lancé par le service de la veille)"
+msgstr "ทำงานต่อเนื่อง (เปิดโดยบริการการเฝ้าระวัง)"
+
+msgid "état de la veille et dernières lignes du journal"
+msgstr "สถานะการเฝ้าระวังและบรรทัดล่าสุดของล็อก"
+
+msgid "pare-feu Funnel (porte HAProxy)"
+msgstr "ไฟร์วอลล์ Funnel (ประตู HAProxy)"
+
+msgid "état de la porte et compteurs"
+msgstr "สถานะของประตูและตัวนับ"
+
+msgid "renouveler le certificat *.ts.net de la porte"
+msgstr "ต่ออายุใบรับรอง *.ts.net ของประตู"
+
+msgid "seulement s'il expire dans moins de 30 jours"
+msgstr "เฉพาะเมื่อจะหมดอายุภายใน 30 วัน"
+
+msgid "regroupements : mode attaque, empreintes, AS, pays (lot 6)"
+msgstr "การจัดกลุ่ม: โหมดโจมตี ลายนิ้วมือ AS ประเทศ (ล็อต 6)"
+
+msgid "mettre à jour la base AS / pays (DB-IP Lite)"
+msgstr "อัปเดตฐานข้อมูล AS / ประเทศ (DB-IP Lite)"
+
+msgid "bloquer une adresse (durée de blocage) ou un réseau"
+msgstr "บล็อกที่อยู่ (ระยะเวลาบล็อก) หรือเครือข่าย"
+
+msgid "liste noire, jusqu'à « debloquer »"
+msgstr "บัญชีดำ จนกว่าจะ « debloquer »"
+
+msgid "débloquer une adresse ou un réseau"
+msgstr "ปลดบล็อกที่อยู่หรือเครือข่าย"
+
+msgid "mettre en confiance (jamais limitée)"
+msgstr "ใส่ในรายการที่เชื่อถือ (ไม่เคยถูกจำกัด)"
+
+#, python-brace-format
+msgid "Export impossible : {error}"
+msgstr "ส่งออกไม่ได้: {error}"
+
+#, python-brace-format
+msgid "Rapport enregistré : {path}"
+msgstr "บันทึกรายงานแล้ว: {path}"
+
+msgid "Funnel n'est pas coupé par omega-tail."
+msgstr "Funnel ไม่ได้ถูก omega-tail ตัด"
+
+#, python-brace-format
+msgid "remise en route prévue {when}"
+msgstr "กำหนดเปิดกลับ {when}"
+
+msgid "coupure totale"
+msgstr "ตัดทั้งหมด"
+
+#, python-brace-format
+msgid ""
+"Funnel coupé depuis {since} ({until}), ports {ports} ; sauvegarde {saved}"
+msgstr ""
+"Funnel ถูกตัดตั้งแต่ {since} ({until}) พอร์ต {ports}; ข้อมูลสำรอง {saved}"
+
+msgid "--minutes : 1 au moins."
+msgstr "--minutes: อย่างน้อย 1"
+
+msgid ""
+"La porte n'est pas active : les listes s'appliqueront à son activation."
+msgstr "ประตูไม่ได้ทำงาน: รายการต่าง ๆ จะมีผลเมื่อเปิดใช้งาน"
+
+msgid "Veille automatique : désactivée."
+msgstr "การเฝ้าระวังอัตโนมัติ: ปิดอยู่"
+
+msgid "ARRÊTÉE (signe de vie trop vieux)"
+msgstr "หยุดแล้ว (สัญญาณชีพเก่าเกินไป)"
+
+msgid "en marche"
+msgstr "กำลังทำงาน"
+
+#, python-brace-format
+msgid ""
+"Veille automatique : {state} ; dépassements récents {strikes}/3 ; prochaine "
+"coupure {minutes} min"
+msgstr ""
+"การเฝ้าระวังอัตโนมัติ: {state}; เกินเกณฑ์ล่าสุด {strikes}/3; "
+"การตัดครั้งถัดไป {minutes} นาที"
+
+msgid "Porte inactive : Funnel ne passe pas par elle."
+msgstr "ประตูไม่ทำงาน: Funnel ไม่ได้ผ่านประตู"
+
+#, python-brace-format
+msgid ""
+"Porte active depuis {since} : Funnel {port} -> 127.0.0.1:{gate} -> {backend}"
+msgstr ""
+"ประตูทำงานตั้งแต่ {since}: Funnel {port} -> 127.0.0.1:{gate} -> {backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions : {total} reçues, {refused} refusées avant chiffrement, {current}"
+" en cours"
+msgstr ""
+"การเชื่อมต่อ: ได้รับ {total}, ถูกปฏิเสธก่อนการเข้ารหัส {refused}, "
+"กำลังดำเนินอยู่ {current}"
+
+#, python-brace-format
+msgid "{days} jour(s) restants"
+msgstr "เหลือ {days} วัน"
+
+#, python-brace-format
+msgid "Certificat : {left}"
+msgstr "ใบรับรอง: {left}"
+
+#, python-brace-format
+msgid "Certificat valable encore {days} jour(s) : rien à faire."
+msgstr "ใบรับรองยังใช้ได้อีก {days} วัน: ไม่ต้องทำอะไร"
+
+msgid ""
+"HAProxy sans Lua : regroupements (JA4, AS, pays) indisponibles, porte du lot"
+" 4 seule."
+msgstr ""
+"HAProxy ไม่มี Lua: การจัดกลุ่ม (JA4, AS, ประเทศ) ไม่พร้อมใช้งาน "
+"มีเพียงประตูของล็อต 4"
+
+msgid "observation (rien n'est refusé par ces règles)"
+msgstr "สังเกตการณ์ (กฎเหล่านี้ไม่ปฏิเสธสิ่งใด)"
+
+#, python-brace-format
+msgid "ATTAQUE (retour au normal dans {seconds} s sans dépassement)"
+msgstr "โจมตี (กลับเป็นปกติใน {seconds} วินาทีหากไม่เกินเกณฑ์)"
+
+msgid "normal"
+msgstr "ปกติ"
+
+#, python-brace-format
+msgid "Regroupements : {mode} ; mode {attack}"
+msgstr "การจัดกลุ่ม: {mode}; โหมด {attack}"
+
+#, python-brace-format
+msgid ""
+"Mode attaque au-delà de {rate} connexions entrantes / s ; calme {minutes} "
+"min"
+msgstr ""
+"โหมดโจมตีเมื่อเกิน {rate} การเชื่อมต่อขาเข้า / วินาที; สงบ {minutes} นาที"
+
+msgid "référence prête"
+msgstr "ค่าอ้างอิงพร้อมแล้ว"
+
+#, python-brace-format
+msgid "apprentissage : encore {days} jour(s)"
+msgstr "การเรียนรู้: เหลืออีก {days} วัน"
+
+#, python-brace-format
+msgid "Empreintes habituelles : {known} ({learning})"
+msgstr "ลายนิ้วมือที่พบเป็นประจำ: {known} ({learning})"
+
+#, python-brace-format
+msgid "mise à jour il y a {days} jour(s)"
+msgstr "อัปเดตเมื่อ {days} วันที่แล้ว"
+
+msgid "absente (« omega-tail porte base »)"
+msgstr "ไม่มี (« omega-tail porte base »)"
+
+#, python-brace-format
+msgid "Base AS / pays : {base}"
+msgstr "ฐานข้อมูล AS / ประเทศ: {base}"
+
+#, python-brace-format
+msgid "Connexions refusées (7 j) : {found}"
+msgstr "การเชื่อมต่อที่ถูกปฏิเสธ (7 วัน): {found}"
+
+#, python-brace-format
+msgid "Connexions qui auraient été refusées (7 j) : {found}"
+msgstr "การเชื่อมต่อที่จะถูกปฏิเสธ (7 วัน): {found}"
+
+msgid "Empreintes les plus actives (connexions / 10 s, total) :"
+msgstr ""
+"ลายนิ้วมือที่มีความเคลื่อนไหวมากที่สุด (การเชื่อมต่อ / 10 วินาที, รวม):"
+
+msgid "AS les plus actifs (connexions / 10 s, total) :"
+msgstr "AS ที่มีความเคลื่อนไหวมากที่สุด (การเชื่อมต่อ / 10 วินาที, รวม):"
+
+msgid "Pays les plus actifs (connexions / 10 s, total) :"
+msgstr "ประเทศที่มีความเคลื่อนไหวมากที่สุด (การเชื่อมต่อ / 10 วินาที, รวม):"
+
+msgid "Tailscale n'est pas installé."
+msgstr "ยังไม่ได้ติดตั้ง Tailscale"
+
+#, python-brace-format
+msgid "Service tailscaled : {state}"
+msgstr "บริการ tailscaled: {state}"
+
+#, python-brace-format
+msgid "Version : {daemon} en marche, {client} installée"
+msgstr "เวอร์ชัน: {daemon} กำลังทำงาน, {client} ติดตั้งแล้ว"
+
+#, python-brace-format
+msgid "Nom : {name}"
+msgstr "ชื่อ: {name}"
+
+#, python-brace-format
+msgid "Adresses : {addresses}"
+msgstr "ที่อยู่: {addresses}"
+
+#, python-brace-format
+msgid "Opérateur : {operator}"
+msgstr "ผู้ควบคุม: {operator}"
+
+#, python-brace-format
+msgid "tailscaled : {cpu} d'un cœur, {memory}"
+msgstr "tailscaled: {cpu} ของหนึ่งคอร์, {memory}"
+
+#, python-brace-format
+msgid "Température : {value}"
+msgstr "อุณหภูมิ: {value}"
+
+msgid "PUBLICATION"
+msgstr "การเผยแพร่"
+
+msgid "rien de publié"
+msgstr "ไม่มีการเผยแพร่"
+
+msgid "ALERTES"
+msgstr "การแจ้งเตือน"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — LISTE NOIRE DE LA PORTE ({machine})"
+msgstr "OMEGA-TAIL {version} — บัญชีดำของประตู ({machine})"
+
+#, python-brace-format
+msgid ""
+"Établie le {date} : {count} entrée(s), la plus ancienne d'abord. L'export "
+"TXT se réimporte tel quel."
+msgstr ""
+"จัดทำเมื่อ {date}: {count} รายการ เก่าที่สุดก่อน ไฟล์ส่งออก TXT "
+"นำเข้าใหม่ได้ทันที"
+
+msgid "Adresse ou réseau"
+msgstr "ที่อยู่หรือเครือข่าย"
+
+msgid "Ajoutée le"
+msgstr "เพิ่มเมื่อ"
+
+msgid "Origine"
+msgstr "ที่มา"
+
+msgid "Liste noire - Omega-Tail"
+msgstr "บัญชีดำ - Omega-Tail"
+
+msgid "Passer d'un élément à l'autre (lignes d'un tableau, boutons)"
+msgstr "ย้ายจากรายการหนึ่งไปอีกรายการ (แถวของตาราง ปุ่ม)"
+
+msgid "Passer d'une zone de l'écran à l'autre"
+msgstr "ย้ายจากส่วนหนึ่งของหน้าจอไปอีกส่วน"
+
+msgid "Activer le bouton choisi ; dans le tableau des alertes, « Corriger »"
+msgstr "เปิดใช้ปุ่มที่เลือก; ในตารางการแจ้งเตือนคือ « แก้ไข »"
+
+msgid "Entrée / Clic"
+msgstr "Enter / คลิก"
+
+msgid "Revenir à l'écran précédent (au menu : quitter)"
+msgstr "กลับไปหน้าจอก่อนหน้า (ที่เมนู: ออก)"
+
+msgid "Cette aide, depuis n'importe quel écran"
+msgstr "ความช่วยเหลือนี้ จากหน้าจอใดก็ได้"
+
+msgid "Réglages, depuis n'importe quel écran"
+msgstr "การตั้งค่า จากหน้าจอใดก็ได้"
+
+msgid "Thème suivant (enregistré)"
+msgstr "ธีมถัดไป (บันทึกไว้)"
+
+msgid "Redessiner l'écran, afficher la taille du terminal et relire l'état"
+msgstr "วาดหน้าจอใหม่ แสดงขนาดเทอร์มินัล และอ่านสถานะใหม่"
+
+msgid ""
+"Commandes : thème, capture d'écran (SVG, dans le dossier des captures), "
+"quitter"
+msgstr "คำสั่ง: ธีม ภาพหน้าจอ (SVG ในโฟลเดอร์ภาพหน้าจอ) ออก"
+
+msgid "Ctrl+P"
+msgstr "Ctrl+P"
+
+msgid ""
+"omega-tail pilote Tailscale sur cette machine et la protège quand elle publie un service sur Internet par Tailscale Funnel.\n"
+"\n"
+"1. [b]Tableau de bord[/b] : l'état de Tailscale, de la machine et de ce qui est publié, puis les alertes. Choisissez une alerte et « Corriger » : omega-tail ouvre l'écran qui la corrige.\n"
+"2. [b]Service tailscaled[/b] : démarrer, arrêter ou redémarrer le service (par exemple pour appliquer une mise à jour déjà installée).\n"
+"3. [b]Connexion et réglages[/b] : connexion, compte et réglages de Tailscale, vérifiés avant d'être appliqués.\n"
+"4. [b]Publication[/b] : ce que Serve et Funnel publient ; publier, retirer, essayer, restaurer.\n"
+"5. [b]Journaux[/b] : ce que tailscaled a écrit, filtrable et exportable.\n"
+"6. [b]Survie[/b] : confiner tailscaled, et couper Funnel un moment (puis le remettre tout seul) ou totalement quand la machine est attaquée.\n"
+"7. [b]Pare-feu Funnel[/b] : une porte qui refuse les connexions abusives avant tout chiffrement ; [b]Attaques et décisions[/b] pour voir et décider en direct.\n"
+"\n"
+"La [b]bande d'état[/b] (cadre « État », sous le titre de chaque écran) résume tout : service, consommation de tailscaled, température, mémoire vive utilisée (RAM), Funnel, pare-feu (actif, arrêté, inactif), veille automatique (active, arrêtée, inactive) et connexion. Elle est relue toutes les 5 secondes. La taille de la fenêtre est affichée à côté du thème, en haut ; « r » la relit après un redimensionnement.\n"
+"\n"
+"Chaque action qui change la machine montre d'abord sa commande ; le mot de passe sudo se saisit dans le terminal, l'interface revient ensuite. Rien n'est jamais lancé en arrière-plan sans vous."
+msgstr ""
+"omega-tail ควบคุม Tailscale บนเครื่องนี้และป้องกันเครื่องเมื่อเผยแพร่บริการสู่อินเทอร์เน็ตผ่าน Tailscale Funnel\n"
+"\n"
+"1. [b]แดชบอร์ด[/b]: สถานะของ Tailscale เครื่อง และสิ่งที่เผยแพร่ ตามด้วยการแจ้งเตือน เลือกการแจ้งเตือนแล้วกด « แก้ไข »: omega-tail จะเปิดหน้าจอที่แก้ไขปัญหานั้น\n"
+"2. [b]บริการ tailscaled[/b]: เริ่ม หยุด หรือรีสตาร์ทบริการ (เช่น เพื่อนำอัปเดตที่ติดตั้งแล้วไปใช้)\n"
+"3. [b]การเชื่อมต่อและการตั้งค่า[/b]: การเชื่อมต่อ บัญชี และการตั้งค่าของ Tailscale ซึ่งตรวจสอบก่อนนำไปใช้\n"
+"4. [b]การเผยแพร่[/b]: สิ่งที่ Serve และ Funnel เผยแพร่; เผยแพร่ ถอน ทดสอบ กู้คืน\n"
+"5. [b]ล็อก[/b]: สิ่งที่ tailscaled เขียนไว้ กรองและส่งออกได้\n"
+"6. [b]การอยู่รอด[/b]: จำกัดทรัพยากรของ tailscaled และตัด Funnel ชั่วคราว (แล้วเปิดกลับเอง) หรือตัดทั้งหมดเมื่อเครื่องถูกโจมตี\n"
+"7. [b]ไฟร์วอลล์ Funnel[/b]: ประตูที่ปฏิเสธการเชื่อมต่อที่ผิดปกติก่อนการเข้ารหัสใด ๆ; [b]การโจมตีและการตัดสินใจ[/b] เพื่อดูและตัดสินใจแบบสด\n"
+"\n"
+"[b]แถบสถานะ[/b] (กรอบ « สถานะ » ใต้ชื่อของแต่ละหน้าจอ) สรุปทุกอย่าง: บริการ การใช้ทรัพยากรของ tailscaled อุณหภูมิ หน่วยความจำที่ใช้ (RAM) Funnel ไฟร์วอลล์ (ใช้งาน หยุด ไม่ทำงาน) การเฝ้าระวังอัตโนมัติ (ใช้งาน หยุด ไม่ทำงาน) และการเชื่อมต่อ อ่านใหม่ทุก 5 วินาที ขนาดหน้าต่างแสดงข้างธีมที่ด้านบน; « r » อ่านใหม่หลังปรับขนาด\n"
+"\n"
+"ทุกการกระทำที่เปลี่ยนเครื่องจะแสดงคำสั่งก่อน; ป้อนรหัสผ่าน sudo ในเทอร์มินัล แล้วอินเทอร์เฟซจะกลับมา ไม่มีสิ่งใดถูกรันเบื้องหลังโดยที่คุณไม่รู้"
+
+msgid "Tableau de bord"
+msgstr "แดชบอร์ด"
+
+msgid ""
+"Trois cadres et une liste d'alertes.\n"
+"- [b]Tailscale[/b] : service, état de la connexion, version (en marche et installée), nom de la machine, adresses, compte, appareils en ligne, expiration de la clé, opérateur.\n"
+"- [b]Tailscale[/b] dit aussi si la machine se propose comme nœud de sortie, lequel elle utilise, et les sous-réseaux qu'elle annonce.\n"
+"- [b]Machine[/b] : CPU de toute la machine, charge, température, mémoire, CPU et mémoire de tailscaled (en % d'un cœur), confinement, puis l'état des protections : Funnel, pare-feu (porte, mode attaque), liste noire, veille, bouclier du port WireGuard.\n"
+"- Libellés dans la couleur d'accent du thème, valeurs en vert, orange ou rouge selon les seuils (CPU machine 70 / 90 %, charge 1 / 2 par cœur, température 75 / 85 °C, mémoire 85 / 95 %, tailscaled 50 / 90 % d'un cœur, liste noire 25 000 / 50 000 entrées).\n"
+"- [b]Publication[/b] : chaque port publié, pour Internet (Funnel) ou le tailnet seul (Serve), son mode et sa cible.\n"
+"- [b]Alertes[/b] : de la plus grave à la moins grave. « Corriger » (ou Entrée) ouvre l'écran qui corrige ; un écran pas encore construit le dit.\n"
+"\n"
+"Alertes possibles : service arrêté ; mise à jour installée mais pas appliquée (redémarrer le service) ; compte à connecter ; clé qui expire ; Funnel publié sans protection (tailscaled fait le chiffrement de chaque visiteur : une rafale peut saturer la machine) ; température élevée ; tailscaled trop gourmand ; tailscaled non confiné ; vous n'êtes pas opérateur ; liste noire de plus de 25 000 entrées ; messages de Tailscale lui-même.\n"
+"\n"
+"La bande d'état en haut de chaque écran sépare [b]CPU machine[/b] (toute la machine, en % de tous ses cœurs) et [b]CPU tailscaled[/b] (le seul service, en % d'un cœur)."
+msgstr ""
+"สามกรอบและรายการการแจ้งเตือน\n"
+"- [b]Tailscale[/b]: บริการ สถานะการเชื่อมต่อ เวอร์ชัน (ที่ทำงานอยู่และที่ติดตั้ง) ชื่อเครื่อง ที่อยู่ บัญชี อุปกรณ์ที่ออนไลน์ วันหมดอายุของคีย์ ผู้ควบคุม\n"
+"- [b]Tailscale[/b] ยังบอกด้วยว่าเครื่องเสนอตัวเป็นโหนดทางออกหรือไม่ ใช้โหนดทางออกใด และซับเน็ตที่ประกาศ\n"
+"- [b]เครื่อง[/b]: CPU ของทั้งเครื่อง โหลด อุณหภูมิ หน่วยความจำ CPU และหน่วยความจำของ tailscaled (เป็น % ของหนึ่งคอร์) การจำกัดทรัพยากร แล้วตามด้วยสถานะของการป้องกัน: Funnel ไฟร์วอลล์ (ประตู โหมดโจมตี) บัญชีดำ การเฝ้าระวัง โล่ป้องกันพอร์ต WireGuard\n"
+"- ป้ายกำกับใช้สีเน้นของธีม ค่าเป็นสีเขียว ส้ม หรือแดงตามเกณฑ์ (CPU เครื่อง 70 / 90 %, โหลด 1 / 2 ต่อคอร์, อุณหภูมิ 75 / 85 °C, หน่วยความจำ 85 / 95 %, tailscaled 50 / 90 % ของหนึ่งคอร์, บัญชีดำ 25 000 / 50 000 รายการ)\n"
+"- [b]การเผยแพร่[/b]: แต่ละพอร์ตที่เผยแพร่ สำหรับอินเทอร์เน็ต (Funnel) หรือเฉพาะ tailnet (Serve) โหมดและปลายทาง\n"
+"- [b]การแจ้งเตือน[/b]: จากร้ายแรงที่สุดไปน้อยที่สุด « แก้ไข » (หรือ Enter) เปิดหน้าจอที่แก้ไข; หน้าจอที่ยังไม่ได้สร้างจะแจ้งให้ทราบ\n"
+"\n"
+"การแจ้งเตือนที่เป็นไปได้: บริการหยุดอยู่; ติดตั้งอัปเดตแล้วแต่ยังไม่นำไปใช้ (รีสตาร์ทบริการ); ต้องเข้าสู่ระบบบัญชี; คีย์ใกล้หมดอายุ; Funnel เผยแพร่โดยไม่มีการป้องกัน (tailscaled เข้ารหัสให้ผู้เยี่ยมชมทุกราย: การยิงถี่ ๆ อาจทำให้เครื่องอิ่มตัว); อุณหภูมิสูง; tailscaled ใช้ทรัพยากรมากเกินไป; tailscaled ไม่ถูกจำกัดทรัพยากร; คุณไม่ใช่ผู้ควบคุม; บัญชีดำเกิน 25 000 รายการ; ข้อความจาก Tailscale เอง\n"
+"\n"
+"แถบสถานะด้านบนของแต่ละหน้าจอแยก [b]CPU เครื่อง[/b] (ทั้งเครื่อง เป็น % ของทุกคอร์) และ [b]CPU tailscaled[/b] (เฉพาะบริการนี้ เป็น % ของหนึ่งคอร์)"
+
+msgid "Service tailscaled"
+msgstr "บริการ tailscaled"
+
+msgid ""
+"L'état du service vu par systemd : actif ou non, lancé au démarrage, depuis quand, mémoire ; la version en marche et la version installée ; la commande de lancement ; les fichiers d'ajout (affichés, modifiés seulement par « Corriger le démarrage », sur votre accord) ; le confinement.\n"
+"\n"
+"[b]Démarrer[/b], [b]Arrêter[/b], [b]Redémarrer[/b] : la commande s'affiche avant d'être lancée.\n"
+"[b]Garde-fou[/b] : si votre session passe par Tailscale (SSH par le tailnet), Arrêter vous couperait sans pouvoir relancer : omega-tail demande une seconde confirmation. Redémarrer fige la session quelques secondes, puis elle revient en général.\n"
+"\n"
+"[b]Corriger le démarrage[/b] (affiché seulement si besoin) : un de vos fichiers d'ajout lance « tailscale up » après le démarrage. Dès qu'un réglage change ensuite (opérateur, nom, routes…), Tailscale refuse ce « up » incomplet ; systemd arrête alors tailscaled et abandonne après cinq essais : la machine sort du tailnet au premier redémarrage. La correction ajoute « - » devant la commande (son refus n'arrête plus le service ; vos réglages restent gardés par Tailscale), et rien d'autre ; l'original est gardé dans var/survie. Avant tout redémarrage qu'il lance (Redémarrer, confinement, opérateur), omega-tail fait d'abord cette correction, commandes montrées."
+msgstr ""
+"สถานะของบริการตามที่ systemd เห็น: ทำงานหรือไม่ เริ่มตอนบูตหรือไม่ ทำงานมาตั้งแต่เมื่อใด หน่วยความจำ; เวอร์ชันที่ทำงานอยู่และเวอร์ชันที่ติดตั้ง; คำสั่งเริ่มต้น; ไฟล์เสริม (แสดงให้เห็น และแก้ไขเฉพาะผ่าน « แก้ไขการเริ่มต้น » เมื่อคุณยินยอม); การจำกัดทรัพยากร\n"
+"\n"
+"[b]เริ่ม[/b], [b]หยุด[/b], [b]รีสตาร์ท[/b]: คำสั่งจะแสดงก่อนรัน\n"
+"[b]กลไกป้องกัน[/b]: หากเซสชันของคุณผ่าน Tailscale (SSH ผ่าน tailnet) การหยุดจะตัดคุณออกโดยเริ่มใหม่ไม่ได้: omega-tail จึงขอการยืนยันครั้งที่สอง การรีสตาร์ททำให้เซสชันค้างไม่กี่วินาที แล้วโดยทั่วไปจะกลับมา\n"
+"\n"
+"[b]แก้ไขการเริ่มต้น[/b] (แสดงเฉพาะเมื่อจำเป็น): ไฟล์เสริมไฟล์หนึ่งของคุณรัน « tailscale up » หลังการเริ่มต้น เมื่อการตั้งค่าเปลี่ยนในภายหลัง (ผู้ควบคุม ชื่อ เส้นทาง…) Tailscale จะปฏิเสธ « up » ที่ไม่ครบนี้; systemd จึงหยุด tailscaled และเลิกพยายามหลังห้าครั้ง: เครื่องหลุดออกจาก tailnet เมื่อรีสตาร์ทครั้งแรก การแก้ไขจะเพิ่ม « - » หน้าคำสั่ง (การปฏิเสธจะไม่หยุดบริการอีก; Tailscale ยังเก็บการตั้งค่าของคุณไว้) และไม่ทำอย่างอื่น; ต้นฉบับเก็บไว้ใน var/survie ก่อนการรีสตาร์ททุกครั้งที่ omega-tail สั่ง (รีสตาร์ท การจำกัดทรัพยากร ผู้ควบคุม) omega-tail จะทำการแก้ไขนี้ก่อน โดยแสดงคำสั่ง"
+
+msgid "Connexion et réglages"
+msgstr "การเชื่อมต่อและการตั้งค่า"
+
+msgid ""
+"L'état de la connexion (connecté ou non, compte, tailnet, nom et adresses de la machine, expiration de la clé, opérateur).\n"
+"\n"
+"[b]Se connecter[/b] / [b]Se déconnecter[/b] : la machine rejoint ou quitte le tailnet ; le compte reste enregistré. [b]Ajouter un compte[/b] : Tailscale affiche dans le terminal l'adresse à ouvrir pour s'identifier. [b]Changer de compte[/b] : choisissez un compte déjà connu de la machine. [b]Déconnexion définitive[/b] : la machine est retirée du compte (clé révoquée) ; il faut taper son nom pour confirmer.\n"
+"[b]Garde-fou[/b] : si votre session passe par Tailscale, se déconnecter la coupe sans retour possible ; omega-tail le dit avant.\n"
+"\n"
+"[b]Réglages[/b] (ceux de tailscale set), chacun avec sa phrase d'explication : nom de la machine, surnom, routes, DNS du tailnet, bouclier, filtrage avec état, mode netfilter, nœud de sortie, accès au réseau local, proposer la machine comme nœud de sortie, sous-réseaux annoncés, SSH Tailscale, interface web, mises à jour, relais pair, opérateur. Les valeurs sont vérifiées ; pendant la saisie, un cadre au-dessus des boutons montre avant → après et la commande ; « Appliquer » la lance dans le terminal (sans sudo si vous êtes opérateur ; changer l'opérateur demande sudo). Un avertissement s'affiche quand un changement peut couper une session passée par Tailscale (bouclier, SSH Tailscale coupé, nœud de sortie, netfilter). Après application, le cadre garde le résultat, vérifié sur les valeurs relues (✔ pris en compte, ✖ non). « Relire » reprend les valeurs actuelles.\n"
+"\n"
+"[b]Nœud de sortie[/b] : la liste ne propose que les machines du tailnet qui se proposent comme nœud de sortie (et approuvées dans la console d'administration de Tailscale) ; s'il n'y en a aucune, l'écran le dit.\n"
+"[b]Transfert IP[/b] : une machine qui se propose comme nœud de sortie ou annonce des sous-réseaux doit faire suivre les paquets. S'il est désactivé, un avertissement et le bouton « Activer le transfert IP » apparaissent : un fichier à part (/etc/sysctl.d/99-omega-tail-forwarding.conf), appliqué tout de suite et relu au démarrage (systemd, OpenRC, runit). Pour annuler : supprimer ce fichier puis redémarrer."
+msgstr ""
+"สถานะการเชื่อมต่อ (เชื่อมต่อหรือไม่ บัญชี tailnet ชื่อและที่อยู่ของเครื่อง วันหมดอายุของคีย์ ผู้ควบคุม)\n"
+"\n"
+"[b]เข้าสู่ระบบ[/b] / [b]ออกจากระบบ[/b]: เครื่องเข้าร่วมหรือออกจาก tailnet; บัญชียังคงบันทึกไว้ [b]เพิ่มบัญชี[/b]: Tailscale แสดงที่อยู่ที่ต้องเปิดเพื่อยืนยันตัวตนในเทอร์มินัล [b]สลับบัญชี[/b]: เลือกบัญชีที่เครื่องรู้จักอยู่แล้ว [b]ออกจากระบบถาวร[/b]: เครื่องถูกนำออกจากบัญชี (เพิกถอนคีย์); ต้องพิมพ์ชื่อเครื่องเพื่อยืนยัน\n"
+"[b]กลไกป้องกัน[/b]: หากเซสชันของคุณผ่าน Tailscale การออกจากระบบจะตัดเซสชันโดยกลับมาไม่ได้; omega-tail จะแจ้งก่อน\n"
+"\n"
+"[b]การตั้งค่า[/b] (ของ tailscale set) แต่ละรายการมีประโยคอธิบาย: ชื่อเครื่อง ชื่อเล่น เส้นทาง DNS ของ tailnet โล่ป้องกัน การกรองแบบมีสถานะ โหมด netfilter โหนดทางออก การเข้าถึงเครือข่ายภายใน เสนอเครื่องเป็นโหนดทางออก ซับเน็ตที่ประกาศ SSH ของ Tailscale อินเทอร์เฟซเว็บ การอัปเดต รีเลย์เพียร์ ผู้ควบคุม ค่าต่าง ๆ ถูกตรวจสอบ; ระหว่างป้อนค่า กรอบเหนือปุ่มจะแสดง ก่อน → หลัง และคำสั่ง; « นำไปใช้ » รันคำสั่งในเทอร์มินัล (ไม่ต้องใช้ sudo หากคุณเป็นผู้ควบคุม; การเปลี่ยนผู้ควบคุมต้องใช้ sudo) คำเตือนจะแสดงเมื่อการเปลี่ยนแปลงอาจตัดเซสชันที่ผ่าน Tailscale (โล่ป้องกัน ปิด SSH ของ Tailscale โหนดทางออก netfilter) หลังนำไปใช้ กรอบจะเก็บผลลัพธ์ไว้ โดยตรวจสอบกับค่าที่อ่านกลับ (✔ มีผลแล้ว, ✖ ไม่มีผล) « อ่านใหม่ » ดึงค่าปัจจุบัน\n"
+"\n"
+"[b]โหนดทางออก[/b]: รายการแสดงเฉพาะเครื่องใน tailnet ที่เสนอตัวเป็นโหนดทางออก (และได้รับอนุมัติในคอนโซลผู้ดูแลระบบของ Tailscale); หากไม่มีเลย หน้าจอจะแจ้งให้ทราบ\n"
+"[b]การส่งต่อ IP[/b]: เครื่องที่เสนอตัวเป็นโหนดทางออกหรือประกาศซับเน็ตต้องส่งต่อแพ็กเก็ต หากปิดอยู่ จะมีคำเตือนและปุ่ม « เปิดการส่งต่อ IP » ปรากฏ: ไฟล์แยกต่างหาก (/etc/sysctl.d/99-omega-tail-forwarding.conf) ที่มีผลทันทีและอ่านใหม่ตอนบูต (systemd, OpenRC, runit) หากต้องการยกเลิก: ลบไฟล์นี้แล้วรีสตาร์ท"
+
+msgid "Publication"
+msgstr "การเผยแพร่"
+
+msgid ""
+"Tout ce que la machine publie : port, pour qui (le tailnet seul avec Serve, Internet avec Funnel), mode, chemin, cible, et si la porte du pare-feu protège le port.\n"
+"\n"
+"[b]Publier[/b] : un service local (un port, ou http://127.0.0.1:PORT), pour le tailnet ou pour Internet (Funnel n'ouvre que les ports 443, 8443 et 10000), en HTTPS, HTTP, TCP ou TLS terminé, sur un chemin. Pour Internet, le plus sûr est HTTPS sur 443 puis « Activer la protection » (Pare-feu Funnel).\n"
+"[b]Retirer[/b] : la ligne choisie (un chemin seul si le port en publie d'autres). Le port protégé par la porte se retire par « Désactiver la protection ».\n"
+"[b]Suspendre Funnel[/b] / [b]Rétablir Funnel[/b] : coupe les ports ouverts à Internet sans perdre leur configuration (même mécanisme que le disjoncteur de Survie), puis les remet à l'identique.\n"
+"[b]Essai de bout en bout[/b] : une vraie connexion, comme un visiteur (par Internet pour un port public, par le tailnet sinon) : réponse, temps, certificat (émetteur, échéance) et version de TLS.\n"
+"[b]Sauvegardes[/b] : l'état d'avant chaque changement (publication, pare-feu, disjoncteur), les 50 plus récentes ; « Restaurer » remet celle choisie, après avoir sauvegardé l'état actuel.\n"
+"\n"
+"Chaque changement est vérifié. Si le résultat n'est pas celui voulu, la publication est reconstruite (remise à zéro puis chaque point recréé) ; si cela échoue aussi, l'état d'avant est remis. Changer la publication demande d'être opérateur de Tailscale."
+msgstr ""
+"ทุกสิ่งที่เครื่องเผยแพร่: พอร์ต สำหรับใคร (เฉพาะ tailnet ด้วย Serve, อินเทอร์เน็ตด้วย Funnel) โหมด พาธ ปลายทาง และประตูของไฟร์วอลล์ป้องกันพอร์ตนั้นหรือไม่\n"
+"\n"
+"[b]เผยแพร่[/b]: บริการภายในเครื่อง (พอร์ต หรือ http://127.0.0.1:PORT) สำหรับ tailnet หรือสำหรับอินเทอร์เน็ต (Funnel เปิดได้เฉพาะพอร์ต 443, 8443 และ 10000) ผ่าน HTTPS, HTTP, TCP หรือ TLS ที่สิ้นสุดที่เครื่อง บนพาธหนึ่ง สำหรับอินเทอร์เน็ต วิธีที่ปลอดภัยที่สุดคือ HTTPS บน 443 แล้ว « เปิดการป้องกัน » (ไฟร์วอลล์ Funnel)\n"
+"[b]ถอน[/b]: บรรทัดที่เลือก (เฉพาะพาธนั้นหากพอร์ตเผยแพร่พาธอื่นด้วย) พอร์ตที่ประตูป้องกันอยู่ถอนได้ด้วย « ปิดการป้องกัน »\n"
+"[b]พัก Funnel[/b] / [b]คืนค่า Funnel[/b]: ตัดพอร์ตที่เปิดสู่อินเทอร์เน็ตโดยไม่สูญเสียการกำหนดค่า (กลไกเดียวกับเบรกเกอร์ของการอยู่รอด) แล้วคืนให้เหมือนเดิมทุกประการ\n"
+"[b]ทดสอบแบบต้นทางถึงปลายทาง[/b]: การเชื่อมต่อจริงเหมือนผู้เยี่ยมชม (ผ่านอินเทอร์เน็ตสำหรับพอร์ตสาธารณะ มิฉะนั้นผ่าน tailnet): การตอบกลับ เวลา ใบรับรอง (ผู้ออก วันหมดอายุ) และเวอร์ชัน TLS\n"
+"[b]การสำรอง[/b]: สถานะก่อนการเปลี่ยนแปลงแต่ละครั้ง (การเผยแพร่ ไฟร์วอลล์ เบรกเกอร์) 50 รายการล่าสุด; « กู้คืน » คืนรายการที่เลือก หลังจากสำรองสถานะปัจจุบันแล้ว\n"
+"\n"
+"ทุกการเปลี่ยนแปลงถูกตรวจสอบ หากผลลัพธ์ไม่ตรงตามที่ต้องการ การเผยแพร่จะถูกสร้างใหม่ (รีเซ็ตแล้วสร้างแต่ละจุดใหม่); หากยังล้มเหลว จะคืนสถานะก่อนหน้า การเปลี่ยนการเผยแพร่ต้องเป็นผู้ควบคุมของ Tailscale"
+
+msgid "Journaux"
+msgstr "ล็อก"
+
+msgid ""
+"Le journal de tailscaled (journalctl) ou celui de la porte. Choisissez le nombre de lignes, filtrez par texte. Chaque information a sa couleur, prise dans le thème : la date, la machine en grisé, le processus, puis la catégorie du message, une couleur par famille (contrôle et connexion, réseau et relais, DNS, moteur WireGuard) ; les adresses en gras ; le message en rouge s'il signale une erreur, en orange pour un avertissement. Pour la porte : l'adresse du visiteur, le motif de refus en rouge, le regroupement en orange, puis l'AS et le pays. « Exporter » enregistre les lignes affichées dans le dossier des exports ; « Voir les exports » les ouvre (voir Rapport).\n"
+"Si rien ne s'affiche : votre compte doit pouvoir lire le journal du système (groupe systemd-journal, adm ou wheel selon la distribution)."
+msgstr ""
+"ล็อกของ tailscaled (journalctl) หรือล็อกของประตู เลือกจำนวนบรรทัด กรองตามข้อความ ข้อมูลแต่ละส่วนมีสีของตัวเองซึ่งนำมาจากธีม: วันที่ ชื่อเครื่องเป็นสีจาง โปรเซส แล้วตามด้วยหมวดของข้อความ หนึ่งสีต่อหนึ่งกลุ่ม (การควบคุมและการเชื่อมต่อ เครือข่ายและรีเลย์ DNS เอนจิน WireGuard); ที่อยู่เป็นตัวหนา; ข้อความเป็นสีแดงหากแจ้งข้อผิดพลาด เป็นสีส้มหากเป็นคำเตือน สำหรับประตู: ที่อยู่ของผู้เยี่ยมชม เหตุผลการปฏิเสธเป็นสีแดง การจัดกลุ่มเป็นสีส้ม แล้วตามด้วย AS และประเทศ « ส่งออก » บันทึกบรรทัดที่แสดงลงในโฟลเดอร์การส่งออก; « ดูไฟล์ส่งออก » เปิดดู (ดู รายงาน)\n"
+"หากไม่มีอะไรแสดง: บัญชีของคุณต้องอ่านล็อกของระบบได้ (กลุ่ม systemd-journal, adm หรือ wheel ตามดิสทริบิวชัน)"
+
+msgid "Devenir opérateur"
+msgstr "เป็นผู้ควบคุม"
+
+msgid ""
+"Par défaut, chaque réglage de Tailscale demande sudo. Devenir opérateur (une"
+" seule fois, par sudo) permet à votre compte de régler Tailscale sans sudo. "
+"Le bouton apparaît dans le tableau de bord tant que ce n'est pas fait ; dans"
+" « Connexion et réglages », le bouton « Mon compte » met votre nom dans le "
+"champ Opérateur, puis « Appliquer ». Pour annuler : vider le champ et "
+"appliquer, ou sudo tailscale set --operator="
+msgstr ""
+"โดยค่าเริ่มต้น ทุกการตั้งค่าของ Tailscale ต้องใช้ sudo การเป็นผู้ควบคุม "
+"(ครั้งเดียว ผ่าน sudo) ทำให้บัญชีของคุณตั้งค่า Tailscale ได้โดยไม่ต้องใช้ "
+"sudo ปุ่มนี้จะปรากฏบนแดชบอร์ดจนกว่าจะทำเสร็จ; ใน « การเชื่อมต่อและการตั้งค่า"
+" » ปุ่ม « บัญชีของฉัน » ใส่ชื่อของคุณในช่องผู้ควบคุม แล้วกด « นำไปใช้ » "
+"หากต้องการยกเลิก: ล้างช่องแล้วนำไปใช้ หรือ sudo tailscale set --operator="
+
+msgid "Survie"
+msgstr "การอยู่รอด"
+
+msgid ""
+"Garder la machine debout sous attaque : le confinement, le disjoncteur et la veille automatique, toujours proposés, jamais imposés.\n"
+"\n"
+"[b]Confinement de tailscaled[/b] : un fichier d'ajout systemd à part (50-omega-tail.conf) plafonne tailscaled (par exemple un cœur entier sur une machine à 4 fils), baisse son poids et sa priorité. Sous attaque, il ne peut plus prendre toute la machine : l'administration et les autres services restent utilisables. Option : donner la priorité à l'accès SSH. Votre propre override.conf n'est jamais modifié ; « Retirer le confinement » supprime seulement les fichiers d'omega-tail. Le plafond s'applique au rechargement ; la priorité au redémarrage de tailscaled (case cochée par défaut).\n"
+"\n"
+"[b]Disjoncteur Funnel[/b] : quand tailscaled reste au-dessus du seuil CPU pendant toute la durée choisie (80 % d'un cœur pendant 60 s par défaut), ou quand la température atteint son seuil (85 °C), omega-tail ouvert vous propose :\n"
+"- [b]Couper 10 min[/b] (durée réglable) : les ports ouverts à Internet sont coupés, puis remis en route automatiquement, à l'identique, même si omega-tail est fermé (minuterie systemd, sudo une fois) ;\n"
+"- [b]Coupure totale[/b] : Funnel reste coupé jusqu'à « Rétablir maintenant » ;\n"
+"- [b]Pas maintenant[/b] : plus de proposition pendant 15 minutes.\n"
+"Le tailnet (Serve, SSH par Tailscale) n'est jamais coupé. La publication est sauvegardée avant chaque coupure (var/funnel/sauvegardes/) et la remise en route est vérifiée identique. Un port Funnel en TCP (celui de la porte) garde son autorisation Funnel après « off » : la coupure repart alors de zéro avec les seuls points du tailnet et vérifie que plus rien n'est ouvert à Internet. Le disjoncteur demande d'être opérateur de Tailscale : la remise en route tourne sous votre compte, jamais en root.\n"
+"En ligne de commande : omega-tail disjoncteur etat | couper --minutes 10 | couper --totale | retablir.\n"
+"\n"
+"[b]Veille automatique[/b] (désactivée par défaut) : pour une machine sans personne devant. Un service tourne en permanence sous votre compte, même omega-tail fermé (systemd, OpenRC ou runit). Un dépassement : un seuil du disjoncteur tenu. 3 dépassements dans la fenêtre (10 min, réglable) : la veille coupe Funnel seule, 15 min la première fois, 30 min la deuxième, puis 1 h à chaque fois, et le remet en route seule, à l'identique. Retour à 15 min après 24 h sans coupure ; après chaque remise en route, 2 min de calme avant de mesurer de nouveau. Seul Funnel est coupé : tailscaled, le tailnet et SSH restent joignables. Quand la veille tourne, omega-tail ouvert ne propose plus la coupure (elle agit seule). Les 6 dernières lignes de son journal s'affichent dans Survie (le fichier var/veille/journal.log garde 512 Ko, puis passe en journal.log.1) ; une veille activée mais arrêtée est signalée au tableau de bord.\n"
+"En ligne de commande : omega-tail veille etat.\n"
+"\n"
+"[b]Bouclier du port WireGuard[/b] (bouton dans Survie) : tailscaled dépense environ un cœur de processeur pour 100 000 paquets par seconde reçus sur son port, même invalides, Funnel ouvert ou non. Le bouclier est une table nftables posée devant lui, sur les cartes réseau matérielles : les pairs connus (ceux à qui tailscaled écrit, appris par le noyau) ne sont jamais limités ; les poignées de main sont limitées à 20 par seconde et par source ; les autres sources ont un budget (500 paquets par seconde chacune, 5 000 en tout) ; les paquets qui ne sont pas du WireGuard sont refusés. Mesuré : un flot qui prenait un cœur entier à tailscaled n'en prend plus que 1 %.\n"
+"- [b]Observation[/b] d'abord : rien n'est refusé, les compteurs disent ce qui l'aurait été ; « Passer en actif » quand ils ne montrent que des attaques.\n"
+"- [b]Qui le pose[/b] : omega-fire 3.7.0 ou plus récent s'il est relié par omega-connect (sa liste des règles l'affiche avec l'origine omega-tail) ; sinon omega-tail lui-même, même si ufw ou firewalld sont présents. C'est la même table dans les deux cas : « Confier à omega-fire » ou, dans omega-fire, « Reprendre la gestion » la fait changer de mains sans la toucher ; si omega-fire n'est plus relié, « Reprendre la gestion » la rend à omega-tail.\n"
+"- Un service (omega-bouclier-wg) la remet en place à chaque démarrage et écrit son état chaque minute.\n"
+"- Si un autre outil efface la table (nft flush ruleset, pare-feu relancé), le tableau de bord et la veille le signalent ; elle n'est jamais reposée seule : « Reposer ».\n"
+"- Retiré depuis omega-fire : omega-tail l'affiche."
+msgstr ""
+"ทำให้เครื่องยังทำงานได้ขณะถูกโจมตี: การจำกัดทรัพยากร เบรกเกอร์ และการเฝ้าระวังอัตโนมัติ ซึ่งเป็นเพียงข้อเสนอเสมอ ไม่เคยถูกบังคับ\n"
+"\n"
+"[b]การจำกัดทรัพยากรของ tailscaled[/b]: ไฟล์เสริม systemd แยกต่างหาก (50-omega-tail.conf) กำหนดเพดานให้ tailscaled (เช่น หนึ่งคอร์เต็มบนเครื่อง 4 เธรด) ลดน้ำหนักและลำดับความสำคัญของมัน เมื่อถูกโจมตี มันจะใช้ทั้งเครื่องไม่ได้อีก: การดูแลระบบและบริการอื่นยังใช้งานได้ ตัวเลือก: ให้ความสำคัญกับการเข้าถึง SSH ไฟล์ override.conf ของคุณเองไม่เคยถูกแก้ไข; « ถอนการจำกัดทรัพยากร » ลบเฉพาะไฟล์ของ omega-tail เพดานมีผลเมื่อโหลดใหม่; ลำดับความสำคัญมีผลเมื่อรีสตาร์ท tailscaled (ช่องนี้ถูกเลือกโดยค่าเริ่มต้น)\n"
+"\n"
+"[b]เบรกเกอร์ Funnel[/b]: เมื่อ tailscaled อยู่เหนือเกณฑ์ CPU ตลอดระยะเวลาที่เลือก (ค่าเริ่มต้น 80 % ของหนึ่งคอร์เป็นเวลา 60 วินาที) หรือเมื่ออุณหภูมิถึงเกณฑ์ (85 °C) omega-tail ที่เปิดอยู่จะเสนอให้คุณ:\n"
+"- [b]ตัด 10 นาที[/b] (ปรับระยะเวลาได้): พอร์ตที่เปิดสู่อินเทอร์เน็ตถูกตัด แล้วเปิดกลับอัตโนมัติ เหมือนเดิมทุกประการ แม้ omega-tail ปิดอยู่ (ตัวจับเวลา systemd, sudo หนึ่งครั้ง);\n"
+"- [b]ตัดทั้งหมด[/b]: Funnel ถูกตัดจนกว่าจะกด « คืนค่าตอนนี้ »;\n"
+"- [b]ไม่ใช่ตอนนี้[/b]: ไม่เสนออีกเป็นเวลา 15 นาที\n"
+"tailnet (Serve, SSH ผ่าน Tailscale) ไม่เคยถูกตัด การเผยแพร่ถูกสำรองก่อนการตัดแต่ละครั้ง (var/funnel/sauvegardes/) และการเปิดกลับถูกตรวจสอบว่าเหมือนเดิม พอร์ต Funnel แบบ TCP (พอร์ตของประตู) ยังคงสิทธิ์ Funnel หลัง « off »: การตัดจึงเริ่มจากศูนย์โดยมีเฉพาะจุดของ tailnet และตรวจสอบว่าไม่มีสิ่งใดเปิดสู่อินเทอร์เน็ตอีก เบรกเกอร์ต้องให้คุณเป็นผู้ควบคุมของ Tailscale: การเปิดกลับทำงานภายใต้บัญชีของคุณ ไม่เคยเป็น root\n"
+"ทางบรรทัดคำสั่ง: omega-tail disjoncteur etat | couper --minutes 10 | couper --totale | retablir\n"
+"\n"
+"[b]การเฝ้าระวังอัตโนมัติ[/b] (ปิดโดยค่าเริ่มต้น): สำหรับเครื่องที่ไม่มีใครอยู่หน้าจอ บริการหนึ่งทำงานตลอดเวลาภายใต้บัญชีของคุณ แม้ omega-tail ปิดอยู่ (systemd, OpenRC หรือ runit) การเกินเกณฑ์หนึ่งครั้ง: เกณฑ์ใดเกณฑ์หนึ่งของเบรกเกอร์ถูกคงไว้ เกินเกณฑ์ 3 ครั้งภายในช่วงเวลา (10 นาที ปรับได้): การเฝ้าระวังตัด Funnel เอง 15 นาทีในครั้งแรก 30 นาทีในครั้งที่สอง แล้ว 1 ชั่วโมงทุกครั้งต่อจากนั้น และเปิดกลับเองให้เหมือนเดิมทุกประการ กลับเป็น 15 นาทีหลังจาก 24 ชั่วโมงที่ไม่มีการตัด; หลังการเปิดกลับแต่ละครั้ง สงบ 2 นาทีก่อนวัดใหม่ ตัดเฉพาะ Funnel: tailscaled, tailnet และ SSH ยังเข้าถึงได้ เมื่อการเฝ้าระวังทำงานอยู่ omega-tail ที่เปิดอยู่จะไม่เสนอการตัดอีก (การเฝ้าระวังทำเอง) 6 บรรทัดล่าสุดของล็อกแสดงใน การอยู่รอด (ไฟล์ var/veille/journal.log เก็บได้ 512 KB แล้วย้ายเป็น journal.log.1); การเฝ้าระวังที่เปิดไว้แต่หยุดอยู่จะถูกแจ้งบนแดชบอร์ด\n"
+"ทางบรรทัดคำสั่ง: omega-tail veille etat\n"
+"\n"
+"[b]โล่ป้องกันพอร์ต WireGuard[/b] (ปุ่มใน การอยู่รอด): tailscaled ใช้โปรเซสเซอร์ประมาณหนึ่งคอร์ต่อ 100 000 แพ็กเก็ตต่อวินาทีที่ได้รับบนพอร์ตของมัน แม้แพ็กเก็ตไม่ถูกต้อง ไม่ว่า Funnel จะเปิดหรือไม่ โล่ป้องกันคือตาราง nftables ที่วางไว้หน้ามัน บนการ์ดเครือข่ายจริง: เพียร์ที่รู้จัก (ที่ tailscaled ส่งข้อมูลไปหา ซึ่งเคอร์เนลเรียนรู้) ไม่เคยถูกจำกัด; การจับมือถูกจำกัดที่ 20 ครั้งต่อวินาทีต่อแหล่งที่มา; แหล่งที่มาอื่นมีงบประมาณ (แหล่งละ 500 แพ็กเก็ตต่อวินาที รวม 5 000); แพ็กเก็ตที่ไม่ใช่ WireGuard ถูกปฏิเสธ ผลการวัด: กระแสที่เคยกินหนึ่งคอร์เต็มของ tailscaled เหลือเพียง 1 %\n"
+"- [b]สังเกตการณ์[/b] ก่อน: ไม่มีสิ่งใดถูกปฏิเสธ ตัวนับบอกว่าอะไรจะถูกปฏิเสธ; « เปลี่ยนเป็นใช้งาน » เมื่อตัวนับแสดงเฉพาะการโจมตี\n"
+"- [b]ใครเป็นผู้วาง[/b]: omega-fire 3.7.0 หรือใหม่กว่าหากเชื่อมโยงผ่าน omega-connect (รายการกฎของมันแสดงตารางนี้พร้อมที่มา omega-tail); มิฉะนั้น omega-tail เอง แม้มี ufw หรือ firewalld อยู่ ทั้งสองกรณีเป็นตารางเดียวกัน: « มอบหมายให้ omega-fire » หรือใน omega-fire « รับการจัดการคืน » จะเปลี่ยนผู้ดูแลโดยไม่แตะต้องตาราง; หาก omega-fire ไม่ได้เชื่อมโยงแล้ว « รับการจัดการคืน » จะคืนให้ omega-tail\n"
+"- บริการหนึ่ง (omega-bouclier-wg) วางตารางใหม่ทุกครั้งที่บูตและเขียนสถานะทุกนาที\n"
+"- หากเครื่องมืออื่นลบตาราง (nft flush ruleset, รีสตาร์ทไฟร์วอลล์) แดชบอร์ดและการเฝ้าระวังจะแจ้ง; ตารางไม่เคยถูกวางใหม่เอง: « วางใหม่ »\n"
+"- ถอดจาก omega-fire: omega-tail จะแสดงให้เห็น"
+
+msgid "Pare-feu Funnel"
+msgstr "ไฟร์วอลล์ Funnel"
+
+msgid ""
+"En Funnel ordinaire, tailscaled fait le chiffrement (TLS) de chaque visiteur : une rafale sature la machine. La protection place une porte (HAProxy, installé par le gestionnaire de paquets) entre Funnel et votre site : Funnel lui transmet le flux encore chiffré avec l'adresse réelle du visiteur, la porte décide AVANT tout chiffrement, puis ne chiffre que pour les connexions admises. Mesuré : une connexion refusée coûte 4,6 fois moins, une connexion admise 2 fois moins.\n"
+"\n"
+"[b]Activer la protection[/b] : préparation (certificat *.ts.net par Tailscale, listes, configuration vérifiée), services de la porte et de son certificat (sudo, dans le terminal ; la porte tourne sous votre compte, jamais en root), bascule de Funnel puis essai depuis Internet. En cas d'échec, la publication d'origine est remise aussitôt. Prérequis : être opérateur de Tailscale ; Funnel publié en HTTPS sur un seul port avec le chemin « / ».\n"
+"[b]Désactiver la protection[/b] : Funnel est remis exactement comme avant, vérifié, puis la porte est arrêtée ; réglages et listes sont gardés.\n"
+"\n"
+"[b]Règles[/b], appliquées à chaud (les adresses bloquées le restent) :\n"
+"- machines du tailnet (100.64.0.0/10 et fd7a:115c:a1e0::/48) : toujours admises, avant toute règle ; seuls les visiteurs de Funnel sont filtrés ;\n"
+"- liste de confiance : jamais limitée ; liste noire : refusée jusqu'à son retrait ;\n"
+"- débit par adresse (40 connexions / 10 s par défaut) : au-delà, l'adresse est bloquée pour la durée choisie (60 min) ;\n"
+"- débit par préfixe /24 (IPv4) ou /64 (IPv6) ;\n"
+"- budget global de connexions admises par seconde : le processeur n'est jamais débordé ;\n"
+"- nom visé : une connexion qui ne vise pas le nom de la machine est refusée.\n"
+"Mode [b]observation[/b] : tout est compté, rien n'est refusé (pour régler les seuils sans risque).\n"
+"\n"
+"Le certificat est vérifié chaque jour et renouvelé à chaud 30 jours avant son échéance.\n"
+"\n"
+"[b]Regroupements[/b] (empreintes, AS, pays) : contre les attaques à adresses dispersées, que les règles par adresse ne voient qu'une fois chacune. Avant tout chiffrement, la porte calcule l'[b]empreinte JA4[/b] du client (la façon dont son logiciel se présente : un navigateur et un outil d'attaque n'ont pas la même), son [b]AS[/b] (le réseau d'origine : fournisseur d'accès, hébergeur, nuage) et son [b]pays[/b], et compte le débit de chaque groupe.\n"
+"- [b]Mode attaque automatique[/b] : quand les connexions entrantes dépassent le seuil (80 / s par défaut), la porte passe seule en mode attaque, et y reste jusqu'à 5 minutes de calme. Rien à faire, même à distance.\n"
+"- En mode attaque seulement : une empreinte inconnue qui explose, un AS d'hébergeur ou de nuage (liste modifiable) ou un pays de votre liste (vide par défaut) qui dépasse son débit est refusé.\n"
+"- Les [b]navigateurs courants[/b] (Chrome, Edge, Firefox) ne sont jamais touchés par ces règles, et les [b]clients connus[/b] (admis dans les dernières 24 h) passent avant le budget global.\n"
+"- [b]Référence apprise[/b] : pendant 7 jours, la porte apprend les empreintes habituelles de votre site (jamais pendant une attaque) ; pendant ce temps, les regroupements restent en [b]observation[/b], même si « appliqués » est choisi. « Recommencer l'apprentissage » repart de zéro et les remet en observation.\n"
+"- [b]Observation[/b] (par défaut) : tout est compté (« aurait été refusée »), rien n'est refusé ; une fois l'apprentissage fini, passez en « appliqués » quand les chiffres vous conviennent.\n"
+"- Hors attaque, une connexion sur dix seulement est classée (assez pour apprendre, dix fois moins de calcul) ; en attaque, toutes. Il faut un HAProxy avec Lua (cas des distributions courantes).\n"
+"- [b]Base AS / pays[/b] : DB-IP Lite, téléchargée et mise à jour une fois par mois par la veille automatique, ou par « Mettre à jour la base ». IP Geolocation by DB-IP (https://db-ip.com), licence CC BY 4.0."
+msgstr ""
+"ใน Funnel ปกติ tailscaled ทำการเข้ารหัส (TLS) ให้ผู้เยี่ยมชมทุกราย: การยิงถี่ ๆ ทำให้เครื่องอิ่มตัว การป้องกันจะวางประตู (HAProxy ติดตั้งด้วยตัวจัดการแพ็กเกจ) ไว้ระหว่าง Funnel กับเว็บไซต์ของคุณ: Funnel ส่งกระแสข้อมูลที่ยังเข้ารหัสอยู่พร้อมที่อยู่จริงของผู้เยี่ยมชมให้ประตู ประตูตัดสินใจก่อนการเข้ารหัสใด ๆ แล้วจึงเข้ารหัสเฉพาะการเชื่อมต่อที่ได้รับอนุญาต ผลการวัด: การเชื่อมต่อที่ถูกปฏิเสธใช้ทรัพยากรน้อยลง 4.6 เท่า การเชื่อมต่อที่ได้รับอนุญาตน้อยลง 2 เท่า\n"
+"\n"
+"[b]เปิดการป้องกัน[/b]: การเตรียม (ใบรับรอง *.ts.net จาก Tailscale รายการต่าง ๆ การกำหนดค่าที่ตรวจสอบแล้ว) บริการของประตูและใบรับรอง (sudo ในเทอร์มินัล; ประตูทำงานภายใต้บัญชีของคุณ ไม่เคยเป็น root) การสลับ Funnel แล้วทดสอบจากอินเทอร์เน็ต หากล้มเหลว การเผยแพร่เดิมจะถูกคืนทันที ข้อกำหนด: เป็นผู้ควบคุมของ Tailscale; Funnel เผยแพร่ด้วย HTTPS บนพอร์ตเดียวที่มีพาธ « / »\n"
+"[b]ปิดการป้องกัน[/b]: Funnel ถูกคืนให้เหมือนเดิมทุกประการ ตรวจสอบแล้ว จากนั้นประตูจะหยุด; การตั้งค่าและรายการยังเก็บไว้\n"
+"\n"
+"[b]กฎ[/b] ที่นำไปใช้ขณะทำงาน (ที่อยู่ที่ถูกบล็อกยังคงถูกบล็อก):\n"
+"- เครื่องใน tailnet (100.64.0.0/10 และ fd7a:115c:a1e0::/48): ได้รับอนุญาตเสมอ ก่อนกฎใด ๆ; กรองเฉพาะผู้เยี่ยมชมของ Funnel;\n"
+"- รายการที่เชื่อถือ: ไม่เคยถูกจำกัด; บัญชีดำ: ถูกปฏิเสธจนกว่าจะถูกนำออก;\n"
+"- อัตราต่อที่อยู่ (ค่าเริ่มต้น 40 การเชื่อมต่อ / 10 วินาที): เมื่อเกิน ที่อยู่จะถูกบล็อกตามระยะเวลาที่เลือก (60 นาที);\n"
+"- อัตราต่อพรีฟิกซ์ /24 (IPv4) หรือ /64 (IPv6);\n"
+"- งบประมาณรวมของการเชื่อมต่อที่ได้รับอนุญาตต่อวินาที: โปรเซสเซอร์ไม่เคยรับภาระเกิน;\n"
+"- ชื่อปลายทาง: การเชื่อมต่อที่ไม่ได้มุ่งไปยังชื่อของเครื่องจะถูกปฏิเสธ\n"
+"โหมด [b]สังเกตการณ์[/b]: นับทุกอย่าง ไม่ปฏิเสธสิ่งใด (เพื่อปรับเกณฑ์โดยไม่มีความเสี่ยง)\n"
+"\n"
+"ใบรับรองถูกตรวจสอบทุกวันและต่ออายุขณะทำงาน 30 วันก่อนหมดอายุ\n"
+"\n"
+"[b]การจัดกลุ่ม[/b] (ลายนิ้วมือ, AS, ประเทศ): รับมือการโจมตีจากที่อยู่กระจัดกระจาย ซึ่งกฎตามที่อยู่เห็นแต่ละที่อยู่เพียงครั้งเดียว ก่อนการเข้ารหัสใด ๆ ประตูคำนวณ [b]ลายนิ้วมือ JA4[/b] ของไคลเอนต์ (วิธีที่ซอฟต์แวร์ของมันแนะนำตัว: เบราว์เซอร์และเครื่องมือโจมตีมีลายนิ้วมือต่างกัน) [b]AS[/b] ของมัน (เครือข่ายต้นทาง: ผู้ให้บริการอินเทอร์เน็ต ผู้ให้บริการโฮสติ้ง คลาวด์) และ [b]ประเทศ[/b] ของมัน แล้วนับอัตราของแต่ละกลุ่ม\n"
+"- [b]โหมดโจมตีอัตโนมัติ[/b]: เมื่อการเชื่อมต่อขาเข้าเกินเกณฑ์ (ค่าเริ่มต้น 80 / วินาที) ประตูจะเข้าสู่โหมดโจมตีเอง และอยู่ในโหมดนี้จนกว่าจะสงบ 5 นาที ไม่ต้องทำอะไร แม้อยู่ระยะไกล\n"
+"- เฉพาะในโหมดโจมตี: ลายนิ้วมือที่ไม่รู้จักซึ่งพุ่งสูงขึ้น AS ของผู้ให้บริการโฮสติ้งหรือคลาวด์ (รายการแก้ไขได้) หรือประเทศในรายการของคุณ (ว่างโดยค่าเริ่มต้น) ที่เกินอัตราของตนจะถูกปฏิเสธ\n"
+"- [b]เบราว์เซอร์ทั่วไป[/b] (Chrome, Edge, Firefox) ไม่เคยได้รับผลจากกฎเหล่านี้ และ [b]ไคลเอนต์ที่รู้จัก[/b] (ได้รับอนุญาตภายใน 24 ชั่วโมงล่าสุด) ได้ผ่านก่อนงบประมาณรวม\n"
+"- [b]ค่าอ้างอิงที่เรียนรู้[/b]: ในช่วง 7 วัน ประตูเรียนรู้ลายนิ้วมือที่พบเป็นประจำของเว็บไซต์คุณ (ไม่เคยเรียนรู้ระหว่างการโจมตี); ระหว่างนั้น การจัดกลุ่มยังอยู่ในโหมด [b]สังเกตการณ์[/b] แม้จะเลือก « บังคับใช้ » « เริ่มการเรียนรู้ใหม่ » เริ่มจากศูนย์และกลับไปโหมดสังเกตการณ์\n"
+"- [b]สังเกตการณ์[/b] (ค่าเริ่มต้น): นับทุกอย่าง (« จะถูกปฏิเสธ ») ไม่ปฏิเสธสิ่งใด; เมื่อการเรียนรู้เสร็จแล้ว ให้เปลี่ยนเป็น « บังคับใช้ » เมื่อตัวเลขเป็นที่พอใจ\n"
+"- นอกช่วงโจมตี จัดประเภทเพียงหนึ่งในสิบการเชื่อมต่อ (พอสำหรับการเรียนรู้ คำนวณน้อยลงสิบเท่า); ระหว่างการโจมตี จัดประเภททั้งหมด ต้องใช้ HAProxy ที่มี Lua (ดิสทริบิวชันทั่วไปมีให้)\n"
+"- [b]ฐานข้อมูล AS / ประเทศ[/b]: DB-IP Lite ดาวน์โหลดและอัปเดตเดือนละครั้งโดยการเฝ้าระวังอัตโนมัติ หรือด้วย « อัปเดตฐานข้อมูล » IP Geolocation by DB-IP (https://db-ip.com), สัญญาอนุญาต CC BY 4.0"
+
+msgid "Attaques et décisions"
+msgstr "การโจมตีและการตัดสินใจ"
+
+#, python-format
+msgid ""
+"Les compteurs de la porte (connexions reçues, refusées avant chiffrement, admises, en cours) et les adresses les plus actives, relus toutes les 2 secondes. La colonne État dit où se trouve chaque adresse : liste noire (refusée jusqu'au retrait), bloquée (pour la durée de blocage), admise, ou confiance (jamais limitée) ; les adresses des listes sans connexion récente apparaissent aussi. Choisissez une ligne puis [b]Bloquer[/b], [b]Liste noire[/b], [b]Débloquer[/b] ou [b]Confiance[/b] / [b]Retirer la confiance[/b] : appliqué tout de suite, sans redémarrer la porte ; la notification dit en une ligne l'action et la place de l'adresse (ex. « 1.2.3.4 → liste noire »). Une adresse n'est jamais dans les deux listes : la mettre en liste noire la retire de la confiance, et l'inverse. Une adresse en confiance ou du tailnet ne peut pas être bloquée (elle passe avant). Porte arrêtée : les listes s'appliqueront à son activation.\n"
+"\n"
+"Chaque adresse affiche son pays et son AS. La ligne sous les compteurs dit si la porte est en [b]mode attaque[/b] (et dans combien de temps elle revient au normal) et combien de connexions les regroupements ont refusées (ou auraient refusées, en observation) sur 7 jours. Les vues [b]Empreintes[/b], [b]AS[/b] et [b]Pays[/b] montrent les groupes les plus actifs (connexions / 10 s, total), avec le navigateur reconnu, le nom de l'AS (hébergeur ou non) ou « limité en attaque ». Hors attaque, ces chiffres portent sur une connexion sur dix.\n"
+"\n"
+"[b]Gestion de la liste noire[/b] (seconde ligne de boutons) : toute la liste, avec la date d'ajout et l'origine de chaque entrée, filtrable.\n"
+"- [b]Ajouter[/b] une adresse ou un réseau en prévision ; [b]Supprimer[/b] la ligne choisie.\n"
+"- [b]Importer[/b] un fichier TXT (une adresse ou un réseau par ligne, # = commentaire) : doublons, adresses déjà couvertes par un réseau de la liste et adresses du tailnet écartés et comptés ; les lignes invalides sont citées, comme une adresse IPv6 suivie d'un identifiant de zone (« %eth0 »), refusée par sécurité.\n"
+"- [b]Purger[/b], avec aperçu puis confirmation : plus anciennes que N jours, les N plus anciennes, de la ligne A à la ligne B, par origine, ou toute la liste (confirmation tapée).\n"
+"- [b]Exporter[/b] TXT (réimportable tel quel, pour une récidive), HTML (thème d'export choisi) ou JSON.\n"
+"- Plafond : 50 000 entrées (alerte au tableau de bord à 25 000). HAProxy en tiendrait bien plus ; c'est omega-tail qui ralentirait. Au plafond, l'ajout est refusé : exportez puis purgez."
+msgstr ""
+"ตัวนับของประตู (การเชื่อมต่อที่ได้รับ ถูกปฏิเสธก่อนการเข้ารหัส ได้รับอนุญาต กำลังดำเนินอยู่) และที่อยู่ที่มีความเคลื่อนไหวมากที่สุด อ่านใหม่ทุก 2 วินาที คอลัมน์สถานะบอกว่าแต่ละที่อยู่อยู่ที่ใด: บัญชีดำ (ถูกปฏิเสธจนกว่าจะนำออก) ถูกบล็อก (ตามระยะเวลาบล็อก) ได้รับอนุญาต หรือเชื่อถือ (ไม่เคยถูกจำกัด); ที่อยู่ในรายการที่ไม่มีการเชื่อมต่อล่าสุดก็แสดงด้วย เลือกบรรทัดแล้วกด [b]บล็อก[/b], [b]บัญชีดำ[/b], [b]ปลดบล็อก[/b] หรือ [b]เชื่อถือ[/b] / [b]ถอนการเชื่อถือ[/b]: มีผลทันที โดยไม่ต้องรีสตาร์ทประตู; การแจ้งเตือนบอกในบรรทัดเดียวถึงการกระทำและตำแหน่งของที่อยู่ (เช่น « 1.2.3.4 → บัญชีดำ ») ที่อยู่หนึ่งไม่เคยอยู่ในทั้งสองรายการ: การใส่ในบัญชีดำจะนำออกจากรายการที่เชื่อถือ และในทางกลับกัน ที่อยู่ที่เชื่อถือหรือของ tailnet บล็อกไม่ได้ (มาก่อน) เมื่อประตูหยุดอยู่: รายการต่าง ๆ จะมีผลเมื่อเปิดใช้งาน\n"
+"\n"
+"แต่ละที่อยู่แสดงประเทศและ AS ของตน บรรทัดใต้ตัวนับบอกว่าประตูอยู่ใน [b]โหมดโจมตี[/b] หรือไม่ (และอีกนานเท่าใดจะกลับเป็นปกติ) และการจัดกลุ่มปฏิเสธการเชื่อมต่อไปกี่ครั้ง (หรือจะปฏิเสธ ในโหมดสังเกตการณ์) ในช่วง 7 วัน มุมมอง [b]ลายนิ้วมือ[/b], [b]AS[/b] และ [b]ประเทศ[/b] แสดงกลุ่มที่มีความเคลื่อนไหวมากที่สุด (การเชื่อมต่อ / 10 วินาที, รวม) พร้อมเบราว์เซอร์ที่ระบุได้ ชื่อ AS (เป็นผู้ให้บริการโฮสติ้งหรือไม่) หรือ « จำกัดเมื่อถูกโจมตี » นอกช่วงโจมตี ตัวเลขเหล่านี้มาจากหนึ่งในสิบการเชื่อมต่อ\n"
+"\n"
+"[b]การจัดการบัญชีดำ[/b] (แถวปุ่มที่สอง): รายการทั้งหมด พร้อมวันที่เพิ่มและที่มาของแต่ละรายการ กรองได้\n"
+"- [b]เพิ่ม[/b] ที่อยู่หรือเครือข่ายล่วงหน้า; [b]ลบ[/b] บรรทัดที่เลือก\n"
+"- [b]นำเข้า[/b] ไฟล์ TXT (หนึ่งที่อยู่หรือเครือข่ายต่อบรรทัด, # = ความคิดเห็น): รายการซ้ำ ที่อยู่ที่เครือข่ายในรายการครอบคลุมแล้ว และที่อยู่ของ tailnet ถูกตัดออกและนับไว้; บรรทัดที่ไม่ถูกต้องจะถูกระบุ เช่น ที่อยู่ IPv6 ที่ตามด้วยตัวระบุโซน (« %eth0 ») ซึ่งถูกปฏิเสธเพื่อความปลอดภัย\n"
+"- [b]ล้าง[/b] พร้อมดูตัวอย่างแล้วยืนยัน: เก่ากว่า N วัน, N รายการที่เก่าที่สุด, จากบรรทัด A ถึงบรรทัด B, ตามที่มา หรือทั้งรายการ (ยืนยันด้วยการพิมพ์)\n"
+"- [b]ส่งออก[/b] TXT (นำเข้าใหม่ได้ทันที สำหรับการโจมตีซ้ำ) HTML (ธีมการส่งออกที่เลือก) หรือ JSON\n"
+"- เพดาน: 50 000 รายการ (แจ้งเตือนบนแดชบอร์ดที่ 25 000) HAProxy รับได้มากกว่านี้มาก; omega-tail ต่างหากที่จะช้าลง เมื่อถึงเพดาน การเพิ่มจะถูกปฏิเสธ: ส่งออกแล้วล้าง"
+
+msgid "Réseau et appareils"
+msgstr "เครือข่ายและอุปกรณ์"
+
+msgid ""
+"Ce que voit Tailscale depuis cette machine. Lecture seule : rien n'y change un réglage.\n"
+"- [b]Appareils[/b] : nom, système, en ligne ou non, [b]chemin[/b] (direct, ou par un relais de Tailscale quand la connexion directe est impossible), dernière fois vu, adresse, trafic échangé. Filtrez par nom, système ou adresse. Les [b]relais Funnel de Tailscale[/b] (« funnel-ingress-node ») apparaissent dans le tailnet dès que Funnel est actif : ce ne sont pas vos appareils, ils sont cachés sauf si vous cochez la case.\n"
+"- [b]Ping Tailscale[/b] : dit si le chemin vers l'appareil est direct ou relayé, et sa latence (3 essais). [b]Qui est-ce ?[/b] : à quelle machine et quel compte appartient une adresse du tailnet. Sans texte tapé, la ligne choisie est utilisée.\n"
+"- [b]Diagnostic réseau[/b] (quelques secondes) : UDP, IPv4 / IPv6, type de NAT (simple : connexions directes faciles ; difficile : plus de relais), ouverture de port par la box (UPnP, NAT-PMP, PCP), relais le plus proche et latences.\n"
+"- [b]DNS[/b], [b]verrou du tailnet[/b] et [b]compteurs internes[/b] (octets reçus et envoyés en direct ou par relais, paquets jetés, messages de santé) : tels que Tailscale les donne."
+msgstr ""
+"สิ่งที่ Tailscale เห็นจากเครื่องนี้ อ่านอย่างเดียว: ไม่มีสิ่งใดในนี้เปลี่ยนการตั้งค่า\n"
+"- [b]อุปกรณ์[/b]: ชื่อ ระบบ ออนไลน์หรือไม่ [b]เส้นทาง[/b] (ตรง หรือผ่านรีเลย์ของ Tailscale เมื่อเชื่อมต่อตรงไม่ได้) เห็นครั้งล่าสุด ที่อยู่ ทราฟฟิกที่แลกเปลี่ยน กรองตามชื่อ ระบบ หรือที่อยู่ [b]รีเลย์ Funnel ของ Tailscale[/b] (« funnel-ingress-node ») ปรากฏใน tailnet ทันทีที่ Funnel ทำงาน: ไม่ใช่อุปกรณ์ของคุณ จึงถูกซ่อนไว้ เว้นแต่คุณเลือกช่องนี้\n"
+"- [b]Ping ของ Tailscale[/b]: บอกว่าเส้นทางไปยังอุปกรณ์เป็นแบบตรงหรือผ่านรีเลย์ และเวลาแฝง (3 ครั้ง) [b]นี่คือใคร?[/b]: ที่อยู่ใน tailnet เป็นของเครื่องใดและบัญชีใด หากไม่พิมพ์ข้อความ จะใช้บรรทัดที่เลือก\n"
+"- [b]การวินิจฉัยเครือข่าย[/b] (ไม่กี่วินาที): UDP, IPv4 / IPv6 ชนิดของ NAT (ง่าย: เชื่อมต่อตรงได้ง่าย; ยาก: ใช้รีเลย์มากขึ้น) การเปิดพอร์ตโดยเราเตอร์ (UPnP, NAT-PMP, PCP) รีเลย์ที่ใกล้ที่สุดและเวลาแฝง\n"
+"- [b]DNS[/b], [b]การล็อก tailnet[/b] และ [b]ตัวนับภายใน[/b] (ไบต์ที่รับและส่งแบบตรงหรือผ่านรีเลย์ แพ็กเก็ตที่ถูกทิ้ง ข้อความสถานะสุขภาพ): ตามที่ Tailscale ให้มา"
+
+msgid "Rapport"
+msgstr "รายงาน"
+
+msgid ""
+"Tout ce qu'omega-tail sait de la machine, en faits : Tailscale (version, préférences), publication, machine, pare-feu (règles, compteurs, listes, regroupements), survie (confinement, veille, disjoncteur), alertes, et les [b]attaques des 7 derniers jours[/b] lues dans le journal de la porte (connexions marquées par motif, par jour, adresses les plus marquées avec leur AS et leur pays).\n"
+"- [b]Vie privée[/b] : par défaut, le compte Tailscale et les noms / adresses des appareils du tailnet n'y figurent pas (seulement leur nombre), pour pouvoir envoyer le rapport à quelqu'un. Cochez la case pour les inclure. Les adresses des attaquants y restent toujours.\n"
+"- [b]Exporter[/b] en TXT, HTML (thème au choix) ou JSON, dans le dossier des exports. [b]Voir les exports[/b] ouvre ce dossier dans votre navigateur (chaque export se lit d'un clic) ; sans navigateur ni bureau (serveur, SSH), la liste et la lecture se font dans omega-tail.\n"
+"- Le journal de la porte doit être lisible par votre compte (groupe systemd-journal, adm ou wheel selon la distribution), sinon le rapport le dit."
+msgstr ""
+"ทุกสิ่งที่ omega-tail รู้เกี่ยวกับเครื่อง ในรูปแบบข้อเท็จจริง: Tailscale (เวอร์ชัน การตั้งค่า) การเผยแพร่ เครื่อง ไฟร์วอลล์ (กฎ ตัวนับ รายการ การจัดกลุ่ม) การอยู่รอด (การจำกัดทรัพยากร การเฝ้าระวัง เบรกเกอร์) การแจ้งเตือน และ [b]การโจมตีในช่วง 7 วันล่าสุด[/b] ที่อ่านจากล็อกของประตู (การเชื่อมต่อที่ถูกทำเครื่องหมายตามสาเหตุ รายวัน ที่อยู่ที่ถูกทำเครื่องหมายมากที่สุดพร้อม AS และประเทศ)\n"
+"- [b]ความเป็นส่วนตัว[/b]: โดยค่าเริ่มต้น ไม่มีบัญชี Tailscale และไม่มีชื่อ / ที่อยู่ของอุปกรณ์ใน tailnet (มีเพียงจำนวน) เพื่อให้ส่งรายงานให้ผู้อื่นได้ เลือกช่องเพื่อรวมไว้ ที่อยู่ของผู้โจมตีจะอยู่ในรายงานเสมอ\n"
+"- [b]ส่งออก[/b] เป็น TXT, HTML (เลือกธีมได้) หรือ JSON ลงในโฟลเดอร์การส่งออก [b]ดูไฟล์ส่งออก[/b] เปิดโฟลเดอร์นี้ในเบราว์เซอร์ของคุณ (อ่านไฟล์ส่งออกแต่ละไฟล์ได้ด้วยคลิกเดียว); หากไม่มีเบราว์เซอร์หรือเดสก์ท็อป (เซิร์ฟเวอร์, SSH) รายการและการอ่านจะทำใน omega-tail\n"
+"- บัญชีของคุณต้องอ่านล็อกของประตูได้ (กลุ่ม systemd-journal, adm หรือ wheel ตามดิสทริบิวชัน) มิฉะนั้นรายงานจะแจ้งไว้"
+
+msgid "systemd, OpenRC, runit"
+msgstr "systemd, OpenRC, runit"
+
+msgid ""
+"omega-tail reconnaît le système d'init de la machine et s'y adapte :\n"
+"- [b]service tailscaled[/b] : systemctl, rc-service ou sv ;\n"
+"- [b]journaux[/b] : journalctl, ou les fichiers du service (/var/log/tailscaled.log, svlogd, socklog…) ;\n"
+"- [b]confinement[/b] : fichier d'ajout systemd ; ailleurs, un groupe de contrôle à part (cgroup v2), perdu si tailscaled redémarre (une alerte propose alors de le remettre) ;\n"
+"- [b]coupure momentanée[/b] : minuterie systemd ; ailleurs, un processus détaché sous votre compte ;\n"
+"- [b]porte du pare-feu[/b] : service systemd, OpenRC ou runit ; certificat renouvelé par minuterie systemd ou par une ligne de votre crontab (marquée omega-tail, retirée à la désactivation)."
+msgstr ""
+"omega-tail ตรวจหาระบบ init ของเครื่องและปรับตัวตาม:\n"
+"- [b]บริการ tailscaled[/b]: systemctl, rc-service หรือ sv;\n"
+"- [b]ล็อก[/b]: journalctl หรือไฟล์ของบริการ (/var/log/tailscaled.log, svlogd, socklog…);\n"
+"- [b]การจำกัดทรัพยากร[/b]: ไฟล์เสริม systemd; ระบบอื่นใช้กลุ่มควบคุมแยกต่างหาก (cgroup v2) ซึ่งหายไปหาก tailscaled รีสตาร์ท (การแจ้งเตือนจะเสนอให้วางใหม่);\n"
+"- [b]การตัดชั่วคราว[/b]: ตัวจับเวลา systemd; ระบบอื่นใช้โปรเซสแยกภายใต้บัญชีของคุณ;\n"
+"- [b]ประตูของไฟร์วอลล์[/b]: บริการ systemd, OpenRC หรือ runit; ใบรับรองต่ออายุโดยตัวจับเวลา systemd หรือบรรทัดหนึ่งใน crontab ของคุณ (ทำเครื่องหมาย omega-tail และถูกลบเมื่อปิดการป้องกัน)"
+
+msgid ""
+"Langue de l'interface et des exports, thème de l'interface et des exports, "
+"dossiers des exports et des captures d'écran (par défaut var/exports/ et "
+"var/screenshots/), et leur purge après confirmation."
+msgstr ""
+"ภาษาของอินเทอร์เฟซและการส่งออก ธีมของอินเทอร์เฟซและการส่งออก "
+"โฟลเดอร์ของการส่งออกและภาพหน้าจอ (ค่าเริ่มต้น var/exports/ และ "
+"var/screenshots/) และการล้างโฟลเดอร์เหล่านั้นหลังการยืนยัน"
+
+msgid "Ligne de commande"
+msgstr "บรรทัดคำสั่ง"
+
+msgid ""
+"- omega-tail : l'interface.\n"
+"- omega-tail etat : l'état et les alertes en texte ; --format json pour un script.\n"
+"- omega-tail aide : cette aide en texte.\n"
+"- omega-tail rapport [--format txt|html|json] [--prive] [--exporter] : le rapport, affiché ou enregistré dans le dossier des exports ; --prive ajoute le compte et les appareils du tailnet.\n"
+"- omega-tail disjoncteur etat | couper --minutes N | couper --totale | retablir\n"
+"- omega-tail porte etat | certificat [--si-besoin] | bloquer ADRESSE [--toujours] | debloquer ADRESSE | confiance ADRESSE\n"
+"- omega-tail --version"
+msgstr ""
+"- omega-tail: อินเทอร์เฟซ\n"
+"- omega-tail etat: สถานะและการแจ้งเตือนแบบข้อความ; --format json สำหรับสคริปต์\n"
+"- omega-tail aide: ช่วยเหลือนี้แบบข้อความ\n"
+"- omega-tail rapport [--format txt|html|json] [--prive] [--exporter]: รายงาน แสดงผลหรือบันทึกลงโฟลเดอร์การส่งออก; --prive เพิ่มบัญชีและอุปกรณ์ใน tailnet\n"
+"- omega-tail disjoncteur etat | couper --minutes N | couper --totale | retablir\n"
+"- omega-tail porte etat | certificat [--si-besoin] | bloquer ADRESSE [--toujours] | debloquer ADRESSE | confiance ADRESSE\n"
+"- omega-tail --version"
+
+msgid ""
+"Depuis cette aide : écrire à l'auteur, le formulaire du site, un café, et "
+"vérifier les mises à jour."
+msgstr ""
+"จากช่วยเหลือนี้: เขียนถึงผู้พัฒนา แบบฟอร์มของเว็บไซต์ เลี้ยงกาแฟ "
+"และตรวจสอบการอัปเดต"
+
+msgid "DÉMARRAGE RAPIDE"
+msgstr "เริ่มต้นอย่างรวดเร็ว"
+
+msgid "RACCOURCIS"
+msgstr "ปุ่มลัด"
+
+msgid "Aide d’omega-tail"
+msgstr "ช่วยเหลือของ omega-tail"
+
+msgid "Aide complète : chaque menu, sa fonction et le détail."
+msgstr "ความช่วยเหลือฉบับเต็ม: แต่ละเมนู หน้าที่ และรายละเอียด"
+
+msgid "Démarrage rapide"
+msgstr "เริ่มต้นอย่างรวดเร็ว"
+
+msgid "Raccourcis"
+msgstr "ปุ่มลัด"
+
+msgid "Touche"
+msgstr "ปุ่ม"
+
+msgid "Action"
+msgstr "การดำเนินการ"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — aide."
+msgstr "OMEGA-TAIL {version} — ช่วยเหลือ"
+
+msgid "Aide - Omega-Tail"
+msgstr "ช่วยเหลือ - Omega-Tail"
+
+#, python-brace-format
+msgid "{name} (hébergeur)"
+msgstr "{name} (ผู้ให้บริการโฮสติ้ง)"
+
+msgid "connecté"
+msgstr "เชื่อมต่อแล้ว"
+
+msgid "déconnecté"
+msgstr "ตัดการเชื่อมต่อแล้ว"
+
+msgid "connexion du compte attendue"
+msgstr "รอการเข้าสู่ระบบบัญชี"
+
+msgid "machine à approuver dans la console"
+msgstr "ต้องอนุมัติเครื่องในคอนโซล"
+
+msgid "démarrage"
+msgstr "กำลังเริ่ม"
+
+msgid "sans état"
+msgstr "ไม่มีสถานะ"
+
+msgid "inconnu"
+msgstr "ไม่ทราบ"
+
+msgid "HTTP"
+msgstr "HTTP"
+
+msgid "HTTPS (TLS par tailscaled)"
+msgstr "HTTPS (TLS โดย tailscaled)"
+
+msgid "TCP (TLS transmis tel quel)"
+msgstr "TCP (ส่งผ่าน TLS ตามเดิม)"
+
+msgid "TCP, TLS par tailscaled"
+msgstr "TCP, TLS โดย tailscaled"
+
+msgid "Go"
+msgstr "GB"
+
+msgid "Ko"
+msgstr "KB"
+
+msgid "Mo"
+msgstr "MB"
+
+msgid "o"
+msgstr "B"
+
+msgid "Internet (Funnel)"
+msgstr "อินเทอร์เน็ต (Funnel)"
+
+msgid "tailnet seul (Serve)"
+msgstr "เฉพาะ tailnet (Serve)"
+
+msgid "inconnu de systemd"
+msgstr "systemd ไม่รู้จัก"
+
+msgid "actif"
+msgstr "ใช้งาน"
+
+msgid "arrêté"
+msgstr "หยุดแล้ว"
+
+msgid "en échec"
+msgstr "ล้มเหลว"
+
+msgid "arrêt en cours"
+msgstr "กำลังหยุด"
+
+msgid "lancé au démarrage"
+msgstr "เริ่มตอนบูต"
+
+msgid "pas lancé au démarrage"
+msgstr "ไม่เริ่มตอนบูต"
+
+msgid "observation"
+msgstr "สังเกตการณ์"
+
+msgid "Bouclier du port WireGuard : état illisible."
+msgstr "โล่ป้องกันพอร์ต WireGuard: อ่านสถานะไม่ได้"
+
+msgid "Bouclier du port WireGuard : retiré depuis omega-fire (ou à la main)."
+msgstr "โล่ป้องกันพอร์ต WireGuard: ถูกถอดจาก omega-fire (หรือด้วยตนเอง)"
+
+msgid ""
+"Bouclier du port WireGuard : aucun. Sans lui, tailscaled dépense environ un "
+"cœur pour 100 000 paquets par seconde, même invalides."
+msgstr ""
+"โล่ป้องกันพอร์ต WireGuard: ไม่มี หากไม่มีโล่ป้องกัน tailscaled "
+"ใช้ประมาณหนึ่งคอร์ต่อ 100 000 แพ็กเก็ตต่อวินาที แม้แพ็กเก็ตไม่ถูกต้อง"
+
+msgid ""
+"Bouclier du port WireGuard ABSENT : un autre outil a effacé sa table ; « "
+"Reposer » la remet."
+msgstr ""
+"ไม่พบโล่ป้องกันพอร์ต WireGuard: เครื่องมืออื่นลบตารางของมันไปแล้ว; « วางใหม่"
+" » จะวางกลับ"
+
+msgid ""
+"Bouclier du port WireGuard : état non mis à jour (service omega-bouclier-wg "
+"arrêté ?)."
+msgstr ""
+"โล่ป้องกันพอร์ต WireGuard: สถานะไม่ได้อัปเดต (บริการ omega-bouclier-wg "
+"หยุดอยู่?)"
+
+#, python-brace-format
+msgid ""
+"Bouclier du port WireGuard : {mode}, géré par {manager} ; {count} paquet(s) "
+"refusé(s)"
+msgstr ""
+"โล่ป้องกันพอร์ต WireGuard: {mode} จัดการโดย {manager}; ปฏิเสธ {count} "
+"แพ็กเก็ต"
+
+#, python-brace-format
+msgid ""
+"Bouclier du port WireGuard : {mode}, géré par {manager} ; {count} paquet(s) "
+"auraient été refusés"
+msgstr ""
+"โล่ป้องกันพอร์ต WireGuard: {mode} จัดการโดย {manager}; {count} "
+"แพ็กเก็ตจะถูกปฏิเสธ"
+
+msgid "adresse bloquée"
+msgstr "ที่อยู่ถูกบล็อก"
+
+msgid "budget global dépassé"
+msgstr "เกินงบประมาณรวม"
+
+msgid "liste noire"
+msgstr "บัญชีดำ"
+
+msgid "trop de connexions d'un réseau"
+msgstr "การเชื่อมต่อจากเครือข่ายเดียวมากเกินไป"
+
+msgid "trop de connexions d'une adresse"
+msgstr "การเชื่อมต่อจากที่อยู่เดียวมากเกินไป"
+
+msgid "mauvais nom de site (SNI)"
+msgstr "ชื่อเว็บไซต์ผิด (SNI)"
+
+msgid "pas une connexion TLS"
+msgstr "ไม่ใช่การเชื่อมต่อ TLS"
+
+msgid "AS d'hébergeur en rafale"
+msgstr "AS ของผู้ให้บริการโฮสติ้งพุ่งสูง"
+
+msgid "empreinte inconnue en rafale"
+msgstr "ลายนิ้วมือที่ไม่รู้จักพุ่งสูง"
+
+msgid "pays limité en rafale"
+msgstr "ประเทศที่ถูกจำกัดพุ่งสูง"
+
+#, python-brace-format
+msgid "tailscaled ne répond pas : {error}"
+msgstr "tailscaled ไม่ตอบสนอง: {error}"
+
+#, python-brace-format
+msgid "État : {state}"
+msgstr "สถานะ: {state}"
+
+#, python-brace-format
+msgid "Version : {daemon} en marche, {client} installé"
+msgstr "เวอร์ชัน: {daemon} กำลังทำงาน, {client} ติดตั้งแล้ว"
+
+#, python-brace-format
+msgid "Nom de la machine : {name}"
+msgstr "ชื่อเครื่อง: {name}"
+
+#, python-brace-format
+msgid "Compte : {user}"
+msgstr "บัญชี: {user}"
+
+msgid "Compte : masqué (non inclus dans ce rapport)"
+msgstr "บัญชี: ซ่อนไว้ (ไม่รวมในรายงานนี้)"
+
+#, python-brace-format
+msgid ""
+"Appareils du tailnet : {online} en ligne sur {total} (plus {relays} relais "
+"Funnel de Tailscale)"
+msgstr ""
+"อุปกรณ์ใน tailnet: ออนไลน์ {online} จาก {total} (และรีเลย์ Funnel ของ "
+"Tailscale {relays})"
+
+#, python-brace-format
+msgid "Appareils du tailnet : {online} en ligne sur {total}"
+msgstr "อุปกรณ์ใน tailnet: ออนไลน์ {online} จาก {total}"
+
+#, python-brace-format
+msgid "Clé de la machine : {expiry}"
+msgstr "คีย์ของเครื่อง: {expiry}"
+
+msgid "sans expiration"
+msgstr "ไม่มีวันหมดอายุ"
+
+msgid "aucun"
+msgstr "ไม่มี"
+
+msgid "Préférence"
+msgstr "การตั้งค่า"
+
+msgid "Valeur"
+msgstr "ค่า"
+
+msgid "Rien n'est publié (ni Serve, ni Funnel)."
+msgstr "ไม่มีการเผยแพร่ (ทั้ง Serve และ Funnel)"
+
+#, python-brace-format
+msgid "Machine : {name} ({count} fils)"
+msgstr "เครื่อง: {name} ({count} เธรด)"
+
+#, python-brace-format
+msgid "Charge : {a:.2f} {b:.2f} {c:.2f}"
+msgstr "โหลด: {a:.2f} {b:.2f} {c:.2f}"
+
+msgid "pas de capteur"
+msgstr "ไม่มีเซนเซอร์"
+
+#, python-brace-format
+msgid "Mémoire vive utilisée : {value}"
+msgstr "หน่วยความจำที่ใช้: {value}"
+
+msgid "MACHINE"
+msgstr "เครื่อง"
+
+msgid "PARE-FEU FUNNEL"
+msgstr "ไฟร์วอลล์ FUNNEL"
+
+msgid "Pare-feu indisponible sur cette machine."
+msgstr "ไฟร์วอลล์ไม่พร้อมใช้งานบนเครื่องนี้"
+
+#, python-brace-format
+msgid "Service de la porte : {state}"
+msgstr "บริการของประตู: {state}"
+
+#, python-brace-format
+msgid "Protection active depuis {since} : Funnel {port} → porte → {backend}"
+msgstr "การป้องกันทำงานตั้งแต่ {since}: Funnel {port} → ประตู → {backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions depuis le démarrage de la porte : {total} reçues · {refused} "
+"refusées avant chiffrement · {admitted} admises · {current} en cours"
+msgstr ""
+"การเชื่อมต่อตั้งแต่ประตูเริ่มทำงาน: ได้รับ {total} · "
+"ถูกปฏิเสธก่อนการเข้ารหัส {refused} · ได้รับอนุญาต {admitted} · "
+"กำลังดำเนินอยู่ {current}"
+
+msgid "Protection inactive : Funnel ne passe pas par la porte."
+msgstr "การป้องกันไม่ทำงาน: Funnel ไม่ได้ผ่านประตู"
+
+#, python-brace-format
+msgid "Mode : {mode}"
+msgstr "โหมด: {mode}"
+
+msgid "observation (rien n'est refusé)"
+msgstr "สังเกตการณ์ (ไม่ปฏิเสธสิ่งใด)"
+
+msgid "normal (les règles refusent)"
+msgstr "ปกติ (กฎปฏิเสธ)"
+
+#, python-brace-format
+msgid ""
+"Règles : {ip} connexions / 10 s par adresse · {prefix} / 10 s par réseau · "
+"budget global {budget} / s · {maximum} connexions au plus · blocage {block} "
+"min · nom du site {sni}"
+msgstr ""
+"กฎ: {ip} การเชื่อมต่อ / 10 วินาทีต่อที่อยู่ · {prefix} / 10 "
+"วินาทีต่อเครือข่าย · งบประมาณรวม {budget} / วินาที · การเชื่อมต่อสูงสุด "
+"{maximum} · บล็อก {block} นาที · ชื่อเว็บไซต์ {sni}"
+
+msgid "non vérifié"
+msgstr "ไม่ได้ตรวจสอบ"
+
+msgid "vérifié"
+msgstr "ตรวจสอบแล้ว"
+
+#, python-brace-format
+msgid "Certificat : encore {days} jour(s)"
+msgstr "ใบรับรอง: เหลืออีก {days} วัน"
+
+#, python-brace-format
+msgid "Confiance : {count} adresse(s) ou réseau(x)"
+msgstr "เชื่อถือ: {count} ที่อยู่หรือเครือข่าย"
+
+#, python-brace-format
+msgid "Liste noire : {entries}"
+msgstr "บัญชีดำ: {entries}"
+
+msgid "vide"
+msgstr "ว่าง"
+
+#, python-brace-format
+msgid "Bloquées en ce moment : {entries}"
+msgstr "ถูกบล็อกขณะนี้: {entries}"
+
+msgid "Bloquées en ce moment : aucune"
+msgstr "ถูกบล็อกขณะนี้: ไม่มี"
+
+#, python-brace-format
+msgid "Regroupements : {mode} · {attack}"
+msgstr "การจัดกลุ่ม: {mode} · {attack}"
+
+msgid "MODE ATTAQUE en cours"
+msgstr "อยู่ในโหมดโจมตี"
+
+msgid "mode normal"
+msgstr "โหมดปกติ"
+
+#, python-brace-format
+msgid "Empreintes : apprentissage, encore {days} jour(s)"
+msgstr "ลายนิ้วมือ: กำลังเรียนรู้ เหลืออีก {days} วัน"
+
+#, python-brace-format
+msgid "Empreintes habituelles : {count} (référence prête)"
+msgstr "ลายนิ้วมือที่พบเป็นประจำ: {count} (ค่าอ้างอิงพร้อมแล้ว)"
+
+#, python-brace-format
+msgid "Base AS / pays : à jour il y a {days} jour(s)"
+msgstr "ฐานข้อมูล AS / ประเทศ: อัปเดตเมื่อ {days} วันที่แล้ว"
+
+msgid "Base AS / pays : absente"
+msgstr "ฐานข้อมูล AS / ประเทศ: ไม่มี"
+
+msgid "Empreintes les plus actives"
+msgstr "ลายนิ้วมือที่เคลื่อนไหวมากที่สุด"
+
+msgid "AS les plus actifs"
+msgstr "AS ที่เคลื่อนไหวมากที่สุด"
+
+msgid "Pays les plus actifs"
+msgstr "ประเทศที่เคลื่อนไหวมากที่สุด"
+
+msgid "Adresse la plus active"
+msgstr "ที่อยู่ที่เคลื่อนไหวมากที่สุด"
+
+msgid "Connexions / 10 s"
+msgstr "การเชื่อมต่อ / 10 วินาที"
+
+msgid "confiance"
+msgstr "เชื่อถือ"
+
+msgid "admise"
+msgstr "ได้รับอนุญาต"
+
+msgid "bloquée"
+msgstr "ถูกบล็อก"
+
+#, python-brace-format
+msgid "Confinement de tailscaled : {state}"
+msgstr "การจำกัดทรัพยากรของ tailscaled: {state}"
+
+msgid "Veille automatique : désactivée"
+msgstr "การเฝ้าระวังอัตโนมัติ: ปิดอยู่"
+
+msgid "Veille automatique : activée mais arrêtée (aucun signe de vie)"
+msgstr "การเฝ้าระวังอัตโนมัติ: เปิดไว้แต่หยุดอยู่ (ไม่มีสัญญาณชีพ)"
+
+#, python-brace-format
+msgid ""
+"Veille automatique : active · {strikes} dépassement(s) récent(s) · prochaine"
+" coupure {minutes} min"
+msgstr ""
+"การเฝ้าระวังอัตโนมัติ: ใช้งาน · เกินเกณฑ์ล่าสุด {strikes} ครั้ง · "
+"การตัดครั้งถัดไป {minutes} นาที"
+
+#, python-brace-format
+msgid ""
+"Disjoncteur : tailscaled au-delà de {cpu:.0f} % d'un cœur pendant {seconds} "
+"s, ou machine au-delà de {temperature:.0f} °C ; coupure proposée de "
+"{minutes} min"
+msgstr ""
+"เบรกเกอร์: tailscaled เกิน {cpu:.0f} % ของหนึ่งคอร์เป็นเวลา {seconds} วินาที"
+" หรือเครื่องเกิน {temperature:.0f} °C; เสนอให้ตัด {minutes} นาที"
+
+#, python-brace-format
+msgid "Funnel coupé depuis {since} ; remise en route {until}"
+msgstr "Funnel ถูกตัดตั้งแต่ {since}; เปิดกลับ {until}"
+
+msgid "manuelle"
+msgstr "ด้วยตนเอง"
+
+msgid "Aucune coupure de Funnel en cours."
+msgstr "ไม่มีการตัด Funnel ที่กำลังดำเนินอยู่"
+
+#, python-brace-format
+msgid "  origine : {tool} · géré par {manager} · pairs connus : {peers}"
+msgstr "  ที่มา: {tool} · จัดการโดย {manager} · เพียร์ที่รู้จัก: {peers}"
+
+msgid "Journal de la veille (derniers événements) :"
+msgstr "ล็อกของการเฝ้าระวัง (เหตุการณ์ล่าสุด):"
+
+msgid "SURVIE"
+msgstr "การอยู่รอด"
+
+msgid "Aucune alerte."
+msgstr "ไม่มีการแจ้งเตือน"
+
+#, python-brace-format
+msgid "ATTAQUES DES {days} DERNIERS JOURS"
+msgstr "การโจมตีในช่วง {days} วันล่าสุด"
+
+msgid "Pare-feu indisponible : rien à compter."
+msgstr "ไฟร์วอลล์ไม่พร้อมใช้งาน: ไม่มีอะไรให้นับ"
+
+#, python-brace-format
+msgid "Journal de la porte illisible : {error}"
+msgstr "อ่านล็อกของประตูไม่ได้: {error}"
+
+msgid ""
+"Lu dans le journal de la porte : chaque connexion marquée par une règle "
+"(refusée, ou seulement comptée en observation, selon le mode du moment)."
+msgstr ""
+"อ่านจากล็อกของประตู: ทุกการเชื่อมต่อที่ถูกกฎทำเครื่องหมาย (ถูกปฏิเสธ "
+"หรือเพียงนับไว้ในโหมดสังเกตการณ์ ตามโหมดในขณะนั้น)"
+
+msgid "Aucune connexion marquée sur la période."
+msgstr "ไม่มีการเชื่อมต่อที่ถูกทำเครื่องหมายในช่วงเวลานี้"
+
+#, python-brace-format
+msgid "Connexions marquées : {count}{floor}"
+msgstr "การเชื่อมต่อที่ถูกทำเครื่องหมาย: {count}{floor}"
+
+msgid " (au moins : journal trop long, seules les plus récentes ont été lues)"
+msgstr " (อย่างน้อย: ล็อกยาวเกินไป อ่านเฉพาะรายการล่าสุด)"
+
+#, python-brace-format
+msgid ""
+"Règles de la porte, connexions qui auraient été refusées (observation) : "
+"{reasons}"
+msgstr "กฎของประตู การเชื่อมต่อที่จะถูกปฏิเสธ (สังเกตการณ์): {reasons}"
+
+#, python-brace-format
+msgid "Règles de la porte, connexions refusées : {reasons}"
+msgstr "กฎของประตู การเชื่อมต่อที่ถูกปฏิเสธ: {reasons}"
+
+#, python-brace-format
+msgid "Regroupements, connexions refusées : {reasons}"
+msgstr "การจัดกลุ่ม การเชื่อมต่อที่ถูกปฏิเสธ: {reasons}"
+
+#, python-brace-format
+msgid ""
+"Regroupements, connexions qui auraient été refusées (observation) : "
+"{reasons}"
+msgstr "การจัดกลุ่ม การเชื่อมต่อที่จะถูกปฏิเสธ (สังเกตการณ์): {reasons}"
+
+#, python-brace-format
+msgid "Par jour : {days}"
+msgstr "รายวัน: {days}"
+
+msgid "AS"
+msgstr "AS"
+
+msgid "Adresse"
+msgstr "ที่อยู่"
+
+msgid "Connexions marquées"
+msgstr "การเชื่อมต่อที่ถูกทำเครื่องหมาย"
+
+msgid "Pays"
+msgstr "ประเทศ"
+
+msgid "en ligne"
+msgstr "ออนไลน์"
+
+msgid "hors ligne"
+msgstr "ออฟไลน์"
+
+msgid "APPAREILS DU TAILNET"
+msgstr "อุปกรณ์ใน TAILNET"
+
+msgid "Aucun appareil lu."
+msgstr "ไม่ได้อ่านอุปกรณ์ใด ๆ"
+
+msgid "Système"
+msgstr "ระบบ"
+
+msgid "Compte et appareils du tailnet inclus."
+msgstr "รวมบัญชีและอุปกรณ์ใน tailnet แล้ว"
+
+msgid ""
+"Compte et appareils du tailnet non inclus (seulement leur nombre) ; les "
+"adresses des attaquants restent."
+msgstr ""
+"ไม่รวมบัญชีและอุปกรณ์ใน tailnet (มีเพียงจำนวน); ที่อยู่ของผู้โจมตียังคงอยู่"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — RAPPORT DE LA MACHINE {machine}"
+msgstr "OMEGA-TAIL {version} — รายงานของเครื่อง {machine}"
+
+#, python-brace-format
+msgid "Établi le {date} (lecture seule, sans droits)."
+msgstr "จัดทำเมื่อ {date} (อ่านอย่างเดียว ไม่ใช้สิทธิ์พิเศษ)"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — rapport."
+msgstr "OMEGA-TAIL {version} — รายงาน"
+
+msgid "Rapport - Omega-Tail"
+msgstr "รายงาน - Omega-Tail"
+
+msgid ""
+"Le démarrage de tailscaled lance « tailscale up » (votre fichier d'ajout). "
+"Depuis qu'un réglage a changé (opérateur, nom, routes…), Tailscale refuse ce"
+" « up » incomplet : systemd arrête alors tailscaled et abandonne après cinq "
+"essais (la machine sort du tailnet). omega-tail ajoute « - » devant cette "
+"commande : son refus n'arrête plus le service, et vos réglages restent "
+"gardés par Tailscale. Rien d'autre ne change ; l'original est gardé dans "
+"var/survie."
+msgstr ""
+"การเริ่มต้น tailscaled รัน « tailscale up » (ไฟล์เสริมของคุณ) "
+"ตั้งแต่การตั้งค่าเปลี่ยน (ผู้ควบคุม ชื่อ เส้นทาง…) Tailscale ปฏิเสธ « up » "
+"ที่ไม่ครบนี้: systemd จึงหยุด tailscaled และเลิกพยายามหลังห้าครั้ง "
+"(เครื่องหลุดออกจาก tailnet) omega-tail จะเพิ่ม « - » หน้าคำสั่งนี้: "
+"การปฏิเสธจะไม่หยุดบริการอีก และ Tailscale ยังเก็บการตั้งค่าของคุณไว้ "
+"ไม่มีอะไรเปลี่ยนอีก; ต้นฉบับเก็บไว้ใน var/survie"
+
+msgid "Lecture de l'état"
+msgstr "กำลังอ่านสถานะ"
+
+#, python-brace-format
+msgid "Valeurs refusées (nombre hors limites) : {keys}"
+msgstr "ค่าถูกปฏิเสธ (ตัวเลขเกินขอบเขต): {keys}"
+
+msgid "Seuils enregistrés."
+msgstr "บันทึกเกณฑ์แล้ว"
+
+#, python-brace-format
+msgid "Pas de nouvelle proposition pendant {minutes} min."
+msgstr "ไม่มีข้อเสนอใหม่เป็นเวลา {minutes} นาที"
+
+#, python-brace-format
+msgid ""
+"Funnel sera coupé {minutes} min puis remis en route automatiquement, à "
+"l'identique (minuterie systemd : sudo une fois, dans le terminal)."
+msgstr ""
+"Funnel จะถูกตัด {minutes} นาที แล้วเปิดกลับอัตโนมัติ เหมือนเดิมทุกประการ "
+"(ตัวจับเวลา systemd: sudo หนึ่งครั้ง ในเทอร์มินัล)"
+
+msgid ""
+"Funnel sera coupé jusqu'à ce que vous le rétablissiez (« Rétablir maintenant"
+" »)."
+msgstr "Funnel จะถูกตัดจนกว่าคุณจะคืนค่า (« คืนค่าตอนนี้ »)"
+
+msgid "COUPER FUNNEL ?"
+msgstr "ตัด FUNNEL?"
+
+msgid ""
+"Les connexions venues d'Internet s'arrêtent aussitôt ; le tailnet (Serve, "
+"SSH) n'est pas touché."
+msgstr ""
+"การเชื่อมต่อจากอินเทอร์เน็ตหยุดทันที; tailnet (Serve, SSH) ไม่ถูกแตะต้อง"
+
+msgid "Couper"
+msgstr "ตัด"
+
+msgid "Disjoncteur"
+msgstr "เบรกเกอร์"
+
+msgid "Pare-feu indisponible."
+msgstr "ไฟร์วอลล์ไม่พร้อมใช้งาน"
+
+#, python-brace-format
+msgid "HAProxy : {path}"
+msgstr "HAProxy: {path}"
+
+msgid "non installé (« Installer HAProxy »)"
+msgstr "ยังไม่ได้ติดตั้ง (« ติดตั้ง HAProxy »)"
+
+#, python-brace-format
+msgid ""
+"Protection ACTIVE depuis {since} : Funnel {port} → porte 127.0.0.1:{gate} → "
+"{backend}"
+msgstr ""
+"การป้องกันทำงานตั้งแต่ {since}: Funnel {port} → ประตู 127.0.0.1:{gate} → "
+"{backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions : {total} reçues · {refused} refusées avant chiffrement · "
+"{current} en cours"
+msgstr ""
+"การเชื่อมต่อ: ได้รับ {total} · ถูกปฏิเสธก่อนการเข้ารหัส {refused} · "
+"กำลังดำเนินอยู่ {current}"
+
+#, python-brace-format
+msgid ""
+"Protection inactive. Funnel {port} (HTTPS par tailscaled) → {backend} : pris"
+" en charge."
+msgstr ""
+"การป้องกันไม่ทำงาน Funnel {port} (HTTPS โดย tailscaled) → {backend}: รองรับ"
+
+#, python-brace-format
+msgid "Protection inactive : {reason}."
+msgstr "การป้องกันไม่ทำงาน: {reason}"
+
+#, python-brace-format
+msgid "Certificat : encore {days} jour(s) (renouvelé chaque jour si besoin)"
+msgstr "ใบรับรอง: เหลืออีก {days} วัน (ต่ออายุทุกวันหากจำเป็น)"
+
+#, python-brace-format
+msgid ""
+"Mode : {mode} · {ip} connexions / 10 s par adresse · budget {budget} / s · "
+"blocage {block} min"
+msgstr ""
+"โหมด: {mode} · {ip} การเชื่อมต่อ / 10 วินาทีต่อที่อยู่ · งบประมาณ {budget} /"
+" วินาที · บล็อก {block} นาที"
+
+msgid ""
+"⚠ Devenez opérateur de Tailscale (tableau de bord) : la porte en a besoin."
+msgstr "⚠ เป็นผู้ควบคุมของ Tailscale (แดชบอร์ด): ประตูต้องใช้สิทธิ์นี้"
+
+msgid "Pare-feu"
+msgstr "ไฟร์วอลล์"
+
+msgid "Changement en cours, puis vérification…"
+msgstr "กำลังเปลี่ยนแปลง แล้วตรวจสอบ…"
+
+msgid ""
+"Gestionnaire de paquets inconnu : installez HAProxy avec celui de votre "
+"système."
+msgstr ""
+"ไม่รู้จักตัวจัดการแพ็กเกจ: ติดตั้ง HAProxy ด้วยตัวจัดการแพ็กเกจของระบบคุณ"
+
+msgid "INSTALLER HAPROXY ?"
+msgstr "ติดตั้ง HAPROXY?"
+
+msgid ""
+"HAProxy est installé par le gestionnaire de paquets de la distribution "
+"(mises à jour de sécurité comprises)."
+msgstr ""
+"HAProxy ติดตั้งด้วยตัวจัดการแพ็กเกจของดิสทริบิวชัน (รวมการอัปเดตความปลอดภัย)"
+
+msgid "ACTIVER LA PROTECTION ?"
+msgstr "เปิดการป้องกัน?"
+
+msgid ""
+"1. Préparation (certificat *.ts.net, listes, configuration vérifiée).\n"
+"2. Services de la porte et de son certificat (sudo, dans le terminal ; la porte tourne sous votre compte, jamais en root).\n"
+"3. Bascule de Funnel vers la porte, puis essai depuis Internet. En cas d'échec, la publication d'origine est remise aussitôt.\n"
+"\n"
+"Coupure du site : quelques secondes pendant la bascule."
+msgstr ""
+"1. การเตรียม (ใบรับรอง *.ts.net รายการต่าง ๆ การกำหนดค่าที่ตรวจสอบแล้ว)\n"
+"2. บริการของประตูและใบรับรอง (sudo ในเทอร์มินัล; ประตูทำงานภายใต้บัญชีของคุณ ไม่เคยเป็น root)\n"
+"3. สลับ Funnel ไปยังประตู แล้วทดสอบจากอินเทอร์เน็ต หากล้มเหลว การเผยแพร่เดิมจะถูกคืนทันที\n"
+"\n"
+"เว็บไซต์หยุดชะงัก: ไม่กี่วินาทีระหว่างการสลับ"
+
+msgid "Activer"
+msgstr "เปิด"
+
+msgid "Préparation de la porte…"
+msgstr "กำลังเตรียมประตู…"
+
+msgid "Porte lancée ; bascule de Funnel et essai depuis Internet…"
+msgstr "ประตูเริ่มทำงานแล้ว; กำลังสลับ Funnel และทดสอบจากอินเทอร์เน็ต…"
+
+msgid "DÉSACTIVER LA PROTECTION ?"
+msgstr "ปิดการป้องกัน?"
+
+msgid ""
+"Funnel est remis exactement comme avant (HTTPS par tailscaled), vérifié, "
+"puis la porte est arrêtée (sudo, dans le terminal). Vos réglages et vos "
+"listes sont gardés."
+msgstr ""
+"Funnel ถูกคืนให้เหมือนเดิมทุกประการ (HTTPS โดย tailscaled) ตรวจสอบแล้ว "
+"จากนั้นประตูจะหยุด (sudo ในเทอร์มินัล) การตั้งค่าและรายการของคุณยังเก็บไว้"
+
+msgid "Désactiver"
+msgstr "ปิด"
+
+msgid "tailscaled ne tourne pas : rien à confiner."
+msgstr "tailscaled ไม่ได้ทำงาน: ไม่มีอะไรต้องจำกัดทรัพยากร"
+
+#, python-brace-format
+msgid ""
+"Pose le fichier d'ajout {path} (votre propre override.conf n'est pas "
+"modifié), recharge systemd{restart}."
+msgstr ""
+"วางไฟล์เสริม {path} (ไฟล์ override.conf ของคุณเองไม่ถูกแก้ไข) โหลด systemd "
+"ใหม่{restart}"
+
+msgid ", puis redémarre tailscaled"
+msgstr " แล้วรีสตาร์ท tailscaled"
+
+msgid ""
+"Place tailscaled dans un groupe de contrôle à part (cgroup v2), avec son "
+"plafond et sa priorité. Aucun de vos fichiers n'est modifié. Perdu si "
+"tailscaled redémarre : omega-tail le signalera."
+msgstr ""
+"ใส่ tailscaled ไว้ในกลุ่มควบคุมแยกต่างหาก (cgroup v2) "
+"พร้อมเพดานและลำดับความสำคัญ ไม่มีไฟล์ใดของคุณถูกแก้ไข จะหายไปหาก tailscaled "
+"รีสตาร์ท: omega-tail จะแจ้งให้ทราบ"
+
+msgid "CONFINER TAILSCALED ?"
+msgstr "จำกัดทรัพยากรของ TAILSCALED?"
+
+msgid ""
+"Supprime les fichiers d'ajout posés par omega-tail, puis recharge systemd."
+msgstr "ลบไฟล์เสริมที่ omega-tail วางไว้ แล้วโหลด systemd ใหม่"
+
+msgid "RETIRER LE CONFINEMENT ?"
+msgstr "ถอนการจำกัดทรัพยากร?"
+
+msgid ""
+"Rien à corriger ici : la commande n'est pas dans un fichier de /etc/systemd "
+"(à corriger à la main, avec « - » devant la commande)."
+msgstr ""
+"ไม่มีอะไรต้องแก้ไขที่นี่: คำสั่งไม่ได้อยู่ในไฟล์ของ /etc/systemd "
+"(แก้ไขด้วยตนเอง โดยใส่ « - » หน้าคำสั่ง)"
+
+msgid "CORRIGER LE DÉMARRAGE DE TAILSCALED ?"
+msgstr "แก้ไขการเริ่มต้นของ TAILSCALED?"
+
+msgid ""
+"Cette session passe par Tailscale : elle se figera quelques secondes pendant"
+" le redémarrage, puis reviendra en général."
+msgstr ""
+"เซสชันนี้ผ่าน Tailscale: จะค้างไม่กี่วินาทีระหว่างรีสตาร์ท "
+"แล้วโดยทั่วไปจะกลับมา"
+
+msgid "Commandes :"
+msgstr "คำสั่ง:"
+
+msgid ""
+"La veille coupe et remet Funnel sous votre compte : devenez d'abord "
+"opérateur de Tailscale (tableau de bord)."
+msgstr ""
+"การเฝ้าระวังตัดและเปิด Funnel กลับภายใต้บัญชีของคุณ: เป็นผู้ควบคุมของ "
+"Tailscale ก่อน (แดชบอร์ด)"
+
+msgid ""
+"La veille tournera en permanence, sous votre compte (jamais root), même "
+"omega-tail fermé. Sous attaque, elle coupe Funnel seule par paliers (15 min,"
+" 30 min, puis 1 h renouvelable) et le remet en route seule."
+msgstr ""
+"การเฝ้าระวังจะทำงานตลอดเวลาภายใต้บัญชีของคุณ (ไม่เคยเป็น root) แม้ omega-"
+"tail ปิดอยู่ เมื่อถูกโจมตี มันจะตัด Funnel เองเป็นขั้น ๆ (15 นาที 30 นาที "
+"แล้ว 1 ชั่วโมงซ้ำได้) และเปิดกลับเอง"
+
+msgid ""
+"La veille s'arrête : sous attaque, omega-tail ouvert vous proposera de "
+"nouveau la coupure."
+msgstr ""
+"การเฝ้าระวังหยุดลง: เมื่อถูกโจมตี omega-tail "
+"ที่เปิดอยู่จะเสนอการตัดให้คุณอีกครั้ง"
+
+msgid "ACTIVER LA VEILLE AUTOMATIQUE ?"
+msgstr "เปิดการเฝ้าระวังอัตโนมัติ?"
+
+msgid "DÉSACTIVER LA VEILLE AUTOMATIQUE ?"
+msgstr "ปิดการเฝ้าระวังอัตโนมัติ?"
+
+msgid "Veille automatique activée."
+msgstr "เปิดการเฝ้าระวังอัตโนมัติแล้ว"
+
+msgid "Veille automatique désactivée."
+msgstr "ปิดการเฝ้าระวังอัตโนมัติแล้ว"
+
+#, python-brace-format
+msgid "Commande refusée (code {code}) : rien n'a changé."
+msgstr "คำสั่งถูกปฏิเสธ (รหัส {code}): ไม่มีอะไรเปลี่ยนแปลง"
+
+msgid "omega-tail — commandes lancées une à une :"
+msgstr "omega-tail — คำสั่งที่รันทีละคำสั่ง:"
+
+msgid "Le mot de passe sudo ne s'affiche pas pendant la saisie."
+msgstr "รหัสผ่าน sudo จะไม่แสดงระหว่างพิมพ์"
+
+msgid "✔ Terminé."
+msgstr "✔ เสร็จสิ้น"
+
+#, python-brace-format
+msgid "✖ Échec (code {code})."
+msgstr "✖ ล้มเหลว (รหัส {code})"
+
+msgid "Entrée pour revenir à omega-tail… "
+msgstr "กด Enter เพื่อกลับไปยัง omega-tail… "
+
+#, python-brace-format
+msgid "Fait : {command}"
+msgstr "เสร็จแล้ว: {command}"
+
+#, python-brace-format
+msgid "Échec (code {code}) : {command}"
+msgstr "ล้มเหลว (รหัส {code}): {command}"
+
+msgid "Compte inconnu ou root : rien à faire."
+msgstr "บัญชีไม่รู้จักหรือเป็น root: ไม่ต้องทำอะไร"
+
+#, python-brace-format
+msgid ""
+"Le compte « {user} » pourra régler Tailscale (connexion, publication, "
+"préférences) sans sudo. Une seule fois ; annulable ensuite avec « sudo "
+"tailscale set --operator= »."
+msgstr ""
+"บัญชี « {user} » จะตั้งค่า Tailscale (การเชื่อมต่อ การเผยแพร่ การตั้งค่า) "
+"ได้โดยไม่ต้องใช้ sudo ทำครั้งเดียว; ยกเลิกได้ภายหลังด้วย « sudo tailscale "
+"set --operator= »"
+
+msgid "DEVENIR OPÉRATEUR DE TAILSCALE ?"
+msgstr "เป็นผู้ควบคุมของ TAILSCALE?"
+
+msgid "Dossier des captures non configuré."
+msgstr "ยังไม่ได้กำหนดโฟลเดอร์ภาพหน้าจอ"
+
+msgid "Redémarrer"
+msgstr "รีสตาร์ท"
+
+msgid "PROTECTION"
+msgstr "การป้องกัน"
+
+msgid "TAILSCALE"
+msgstr "TAILSCALE"
+
+msgid ""
+"omega-tail — authentification sudo pour les commandes affichées (le mot de "
+"passe ne s'affiche pas pendant la saisie). L'interface revient ensuite."
+msgstr ""
+"omega-tail — ยืนยันตัวตน sudo สำหรับคำสั่งที่แสดง "
+"(รหัสผ่านจะไม่แสดงระหว่างพิมพ์) จากนั้นอินเทอร์เฟซจะกลับมา"
+
+msgid "Aucune commande à copier."
+msgstr "ไม่มีคำสั่งให้คัดลอก"
+
+#, python-brace-format
+msgid ""
+"{count} commande(s) copiée(s) dans le presse-papiers ({tool}) : collez-les "
+"dans un terminal (Ctrl+Maj+V)."
+msgstr ""
+"คัดลอก {count} คำสั่งไปยังคลิปบอร์ดแล้ว ({tool}): วางในเทอร์มินัล "
+"(Ctrl+Shift+V)"
+
+msgid ""
+"omega-tail — commandes à copier. Sélectionnez-les à la souris puis copiez "
+"avec le raccourci de votre terminal (souvent Ctrl+Maj+C) :"
+msgstr ""
+"omega-tail — คำสั่งสำหรับคัดลอก "
+"เลือกด้วยเมาส์แล้วคัดลอกด้วยคีย์ลัดของเทอร์มินัล (มักเป็น Ctrl+Shift+C):"
+
+msgid "Adresses"
+msgstr "ที่อยู่"
+
+msgid "Empreintes"
+msgstr "ลายนิ้วมือ"
+
+#, python-brace-format
+msgid "MODE ATTAQUE (retour au normal après {seconds} s de calme)"
+msgstr "โหมดโจมตี (กลับเป็นปกติหลังสงบ {seconds} วินาที)"
+
+msgid "regroupements appliqués"
+msgstr "การจัดกลุ่มบังคับใช้"
+
+msgid "regroupements en observation"
+msgstr "การจัดกลุ่มอยู่ในโหมดสังเกตการณ์"
+
+#, python-brace-format
+msgid "auraient été refusées (7 j) : {reasons}"
+msgstr "จะถูกปฏิเสธ (7 วัน): {reasons}"
+
+#, python-brace-format
+msgid "refusées (7 j) : {reasons}"
+msgstr "ถูกปฏิเสธ (7 วัน): {reasons}"
+
+msgid "ATTAQUES ET DÉCISIONS"
+msgstr "การโจมตีและการตัดสินใจ"
+
+msgid ""
+"La liste noire d'abord, puis les adresses bloquées, les plus actives, et la "
+"confiance. Choisissez une ligne puis une action."
+msgstr ""
+"บัญชีดำก่อน ตามด้วยที่อยู่ที่ถูกบล็อก ที่เคลื่อนไหวมากที่สุด และที่เชื่อถือ "
+"เลือกบรรทัดแล้วเลือกการกระทำ"
+
+msgid "Bloquer"
+msgstr "บล็อก"
+
+msgid "Liste noire"
+msgstr "บัญชีดำ"
+
+msgid "Débloquer"
+msgstr "เลิกบล็อก"
+
+msgid "Gestion de la liste noire"
+msgstr "การจัดการบัญชีดำ"
+
+msgid "Expire dans"
+msgstr "หมดอายุใน"
+
+msgid "Empreinte JA4"
+msgstr "ลายนิ้วมือ JA4"
+
+msgid "Remarque"
+msgstr "หมายเหตุ"
+
+msgid "Total"
+msgstr "ทั้งหมด"
+
+#, python-brace-format
+msgid ""
+"Connexions reçues : {total} · refusées avant chiffrement : {refused} · "
+"admises : {admitted} · en cours : {current}"
+msgstr ""
+"การเชื่อมต่อที่ได้รับ: {total} · ถูกปฏิเสธก่อนการเข้ารหัส: {refused} · "
+"ได้รับอนุญาต: {admitted} · กำลังดำเนินอยู่: {current}"
+
+msgid "jusqu'au retrait"
+msgstr "จนกว่าจะนำออก"
+
+msgid "Retirer la confiance"
+msgstr "ถอนการเชื่อถือ"
+
+msgid "Aucune adresse choisie."
+msgstr "ไม่ได้เลือกที่อยู่"
+
+msgid "Plus anciennes que N jours"
+msgstr "เก่ากว่า N วัน"
+
+msgid "Les N plus anciennes"
+msgstr "N รายการที่เก่าที่สุด"
+
+msgid "De la ligne A à la ligne B"
+msgstr "จากบรรทัด A ถึงบรรทัด B"
+
+msgid "Origine : import"
+msgstr "ที่มา: นำเข้า"
+
+msgid "Origine : écran Attaques"
+msgstr "ที่มา: หน้าจอการโจมตี"
+
+msgid "Origine : ajout manuel"
+msgstr "ที่มา: เพิ่มด้วยตนเอง"
+
+msgid "Origine : avant les dates"
+msgstr "ที่มา: ก่อนมีวันที่"
+
+msgid "Toute la liste"
+msgstr "ทั้งรายการ"
+
+msgid "GESTION DE LA LISTE NOIRE"
+msgstr "การจัดการบัญชีดำ"
+
+msgid "AJOUTER OU IMPORTER"
+msgstr "เพิ่มหรือนำเข้า"
+
+msgid "adresse ou réseau (ex. 203.0.113.7 ou 198.51.100.0/24)"
+msgstr "ที่อยู่หรือเครือข่าย (เช่น 203.0.113.7 หรือ 198.51.100.0/24)"
+
+msgid "fichier TXT : une adresse ou un réseau par ligne, # = commentaire"
+msgstr "ไฟล์ TXT: หนึ่งที่อยู่หรือเครือข่ายต่อบรรทัด, # = ความคิดเห็น"
+
+msgid "Importer"
+msgstr "นำเข้า"
+
+msgid ""
+"Les doublons, les adresses déjà couvertes par un réseau de la liste et "
+"celles du tailnet sont écartés et comptés. Un export TXT se réimporte tel "
+"quel (récidive)."
+msgstr ""
+"รายการซ้ำ ที่อยู่ที่เครือข่ายในรายการครอบคลุมแล้ว และที่อยู่ของ tailnet "
+"จะถูกตัดออกและนับไว้ ไฟล์ส่งออก TXT นำเข้าใหม่ได้ทันที (การโจมตีซ้ำ)"
+
+msgid "LISTE"
+msgstr "รายการ"
+
+msgid "filtrer : début d'adresse, réseau, date (2026-11), origine"
+msgstr "กรอง: ต้นที่อยู่ เครือข่าย วันที่ (2026-11) ที่มา"
+
+msgid "PURGER"
+msgstr "ล้าง"
+
+msgid "N ou A"
+msgstr "N หรือ A"
+
+msgid "Aperçu"
+msgstr "ดูตัวอย่าง"
+
+msgid "Purger"
+msgstr "ล้าง"
+
+msgid ""
+"Les lignes sont numérotées de la plus ancienne à la plus récente, comme dans"
+" le tableau sans filtre. L'aperçu dit combien d'entrées partiraient ; rien "
+"n'est retiré sans confirmation."
+msgstr ""
+"บรรทัดถูกนับลำดับจากเก่าที่สุดไปใหม่ที่สุด เหมือนในตารางที่ไม่กรอง "
+"การดูตัวอย่างบอกว่าจะลบกี่รายการ; ไม่มีสิ่งใดถูกลบโดยไม่ยืนยัน"
+
+msgid "THÈME DE LA PAGE HTML"
+msgstr "ธีมของหน้า HTML"
+
+msgid "Exporter HTML"
+msgstr "ส่งออก HTML"
+
+msgid "Exporter TXT"
+msgstr "ส่งออก TXT"
+
+msgid "Exporter JSON"
+msgstr "ส่งออก JSON"
+
+msgid "Voir les exports"
+msgstr "ดูไฟล์ส่งออก"
+
+#, python-brace-format
+msgid ""
+"{count} entrée(s) sur {max} au plus. Refusées par la porte avant tout "
+"chiffrement, jusqu'à leur retrait."
+msgstr ""
+"{count} รายการ จากสูงสุด {max} ถูกประตูปฏิเสธก่อนการเข้ารหัสใด ๆ "
+"จนกว่าจะนำออก"
+
+msgid "La liste grossit : exportez-la puis purgez les plus anciennes."
+msgstr "รายการกำลังขยายตัว: ส่งออกแล้วล้างรายการที่เก่าที่สุด"
+
+#, python-brace-format
+msgid ""
+"{shown} premières lignes affichées sur {total} : affinez le filtre, ou "
+"exportez pour tout voir."
+msgstr ""
+"แสดง {shown} บรรทัดแรกจาก {total}: ปรับตัวกรองให้แคบลง "
+"หรือส่งออกเพื่อดูทั้งหมด"
+
+#, python-brace-format
+msgid "{count} entrée(s) correspondent au filtre."
+msgstr "{count} รายการตรงกับตัวกรอง"
+
+msgid "La liste noire est vide."
+msgstr "บัญชีดำว่างเปล่า"
+
+#, python-brace-format
+msgid "{error}"
+msgstr "{error}"
+
+#, python-brace-format
+msgid "Lignes invalides : {lines}"
+msgstr "บรรทัดไม่ถูกต้อง: {lines}"
+
+msgid "Tapez une adresse ou un réseau."
+msgstr "พิมพ์ที่อยู่หรือเครือข่าย"
+
+msgid "Indiquez le chemin du fichier TXT à importer."
+msgstr "ระบุพาธของไฟล์ TXT ที่จะนำเข้า"
+
+#, python-brace-format
+msgid "Fichier introuvable : {path}"
+msgstr "ไม่พบไฟล์: {path}"
+
+#, python-brace-format
+msgid "Fichier trop gros (plus de {size} Mo) : découpez-le."
+msgstr "ไฟล์ใหญ่เกินไป (เกิน {size} MB): แบ่งไฟล์"
+
+msgid "Import en cours…"
+msgstr "กำลังนำเข้า…"
+
+msgid "Aucune entrée choisie."
+msgstr "ไม่ได้เลือกรายการ"
+
+msgid "Tapez N (un nombre entier) dans le premier champ."
+msgstr "พิมพ์ N (จำนวนเต็ม) ในช่องแรก"
+
+msgid "Tapez A et B (numéros de ligne) dans les deux champs."
+msgstr "พิมพ์ A และ B (หมายเลขบรรทัด) ในสองช่อง"
+
+#, python-brace-format
+msgid "Aperçu : {count} entrée(s) sur {total} partiraient."
+msgstr "ตัวอย่าง: จะลบ {count} รายการจาก {total}"
+
+#, python-brace-format
+msgid "De {first} à {last}."
+msgstr "จาก {first} ถึง {last}"
+
+msgid "Aucune entrée ne correspond : rien à purger."
+msgstr "ไม่มีรายการที่ตรงกัน: ไม่มีอะไรต้องล้าง"
+
+#, python-brace-format
+msgid ""
+"{count} entrée(s) vont quitter la liste noire : ces adresses seront de "
+"nouveau admises (soumises aux règles). Exportez la liste avant si vous "
+"voulez pouvoir les réinjecter."
+msgstr ""
+"{count} รายการจะออกจากบัญชีดำ: ที่อยู่เหล่านี้จะได้รับอนุญาตอีกครั้ง "
+"(อยู่ภายใต้กฎ) ส่งออกรายการก่อนหากต้องการนำกลับเข้ามาอีก"
+
+msgid "Purge en cours…"
+msgstr "กำลังล้าง…"
+
+msgid "VIDER"
+msgstr "ล้างทั้งหมด"
+
+msgid "VIDER LA LISTE NOIRE ?"
+msgstr "ล้างบัญชีดำทั้งหมด?"
+
+msgid "Vider"
+msgstr "ล้างทั้งหมด"
+
+msgid "PURGER LA LISTE NOIRE ?"
+msgstr "ล้างบัญชีดำ?"
+
+#, python-brace-format
+msgid "Liste noire enregistrée ({count} entrée(s)) : {path}"
+msgstr "บันทึกบัญชีดำแล้ว ({count} รายการ): {path}"
+
+msgid "ATTAQUE PROBABLE — COUPER FUNNEL ?"
+msgstr "น่าจะถูกโจมตี — ตัด FUNNEL?"
+
+#, python-brace-format
+msgid ""
+"{reason}\n"
+"\n"
+"Couper Funnel (port {ports}) arrête aussitôt les connexions venues d'Internet : la machine respire. Le tailnet (Serve, SSH) n'est pas touché.\n"
+"\n"
+"• Coupure de {minutes} min : Funnel est remis en route tout seul, à l'identique, même si omega-tail est fermé.\n"
+"• Coupure totale : Funnel reste coupé jusqu'à ce que vous le rétablissiez (menu Survie)."
+msgstr ""
+"{reason}\n"
+"\n"
+"การตัด Funnel (พอร์ต {ports}) หยุดการเชื่อมต่อจากอินเทอร์เน็ตทันที: เครื่องได้พักหายใจ tailnet (Serve, SSH) ไม่ถูกแตะต้อง\n"
+"\n"
+"• ตัด {minutes} นาที: Funnel จะเปิดกลับเอง เหมือนเดิมทุกประการ แม้ omega-tail ปิดอยู่\n"
+"• ตัดทั้งหมด: Funnel ถูกตัดจนกว่าคุณจะคืนค่า (เมนูการอยู่รอด)"
+
+#, python-brace-format
+msgid "Couper {minutes} min"
+msgstr "ตัด {minutes} นาที"
+
+msgid "Coupure totale"
+msgstr "ตัดทั้งหมด"
+
+msgid "Pas maintenant"
+msgstr "ไม่ใช่ตอนนี้"
+
+msgid "déconnecté (tailscale down)"
+msgstr "ตัดการเชื่อมต่อแล้ว (tailscale down)"
+
+msgid "compte à connecter"
+msgstr "ต้องเข้าสู่ระบบบัญชี"
+
+msgid "machine à approuver"
+msgstr "ต้องอนุมัติเครื่อง"
+
+msgid "CONNEXION ET RÉGLAGES"
+msgstr "การเชื่อมต่อและการตั้งค่า"
+
+msgid ""
+"La connexion de cette machine au tailnet, son compte, et les réglages de "
+"Tailscale. Chaque commande s'affiche avant d'être lancée, dans le terminal "
+"(sans sudo si vous êtes opérateur)."
+msgstr ""
+"การเชื่อมต่อของเครื่องนี้กับ tailnet บัญชี และการตั้งค่าของ Tailscale "
+"ทุกคำสั่งจะแสดงก่อนรันในเทอร์มินัล (ไม่ต้องใช้ sudo หากคุณเป็นผู้ควบคุม)"
+
+msgid "Se connecter"
+msgstr "เข้าสู่ระบบ"
+
+msgid "Se déconnecter"
+msgstr "ออกจากระบบ"
+
+msgid "Ajouter un compte"
+msgstr "เพิ่มบัญชี"
+
+msgid "Déconnexion définitive"
+msgstr "ออกจากระบบถาวร"
+
+msgid "COMPTE"
+msgstr "บัญชี"
+
+msgid "Comptes de cette machine (lecture…)"
+msgstr "บัญชีของเครื่องนี้ (กำลังอ่าน…)"
+
+msgid "Changer de compte"
+msgstr "สลับบัญชี"
+
+msgid "Appliquer"
+msgstr "ใช้"
+
+msgid "Relire"
+msgstr "อ่านใหม่"
+
+msgid "Mon compte"
+msgstr "บัญชีของฉัน"
+
+msgid "Activer le transfert IP"
+msgstr "เปิดการส่งต่อ IP"
+
+msgid " (en cours)"
+msgstr " (ใช้อยู่)"
+
+#, python-brace-format
+msgid "Comptes illisibles ({error}) : devenez opérateur (tableau de bord)."
+msgstr "อ่านบัญชีไม่ได้ ({error}): เป็นผู้ควบคุมก่อน (แดชบอร์ด)"
+
+msgid ""
+"Un seul compte sur cette machine : « Ajouter un compte » pour en connecter "
+"un autre."
+msgstr "มีบัญชีเดียวบนเครื่องนี้: « เพิ่มบัญชี » เพื่อเชื่อมต่อบัญชีอื่น"
+
+msgid ""
+"Aucune machine du tailnet ne se propose comme nœud de sortie. Sur la machine"
+" voulue : cocher « Proposer cette machine comme nœud de sortie », appliquer,"
+" puis l'approuver dans la console d'administration de Tailscale (Machines → "
+"Edit route settings)."
+msgstr ""
+"ไม่มีเครื่องใดใน tailnet เสนอตัวเป็นโหนดทางออก บนเครื่องที่ต้องการ: เลือก « "
+"เสนอเครื่องนี้เป็นโหนดทางออก » นำไปใช้ แล้วอนุมัติในคอนโซลผู้ดูแลระบบของ "
+"Tailscale (Machines → Edit route settings)"
+
+#, python-brace-format
+msgid "ex. {user}"
+msgstr "เช่น {user}"
+
+msgid "tailscaled ne répond pas"
+msgstr "tailscaled ไม่ตอบสนอง"
+
+#, python-brace-format
+msgid "Compte : {user} · tailnet : {tailnet}"
+msgstr "บัญชี: {user} · tailnet: {tailnet}"
+
+#, python-brace-format
+msgid "Machine : {name} · {addresses}"
+msgstr "เครื่อง: {name} · {addresses}"
+
+#, python-brace-format
+msgid "Expiration de la clé : {expiry} · opérateur : {operator}"
+msgstr "วันหมดอายุของคีย์: {expiry} · ผู้ควบคุม: {operator}"
+
+msgid "aucun (sudo)"
+msgstr "ไม่มี (sudo)"
+
+msgid "Votre session passe par Tailscale : se déconnecter vous couperait."
+msgstr "เซสชันของคุณผ่าน Tailscale: การออกจากระบบจะตัดการเชื่อมต่อของคุณ"
+
+#, python-brace-format
+msgid ""
+"Transfert IP désactivé ({keys}) : le nœud de sortie et les sous-réseaux "
+"annoncés ne transmettront rien. « Activer le transfert IP » écrit un fichier"
+" à part ({path}), gardé au redémarrage."
+msgstr ""
+"การส่งต่อ IP ปิดอยู่ ({keys}): "
+"โหนดทางออกและซับเน็ตที่ประกาศจะไม่ส่งต่ออะไรเลย « เปิดการส่งต่อ IP » "
+"เขียนไฟล์แยกต่างหาก ({path}) ซึ่งคงอยู่หลังรีสตาร์ท"
+
+msgid ""
+"Compte inconnu ou root : tapez le nom du compte Linux à rendre opérateur."
+msgstr ""
+"บัญชีไม่รู้จักหรือเป็น root: พิมพ์ชื่อบัญชี Linux ที่จะให้เป็นผู้ควบคุม"
+
+#, python-brace-format
+msgid "{name} : {reason}"
+msgstr "{name}: {reason}"
+
+#, python-brace-format
+msgid "{label} : {before} → {after}"
+msgstr "{label}: {before} → {after}"
+
+msgid "Aucun changement."
+msgstr "ไม่มีการเปลี่ยนแปลง"
+
+msgid "Commande :"
+msgstr "คำสั่ง:"
+
+#, python-brace-format
+msgid "Transfert IP désactivé ({keys}) : « Activer le transfert IP » aussi."
+msgstr "การส่งต่อ IP ปิดอยู่ ({keys}): ให้ « เปิดการส่งต่อ IP » ด้วย"
+
+#, python-brace-format
+msgid ""
+"Votre session passe par Tailscale ; ces changements peuvent la couper : "
+"{names}."
+msgstr ""
+"เซสชันของคุณผ่าน Tailscale; การเปลี่ยนแปลงเหล่านี้อาจตัดเซสชัน: {names}"
+
+#, python-brace-format
+msgid "Dernière application ({time}) : la commande a échoué (code {code})."
+msgstr "นำไปใช้ครั้งล่าสุด ({time}): คำสั่งล้มเหลว (รหัส {code})"
+
+#, python-brace-format
+msgid "Dernière application ({time}) :"
+msgstr "นำไปใช้ครั้งล่าสุด ({time}):"
+
+#, python-brace-format
+msgid "{label} : {after}"
+msgstr "{label}: {after}"
+
+#, python-brace-format
+msgid "{label} : {after} demandé, {now} lu"
+msgstr "{label}: ขอ {after}, อ่านได้ {now}"
+
+msgid "À appliquer :"
+msgstr "ที่จะนำไปใช้:"
+
+msgid "Valeur refusée : corrigez la ligne marquée ✖."
+msgstr "ค่าถูกปฏิเสธ: แก้ไขบรรทัดที่มีเครื่องหมาย ✖"
+
+msgid "APPLIQUER LES RÉGLAGES ?"
+msgstr "นำการตั้งค่าไปใช้?"
+
+msgid ""
+"Votre session passe par Tailscale : elle sera COUPÉE et ne reviendra pas. Il"
+" faudra un accès local (ou un autre chemin) pour vous reconnecter."
+msgstr ""
+"เซสชันของคุณผ่าน Tailscale: จะถูกตัดและไม่กลับมา คุณต้องเข้าถึงภายในเครื่อง "
+"(หรือเส้นทางอื่น) เพื่อเชื่อมต่อใหม่"
+
+msgid "Ce qui est publié (Serve et Funnel) ne sera plus joignable."
+msgstr "สิ่งที่เผยแพร่ (Serve และ Funnel) จะเข้าถึงไม่ได้อีก"
+
+msgid "ACTIVER LE TRANSFERT IP ?"
+msgstr "เปิดการส่งต่อ IP?"
+
+#, python-brace-format
+msgid ""
+"Le noyau fera suivre les paquets (IPv4 et IPv6) : nécessaire pour un nœud de"
+" sortie ou des sous-réseaux annoncés. Fichier à part {path}, relu au "
+"démarrage (systemd, OpenRC, runit) ; pour annuler : supprimer ce fichier "
+"puis redémarrer."
+msgstr ""
+"เคอร์เนลจะส่งต่อแพ็กเก็ต (IPv4 และ IPv6): "
+"จำเป็นสำหรับโหนดทางออกหรือซับเน็ตที่ประกาศ ไฟล์แยกต่างหาก {path} "
+"อ่านใหม่ตอนบูต (systemd, OpenRC, runit); หากต้องการยกเลิก: "
+"ลบไฟล์นี้แล้วรีสตาร์ท"
+
+msgid "SE CONNECTER ?"
+msgstr "เข้าสู่ระบบ?"
+
+msgid ""
+"Remet cette machine dans le tailnet. Si un compte doit s'identifier, "
+"Tailscale affiche dans le terminal l'adresse à ouvrir dans un navigateur."
+msgstr ""
+"นำเครื่องนี้กลับเข้า tailnet หากบัญชีต้องยืนยันตัวตน Tailscale "
+"จะแสดงที่อยู่ที่ต้องเปิดในเบราว์เซอร์ในเทอร์มินัล"
+
+msgid "SE DÉCONNECTER ?"
+msgstr "ออกจากระบบ?"
+
+msgid ""
+"La machine quitte le tailnet (le compte reste enregistré : « Se connecter » "
+"la remet)."
+msgstr ""
+"เครื่องออกจาก tailnet (บัญชียังคงบันทึกไว้: « เข้าสู่ระบบ » จะนำกลับมา)"
+
+msgid "AJOUTER UN COMPTE ?"
+msgstr "เพิ่มบัญชี?"
+
+msgid ""
+"Connecte un autre compte (ou un autre tailnet) sur cette machine ; il "
+"devient le compte en cours. Tailscale affiche l'adresse à ouvrir pour vous "
+"identifier. L'ancien compte reste dans « Changer de compte »."
+msgstr ""
+"เชื่อมต่อบัญชีอื่น (หรือ tailnet อื่น) บนเครื่องนี้; "
+"บัญชีนั้นจะเป็นบัญชีปัจจุบัน Tailscale "
+"แสดงที่อยู่ที่ต้องเปิดเพื่อยืนยันตัวตน บัญชีเดิมยังอยู่ใน « สลับบัญชี »"
+
+msgid "Choisissez un autre compte que le compte en cours."
+msgstr "เลือกบัญชีอื่นที่ไม่ใช่บัญชีปัจจุบัน"
+
+msgid "CHANGER DE COMPTE ?"
+msgstr "สลับบัญชี?"
+
+#, python-brace-format
+msgid ""
+"La machine passe sur le compte {account} (tailnet {tailnet}). Son adresse et"
+" ce qu'elle voit du tailnet changent."
+msgstr ""
+"เครื่องจะสลับไปใช้บัญชี {account} (tailnet {tailnet}) "
+"ที่อยู่และสิ่งที่เครื่องเห็นใน tailnet จะเปลี่ยนไป"
+
+#, python-brace-format
+msgid ""
+"La machine est retirée du compte : sa clé est révoquée, il faudra s'identifier à nouveau (et peut-être la réapprouver) pour la remettre dans le tailnet.\n"
+"\n"
+"Commande : {command}"
+msgstr ""
+"เครื่องถูกนำออกจากบัญชี: คีย์ถูกเพิกถอน ต้องยืนยันตัวตนใหม่ (และอาจต้องอนุมัติใหม่) เพื่อนำกลับเข้า tailnet\n"
+"\n"
+"คำสั่ง: {command}"
+
+#, python-brace-format
+msgid "Pour confirmer, tapez le nom de la machine : {word}"
+msgstr "เพื่อยืนยัน พิมพ์ชื่อเครื่อง: {word}"
+
+msgid "DÉCONNEXION DÉFINITIVE ?"
+msgstr "ออกจากระบบถาวร?"
+
+msgid "Déconnecter"
+msgstr "ออกจากระบบ"
+
+msgid "bouton « Devenir opérateur »"
+msgstr "ปุ่ม « เป็นผู้ควบคุม »"
+
+#, python-brace-format
+msgid "lot {lot}"
+msgstr "ล็อต {lot}"
+
+msgid "Tailscale"
+msgstr "Tailscale"
+
+msgid "n'est pas installé"
+msgstr "ยังไม่ได้ติดตั้ง"
+
+#, python-brace-format
+msgid "ne répond pas : {error}"
+msgstr "ไม่ตอบสนอง: {error}"
+
+msgid "tailscaled"
+msgstr "tailscaled"
+
+msgid "Client installé"
+msgstr "ไคลเอนต์ที่ติดตั้ง"
+
+#, python-brace-format
+msgid "{daemon} en marche, {client} installé"
+msgstr "{daemon} กำลังทำงาน, {client} ติดตั้งแล้ว"
+
+msgid "Version"
+msgstr "เวอร์ชัน"
+
+msgid "Compte"
+msgstr "บัญชี"
+
+msgid "Appareils du tailnet"
+msgstr "อุปกรณ์ใน tailnet"
+
+#, python-brace-format
+msgid "{online} en ligne sur {total}"
+msgstr "ออนไลน์ {online} จาก {total}"
+
+msgid "Clé de la machine"
+msgstr "คีย์ของเครื่อง"
+
+msgid "aucun (sudo requis)"
+msgstr "ไม่มี (ต้องใช้ sudo)"
+
+msgid "Nœud de sortie proposé"
+msgstr "โหนดทางออกที่เสนอ"
+
+msgid "Machine"
+msgstr "เครื่อง"
+
+#, python-brace-format
+msgid "{name} ({count} fils)"
+msgstr "{name} ({count} เธรด)"
+
+msgid "CPU machine"
+msgstr "CPU เครื่อง"
+
+msgid "Charge"
+msgstr "โหลด"
+
+msgid "Température"
+msgstr "อุณหภูมิ"
+
+msgid "Mémoire"
+msgstr "หน่วยความจำ"
+
+#, python-brace-format
+msgid "{used} utilisés sur {total}"
+msgstr "ใช้ {used} จาก {total}"
+
+msgid "CPU tailscaled"
+msgstr "CPU tailscaled"
+
+#, python-brace-format
+msgid "{cpu} d'un cœur, {memory}"
+msgstr "{cpu} ของหนึ่งคอร์, {memory}"
+
+msgid "Confinement"
+msgstr "การจำกัดทรัพยากร"
+
+msgid "Funnel"
+msgstr "Funnel"
+
+msgid "coupé par le disjoncteur"
+msgstr "ถูกเบรกเกอร์ตัด"
+
+#, python-brace-format
+msgid "ouvert sur {ports}"
+msgstr "เปิดบน {ports}"
+
+msgid "sans porte"
+msgstr "ไม่มีประตู"
+
+msgid "fermé"
+msgstr "ปิด"
+
+msgid "actif · MODE ATTAQUE"
+msgstr "ใช้งาน · โหมดโจมตี"
+
+msgid "Pare-feu (porte)"
+msgstr "ไฟร์วอลล์ (ประตู)"
+
+msgid "inactif"
+msgstr "ไม่ทำงาน"
+
+#, python-brace-format
+msgid "{count} entrée(s)"
+msgstr "{count} รายการ"
+
+msgid "Veille"
+msgstr "การเฝ้าระวัง"
+
+msgid "inactive"
+msgstr "ไม่ทำงาน"
+
+msgid "arrêtée"
+msgstr "หยุดแล้ว"
+
+#, python-brace-format
+msgid "active, palier {level}"
+msgstr "ใช้งาน ขั้น {level}"
+
+msgid "Bouclier WireGuard"
+msgstr "โล่ป้องกัน WireGuard"
+
+msgid "non posé"
+msgstr "ยังไม่ได้วาง"
+
+msgid "ABSENT (table effacée)"
+msgstr "ไม่พบ (ตารางถูกลบ)"
+
+msgid "état non mis à jour"
+msgstr "สถานะไม่ได้อัปเดต"
+
+#, python-brace-format
+msgid "posé, mode {mode}"
+msgstr "วางแล้ว โหมด {mode}"
+
+msgid "TABLEAU DE BORD"
+msgstr "แดชบอร์ด"
+
+msgid "Corriger"
+msgstr "แก้ไข"
+
+msgid "Alerte"
+msgstr "การแจ้งเตือน"
+
+msgid "Où corriger"
+msgstr "แก้ไขที่ใด"
+
+#, python-brace-format
+msgid "Lu à {time} · relu toutes les 5 s"
+msgstr "อ่านเมื่อ {time} · อ่านใหม่ทุก 5 วินาที"
+
+msgid "Choisissez une alerte puis « Corriger » (ou Entrée)."
+msgstr "เลือกการแจ้งเตือนแล้วกด « แก้ไข » (หรือ Enter)"
+
+msgid "Aucune alerte choisie."
+msgstr "ไม่ได้เลือกการแจ้งเตือน"
+
+msgid "Rien à ouvrir pour cette alerte : elle vient de Tailscale lui-même."
+msgstr "ไม่มีหน้าจอให้เปิดสำหรับการแจ้งเตือนนี้: มาจาก Tailscale เอง"
+
+#, python-brace-format
+msgid "Fichier trop volumineux pour être lu ici : {path}"
+msgstr "ไฟล์ใหญ่เกินกว่าจะอ่านที่นี่: {path}"
+
+#, python-brace-format
+msgid "Lecture impossible : {error}"
+msgstr "อ่านไม่ได้: {error}"
+
+msgid "EXPORTS"
+msgstr "การส่งออก"
+
+msgid ""
+"Pas de navigateur dans cette session (serveur, connexion SSH) : les exports "
+"sont listés et lus ici. Choisissez une ligne (Entrée) pour la lire."
+msgstr ""
+"ไม่มีเบราว์เซอร์ในเซสชันนี้ (เซิร์ฟเวอร์ การเชื่อมต่อ SSH): "
+"แสดงรายการและอ่านไฟล์ส่งออกที่นี่ เลือกบรรทัด (Enter) เพื่ออ่าน"
+
+msgid "Lire"
+msgstr "อ่าน"
+
+msgid "Taille"
+msgstr "ขนาด"
+
+msgid "Aucun export pour l'instant."
+msgstr "ยังไม่มีไฟล์ส่งออก"
+
+#, python-brace-format
+msgid "Dossier des exports ouvert dans le navigateur : {path}"
+msgstr "เปิดโฟลเดอร์ส่งออกในเบราว์เซอร์แล้ว: {path}"
+
+msgid "Connexions par adresse / 10 s"
+msgstr "การเชื่อมต่อต่อที่อยู่ / 10 วินาที"
+
+msgid "Par préfixe /24 ou /64 / 10 s"
+msgstr "ต่อพรีฟิกซ์ /24 หรือ /64 / 10 วินาที"
+
+msgid "Budget global (admises / s)"
+msgstr "งบประมาณรวม (อนุญาต / วินาที)"
+
+msgid "Connexions simultanées"
+msgstr "การเชื่อมต่อพร้อมกัน"
+
+msgid "Durée de blocage (min)"
+msgstr "ระยะเวลาบล็อก (นาที)"
+
+msgid "Mode attaque au-delà de (entrantes / s)"
+msgstr "โหมดโจมตีเมื่อเกิน (ขาเข้า / วินาที)"
+
+msgid "Retour au normal après (min de calme)"
+msgstr "กลับเป็นปกติหลัง (นาทีที่สงบ)"
+
+msgid "AS d'hébergeur / 10 s"
+msgstr "AS ผู้ให้บริการโฮสติ้ง / 10 วินาที"
+
+msgid "Empreinte inconnue / 10 s"
+msgstr "ลายนิ้วมือไม่รู้จัก / 10 วินาที"
+
+msgid "Pays limité / 10 s"
+msgstr "ประเทศที่จำกัด / 10 วินาที"
+
+msgid ""
+"HAProxy sans Lua : regroupements indisponibles (la porte du lot 4 protège "
+"seule)."
+msgstr ""
+"HAProxy ไม่มี Lua: การจัดกลุ่มไม่พร้อมใช้งาน (ประตูของล็อต 4 "
+"ป้องกันเพียงลำพัง)"
+
+msgid "Regroupements : appliqués (refusent en mode attaque)"
+msgstr "การจัดกลุ่ม: บังคับใช้ (ปฏิเสธในโหมดโจมตี)"
+
+msgid ""
+"Regroupements : en observation (comptent « aurait refusé », ne refusent "
+"rien)"
+msgstr "การจัดกลุ่ม: สังเกตการณ์ (นับ « จะปฏิเสธ » ไม่ปฏิเสธสิ่งใด)"
+
+#, python-brace-format
+msgid "Mode : ATTAQUE — retour au normal après {seconds} s de calme"
+msgstr "โหมด: โจมตี — กลับเป็นปกติหลังสงบ {seconds} วินาที"
+
+msgid "Mode : normal"
+msgstr "โหมด: ปกติ"
+
+#, python-brace-format
+msgid ""
+"Empreintes : apprentissage, encore {days} jour(s) ; les regroupements "
+"restent en observation jusqu'à la fin."
+msgstr ""
+"ลายนิ้วมือ: กำลังเรียนรู้ เหลืออีก {days} วัน; "
+"การจัดกลุ่มยังอยู่ในโหมดสังเกตการณ์จนกว่าจะเสร็จ"
+
+#, python-brace-format
+msgid ""
+"Empreintes habituelles : {count} (référence prête) ; « appliqués » est "
+"maintenant possible."
+msgstr ""
+"ลายนิ้วมือที่พบเป็นประจำ: {count} (ค่าอ้างอิงพร้อมแล้ว); เลือก « บังคับใช้ »"
+" ได้แล้ว"
+
+msgid ""
+"Base AS / pays : absente (« Mettre à jour la base », ou la veille une fois "
+"par mois)"
+msgstr ""
+"ฐานข้อมูล AS / ประเทศ: ไม่มี (« อัปเดตฐานข้อมูล » "
+"หรือการเฝ้าระวังเดือนละครั้ง)"
+
+#, python-brace-format
+msgid ""
+"Base AS / pays : à jour il y a {days} jour(s) ; renouvelée chaque mois par "
+"la veille"
+msgstr ""
+"ฐานข้อมูล AS / ประเทศ: อัปเดตเมื่อ {days} วันที่แล้ว; "
+"การเฝ้าระวังต่ออายุทุกเดือน"
+
+msgid ""
+"Navigateurs courants (Chrome, Edge, Firefox) jamais limités par ces règles."
+msgstr "เบราว์เซอร์ทั่วไป (Chrome, Edge, Firefox) ไม่เคยถูกจำกัดโดยกฎเหล่านี้"
+
+msgid ""
+"Une porte (HAProxy) se place entre Funnel et votre site : elle voit "
+"l'adresse réelle de chaque visiteur et refuse les abus AVANT tout "
+"chiffrement (4,6 fois moins de calcul par connexion refusée, mesuré). "
+"Activation et désactivation avec retour arrière automatique."
+msgstr ""
+"ประตู (HAProxy) วางอยู่ระหว่าง Funnel กับเว็บไซต์ของคุณ: "
+"เห็นที่อยู่จริงของผู้เยี่ยมชมแต่ละราย "
+"และปฏิเสธการใช้งานผิดปกติก่อนการเข้ารหัสใด ๆ (คำนวณน้อยลง 4.6 "
+"เท่าต่อการเชื่อมต่อที่ถูกปฏิเสธ ตามผลการวัด) "
+"เปิดและปิดพร้อมการย้อนกลับอัตโนมัติ"
+
+msgid "Installer HAProxy"
+msgstr "ติดตั้ง HAProxy"
+
+msgid "Activer la protection"
+msgstr "เปิดการป้องกัน"
+
+msgid "Désactiver la protection"
+msgstr "ปิดการป้องกัน"
+
+msgid "Renouveler le certificat"
+msgstr "ต่ออายุใบรับรอง"
+
+msgid "RÈGLES (appliquées à chaud)"
+msgstr "กฎ (ใช้ขณะทำงาน)"
+
+msgid "Mode"
+msgstr "โหมด"
+
+msgid "normal : refuse"
+msgstr "ปกติ: ปฏิเสธ"
+
+msgid "observation : compte sans refuser"
+msgstr "สังเกตการณ์: นับโดยไม่ปฏิเสธ"
+
+msgid "Vérifier le nom visé"
+msgstr "ตรวจสอบชื่อปลายทาง"
+
+msgid "nombre"
+msgstr "จำนวน"
+
+msgid "Appliquer les règles"
+msgstr "ใช้กฎ"
+
+msgid "LISTES"
+msgstr "รายการ"
+
+msgid "Adresse ou réseau (203.0.113.7, 198.51.100.0/24, 2001:db8::/48)"
+msgstr "ที่อยู่หรือเครือข่าย (203.0.113.7, 198.51.100.0/24, 2001:db8::/48)"
+
+msgid "Mettre en confiance"
+msgstr "ใส่ในรายการที่เชื่อถือ"
+
+msgid "REGROUPEMENTS : EMPREINTES, AS, PAYS"
+msgstr "การจัดกลุ่ม: ลายนิ้วมือ, AS, ประเทศ"
+
+msgid ""
+"Contre les attaques à adresses dispersées : chaque connexion reçoit, avant "
+"tout chiffrement, son empreinte (JA4), son AS et son pays. Quand les "
+"connexions entrantes dépassent le seuil, la porte passe seule en MODE "
+"ATTAQUE : une empreinte inconnue qui explose, un AS d'hébergeur ou un pays "
+"choisi qui dépasse son débit est alors refusé. Les navigateurs courants ne "
+"sont jamais touchés ; les clients connus passent avant le budget. En "
+"observation, tout est compté (« aurait refusé ») et rien n'est refusé."
+msgstr ""
+"รับมือการโจมตีจากที่อยู่กระจัดกระจาย: ก่อนการเข้ารหัสใด ๆ "
+"ทุกการเชื่อมต่อจะได้รับลายนิ้วมือ (JA4) AS และประเทศ "
+"เมื่อการเชื่อมต่อขาเข้าเกินเกณฑ์ ประตูจะเข้าสู่โหมดโจมตีเอง: "
+"ลายนิ้วมือที่ไม่รู้จักซึ่งพุ่งสูงขึ้น AS ของผู้ให้บริการโฮสติ้ง "
+"หรือประเทศที่เลือกซึ่งเกินอัตราของตนจะถูกปฏิเสธ "
+"เบราว์เซอร์ทั่วไปไม่เคยได้รับผล; ไคลเอนต์ที่รู้จักได้ผ่านก่อนงบประมาณ "
+"ในโหมดสังเกตการณ์ นับทุกอย่าง (« จะปฏิเสธ ») และไม่ปฏิเสธสิ่งใด"
+
+msgid "Regroupements"
+msgstr "การจัดกลุ่ม"
+
+msgid "observation : comptent sans refuser"
+msgstr "สังเกตการณ์: นับโดยไม่ปฏิเสธ"
+
+msgid "appliqués : refusent en mode attaque (après l'apprentissage)"
+msgstr "บังคับใช้: ปฏิเสธในโหมดโจมตี (หลังการเรียนรู้)"
+
+msgid "Clients connus avant le budget"
+msgstr "ไคลเอนต์ที่รู้จักก่อนงบประมาณ"
+
+msgid "Pays limités en mode attaque"
+msgstr "ประเทศที่จำกัดในโหมดโจมตี"
+
+msgid "ex. CN, RU (vide : aucun)"
+msgstr "เช่น CN, RU (ว่าง: ไม่มี)"
+
+msgid "AS d'hébergeurs"
+msgstr "AS ของผู้ให้บริการโฮสติ้ง"
+
+msgid "ex. 16509 24940 (numéros d'AS)"
+msgstr "เช่น 16509 24940 (หมายเลข AS)"
+
+msgid "Appliquer les regroupements"
+msgstr "ใช้การจัดกลุ่ม"
+
+msgid "Mettre à jour la base"
+msgstr "อัปเดตฐานข้อมูล"
+
+msgid "Recommencer l'apprentissage"
+msgstr "เริ่มการเรียนรู้ใหม่"
+
+#, python-brace-format
+msgid ""
+"Confiance (jamais limitées) : {trusted}\n"
+"Liste noire (refusées jusqu'à leur retrait) : {black}"
+msgstr ""
+"เชื่อถือ (ไม่เคยถูกจำกัด): {trusted}\n"
+"บัญชีดำ (ถูกปฏิเสธจนกว่าจะนำออก): {black}"
+
+msgid ""
+"Téléchargement et préparation de la base AS / pays (DB-IP Lite) : une à "
+"quelques minutes, l'écran reste utilisable…"
+msgstr ""
+"กำลังดาวน์โหลดและเตรียมฐานข้อมูล AS / ประเทศ (DB-IP Lite): "
+"หนึ่งถึงไม่กี่นาที หน้าจอยังใช้งานได้…"
+
+msgid ""
+"Chaque menu, sa fonction et le détail. Cliquez sur un titre pour l'ouvrir."
+msgstr "แต่ละเมนู หน้าที่ และรายละเอียด คลิกที่หัวข้อเพื่อเปิด"
+
+msgid "Exporter l'aide en HTML"
+msgstr "ส่งออกความช่วยเหลือเป็น HTML"
+
+#, python-brace-format
+msgid "Aide exportée : {path}"
+msgstr "ส่งออกความช่วยเหลือแล้ว: {path}"
+
+#, python-brace-format
+msgid "Cet écran arrive dans une prochaine version (lot {lot})."
+msgstr "หน้าจอนี้จะมาในเวอร์ชันถัดไป (ล็อต {lot})"
+
+msgid "Cet écran n'est pas disponible dans cette session."
+msgstr "หน้าจอนี้ไม่พร้อมใช้งานในเซสชันนี้"
+
+msgid "JOURNAUX"
+msgstr "ล็อก"
+
+msgid "porte (pare-feu)"
+msgstr "ประตู (ไฟร์วอลล์)"
+
+#, python-brace-format
+msgid "{count} lignes"
+msgstr "{count} บรรทัด"
+
+msgid "Filtrer (texte, adresse…)"
+msgstr "กรอง (ข้อความ ที่อยู่…)"
+
+msgid "Lecture du journal…"
+msgstr "กำลังอ่านล็อก…"
+
+msgid "Aucune ligne lue."
+msgstr "ไม่ได้อ่านบรรทัดใด"
+
+#, python-brace-format
+msgid "{shown} ligne(s) affichée(s) sur {total} lue(s)."
+msgstr "แสดง {shown} บรรทัดจากที่อ่านได้ {total}"
+
+msgid "Rien à exporter."
+msgstr "ไม่มีอะไรให้ส่งออก"
+
+#, python-brace-format
+msgid "Journal exporté : {path}"
+msgstr "ส่งออกล็อกแล้ว: {path}"
+
+msgid "maintenant"
+msgstr "เมื่อสักครู่"
+
+#, python-brace-format
+msgid "il y a {count} min"
+msgstr "{count} นาทีที่แล้ว"
+
+#, python-brace-format
+msgid "il y a {count} h"
+msgstr "{count} ชม. ที่แล้ว"
+
+#, python-brace-format
+msgid "il y a {count} j"
+msgstr "{count} วันที่แล้ว"
+
+msgid "direct"
+msgstr "ตรง"
+
+msgid "relais"
+msgstr "รีเลย์"
+
+#, python-brace-format
+msgid "relais {code}"
+msgstr "รีเลย์ {code}"
+
+msgid "sortie Internet"
+msgstr "ทางออกอินเทอร์เน็ต"
+
+#, python-brace-format
+msgid "Diagnostic impossible : {error}"
+msgstr "วินิจฉัยไม่ได้: {error}"
+
+msgid "Tailscale n'a rien répondu."
+msgstr "Tailscale ไม่ตอบกลับ"
+
+#, python-brace-format
+msgid "oui, adresse publique {address}"
+msgstr "ใช่ ที่อยู่สาธารณะ {address}"
+
+#, python-brace-format
+msgid "UDP : {value}"
+msgstr "UDP: {value}"
+
+msgid "non — tout passe par les relais de Tailscale (plus lent)"
+msgstr "ไม่ — ทุกอย่างผ่านรีเลย์ของ Tailscale (ช้ากว่า)"
+
+#, python-brace-format
+msgid "IPv4 : {value}"
+msgstr "IPv4: {value}"
+
+#, python-brace-format
+msgid "IPv6 : {value}"
+msgstr "IPv6: {value}"
+
+#, python-brace-format
+msgid "NAT : {value}"
+msgstr "NAT: {value}"
+
+msgid ""
+"difficile — le port change selon la destination, les relais seront plus "
+"fréquents"
+msgstr "ยาก — พอร์ตเปลี่ยนตามปลายทาง จะใช้รีเลย์บ่อยขึ้น"
+
+msgid "simple — les connexions directes se font facilement"
+msgstr "ง่าย — เชื่อมต่อตรงได้ง่าย"
+
+#, python-brace-format
+msgid "Ouverture de port par la box : {value}"
+msgstr "การเปิดพอร์ตโดยเราเตอร์: {value}"
+
+#, python-brace-format
+msgid "Relais le plus proche : {value}"
+msgstr "รีเลย์ที่ใกล้ที่สุด: {value}"
+
+#, python-brace-format
+msgid "Latence des relais : {values}"
+msgstr "เวลาแฝงของรีเลย์: {values}"
+
+msgid "Compteurs internes illisibles (Tailscale trop ancien ?)."
+msgstr "อ่านตัวนับภายในไม่ได้ (Tailscale เก่าเกินไป?)"
+
+msgid "Reçu"
+msgstr "ได้รับ"
+
+msgid "Envoyé"
+msgstr "ส่งแล้ว"
+
+#, python-brace-format
+msgid ""
+"{title} depuis le démarrage : direct {direct} · relais DERP {derp} · relais "
+"d'un pair {peer}"
+msgstr ""
+"{title} ตั้งแต่เริ่มต้น: ตรง {direct} · รีเลย์ DERP {derp} · รีเลย์เพียร์ "
+"{peer}"
+
+#, python-brace-format
+msgid "Paquets jetés en sortie : {count}"
+msgstr "แพ็กเก็ตขาออกที่ถูกทิ้ง: {count}"
+
+#, python-brace-format
+msgid "Messages de santé : {count}"
+msgstr "ข้อความสถานะสุขภาพ: {count}"
+
+msgid "RÉSEAU ET APPAREILS"
+msgstr "เครือข่ายและอุปกรณ์"
+
+msgid ""
+"Ce que voit Tailscale depuis cette machine : les appareils du tailnet, le "
+"chemin vers chacun (direct ou par un relais), et l'état du réseau. Lecture "
+"seule : rien n'est changé ici."
+msgstr ""
+"สิ่งที่ Tailscale เห็นจากเครื่องนี้: อุปกรณ์ใน tailnet "
+"เส้นทางไปยังแต่ละเครื่อง (ตรงหรือผ่านรีเลย์) และสถานะของเครือข่าย "
+"อ่านอย่างเดียว: ไม่มีอะไรถูกเปลี่ยนที่นี่"
+
+msgid "APPAREILS"
+msgstr "อุปกรณ์"
+
+msgid "filtrer : nom, système, adresse"
+msgstr "กรอง: ชื่อ ระบบ ที่อยู่"
+
+msgid "Relais Funnel de Tailscale"
+msgstr "รีเลย์ Funnel ของ Tailscale"
+
+msgid "Chemin"
+msgstr "พาธ"
+
+msgid "Vu"
+msgstr "เห็นล่าสุด"
+
+msgid "nom ou adresse (vide : la ligne choisie)"
+msgstr "ชื่อหรือที่อยู่ (ว่าง: บรรทัดที่เลือก)"
+
+msgid "Ping Tailscale"
+msgstr "Ping ของ Tailscale"
+
+msgid "Qui est-ce ?"
+msgstr "นี่คือใคร?"
+
+msgid "DIAGNOSTIC RÉSEAU"
+msgstr "การวินิจฉัยเครือข่าย"
+
+msgid ""
+"UDP, IPv4 / IPv6, type de NAT, ouverture de port par la box, relais le plus "
+"proche : ce qui décide si les connexions sont directes. Prend quelques "
+"secondes."
+msgstr ""
+"UDP, IPv4 / IPv6 ชนิดของ NAT การเปิดพอร์ตโดยเราเตอร์ รีเลย์ที่ใกล้ที่สุด: "
+"สิ่งที่กำหนดว่าการเชื่อมต่อจะเป็นแบบตรงหรือไม่ ใช้เวลาไม่กี่วินาที"
+
+msgid "Lancer le diagnostic"
+msgstr "เริ่มการวินิจฉัย"
+
+msgid "DIAGNOSTIC"
+msgstr "การวินิจฉัย"
+
+msgid "VERROU DU TAILNET"
+msgstr "การล็อก TAILNET"
+
+msgid "COMPTEURS INTERNES"
+msgstr "ตัวนับภายใน"
+
+#, python-brace-format
+msgid "Illisible : {error}"
+msgstr "อ่านไม่ได้: {error}"
+
+#, python-brace-format
+msgid ""
+"{online} en ligne sur {total} appareil(s) ; {relays} relais Funnel de "
+"Tailscale (cochez pour les voir)."
+msgstr ""
+"ออนไลน์ {online} จาก {total} อุปกรณ์; รีเลย์ Funnel ของ Tailscale {relays} "
+"(เลือกช่องเพื่อดู)"
+
+#, python-brace-format
+msgid "Appareils illisibles : {error}"
+msgstr "อ่านอุปกรณ์ไม่ได้: {error}"
+
+msgid "Choisissez un appareil, ou tapez un nom ou une adresse."
+msgstr "เลือกอุปกรณ์ หรือพิมพ์ชื่อหรือที่อยู่"
+
+#, python-brace-format
+msgid "PING {target}"
+msgstr "PING {target}"
+
+#, python-brace-format
+msgid "QUI EST-CE ? {target}"
+msgstr "นี่คือใคร? {target}"
+
+msgid "Lecture…"
+msgstr "กำลังอ่าน…"
+
+msgid "Ping en cours (3 essais au plus)…"
+msgstr "กำลัง ping (ไม่เกิน 3 ครั้ง)…"
+
+#, python-brace-format
+msgid "« {target} » n'est pas un nom ou une adresse valable."
+msgstr "« {target} » ไม่ใช่ชื่อหรือที่อยู่ที่ถูกต้อง"
+
+msgid "Diagnostic en cours (quelques secondes)…"
+msgstr "กำลังวินิจฉัย (ไม่กี่วินาที)…"
+
+msgid "tailnet seul"
+msgstr "เฉพาะ tailnet"
+
+msgid "par la porte ✔"
+msgstr "ผ่านประตู ✔"
+
+msgid "non protégé"
+msgstr "ไม่มีการป้องกัน"
+
+#, python-brace-format
+msgid "depuis Internet (relais Funnel {via})"
+msgstr "จากอินเทอร์เน็ต (รีเลย์ Funnel {via})"
+
+#, python-brace-format
+msgid "par le tailnet ({via})"
+msgstr "ผ่าน tailnet ({via})"
+
+#, python-brace-format
+msgid "{kind} {port}{path} {where} : {detail}"
+msgstr "{kind} {port}{path} {where}: {detail}"
+
+#, python-brace-format
+msgid "Temps : {ms:.0f} ms"
+msgstr "เวลา: {ms:.0f} ms"
+
+#, python-brace-format
+msgid "Certificat : {subject} · émis par {issuer} · échéance {expiry} · {tls}"
+msgstr "ใบรับรอง: {subject} · ออกโดย {issuer} · หมดอายุ {expiry} · {tls}"
+
+msgid ""
+"Le nom n'est pas encore publié pour Internet : juste après un ajout, Funnel "
+"met parfois une minute. Réessayez."
+msgstr ""
+"ชื่อยังไม่ได้เผยแพร่สู่อินเทอร์เน็ต: หลังเพิ่มใหม่ ๆ บางครั้ง Funnel "
+"ใช้เวลาหนึ่งนาที ลองอีกครั้ง"
+
+msgid ""
+"Un essai par le tailnet depuis la machine elle-même peut échouer selon le "
+"système : essayez aussi depuis un autre appareil."
+msgstr ""
+"การทดสอบผ่าน tailnet จากตัวเครื่องเองอาจล้มเหลวขึ้นอยู่กับระบบ: "
+"ลองจากอุปกรณ์อื่นด้วย"
+
+msgid ""
+"Ce que cette machine publie : pour le tailnet seul (Serve) ou pour Internet "
+"(Funnel). Chaque changement est vérifié, et l'état d'avant est sauvegardé "
+"(restaurable en un bouton)."
+msgstr ""
+"สิ่งที่เครื่องนี้เผยแพร่: เฉพาะ tailnet (Serve) หรือสำหรับอินเทอร์เน็ต "
+"(Funnel) ทุกการเปลี่ยนแปลงถูกตรวจสอบ และสถานะก่อนหน้าถูกสำรองไว้ "
+"(กู้คืนได้ด้วยปุ่มเดียว)"
+
+msgid "Essai de bout en bout"
+msgstr "ทดสอบแบบต้นทางถึงปลายทาง"
+
+msgid "Retirer"
+msgstr "ถอน"
+
+msgid "Suspendre Funnel"
+msgstr "พัก Funnel"
+
+msgid "Rétablir Funnel"
+msgstr "คืนค่า Funnel"
+
+msgid "AJOUTER"
+msgstr "เพิ่ม"
+
+msgid ""
+"Pour Internet, le plus sûr : HTTPS sur le port 443, puis « Activer la "
+"protection » (Pare-feu Funnel) pour que la porte filtre avant tout "
+"chiffrement."
+msgstr ""
+"สำหรับอินเทอร์เน็ต วิธีที่ปลอดภัยที่สุด: HTTPS บนพอร์ต 443 แล้ว « "
+"เปิดการป้องกัน » (ไฟร์วอลล์ Funnel) เพื่อให้ประตูกรองก่อนการเข้ารหัสใด ๆ"
+
+msgid "Service local"
+msgstr "บริการภายในเครื่อง"
+
+msgid "8080 ou http://127.0.0.1:8080"
+msgstr "8080 หรือ http://127.0.0.1:8080"
+
+msgid "Pour"
+msgstr "สำหรับ"
+
+msgid "le tailnet seul (Serve)"
+msgstr "เฉพาะ tailnet (Serve)"
+
+msgid "Port (Funnel : 443, 8443, 10000)"
+msgstr "พอร์ต (Funnel: 443, 8443, 10000)"
+
+msgid "Chemin (HTTPS / HTTP)"
+msgstr "พาธ (HTTPS / HTTP)"
+
+msgid "Publier"
+msgstr "เผยแพร่"
+
+msgid "SAUVEGARDES"
+msgstr "ข้อมูลสำรอง"
+
+msgid ""
+"L'état d'avant chaque changement (publication, pare-feu, disjoncteur) ; les "
+"50 plus récentes sont gardées dans var/funnel/sauvegardes/."
+msgstr ""
+"สถานะก่อนการเปลี่ยนแปลงแต่ละครั้ง (การเผยแพร่ ไฟร์วอลล์ เบรกเกอร์); เก็บ 50 "
+"รายการล่าสุดไว้ใน var/funnel/sauvegardes/"
+
+msgid "Aucune sauvegarde"
+msgstr "ไม่มีข้อมูลสำรอง"
+
+msgid "Restaurer"
+msgstr "กู้คืน"
+
+#, python-brace-format
+msgid "Publication illisible : {error}"
+msgstr "อ่านการเผยแพร่ไม่ได้: {error}"
+
+msgid "Internet"
+msgstr "อินเทอร์เน็ต"
+
+msgid "tailnet"
+msgstr "tailnet"
+
+msgid "Rien n'est publié. « Publier » ci-dessous pour commencer."
+msgstr "ไม่มีการเผยแพร่ กด « เผยแพร่ » ด้านล่างเพื่อเริ่ม"
+
+msgid ""
+"Pour changer la publication, devenez opérateur de Tailscale (tableau de "
+"bord)."
+msgstr "หากต้องการเปลี่ยนการเผยแพร่ ให้เป็นผู้ควบคุมของ Tailscale (แดชบอร์ด)"
+
+msgid "Essai en cours…"
+msgstr "กำลังทดสอบ…"
+
+#, python-brace-format
+msgid ""
+"Retire {kind} {port}{path} → {target} ({who}). L'état d'avant est sauvegardé.\n"
+"\n"
+"Commande : {command}"
+msgstr ""
+"ถอน {kind} {port}{path} → {target} ({who}) สถานะก่อนหน้าถูกสำรองไว้\n"
+"\n"
+"คำสั่ง: {command}"
+
+msgid "RETIRER CETTE PUBLICATION ?"
+msgstr "ถอนการเผยแพร่นี้?"
+
+#, python-brace-format
+msgid ""
+"Le service {target} sera joignable depuis Internet (Funnel, port {port}). "
+"Pensez ensuite à « Activer la protection » (Pare-feu Funnel)."
+msgstr ""
+"บริการ {target} จะเข้าถึงได้จากอินเทอร์เน็ต (Funnel พอร์ต {port}) อย่าลืม « "
+"เปิดการป้องกัน » (ไฟร์วอลล์ Funnel) ในภายหลัง"
+
+msgid "PUBLIER SUR INTERNET ?"
+msgstr "เผยแพร่สู่อินเทอร์เน็ต?"
+
+msgid "Choisissez une sauvegarde."
+msgstr "เลือกข้อมูลสำรอง"
+
+#, python-brace-format
+msgid ""
+"La publication redevient celle du {when} ({origin}) : {summary}.\n"
+"L'état actuel est sauvegardé d'abord ; tout est vérifié, et remis comme avant en cas d'échec."
+msgstr ""
+"การเผยแพร่จะกลับเป็นของ {when} ({origin}): {summary}\n"
+"สถานะปัจจุบันถูกสำรองก่อน; ทุกอย่างถูกตรวจสอบ และคืนเป็นเหมือนเดิมหากล้มเหลว"
+
+msgid "RESTAURER CETTE SAUVEGARDE ?"
+msgstr "กู้คืนข้อมูลสำรองนี้?"
+
+msgid "QUITTER OMEGA-TAIL ?"
+msgstr "ออกจาก OMEGA-TAIL?"
+
+msgid "RAPPORT"
+msgstr "รายงาน"
+
+msgid ""
+"Tout ce qu'omega-tail sait de cette machine, en faits : Tailscale, "
+"publication, machine, pare-feu, survie, alertes, et les attaques des 7 "
+"derniers jours (journal de la porte). Enregistré dans le dossier des exports"
+" ; « Voir les exports » les ouvre pour les lire."
+msgstr ""
+"ทุกสิ่งที่ omega-tail รู้เกี่ยวกับเครื่องนี้ ในรูปแบบข้อเท็จจริง: Tailscale "
+"การเผยแพร่ เครื่อง ไฟร์วอลล์ การอยู่รอด การแจ้งเตือน และการโจมตีในช่วง 7 "
+"วันล่าสุด (ล็อกของประตู) บันทึกลงในโฟลเดอร์การส่งออก; « ดูไฟล์ส่งออก » "
+"เปิดเพื่ออ่าน"
+
+msgid ""
+"Inclure le compte Tailscale et les appareils du tailnet (noms, adresses)"
+msgstr "รวมบัญชี Tailscale และอุปกรณ์ใน tailnet (ชื่อ ที่อยู่)"
+
+msgid ""
+"Sans cette case, seul leur nombre figure : le rapport peut être envoyé à "
+"quelqu'un sans dévoiler votre tailnet. Les adresses des attaquants y restent"
+" toujours."
+msgstr ""
+"หากไม่เลือกช่องนี้ จะมีเพียงจำนวน: ส่งรายงานให้ผู้อื่นได้โดยไม่เปิดเผย "
+"tailnet ของคุณ ที่อยู่ของผู้โจมตีจะอยู่ในรายงานเสมอ"
+
+msgid "APERÇU"
+msgstr "ตัวอย่าง"
+
+msgid "Actualiser"
+msgstr "รีเฟรช"
+
+msgid ""
+"Rapport en préparation (journal de la porte des 7 derniers jours compris)…"
+msgstr "กำลังเตรียมรายงาน (รวมล็อกของประตูในช่วง 7 วันล่าสุด)…"
+
+#, python-brace-format
+msgid "Erreur : {message}"
+msgstr "ข้อผิดพลาด: {message}"
+
+#, python-brace-format
+msgid "Rapport prêt ({time})."
+msgstr "รายงานพร้อมแล้ว ({time})"
+
+msgid "ARRÊTER TAILSCALED ?"
+msgstr "หยุด TAILSCALED?"
+
+msgid "DÉMARRER TAILSCALED ?"
+msgstr "เริ่ม TAILSCALED?"
+
+msgid "REDÉMARRER TAILSCALED ?"
+msgstr "รีสตาร์ท TAILSCALED?"
+
+msgid ""
+"Tailscale se reconnecte au tailnet ; les publications (Serve, Funnel) "
+"reprennent."
+msgstr ""
+"Tailscale เชื่อมต่อกับ tailnet อีกครั้ง; การเผยแพร่ (Serve, Funnel) "
+"กลับมาทำงาน"
+
+msgid ""
+"Tailscale est coupé : plus d'accès par le tailnet, publications (Serve, "
+"Funnel) interrompues jusqu'au prochain démarrage."
+msgstr ""
+"Tailscale ถูกตัด: เข้าถึงผ่าน tailnet ไม่ได้อีก การเผยแพร่ (Serve, Funnel) "
+"หยุดชะงักจนกว่าจะเริ่มครั้งถัดไป"
+
+msgid ""
+"Coupure de quelques secondes : le tailnet et les publications (Serve, "
+"Funnel) reviennent d'eux-mêmes. Applique une mise à jour déjà installée."
+msgstr ""
+"หยุดชะงักไม่กี่วินาที: tailnet และการเผยแพร่ (Serve, Funnel) จะกลับมาเอง "
+"นำอัปเดตที่ติดตั้งแล้วไปใช้"
+
+msgid "systemd ne connaît pas le service tailscaled sur cette machine."
+msgstr "systemd ไม่รู้จักบริการ tailscaled บนเครื่องนี้"
+
+#, python-brace-format
+msgid "Depuis : {since}"
+msgstr "ตั้งแต่: {since}"
+
+#, python-brace-format
+msgid "Processus : {pid} · mémoire {memory}"
+msgstr "โปรเซส: {pid} · หน่วยความจำ {memory}"
+
+#, python-brace-format
+msgid "Version en marche : {version}"
+msgstr "เวอร์ชันที่ทำงานอยู่: {version}"
+
+msgid ""
+"→ La mise à jour est installée mais pas appliquée : « Redémarrer » "
+"l'applique."
+msgstr "→ ติดตั้งอัปเดตแล้วแต่ยังไม่นำไปใช้: « รีสตาร์ท » เพื่อนำไปใช้"
+
+#, python-brace-format
+msgid "Système d'init : {init} · service « {name} »"
+msgstr "ระบบ init: {init} · บริการ « {name} »"
+
+#, python-brace-format
+msgid "Lancement : {command}"
+msgstr "การเริ่มต้น: {command}"
+
+#, python-brace-format
+msgid "Fichier du service : {path}"
+msgstr "ไฟล์ของบริการ: {path}"
+
+msgid "Fichiers d'ajout (lus, jamais modifiés par omega-tail) :"
+msgstr "ไฟล์เสริม (อ่านเท่านั้น omega-tail ไม่เคยแก้ไข):"
+
+msgid "Fichiers d'ajout : aucun."
+msgstr "ไฟล์เสริม: ไม่มี"
+
+msgid ""
+"⚠ Le démarrage lance « tailscale up » : si un réglage change (opérateur, "
+"nom, routes…), Tailscale le refusera et tailscaled ne redémarrera plus. « "
+"Corriger le démarrage » ajoute « - » devant la commande (son refus n'arrête "
+"plus le service)."
+msgstr ""
+"⚠ การเริ่มต้นรัน « tailscale up »: หากการตั้งค่าเปลี่ยน (ผู้ควบคุม ชื่อ "
+"เส้นทาง…) Tailscale จะปฏิเสธและ tailscaled จะเริ่มใหม่ไม่ได้อีก « "
+"แก้ไขการเริ่มต้น » เพิ่ม « - » หน้าคำสั่ง (การปฏิเสธจะไม่หยุดบริการอีก)"
+
+#, python-brace-format
+msgid "Confinement : {state}"
+msgstr "การจำกัดทรัพยากร: {state}"
+
+#, python-brace-format
+msgid ""
+"  plafond CPU {quota} · poids {weight} · cœurs {cpus} · priorité {nice}"
+msgstr ""
+"  เพดาน CPU {quota} · น้ำหนัก {weight} · คอร์ {cpus} · ลำดับความสำคัญ {nice}"
+
+msgid "tous"
+msgstr "ทั้งหมด"
+
+msgid ""
+"  ⚠ Confinement perdu au redémarrage de tailscaled : « Survie » → « "
+"Appliquer le confinement »."
+msgstr ""
+"  ⚠ การจำกัดทรัพยากรหายไปเมื่อ tailscaled รีสตาร์ท: « การอยู่รอด » → « "
+"ใช้การจำกัดทรัพยากร »"
+
+msgid "  Le confinement se règle dans « Survie »."
+msgstr "  ตั้งค่าการจำกัดทรัพยากรได้ใน « การอยู่รอด »"
+
+msgid "⚠ Cette session passe par Tailscale : arrêter tailscaled la couperait."
+msgstr "⚠ เซสชันนี้ผ่าน Tailscale: การหยุด tailscaled จะตัดเซสชัน"
+
+msgid "SERVICE TAILSCALED"
+msgstr "บริการ TAILSCALED"
+
+msgid ""
+"Chaque action montre sa commande avant d'être lancée ; le mot de passe sudo "
+"se saisit dans le terminal."
+msgstr "ทุกการกระทำจะแสดงคำสั่งก่อนรัน; ป้อนรหัสผ่าน sudo ในเทอร์มินัล"
+
+msgid "Démarrer"
+msgstr "เริ่ม"
+
+msgid "Corriger le démarrage"
+msgstr "แก้ไขการเริ่มต้น"
+
+msgid "VOUS ALLEZ PERDRE CETTE SESSION"
+msgstr "คุณจะสูญเสียเซสชันนี้"
+
+msgid ""
+"Dernière confirmation : tailscaled sera arrêté et cette session coupée. Vous"
+" devrez le relancer depuis le réseau local ou la machine elle-même."
+msgstr ""
+"การยืนยันครั้งสุดท้าย: tailscaled จะถูกหยุดและเซสชันนี้จะถูกตัด "
+"คุณต้องเริ่มใหม่จากเครือข่ายภายในหรือตัวเครื่องเอง"
+
+msgid "Arrêter quand même"
+msgstr "หยุดอยู่ดี"
+
+msgid "Enregistrés dans var/settings.json, appliqués tout de suite."
+msgstr "บันทึกใน var/settings.json และมีผลทันที"
+
+msgid "Thème de l'interface"
+msgstr "ธีมของอินเทอร์เฟซ"
+
+msgid "Thème des exports (rapport HTML, aide exportée)"
+msgstr "ธีมของการส่งออก (รายงาน HTML ความช่วยเหลือที่ส่งออก)"
+
+msgid "Dossier des exports"
+msgstr "โฟลเดอร์ส่งออก"
+
+#, python-brace-format
+msgid "Par défaut : {path}. Laissez vide pour revenir au dossier par défaut."
+msgstr "ค่าเริ่มต้น: {path} เว้นว่างเพื่อกลับไปใช้โฟลเดอร์เริ่มต้น"
+
+msgid "Dossier des captures d'écran"
+msgstr "โฟลเดอร์ภาพหน้าจอ"
+
+#, python-brace-format
+msgid "Par défaut : {path}. Capture : Ctrl+P → « Capture d'écran »."
+msgstr "ค่าเริ่มต้น: {path} จับภาพ: Ctrl+P → «ภาพหน้าจอ»"
+
+msgid "Enregistrer les dossiers"
+msgstr "บันทึกโฟลเดอร์"
+
+msgid "Maintenance des dossiers"
+msgstr "การบำรุงรักษาโฟลเดอร์"
+
+msgid ""
+"Supprime définitivement le contenu du dossier configuré ; le dossier reste."
+msgstr "ลบเนื้อหาของโฟลเดอร์ที่กำหนดอย่างถาวร โฟลเดอร์ยังคงอยู่"
+
+msgid "Vider le dossier des exports"
+msgstr "ล้างโฟลเดอร์ส่งออก"
+
+msgid "Vider le dossier des captures"
+msgstr "ล้างโฟลเดอร์ภาพหน้าจอ"
+
+msgid "des exports"
+msgstr "ส่งออก"
+
+msgid "des captures"
+msgstr "ภาพหน้าจอ"
+
+#, python-brace-format
+msgid "Chemin à donner en entier (commençant par / ou ~) : {path}"
+msgstr "ต้องระบุพาธเต็ม (เริ่มด้วย / หรือ ~): {path}"
+
+#, python-brace-format
+msgid "Dossiers enregistrés : {paths}"
+msgstr "บันทึกโฟลเดอร์แล้ว: {paths}"
+
+#, python-brace-format
+msgid "VIDER LE DOSSIER {label} ?"
+msgstr "ล้างโฟลเดอร์{label}?"
+
+#, python-brace-format
+msgid ""
+"Supprime définitivement tout le contenu de {directory}. Le dossier reste."
+msgstr "ลบเนื้อหาทั้งหมดของ {directory} อย่างถาวร โฟลเดอร์ยังคงอยู่"
+
+#, python-brace-format
+msgid "Refusé — {path} : {reason}"
+msgstr "ปฏิเสธ — {path}: {reason}"
+
+#, python-brace-format
+msgid "{count} élément(s) supprimé(s) dans {path}."
+msgstr "ลบ {count} รายการใน {path} แล้ว"
+
+#, python-brace-format
+msgid "Non supprimés : {items}"
+msgstr "ไม่ได้ลบ: {items}"
+
+msgid "Pairs connus"
+msgstr "เพียร์ที่รู้จัก"
+
+msgid "Poignées de main"
+msgstr "การจับมือ"
+
+msgid "Poignées de main en excès (par source)"
+msgstr "การจับมือที่เกิน (ต่อแหล่งที่มา)"
+
+msgid "Sources inconnues, paquets bien formés"
+msgstr "แหล่งที่ไม่รู้จัก แพ็กเก็ตถูกรูปแบบ"
+
+msgid "Sources inconnues en excès (par source)"
+msgstr "แหล่งที่ไม่รู้จักที่เกิน (ต่อแหล่งที่มา)"
+
+msgid "Excès de l'ensemble des sources inconnues"
+msgstr "ส่วนเกินของแหล่งที่ไม่รู้จักทั้งหมด"
+
+msgid "Paquets qui ne sont pas du WireGuard"
+msgstr "แพ็กเก็ตที่ไม่ใช่ WireGuard"
+
+msgid "Poser (observation)"
+msgstr "วาง (สังเกตการณ์)"
+
+msgid "Passer en actif"
+msgstr "เปลี่ยนเป็นใช้งาน"
+
+msgid "Reposer"
+msgstr "วางใหม่"
+
+msgid "Confier à omega-fire"
+msgstr "มอบหมายให้ omega-fire"
+
+msgid "Reprendre la gestion"
+msgstr "รับการจัดการคืน"
+
+msgid "POSER LE BOUCLIER DU PORT WIREGUARD ?"
+msgstr "วางโล่ป้องกันพอร์ต WIREGUARD?"
+
+msgid "CHANGER LE MODE DU BOUCLIER ?"
+msgstr "เปลี่ยนโหมดของโล่ป้องกัน?"
+
+msgid "REPOSER LE BOUCLIER ?"
+msgstr "วางโล่ป้องกันใหม่?"
+
+msgid "CONFIER LE BOUCLIER À OMEGA-FIRE ?"
+msgstr "มอบหมายโล่ป้องกันให้ OMEGA-FIRE?"
+
+msgid "REPRENDRE LA GESTION DU BOUCLIER ?"
+msgstr "รับการจัดการโล่ป้องกันคืน?"
+
+msgid "RETIRER LE BOUCLIER ?"
+msgstr "ถอดโล่ป้องกัน?"
+
+msgid ""
+"Une table nftables devant tailscaled, en OBSERVATION : rien n'est refusé, "
+"les compteurs disent ce qui l'aurait été. Un service la remet en place à "
+"chaque démarrage."
+msgstr ""
+"ตาราง nftables หน้า tailscaled ในโหมดสังเกตการณ์: ไม่มีสิ่งใดถูกปฏิเสธ "
+"ตัวนับบอกว่าอะไรจะถูกปฏิเสธ บริการหนึ่งจะวางตารางใหม่ทุกครั้งที่บูต"
+
+msgid ""
+"La table enregistrée est remise ; ses compteurs et la liste des pairs "
+"repartent de zéro."
+msgstr "ตารางที่บันทึกไว้ถูกวางกลับ; ตัวนับและรายการเพียร์เริ่มจากศูนย์"
+
+msgid ""
+"omega-fire gérera le bouclier (remise au démarrage, commandes, liste des "
+"règles). La table, ses compteurs et les pairs connus ne sont pas touchés."
+msgstr ""
+"omega-fire จะจัดการโล่ป้องกัน (วางกลับตอนบูต คำสั่ง รายการกฎ) ตาราง ตัวนับ "
+"และเพียร์ที่รู้จักไม่ถูกแตะต้อง"
+
+msgid ""
+"omega-fire n'est plus relié : omega-tail gère de nouveau le bouclier. La "
+"table n'est pas touchée."
+msgstr ""
+"omega-fire ไม่ได้เชื่อมโยงแล้ว: omega-tail กลับมาจัดการโล่ป้องกัน "
+"ตารางไม่ถูกแตะต้อง"
+
+msgid ""
+"La table, ses fichiers et son service sont supprimés : tailscaled ne sera "
+"plus protégé contre les flots de paquets."
+msgstr ""
+"ตาราง ไฟล์ และบริการของมันถูกลบ: tailscaled "
+"จะไม่ได้รับการป้องกันจากกระแสแพ็กเก็ตอีก"
+
+msgid ""
+"tailscaled tire son port au hasard (--port 0) : aucun bouclier possible. "
+"Fixez un port (PORT= dans /etc/default/tailscaled), puis redémarrez "
+"tailscaled."
+msgstr ""
+"tailscaled สุ่มพอร์ตของตน (--port 0): ไม่สามารถใช้โล่ป้องกันได้ "
+"กำหนดพอร์ตตายตัว (PORT= ใน /etc/default/tailscaled) แล้วรีสตาร์ท tailscaled"
+
+msgid "Aucune carte réseau matérielle trouvée : rien à protéger."
+msgstr "ไม่พบการ์ดเครือข่ายจริง: ไม่มีอะไรต้องป้องกัน"
+
+msgid "Port ou nom de carte réseau refusé."
+msgstr "พอร์ตหรือชื่อการ์ดเครือข่ายถูกปฏิเสธ"
+
+msgid "Aucun bouclier enregistré sur cette machine."
+msgstr "ไม่มีโล่ป้องกันที่บันทึกไว้บนเครื่องนี้"
+
+msgid ""
+"Le noyau a été mis à jour sans redémarrage : ses modules ne peuvent plus "
+"être chargés et la table serait refusée. Redémarrez la machine, puis "
+"recommencez."
+msgstr ""
+"เคอร์เนลถูกอัปเดตโดยไม่ได้รีสตาร์ท: "
+"โหลดโมดูลของมันไม่ได้อีกและตารางจะถูกปฏิเสธ รีสตาร์ทเครื่อง แล้วลองใหม่"
+
+#, python-brace-format
+msgid ""
+"Origine : {tool} (outil qui l'a demandé) · port {port}/udp · cartes réseau :"
+" {devices}"
+msgstr ""
+"ที่มา: {tool} (เครื่องมือที่ร้องขอ) · พอร์ต {port}/udp · การ์ดเครือข่าย: "
+"{devices}"
+
+#, python-brace-format
+msgid "Pairs connus : {count} (jamais limités)."
+msgstr "เพียร์ที่รู้จัก: {count} (ไม่เคยถูกจำกัด)"
+
+#, python-brace-format
+msgid "Détecté : port de tailscaled {port}, cartes réseau {devices}."
+msgstr "ตรวจพบ: พอร์ตของ tailscaled {port} การ์ดเครือข่าย {devices}"
+
+msgid "au hasard"
+msgstr "สุ่ม"
+
+msgid ""
+"Noyau antérieur à 5.16 : sans liste des pairs, seuls le tri des paquets et "
+"la limite des poignées de main sont posés."
+msgstr ""
+"เคอร์เนลเก่ากว่า 5.16: ไม่มีรายการเพียร์ "
+"วางได้เพียงการคัดแยกแพ็กเก็ตและการจำกัดการจับมือ"
+
+#, python-brace-format
+msgid ""
+"omega-fire {version} relié : il pose et gère le bouclier ; sa liste des "
+"règles l'affiche avec l'origine omega-tail."
+msgstr ""
+"เชื่อมโยง omega-fire {version} แล้ว: มันวางและจัดการโล่ป้องกัน; "
+"รายการกฎของมันแสดงตารางนี้พร้อมที่มา omega-tail"
+
+#, python-brace-format
+msgid ""
+"omega-fire {version} relié, mais trop ancien pour le bouclier (il faut "
+"{needed} ou plus récent) : omega-tail le gère lui-même. Mettez omega-fire à "
+"jour."
+msgstr ""
+"เชื่อมโยง omega-fire {version} แล้ว แต่เก่าเกินไปสำหรับโล่ป้องกัน (ต้องเป็น "
+"{needed} หรือใหม่กว่า): omega-tail จัดการเอง อัปเดต omega-fire"
+
+msgid ""
+"omega-fire n'est pas relié par omega-connect : omega-tail pose et gère le "
+"bouclier lui-même, même si ufw ou firewalld sont présents."
+msgstr ""
+"omega-fire ไม่ได้เชื่อมโยงผ่าน omega-connect: omega-tail "
+"วางและจัดการโล่ป้องกันเอง แม้มี ufw หรือ firewalld อยู่"
+
+msgid ""
+"Géré par omega-fire, qui n'est plus relié : « Reprendre la gestion » le rend"
+" à omega-tail."
+msgstr ""
+"จัดการโดย omega-fire ซึ่งไม่ได้เชื่อมโยงแล้ว: « รับการจัดการคืน » จะคืนให้ "
+"omega-tail"
+
+msgid ""
+"Noyau mis à jour sans redémarrage : la table ne peut pas être posée avant un"
+" redémarrage."
+msgstr "เคอร์เนลถูกอัปเดตโดยไม่ได้รีสตาร์ท: วางตารางไม่ได้จนกว่าจะรีสตาร์ท"
+
+msgid ""
+"Système d'init inconnu : le bouclier ne sera pas remis en place au "
+"redémarrage."
+msgstr "ไม่รู้จักระบบ init: โล่ป้องกันจะไม่ถูกวางกลับเมื่อรีสตาร์ท"
+
+msgid "BOUCLIER DU PORT WIREGUARD"
+msgstr "โล่ป้องกันพอร์ต WIREGUARD"
+
+msgid ""
+"Devant tailscaled : poignées de main limitées par source, budget pour les "
+"sources qui ne sont pas des pairs connus, paquets qui ne sont pas du "
+"WireGuard refusés. Mesuré : un flot qui prenait un cœur entier à tailscaled "
+"n'en prend plus que 1 %. Commencez en observation."
+msgstr ""
+"หน้า tailscaled: การจับมือถูกจำกัดต่อแหล่งที่มา "
+"งบประมาณสำหรับแหล่งที่ไม่ใช่เพียร์ที่รู้จัก แพ็กเก็ตที่ไม่ใช่ WireGuard "
+"ถูกปฏิเสธ ผลการวัด: กระแสที่เคยกินหนึ่งคอร์เต็มของ tailscaled เหลือเพียง 1 %"
+" เริ่มด้วยโหมดสังเกตการณ์"
+
+msgid "COMPTEURS DEPUIS LA POSE"
+msgstr "ตัวนับตั้งแต่วาง"
+
+msgid "Compteur"
+msgstr "ตัวนับ"
+
+msgid "Effet"
+msgstr "ผล"
+
+msgid "Paquets"
+msgstr "แพ็กเก็ต"
+
+msgid "admis"
+msgstr "อนุญาต"
+
+msgid "auraient été refusés"
+msgstr "จะถูกปฏิเสธ"
+
+msgid "refusés"
+msgstr "ถูกปฏิเสธ"
+
+msgid "Passer en observation"
+msgstr "เปลี่ยนเป็นสังเกตการณ์"
+
+#, python-brace-format
+msgid ""
+"En observation, {count} paquet(s) auraient été refusés : en actif, ils le "
+"seront. Les pairs connus ne sont jamais limités."
+msgstr ""
+"ในโหมดสังเกตการณ์ {count} แพ็กเก็ตจะถูกปฏิเสธ: ในโหมดใช้งาน "
+"แพ็กเก็ตเหล่านี้จะถูกปฏิเสธจริง เพียร์ที่รู้จักไม่เคยถูกจำกัด"
+
+msgid ""
+"Plus rien n'est refusé ; les compteurs continuent de dire ce qui l'aurait "
+"été."
+msgstr "จะไม่มีสิ่งใดถูกปฏิเสธอีก; ตัวนับยังคงบอกว่าอะไรจะถูกปฏิเสธ"
+
+#, python-brace-format
+msgid ""
+"Par omega-fire (il garde l'origine {tool} et l'inscrit à son journal "
+"d'audit)."
+msgstr "โดย omega-fire (เก็บที่มา {tool} และบันทึกลงในล็อกการตรวจสอบของมัน)"
+
+msgid "systemd ne connaît pas tailscaled : confinement impossible ici."
+msgstr "systemd ไม่รู้จัก tailscaled: จำกัดทรัพยากรที่นี่ไม่ได้"
+
+msgid "perdu (tailscaled a redémarré) : « Appliquer le confinement » le remet"
+msgstr "หายไป (tailscaled รีสตาร์ทแล้ว): « ใช้การจำกัดทรัพยากร » จะวางกลับ"
+
+msgid "actif (groupe de contrôle d'omega-tail)"
+msgstr "ใช้งาน (กลุ่มควบคุมของ omega-tail)"
+
+#, python-brace-format
+msgid "Confinement actuel : {state}"
+msgstr "การจำกัดทรัพยากรปัจจุบัน: {state}"
+
+#, python-brace-format
+msgid "  plafond {quota} · poids {weight} · système d'init {init}"
+msgstr "  เพดาน {quota} · น้ำหนัก {weight} · ระบบ init {init}"
+
+msgid "actif, posé par omega-tail"
+msgstr "ใช้งาน วางโดย omega-tail"
+
+msgid "posé par omega-tail, pas encore appliqué (rechargement ou redémarrage)"
+msgstr "วางโดย omega-tail ยังไม่มีผล (ต้องโหลดใหม่หรือรีสตาร์ท)"
+
+msgid "actif, posé hors d'omega-tail"
+msgstr "ใช้งาน วางนอก omega-tail"
+
+#, python-brace-format
+msgid "  plafond {quota} · poids {weight} · priorité {nice}"
+msgstr "  เพดาน {quota} · น้ำหนัก {weight} · ลำดับความสำคัญ {nice}"
+
+#, python-brace-format
+msgid "  Vos fichiers d'ajout (jamais modifiés) : {paths}"
+msgstr "  ไฟล์เสริมของคุณ (ไม่เคยถูกแก้ไข): {paths}"
+
+#, python-brace-format
+msgid ""
+"Funnel COUPÉ par omega-tail depuis {since} (coupure totale) : « Rétablir "
+"maintenant » le remet à l'identique."
+msgstr ""
+"Funnel ถูก omega-tail ตัดตั้งแต่ {since} (ตัดทั้งหมด): « คืนค่าตอนนี้ » "
+"จะคืนให้เหมือนเดิมทุกประการ"
+
+#, python-brace-format
+msgid ""
+"Funnel COUPÉ par omega-tail depuis {since}, remis en route automatiquement à"
+" {until}."
+msgstr ""
+"Funnel ถูก omega-tail ตัดตั้งแต่ {since} จะเปิดกลับอัตโนมัติเมื่อ {until}"
+
+#, python-brace-format
+msgid "Funnel ouvert : port {ports}."
+msgstr "Funnel เปิดอยู่: พอร์ต {ports}"
+
+msgid "Funnel n'est pas ouvert : rien à couper."
+msgstr "Funnel ไม่ได้เปิด: ไม่มีอะไรต้องตัด"
+
+msgid ""
+"Désactivée : sous attaque, omega-tail ouvert PROPOSE la coupure (il faut "
+"être devant la machine)."
+msgstr ""
+"ปิดอยู่: เมื่อถูกโจมตี omega-tail ที่เปิดอยู่จะเสนอการตัด "
+"(ต้องมีคนอยู่หน้าเครื่อง)"
+
+msgid ""
+"Activée mais arrêtée (aucun signe de vie) : « Activer la veille » la "
+"relance."
+msgstr "เปิดไว้แต่หยุดอยู่ (ไม่มีสัญญาณชีพ): « เปิดการเฝ้าระวัง » จะเริ่มใหม่"
+
+msgid ""
+"En marche, même omega-tail fermé : sous attaque, elle coupe Funnel seule et "
+"le remet seule."
+msgstr ""
+"ทำงานอยู่ แม้ omega-tail ปิดอยู่: เมื่อถูกโจมตี จะตัด Funnel "
+"เองและเปิดกลับเอง"
+
+#, python-brace-format
+msgid ""
+"  Dépassements récents : {strikes}/{total} (fenêtre de {window} min) · "
+"prochaine coupure : {minutes} min"
+msgstr ""
+"  เกินเกณฑ์ล่าสุด: {strikes}/{total} (ช่วงเวลา {window} นาที) · "
+"การตัดครั้งถัดไป: {minutes} นาที"
+
+msgid ""
+"Garder la machine debout sous attaque. Chaque action montre ses commandes "
+"avant ; le mot de passe sudo se saisit dans le terminal."
+msgstr ""
+"ทำให้เครื่องยังทำงานได้ขณะถูกโจมตี ทุกการกระทำจะแสดงคำสั่งก่อน; ป้อนรหัสผ่าน"
+" sudo ในเทอร์มินัล"
+
+msgid "CONFINEMENT DE TAILSCALED"
+msgstr "การจำกัดทรัพยากรของ TAILSCALED"
+
+#, python-brace-format
+msgid "Proposé pour cette machine ({count} fils), dans {path} :"
+msgstr "เสนอสำหรับเครื่องนี้ ({count} เธรด) ใน {path}:"
+
+#, python-brace-format
+msgid ""
+"Proposé pour cette machine ({count} fils), dans un groupe de contrôle à part"
+" :"
+msgstr "เสนอสำหรับเครื่องนี้ ({count} เธรด) ในกลุ่มควบคุมแยกต่างหาก:"
+
+#, python-brace-format
+msgid "Donner la priorité à l'accès SSH ({unit})"
+msgstr "ให้ความสำคัญกับการเข้าถึง SSH ({unit})"
+
+msgid ""
+"Redémarrer tailscaled tout de suite (la priorité ne s'applique qu'au "
+"redémarrage ; coupure de quelques secondes)"
+msgstr ""
+"รีสตาร์ท tailscaled ทันที (ลำดับความสำคัญมีผลเมื่อรีสตาร์ทเท่านั้น; "
+"หยุดชะงักไม่กี่วินาที)"
+
+msgid "Appliquer le confinement"
+msgstr "ใช้การจำกัดทรัพยากร"
+
+msgid "Retirer le confinement"
+msgstr "ถอนการจำกัดทรัพยากร"
+
+msgid "VEILLE AUTOMATIQUE"
+msgstr "การเฝ้าระวังอัตโนมัติ"
+
+#, python-brace-format
+msgid ""
+"Pour une machine sans personne devant. Un dépassement : un seuil du "
+"disjoncteur tenu (plus bas). {strikes} dépassements dans la fenêtre : Funnel"
+" coupé {first} min, puis {second} min la fois suivante, puis {last} min à "
+"chaque fois ; toujours remis en route seul, à l'identique. Retour à {first} "
+"min après {hours} h sans coupure. Seul Funnel est coupé : tailscaled, le "
+"tailnet et SSH restent joignables."
+msgstr ""
+"สำหรับเครื่องที่ไม่มีใครอยู่หน้าจอ การเกินเกณฑ์หนึ่งครั้ง: "
+"เกณฑ์ใดเกณฑ์หนึ่งของเบรกเกอร์ถูกคงไว้ (ด้านล่าง) เกินเกณฑ์ {strikes} "
+"ครั้งภายในช่วงเวลา: ตัด Funnel {first} นาที แล้ว {second} นาทีในครั้งถัดไป "
+"แล้ว {last} นาทีทุกครั้ง; เปิดกลับเองเสมอ เหมือนเดิมทุกประการ กลับเป็น "
+"{first} นาทีหลัง {hours} ชั่วโมงที่ไม่มีการตัด ตัดเฉพาะ Funnel: tailscaled, "
+"tailnet และ SSH ยังเข้าถึงได้"
+
+msgid "Fenêtre (min)"
+msgstr "ช่วงเวลา (นาที)"
+
+msgid "Enregistrer"
+msgstr "บันทึก"
+
+msgid "Activer la veille"
+msgstr "เปิดการเฝ้าระวัง"
+
+msgid "Désactiver la veille"
+msgstr "ปิดการเฝ้าระวัง"
+
+msgid ""
+"Protège tailscaled des flots de paquets envoyés sur son port (même sans "
+"Funnel)."
+msgstr ""
+"ป้องกัน tailscaled จากกระแสแพ็กเก็ตที่ส่งมายังพอร์ตของมัน (แม้ไม่มี Funnel)"
+
+msgid "Bouclier du port WireGuard"
+msgstr "โล่ป้องกันพอร์ต WireGuard"
+
+msgid "DISJONCTEUR FUNNEL"
+msgstr "เบรกเกอร์ FUNNEL"
+
+msgid ""
+"Sans veille, il propose, il ne coupe jamais seul : quand un seuil est "
+"dépassé, omega-tail ouvert vous propose une coupure momentanée ou totale. "
+"Avec la veille automatique (ci-dessus), il agit seul."
+msgstr ""
+"หากไม่มีการเฝ้าระวัง มันเพียงเสนอ ไม่เคยตัดเอง: เมื่อเกินเกณฑ์ omega-tail "
+"ที่เปิดอยู่จะเสนอการตัดชั่วคราวหรือตัดทั้งหมดให้คุณ "
+"เมื่อมีการเฝ้าระวังอัตโนมัติ (ด้านบน) มันจะทำเอง"
+
+msgid "CPU tailscaled ≥ (% d'un cœur)"
+msgstr "CPU tailscaled ≥ (% ของหนึ่งคอร์)"
+
+msgid "pendant (s)"
+msgstr "เป็นเวลา (วินาที)"
+
+msgid "ou température ≥ (°C)"
+msgstr "หรืออุณหภูมิ ≥ (°C)"
+
+msgid "coupure momentanée (min)"
+msgstr "ตัดชั่วคราว (นาที)"
+
+msgid "Enregistrer les seuils"
+msgstr "บันทึกเกณฑ์"
+
+msgid "Rétablir maintenant"
+msgstr "คืนค่าตอนนี้"
+
+msgid "Journal de la veille :"
+msgstr "ล็อกของการเฝ้าระวัง:"
+
+msgid ""
+"Le disjoncteur demande d'être opérateur de Tailscale (tableau de bord, « "
+"Devenir opérateur ») : la remise en route programmée tourne sous votre "
+"compte, jamais en root."
+msgstr ""
+"เบรกเกอร์ต้องให้คุณเป็นผู้ควบคุมของ Tailscale (แดชบอร์ด « เป็นผู้ควบคุม »): "
+"การเปิดกลับตามกำหนดทำงานภายใต้บัญชีของคุณ ไม่เคยเป็น root"
+
+msgid "Tailscale absent"
+msgstr "ไม่มี Tailscale"
+
+#, python-brace-format
+msgid "CPU machine {cpu:.0f} %"
+msgstr "CPU เครื่อง {cpu:.0f} %"
+
+#, python-brace-format
+msgid "CPU tailscaled {cpu:.0f} %"
+msgstr "CPU tailscaled {cpu:.0f} %"
+
+#, python-brace-format
+msgid "RAM {used:.0f} %"
+msgstr "RAM {used:.0f} %"
+
+msgid "Funnel coupé"
+msgstr "Funnel ถูกตัด"
+
+msgid "Funnel fermé"
+msgstr "Funnel ปิด"
+
+msgid "Pare-feu actif · attaque"
+msgstr "ไฟร์วอลล์ใช้งาน · โจมตี"
+
+msgid "Pare-feu actif"
+msgstr "ไฟร์วอลล์ใช้งาน"
+
+msgid "Pare-feu arrêté"
+msgstr "ไฟร์วอลล์หยุด"
+
+msgid "Pare-feu inactif"
+msgstr "ไฟร์วอลล์ไม่ทำงาน"
+
+msgid "Veille active"
+msgstr "เฝ้าระวังใช้งาน"
+
+msgid "Veille arrêtée"
+msgstr "เฝ้าระวังหยุด"
+
+msgid "Veille inactive"
+msgstr "เฝ้าระวังไม่ทำงาน"
+
+msgid "Tailscale injoignable"
+msgstr "ติดต่อ Tailscale ไม่ได้"
+
+msgid "Lecture de l'état…"
+msgstr "กำลังอ่านสถานะ…"

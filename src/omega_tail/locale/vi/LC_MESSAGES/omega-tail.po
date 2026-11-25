@@ -1,0 +1,4622 @@
+# Statut X-Omega-Status : validated (2026-11-25, choix de vocabulaire et de ton arbitrés par Claude à la demande de l'auteur).
+msgid ""
+msgstr ""
+"Project-Id-Version: omega-tail\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Omega-Status: validated\n"
+
+msgid ""
+"omega-tail : pas de terminal interactif ; utilisez « omega-tail etat »."
+msgstr ""
+"omega-tail: không có terminal tương tác; hãy dùng « omega-tail etat »."
+
+msgid "Nom de la machine inconnu : Tailscale est-il connecté ?"
+msgstr "Không rõ tên máy: Tailscale đã kết nối chưa?"
+
+#, python-brace-format
+msgid "Certificat refusé ({error}). Êtes-vous opérateur de Tailscale ?"
+msgstr ""
+"Chứng chỉ bị từ chối ({error}). Bạn có phải là người vận hành Tailscale "
+"không?"
+
+#, python-brace-format
+msgid "Certificat renouvelé, mais la porte ne l'a pas repris ({error})."
+msgstr "Đã gia hạn chứng chỉ, nhưng cổng gác chưa nạp lại nó ({error})."
+
+#, python-brace-format
+msgid "Certificat de {name} à jour."
+msgstr "Chứng chỉ của {name} đã cập nhật."
+
+#, python-brace-format
+msgid "Publication non prise en charge : {reason}."
+msgstr "Không hỗ trợ cấu hình công bố này: {reason}."
+
+#, python-brace-format
+msgid "Publication illisible ({error})."
+msgstr "Không đọc được cấu hình công bố ({error})."
+
+msgid "HAProxy n'est pas installé : « Installer HAProxy » d'abord."
+msgstr "HAProxy chưa được cài: hãy « Cài HAProxy » trước."
+
+#, python-brace-format
+msgid "Configuration de la porte refusée par HAProxy : {error}"
+msgstr "HAProxy từ chối cấu hình cổng gác: {error}"
+
+#, python-brace-format
+msgid "Renouvellement du certificat non programmé (crontab : {error})."
+msgstr "Chưa lên lịch gia hạn chứng chỉ (crontab: {error})."
+
+msgid "Porte prête : certificat, listes et configuration vérifiés."
+msgstr "Cổng gác sẵn sàng: chứng chỉ, danh sách và cấu hình đã được kiểm tra."
+
+msgid "La porte protège déjà Funnel."
+msgstr "Cổng gác đã bảo vệ Funnel rồi."
+
+#, python-brace-format
+msgid "La porte ne répond pas en local ({detail}) : rien n'a été basculé."
+msgstr "Cổng gác không phản hồi cục bộ ({detail}): chưa chuyển gì cả."
+
+#, python-brace-format
+msgid "Bascule refusée ({error}) : publication d'origine remise."
+msgstr "Chuyển đổi bị từ chối ({error}): đã đặt lại cấu hình công bố ban đầu."
+
+#, python-brace-format
+msgid "Funnel passe par la porte : essai public réussi ({detail})."
+msgstr "Funnel đi qua cổng gác: thử từ Internet thành công ({detail})."
+
+#, python-brace-format
+msgid "Essai public échoué ({detail}) : publication d'origine remise."
+msgstr ""
+"Thử từ Internet thất bại ({detail}): đã đặt lại cấu hình công bố ban đầu."
+
+msgid "La porte ne protège pas Funnel : rien à remettre."
+msgstr "Cổng gác không bảo vệ Funnel: không có gì để đặt lại."
+
+#, python-brace-format
+msgid ""
+"Publication d'origine incomplète ({errors}) : sauvegarde gardée dans {path}."
+msgstr ""
+"Cấu hình công bố ban đầu chưa đầy đủ ({errors}): bản sao lưu được giữ trong "
+"{path}."
+
+msgid "Publication d'origine remise, à l'identique."
+msgstr "Đã đặt lại cấu hình công bố ban đầu, y như cũ."
+
+msgid "Règles enregistrées ; elles s'appliqueront à l'activation."
+msgstr "Đã lưu quy tắc; chúng sẽ được áp dụng khi bật bảo vệ."
+
+#, python-brace-format
+msgid "Règles enregistrées, configuration non régénérée ({error})."
+msgstr "Đã lưu quy tắc, cấu hình chưa được tạo lại ({error})."
+
+#, python-brace-format
+msgid "Règles refusées par HAProxy ({error}) : ancienne configuration gardée."
+msgstr "HAProxy từ chối quy tắc ({error}): giữ cấu hình cũ."
+
+#, python-brace-format
+msgid "Règles écrites, rechargement impossible ({error})."
+msgstr "Đã ghi quy tắc, không thể nạp lại ({error})."
+
+#, python-brace-format
+msgid "Règles appliquées à chaud (mode {mode})."
+msgstr "Đã áp dụng nóng quy tắc (chế độ {mode})."
+
+msgid "Regroupements indisponibles."
+msgstr "Gom nhóm không khả dụng."
+
+#, python-brace-format
+msgid ""
+"Apprentissage des empreintes en cours (encore {days} jour(s)) : les "
+"regroupements restent en observation jusqu'à la fin ; « appliqués » sera "
+"possible ensuite."
+msgstr ""
+"Đang học dấu vân tay (còn {days} ngày): gom nhóm ở chế độ quan sát cho đến "
+"khi kết thúc; sau đó mới có thể chọn « áp dụng »."
+
+msgid "appliqués"
+msgstr "áp dụng"
+
+msgid "en observation"
+msgstr "đang quan sát"
+
+#, python-brace-format
+msgid "Regroupements appliqués à chaud ({mode})."
+msgstr "Đã áp dụng nóng gom nhóm ({mode})."
+
+#, python-brace-format
+msgid ""
+"Apprentissage recommencé : regroupements repassés en observation pour les "
+"{days} jours d'apprentissage."
+msgstr ""
+"Đã bắt đầu học lại: gom nhóm trở về chế độ quan sát trong {days} ngày học."
+
+msgid ""
+"Base AS / pays : trop longue (plus de 15 minutes), abandonnée ; l'ancienne "
+"reste en place."
+msgstr ""
+"Cơ sở dữ liệu AS / quốc gia: quá lâu (hơn 15 phút), đã hủy; bản cũ vẫn được "
+"giữ."
+
+#, python-brace-format
+msgid "{text}"
+msgstr "{text}"
+
+#, python-brace-format
+msgid ""
+"Liste noire pleine ({max} entrées) : purgez ou exportez-la dans « Gestion de"
+" la liste noire » avant d'en ajouter."
+msgstr ""
+"Danh sách đen đã đầy ({max} mục): hãy dọn dẹp hoặc xuất nó trong « Quản lý "
+"danh sách đen » trước khi thêm."
+
+#, python-brace-format
+msgid "Adresse ou réseau invalide : {text}"
+msgstr "Địa chỉ hoặc mạng không hợp lệ: {text}"
+
+#, python-brace-format
+msgid ""
+"{address} fait partie du tailnet : la porte admet toujours les machines "
+"Tailscale, elle ne peut pas être bloquée."
+msgstr ""
+"{address} thuộc tailnet: cổng gác luôn chấp nhận các máy Tailscale, không "
+"thể chặn nó."
+
+#, python-brace-format
+msgid "{address} est déjà dans la liste noire (ou dans un de ses réseaux)."
+msgstr ""
+"{address} đã có trong danh sách đen (hoặc trong một mạng của danh sách)."
+
+#, python-brace-format
+msgid "{address} → liste noire (refusée jusqu'au retrait)."
+msgstr "{address} → danh sách đen (bị từ chối cho đến khi được gỡ ra)."
+
+#, python-brace-format
+msgid "{count} entrée(s) retirée(s) de la liste noire ; il en reste {left}."
+msgstr "Đã gỡ {count} mục khỏi danh sách đen; còn lại {left}."
+
+#, python-brace-format
+msgid ""
+"Import : {added} ajoutée(s), {duplicates} doublon(s), {tailnet} du tailnet "
+"écartée(s), {invalid} ligne(s) invalide(s)."
+msgstr ""
+"Nhập: {added} đã thêm, {duplicates} trùng, {tailnet} của tailnet bị loại, "
+"{invalid} dòng không hợp lệ."
+
+#, python-brace-format
+msgid ""
+"Import : {added} ajoutée(s), {duplicates} doublon(s), {tailnet} du tailnet "
+"écartée(s), {invalid} ligne(s) invalide(s), {over} au-delà du plafond de "
+"{max}."
+msgstr ""
+"Nhập: {added} đã thêm, {duplicates} trùng, {tailnet} của tailnet bị loại, "
+"{invalid} dòng không hợp lệ, {over} vượt quá trần {max}."
+
+msgid "Aucune entrée ne correspond : rien n'a été retiré."
+msgstr "Không có mục nào khớp: không gỡ gì cả."
+
+#, python-brace-format
+msgid ""
+"Purge : {count} entrée(s) retirée(s) de la liste noire ; il en reste {left}."
+msgstr "Dọn dẹp: đã gỡ {count} mục khỏi danh sách đen; còn lại {left}."
+
+#, python-brace-format
+msgid "Adresse invalide : {text}"
+msgstr "Địa chỉ không hợp lệ: {text}"
+
+#, python-brace-format
+msgid ""
+"{address} → liste noire (refusée jusqu'au retrait), retirée de la confiance."
+msgstr ""
+"{address} → danh sách đen (bị từ chối cho đến khi được gỡ ra), đã gỡ khỏi "
+"danh sách tin cậy."
+
+#, python-brace-format
+msgid ""
+"{address} est en confiance (jamais limitée) : la confiance passe avant le "
+"blocage. Retirez-la de la confiance d'abord."
+msgstr ""
+"{address} đang ở danh sách tin cậy (không bao giờ bị giới hạn): tin cậy được"
+" ưu tiên hơn chặn. Hãy gỡ nó khỏi danh sách tin cậy trước."
+
+#, python-brace-format
+msgid ""
+"Porte injoignable ({error}) : blocage temporaire impossible porte arrêtée."
+msgstr ""
+"Không liên lạc được cổng gác ({error}): không thể chặn tạm thời khi cổng gác"
+" đã dừng."
+
+#, python-brace-format
+msgid "{address} → bloquée {minutes} min (blocage temporaire)."
+msgstr "{address} → bị chặn {minutes} phút (chặn tạm thời)."
+
+#, python-brace-format
+msgid ""
+"{address} → toujours refusée : elle fait partie d'un réseau en liste noire."
+msgstr "{address} → vẫn bị từ chối: nó thuộc một mạng trong danh sách đen."
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles), retirée de la liste noire."
+msgstr ""
+"{address} → được chấp nhận (tuân theo quy tắc), đã gỡ khỏi danh sách đen."
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles), blocage temporaire levé."
+msgstr "{address} → được chấp nhận (tuân theo quy tắc), đã bỏ chặn tạm thời."
+
+#, python-brace-format
+msgid "{address} → confiance (jamais limitée), retirée de la liste noire."
+msgstr ""
+"{address} → tin cậy (không bao giờ bị giới hạn), đã gỡ khỏi danh sách đen."
+
+#, python-brace-format
+msgid "{address} → confiance (jamais limitée)."
+msgstr "{address} → tin cậy (không bao giờ bị giới hạn)."
+
+#, python-brace-format
+msgid "{address} → toujours admise : elle fait partie du tailnet."
+msgstr "{address} → luôn được chấp nhận: nó thuộc tailnet."
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles)."
+msgstr "{address} → được chấp nhận (tuân theo quy tắc)."
+
+#, python-brace-format
+msgid "Apprentissage recommencé : {days} jours avant que la référence compte."
+msgstr ""
+"Đã bắt đầu học lại: còn {days} ngày trước khi dữ liệu tham chiếu được tính."
+
+#, python-brace-format
+msgid "Base AS / pays non mise à jour ({error}) : l'ancienne reste en place."
+msgstr ""
+"Chưa cập nhật cơ sở dữ liệu AS / quốc gia ({error}): bản cũ vẫn được giữ."
+
+#, python-brace-format
+msgid "Base AS / pays à jour ({countries} plages pays, {asns} plages AS)."
+msgstr ""
+"Cơ sở dữ liệu AS / quốc gia đã cập nhật ({countries} dải quốc gia, {asns} "
+"dải AS)."
+
+msgid "habituelle"
+msgstr "quen thuộc"
+
+msgid "limité en attaque"
+msgstr "bị giới hạn khi bị tấn công"
+
+msgid "Funnel est coupé par le disjoncteur : rétablissez-le d'abord (Survie)."
+msgstr "Funnel đang bị cầu dao ngắt: hãy khôi phục nó trước (Sinh tồn)."
+
+#, python-brace-format
+msgid "Refusé par Tailscale ({error}) : rien n'a changé."
+msgstr "Tailscale từ chối ({error}): không có gì thay đổi."
+
+#, python-brace-format
+msgid "Changement impossible ({error}) : publication d'avant remise."
+msgstr "Không thể thay đổi ({error}): đã đặt lại cấu hình công bố trước đó."
+
+#, python-brace-format
+msgid "Publication incomplète ({error}) : restaurez la sauvegarde {path}."
+msgstr ""
+"Cấu hình công bố chưa đầy đủ ({error}): hãy khôi phục bản sao lưu {path}."
+
+#, python-brace-format
+msgid "Ajout refusé : {reason}."
+msgstr "Từ chối thêm: {reason}."
+
+#, python-brace-format
+msgid "Publié : {kind} {port}{path} → {target} ({who})."
+msgstr "Đã công bố: {kind} {port}{path} → {target} ({who})."
+
+msgid ""
+"Ce port passe par la porte : « Désactiver la protection » (Pare-feu Funnel) "
+"d'abord."
+msgstr ""
+"Cổng này đi qua cổng gác: hãy « Tắt bảo vệ » (Tường lửa Funnel) trước."
+
+msgid "Ce point n'est plus publié."
+msgstr "Điểm này không còn được công bố."
+
+#, python-brace-format
+msgid "Retiré : {kind} {port}{path}."
+msgstr "Đã gỡ: {kind} {port}{path}."
+
+#, python-brace-format
+msgid "Sauvegarde illisible ({error})."
+msgstr "Không đọc được bản sao lưu ({error})."
+
+msgid ""
+"La protection est active : « Désactiver la protection » (Pare-feu Funnel) "
+"d'abord, puis restaurez."
+msgstr ""
+"Bảo vệ đang hoạt động: hãy « Tắt bảo vệ » (Tường lửa Funnel) trước, rồi khôi"
+" phục."
+
+msgid ""
+"Cette sauvegarde passe par la porte, arrêtée : « Activer la protection » "
+"(Pare-feu Funnel) la recrée proprement."
+msgstr ""
+"Bản sao lưu này đi qua cổng gác, mà cổng gác đã dừng: « Bật bảo vệ » (Tường "
+"lửa Funnel) sẽ tạo lại nó đúng cách."
+
+#, python-brace-format
+msgid "Sauvegarde du {when} restaurée."
+msgstr "Đã khôi phục bản sao lưu ngày {when}."
+
+msgid "essai public indisponible"
+msgstr "không thể thử từ Internet"
+
+msgid "adresse du tailnet inconnue"
+msgstr "không rõ địa chỉ tailnet"
+
+msgid "Funnel encore autorisé sur les ports"
+msgstr "Funnel vẫn được phép trên các cổng"
+
+msgid "Funnel est déjà coupé par omega-tail."
+msgstr "Funnel đã bị omega-tail ngắt rồi."
+
+msgid "Rien à couper : aucun port n'est ouvert à Internet."
+msgstr "Không có gì để ngắt: không có cổng nào mở ra Internet."
+
+msgid "Remise en route programmée impossible ici."
+msgstr "Không thể lên lịch bật lại ở đây."
+
+#, python-brace-format
+msgid ""
+"Minuterie de remise en route refusée (code {code}) : rien n'a été coupé."
+msgstr "Bộ hẹn giờ bật lại bị từ chối (mã {code}): chưa ngắt gì cả."
+
+#, python-brace-format
+msgid "Coupure impossible ({error}) : la publication a été remise."
+msgstr "Không thể ngắt ({error}): cấu hình công bố đã được đặt lại."
+
+#, python-brace-format
+msgid ""
+"Funnel coupé ({ports}) pour {minutes} min, puis remis en route "
+"automatiquement."
+msgstr ""
+"Đã ngắt Funnel ({ports}) trong {minutes} phút, sau đó tự động bật lại."
+
+#, python-brace-format
+msgid "Funnel coupé ({ports}) jusqu'à votre remise en route."
+msgstr "Đã ngắt Funnel ({ports}) cho đến khi bạn bật lại."
+
+msgid "Rien à rétablir : Funnel n'est pas coupé par omega-tail."
+msgstr "Không có gì để khôi phục: Funnel không bị omega-tail ngắt."
+
+msgid "Minuterie d'une ancienne coupure : rien à faire."
+msgstr "Bộ hẹn giờ của một lần ngắt cũ: không cần làm gì."
+
+#, python-brace-format
+msgid "Remise en route incomplète ({errors}) : sauvegarde gardée dans {path}."
+msgstr "Bật lại chưa đầy đủ ({errors}): bản sao lưu được giữ trong {path}."
+
+msgid "Funnel remis en route, à l'identique."
+msgstr "Đã bật lại Funnel, y như cũ."
+
+msgid "Tailscale n'est pas installé sur cette machine."
+msgstr "Tailscale chưa được cài trên máy này."
+
+msgid "Le service tailscaled ne répond pas (arrêté ou en échec)."
+msgstr "Dịch vụ tailscaled không phản hồi (đã dừng hoặc bị lỗi)."
+
+#, python-brace-format
+msgid ""
+"tailscaled n'a pas été redémarré après la mise à jour : {daemon} en marche, "
+"{client} installé."
+msgstr ""
+"tailscaled chưa được khởi động lại sau khi cập nhật: {daemon} đang chạy, "
+"{client} đã cài."
+
+msgid "Tailscale attend la connexion d'un compte."
+msgstr "Tailscale đang chờ đăng nhập một tài khoản."
+
+msgid "Tailscale est déconnecté (« tailscale down »)."
+msgstr "Tailscale đã ngắt kết nối (« tailscale down »)."
+
+#, python-brace-format
+msgid "La clé de cette machine expire dans {days} jour(s)."
+msgstr "Khóa của máy này hết hạn sau {days} ngày."
+
+msgid ""
+"Site en panne : Funnel passe par la porte (pare-feu), mais la porte est "
+"arrêtée."
+msgstr ""
+"Trang web bị sập: Funnel đi qua cổng gác (tường lửa), nhưng cổng gác đã "
+"dừng."
+
+msgid ""
+"La porte est en MODE ATTAQUE : trop de connexions entrantes ; les "
+"regroupements (empreintes, AS, pays) s'appliquent jusqu'au retour au calme."
+msgstr ""
+"Cổng gác đang ở CHẾ ĐỘ TẤN CÔNG: quá nhiều kết nối đến; gom nhóm (dấu vân "
+"tay, AS, quốc gia) được áp dụng cho đến khi yên tĩnh trở lại."
+
+#, python-brace-format
+msgid ""
+"Funnel publié sans protection sur le port {port} : tailscaled fait le TLS de"
+" chaque connexion (une rafale peut saturer la machine)."
+msgstr ""
+"Funnel được công bố mà không có bảo vệ trên cổng {port}: tailscaled làm TLS "
+"cho từng kết nối (một đợt dồn dập có thể làm bão hòa máy)."
+
+#, python-brace-format
+msgid "Température élevée : {temperature:.0f} °C."
+msgstr "Nhiệt độ cao: {temperature:.0f} °C."
+
+#, python-brace-format
+msgid "tailscaled consomme {cpu:.0f} % d'un cœur."
+msgstr "tailscaled tiêu thụ {cpu:.0f} % của một lõi."
+
+msgid ""
+"La veille automatique est activée mais ne tourne plus : Funnel ne sera pas "
+"coupé seul sous attaque."
+msgstr ""
+"Giám sát tự động đã được bật nhưng không còn chạy: Funnel sẽ không tự bị "
+"ngắt khi bị tấn công."
+
+#, python-brace-format
+msgid ""
+"Liste noire de la porte : {count} entrées (plafond {max}). Exportez-la puis "
+"purgez les plus anciennes : « Attaques et décisions » → « Gestion de la "
+"liste noire »."
+msgstr ""
+"Danh sách đen của cổng gác: {count} mục (trần {max}). Hãy xuất nó rồi dọn "
+"dẹp các mục cũ nhất: « Tấn công và quyết định » → « Quản lý danh sách đen »."
+
+msgid ""
+"Bouclier du port WireGuard ABSENT : un autre outil a effacé sa table (nft "
+"flush ruleset, pare-feu relancé…). Il n'est pas reposé seul : « Survie » → «"
+" Bouclier du port WireGuard » → « Reposer »."
+msgstr ""
+"Lá chắn cổng WireGuard VẮNG MẶT: một công cụ khác đã xóa bảng của nó (nft "
+"flush ruleset, tường lửa khởi động lại…). Nó không tự được đặt lại: « Sinh "
+"tồn » → « Lá chắn cổng WireGuard » → « Đặt lại »."
+
+msgid ""
+"Bouclier du port WireGuard : état non mis à jour depuis plus de 3 minutes "
+"(service omega-bouclier-wg arrêté ?)."
+msgstr ""
+"Lá chắn cổng WireGuard: trạng thái không được cập nhật hơn 3 phút (dịch vụ "
+"omega-bouclier-wg đã dừng?)."
+
+msgid ""
+"Le démarrage de tailscaled lance « tailscale up » : si un réglage change "
+"(opérateur, nom, routes…), Tailscale le refusera et tailscaled ne "
+"redémarrera plus. « Service » → « Corriger le démarrage »."
+msgstr ""
+"Khi khởi động, tailscaled chạy « tailscale up »: nếu một thiết lập thay đổi "
+"(người vận hành, tên, tuyến…), Tailscale sẽ từ chối và tailscaled sẽ không "
+"khởi động lại được nữa. « Dịch vụ » → « Sửa khởi động »."
+
+msgid ""
+"Confinement de tailscaled perdu (le service a redémarré) : « Survie » → « "
+"Appliquer le confinement »."
+msgstr ""
+"Mất giới hạn tài nguyên của tailscaled (dịch vụ đã khởi động lại): « Sinh "
+"tồn » → « Áp dụng giới hạn tài nguyên »."
+
+msgid ""
+"tailscaled n'est pas confiné : sous attaque, il peut prendre tous les cœurs."
+msgstr ""
+"tailscaled không bị giới hạn tài nguyên: khi bị tấn công, nó có thể chiếm "
+"mọi lõi."
+
+msgid ""
+"Vous n'êtes pas opérateur de Tailscale : chaque réglage demandera sudo."
+msgstr ""
+"Bạn không phải là người vận hành Tailscale: mỗi thiết lập sẽ cần sudo."
+
+msgid ""
+"Funnel coupé par omega-tail (coupure totale) : remise en route manuelle, "
+"dans « Survie »."
+msgstr ""
+"Funnel bị omega-tail ngắt (ngắt hoàn toàn): bật lại thủ công, trong « Sinh "
+"tồn »."
+
+#, python-brace-format
+msgid ""
+"Funnel devait être remis en route à {time} et ne l'est pas : « Rétablir » "
+"dans « Survie »."
+msgstr ""
+"Funnel lẽ ra phải được bật lại lúc {time} nhưng chưa: « Khôi phục » trong « "
+"Sinh tồn »."
+
+#, python-brace-format
+msgid ""
+"Funnel coupé par omega-tail jusqu'à {time}, puis remis en route "
+"automatiquement."
+msgstr "Funnel bị omega-tail ngắt đến {time}, sau đó tự động bật lại."
+
+#, python-brace-format
+msgid "Tailscale signale : {message}"
+msgstr "Tailscale báo: {message}"
+
+msgid "ajout manuel"
+msgstr "thêm thủ công"
+
+msgid "import"
+msgstr "nhập"
+
+msgid "écran Attaques"
+msgstr "màn hình Tấn công"
+
+msgid "avant les dates"
+msgstr "trước khi có ngày"
+
+#, python-brace-format
+msgid "Température de {temperature:.0f} °C (seuil {threshold:.0f} °C)."
+msgstr "Nhiệt độ {temperature:.0f} °C (ngưỡng {threshold:.0f} °C)."
+
+#, python-brace-format
+msgid ""
+"tailscaled au-dessus de {threshold:.0f} % d'un cœur depuis {seconds} s "
+"(moyenne {average:.0f} %)."
+msgstr ""
+"tailscaled vượt {threshold:.0f} % của một lõi trong {seconds} s (trung bình "
+"{average:.0f} %)."
+
+msgid "cible non prise en charge"
+msgstr "đích không được hỗ trợ"
+
+msgid "nom de machine inattendu"
+msgstr "tên máy không mong đợi"
+
+msgid "aucun port n'est ouvert à Internet (Funnel)"
+msgstr "không có cổng nào mở ra Internet (Funnel)"
+
+msgid "plusieurs ports Funnel : la porte n'en protège qu'un pour l'instant"
+msgstr "nhiều cổng Funnel: hiện tại cổng gác chỉ bảo vệ một cổng"
+
+msgid "Funnel passe déjà par une porte (TCP + PROXY v2)"
+msgstr "Funnel đã đi qua một cổng gác (TCP + PROXY v2)"
+
+msgid "seule une publication HTTPS avec le chemin « / » est prise en charge"
+msgstr "chỉ hỗ trợ công bố HTTPS với đường dẫn « / »"
+
+msgid "Chrome, Edge, Firefox récent"
+msgstr "Chrome, Edge, Firefox mới"
+
+msgid "Firefox (ancien)"
+msgstr "Firefox (cũ)"
+
+msgid "empreinte"
+msgstr "dấu vân tay"
+
+msgid "hébergeur"
+msgstr "hosting"
+
+msgid "pays"
+msgstr "quốc gia"
+
+msgid "Identité"
+msgstr "Định danh"
+
+msgid "Réseau"
+msgstr "Mạng"
+
+msgid "Sortie"
+msgstr "Nút thoát"
+
+msgid "Services Tailscale"
+msgstr "Dịch vụ Tailscale"
+
+msgid "Opérateur"
+msgstr "Người vận hành"
+
+msgid "Nom de la machine"
+msgstr "Tên máy"
+
+msgid ""
+"Nom dans le tailnet (vide : celui du système). Change aussi l'adresse "
+"*.ts.net : les liens publiés et le certificat suivent."
+msgstr ""
+"Tên trong tailnet (trống: tên của hệ thống). Cũng đổi địa chỉ *.ts.net: các "
+"liên kết đã công bố và chứng chỉ sẽ theo."
+
+msgid "ex. serveur-maison"
+msgstr "vd. may-chu-nha"
+
+msgid "Surnom du compte"
+msgstr "Biệt danh tài khoản"
+
+msgid ""
+"Surnom du compte en cours, pour le reconnaître dans « Changer de compte »."
+msgstr ""
+"Biệt danh của tài khoản hiện tại, để nhận ra nó trong « Đổi tài khoản »."
+
+msgid "ex. maison"
+msgstr "vd. nha"
+
+msgid "Accepter les routes"
+msgstr "Chấp nhận tuyến"
+
+msgid ""
+"Utiliser les sous-réseaux annoncés par les autres machines. À éviter sur une"
+" machine du même réseau local que le routeur qui l'annonce."
+msgstr ""
+"Dùng các mạng con được các máy khác quảng bá. Tránh dùng trên máy nằm cùng "
+"mạng cục bộ với router quảng bá mạng đó."
+
+msgid "Accepter le DNS du tailnet"
+msgstr "Chấp nhận DNS của tailnet"
+
+msgid "MagicDNS : les noms des machines du tailnet se résolvent ici."
+msgstr "MagicDNS: tên của các máy trong tailnet được phân giải tại đây."
+
+msgid "Bouclier (refuser les connexions entrantes)"
+msgstr "Lá chắn (từ chối kết nối đến)"
+
+msgid ""
+"Aucune machine du tailnet ne peut se connecter à celle-ci (SSH et Serve "
+"compris). Funnel n'est pas concerné."
+msgstr ""
+"Không máy nào trong tailnet có thể kết nối tới máy này (kể cả SSH và Serve)."
+" Funnel không bị ảnh hưởng."
+
+msgid "Filtrage avec état"
+msgstr "Lọc có trạng thái"
+
+msgid ""
+"Pour un routeur de sous-réseau ou un nœud de sortie : ne laisse revenir que "
+"les réponses."
+msgstr "Cho router mạng con hoặc nút thoát: chỉ cho các phản hồi đi trở lại."
+
+msgid "Mode netfilter"
+msgstr "Chế độ netfilter"
+
+msgid ""
+"on : Tailscale gère ses règles de pare-feu ; nodivert : ses chaînes sans les"
+" brancher ; off : aucune règle (à vos risques)."
+msgstr ""
+"on: Tailscale quản lý quy tắc tường lửa của nó; nodivert: các chuỗi của nó "
+"mà không gắn vào; off: không có quy tắc nào (bạn tự chịu rủi ro)."
+
+msgid "Nœud de sortie utilisé"
+msgstr "Nút thoát đang dùng"
+
+msgid ""
+"Faire passer le trafic Internet de cette machine par une autre machine du "
+"tailnet (vide : aucun)."
+msgstr ""
+"Cho lưu lượng Internet của máy này đi qua một máy khác trong tailnet (trống:"
+" không dùng)."
+
+msgid "Garder l'accès au réseau local"
+msgstr "Giữ truy cập mạng cục bộ"
+
+msgid "Avec un nœud de sortie : le réseau local reste joignable directement."
+msgstr "Khi dùng nút thoát: mạng cục bộ vẫn truy cập trực tiếp được."
+
+msgid "Proposer cette machine comme nœud de sortie"
+msgstr "Đề xuất máy này làm nút thoát"
+
+msgid ""
+"Les autres machines pourront sortir sur Internet par celle-ci (à approuver "
+"dans la console d'administration)."
+msgstr ""
+"Các máy khác có thể ra Internet qua máy này (cần phê duyệt trong bảng quản "
+"trị)."
+
+msgid "Sous-réseaux annoncés"
+msgstr "Mạng con được quảng bá"
+
+msgid ""
+"Réseaux locaux rendus joignables au tailnet, séparés par des virgules "
+"(192.168.1.0/24) ; vide : aucun."
+msgstr ""
+"Các mạng cục bộ cho tailnet truy cập, ngăn cách bằng dấu phẩy "
+"(192.168.1.0/24); trống: không có."
+
+msgid "ex. 192.168.1.0/24, 10.0.0.0/8"
+msgstr "vd. 192.168.1.0/24, 10.0.0.0/8"
+
+msgid "SSH Tailscale"
+msgstr "SSH Tailscale"
+
+msgid ""
+"Serveur SSH de Tailscale, selon les règles du tailnet. Votre SSH habituel "
+"n'est pas touché."
+msgstr ""
+"Máy chủ SSH của Tailscale, theo quy tắc của tailnet. SSH thường dùng của bạn"
+" không bị động chạm."
+
+msgid "Interface web (port 5252)"
+msgstr "Giao diện web (cổng 5252)"
+
+msgid "Page de gestion de cette machine, joignable par le tailnet seulement."
+msgstr "Trang quản lý máy này, chỉ truy cập được qua tailnet."
+
+msgid "Mises à jour automatiques"
+msgstr "Cập nhật tự động"
+
+msgid ""
+"Tailscale se met à jour seul quand sa distribution le permet. Sinon : "
+"gestionnaire de paquets."
+msgstr ""
+"Tailscale tự cập nhật khi bản phân phối cho phép. Nếu không: trình quản lý "
+"gói."
+
+msgid "Signaler les mises à jour"
+msgstr "Báo có bản cập nhật"
+
+msgid "Tailscale prévient quand une version plus récente existe."
+msgstr "Tailscale báo khi có phiên bản mới hơn."
+
+msgid "Port du relais pair (UDP)"
+msgstr "Cổng chuyển tiếp ngang hàng (UDP)"
+
+msgid ""
+"Cette machine relaie les connexions d'autres machines du tailnet sur ce port"
+" UDP ; vide : non."
+msgstr ""
+"Máy này chuyển tiếp kết nối của các máy khác trong tailnet trên cổng UDP "
+"này; trống: không."
+
+msgid "ex. 40000"
+msgstr "vd. 40000"
+
+msgid ""
+"Nom du compte Linux qui pilote Tailscale sans sudo (« Mon compte » le "
+"remplit) ; vide : root seul. Changer l'opérateur demande sudo une fois."
+msgstr ""
+"Tên tài khoản Linux điều khiển Tailscale không cần sudo (« Tài khoản của tôi"
+" » điền sẵn); trống: chỉ root. Đổi người vận hành cần sudo một lần."
+
+msgid "ex. votre compte Linux"
+msgstr "vd. tài khoản Linux của bạn"
+
+msgid "réglage inconnu"
+msgstr "thiết lập không xác định"
+
+msgid "caractère de contrôle"
+msgstr "ký tự điều khiển"
+
+msgid "valeur hors liste"
+msgstr "giá trị ngoài danh sách"
+
+msgid "lettres, chiffres et tirets seulement (63 au plus)"
+msgstr "chỉ chữ cái, chữ số và dấu gạch ngang (tối đa 63)"
+
+msgid "64 caractères au plus"
+msgstr "tối đa 64 ký tự"
+
+msgid "nom de compte Unix attendu"
+msgstr "cần tên tài khoản Unix"
+
+msgid "adresse ou nom de machine attendu"
+msgstr "cần địa chỉ hoặc tên máy"
+
+msgid "port de 0 à 65535"
+msgstr "cổng từ 0 đến 65535"
+
+#, python-brace-format
+msgid "réseau invalide : {value}"
+msgstr "mạng không hợp lệ: {value}"
+
+msgid "port de 1 à 65535 attendu"
+msgstr "cần cổng từ 1 đến 65535"
+
+msgid "cible locale attendue : un port, ou http://127.0.0.1:PORT"
+msgstr "cần đích cục bộ: một cổng, hoặc http://127.0.0.1:PORT"
+
+msgid "cible locale attendue : un port, ou tcp://127.0.0.1:PORT"
+msgstr "cần đích cục bộ: một cổng, hoặc tcp://127.0.0.1:PORT"
+
+msgid "mode inconnu"
+msgstr "chế độ không xác định"
+
+msgid "Funnel n'ouvre que les ports 443, 8443 et 10000"
+msgstr "Funnel chỉ mở các cổng 443, 8443 và 10000"
+
+msgid "chemin attendu : /, /site, /api/v1…"
+msgstr "cần đường dẫn: /, /site, /api/v1…"
+
+msgid "ce port est déjà publié pour un autre public (tailnet / Internet)"
+msgstr "cổng này đã được công bố cho đối tượng khác (tailnet / Internet)"
+
+msgid "ce port est déjà publié"
+msgstr "cổng này đã được công bố"
+
+msgid "ce port est déjà publié dans un autre mode"
+msgstr "cổng này đã được công bố ở chế độ khác"
+
+msgid "ce chemin est déjà publié sur ce port"
+msgstr "đường dẫn này đã được công bố trên cổng này"
+
+msgid "pare-feu"
+msgstr "tường lửa"
+
+msgid "publication"
+msgstr "công bố"
+
+msgid "veille automatique"
+msgstr "giám sát tự động"
+
+msgid "disjoncteur"
+msgstr "cầu dao"
+
+msgid ""
+"Cette session passe par Tailscale : arrêter tailscaled la coupera, et vous "
+"ne pourrez pas le relancer d'ici. Accès de secours : le réseau local ou la "
+"machine elle-même."
+msgstr ""
+"Phiên này đi qua Tailscale: dừng tailscaled sẽ ngắt nó, và bạn sẽ không thể "
+"khởi động lại từ đây. Truy cập dự phòng: mạng cục bộ hoặc chính máy đó."
+
+msgid ""
+"Cette session passe par Tailscale : pendant le redémarrage elle se figera "
+"quelques secondes, puis reviendra en général d'elle-même."
+msgstr ""
+"Phiên này đi qua Tailscale: trong lúc khởi động lại nó sẽ bị đứng vài giây, "
+"rồi thường tự trở lại."
+
+msgid "réponse DNS invalide"
+msgstr "phản hồi DNS không hợp lệ"
+
+msgid "aucune adresse publique pour ce nom"
+msgstr "không có địa chỉ công khai cho tên này"
+
+msgid "HAProxy absent"
+msgstr "thiếu HAProxy"
+
+msgid "crontab absent (installez cronie ou un autre cron)"
+msgstr "thiếu crontab (hãy cài cronie hoặc một cron khác)"
+
+msgid "fichier trop gros"
+msgstr "tệp quá lớn"
+
+msgid "téléchargement impossible"
+msgstr "không thể tải về"
+
+msgid "base incomplète (trop peu de plages) : ancienne base gardée"
+msgstr "cơ sở dữ liệu chưa đầy đủ (quá ít dải): giữ bản cũ"
+
+msgid "contient l'installation d'omega-tail"
+msgstr "chứa bản cài đặt của omega-tail"
+
+msgid "lecture refusée"
+msgstr "không được phép đọc"
+
+msgid "aucun journal trouvé"
+msgstr "không tìm thấy nhật ký nào"
+
+msgid ""
+"Votre compte ne peut pas lire le journal du système. Ajoutez-le au groupe « "
+"systemd-journal » (ou « adm » / « wheel » selon la distribution), puis "
+"rouvrez votre session."
+msgstr ""
+"Tài khoản của bạn không thể đọc nhật ký hệ thống. Hãy thêm nó vào nhóm « "
+"systemd-journal » (hoặc « adm » / « wheel » tùy bản phân phối), rồi mở lại "
+"phiên làm việc."
+
+msgid ""
+"Ce journal est réservé à root sur cette machine : ajoutez votre compte au "
+"groupe qui peut le lire (souvent « adm » ou « wheel »), ou lisez-le avec "
+"sudo."
+msgstr ""
+"Nhật ký này chỉ dành cho root trên máy này: hãy thêm tài khoản của bạn vào "
+"nhóm được phép đọc nó (thường là « adm » hoặc « wheel »), hoặc đọc nó bằng "
+"sudo."
+
+msgid "journal vide ou illisible pour ce compte"
+msgstr "nhật ký trống hoặc tài khoản này không đọc được"
+
+msgid "DNS public"
+msgstr "DNS công khai"
+
+msgid "réponse vide"
+msgstr "phản hồi trống"
+
+msgid "Pilotage de Tailscale et protection de Funnel."
+msgstr "Điều khiển Tailscale và bảo vệ Funnel."
+
+msgid "état de Tailscale, de la machine et alertes"
+msgstr "trạng thái của Tailscale, của máy và cảnh báo"
+
+msgid "aide complète en texte"
+msgstr "trợ giúp đầy đủ dạng văn bản"
+
+msgid "rapport de la machine (faits seulement)"
+msgstr "báo cáo về máy (chỉ dữ kiện)"
+
+msgid "enregistrer dans le dossier des exports (sinon : affiché)"
+msgstr "lưu vào thư mục bản xuất (nếu không: hiển thị)"
+
+msgid ""
+"inclure le compte Tailscale et les noms / adresses des appareils du tailnet"
+msgstr "bao gồm tài khoản Tailscale và tên / địa chỉ các thiết bị của tailnet"
+
+msgid "couper ou remettre Funnel (Survie)"
+msgstr "ngắt hoặc bật lại Funnel (Sinh tồn)"
+
+msgid "coupure en cours"
+msgstr "đang ngắt"
+
+msgid "couper Funnel"
+msgstr "ngắt Funnel"
+
+msgid "coupure momentanée, remise en route automatique (minuterie)"
+msgstr "ngắt tạm thời, tự động bật lại (bộ hẹn giờ)"
+
+msgid "coupure jusqu'à « retablir »"
+msgstr "ngắt cho đến « retablir »"
+
+msgid "remettre Funnel à l'identique"
+msgstr "đặt lại Funnel y như cũ"
+
+msgid "coupure visée (minuterie) ; une autre coupure est ignorée"
+msgstr "lần ngắt được nhắm tới (bộ hẹn giờ); lần ngắt khác bị bỏ qua"
+
+msgid "secondes d'attente avant (hors systemd)"
+msgstr "số giây chờ trước (ngoài systemd)"
+
+msgid "veille automatique (coupe Funnel seule sous attaque)"
+msgstr "giám sát tự động (tự ngắt Funnel khi bị tấn công)"
+
+msgid "tourner en continu (lancé par le service de la veille)"
+msgstr "chạy liên tục (do dịch vụ giám sát khởi chạy)"
+
+msgid "état de la veille et dernières lignes du journal"
+msgstr "trạng thái giám sát và các dòng nhật ký cuối"
+
+msgid "pare-feu Funnel (porte HAProxy)"
+msgstr "tường lửa Funnel (cổng gác HAProxy)"
+
+msgid "état de la porte et compteurs"
+msgstr "trạng thái cổng gác và bộ đếm"
+
+msgid "renouveler le certificat *.ts.net de la porte"
+msgstr "gia hạn chứng chỉ *.ts.net của cổng gác"
+
+msgid "seulement s'il expire dans moins de 30 jours"
+msgstr "chỉ khi nó hết hạn trong vòng chưa đầy 30 ngày"
+
+msgid "regroupements : mode attaque, empreintes, AS, pays (lot 6)"
+msgstr "gom nhóm: chế độ tấn công, dấu vân tay, AS, quốc gia (lô 6)"
+
+msgid "mettre à jour la base AS / pays (DB-IP Lite)"
+msgstr "cập nhật cơ sở dữ liệu AS / quốc gia (DB-IP Lite)"
+
+msgid "bloquer une adresse (durée de blocage) ou un réseau"
+msgstr "chặn một địa chỉ (thời gian chặn) hoặc một mạng"
+
+msgid "liste noire, jusqu'à « debloquer »"
+msgstr "danh sách đen, cho đến « debloquer »"
+
+msgid "débloquer une adresse ou un réseau"
+msgstr "bỏ chặn một địa chỉ hoặc một mạng"
+
+msgid "mettre en confiance (jamais limitée)"
+msgstr "đưa vào danh sách tin cậy (không bao giờ bị giới hạn)"
+
+#, python-brace-format
+msgid "Export impossible : {error}"
+msgstr "Không xuất được: {error}"
+
+#, python-brace-format
+msgid "Rapport enregistré : {path}"
+msgstr "Đã lưu báo cáo: {path}"
+
+msgid "Funnel n'est pas coupé par omega-tail."
+msgstr "Funnel không bị omega-tail ngắt."
+
+#, python-brace-format
+msgid "remise en route prévue {when}"
+msgstr "dự kiến bật lại {when}"
+
+msgid "coupure totale"
+msgstr "ngắt hoàn toàn"
+
+#, python-brace-format
+msgid ""
+"Funnel coupé depuis {since} ({until}), ports {ports} ; sauvegarde {saved}"
+msgstr ""
+"Funnel bị ngắt từ {since} ({until}), cổng {ports}; bản sao lưu {saved}"
+
+msgid "--minutes : 1 au moins."
+msgstr "--minutes: ít nhất 1."
+
+msgid ""
+"La porte n'est pas active : les listes s'appliqueront à son activation."
+msgstr "Cổng gác chưa hoạt động: các danh sách sẽ được áp dụng khi bật nó."
+
+msgid "Veille automatique : désactivée."
+msgstr "Giám sát tự động: đã tắt."
+
+msgid "ARRÊTÉE (signe de vie trop vieux)"
+msgstr "ĐÃ DỪNG (tín hiệu sống quá cũ)"
+
+msgid "en marche"
+msgstr "đang chạy"
+
+#, python-brace-format
+msgid ""
+"Veille automatique : {state} ; dépassements récents {strikes}/3 ; prochaine "
+"coupure {minutes} min"
+msgstr ""
+"Giám sát tự động: {state}; vượt ngưỡng gần đây {strikes}/3; lần ngắt tới "
+"{minutes} phút"
+
+msgid "Porte inactive : Funnel ne passe pas par elle."
+msgstr "Cổng gác không hoạt động: Funnel không đi qua nó."
+
+#, python-brace-format
+msgid ""
+"Porte active depuis {since} : Funnel {port} -> 127.0.0.1:{gate} -> {backend}"
+msgstr ""
+"Cổng gác hoạt động từ {since}: Funnel {port} -> 127.0.0.1:{gate} -> "
+"{backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions : {total} reçues, {refused} refusées avant chiffrement, {current}"
+" en cours"
+msgstr ""
+"Kết nối: {total} đã nhận, {refused} bị từ chối trước khi mã hóa, {current} "
+"đang diễn ra"
+
+#, python-brace-format
+msgid "{days} jour(s) restants"
+msgstr "còn {days} ngày"
+
+#, python-brace-format
+msgid "Certificat : {left}"
+msgstr "Chứng chỉ: {left}"
+
+#, python-brace-format
+msgid "Certificat valable encore {days} jour(s) : rien à faire."
+msgstr "Chứng chỉ còn hiệu lực {days} ngày: không cần làm gì."
+
+msgid ""
+"HAProxy sans Lua : regroupements (JA4, AS, pays) indisponibles, porte du lot"
+" 4 seule."
+msgstr ""
+"HAProxy không có Lua: gom nhóm (JA4, AS, quốc gia) không khả dụng, chỉ có "
+"cổng gác của lô 4."
+
+msgid "observation (rien n'est refusé par ces règles)"
+msgstr "quan sát (các quy tắc này không từ chối gì)"
+
+#, python-brace-format
+msgid "ATTAQUE (retour au normal dans {seconds} s sans dépassement)"
+msgstr "TẤN CÔNG (trở lại bình thường sau {seconds} s không vượt ngưỡng)"
+
+msgid "normal"
+msgstr "bình thường"
+
+#, python-brace-format
+msgid "Regroupements : {mode} ; mode {attack}"
+msgstr "Gom nhóm: {mode}; chế độ {attack}"
+
+#, python-brace-format
+msgid ""
+"Mode attaque au-delà de {rate} connexions entrantes / s ; calme {minutes} "
+"min"
+msgstr ""
+"Chế độ tấn công khi vượt {rate} kết nối đến / s; yên tĩnh {minutes} phút"
+
+msgid "référence prête"
+msgstr "tham chiếu sẵn sàng"
+
+#, python-brace-format
+msgid "apprentissage : encore {days} jour(s)"
+msgstr "học: còn {days} ngày"
+
+#, python-brace-format
+msgid "Empreintes habituelles : {known} ({learning})"
+msgstr "Dấu vân tay quen thuộc: {known} ({learning})"
+
+#, python-brace-format
+msgid "mise à jour il y a {days} jour(s)"
+msgstr "cập nhật {days} ngày trước"
+
+msgid "absente (« omega-tail porte base »)"
+msgstr "vắng mặt (« omega-tail porte base »)"
+
+#, python-brace-format
+msgid "Base AS / pays : {base}"
+msgstr "Cơ sở dữ liệu AS / quốc gia: {base}"
+
+#, python-brace-format
+msgid "Connexions refusées (7 j) : {found}"
+msgstr "Kết nối bị từ chối (7 ngày): {found}"
+
+#, python-brace-format
+msgid "Connexions qui auraient été refusées (7 j) : {found}"
+msgstr "Kết nối lẽ ra đã bị từ chối (7 ngày): {found}"
+
+msgid "Empreintes les plus actives (connexions / 10 s, total) :"
+msgstr "Dấu vân tay hoạt động nhiều nhất (kết nối / 10 s, tổng):"
+
+msgid "AS les plus actifs (connexions / 10 s, total) :"
+msgstr "AS hoạt động nhiều nhất (kết nối / 10 s, tổng):"
+
+msgid "Pays les plus actifs (connexions / 10 s, total) :"
+msgstr "Quốc gia hoạt động nhiều nhất (kết nối / 10 s, tổng):"
+
+msgid "Tailscale n'est pas installé."
+msgstr "Tailscale chưa được cài."
+
+#, python-brace-format
+msgid "Service tailscaled : {state}"
+msgstr "Dịch vụ tailscaled: {state}"
+
+#, python-brace-format
+msgid "Version : {daemon} en marche, {client} installée"
+msgstr "Phiên bản: {daemon} đang chạy, {client} đã cài"
+
+#, python-brace-format
+msgid "Nom : {name}"
+msgstr "Tên: {name}"
+
+#, python-brace-format
+msgid "Adresses : {addresses}"
+msgstr "Địa chỉ: {addresses}"
+
+#, python-brace-format
+msgid "Opérateur : {operator}"
+msgstr "Người vận hành: {operator}"
+
+#, python-brace-format
+msgid "tailscaled : {cpu} d'un cœur, {memory}"
+msgstr "tailscaled: {cpu} của một lõi, {memory}"
+
+#, python-brace-format
+msgid "Température : {value}"
+msgstr "Nhiệt độ: {value}"
+
+msgid "PUBLICATION"
+msgstr "CÔNG BỐ"
+
+msgid "rien de publié"
+msgstr "không có gì được công bố"
+
+msgid "ALERTES"
+msgstr "CẢNH BÁO"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — LISTE NOIRE DE LA PORTE ({machine})"
+msgstr "OMEGA-TAIL {version} — DANH SÁCH ĐEN CỦA CỔNG GÁC ({machine})"
+
+#, python-brace-format
+msgid ""
+"Établie le {date} : {count} entrée(s), la plus ancienne d'abord. L'export "
+"TXT se réimporte tel quel."
+msgstr ""
+"Lập ngày {date}: {count} mục, cũ nhất trước. Bản xuất TXT nhập lại được "
+"nguyên trạng."
+
+msgid "Adresse ou réseau"
+msgstr "Địa chỉ hoặc mạng"
+
+msgid "Ajoutée le"
+msgstr "Thêm ngày"
+
+msgid "Origine"
+msgstr "Nguồn gốc"
+
+msgid "Liste noire - Omega-Tail"
+msgstr "Danh sách đen - Omega-Tail"
+
+msgid "Passer d'un élément à l'autre (lignes d'un tableau, boutons)"
+msgstr "Chuyển từ mục này sang mục khác (dòng của bảng, nút)"
+
+msgid "Passer d'une zone de l'écran à l'autre"
+msgstr "Chuyển từ vùng này sang vùng khác của màn hình"
+
+msgid "Activer le bouton choisi ; dans le tableau des alertes, « Corriger »"
+msgstr "Kích hoạt nút đã chọn; trong bảng cảnh báo, « Sửa »"
+
+msgid "Entrée / Clic"
+msgstr "Enter / Nhấp"
+
+msgid "Revenir à l'écran précédent (au menu : quitter)"
+msgstr "Quay lại màn hình trước (ở menu: thoát)"
+
+msgid "Cette aide, depuis n'importe quel écran"
+msgstr "Trợ giúp này, từ bất kỳ màn hình nào"
+
+msgid "Réglages, depuis n'importe quel écran"
+msgstr "Thiết lập, từ bất kỳ màn hình nào"
+
+msgid "Thème suivant (enregistré)"
+msgstr "Giao diện tiếp theo (được lưu)"
+
+msgid "Redessiner l'écran, afficher la taille du terminal et relire l'état"
+msgstr "Vẽ lại màn hình, hiển thị kích thước terminal và đọc lại trạng thái"
+
+msgid ""
+"Commandes : thème, capture d'écran (SVG, dans le dossier des captures), "
+"quitter"
+msgstr "Lệnh: giao diện, chụp màn hình (SVG, trong thư mục ảnh chụp), thoát"
+
+msgid "Ctrl+P"
+msgstr "Ctrl+P"
+
+msgid ""
+"omega-tail pilote Tailscale sur cette machine et la protège quand elle publie un service sur Internet par Tailscale Funnel.\n"
+"\n"
+"1. [b]Tableau de bord[/b] : l'état de Tailscale, de la machine et de ce qui est publié, puis les alertes. Choisissez une alerte et « Corriger » : omega-tail ouvre l'écran qui la corrige.\n"
+"2. [b]Service tailscaled[/b] : démarrer, arrêter ou redémarrer le service (par exemple pour appliquer une mise à jour déjà installée).\n"
+"3. [b]Connexion et réglages[/b] : connexion, compte et réglages de Tailscale, vérifiés avant d'être appliqués.\n"
+"4. [b]Publication[/b] : ce que Serve et Funnel publient ; publier, retirer, essayer, restaurer.\n"
+"5. [b]Journaux[/b] : ce que tailscaled a écrit, filtrable et exportable.\n"
+"6. [b]Survie[/b] : confiner tailscaled, et couper Funnel un moment (puis le remettre tout seul) ou totalement quand la machine est attaquée.\n"
+"7. [b]Pare-feu Funnel[/b] : une porte qui refuse les connexions abusives avant tout chiffrement ; [b]Attaques et décisions[/b] pour voir et décider en direct.\n"
+"\n"
+"La [b]bande d'état[/b] (cadre « État », sous le titre de chaque écran) résume tout : service, consommation de tailscaled, température, mémoire vive utilisée (RAM), Funnel, pare-feu (actif, arrêté, inactif), veille automatique (active, arrêtée, inactive) et connexion. Elle est relue toutes les 5 secondes. La taille de la fenêtre est affichée à côté du thème, en haut ; « r » la relit après un redimensionnement.\n"
+"\n"
+"Chaque action qui change la machine montre d'abord sa commande ; le mot de passe sudo se saisit dans le terminal, l'interface revient ensuite. Rien n'est jamais lancé en arrière-plan sans vous."
+msgstr ""
+"omega-tail điều khiển Tailscale trên máy này và bảo vệ nó khi nó công bố một dịch vụ ra Internet qua Tailscale Funnel.\n"
+"\n"
+"1. [b]Bảng điều khiển[/b]: trạng thái của Tailscale, của máy và những gì được công bố, rồi các cảnh báo. Chọn một cảnh báo và « Sửa »: omega-tail mở màn hình khắc phục nó.\n"
+"2. [b]Dịch vụ tailscaled[/b]: khởi động, dừng hoặc khởi động lại dịch vụ (ví dụ để áp dụng một bản cập nhật đã cài).\n"
+"3. [b]Kết nối và thiết lập[/b]: kết nối, tài khoản và thiết lập của Tailscale, được kiểm tra trước khi áp dụng.\n"
+"4. [b]Công bố[/b]: những gì Serve và Funnel công bố; công bố, gỡ, thử, khôi phục.\n"
+"5. [b]Nhật ký[/b]: những gì tailscaled đã ghi, lọc và xuất được.\n"
+"6. [b]Sinh tồn[/b]: giới hạn tài nguyên của tailscaled, và ngắt Funnel một lúc (rồi tự bật lại) hoặc ngắt hoàn toàn khi máy bị tấn công.\n"
+"7. [b]Tường lửa Funnel[/b]: một cổng gác từ chối các kết nối lạm dụng trước mọi bước mã hóa; [b]Tấn công và quyết định[/b] để xem và quyết định trực tiếp.\n"
+"\n"
+"[b]Thanh trạng thái[/b] (khung « Trạng thái », dưới tiêu đề của mỗi màn hình) tóm tắt mọi thứ: dịch vụ, mức tiêu thụ của tailscaled, nhiệt độ, bộ nhớ RAM đã dùng, Funnel, tường lửa (hoạt động, đã dừng, không hoạt động), giám sát tự động (hoạt động, đã dừng, không hoạt động) và kết nối. Nó được đọc lại mỗi 5 giây. Kích thước cửa sổ hiển thị cạnh chủ đề, ở trên cùng; « r » đọc lại nó sau khi đổi kích thước.\n"
+"\n"
+"Mỗi thao tác làm thay đổi máy đều hiển thị lệnh của nó trước; mật khẩu sudo được nhập trong terminal, sau đó giao diện trở lại. Không có gì được chạy nền mà bạn không biết."
+
+msgid "Tableau de bord"
+msgstr "Bảng điều khiển"
+
+msgid ""
+"Trois cadres et une liste d'alertes.\n"
+"- [b]Tailscale[/b] : service, état de la connexion, version (en marche et installée), nom de la machine, adresses, compte, appareils en ligne, expiration de la clé, opérateur.\n"
+"- [b]Tailscale[/b] dit aussi si la machine se propose comme nœud de sortie, lequel elle utilise, et les sous-réseaux qu'elle annonce.\n"
+"- [b]Machine[/b] : CPU de toute la machine, charge, température, mémoire, CPU et mémoire de tailscaled (en % d'un cœur), confinement, puis l'état des protections : Funnel, pare-feu (porte, mode attaque), liste noire, veille, bouclier du port WireGuard.\n"
+"- Libellés dans la couleur d'accent du thème, valeurs en vert, orange ou rouge selon les seuils (CPU machine 70 / 90 %, charge 1 / 2 par cœur, température 75 / 85 °C, mémoire 85 / 95 %, tailscaled 50 / 90 % d'un cœur, liste noire 25 000 / 50 000 entrées).\n"
+"- [b]Publication[/b] : chaque port publié, pour Internet (Funnel) ou le tailnet seul (Serve), son mode et sa cible.\n"
+"- [b]Alertes[/b] : de la plus grave à la moins grave. « Corriger » (ou Entrée) ouvre l'écran qui corrige ; un écran pas encore construit le dit.\n"
+"\n"
+"Alertes possibles : service arrêté ; mise à jour installée mais pas appliquée (redémarrer le service) ; compte à connecter ; clé qui expire ; Funnel publié sans protection (tailscaled fait le chiffrement de chaque visiteur : une rafale peut saturer la machine) ; température élevée ; tailscaled trop gourmand ; tailscaled non confiné ; vous n'êtes pas opérateur ; liste noire de plus de 25 000 entrées ; messages de Tailscale lui-même.\n"
+"\n"
+"La bande d'état en haut de chaque écran sépare [b]CPU machine[/b] (toute la machine, en % de tous ses cœurs) et [b]CPU tailscaled[/b] (le seul service, en % d'un cœur)."
+msgstr ""
+"Ba khung và một danh sách cảnh báo.\n"
+"- [b]Tailscale[/b]: dịch vụ, trạng thái kết nối, phiên bản (đang chạy và đã cài), tên máy, địa chỉ, tài khoản, thiết bị trực tuyến, hạn của khóa, người vận hành.\n"
+"- [b]Tailscale[/b] cũng cho biết máy có đề xuất làm nút thoát không, nó đang dùng nút thoát nào, và các mạng con nó quảng bá.\n"
+"- [b]Máy[/b]: CPU của toàn máy, tải, nhiệt độ, bộ nhớ, CPU và bộ nhớ của tailscaled (theo % của một lõi), giới hạn tài nguyên, rồi trạng thái các lớp bảo vệ: Funnel, tường lửa (cổng gác, chế độ tấn công), danh sách đen, giám sát, lá chắn cổng WireGuard.\n"
+"- Nhãn theo màu nhấn của chủ đề, giá trị màu xanh lá, cam hoặc đỏ theo ngưỡng (CPU máy 70 / 90 %, tải 1 / 2 mỗi lõi, nhiệt độ 75 / 85 °C, bộ nhớ 85 / 95 %, tailscaled 50 / 90 % của một lõi, danh sách đen 25 000 / 50 000 mục).\n"
+"- [b]Công bố[/b]: mỗi cổng được công bố, cho Internet (Funnel) hoặc chỉ cho tailnet (Serve), chế độ và đích của nó.\n"
+"- [b]Cảnh báo[/b]: từ nghiêm trọng nhất đến ít nghiêm trọng nhất. « Sửa » (hoặc Enter) mở màn hình khắc phục; màn hình chưa được xây dựng sẽ nói rõ.\n"
+"\n"
+"Các cảnh báo có thể có: dịch vụ đã dừng; bản cập nhật đã cài nhưng chưa áp dụng (khởi động lại dịch vụ); tài khoản cần đăng nhập; khóa sắp hết hạn; Funnel được công bố mà không có bảo vệ (tailscaled làm mã hóa cho từng khách truy cập: một đợt dồn dập có thể làm bão hòa máy); nhiệt độ cao; tailscaled quá ngốn tài nguyên; tailscaled không bị giới hạn tài nguyên; bạn không phải là người vận hành; danh sách đen hơn 25 000 mục; thông báo từ chính Tailscale.\n"
+"\n"
+"Thanh trạng thái ở đầu mỗi màn hình tách riêng [b]CPU máy[/b] (toàn máy, theo % của tất cả các lõi) và [b]CPU tailscaled[/b] (riêng dịch vụ này, theo % của một lõi)."
+
+msgid "Service tailscaled"
+msgstr "Dịch vụ tailscaled"
+
+msgid ""
+"L'état du service vu par systemd : actif ou non, lancé au démarrage, depuis quand, mémoire ; la version en marche et la version installée ; la commande de lancement ; les fichiers d'ajout (affichés, modifiés seulement par « Corriger le démarrage », sur votre accord) ; le confinement.\n"
+"\n"
+"[b]Démarrer[/b], [b]Arrêter[/b], [b]Redémarrer[/b] : la commande s'affiche avant d'être lancée.\n"
+"[b]Garde-fou[/b] : si votre session passe par Tailscale (SSH par le tailnet), Arrêter vous couperait sans pouvoir relancer : omega-tail demande une seconde confirmation. Redémarrer fige la session quelques secondes, puis elle revient en général.\n"
+"\n"
+"[b]Corriger le démarrage[/b] (affiché seulement si besoin) : un de vos fichiers d'ajout lance « tailscale up » après le démarrage. Dès qu'un réglage change ensuite (opérateur, nom, routes…), Tailscale refuse ce « up » incomplet ; systemd arrête alors tailscaled et abandonne après cinq essais : la machine sort du tailnet au premier redémarrage. La correction ajoute « - » devant la commande (son refus n'arrête plus le service ; vos réglages restent gardés par Tailscale), et rien d'autre ; l'original est gardé dans var/survie. Avant tout redémarrage qu'il lance (Redémarrer, confinement, opérateur), omega-tail fait d'abord cette correction, commandes montrées."
+msgstr ""
+"Trạng thái dịch vụ theo systemd: có hoạt động hay không, có chạy khi khởi động máy không, từ khi nào, bộ nhớ; phiên bản đang chạy và phiên bản đã cài; lệnh khởi chạy; các tệp bổ sung (hiển thị, chỉ được sửa bởi « Sửa khởi động », khi bạn đồng ý); giới hạn tài nguyên.\n"
+"\n"
+"[b]Khởi động[/b], [b]Dừng[/b], [b]Khởi động lại[/b]: lệnh được hiển thị trước khi chạy.\n"
+"[b]Rào chắn an toàn[/b]: nếu phiên của bạn đi qua Tailscale (SSH qua tailnet), Dừng sẽ ngắt bạn mà không thể khởi động lại: omega-tail yêu cầu xác nhận lần thứ hai. Khởi động lại làm phiên bị đứng vài giây, rồi thường sẽ trở lại.\n"
+"\n"
+"[b]Sửa khởi động[/b] (chỉ hiển thị khi cần): một trong các tệp bổ sung của bạn chạy « tailscale up » sau khi khởi động. Ngay khi một thiết lập thay đổi sau đó (người vận hành, tên, tuyến…), Tailscale từ chối lệnh « up » không đầy đủ này; khi đó systemd dừng tailscaled và bỏ cuộc sau năm lần thử: máy rời khỏi tailnet ở lần khởi động lại đầu tiên. Bản sửa thêm « - » trước lệnh (việc nó bị từ chối không còn làm dừng dịch vụ; thiết lập của bạn vẫn được Tailscale giữ), và không gì khác; bản gốc được giữ trong var/survie. Trước mỗi lần khởi động lại do nó thực hiện (Khởi động lại, giới hạn tài nguyên, người vận hành), omega-tail làm bản sửa này trước, có hiển thị lệnh."
+
+msgid "Connexion et réglages"
+msgstr "Kết nối và thiết lập"
+
+msgid ""
+"L'état de la connexion (connecté ou non, compte, tailnet, nom et adresses de la machine, expiration de la clé, opérateur).\n"
+"\n"
+"[b]Se connecter[/b] / [b]Se déconnecter[/b] : la machine rejoint ou quitte le tailnet ; le compte reste enregistré. [b]Ajouter un compte[/b] : Tailscale affiche dans le terminal l'adresse à ouvrir pour s'identifier. [b]Changer de compte[/b] : choisissez un compte déjà connu de la machine. [b]Déconnexion définitive[/b] : la machine est retirée du compte (clé révoquée) ; il faut taper son nom pour confirmer.\n"
+"[b]Garde-fou[/b] : si votre session passe par Tailscale, se déconnecter la coupe sans retour possible ; omega-tail le dit avant.\n"
+"\n"
+"[b]Réglages[/b] (ceux de tailscale set), chacun avec sa phrase d'explication : nom de la machine, surnom, routes, DNS du tailnet, bouclier, filtrage avec état, mode netfilter, nœud de sortie, accès au réseau local, proposer la machine comme nœud de sortie, sous-réseaux annoncés, SSH Tailscale, interface web, mises à jour, relais pair, opérateur. Les valeurs sont vérifiées ; pendant la saisie, un cadre au-dessus des boutons montre avant → après et la commande ; « Appliquer » la lance dans le terminal (sans sudo si vous êtes opérateur ; changer l'opérateur demande sudo). Un avertissement s'affiche quand un changement peut couper une session passée par Tailscale (bouclier, SSH Tailscale coupé, nœud de sortie, netfilter). Après application, le cadre garde le résultat, vérifié sur les valeurs relues (✔ pris en compte, ✖ non). « Relire » reprend les valeurs actuelles.\n"
+"\n"
+"[b]Nœud de sortie[/b] : la liste ne propose que les machines du tailnet qui se proposent comme nœud de sortie (et approuvées dans la console d'administration de Tailscale) ; s'il n'y en a aucune, l'écran le dit.\n"
+"[b]Transfert IP[/b] : une machine qui se propose comme nœud de sortie ou annonce des sous-réseaux doit faire suivre les paquets. S'il est désactivé, un avertissement et le bouton « Activer le transfert IP » apparaissent : un fichier à part (/etc/sysctl.d/99-omega-tail-forwarding.conf), appliqué tout de suite et relu au démarrage (systemd, OpenRC, runit). Pour annuler : supprimer ce fichier puis redémarrer."
+msgstr ""
+"Trạng thái kết nối (đã kết nối hay chưa, tài khoản, tailnet, tên và địa chỉ của máy, hạn của khóa, người vận hành).\n"
+"\n"
+"[b]Đăng nhập[/b] / [b]Đăng xuất[/b]: máy tham gia hoặc rời tailnet; tài khoản vẫn được lưu. [b]Thêm tài khoản[/b]: Tailscale hiển thị trong terminal địa chỉ cần mở để xác thực. [b]Đổi tài khoản[/b]: chọn một tài khoản mà máy đã biết. [b]Đăng xuất vĩnh viễn[/b]: máy bị gỡ khỏi tài khoản (khóa bị thu hồi); phải gõ tên máy để xác nhận.\n"
+"[b]Rào chắn an toàn[/b]: nếu phiên của bạn đi qua Tailscale, đăng xuất sẽ ngắt nó mà không thể quay lại; omega-tail báo trước điều đó.\n"
+"\n"
+"[b]Thiết lập[/b] (của tailscale set), mỗi thiết lập kèm một câu giải thích: tên máy, biệt danh, tuyến, DNS của tailnet, lá chắn, lọc có trạng thái, chế độ netfilter, nút thoát, truy cập mạng cục bộ, đề xuất máy làm nút thoát, mạng con được quảng bá, SSH Tailscale, giao diện web, cập nhật, chuyển tiếp ngang hàng, người vận hành. Các giá trị được kiểm tra; khi đang nhập, một khung phía trên các nút hiển thị trước → sau và lệnh; « Áp dụng » chạy lệnh đó trong terminal (không cần sudo nếu bạn là người vận hành; đổi người vận hành cần sudo). Một cảnh báo hiện ra khi một thay đổi có thể ngắt phiên đi qua Tailscale (lá chắn, tắt SSH Tailscale, nút thoát, netfilter). Sau khi áp dụng, khung giữ lại kết quả, được kiểm tra trên các giá trị đọc lại (✔ đã nhận, ✖ chưa). « Đọc lại » lấy lại các giá trị hiện tại.\n"
+"\n"
+"[b]Nút thoát[/b]: danh sách chỉ đề xuất các máy trong tailnet tự đề xuất làm nút thoát (và đã được phê duyệt trong bảng quản trị của Tailscale); nếu không có máy nào, màn hình sẽ nói rõ.\n"
+"[b]Chuyển tiếp IP[/b]: một máy tự đề xuất làm nút thoát hoặc quảng bá mạng con phải chuyển tiếp gói tin. Nếu tính năng này bị tắt, một cảnh báo và nút « Bật chuyển tiếp IP » xuất hiện: một tệp riêng (/etc/sysctl.d/99-omega-tail-forwarding.conf), áp dụng ngay và đọc lại khi khởi động (systemd, OpenRC, runit). Để hủy: xóa tệp này rồi khởi động lại."
+
+msgid "Publication"
+msgstr "Công bố"
+
+msgid ""
+"Tout ce que la machine publie : port, pour qui (le tailnet seul avec Serve, Internet avec Funnel), mode, chemin, cible, et si la porte du pare-feu protège le port.\n"
+"\n"
+"[b]Publier[/b] : un service local (un port, ou http://127.0.0.1:PORT), pour le tailnet ou pour Internet (Funnel n'ouvre que les ports 443, 8443 et 10000), en HTTPS, HTTP, TCP ou TLS terminé, sur un chemin. Pour Internet, le plus sûr est HTTPS sur 443 puis « Activer la protection » (Pare-feu Funnel).\n"
+"[b]Retirer[/b] : la ligne choisie (un chemin seul si le port en publie d'autres). Le port protégé par la porte se retire par « Désactiver la protection ».\n"
+"[b]Suspendre Funnel[/b] / [b]Rétablir Funnel[/b] : coupe les ports ouverts à Internet sans perdre leur configuration (même mécanisme que le disjoncteur de Survie), puis les remet à l'identique.\n"
+"[b]Essai de bout en bout[/b] : une vraie connexion, comme un visiteur (par Internet pour un port public, par le tailnet sinon) : réponse, temps, certificat (émetteur, échéance) et version de TLS.\n"
+"[b]Sauvegardes[/b] : l'état d'avant chaque changement (publication, pare-feu, disjoncteur), les 50 plus récentes ; « Restaurer » remet celle choisie, après avoir sauvegardé l'état actuel.\n"
+"\n"
+"Chaque changement est vérifié. Si le résultat n'est pas celui voulu, la publication est reconstruite (remise à zéro puis chaque point recréé) ; si cela échoue aussi, l'état d'avant est remis. Changer la publication demande d'être opérateur de Tailscale."
+msgstr ""
+"Mọi thứ máy công bố: cổng, cho ai (chỉ tailnet với Serve, Internet với Funnel), chế độ, đường dẫn, đích, và cổng gác của tường lửa có bảo vệ cổng đó không.\n"
+"\n"
+"[b]Công bố[/b]: một dịch vụ cục bộ (một cổng, hoặc http://127.0.0.1:PORT), cho tailnet hoặc cho Internet (Funnel chỉ mở các cổng 443, 8443 và 10000), bằng HTTPS, HTTP, TCP hoặc TLS kết thúc tại máy, trên một đường dẫn. Với Internet, an toàn nhất là HTTPS trên 443 rồi « Bật bảo vệ » (Tường lửa Funnel).\n"
+"[b]Gỡ[/b]: dòng đã chọn (chỉ một đường dẫn nếu cổng còn công bố đường dẫn khác). Cổng được cổng gác bảo vệ được gỡ bằng « Tắt bảo vệ ».\n"
+"[b]Tạm dừng Funnel[/b] / [b]Khôi phục Funnel[/b]: ngắt các cổng mở ra Internet mà không mất cấu hình của chúng (cùng cơ chế với cầu dao của Sinh tồn), rồi đặt lại y như cũ.\n"
+"[b]Thử đầu cuối[/b]: một kết nối thật, như một khách truy cập (qua Internet với cổng công khai, qua tailnet trong trường hợp khác): phản hồi, thời gian, chứng chỉ (bên cấp, ngày hết hạn) và phiên bản TLS.\n"
+"[b]Bản sao lưu[/b]: trạng thái trước mỗi thay đổi (công bố, tường lửa, cầu dao), 50 bản gần nhất; « Khôi phục » đặt lại bản đã chọn, sau khi sao lưu trạng thái hiện tại.\n"
+"\n"
+"Mỗi thay đổi đều được kiểm tra. Nếu kết quả không như mong muốn, cấu hình công bố được dựng lại (đặt về không rồi tạo lại từng điểm); nếu việc này cũng thất bại, trạng thái trước đó được đặt lại. Thay đổi cấu hình công bố yêu cầu bạn là người vận hành Tailscale."
+
+msgid "Journaux"
+msgstr "Nhật ký"
+
+msgid ""
+"Le journal de tailscaled (journalctl) ou celui de la porte. Choisissez le nombre de lignes, filtrez par texte. Chaque information a sa couleur, prise dans le thème : la date, la machine en grisé, le processus, puis la catégorie du message, une couleur par famille (contrôle et connexion, réseau et relais, DNS, moteur WireGuard) ; les adresses en gras ; le message en rouge s'il signale une erreur, en orange pour un avertissement. Pour la porte : l'adresse du visiteur, le motif de refus en rouge, le regroupement en orange, puis l'AS et le pays. « Exporter » enregistre les lignes affichées dans le dossier des exports ; « Voir les exports » les ouvre (voir Rapport).\n"
+"Si rien ne s'affiche : votre compte doit pouvoir lire le journal du système (groupe systemd-journal, adm ou wheel selon la distribution)."
+msgstr ""
+"Nhật ký của tailscaled (journalctl) hoặc của cổng gác. Chọn số dòng, lọc theo văn bản. Mỗi thông tin có màu riêng, lấy từ chủ đề: ngày giờ, tên máy màu mờ, tiến trình, rồi đến loại thông báo, mỗi nhóm một màu (điều khiển và kết nối, mạng và máy chuyển tiếp, DNS, bộ máy WireGuard); địa chỉ in đậm; thông báo màu đỏ nếu báo lỗi, màu cam nếu là cảnh báo. Với cổng gác: địa chỉ của khách truy cập, lý do từ chối màu đỏ, gom nhóm màu cam, rồi đến AS và quốc gia. « Xuất » lưu các dòng đang hiển thị vào thư mục bản xuất; « Xem bản xuất » mở chúng (xem Báo cáo).\n"
+"Nếu không có gì hiển thị: tài khoản của bạn phải đọc được nhật ký hệ thống (nhóm systemd-journal, adm hoặc wheel tùy bản phân phối)."
+
+msgid "Devenir opérateur"
+msgstr "Trở thành người vận hành"
+
+msgid ""
+"Par défaut, chaque réglage de Tailscale demande sudo. Devenir opérateur (une"
+" seule fois, par sudo) permet à votre compte de régler Tailscale sans sudo. "
+"Le bouton apparaît dans le tableau de bord tant que ce n'est pas fait ; dans"
+" « Connexion et réglages », le bouton « Mon compte » met votre nom dans le "
+"champ Opérateur, puis « Appliquer ». Pour annuler : vider le champ et "
+"appliquer, ou sudo tailscale set --operator="
+msgstr ""
+"Theo mặc định, mỗi thiết lập của Tailscale đều cần sudo. Trở thành người vận"
+" hành (chỉ một lần, qua sudo) cho phép tài khoản của bạn chỉnh Tailscale mà "
+"không cần sudo. Nút này xuất hiện trong bảng điều khiển chừng nào việc này "
+"chưa làm; trong « Kết nối và thiết lập », nút « Tài khoản của tôi » điền tên"
+" của bạn vào trường Người vận hành, rồi « Áp dụng ». Để hủy: xóa trống "
+"trường đó và áp dụng, hoặc sudo tailscale set --operator="
+
+msgid "Survie"
+msgstr "Sinh tồn"
+
+msgid ""
+"Garder la machine debout sous attaque : le confinement, le disjoncteur et la veille automatique, toujours proposés, jamais imposés.\n"
+"\n"
+"[b]Confinement de tailscaled[/b] : un fichier d'ajout systemd à part (50-omega-tail.conf) plafonne tailscaled (par exemple un cœur entier sur une machine à 4 fils), baisse son poids et sa priorité. Sous attaque, il ne peut plus prendre toute la machine : l'administration et les autres services restent utilisables. Option : donner la priorité à l'accès SSH. Votre propre override.conf n'est jamais modifié ; « Retirer le confinement » supprime seulement les fichiers d'omega-tail. Le plafond s'applique au rechargement ; la priorité au redémarrage de tailscaled (case cochée par défaut).\n"
+"\n"
+"[b]Disjoncteur Funnel[/b] : quand tailscaled reste au-dessus du seuil CPU pendant toute la durée choisie (80 % d'un cœur pendant 60 s par défaut), ou quand la température atteint son seuil (85 °C), omega-tail ouvert vous propose :\n"
+"- [b]Couper 10 min[/b] (durée réglable) : les ports ouverts à Internet sont coupés, puis remis en route automatiquement, à l'identique, même si omega-tail est fermé (minuterie systemd, sudo une fois) ;\n"
+"- [b]Coupure totale[/b] : Funnel reste coupé jusqu'à « Rétablir maintenant » ;\n"
+"- [b]Pas maintenant[/b] : plus de proposition pendant 15 minutes.\n"
+"Le tailnet (Serve, SSH par Tailscale) n'est jamais coupé. La publication est sauvegardée avant chaque coupure (var/funnel/sauvegardes/) et la remise en route est vérifiée identique. Un port Funnel en TCP (celui de la porte) garde son autorisation Funnel après « off » : la coupure repart alors de zéro avec les seuls points du tailnet et vérifie que plus rien n'est ouvert à Internet. Le disjoncteur demande d'être opérateur de Tailscale : la remise en route tourne sous votre compte, jamais en root.\n"
+"En ligne de commande : omega-tail disjoncteur etat | couper --minutes 10 | couper --totale | retablir.\n"
+"\n"
+"[b]Veille automatique[/b] (désactivée par défaut) : pour une machine sans personne devant. Un service tourne en permanence sous votre compte, même omega-tail fermé (systemd, OpenRC ou runit). Un dépassement : un seuil du disjoncteur tenu. 3 dépassements dans la fenêtre (10 min, réglable) : la veille coupe Funnel seule, 15 min la première fois, 30 min la deuxième, puis 1 h à chaque fois, et le remet en route seule, à l'identique. Retour à 15 min après 24 h sans coupure ; après chaque remise en route, 2 min de calme avant de mesurer de nouveau. Seul Funnel est coupé : tailscaled, le tailnet et SSH restent joignables. Quand la veille tourne, omega-tail ouvert ne propose plus la coupure (elle agit seule). Les 6 dernières lignes de son journal s'affichent dans Survie (le fichier var/veille/journal.log garde 512 Ko, puis passe en journal.log.1) ; une veille activée mais arrêtée est signalée au tableau de bord.\n"
+"En ligne de commande : omega-tail veille etat.\n"
+"\n"
+"[b]Bouclier du port WireGuard[/b] (bouton dans Survie) : tailscaled dépense environ un cœur de processeur pour 100 000 paquets par seconde reçus sur son port, même invalides, Funnel ouvert ou non. Le bouclier est une table nftables posée devant lui, sur les cartes réseau matérielles : les pairs connus (ceux à qui tailscaled écrit, appris par le noyau) ne sont jamais limités ; les poignées de main sont limitées à 20 par seconde et par source ; les autres sources ont un budget (500 paquets par seconde chacune, 5 000 en tout) ; les paquets qui ne sont pas du WireGuard sont refusés. Mesuré : un flot qui prenait un cœur entier à tailscaled n'en prend plus que 1 %.\n"
+"- [b]Observation[/b] d'abord : rien n'est refusé, les compteurs disent ce qui l'aurait été ; « Passer en actif » quand ils ne montrent que des attaques.\n"
+"- [b]Qui le pose[/b] : omega-fire 3.7.0 ou plus récent s'il est relié par omega-connect (sa liste des règles l'affiche avec l'origine omega-tail) ; sinon omega-tail lui-même, même si ufw ou firewalld sont présents. C'est la même table dans les deux cas : « Confier à omega-fire » ou, dans omega-fire, « Reprendre la gestion » la fait changer de mains sans la toucher ; si omega-fire n'est plus relié, « Reprendre la gestion » la rend à omega-tail.\n"
+"- Un service (omega-bouclier-wg) la remet en place à chaque démarrage et écrit son état chaque minute.\n"
+"- Si un autre outil efface la table (nft flush ruleset, pare-feu relancé), le tableau de bord et la veille le signalent ; elle n'est jamais reposée seule : « Reposer ».\n"
+"- Retiré depuis omega-fire : omega-tail l'affiche."
+msgstr ""
+"Giữ cho máy đứng vững khi bị tấn công: giới hạn tài nguyên, cầu dao và giám sát tự động, luôn được đề xuất, không bao giờ bị áp đặt.\n"
+"\n"
+"[b]Giới hạn tài nguyên của tailscaled[/b]: một tệp bổ sung systemd riêng (50-omega-tail.conf) đặt trần cho tailscaled (ví dụ một lõi trọn vẹn trên máy 4 luồng), hạ trọng số và mức ưu tiên của nó. Khi bị tấn công, nó không thể chiếm toàn bộ máy nữa: việc quản trị và các dịch vụ khác vẫn dùng được. Tùy chọn: ưu tiên truy cập SSH. Tệp override.conf của riêng bạn không bao giờ bị sửa; « Gỡ giới hạn tài nguyên » chỉ xóa các tệp của omega-tail. Trần được áp dụng khi nạp lại; mức ưu tiên khi khởi động lại tailscaled (ô được đánh dấu theo mặc định).\n"
+"\n"
+"[b]Cầu dao Funnel[/b]: khi tailscaled vượt ngưỡng CPU suốt khoảng thời gian đã chọn (mặc định 80 % một lõi trong 60 s), hoặc khi nhiệt độ đạt ngưỡng của nó (85 °C), omega-tail đang mở sẽ đề xuất với bạn:\n"
+"- [b]Ngắt 10 phút[/b] (thời gian chỉnh được): các cổng mở ra Internet bị ngắt, rồi tự động bật lại, y như cũ, kể cả khi omega-tail đã đóng (bộ hẹn giờ systemd, sudo một lần);\n"
+"- [b]Ngắt hoàn toàn[/b]: Funnel bị ngắt cho đến khi « Khôi phục ngay »;\n"
+"- [b]Để sau[/b]: không đề xuất nữa trong 15 phút.\n"
+"Tailnet (Serve, SSH qua Tailscale) không bao giờ bị ngắt. Cấu hình công bố được sao lưu trước mỗi lần ngắt (var/funnel/sauvegardes/) và việc bật lại được kiểm tra là y như cũ. Một cổng Funnel ở chế độ TCP (cổng của cổng gác) vẫn giữ quyền Funnel sau « off »: khi đó việc ngắt bắt đầu lại từ đầu chỉ với các điểm của tailnet và kiểm tra rằng không còn gì mở ra Internet. Cầu dao yêu cầu bạn là người vận hành Tailscale: việc bật lại chạy dưới tài khoản của bạn, không bao giờ dưới root.\n"
+"Bằng dòng lệnh: omega-tail disjoncteur etat | couper --minutes 10 | couper --totale | retablir.\n"
+"\n"
+"[b]Giám sát tự động[/b] (mặc định tắt): cho máy không có ai ngồi trước. Một dịch vụ chạy liên tục dưới tài khoản của bạn, kể cả khi omega-tail đã đóng (systemd, OpenRC hoặc runit). Một lần vượt ngưỡng: một ngưỡng của cầu dao bị vượt liên tục. 3 lần vượt ngưỡng trong cửa sổ (10 phút, chỉnh được): giám sát tự ngắt Funnel, 15 phút lần đầu, 30 phút lần thứ hai, rồi 1 giờ mỗi lần, và tự bật lại, y như cũ. Trở về 15 phút sau 24 giờ không ngắt; sau mỗi lần bật lại, 2 phút yên tĩnh trước khi đo lại. Chỉ Funnel bị ngắt: tailscaled, tailnet và SSH vẫn truy cập được. Khi giám sát đang chạy, omega-tail đang mở không đề xuất ngắt nữa (giám sát tự xử lý). 6 dòng cuối của nhật ký giám sát hiển thị trong Sinh tồn (tệp var/veille/journal.log giữ 512 KB, rồi chuyển sang journal.log.1); giám sát đã bật nhưng đã dừng sẽ được báo trên bảng điều khiển.\n"
+"Bằng dòng lệnh: omega-tail veille etat.\n"
+"\n"
+"[b]Lá chắn cổng WireGuard[/b] (nút trong Sinh tồn): tailscaled tiêu tốn khoảng một lõi bộ xử lý cho 100 000 gói mỗi giây nhận được trên cổng của nó, kể cả gói không hợp lệ, dù Funnel mở hay không. Lá chắn là một bảng nftables đặt trước nó, trên các card mạng vật lý: các máy ngang hàng đã biết (những máy mà tailscaled gửi dữ liệu tới, do nhân học được) không bao giờ bị giới hạn; các lần bắt tay bị giới hạn ở 20 mỗi giây cho mỗi nguồn; các nguồn khác có một ngân sách (500 gói mỗi giây cho mỗi nguồn, tổng cộng 5 000); các gói không phải WireGuard bị từ chối. Đã đo: một luồng từng chiếm trọn một lõi của tailscaled giờ chỉ còn chiếm 1 %.\n"
+"- [b]Quan sát[/b] trước: không từ chối gì, các bộ đếm cho biết những gì lẽ ra đã bị từ chối; « Chuyển sang hoạt động » khi chúng chỉ cho thấy tấn công.\n"
+"- [b]Ai đặt nó[/b]: omega-fire 3.7.0 trở lên nếu được omega-connect liên kết (danh sách quy tắc của nó hiển thị lá chắn với nguồn gốc omega-tail); nếu không thì chính omega-tail, kể cả khi có ufw hoặc firewalld. Trong cả hai trường hợp đó là cùng một bảng: « Giao lại cho omega-fire » hoặc, trong omega-fire, « Lấy lại quyền quản lý » đổi người quản lý mà không động chạm tới nó; nếu omega-fire không còn được liên kết, « Lấy lại quyền quản lý » trả nó về cho omega-tail.\n"
+"- Một dịch vụ (omega-bouclier-wg) đặt lại nó ở mỗi lần khởi động và ghi trạng thái của nó mỗi phút.\n"
+"- Nếu một công cụ khác xóa bảng (nft flush ruleset, tường lửa khởi động lại), bảng điều khiển và giám sát sẽ báo; nó không bao giờ tự được đặt lại: « Đặt lại ».\n"
+"- Bị gỡ từ omega-fire: omega-tail hiển thị điều đó."
+
+msgid "Pare-feu Funnel"
+msgstr "Tường lửa Funnel"
+
+msgid ""
+"En Funnel ordinaire, tailscaled fait le chiffrement (TLS) de chaque visiteur : une rafale sature la machine. La protection place une porte (HAProxy, installé par le gestionnaire de paquets) entre Funnel et votre site : Funnel lui transmet le flux encore chiffré avec l'adresse réelle du visiteur, la porte décide AVANT tout chiffrement, puis ne chiffre que pour les connexions admises. Mesuré : une connexion refusée coûte 4,6 fois moins, une connexion admise 2 fois moins.\n"
+"\n"
+"[b]Activer la protection[/b] : préparation (certificat *.ts.net par Tailscale, listes, configuration vérifiée), services de la porte et de son certificat (sudo, dans le terminal ; la porte tourne sous votre compte, jamais en root), bascule de Funnel puis essai depuis Internet. En cas d'échec, la publication d'origine est remise aussitôt. Prérequis : être opérateur de Tailscale ; Funnel publié en HTTPS sur un seul port avec le chemin « / ».\n"
+"[b]Désactiver la protection[/b] : Funnel est remis exactement comme avant, vérifié, puis la porte est arrêtée ; réglages et listes sont gardés.\n"
+"\n"
+"[b]Règles[/b], appliquées à chaud (les adresses bloquées le restent) :\n"
+"- machines du tailnet (100.64.0.0/10 et fd7a:115c:a1e0::/48) : toujours admises, avant toute règle ; seuls les visiteurs de Funnel sont filtrés ;\n"
+"- liste de confiance : jamais limitée ; liste noire : refusée jusqu'à son retrait ;\n"
+"- débit par adresse (40 connexions / 10 s par défaut) : au-delà, l'adresse est bloquée pour la durée choisie (60 min) ;\n"
+"- débit par préfixe /24 (IPv4) ou /64 (IPv6) ;\n"
+"- budget global de connexions admises par seconde : le processeur n'est jamais débordé ;\n"
+"- nom visé : une connexion qui ne vise pas le nom de la machine est refusée.\n"
+"Mode [b]observation[/b] : tout est compté, rien n'est refusé (pour régler les seuils sans risque).\n"
+"\n"
+"Le certificat est vérifié chaque jour et renouvelé à chaud 30 jours avant son échéance.\n"
+"\n"
+"[b]Regroupements[/b] (empreintes, AS, pays) : contre les attaques à adresses dispersées, que les règles par adresse ne voient qu'une fois chacune. Avant tout chiffrement, la porte calcule l'[b]empreinte JA4[/b] du client (la façon dont son logiciel se présente : un navigateur et un outil d'attaque n'ont pas la même), son [b]AS[/b] (le réseau d'origine : fournisseur d'accès, hébergeur, nuage) et son [b]pays[/b], et compte le débit de chaque groupe.\n"
+"- [b]Mode attaque automatique[/b] : quand les connexions entrantes dépassent le seuil (80 / s par défaut), la porte passe seule en mode attaque, et y reste jusqu'à 5 minutes de calme. Rien à faire, même à distance.\n"
+"- En mode attaque seulement : une empreinte inconnue qui explose, un AS d'hébergeur ou de nuage (liste modifiable) ou un pays de votre liste (vide par défaut) qui dépasse son débit est refusé.\n"
+"- Les [b]navigateurs courants[/b] (Chrome, Edge, Firefox) ne sont jamais touchés par ces règles, et les [b]clients connus[/b] (admis dans les dernières 24 h) passent avant le budget global.\n"
+"- [b]Référence apprise[/b] : pendant 7 jours, la porte apprend les empreintes habituelles de votre site (jamais pendant une attaque) ; pendant ce temps, les regroupements restent en [b]observation[/b], même si « appliqués » est choisi. « Recommencer l'apprentissage » repart de zéro et les remet en observation.\n"
+"- [b]Observation[/b] (par défaut) : tout est compté (« aurait été refusée »), rien n'est refusé ; une fois l'apprentissage fini, passez en « appliqués » quand les chiffres vous conviennent.\n"
+"- Hors attaque, une connexion sur dix seulement est classée (assez pour apprendre, dix fois moins de calcul) ; en attaque, toutes. Il faut un HAProxy avec Lua (cas des distributions courantes).\n"
+"- [b]Base AS / pays[/b] : DB-IP Lite, téléchargée et mise à jour une fois par mois par la veille automatique, ou par « Mettre à jour la base ». IP Geolocation by DB-IP (https://db-ip.com), licence CC BY 4.0."
+msgstr ""
+"Với Funnel thông thường, tailscaled làm mã hóa (TLS) cho từng khách truy cập: một đợt dồn dập làm bão hòa máy. Bảo vệ đặt một cổng gác (HAProxy, cài bằng trình quản lý gói) giữa Funnel và trang web của bạn: Funnel chuyển cho nó luồng dữ liệu vẫn còn mã hóa kèm địa chỉ thật của khách truy cập, cổng gác quyết định TRƯỚC mọi bước mã hóa, rồi chỉ mã hóa cho các kết nối được chấp nhận. Đã đo: một kết nối bị từ chối tốn ít hơn 4,6 lần, một kết nối được chấp nhận tốn ít hơn 2 lần.\n"
+"\n"
+"[b]Bật bảo vệ[/b]: chuẩn bị (chứng chỉ *.ts.net từ Tailscale, các danh sách, cấu hình đã kiểm tra), dịch vụ của cổng gác và chứng chỉ của nó (sudo, trong terminal; cổng gác chạy dưới tài khoản của bạn, không bao giờ dưới root), chuyển Funnel sang rồi thử từ Internet. Nếu thất bại, cấu hình công bố ban đầu được đặt lại ngay lập tức. Điều kiện: là người vận hành Tailscale; Funnel được công bố bằng HTTPS trên một cổng duy nhất với đường dẫn « / ».\n"
+"[b]Tắt bảo vệ[/b]: Funnel được đặt lại chính xác như trước, có kiểm tra, rồi cổng gác được dừng; thiết lập và danh sách vẫn được giữ.\n"
+"\n"
+"[b]Quy tắc[/b], áp dụng nóng (các địa chỉ đang bị chặn vẫn bị chặn):\n"
+"- máy trong tailnet (100.64.0.0/10 và fd7a:115c:a1e0::/48): luôn được chấp nhận, trước mọi quy tắc; chỉ khách truy cập qua Funnel bị lọc;\n"
+"- danh sách tin cậy: không bao giờ bị giới hạn; danh sách đen: bị từ chối cho đến khi được gỡ ra;\n"
+"- tốc độ theo địa chỉ (mặc định 40 kết nối / 10 s): vượt quá mức này, địa chỉ bị chặn trong khoảng thời gian đã chọn (60 phút);\n"
+"- tốc độ theo tiền tố /24 (IPv4) hoặc /64 (IPv6);\n"
+"- ngân sách toàn cục cho số kết nối được chấp nhận mỗi giây: bộ xử lý không bao giờ bị quá tải;\n"
+"- tên đích: một kết nối không nhắm tới tên của máy sẽ bị từ chối.\n"
+"Chế độ [b]quan sát[/b]: mọi thứ đều được đếm, không từ chối gì (để chỉnh ngưỡng mà không rủi ro).\n"
+"\n"
+"Chứng chỉ được kiểm tra hằng ngày và gia hạn nóng 30 ngày trước khi hết hạn.\n"
+"\n"
+"[b]Gom nhóm[/b] (dấu vân tay, AS, quốc gia): chống lại các cuộc tấn công từ địa chỉ phân tán, mà các quy tắc theo địa chỉ chỉ thấy mỗi địa chỉ một lần. Trước mọi bước mã hóa, cổng gác tính [b]dấu vân tay JA4[/b] của máy khách (cách phần mềm của nó tự giới thiệu: một trình duyệt và một công cụ tấn công không có cùng dấu vân tay), [b]AS[/b] của nó (mạng nguồn: nhà cung cấp truy cập, nhà cung cấp hosting, đám mây) và [b]quốc gia[/b] của nó, rồi đếm tốc độ của từng nhóm.\n"
+"- [b]Chế độ tấn công tự động[/b]: khi số kết nối đến vượt ngưỡng (mặc định 80 / s), cổng gác tự chuyển sang chế độ tấn công, và ở đó cho đến khi có 5 phút yên tĩnh. Không cần làm gì, kể cả từ xa.\n"
+"- Chỉ trong chế độ tấn công: một dấu vân tay lạ tăng vọt, một AS của nhà cung cấp hosting hoặc đám mây (danh sách có thể sửa) hoặc một quốc gia trong danh sách của bạn (mặc định trống) vượt quá tốc độ của nó sẽ bị từ chối.\n"
+"- Các [b]trình duyệt phổ biến[/b] (Chrome, Edge, Firefox) không bao giờ bị các quy tắc này ảnh hưởng, và các [b]máy khách đã biết[/b] (được chấp nhận trong 24 giờ qua) được ưu tiên trước ngân sách toàn cục.\n"
+"- [b]Tham chiếu học được[/b]: trong 7 ngày, cổng gác học các dấu vân tay quen thuộc của trang web bạn (không bao giờ trong lúc bị tấn công); trong thời gian đó, gom nhóm vẫn ở chế độ [b]quan sát[/b], kể cả khi đã chọn « áp dụng ». « Học lại từ đầu » bắt đầu lại từ số không và đưa chúng về chế độ quan sát.\n"
+"- [b]Quan sát[/b] (mặc định): mọi thứ đều được đếm (« lẽ ra đã bị từ chối »), không từ chối gì; khi đã học xong, hãy chuyển sang « áp dụng » khi các con số khiến bạn hài lòng.\n"
+"- Ngoài lúc bị tấn công, chỉ một trong mười kết nối được phân loại (đủ để học, ít tính toán hơn mười lần); khi bị tấn công, tất cả. Cần HAProxy có Lua (trường hợp của các bản phân phối phổ biến).\n"
+"- [b]Cơ sở dữ liệu AS / quốc gia[/b]: DB-IP Lite, được tải về và cập nhật mỗi tháng một lần bởi giám sát tự động, hoặc bằng « Cập nhật cơ sở dữ liệu ». IP Geolocation by DB-IP (https://db-ip.com), giấy phép CC BY 4.0."
+
+msgid "Attaques et décisions"
+msgstr "Tấn công và quyết định"
+
+#, python-format
+msgid ""
+"Les compteurs de la porte (connexions reçues, refusées avant chiffrement, admises, en cours) et les adresses les plus actives, relus toutes les 2 secondes. La colonne État dit où se trouve chaque adresse : liste noire (refusée jusqu'au retrait), bloquée (pour la durée de blocage), admise, ou confiance (jamais limitée) ; les adresses des listes sans connexion récente apparaissent aussi. Choisissez une ligne puis [b]Bloquer[/b], [b]Liste noire[/b], [b]Débloquer[/b] ou [b]Confiance[/b] / [b]Retirer la confiance[/b] : appliqué tout de suite, sans redémarrer la porte ; la notification dit en une ligne l'action et la place de l'adresse (ex. « 1.2.3.4 → liste noire »). Une adresse n'est jamais dans les deux listes : la mettre en liste noire la retire de la confiance, et l'inverse. Une adresse en confiance ou du tailnet ne peut pas être bloquée (elle passe avant). Porte arrêtée : les listes s'appliqueront à son activation.\n"
+"\n"
+"Chaque adresse affiche son pays et son AS. La ligne sous les compteurs dit si la porte est en [b]mode attaque[/b] (et dans combien de temps elle revient au normal) et combien de connexions les regroupements ont refusées (ou auraient refusées, en observation) sur 7 jours. Les vues [b]Empreintes[/b], [b]AS[/b] et [b]Pays[/b] montrent les groupes les plus actifs (connexions / 10 s, total), avec le navigateur reconnu, le nom de l'AS (hébergeur ou non) ou « limité en attaque ». Hors attaque, ces chiffres portent sur une connexion sur dix.\n"
+"\n"
+"[b]Gestion de la liste noire[/b] (seconde ligne de boutons) : toute la liste, avec la date d'ajout et l'origine de chaque entrée, filtrable.\n"
+"- [b]Ajouter[/b] une adresse ou un réseau en prévision ; [b]Supprimer[/b] la ligne choisie.\n"
+"- [b]Importer[/b] un fichier TXT (une adresse ou un réseau par ligne, # = commentaire) : doublons, adresses déjà couvertes par un réseau de la liste et adresses du tailnet écartés et comptés ; les lignes invalides sont citées, comme une adresse IPv6 suivie d'un identifiant de zone (« %eth0 »), refusée par sécurité.\n"
+"- [b]Purger[/b], avec aperçu puis confirmation : plus anciennes que N jours, les N plus anciennes, de la ligne A à la ligne B, par origine, ou toute la liste (confirmation tapée).\n"
+"- [b]Exporter[/b] TXT (réimportable tel quel, pour une récidive), HTML (thème d'export choisi) ou JSON.\n"
+"- Plafond : 50 000 entrées (alerte au tableau de bord à 25 000). HAProxy en tiendrait bien plus ; c'est omega-tail qui ralentirait. Au plafond, l'ajout est refusé : exportez puis purgez."
+msgstr ""
+"Các bộ đếm của cổng gác (kết nối đã nhận, bị từ chối trước khi mã hóa, được chấp nhận, đang diễn ra) và các địa chỉ hoạt động nhiều nhất, đọc lại mỗi 2 giây. Cột Trạng thái cho biết vị trí của từng địa chỉ: danh sách đen (bị từ chối cho đến khi được gỡ ra), bị chặn (trong thời gian chặn), được chấp nhận, hoặc tin cậy (không bao giờ bị giới hạn); các địa chỉ trong danh sách không có kết nối gần đây cũng xuất hiện. Chọn một dòng rồi [b]Chặn[/b], [b]Danh sách đen[/b], [b]Bỏ chặn[/b] hoặc [b]Tin cậy[/b] / [b]Bỏ tin cậy[/b]: áp dụng ngay, không cần khởi động lại cổng gác; thông báo nói trong một dòng thao tác đã làm và vị trí của địa chỉ (vd. « 1.2.3.4 → danh sách đen »). Một địa chỉ không bao giờ nằm trong cả hai danh sách: đưa nó vào danh sách đen sẽ gỡ nó khỏi danh sách tin cậy, và ngược lại. Một địa chỉ tin cậy hoặc thuộc tailnet không thể bị chặn (nó được ưu tiên). Cổng gác đã dừng: các danh sách sẽ được áp dụng khi bật nó.\n"
+"\n"
+"Mỗi địa chỉ hiển thị quốc gia và AS của nó. Dòng dưới các bộ đếm cho biết cổng gác có đang ở [b]chế độ tấn công[/b] không (và bao lâu nữa thì trở lại bình thường) và gom nhóm đã từ chối (hoặc lẽ ra đã từ chối, ở chế độ quan sát) bao nhiêu kết nối trong 7 ngày. Các chế độ xem [b]Dấu vân tay[/b], [b]AS[/b] và [b]Quốc gia[/b] hiển thị các nhóm hoạt động nhiều nhất (kết nối / 10 s, tổng), kèm trình duyệt được nhận diện, tên AS (có phải nhà cung cấp hosting hay không) hoặc « bị giới hạn khi bị tấn công ». Ngoài lúc bị tấn công, các con số này tính trên một trong mười kết nối.\n"
+"\n"
+"[b]Quản lý danh sách đen[/b] (hàng nút thứ hai): toàn bộ danh sách, kèm ngày thêm và nguồn gốc của từng mục, lọc được.\n"
+"- [b]Thêm[/b] trước một địa chỉ hoặc một mạng; [b]Xóa[/b] dòng đã chọn.\n"
+"- [b]Nhập[/b] một tệp TXT (mỗi dòng một địa chỉ hoặc một mạng, # = chú thích): mục trùng, địa chỉ đã nằm trong một mạng của danh sách và địa chỉ của tailnet bị loại và được đếm; các dòng không hợp lệ được liệt kê, ví dụ một địa chỉ IPv6 kèm định danh vùng (« %eth0 »), bị từ chối vì lý do bảo mật.\n"
+"- [b]Dọn dẹp[/b], có xem trước rồi xác nhận: cũ hơn N ngày, N mục cũ nhất, từ dòng A đến dòng B, theo nguồn gốc, hoặc toàn bộ danh sách (xác nhận bằng cách gõ).\n"
+"- [b]Xuất[/b] TXT (nhập lại được nguyên trạng, khi tái phạm), HTML (chủ đề bản xuất đã chọn) hoặc JSON.\n"
+"- Trần: 50 000 mục (cảnh báo trên bảng điều khiển khi đạt 25 000). HAProxy chứa được nhiều hơn thế; chính omega-tail mới bị chậm lại. Khi đạt trần, việc thêm bị từ chối: hãy xuất rồi dọn dẹp."
+
+msgid "Réseau et appareils"
+msgstr "Mạng và thiết bị"
+
+msgid ""
+"Ce que voit Tailscale depuis cette machine. Lecture seule : rien n'y change un réglage.\n"
+"- [b]Appareils[/b] : nom, système, en ligne ou non, [b]chemin[/b] (direct, ou par un relais de Tailscale quand la connexion directe est impossible), dernière fois vu, adresse, trafic échangé. Filtrez par nom, système ou adresse. Les [b]relais Funnel de Tailscale[/b] (« funnel-ingress-node ») apparaissent dans le tailnet dès que Funnel est actif : ce ne sont pas vos appareils, ils sont cachés sauf si vous cochez la case.\n"
+"- [b]Ping Tailscale[/b] : dit si le chemin vers l'appareil est direct ou relayé, et sa latence (3 essais). [b]Qui est-ce ?[/b] : à quelle machine et quel compte appartient une adresse du tailnet. Sans texte tapé, la ligne choisie est utilisée.\n"
+"- [b]Diagnostic réseau[/b] (quelques secondes) : UDP, IPv4 / IPv6, type de NAT (simple : connexions directes faciles ; difficile : plus de relais), ouverture de port par la box (UPnP, NAT-PMP, PCP), relais le plus proche et latences.\n"
+"- [b]DNS[/b], [b]verrou du tailnet[/b] et [b]compteurs internes[/b] (octets reçus et envoyés en direct ou par relais, paquets jetés, messages de santé) : tels que Tailscale les donne."
+msgstr ""
+"Những gì Tailscale thấy từ máy này. Chỉ đọc: không có gì ở đây thay đổi thiết lập.\n"
+"- [b]Thiết bị[/b]: tên, hệ thống, trực tuyến hay không, [b]đường đi[/b] (trực tiếp, hoặc qua một máy chuyển tiếp của Tailscale khi không thể kết nối trực tiếp), lần thấy cuối, địa chỉ, lưu lượng trao đổi. Lọc theo tên, hệ thống hoặc địa chỉ. Các [b]máy chuyển tiếp Funnel của Tailscale[/b] (« funnel-ingress-node ») xuất hiện trong tailnet ngay khi Funnel hoạt động: chúng không phải thiết bị của bạn, nên bị ẩn trừ khi bạn đánh dấu ô.\n"
+"- [b]Ping Tailscale[/b]: cho biết đường đi tới thiết bị là trực tiếp hay qua chuyển tiếp, và độ trễ (3 lần thử). [b]Đây là ai?[/b]: một địa chỉ tailnet thuộc về máy nào và tài khoản nào. Nếu không gõ văn bản, dòng đã chọn được dùng.\n"
+"- [b]Chẩn đoán mạng[/b] (vài giây): UDP, IPv4 / IPv6, loại NAT (đơn giản: dễ kết nối trực tiếp; khó: dùng chuyển tiếp nhiều hơn), mở cổng qua router (UPnP, NAT-PMP, PCP), máy chuyển tiếp gần nhất và độ trễ.\n"
+"- [b]DNS[/b], [b]khóa tailnet[/b] và [b]bộ đếm nội bộ[/b] (byte nhận và gửi trực tiếp hoặc qua chuyển tiếp, gói bị bỏ, thông báo tình trạng): đúng như Tailscale cung cấp."
+
+msgid "Rapport"
+msgstr "Báo cáo"
+
+msgid ""
+"Tout ce qu'omega-tail sait de la machine, en faits : Tailscale (version, préférences), publication, machine, pare-feu (règles, compteurs, listes, regroupements), survie (confinement, veille, disjoncteur), alertes, et les [b]attaques des 7 derniers jours[/b] lues dans le journal de la porte (connexions marquées par motif, par jour, adresses les plus marquées avec leur AS et leur pays).\n"
+"- [b]Vie privée[/b] : par défaut, le compte Tailscale et les noms / adresses des appareils du tailnet n'y figurent pas (seulement leur nombre), pour pouvoir envoyer le rapport à quelqu'un. Cochez la case pour les inclure. Les adresses des attaquants y restent toujours.\n"
+"- [b]Exporter[/b] en TXT, HTML (thème au choix) ou JSON, dans le dossier des exports. [b]Voir les exports[/b] ouvre ce dossier dans votre navigateur (chaque export se lit d'un clic) ; sans navigateur ni bureau (serveur, SSH), la liste et la lecture se font dans omega-tail.\n"
+"- Le journal de la porte doit être lisible par votre compte (groupe systemd-journal, adm ou wheel selon la distribution), sinon le rapport le dit."
+msgstr ""
+"Mọi điều omega-tail biết về máy, dưới dạng dữ kiện: Tailscale (phiên bản, tùy chọn), công bố, máy, tường lửa (quy tắc, bộ đếm, danh sách, gom nhóm), sinh tồn (giới hạn tài nguyên, giám sát, cầu dao), cảnh báo, và [b]các cuộc tấn công trong 7 ngày gần nhất[/b] đọc từ nhật ký của cổng gác (kết nối được đánh dấu theo lý do, theo ngày, các địa chỉ bị đánh dấu nhiều nhất kèm AS và quốc gia).\n"
+"- [b]Quyền riêng tư[/b]: theo mặc định, không có tài khoản Tailscale cũng như tên / địa chỉ của các thiết bị trong tailnet (chỉ có số lượng), để có thể gửi báo cáo cho người khác. Đánh dấu ô để đưa chúng vào. Địa chỉ của kẻ tấn công luôn được giữ lại.\n"
+"- [b]Xuất[/b] dạng TXT, HTML (chủ đề tùy chọn) hoặc JSON, vào thư mục bản xuất. [b]Xem bản xuất[/b] mở thư mục này trong trình duyệt của bạn (mỗi bản xuất đọc được bằng một cú nhấp); không có trình duyệt hay màn hình desktop (máy chủ, SSH), danh sách và việc đọc diễn ra trong omega-tail.\n"
+"- Nhật ký của cổng gác phải đọc được bằng tài khoản của bạn (nhóm systemd-journal, adm hoặc wheel tùy bản phân phối), nếu không báo cáo sẽ nói rõ."
+
+msgid "systemd, OpenRC, runit"
+msgstr "systemd, OpenRC, runit"
+
+msgid ""
+"omega-tail reconnaît le système d'init de la machine et s'y adapte :\n"
+"- [b]service tailscaled[/b] : systemctl, rc-service ou sv ;\n"
+"- [b]journaux[/b] : journalctl, ou les fichiers du service (/var/log/tailscaled.log, svlogd, socklog…) ;\n"
+"- [b]confinement[/b] : fichier d'ajout systemd ; ailleurs, un groupe de contrôle à part (cgroup v2), perdu si tailscaled redémarre (une alerte propose alors de le remettre) ;\n"
+"- [b]coupure momentanée[/b] : minuterie systemd ; ailleurs, un processus détaché sous votre compte ;\n"
+"- [b]porte du pare-feu[/b] : service systemd, OpenRC ou runit ; certificat renouvelé par minuterie systemd ou par une ligne de votre crontab (marquée omega-tail, retirée à la désactivation)."
+msgstr ""
+"omega-tail nhận diện hệ thống init của máy và thích ứng với nó:\n"
+"- [b]dịch vụ tailscaled[/b]: systemctl, rc-service hoặc sv;\n"
+"- [b]nhật ký[/b]: journalctl, hoặc các tệp của dịch vụ (/var/log/tailscaled.log, svlogd, socklog…);\n"
+"- [b]giới hạn tài nguyên[/b]: tệp bổ sung systemd; ở nơi khác, một nhóm điều khiển riêng (cgroup v2), mất đi nếu tailscaled khởi động lại (khi đó một cảnh báo đề xuất đặt lại nó);\n"
+"- [b]ngắt tạm thời[/b]: bộ hẹn giờ systemd; ở nơi khác, một tiến trình tách riêng dưới tài khoản của bạn;\n"
+"- [b]cổng gác của tường lửa[/b]: dịch vụ systemd, OpenRC hoặc runit; chứng chỉ được gia hạn bằng bộ hẹn giờ systemd hoặc bằng một dòng trong crontab của bạn (đánh dấu omega-tail, gỡ khi tắt bảo vệ)."
+
+msgid ""
+"Langue de l'interface et des exports, thème de l'interface et des exports, "
+"dossiers des exports et des captures d'écran (par défaut var/exports/ et "
+"var/screenshots/), et leur purge après confirmation."
+msgstr ""
+"Ngôn ngữ của giao diện và bản xuất, chủ đề của giao diện và bản xuất, thư "
+"mục bản xuất và ảnh chụp màn hình (mặc định var/exports/ và "
+"var/screenshots/), và việc dọn dẹp chúng sau khi xác nhận."
+
+msgid "Ligne de commande"
+msgstr "Dòng lệnh"
+
+msgid ""
+"- omega-tail : l'interface.\n"
+"- omega-tail etat : l'état et les alertes en texte ; --format json pour un script.\n"
+"- omega-tail aide : cette aide en texte.\n"
+"- omega-tail rapport [--format txt|html|json] [--prive] [--exporter] : le rapport, affiché ou enregistré dans le dossier des exports ; --prive ajoute le compte et les appareils du tailnet.\n"
+"- omega-tail disjoncteur etat | couper --minutes N | couper --totale | retablir\n"
+"- omega-tail porte etat | certificat [--si-besoin] | bloquer ADRESSE [--toujours] | debloquer ADRESSE | confiance ADRESSE\n"
+"- omega-tail --version"
+msgstr ""
+"- omega-tail: giao diện.\n"
+"- omega-tail etat: trạng thái và cảnh báo dạng văn bản; --format json cho script.\n"
+"- omega-tail aide: trợ giúp này dạng văn bản.\n"
+"- omega-tail rapport [--format txt|html|json] [--prive] [--exporter]: báo cáo, hiển thị hoặc lưu vào thư mục bản xuất; --prive thêm tài khoản và các thiết bị của tailnet.\n"
+"- omega-tail disjoncteur etat | couper --minutes N | couper --totale | retablir\n"
+"- omega-tail porte etat | certificat [--si-besoin] | bloquer ADRESSE [--toujours] | debloquer ADRESSE | confiance ADRESSE\n"
+"- omega-tail --version"
+
+msgid ""
+"Depuis cette aide : écrire à l'auteur, le formulaire du site, un café, et "
+"vérifier les mises à jour."
+msgstr ""
+"Từ trợ giúp này: viết thư cho tác giả, biểu mẫu trên trang web, một ly cà "
+"phê, và kiểm tra cập nhật."
+
+msgid "DÉMARRAGE RAPIDE"
+msgstr "BẮT ĐẦU NHANH"
+
+msgid "RACCOURCIS"
+msgstr "PHÍM TẮT"
+
+msgid "Aide d’omega-tail"
+msgstr "Trợ giúp của omega-tail"
+
+msgid "Aide complète : chaque menu, sa fonction et le détail."
+msgstr "Trợ giúp đầy đủ: từng menu, chức năng và chi tiết."
+
+msgid "Démarrage rapide"
+msgstr "Bắt đầu nhanh"
+
+msgid "Raccourcis"
+msgstr "Phím tắt"
+
+msgid "Touche"
+msgstr "Phím"
+
+msgid "Action"
+msgstr "Hành động"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — aide."
+msgstr "OMEGA-TAIL {version} — trợ giúp."
+
+msgid "Aide - Omega-Tail"
+msgstr "Trợ giúp - Omega-Tail"
+
+#, python-brace-format
+msgid "{name} (hébergeur)"
+msgstr "{name} (hosting)"
+
+msgid "connecté"
+msgstr "đã kết nối"
+
+msgid "déconnecté"
+msgstr "đã ngắt kết nối"
+
+msgid "connexion du compte attendue"
+msgstr "đang chờ đăng nhập tài khoản"
+
+msgid "machine à approuver dans la console"
+msgstr "máy cần được phê duyệt trong bảng quản trị"
+
+msgid "démarrage"
+msgstr "đang khởi động"
+
+msgid "sans état"
+msgstr "không có trạng thái"
+
+msgid "inconnu"
+msgstr "không rõ"
+
+msgid "HTTP"
+msgstr "HTTP"
+
+msgid "HTTPS (TLS par tailscaled)"
+msgstr "HTTPS (TLS do tailscaled)"
+
+msgid "TCP (TLS transmis tel quel)"
+msgstr "TCP (TLS chuyển nguyên trạng)"
+
+msgid "TCP, TLS par tailscaled"
+msgstr "TCP, TLS do tailscaled"
+
+msgid "Go"
+msgstr "GB"
+
+msgid "Ko"
+msgstr "KB"
+
+msgid "Mo"
+msgstr "MB"
+
+msgid "o"
+msgstr "B"
+
+msgid "Internet (Funnel)"
+msgstr "Internet (Funnel)"
+
+msgid "tailnet seul (Serve)"
+msgstr "chỉ tailnet (Serve)"
+
+msgid "inconnu de systemd"
+msgstr "systemd không biết"
+
+msgid "actif"
+msgstr "hoạt động"
+
+msgid "arrêté"
+msgstr "đã dừng"
+
+msgid "en échec"
+msgstr "bị lỗi"
+
+msgid "arrêt en cours"
+msgstr "đang dừng"
+
+msgid "lancé au démarrage"
+msgstr "chạy khi khởi động máy"
+
+msgid "pas lancé au démarrage"
+msgstr "không chạy khi khởi động máy"
+
+msgid "observation"
+msgstr "quan sát"
+
+msgid "Bouclier du port WireGuard : état illisible."
+msgstr "Lá chắn cổng WireGuard: không đọc được trạng thái."
+
+msgid "Bouclier du port WireGuard : retiré depuis omega-fire (ou à la main)."
+msgstr "Lá chắn cổng WireGuard: đã bị gỡ từ omega-fire (hoặc thủ công)."
+
+msgid ""
+"Bouclier du port WireGuard : aucun. Sans lui, tailscaled dépense environ un "
+"cœur pour 100 000 paquets par seconde, même invalides."
+msgstr ""
+"Lá chắn cổng WireGuard: không có. Không có nó, tailscaled tiêu tốn khoảng "
+"một lõi cho 100 000 gói mỗi giây, kể cả gói không hợp lệ."
+
+msgid ""
+"Bouclier du port WireGuard ABSENT : un autre outil a effacé sa table ; « "
+"Reposer » la remet."
+msgstr ""
+"Lá chắn cổng WireGuard VẮNG MẶT: một công cụ khác đã xóa bảng của nó; « Đặt "
+"lại » sẽ đặt lại nó."
+
+msgid ""
+"Bouclier du port WireGuard : état non mis à jour (service omega-bouclier-wg "
+"arrêté ?)."
+msgstr ""
+"Lá chắn cổng WireGuard: trạng thái không được cập nhật (dịch vụ omega-"
+"bouclier-wg đã dừng?)."
+
+#, python-brace-format
+msgid ""
+"Bouclier du port WireGuard : {mode}, géré par {manager} ; {count} paquet(s) "
+"refusé(s)"
+msgstr ""
+"Lá chắn cổng WireGuard: {mode}, do {manager} quản lý; {count} gói bị từ chối"
+
+#, python-brace-format
+msgid ""
+"Bouclier du port WireGuard : {mode}, géré par {manager} ; {count} paquet(s) "
+"auraient été refusés"
+msgstr ""
+"Lá chắn cổng WireGuard: {mode}, do {manager} quản lý; {count} gói lẽ ra đã "
+"bị từ chối"
+
+msgid "adresse bloquée"
+msgstr "địa chỉ bị chặn"
+
+msgid "budget global dépassé"
+msgstr "vượt ngân sách toàn cục"
+
+msgid "liste noire"
+msgstr "danh sách đen"
+
+msgid "trop de connexions d'un réseau"
+msgstr "quá nhiều kết nối từ một mạng"
+
+msgid "trop de connexions d'une adresse"
+msgstr "quá nhiều kết nối từ một địa chỉ"
+
+msgid "mauvais nom de site (SNI)"
+msgstr "sai tên trang web (SNI)"
+
+msgid "pas une connexion TLS"
+msgstr "không phải kết nối TLS"
+
+msgid "AS d'hébergeur en rafale"
+msgstr "AS hosting dồn dập"
+
+msgid "empreinte inconnue en rafale"
+msgstr "dấu vân tay lạ dồn dập"
+
+msgid "pays limité en rafale"
+msgstr "quốc gia bị giới hạn dồn dập"
+
+#, python-brace-format
+msgid "tailscaled ne répond pas : {error}"
+msgstr "tailscaled không phản hồi: {error}"
+
+#, python-brace-format
+msgid "État : {state}"
+msgstr "Trạng thái: {state}"
+
+#, python-brace-format
+msgid "Version : {daemon} en marche, {client} installé"
+msgstr "Phiên bản: {daemon} đang chạy, {client} đã cài"
+
+#, python-brace-format
+msgid "Nom de la machine : {name}"
+msgstr "Tên máy: {name}"
+
+#, python-brace-format
+msgid "Compte : {user}"
+msgstr "Tài khoản: {user}"
+
+msgid "Compte : masqué (non inclus dans ce rapport)"
+msgstr "Tài khoản: đã ẩn (không có trong báo cáo này)"
+
+#, python-brace-format
+msgid ""
+"Appareils du tailnet : {online} en ligne sur {total} (plus {relays} relais "
+"Funnel de Tailscale)"
+msgstr ""
+"Thiết bị của tailnet: {online} trực tuyến trên {total} (cộng {relays} máy "
+"chuyển tiếp Funnel của Tailscale)"
+
+#, python-brace-format
+msgid "Appareils du tailnet : {online} en ligne sur {total}"
+msgstr "Thiết bị của tailnet: {online} trực tuyến trên {total}"
+
+#, python-brace-format
+msgid "Clé de la machine : {expiry}"
+msgstr "Khóa của máy: {expiry}"
+
+msgid "sans expiration"
+msgstr "không hết hạn"
+
+msgid "aucun"
+msgstr "không có"
+
+msgid "Préférence"
+msgstr "Tùy chọn"
+
+msgid "Valeur"
+msgstr "Giá trị"
+
+msgid "Rien n'est publié (ni Serve, ni Funnel)."
+msgstr "Không có gì được công bố (cả Serve lẫn Funnel)."
+
+#, python-brace-format
+msgid "Machine : {name} ({count} fils)"
+msgstr "Máy: {name} ({count} luồng)"
+
+#, python-brace-format
+msgid "Charge : {a:.2f} {b:.2f} {c:.2f}"
+msgstr "Tải: {a:.2f} {b:.2f} {c:.2f}"
+
+msgid "pas de capteur"
+msgstr "không có cảm biến"
+
+#, python-brace-format
+msgid "Mémoire vive utilisée : {value}"
+msgstr "Bộ nhớ RAM đã dùng: {value}"
+
+msgid "MACHINE"
+msgstr "MÁY"
+
+msgid "PARE-FEU FUNNEL"
+msgstr "TƯỜNG LỬA FUNNEL"
+
+msgid "Pare-feu indisponible sur cette machine."
+msgstr "Tường lửa không khả dụng trên máy này."
+
+#, python-brace-format
+msgid "Service de la porte : {state}"
+msgstr "Dịch vụ cổng gác: {state}"
+
+#, python-brace-format
+msgid "Protection active depuis {since} : Funnel {port} → porte → {backend}"
+msgstr "Bảo vệ hoạt động từ {since}: Funnel {port} → cổng gác → {backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions depuis le démarrage de la porte : {total} reçues · {refused} "
+"refusées avant chiffrement · {admitted} admises · {current} en cours"
+msgstr ""
+"Kết nối từ khi cổng gác khởi động: {total} đã nhận · {refused} bị từ chối "
+"trước khi mã hóa · {admitted} được chấp nhận · {current} đang diễn ra"
+
+msgid "Protection inactive : Funnel ne passe pas par la porte."
+msgstr "Bảo vệ không hoạt động: Funnel không đi qua cổng gác."
+
+#, python-brace-format
+msgid "Mode : {mode}"
+msgstr "Chế độ: {mode}"
+
+msgid "observation (rien n'est refusé)"
+msgstr "quan sát (không từ chối gì)"
+
+msgid "normal (les règles refusent)"
+msgstr "bình thường (quy tắc có từ chối)"
+
+#, python-brace-format
+msgid ""
+"Règles : {ip} connexions / 10 s par adresse · {prefix} / 10 s par réseau · "
+"budget global {budget} / s · {maximum} connexions au plus · blocage {block} "
+"min · nom du site {sni}"
+msgstr ""
+"Quy tắc: {ip} kết nối / 10 s mỗi địa chỉ · {prefix} / 10 s mỗi mạng · ngân "
+"sách toàn cục {budget} / s · tối đa {maximum} kết nối · chặn {block} phút · "
+"tên trang web {sni}"
+
+msgid "non vérifié"
+msgstr "chưa kiểm tra"
+
+msgid "vérifié"
+msgstr "đã kiểm tra"
+
+#, python-brace-format
+msgid "Certificat : encore {days} jour(s)"
+msgstr "Chứng chỉ: còn {days} ngày"
+
+#, python-brace-format
+msgid "Confiance : {count} adresse(s) ou réseau(x)"
+msgstr "Tin cậy: {count} địa chỉ hoặc mạng"
+
+#, python-brace-format
+msgid "Liste noire : {entries}"
+msgstr "Danh sách đen: {entries}"
+
+msgid "vide"
+msgstr "trống"
+
+#, python-brace-format
+msgid "Bloquées en ce moment : {entries}"
+msgstr "Đang bị chặn: {entries}"
+
+msgid "Bloquées en ce moment : aucune"
+msgstr "Đang bị chặn: không có"
+
+#, python-brace-format
+msgid "Regroupements : {mode} · {attack}"
+msgstr "Gom nhóm: {mode} · {attack}"
+
+msgid "MODE ATTAQUE en cours"
+msgstr "Đang ở CHẾ ĐỘ TẤN CÔNG"
+
+msgid "mode normal"
+msgstr "chế độ bình thường"
+
+#, python-brace-format
+msgid "Empreintes : apprentissage, encore {days} jour(s)"
+msgstr "Dấu vân tay: đang học, còn {days} ngày"
+
+#, python-brace-format
+msgid "Empreintes habituelles : {count} (référence prête)"
+msgstr "Dấu vân tay quen thuộc: {count} (tham chiếu sẵn sàng)"
+
+#, python-brace-format
+msgid "Base AS / pays : à jour il y a {days} jour(s)"
+msgstr "Cơ sở dữ liệu AS / quốc gia: cập nhật {days} ngày trước"
+
+msgid "Base AS / pays : absente"
+msgstr "Cơ sở dữ liệu AS / quốc gia: vắng mặt"
+
+msgid "Empreintes les plus actives"
+msgstr "Dấu vân tay hoạt động nhiều nhất"
+
+msgid "AS les plus actifs"
+msgstr "AS hoạt động nhiều nhất"
+
+msgid "Pays les plus actifs"
+msgstr "Quốc gia hoạt động nhiều nhất"
+
+msgid "Adresse la plus active"
+msgstr "Địa chỉ hoạt động nhiều nhất"
+
+msgid "Connexions / 10 s"
+msgstr "Kết nối / 10 s"
+
+msgid "confiance"
+msgstr "tin cậy"
+
+msgid "admise"
+msgstr "được chấp nhận"
+
+msgid "bloquée"
+msgstr "bị chặn"
+
+#, python-brace-format
+msgid "Confinement de tailscaled : {state}"
+msgstr "Giới hạn tài nguyên của tailscaled: {state}"
+
+msgid "Veille automatique : désactivée"
+msgstr "Giám sát tự động: đã tắt"
+
+msgid "Veille automatique : activée mais arrêtée (aucun signe de vie)"
+msgstr "Giám sát tự động: đã bật nhưng đã dừng (không có tín hiệu sống)"
+
+#, python-brace-format
+msgid ""
+"Veille automatique : active · {strikes} dépassement(s) récent(s) · prochaine"
+" coupure {minutes} min"
+msgstr ""
+"Giám sát tự động: hoạt động · {strikes} lần vượt ngưỡng gần đây · lần ngắt "
+"tới {minutes} phút"
+
+#, python-brace-format
+msgid ""
+"Disjoncteur : tailscaled au-delà de {cpu:.0f} % d'un cœur pendant {seconds} "
+"s, ou machine au-delà de {temperature:.0f} °C ; coupure proposée de "
+"{minutes} min"
+msgstr ""
+"Cầu dao: tailscaled vượt {cpu:.0f} % của một lõi trong {seconds} s, hoặc máy"
+" vượt {temperature:.0f} °C; đề xuất ngắt {minutes} phút"
+
+#, python-brace-format
+msgid "Funnel coupé depuis {since} ; remise en route {until}"
+msgstr "Funnel bị ngắt từ {since}; bật lại {until}"
+
+msgid "manuelle"
+msgstr "thủ công"
+
+msgid "Aucune coupure de Funnel en cours."
+msgstr "Không có lần ngắt Funnel nào đang diễn ra."
+
+#, python-brace-format
+msgid "  origine : {tool} · géré par {manager} · pairs connus : {peers}"
+msgstr ""
+"  nguồn gốc: {tool} · do {manager} quản lý · máy ngang hàng đã biết: {peers}"
+
+msgid "Journal de la veille (derniers événements) :"
+msgstr "Nhật ký giám sát (sự kiện gần nhất):"
+
+msgid "SURVIE"
+msgstr "SINH TỒN"
+
+msgid "Aucune alerte."
+msgstr "Không có cảnh báo."
+
+#, python-brace-format
+msgid "ATTAQUES DES {days} DERNIERS JOURS"
+msgstr "TẤN CÔNG TRONG {days} NGÀY GẦN NHẤT"
+
+msgid "Pare-feu indisponible : rien à compter."
+msgstr "Tường lửa không khả dụng: không có gì để đếm."
+
+#, python-brace-format
+msgid "Journal de la porte illisible : {error}"
+msgstr "Không đọc được nhật ký cổng gác: {error}"
+
+msgid ""
+"Lu dans le journal de la porte : chaque connexion marquée par une règle "
+"(refusée, ou seulement comptée en observation, selon le mode du moment)."
+msgstr ""
+"Đọc từ nhật ký cổng gác: mỗi kết nối bị một quy tắc đánh dấu (bị từ chối, "
+"hoặc chỉ được đếm ở chế độ quan sát, tùy chế độ lúc đó)."
+
+msgid "Aucune connexion marquée sur la période."
+msgstr "Không có kết nối nào bị đánh dấu trong khoảng thời gian này."
+
+#, python-brace-format
+msgid "Connexions marquées : {count}{floor}"
+msgstr "Kết nối bị đánh dấu: {count}{floor}"
+
+msgid " (au moins : journal trop long, seules les plus récentes ont été lues)"
+msgstr " (ít nhất: nhật ký quá dài, chỉ đọc các dòng gần nhất)"
+
+#, python-brace-format
+msgid ""
+"Règles de la porte, connexions qui auraient été refusées (observation) : "
+"{reasons}"
+msgstr ""
+"Quy tắc của cổng gác, kết nối lẽ ra đã bị từ chối (quan sát): {reasons}"
+
+#, python-brace-format
+msgid "Règles de la porte, connexions refusées : {reasons}"
+msgstr "Quy tắc của cổng gác, kết nối bị từ chối: {reasons}"
+
+#, python-brace-format
+msgid "Regroupements, connexions refusées : {reasons}"
+msgstr "Gom nhóm, kết nối bị từ chối: {reasons}"
+
+#, python-brace-format
+msgid ""
+"Regroupements, connexions qui auraient été refusées (observation) : "
+"{reasons}"
+msgstr "Gom nhóm, kết nối lẽ ra đã bị từ chối (quan sát): {reasons}"
+
+#, python-brace-format
+msgid "Par jour : {days}"
+msgstr "Theo ngày: {days}"
+
+msgid "AS"
+msgstr "AS"
+
+msgid "Adresse"
+msgstr "Địa chỉ"
+
+msgid "Connexions marquées"
+msgstr "Kết nối bị đánh dấu"
+
+msgid "Pays"
+msgstr "Quốc gia"
+
+msgid "en ligne"
+msgstr "trực tuyến"
+
+msgid "hors ligne"
+msgstr "ngoại tuyến"
+
+msgid "APPAREILS DU TAILNET"
+msgstr "THIẾT BỊ CỦA TAILNET"
+
+msgid "Aucun appareil lu."
+msgstr "Không đọc được thiết bị nào."
+
+msgid "Système"
+msgstr "Hệ thống"
+
+msgid "Compte et appareils du tailnet inclus."
+msgstr "Có kèm tài khoản và thiết bị của tailnet."
+
+msgid ""
+"Compte et appareils du tailnet non inclus (seulement leur nombre) ; les "
+"adresses des attaquants restent."
+msgstr ""
+"Không kèm tài khoản và thiết bị của tailnet (chỉ có số lượng); địa chỉ của "
+"kẻ tấn công vẫn được giữ."
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — RAPPORT DE LA MACHINE {machine}"
+msgstr "OMEGA-TAIL {version} — BÁO CÁO VỀ MÁY {machine}"
+
+#, python-brace-format
+msgid "Établi le {date} (lecture seule, sans droits)."
+msgstr "Lập ngày {date} (chỉ đọc, không cần quyền)."
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — rapport."
+msgstr "OMEGA-TAIL {version} — báo cáo."
+
+msgid "Rapport - Omega-Tail"
+msgstr "Báo cáo - Omega-Tail"
+
+msgid ""
+"Le démarrage de tailscaled lance « tailscale up » (votre fichier d'ajout). "
+"Depuis qu'un réglage a changé (opérateur, nom, routes…), Tailscale refuse ce"
+" « up » incomplet : systemd arrête alors tailscaled et abandonne après cinq "
+"essais (la machine sort du tailnet). omega-tail ajoute « - » devant cette "
+"commande : son refus n'arrête plus le service, et vos réglages restent "
+"gardés par Tailscale. Rien d'autre ne change ; l'original est gardé dans "
+"var/survie."
+msgstr ""
+"Khi khởi động, tailscaled chạy « tailscale up » (tệp bổ sung của bạn). Từ "
+"khi một thiết lập thay đổi (người vận hành, tên, tuyến…), Tailscale từ chối "
+"lệnh « up » không đầy đủ này: khi đó systemd dừng tailscaled và bỏ cuộc sau "
+"năm lần thử (máy rời khỏi tailnet). omega-tail thêm « - » trước lệnh này: "
+"việc nó bị từ chối không còn làm dừng dịch vụ, và thiết lập của bạn vẫn được"
+" Tailscale giữ. Không có gì khác thay đổi; bản gốc được giữ trong "
+"var/survie."
+
+msgid "Lecture de l'état"
+msgstr "Đang đọc trạng thái"
+
+#, python-brace-format
+msgid "Valeurs refusées (nombre hors limites) : {keys}"
+msgstr "Giá trị bị từ chối (số ngoài giới hạn): {keys}"
+
+msgid "Seuils enregistrés."
+msgstr "Đã lưu ngưỡng."
+
+#, python-brace-format
+msgid "Pas de nouvelle proposition pendant {minutes} min."
+msgstr "Không có đề xuất mới trong {minutes} phút."
+
+#, python-brace-format
+msgid ""
+"Funnel sera coupé {minutes} min puis remis en route automatiquement, à "
+"l'identique (minuterie systemd : sudo une fois, dans le terminal)."
+msgstr ""
+"Funnel sẽ bị ngắt {minutes} phút rồi tự động bật lại, y như cũ (bộ hẹn giờ "
+"systemd: sudo một lần, trong terminal)."
+
+msgid ""
+"Funnel sera coupé jusqu'à ce que vous le rétablissiez (« Rétablir maintenant"
+" »)."
+msgstr "Funnel sẽ bị ngắt cho đến khi bạn khôi phục nó (« Khôi phục ngay »)."
+
+msgid "COUPER FUNNEL ?"
+msgstr "NGẮT FUNNEL?"
+
+msgid ""
+"Les connexions venues d'Internet s'arrêtent aussitôt ; le tailnet (Serve, "
+"SSH) n'est pas touché."
+msgstr ""
+"Các kết nối từ Internet dừng ngay lập tức; tailnet (Serve, SSH) không bị ảnh"
+" hưởng."
+
+msgid "Couper"
+msgstr "Ngắt"
+
+msgid "Disjoncteur"
+msgstr "Cầu dao"
+
+msgid "Pare-feu indisponible."
+msgstr "Tường lửa không khả dụng."
+
+#, python-brace-format
+msgid "HAProxy : {path}"
+msgstr "HAProxy: {path}"
+
+msgid "non installé (« Installer HAProxy »)"
+msgstr "chưa cài (« Cài HAProxy »)"
+
+#, python-brace-format
+msgid ""
+"Protection ACTIVE depuis {since} : Funnel {port} → porte 127.0.0.1:{gate} → "
+"{backend}"
+msgstr ""
+"Bảo vệ HOẠT ĐỘNG từ {since}: Funnel {port} → cổng gác 127.0.0.1:{gate} → "
+"{backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions : {total} reçues · {refused} refusées avant chiffrement · "
+"{current} en cours"
+msgstr ""
+"Kết nối: {total} đã nhận · {refused} bị từ chối trước khi mã hóa · {current}"
+" đang diễn ra"
+
+#, python-brace-format
+msgid ""
+"Protection inactive. Funnel {port} (HTTPS par tailscaled) → {backend} : pris"
+" en charge."
+msgstr ""
+"Bảo vệ không hoạt động. Funnel {port} (HTTPS do tailscaled) → {backend}: "
+"được hỗ trợ."
+
+#, python-brace-format
+msgid "Protection inactive : {reason}."
+msgstr "Bảo vệ không hoạt động: {reason}."
+
+#, python-brace-format
+msgid "Certificat : encore {days} jour(s) (renouvelé chaque jour si besoin)"
+msgstr "Chứng chỉ: còn {days} ngày (gia hạn hằng ngày nếu cần)"
+
+#, python-brace-format
+msgid ""
+"Mode : {mode} · {ip} connexions / 10 s par adresse · budget {budget} / s · "
+"blocage {block} min"
+msgstr ""
+"Chế độ: {mode} · {ip} kết nối / 10 s mỗi địa chỉ · ngân sách {budget} / s · "
+"chặn {block} phút"
+
+msgid ""
+"⚠ Devenez opérateur de Tailscale (tableau de bord) : la porte en a besoin."
+msgstr ""
+"⚠ Hãy trở thành người vận hành Tailscale (bảng điều khiển): cổng gác cần "
+"điều đó."
+
+msgid "Pare-feu"
+msgstr "Tường lửa"
+
+msgid "Changement en cours, puis vérification…"
+msgstr "Đang thay đổi, sau đó kiểm tra…"
+
+msgid ""
+"Gestionnaire de paquets inconnu : installez HAProxy avec celui de votre "
+"système."
+msgstr ""
+"Không rõ trình quản lý gói: hãy cài HAProxy bằng trình quản lý gói của hệ "
+"thống."
+
+msgid "INSTALLER HAPROXY ?"
+msgstr "CÀI HAPROXY?"
+
+msgid ""
+"HAProxy est installé par le gestionnaire de paquets de la distribution "
+"(mises à jour de sécurité comprises)."
+msgstr ""
+"HAProxy được cài bằng trình quản lý gói của bản phân phối (bao gồm cả cập "
+"nhật bảo mật)."
+
+msgid "ACTIVER LA PROTECTION ?"
+msgstr "BẬT BẢO VỆ?"
+
+msgid ""
+"1. Préparation (certificat *.ts.net, listes, configuration vérifiée).\n"
+"2. Services de la porte et de son certificat (sudo, dans le terminal ; la porte tourne sous votre compte, jamais en root).\n"
+"3. Bascule de Funnel vers la porte, puis essai depuis Internet. En cas d'échec, la publication d'origine est remise aussitôt.\n"
+"\n"
+"Coupure du site : quelques secondes pendant la bascule."
+msgstr ""
+"1. Chuẩn bị (chứng chỉ *.ts.net, các danh sách, cấu hình đã kiểm tra).\n"
+"2. Dịch vụ của cổng gác và chứng chỉ của nó (sudo, trong terminal; cổng gác chạy dưới tài khoản của bạn, không bao giờ dưới root).\n"
+"3. Chuyển Funnel sang cổng gác, rồi thử từ Internet. Nếu thất bại, cấu hình công bố ban đầu được đặt lại ngay lập tức.\n"
+"\n"
+"Trang web bị gián đoạn: vài giây trong lúc chuyển."
+
+msgid "Activer"
+msgstr "Bật"
+
+msgid "Préparation de la porte…"
+msgstr "Đang chuẩn bị cổng gác…"
+
+msgid "Porte lancée ; bascule de Funnel et essai depuis Internet…"
+msgstr "Cổng gác đã chạy; đang chuyển Funnel và thử từ Internet…"
+
+msgid "DÉSACTIVER LA PROTECTION ?"
+msgstr "TẮT BẢO VỆ?"
+
+msgid ""
+"Funnel est remis exactement comme avant (HTTPS par tailscaled), vérifié, "
+"puis la porte est arrêtée (sudo, dans le terminal). Vos réglages et vos "
+"listes sont gardés."
+msgstr ""
+"Funnel được đặt lại chính xác như trước (HTTPS do tailscaled), có kiểm tra, "
+"rồi cổng gác được dừng (sudo, trong terminal). Thiết lập và danh sách của "
+"bạn vẫn được giữ."
+
+msgid "Désactiver"
+msgstr "Tắt"
+
+msgid "tailscaled ne tourne pas : rien à confiner."
+msgstr "tailscaled không chạy: không có gì để giới hạn."
+
+#, python-brace-format
+msgid ""
+"Pose le fichier d'ajout {path} (votre propre override.conf n'est pas "
+"modifié), recharge systemd{restart}."
+msgstr ""
+"Đặt tệp bổ sung {path} (override.conf của riêng bạn không bị sửa), nạp lại "
+"systemd{restart}."
+
+msgid ", puis redémarre tailscaled"
+msgstr ", rồi khởi động lại tailscaled"
+
+msgid ""
+"Place tailscaled dans un groupe de contrôle à part (cgroup v2), avec son "
+"plafond et sa priorité. Aucun de vos fichiers n'est modifié. Perdu si "
+"tailscaled redémarre : omega-tail le signalera."
+msgstr ""
+"Đặt tailscaled vào một nhóm điều khiển riêng (cgroup v2), với trần và mức ưu"
+" tiên của nó. Không tệp nào của bạn bị sửa. Mất đi nếu tailscaled khởi động "
+"lại: omega-tail sẽ báo."
+
+msgid "CONFINER TAILSCALED ?"
+msgstr "GIỚI HẠN TÀI NGUYÊN TAILSCALED?"
+
+msgid ""
+"Supprime les fichiers d'ajout posés par omega-tail, puis recharge systemd."
+msgstr "Xóa các tệp bổ sung do omega-tail đặt, rồi nạp lại systemd."
+
+msgid "RETIRER LE CONFINEMENT ?"
+msgstr "GỠ GIỚI HẠN TÀI NGUYÊN?"
+
+msgid ""
+"Rien à corriger ici : la commande n'est pas dans un fichier de /etc/systemd "
+"(à corriger à la main, avec « - » devant la commande)."
+msgstr ""
+"Không có gì để sửa ở đây: lệnh không nằm trong một tệp của /etc/systemd (cần"
+" sửa thủ công, với « - » trước lệnh)."
+
+msgid "CORRIGER LE DÉMARRAGE DE TAILSCALED ?"
+msgstr "SỬA KHỞI ĐỘNG CỦA TAILSCALED?"
+
+msgid ""
+"Cette session passe par Tailscale : elle se figera quelques secondes pendant"
+" le redémarrage, puis reviendra en général."
+msgstr ""
+"Phiên này đi qua Tailscale: nó sẽ bị đứng vài giây trong lúc khởi động lại, "
+"rồi thường sẽ trở lại."
+
+msgid "Commandes :"
+msgstr "Lệnh:"
+
+msgid ""
+"La veille coupe et remet Funnel sous votre compte : devenez d'abord "
+"opérateur de Tailscale (tableau de bord)."
+msgstr ""
+"Giám sát ngắt và bật lại Funnel dưới tài khoản của bạn: hãy trở thành người "
+"vận hành Tailscale trước (bảng điều khiển)."
+
+msgid ""
+"La veille tournera en permanence, sous votre compte (jamais root), même "
+"omega-tail fermé. Sous attaque, elle coupe Funnel seule par paliers (15 min,"
+" 30 min, puis 1 h renouvelable) et le remet en route seule."
+msgstr ""
+"Giám sát sẽ chạy liên tục, dưới tài khoản của bạn (không bao giờ là root), "
+"kể cả khi omega-tail đã đóng. Khi bị tấn công, nó tự ngắt Funnel theo từng "
+"nấc (15 phút, 30 phút, rồi 1 giờ lặp lại) và tự bật lại."
+
+msgid ""
+"La veille s'arrête : sous attaque, omega-tail ouvert vous proposera de "
+"nouveau la coupure."
+msgstr ""
+"Giám sát dừng lại: khi bị tấn công, omega-tail đang mở sẽ lại đề xuất ngắt "
+"với bạn."
+
+msgid "ACTIVER LA VEILLE AUTOMATIQUE ?"
+msgstr "BẬT GIÁM SÁT TỰ ĐỘNG?"
+
+msgid "DÉSACTIVER LA VEILLE AUTOMATIQUE ?"
+msgstr "TẮT GIÁM SÁT TỰ ĐỘNG?"
+
+msgid "Veille automatique activée."
+msgstr "Đã bật giám sát tự động."
+
+msgid "Veille automatique désactivée."
+msgstr "Đã tắt giám sát tự động."
+
+#, python-brace-format
+msgid "Commande refusée (code {code}) : rien n'a changé."
+msgstr "Lệnh bị từ chối (mã {code}): không có gì thay đổi."
+
+msgid "omega-tail — commandes lancées une à une :"
+msgstr "omega-tail — các lệnh được chạy lần lượt:"
+
+msgid "Le mot de passe sudo ne s'affiche pas pendant la saisie."
+msgstr "Mật khẩu sudo không hiển thị khi nhập."
+
+msgid "✔ Terminé."
+msgstr "✔ Xong."
+
+#, python-brace-format
+msgid "✖ Échec (code {code})."
+msgstr "✖ Thất bại (mã {code})."
+
+msgid "Entrée pour revenir à omega-tail… "
+msgstr "Enter để quay lại omega-tail… "
+
+#, python-brace-format
+msgid "Fait : {command}"
+msgstr "Đã làm: {command}"
+
+#, python-brace-format
+msgid "Échec (code {code}) : {command}"
+msgstr "Thất bại (mã {code}): {command}"
+
+msgid "Compte inconnu ou root : rien à faire."
+msgstr "Tài khoản không xác định hoặc là root: không cần làm gì."
+
+#, python-brace-format
+msgid ""
+"Le compte « {user} » pourra régler Tailscale (connexion, publication, "
+"préférences) sans sudo. Une seule fois ; annulable ensuite avec « sudo "
+"tailscale set --operator= »."
+msgstr ""
+"Tài khoản « {user} » sẽ có thể chỉnh Tailscale (kết nối, công bố, tùy chọn) "
+"mà không cần sudo. Chỉ một lần; có thể hủy sau đó bằng « sudo tailscale set "
+"--operator= »."
+
+msgid "DEVENIR OPÉRATEUR DE TAILSCALE ?"
+msgstr "TRỞ THÀNH NGƯỜI VẬN HÀNH TAILSCALE?"
+
+msgid "Dossier des captures non configuré."
+msgstr "Chưa cấu hình thư mục ảnh chụp."
+
+msgid "Redémarrer"
+msgstr "Khởi động lại"
+
+msgid "PROTECTION"
+msgstr "BẢO VỆ"
+
+msgid "TAILSCALE"
+msgstr "TAILSCALE"
+
+msgid ""
+"omega-tail — authentification sudo pour les commandes affichées (le mot de "
+"passe ne s'affiche pas pendant la saisie). L'interface revient ensuite."
+msgstr ""
+"omega-tail — xác thực sudo cho các lệnh hiển thị (mật khẩu không hiển thị "
+"khi nhập). Sau đó giao diện sẽ trở lại."
+
+msgid "Aucune commande à copier."
+msgstr "Không có lệnh nào để sao chép."
+
+#, python-brace-format
+msgid ""
+"{count} commande(s) copiée(s) dans le presse-papiers ({tool}) : collez-les "
+"dans un terminal (Ctrl+Maj+V)."
+msgstr ""
+"Đã sao chép {count} lệnh vào bộ nhớ tạm ({tool}): hãy dán vào một terminal "
+"(Ctrl+Shift+V)."
+
+msgid ""
+"omega-tail — commandes à copier. Sélectionnez-les à la souris puis copiez "
+"avec le raccourci de votre terminal (souvent Ctrl+Maj+C) :"
+msgstr ""
+"omega-tail — các lệnh cần sao chép. Chọn chúng bằng chuột rồi sao chép bằng "
+"phím tắt của terminal (thường là Ctrl+Shift+C):"
+
+msgid "Adresses"
+msgstr "Địa chỉ"
+
+msgid "Empreintes"
+msgstr "Dấu vân tay"
+
+#, python-brace-format
+msgid "MODE ATTAQUE (retour au normal après {seconds} s de calme)"
+msgstr "CHẾ ĐỘ TẤN CÔNG (trở lại bình thường sau {seconds} s yên tĩnh)"
+
+msgid "regroupements appliqués"
+msgstr "gom nhóm được áp dụng"
+
+msgid "regroupements en observation"
+msgstr "gom nhóm ở chế độ quan sát"
+
+#, python-brace-format
+msgid "auraient été refusées (7 j) : {reasons}"
+msgstr "lẽ ra đã bị từ chối (7 ngày): {reasons}"
+
+#, python-brace-format
+msgid "refusées (7 j) : {reasons}"
+msgstr "bị từ chối (7 ngày): {reasons}"
+
+msgid "ATTAQUES ET DÉCISIONS"
+msgstr "TẤN CÔNG VÀ QUYẾT ĐỊNH"
+
+msgid ""
+"La liste noire d'abord, puis les adresses bloquées, les plus actives, et la "
+"confiance. Choisissez une ligne puis une action."
+msgstr ""
+"Danh sách đen trước, rồi các địa chỉ bị chặn, hoạt động nhiều nhất, và danh "
+"sách tin cậy. Chọn một dòng rồi một thao tác."
+
+msgid "Bloquer"
+msgstr "Chặn"
+
+msgid "Liste noire"
+msgstr "Danh sách đen"
+
+msgid "Débloquer"
+msgstr "Bỏ chặn"
+
+msgid "Gestion de la liste noire"
+msgstr "Quản lý danh sách đen"
+
+msgid "Expire dans"
+msgstr "Hết hạn sau"
+
+msgid "Empreinte JA4"
+msgstr "Dấu vân tay JA4"
+
+msgid "Remarque"
+msgstr "Ghi chú"
+
+msgid "Total"
+msgstr "Tổng"
+
+#, python-brace-format
+msgid ""
+"Connexions reçues : {total} · refusées avant chiffrement : {refused} · "
+"admises : {admitted} · en cours : {current}"
+msgstr ""
+"Kết nối đã nhận: {total} · bị từ chối trước khi mã hóa: {refused} · được "
+"chấp nhận: {admitted} · đang diễn ra: {current}"
+
+msgid "jusqu'au retrait"
+msgstr "cho đến khi gỡ ra"
+
+msgid "Retirer la confiance"
+msgstr "Bỏ tin cậy"
+
+msgid "Aucune adresse choisie."
+msgstr "Chưa chọn địa chỉ nào."
+
+msgid "Plus anciennes que N jours"
+msgstr "Cũ hơn N ngày"
+
+msgid "Les N plus anciennes"
+msgstr "N mục cũ nhất"
+
+msgid "De la ligne A à la ligne B"
+msgstr "Từ dòng A đến dòng B"
+
+msgid "Origine : import"
+msgstr "Nguồn gốc: nhập"
+
+msgid "Origine : écran Attaques"
+msgstr "Nguồn gốc: màn hình Tấn công"
+
+msgid "Origine : ajout manuel"
+msgstr "Nguồn gốc: thêm thủ công"
+
+msgid "Origine : avant les dates"
+msgstr "Nguồn gốc: trước khi có ngày"
+
+msgid "Toute la liste"
+msgstr "Toàn bộ danh sách"
+
+msgid "GESTION DE LA LISTE NOIRE"
+msgstr "QUẢN LÝ DANH SÁCH ĐEN"
+
+msgid "AJOUTER OU IMPORTER"
+msgstr "THÊM HOẶC NHẬP"
+
+msgid "adresse ou réseau (ex. 203.0.113.7 ou 198.51.100.0/24)"
+msgstr "địa chỉ hoặc mạng (vd. 203.0.113.7 hoặc 198.51.100.0/24)"
+
+msgid "fichier TXT : une adresse ou un réseau par ligne, # = commentaire"
+msgstr "tệp TXT: mỗi dòng một địa chỉ hoặc một mạng, # = chú thích"
+
+msgid "Importer"
+msgstr "Nhập"
+
+msgid ""
+"Les doublons, les adresses déjà couvertes par un réseau de la liste et "
+"celles du tailnet sont écartés et comptés. Un export TXT se réimporte tel "
+"quel (récidive)."
+msgstr ""
+"Mục trùng, địa chỉ đã nằm trong một mạng của danh sách và địa chỉ của "
+"tailnet bị loại và được đếm. Một bản xuất TXT nhập lại được nguyên trạng "
+"(tái phạm)."
+
+msgid "LISTE"
+msgstr "DANH SÁCH"
+
+msgid "filtrer : début d'adresse, réseau, date (2026-11), origine"
+msgstr "lọc: đầu địa chỉ, mạng, ngày (2026-11), nguồn gốc"
+
+msgid "PURGER"
+msgstr "DỌN DẸP"
+
+msgid "N ou A"
+msgstr "N hoặc A"
+
+msgid "Aperçu"
+msgstr "Xem trước"
+
+msgid "Purger"
+msgstr "Dọn dẹp"
+
+msgid ""
+"Les lignes sont numérotées de la plus ancienne à la plus récente, comme dans"
+" le tableau sans filtre. L'aperçu dit combien d'entrées partiraient ; rien "
+"n'est retiré sans confirmation."
+msgstr ""
+"Các dòng được đánh số từ cũ nhất đến mới nhất, như trong bảng không lọc. Bản"
+" xem trước cho biết bao nhiêu mục sẽ bị gỡ; không gỡ gì nếu chưa xác nhận."
+
+msgid "THÈME DE LA PAGE HTML"
+msgstr "GIAO DIỆN CỦA TRANG HTML"
+
+msgid "Exporter HTML"
+msgstr "Xuất HTML"
+
+msgid "Exporter TXT"
+msgstr "Xuất TXT"
+
+msgid "Exporter JSON"
+msgstr "Xuất JSON"
+
+msgid "Voir les exports"
+msgstr "Xem các bản xuất"
+
+#, python-brace-format
+msgid ""
+"{count} entrée(s) sur {max} au plus. Refusées par la porte avant tout "
+"chiffrement, jusqu'à leur retrait."
+msgstr ""
+"{count} mục trên tối đa {max}. Bị cổng gác từ chối trước mọi bước mã hóa, "
+"cho đến khi được gỡ ra."
+
+msgid "La liste grossit : exportez-la puis purgez les plus anciennes."
+msgstr "Danh sách đang lớn dần: hãy xuất nó rồi dọn dẹp các mục cũ nhất."
+
+#, python-brace-format
+msgid ""
+"{shown} premières lignes affichées sur {total} : affinez le filtre, ou "
+"exportez pour tout voir."
+msgstr ""
+"Hiển thị {shown} dòng đầu trên {total}: hãy lọc chặt hơn, hoặc xuất ra để "
+"xem tất cả."
+
+#, python-brace-format
+msgid "{count} entrée(s) correspondent au filtre."
+msgstr "{count} mục khớp với bộ lọc."
+
+msgid "La liste noire est vide."
+msgstr "Danh sách đen trống."
+
+#, python-brace-format
+msgid "{error}"
+msgstr "{error}"
+
+#, python-brace-format
+msgid "Lignes invalides : {lines}"
+msgstr "Dòng không hợp lệ: {lines}"
+
+msgid "Tapez une adresse ou un réseau."
+msgstr "Hãy gõ một địa chỉ hoặc một mạng."
+
+msgid "Indiquez le chemin du fichier TXT à importer."
+msgstr "Hãy nhập đường dẫn của tệp TXT cần nhập."
+
+#, python-brace-format
+msgid "Fichier introuvable : {path}"
+msgstr "Không tìm thấy tệp: {path}"
+
+#, python-brace-format
+msgid "Fichier trop gros (plus de {size} Mo) : découpez-le."
+msgstr "Tệp quá lớn (hơn {size} MB): hãy chia nhỏ nó."
+
+msgid "Import en cours…"
+msgstr "Đang nhập…"
+
+msgid "Aucune entrée choisie."
+msgstr "Chưa chọn mục nào."
+
+msgid "Tapez N (un nombre entier) dans le premier champ."
+msgstr "Hãy gõ N (một số nguyên) vào trường đầu tiên."
+
+msgid "Tapez A et B (numéros de ligne) dans les deux champs."
+msgstr "Hãy gõ A và B (số dòng) vào hai trường."
+
+#, python-brace-format
+msgid "Aperçu : {count} entrée(s) sur {total} partiraient."
+msgstr "Xem trước: {count} mục trên {total} sẽ bị gỡ."
+
+#, python-brace-format
+msgid "De {first} à {last}."
+msgstr "Từ {first} đến {last}."
+
+msgid "Aucune entrée ne correspond : rien à purger."
+msgstr "Không có mục nào khớp: không có gì để dọn dẹp."
+
+#, python-brace-format
+msgid ""
+"{count} entrée(s) vont quitter la liste noire : ces adresses seront de "
+"nouveau admises (soumises aux règles). Exportez la liste avant si vous "
+"voulez pouvoir les réinjecter."
+msgstr ""
+"{count} mục sẽ rời khỏi danh sách đen: các địa chỉ này sẽ lại được chấp nhận"
+" (tuân theo quy tắc). Hãy xuất danh sách trước nếu bạn muốn có thể đưa chúng"
+" trở lại."
+
+msgid "Purge en cours…"
+msgstr "Đang dọn dẹp…"
+
+msgid "VIDER"
+msgstr "XÓA HẾT"
+
+msgid "VIDER LA LISTE NOIRE ?"
+msgstr "XÓA HẾT DANH SÁCH ĐEN?"
+
+msgid "Vider"
+msgstr "Làm trống"
+
+msgid "PURGER LA LISTE NOIRE ?"
+msgstr "DỌN DẸP DANH SÁCH ĐEN?"
+
+#, python-brace-format
+msgid "Liste noire enregistrée ({count} entrée(s)) : {path}"
+msgstr "Đã lưu danh sách đen ({count} mục): {path}"
+
+msgid "ATTAQUE PROBABLE — COUPER FUNNEL ?"
+msgstr "CÓ THỂ ĐANG BỊ TẤN CÔNG — NGẮT FUNNEL?"
+
+#, python-brace-format
+msgid ""
+"{reason}\n"
+"\n"
+"Couper Funnel (port {ports}) arrête aussitôt les connexions venues d'Internet : la machine respire. Le tailnet (Serve, SSH) n'est pas touché.\n"
+"\n"
+"• Coupure de {minutes} min : Funnel est remis en route tout seul, à l'identique, même si omega-tail est fermé.\n"
+"• Coupure totale : Funnel reste coupé jusqu'à ce que vous le rétablissiez (menu Survie)."
+msgstr ""
+"{reason}\n"
+"\n"
+"Ngắt Funnel (cổng {ports}) dừng ngay các kết nối từ Internet: máy được nghỉ. Tailnet (Serve, SSH) không bị ảnh hưởng.\n"
+"\n"
+"• Ngắt {minutes} phút: Funnel tự bật lại, y như cũ, kể cả khi omega-tail đã đóng.\n"
+"• Ngắt hoàn toàn: Funnel bị ngắt cho đến khi bạn khôi phục nó (menu Sinh tồn)."
+
+#, python-brace-format
+msgid "Couper {minutes} min"
+msgstr "Ngắt {minutes} phút"
+
+msgid "Coupure totale"
+msgstr "Ngắt hoàn toàn"
+
+msgid "Pas maintenant"
+msgstr "Để sau"
+
+msgid "déconnecté (tailscale down)"
+msgstr "đã ngắt kết nối (tailscale down)"
+
+msgid "compte à connecter"
+msgstr "cần đăng nhập tài khoản"
+
+msgid "machine à approuver"
+msgstr "máy cần phê duyệt"
+
+msgid "CONNEXION ET RÉGLAGES"
+msgstr "KẾT NỐI VÀ THIẾT LẬP"
+
+msgid ""
+"La connexion de cette machine au tailnet, son compte, et les réglages de "
+"Tailscale. Chaque commande s'affiche avant d'être lancée, dans le terminal "
+"(sans sudo si vous êtes opérateur)."
+msgstr ""
+"Kết nối của máy này với tailnet, tài khoản của nó, và các thiết lập của "
+"Tailscale. Mỗi lệnh được hiển thị trước khi chạy, trong terminal (không cần "
+"sudo nếu bạn là người vận hành)."
+
+msgid "Se connecter"
+msgstr "Đăng nhập"
+
+msgid "Se déconnecter"
+msgstr "Đăng xuất"
+
+msgid "Ajouter un compte"
+msgstr "Thêm tài khoản"
+
+msgid "Déconnexion définitive"
+msgstr "Đăng xuất vĩnh viễn"
+
+msgid "COMPTE"
+msgstr "TÀI KHOẢN"
+
+msgid "Comptes de cette machine (lecture…)"
+msgstr "Các tài khoản của máy này (đang đọc…)"
+
+msgid "Changer de compte"
+msgstr "Đổi tài khoản"
+
+msgid "Appliquer"
+msgstr "Áp dụng"
+
+msgid "Relire"
+msgstr "Đọc lại"
+
+msgid "Mon compte"
+msgstr "Tài khoản của tôi"
+
+msgid "Activer le transfert IP"
+msgstr "Bật chuyển tiếp IP"
+
+msgid " (en cours)"
+msgstr " (đang dùng)"
+
+#, python-brace-format
+msgid "Comptes illisibles ({error}) : devenez opérateur (tableau de bord)."
+msgstr ""
+"Không đọc được tài khoản ({error}): hãy trở thành người vận hành (bảng điều "
+"khiển)."
+
+msgid ""
+"Un seul compte sur cette machine : « Ajouter un compte » pour en connecter "
+"un autre."
+msgstr ""
+"Chỉ có một tài khoản trên máy này: « Thêm tài khoản » để kết nối tài khoản "
+"khác."
+
+msgid ""
+"Aucune machine du tailnet ne se propose comme nœud de sortie. Sur la machine"
+" voulue : cocher « Proposer cette machine comme nœud de sortie », appliquer,"
+" puis l'approuver dans la console d'administration de Tailscale (Machines → "
+"Edit route settings)."
+msgstr ""
+"Không máy nào trong tailnet tự đề xuất làm nút thoát. Trên máy mong muốn: "
+"đánh dấu « Đề xuất máy này làm nút thoát », áp dụng, rồi phê duyệt nó trong "
+"bảng quản trị của Tailscale (Machines → Edit route settings)."
+
+#, python-brace-format
+msgid "ex. {user}"
+msgstr "vd. {user}"
+
+msgid "tailscaled ne répond pas"
+msgstr "tailscaled không phản hồi"
+
+#, python-brace-format
+msgid "Compte : {user} · tailnet : {tailnet}"
+msgstr "Tài khoản: {user} · tailnet: {tailnet}"
+
+#, python-brace-format
+msgid "Machine : {name} · {addresses}"
+msgstr "Máy: {name} · {addresses}"
+
+#, python-brace-format
+msgid "Expiration de la clé : {expiry} · opérateur : {operator}"
+msgstr "Hạn của khóa: {expiry} · người vận hành: {operator}"
+
+msgid "aucun (sudo)"
+msgstr "không có (sudo)"
+
+msgid "Votre session passe par Tailscale : se déconnecter vous couperait."
+msgstr "Phiên của bạn đi qua Tailscale: đăng xuất sẽ ngắt bạn."
+
+#, python-brace-format
+msgid ""
+"Transfert IP désactivé ({keys}) : le nœud de sortie et les sous-réseaux "
+"annoncés ne transmettront rien. « Activer le transfert IP » écrit un fichier"
+" à part ({path}), gardé au redémarrage."
+msgstr ""
+"Chuyển tiếp IP đang tắt ({keys}): nút thoát và các mạng con được quảng bá sẽ"
+" không chuyển gì cả. « Bật chuyển tiếp IP » ghi một tệp riêng ({path}), được"
+" giữ khi khởi động lại."
+
+msgid ""
+"Compte inconnu ou root : tapez le nom du compte Linux à rendre opérateur."
+msgstr ""
+"Tài khoản không xác định hoặc là root: hãy gõ tên tài khoản Linux cần làm "
+"người vận hành."
+
+#, python-brace-format
+msgid "{name} : {reason}"
+msgstr "{name}: {reason}"
+
+#, python-brace-format
+msgid "{label} : {before} → {after}"
+msgstr "{label}: {before} → {after}"
+
+msgid "Aucun changement."
+msgstr "Không có thay đổi."
+
+msgid "Commande :"
+msgstr "Lệnh:"
+
+#, python-brace-format
+msgid "Transfert IP désactivé ({keys}) : « Activer le transfert IP » aussi."
+msgstr "Chuyển tiếp IP đang tắt ({keys}): hãy « Bật chuyển tiếp IP » nữa."
+
+#, python-brace-format
+msgid ""
+"Votre session passe par Tailscale ; ces changements peuvent la couper : "
+"{names}."
+msgstr ""
+"Phiên của bạn đi qua Tailscale; các thay đổi này có thể ngắt nó: {names}."
+
+#, python-brace-format
+msgid "Dernière application ({time}) : la commande a échoué (code {code})."
+msgstr "Lần áp dụng gần nhất ({time}): lệnh thất bại (mã {code})."
+
+#, python-brace-format
+msgid "Dernière application ({time}) :"
+msgstr "Lần áp dụng gần nhất ({time}):"
+
+#, python-brace-format
+msgid "{label} : {after}"
+msgstr "{label}: {after}"
+
+#, python-brace-format
+msgid "{label} : {after} demandé, {now} lu"
+msgstr "{label}: yêu cầu {after}, đọc được {now}"
+
+msgid "À appliquer :"
+msgstr "Sẽ áp dụng:"
+
+msgid "Valeur refusée : corrigez la ligne marquée ✖."
+msgstr "Giá trị bị từ chối: hãy sửa dòng có dấu ✖."
+
+msgid "APPLIQUER LES RÉGLAGES ?"
+msgstr "ÁP DỤNG THIẾT LẬP?"
+
+msgid ""
+"Votre session passe par Tailscale : elle sera COUPÉE et ne reviendra pas. Il"
+" faudra un accès local (ou un autre chemin) pour vous reconnecter."
+msgstr ""
+"Phiên của bạn đi qua Tailscale: nó sẽ bị NGẮT và không trở lại. Bạn sẽ cần "
+"truy cập cục bộ (hoặc một đường khác) để kết nối lại."
+
+msgid "Ce qui est publié (Serve et Funnel) ne sera plus joignable."
+msgstr "Những gì đã công bố (Serve và Funnel) sẽ không còn truy cập được."
+
+msgid "ACTIVER LE TRANSFERT IP ?"
+msgstr "BẬT CHUYỂN TIẾP IP?"
+
+#, python-brace-format
+msgid ""
+"Le noyau fera suivre les paquets (IPv4 et IPv6) : nécessaire pour un nœud de"
+" sortie ou des sous-réseaux annoncés. Fichier à part {path}, relu au "
+"démarrage (systemd, OpenRC, runit) ; pour annuler : supprimer ce fichier "
+"puis redémarrer."
+msgstr ""
+"Nhân sẽ chuyển tiếp gói tin (IPv4 và IPv6): cần thiết cho nút thoát hoặc "
+"mạng con được quảng bá. Tệp riêng {path}, được đọc lại khi khởi động "
+"(systemd, OpenRC, runit); để hủy: xóa tệp này rồi khởi động lại."
+
+msgid "SE CONNECTER ?"
+msgstr "ĐĂNG NHẬP?"
+
+msgid ""
+"Remet cette machine dans le tailnet. Si un compte doit s'identifier, "
+"Tailscale affiche dans le terminal l'adresse à ouvrir dans un navigateur."
+msgstr ""
+"Đưa máy này trở lại tailnet. Nếu một tài khoản cần xác thực, Tailscale hiển "
+"thị trong terminal địa chỉ cần mở trong trình duyệt."
+
+msgid "SE DÉCONNECTER ?"
+msgstr "ĐĂNG XUẤT?"
+
+msgid ""
+"La machine quitte le tailnet (le compte reste enregistré : « Se connecter » "
+"la remet)."
+msgstr ""
+"Máy rời khỏi tailnet (tài khoản vẫn được lưu: « Đăng nhập » sẽ đưa nó trở "
+"lại)."
+
+msgid "AJOUTER UN COMPTE ?"
+msgstr "THÊM TÀI KHOẢN?"
+
+msgid ""
+"Connecte un autre compte (ou un autre tailnet) sur cette machine ; il "
+"devient le compte en cours. Tailscale affiche l'adresse à ouvrir pour vous "
+"identifier. L'ancien compte reste dans « Changer de compte »."
+msgstr ""
+"Kết nối một tài khoản khác (hoặc một tailnet khác) trên máy này; nó trở "
+"thành tài khoản hiện tại. Tailscale hiển thị địa chỉ cần mở để bạn xác thực."
+" Tài khoản cũ vẫn nằm trong « Đổi tài khoản »."
+
+msgid "Choisissez un autre compte que le compte en cours."
+msgstr "Hãy chọn một tài khoản khác với tài khoản hiện tại."
+
+msgid "CHANGER DE COMPTE ?"
+msgstr "ĐỔI TÀI KHOẢN?"
+
+#, python-brace-format
+msgid ""
+"La machine passe sur le compte {account} (tailnet {tailnet}). Son adresse et"
+" ce qu'elle voit du tailnet changent."
+msgstr ""
+"Máy chuyển sang tài khoản {account} (tailnet {tailnet}). Địa chỉ của máy và "
+"những gì nó thấy trong tailnet sẽ thay đổi."
+
+#, python-brace-format
+msgid ""
+"La machine est retirée du compte : sa clé est révoquée, il faudra s'identifier à nouveau (et peut-être la réapprouver) pour la remettre dans le tailnet.\n"
+"\n"
+"Commande : {command}"
+msgstr ""
+"Máy bị gỡ khỏi tài khoản: khóa của nó bị thu hồi, bạn sẽ phải xác thực lại (và có thể phê duyệt lại nó) để đưa nó trở lại tailnet.\n"
+"\n"
+"Lệnh: {command}"
+
+#, python-brace-format
+msgid "Pour confirmer, tapez le nom de la machine : {word}"
+msgstr "Để xác nhận, hãy gõ tên của máy: {word}"
+
+msgid "DÉCONNEXION DÉFINITIVE ?"
+msgstr "ĐĂNG XUẤT VĨNH VIỄN?"
+
+msgid "Déconnecter"
+msgstr "Đăng xuất"
+
+msgid "bouton « Devenir opérateur »"
+msgstr "nút « Trở thành người vận hành »"
+
+#, python-brace-format
+msgid "lot {lot}"
+msgstr "lô {lot}"
+
+msgid "Tailscale"
+msgstr "Tailscale"
+
+msgid "n'est pas installé"
+msgstr "chưa được cài"
+
+#, python-brace-format
+msgid "ne répond pas : {error}"
+msgstr "không phản hồi: {error}"
+
+msgid "tailscaled"
+msgstr "tailscaled"
+
+msgid "Client installé"
+msgstr "Client đã cài"
+
+#, python-brace-format
+msgid "{daemon} en marche, {client} installé"
+msgstr "{daemon} đang chạy, {client} đã cài"
+
+msgid "Version"
+msgstr "Phiên bản"
+
+msgid "Compte"
+msgstr "Tài khoản"
+
+msgid "Appareils du tailnet"
+msgstr "Thiết bị của tailnet"
+
+#, python-brace-format
+msgid "{online} en ligne sur {total}"
+msgstr "{online} trực tuyến trên {total}"
+
+msgid "Clé de la machine"
+msgstr "Khóa của máy"
+
+msgid "aucun (sudo requis)"
+msgstr "không có (cần sudo)"
+
+msgid "Nœud de sortie proposé"
+msgstr "Đề xuất làm nút thoát"
+
+msgid "Machine"
+msgstr "Máy"
+
+#, python-brace-format
+msgid "{name} ({count} fils)"
+msgstr "{name} ({count} luồng)"
+
+msgid "CPU machine"
+msgstr "CPU máy"
+
+msgid "Charge"
+msgstr "Tải"
+
+msgid "Température"
+msgstr "Nhiệt độ"
+
+msgid "Mémoire"
+msgstr "Bộ nhớ"
+
+#, python-brace-format
+msgid "{used} utilisés sur {total}"
+msgstr "đã dùng {used} trên {total}"
+
+msgid "CPU tailscaled"
+msgstr "CPU tailscaled"
+
+#, python-brace-format
+msgid "{cpu} d'un cœur, {memory}"
+msgstr "{cpu} của một lõi, {memory}"
+
+msgid "Confinement"
+msgstr "Giới hạn tài nguyên"
+
+msgid "Funnel"
+msgstr "Funnel"
+
+msgid "coupé par le disjoncteur"
+msgstr "bị cầu dao ngắt"
+
+#, python-brace-format
+msgid "ouvert sur {ports}"
+msgstr "mở trên {ports}"
+
+msgid "sans porte"
+msgstr "không có cổng gác"
+
+msgid "fermé"
+msgstr "đóng"
+
+msgid "actif · MODE ATTAQUE"
+msgstr "hoạt động · CHẾ ĐỘ TẤN CÔNG"
+
+msgid "Pare-feu (porte)"
+msgstr "Tường lửa (cổng gác)"
+
+msgid "inactif"
+msgstr "không hoạt động"
+
+#, python-brace-format
+msgid "{count} entrée(s)"
+msgstr "{count} mục"
+
+msgid "Veille"
+msgstr "Giám sát"
+
+msgid "inactive"
+msgstr "không hoạt động"
+
+msgid "arrêtée"
+msgstr "đã dừng"
+
+#, python-brace-format
+msgid "active, palier {level}"
+msgstr "hoạt động, nấc {level}"
+
+msgid "Bouclier WireGuard"
+msgstr "Lá chắn WireGuard"
+
+msgid "non posé"
+msgstr "chưa đặt"
+
+msgid "ABSENT (table effacée)"
+msgstr "VẮNG MẶT (bảng bị xóa)"
+
+msgid "état non mis à jour"
+msgstr "trạng thái không được cập nhật"
+
+#, python-brace-format
+msgid "posé, mode {mode}"
+msgstr "đã đặt, chế độ {mode}"
+
+msgid "TABLEAU DE BORD"
+msgstr "BẢNG ĐIỀU KHIỂN"
+
+msgid "Corriger"
+msgstr "Sửa"
+
+msgid "Alerte"
+msgstr "Cảnh báo"
+
+msgid "Où corriger"
+msgstr "Sửa ở đâu"
+
+#, python-brace-format
+msgid "Lu à {time} · relu toutes les 5 s"
+msgstr "Đọc lúc {time} · đọc lại mỗi 5 s"
+
+msgid "Choisissez une alerte puis « Corriger » (ou Entrée)."
+msgstr "Chọn một cảnh báo rồi « Sửa » (hoặc Enter)."
+
+msgid "Aucune alerte choisie."
+msgstr "Chưa chọn cảnh báo nào."
+
+msgid "Rien à ouvrir pour cette alerte : elle vient de Tailscale lui-même."
+msgstr "Không có gì để mở cho cảnh báo này: nó đến từ chính Tailscale."
+
+#, python-brace-format
+msgid "Fichier trop volumineux pour être lu ici : {path}"
+msgstr "Tệp quá lớn để đọc ở đây: {path}"
+
+#, python-brace-format
+msgid "Lecture impossible : {error}"
+msgstr "Không thể đọc: {error}"
+
+msgid "EXPORTS"
+msgstr "BẢN XUẤT"
+
+msgid ""
+"Pas de navigateur dans cette session (serveur, connexion SSH) : les exports "
+"sont listés et lus ici. Choisissez une ligne (Entrée) pour la lire."
+msgstr ""
+"Không có trình duyệt trong phiên này (máy chủ, kết nối SSH): các bản xuất "
+"được liệt kê và đọc ở đây. Chọn một dòng (Enter) để đọc."
+
+msgid "Lire"
+msgstr "Đọc"
+
+msgid "Taille"
+msgstr "Kích thước"
+
+msgid "Aucun export pour l'instant."
+msgstr "Chưa có bản xuất nào."
+
+#, python-brace-format
+msgid "Dossier des exports ouvert dans le navigateur : {path}"
+msgstr "Đã mở thư mục xuất trong trình duyệt: {path}"
+
+msgid "Connexions par adresse / 10 s"
+msgstr "Kết nối mỗi địa chỉ / 10 s"
+
+msgid "Par préfixe /24 ou /64 / 10 s"
+msgstr "Mỗi tiền tố /24 hoặc /64 / 10 s"
+
+msgid "Budget global (admises / s)"
+msgstr "Ngân sách toàn cục (chấp nhận / s)"
+
+msgid "Connexions simultanées"
+msgstr "Kết nối đồng thời"
+
+msgid "Durée de blocage (min)"
+msgstr "Thời gian chặn (phút)"
+
+msgid "Mode attaque au-delà de (entrantes / s)"
+msgstr "Chế độ tấn công khi vượt (đến / s)"
+
+msgid "Retour au normal après (min de calme)"
+msgstr "Trở lại bình thường sau (phút yên tĩnh)"
+
+msgid "AS d'hébergeur / 10 s"
+msgstr "AS hosting / 10 s"
+
+msgid "Empreinte inconnue / 10 s"
+msgstr "Dấu vân tay lạ / 10 s"
+
+msgid "Pays limité / 10 s"
+msgstr "Quốc gia bị giới hạn / 10 s"
+
+msgid ""
+"HAProxy sans Lua : regroupements indisponibles (la porte du lot 4 protège "
+"seule)."
+msgstr ""
+"HAProxy không có Lua: gom nhóm không khả dụng (chỉ cổng gác của lô 4 bảo "
+"vệ)."
+
+msgid "Regroupements : appliqués (refusent en mode attaque)"
+msgstr "Gom nhóm: áp dụng (từ chối ở chế độ tấn công)"
+
+msgid ""
+"Regroupements : en observation (comptent « aurait refusé », ne refusent "
+"rien)"
+msgstr "Gom nhóm: đang quan sát (đếm « lẽ ra đã từ chối », không từ chối gì)"
+
+#, python-brace-format
+msgid "Mode : ATTAQUE — retour au normal après {seconds} s de calme"
+msgstr "Chế độ: TẤN CÔNG — trở lại bình thường sau {seconds} s yên tĩnh"
+
+msgid "Mode : normal"
+msgstr "Chế độ: bình thường"
+
+#, python-brace-format
+msgid ""
+"Empreintes : apprentissage, encore {days} jour(s) ; les regroupements "
+"restent en observation jusqu'à la fin."
+msgstr ""
+"Dấu vân tay: đang học, còn {days} ngày; gom nhóm ở chế độ quan sát cho đến "
+"khi kết thúc."
+
+#, python-brace-format
+msgid ""
+"Empreintes habituelles : {count} (référence prête) ; « appliqués » est "
+"maintenant possible."
+msgstr ""
+"Dấu vân tay quen thuộc: {count} (tham chiếu sẵn sàng); giờ đã có thể chọn « "
+"áp dụng »."
+
+msgid ""
+"Base AS / pays : absente (« Mettre à jour la base », ou la veille une fois "
+"par mois)"
+msgstr ""
+"Cơ sở dữ liệu AS / quốc gia: vắng mặt (« Cập nhật cơ sở dữ liệu », hoặc giám"
+" sát mỗi tháng một lần)"
+
+#, python-brace-format
+msgid ""
+"Base AS / pays : à jour il y a {days} jour(s) ; renouvelée chaque mois par "
+"la veille"
+msgstr ""
+"Cơ sở dữ liệu AS / quốc gia: cập nhật {days} ngày trước; giám sát làm mới "
+"mỗi tháng"
+
+msgid ""
+"Navigateurs courants (Chrome, Edge, Firefox) jamais limités par ces règles."
+msgstr ""
+"Trình duyệt phổ biến (Chrome, Edge, Firefox) không bao giờ bị các quy tắc "
+"này giới hạn."
+
+msgid ""
+"Une porte (HAProxy) se place entre Funnel et votre site : elle voit "
+"l'adresse réelle de chaque visiteur et refuse les abus AVANT tout "
+"chiffrement (4,6 fois moins de calcul par connexion refusée, mesuré). "
+"Activation et désactivation avec retour arrière automatique."
+msgstr ""
+"Một cổng gác (HAProxy) được đặt giữa Funnel và trang web của bạn: nó thấy "
+"địa chỉ thật của từng khách truy cập và từ chối các hành vi lạm dụng TRƯỚC "
+"mọi bước mã hóa (ít tính toán hơn 4,6 lần cho mỗi kết nối bị từ chối, đã "
+"đo). Bật và tắt có tự động hoàn tác."
+
+msgid "Installer HAProxy"
+msgstr "Cài HAProxy"
+
+msgid "Activer la protection"
+msgstr "Bật bảo vệ"
+
+msgid "Désactiver la protection"
+msgstr "Tắt bảo vệ"
+
+msgid "Renouveler le certificat"
+msgstr "Gia hạn chứng chỉ"
+
+msgid "RÈGLES (appliquées à chaud)"
+msgstr "QUY TẮC (áp dụng nóng)"
+
+msgid "Mode"
+msgstr "Chế độ"
+
+msgid "normal : refuse"
+msgstr "bình thường: từ chối"
+
+msgid "observation : compte sans refuser"
+msgstr "quan sát: đếm mà không từ chối"
+
+msgid "Vérifier le nom visé"
+msgstr "Kiểm tra tên đích"
+
+msgid "nombre"
+msgstr "số"
+
+msgid "Appliquer les règles"
+msgstr "Áp dụng quy tắc"
+
+msgid "LISTES"
+msgstr "DANH SÁCH"
+
+msgid "Adresse ou réseau (203.0.113.7, 198.51.100.0/24, 2001:db8::/48)"
+msgstr "Địa chỉ hoặc mạng (203.0.113.7, 198.51.100.0/24, 2001:db8::/48)"
+
+msgid "Mettre en confiance"
+msgstr "Đưa vào danh sách tin cậy"
+
+msgid "REGROUPEMENTS : EMPREINTES, AS, PAYS"
+msgstr "GOM NHÓM: DẤU VÂN TAY, AS, QUỐC GIA"
+
+msgid ""
+"Contre les attaques à adresses dispersées : chaque connexion reçoit, avant "
+"tout chiffrement, son empreinte (JA4), son AS et son pays. Quand les "
+"connexions entrantes dépassent le seuil, la porte passe seule en MODE "
+"ATTAQUE : une empreinte inconnue qui explose, un AS d'hébergeur ou un pays "
+"choisi qui dépasse son débit est alors refusé. Les navigateurs courants ne "
+"sont jamais touchés ; les clients connus passent avant le budget. En "
+"observation, tout est compté (« aurait refusé ») et rien n'est refusé."
+msgstr ""
+"Chống lại các cuộc tấn công từ địa chỉ phân tán: trước mọi bước mã hóa, mỗi "
+"kết nối được gán dấu vân tay (JA4), AS và quốc gia của nó. Khi số kết nối "
+"đến vượt ngưỡng, cổng gác tự chuyển sang CHẾ ĐỘ TẤN CÔNG: khi đó một dấu vân"
+" tay lạ tăng vọt, một AS hosting hoặc một quốc gia đã chọn vượt quá tốc độ "
+"của nó sẽ bị từ chối. Các trình duyệt phổ biến không bao giờ bị ảnh hưởng; "
+"các máy khách đã biết được ưu tiên trước ngân sách. Ở chế độ quan sát, mọi "
+"thứ đều được đếm (« lẽ ra đã từ chối ») và không từ chối gì."
+
+msgid "Regroupements"
+msgstr "Gom nhóm"
+
+msgid "observation : comptent sans refuser"
+msgstr "quan sát: đếm mà không từ chối"
+
+msgid "appliqués : refusent en mode attaque (après l'apprentissage)"
+msgstr "áp dụng: từ chối ở chế độ tấn công (sau khi học)"
+
+msgid "Clients connus avant le budget"
+msgstr "Máy khách đã biết trước ngân sách"
+
+msgid "Pays limités en mode attaque"
+msgstr "Quốc gia bị giới hạn khi tấn công"
+
+msgid "ex. CN, RU (vide : aucun)"
+msgstr "vd. CN, RU (trống: không có)"
+
+msgid "AS d'hébergeurs"
+msgstr "AS hosting"
+
+msgid "ex. 16509 24940 (numéros d'AS)"
+msgstr "vd. 16509 24940 (số AS)"
+
+msgid "Appliquer les regroupements"
+msgstr "Áp dụng gom nhóm"
+
+msgid "Mettre à jour la base"
+msgstr "Cập nhật cơ sở dữ liệu"
+
+msgid "Recommencer l'apprentissage"
+msgstr "Học lại từ đầu"
+
+#, python-brace-format
+msgid ""
+"Confiance (jamais limitées) : {trusted}\n"
+"Liste noire (refusées jusqu'à leur retrait) : {black}"
+msgstr ""
+"Tin cậy (không bao giờ bị giới hạn): {trusted}\n"
+"Danh sách đen (bị từ chối cho đến khi được gỡ ra): {black}"
+
+msgid ""
+"Téléchargement et préparation de la base AS / pays (DB-IP Lite) : une à "
+"quelques minutes, l'écran reste utilisable…"
+msgstr ""
+"Đang tải về và chuẩn bị cơ sở dữ liệu AS / quốc gia (DB-IP Lite): từ một đến"
+" vài phút, màn hình vẫn dùng được…"
+
+msgid ""
+"Chaque menu, sa fonction et le détail. Cliquez sur un titre pour l'ouvrir."
+msgstr "Từng menu, chức năng và chi tiết. Nhấp vào một tiêu đề để mở."
+
+msgid "Exporter l'aide en HTML"
+msgstr "Xuất trợ giúp ra HTML"
+
+#, python-brace-format
+msgid "Aide exportée : {path}"
+msgstr "Đã xuất trợ giúp: {path}"
+
+#, python-brace-format
+msgid "Cet écran arrive dans une prochaine version (lot {lot})."
+msgstr "Màn hình này sẽ có trong một phiên bản sắp tới (lô {lot})."
+
+msgid "Cet écran n'est pas disponible dans cette session."
+msgstr "Màn hình này không khả dụng trong phiên này."
+
+msgid "JOURNAUX"
+msgstr "NHẬT KÝ"
+
+msgid "porte (pare-feu)"
+msgstr "cổng gác (tường lửa)"
+
+#, python-brace-format
+msgid "{count} lignes"
+msgstr "{count} dòng"
+
+msgid "Filtrer (texte, adresse…)"
+msgstr "Lọc (văn bản, địa chỉ…)"
+
+msgid "Lecture du journal…"
+msgstr "Đang đọc nhật ký…"
+
+msgid "Aucune ligne lue."
+msgstr "Không đọc được dòng nào."
+
+#, python-brace-format
+msgid "{shown} ligne(s) affichée(s) sur {total} lue(s)."
+msgstr "Hiển thị {shown} dòng trên {total} dòng đã đọc."
+
+msgid "Rien à exporter."
+msgstr "Không có gì để xuất."
+
+#, python-brace-format
+msgid "Journal exporté : {path}"
+msgstr "Đã xuất nhật ký: {path}"
+
+msgid "maintenant"
+msgstr "vừa xong"
+
+#, python-brace-format
+msgid "il y a {count} min"
+msgstr "{count} phút trước"
+
+#, python-brace-format
+msgid "il y a {count} h"
+msgstr "{count} giờ trước"
+
+#, python-brace-format
+msgid "il y a {count} j"
+msgstr "{count} ngày trước"
+
+msgid "direct"
+msgstr "trực tiếp"
+
+msgid "relais"
+msgstr "chuyển tiếp"
+
+#, python-brace-format
+msgid "relais {code}"
+msgstr "chuyển tiếp {code}"
+
+msgid "sortie Internet"
+msgstr "ra Internet"
+
+#, python-brace-format
+msgid "Diagnostic impossible : {error}"
+msgstr "Không thể chẩn đoán: {error}"
+
+msgid "Tailscale n'a rien répondu."
+msgstr "Tailscale không trả lời gì."
+
+#, python-brace-format
+msgid "oui, adresse publique {address}"
+msgstr "có, địa chỉ công khai {address}"
+
+#, python-brace-format
+msgid "UDP : {value}"
+msgstr "UDP: {value}"
+
+msgid "non — tout passe par les relais de Tailscale (plus lent)"
+msgstr "không — mọi thứ đi qua máy chuyển tiếp của Tailscale (chậm hơn)"
+
+#, python-brace-format
+msgid "IPv4 : {value}"
+msgstr "IPv4: {value}"
+
+#, python-brace-format
+msgid "IPv6 : {value}"
+msgstr "IPv6: {value}"
+
+#, python-brace-format
+msgid "NAT : {value}"
+msgstr "NAT: {value}"
+
+msgid ""
+"difficile — le port change selon la destination, les relais seront plus "
+"fréquents"
+msgstr "khó — cổng thay đổi theo đích, sẽ dùng chuyển tiếp thường xuyên hơn"
+
+msgid "simple — les connexions directes se font facilement"
+msgstr "đơn giản — kết nối trực tiếp diễn ra dễ dàng"
+
+#, python-brace-format
+msgid "Ouverture de port par la box : {value}"
+msgstr "Mở cổng qua router: {value}"
+
+#, python-brace-format
+msgid "Relais le plus proche : {value}"
+msgstr "Máy chuyển tiếp gần nhất: {value}"
+
+#, python-brace-format
+msgid "Latence des relais : {values}"
+msgstr "Độ trễ của máy chuyển tiếp: {values}"
+
+msgid "Compteurs internes illisibles (Tailscale trop ancien ?)."
+msgstr "Không đọc được bộ đếm nội bộ (Tailscale quá cũ?)."
+
+msgid "Reçu"
+msgstr "Đã nhận"
+
+msgid "Envoyé"
+msgstr "Đã gửi"
+
+#, python-brace-format
+msgid ""
+"{title} depuis le démarrage : direct {direct} · relais DERP {derp} · relais "
+"d'un pair {peer}"
+msgstr ""
+"{title} từ khi khởi động: trực tiếp {direct} · chuyển tiếp DERP {derp} · "
+"chuyển tiếp qua máy ngang hàng {peer}"
+
+#, python-brace-format
+msgid "Paquets jetés en sortie : {count}"
+msgstr "Gói bị bỏ ở đầu ra: {count}"
+
+#, python-brace-format
+msgid "Messages de santé : {count}"
+msgstr "Thông báo tình trạng: {count}"
+
+msgid "RÉSEAU ET APPAREILS"
+msgstr "MẠNG VÀ THIẾT BỊ"
+
+msgid ""
+"Ce que voit Tailscale depuis cette machine : les appareils du tailnet, le "
+"chemin vers chacun (direct ou par un relais), et l'état du réseau. Lecture "
+"seule : rien n'est changé ici."
+msgstr ""
+"Những gì Tailscale thấy từ máy này: các thiết bị của tailnet, đường đi tới "
+"từng thiết bị (trực tiếp hoặc qua chuyển tiếp), và trạng thái mạng. Chỉ đọc:"
+" không có gì thay đổi ở đây."
+
+msgid "APPAREILS"
+msgstr "THIẾT BỊ"
+
+msgid "filtrer : nom, système, adresse"
+msgstr "lọc: tên, hệ thống, địa chỉ"
+
+msgid "Relais Funnel de Tailscale"
+msgstr "Máy chuyển tiếp Funnel của Tailscale"
+
+msgid "Chemin"
+msgstr "Đường dẫn"
+
+msgid "Vu"
+msgstr "Thấy lúc"
+
+msgid "nom ou adresse (vide : la ligne choisie)"
+msgstr "tên hoặc địa chỉ (trống: dòng đã chọn)"
+
+msgid "Ping Tailscale"
+msgstr "Ping Tailscale"
+
+msgid "Qui est-ce ?"
+msgstr "Đây là ai?"
+
+msgid "DIAGNOSTIC RÉSEAU"
+msgstr "CHẨN ĐOÁN MẠNG"
+
+msgid ""
+"UDP, IPv4 / IPv6, type de NAT, ouverture de port par la box, relais le plus "
+"proche : ce qui décide si les connexions sont directes. Prend quelques "
+"secondes."
+msgstr ""
+"UDP, IPv4 / IPv6, loại NAT, mở cổng qua router, máy chuyển tiếp gần nhất: "
+"những gì quyết định kết nối có trực tiếp hay không. Mất vài giây."
+
+msgid "Lancer le diagnostic"
+msgstr "Chạy chẩn đoán"
+
+msgid "DIAGNOSTIC"
+msgstr "CHẨN ĐOÁN"
+
+msgid "VERROU DU TAILNET"
+msgstr "KHÓA TAILNET"
+
+msgid "COMPTEURS INTERNES"
+msgstr "BỘ ĐẾM NỘI BỘ"
+
+#, python-brace-format
+msgid "Illisible : {error}"
+msgstr "Không đọc được: {error}"
+
+#, python-brace-format
+msgid ""
+"{online} en ligne sur {total} appareil(s) ; {relays} relais Funnel de "
+"Tailscale (cochez pour les voir)."
+msgstr ""
+"{online} trực tuyến trên {total} thiết bị; {relays} máy chuyển tiếp Funnel "
+"của Tailscale (đánh dấu để xem)."
+
+#, python-brace-format
+msgid "Appareils illisibles : {error}"
+msgstr "Không đọc được thiết bị: {error}"
+
+msgid "Choisissez un appareil, ou tapez un nom ou une adresse."
+msgstr "Hãy chọn một thiết bị, hoặc gõ một tên hay một địa chỉ."
+
+#, python-brace-format
+msgid "PING {target}"
+msgstr "PING {target}"
+
+#, python-brace-format
+msgid "QUI EST-CE ? {target}"
+msgstr "ĐÂY LÀ AI? {target}"
+
+msgid "Lecture…"
+msgstr "Đang đọc…"
+
+msgid "Ping en cours (3 essais au plus)…"
+msgstr "Đang ping (tối đa 3 lần thử)…"
+
+#, python-brace-format
+msgid "« {target} » n'est pas un nom ou une adresse valable."
+msgstr "« {target} » không phải là tên hay địa chỉ hợp lệ."
+
+msgid "Diagnostic en cours (quelques secondes)…"
+msgstr "Đang chẩn đoán (vài giây)…"
+
+msgid "tailnet seul"
+msgstr "chỉ tailnet"
+
+msgid "par la porte ✔"
+msgstr "qua cổng gác ✔"
+
+msgid "non protégé"
+msgstr "không được bảo vệ"
+
+#, python-brace-format
+msgid "depuis Internet (relais Funnel {via})"
+msgstr "từ Internet (máy chuyển tiếp Funnel {via})"
+
+#, python-brace-format
+msgid "par le tailnet ({via})"
+msgstr "qua tailnet ({via})"
+
+#, python-brace-format
+msgid "{kind} {port}{path} {where} : {detail}"
+msgstr "{kind} {port}{path} {where}: {detail}"
+
+#, python-brace-format
+msgid "Temps : {ms:.0f} ms"
+msgstr "Thời gian: {ms:.0f} ms"
+
+#, python-brace-format
+msgid "Certificat : {subject} · émis par {issuer} · échéance {expiry} · {tls}"
+msgstr "Chứng chỉ: {subject} · cấp bởi {issuer} · hết hạn {expiry} · {tls}"
+
+msgid ""
+"Le nom n'est pas encore publié pour Internet : juste après un ajout, Funnel "
+"met parfois une minute. Réessayez."
+msgstr ""
+"Tên này chưa được công bố ra Internet: ngay sau khi thêm, Funnel đôi khi mất"
+" một phút. Hãy thử lại."
+
+msgid ""
+"Un essai par le tailnet depuis la machine elle-même peut échouer selon le "
+"système : essayez aussi depuis un autre appareil."
+msgstr ""
+"Thử qua tailnet từ chính máy này có thể thất bại tùy hệ thống: hãy thử thêm "
+"từ một thiết bị khác."
+
+msgid ""
+"Ce que cette machine publie : pour le tailnet seul (Serve) ou pour Internet "
+"(Funnel). Chaque changement est vérifié, et l'état d'avant est sauvegardé "
+"(restaurable en un bouton)."
+msgstr ""
+"Những gì máy này công bố: chỉ cho tailnet (Serve) hoặc cho Internet "
+"(Funnel). Mỗi thay đổi đều được kiểm tra, và trạng thái trước đó được sao "
+"lưu (khôi phục bằng một nút)."
+
+msgid "Essai de bout en bout"
+msgstr "Thử đầu cuối"
+
+msgid "Retirer"
+msgstr "Gỡ"
+
+msgid "Suspendre Funnel"
+msgstr "Tạm dừng Funnel"
+
+msgid "Rétablir Funnel"
+msgstr "Khôi phục Funnel"
+
+msgid "AJOUTER"
+msgstr "THÊM"
+
+msgid ""
+"Pour Internet, le plus sûr : HTTPS sur le port 443, puis « Activer la "
+"protection » (Pare-feu Funnel) pour que la porte filtre avant tout "
+"chiffrement."
+msgstr ""
+"Với Internet, an toàn nhất: HTTPS trên cổng 443, rồi « Bật bảo vệ » (Tường "
+"lửa Funnel) để cổng gác lọc trước mọi bước mã hóa."
+
+msgid "Service local"
+msgstr "Dịch vụ cục bộ"
+
+msgid "8080 ou http://127.0.0.1:8080"
+msgstr "8080 hoặc http://127.0.0.1:8080"
+
+msgid "Pour"
+msgstr "Cho"
+
+msgid "le tailnet seul (Serve)"
+msgstr "chỉ tailnet (Serve)"
+
+msgid "Port (Funnel : 443, 8443, 10000)"
+msgstr "Cổng (Funnel: 443, 8443, 10000)"
+
+msgid "Chemin (HTTPS / HTTP)"
+msgstr "Đường dẫn (HTTPS / HTTP)"
+
+msgid "Publier"
+msgstr "Công bố"
+
+msgid "SAUVEGARDES"
+msgstr "SAO LƯU"
+
+msgid ""
+"L'état d'avant chaque changement (publication, pare-feu, disjoncteur) ; les "
+"50 plus récentes sont gardées dans var/funnel/sauvegardes/."
+msgstr ""
+"Trạng thái trước mỗi thay đổi (công bố, tường lửa, cầu dao); 50 bản gần nhất"
+" được giữ trong var/funnel/sauvegardes/."
+
+msgid "Aucune sauvegarde"
+msgstr "Chưa có bản sao lưu"
+
+msgid "Restaurer"
+msgstr "Khôi phục"
+
+#, python-brace-format
+msgid "Publication illisible : {error}"
+msgstr "Không đọc được cấu hình công bố: {error}"
+
+msgid "Internet"
+msgstr "Internet"
+
+msgid "tailnet"
+msgstr "tailnet"
+
+msgid "Rien n'est publié. « Publier » ci-dessous pour commencer."
+msgstr "Không có gì được công bố. « Công bố » bên dưới để bắt đầu."
+
+msgid ""
+"Pour changer la publication, devenez opérateur de Tailscale (tableau de "
+"bord)."
+msgstr ""
+"Để thay đổi cấu hình công bố, hãy trở thành người vận hành Tailscale (bảng "
+"điều khiển)."
+
+msgid "Essai en cours…"
+msgstr "Đang thử…"
+
+#, python-brace-format
+msgid ""
+"Retire {kind} {port}{path} → {target} ({who}). L'état d'avant est sauvegardé.\n"
+"\n"
+"Commande : {command}"
+msgstr ""
+"Gỡ {kind} {port}{path} → {target} ({who}). Trạng thái trước đó được sao lưu.\n"
+"\n"
+"Lệnh: {command}"
+
+msgid "RETIRER CETTE PUBLICATION ?"
+msgstr "GỠ CẤU HÌNH CÔNG BỐ NÀY?"
+
+#, python-brace-format
+msgid ""
+"Le service {target} sera joignable depuis Internet (Funnel, port {port}). "
+"Pensez ensuite à « Activer la protection » (Pare-feu Funnel)."
+msgstr ""
+"Dịch vụ {target} sẽ truy cập được từ Internet (Funnel, cổng {port}). Sau đó "
+"hãy nhớ « Bật bảo vệ » (Tường lửa Funnel)."
+
+msgid "PUBLIER SUR INTERNET ?"
+msgstr "CÔNG BỐ RA INTERNET?"
+
+msgid "Choisissez une sauvegarde."
+msgstr "Hãy chọn một bản sao lưu."
+
+#, python-brace-format
+msgid ""
+"La publication redevient celle du {when} ({origin}) : {summary}.\n"
+"L'état actuel est sauvegardé d'abord ; tout est vérifié, et remis comme avant en cas d'échec."
+msgstr ""
+"Cấu hình công bố trở về như ngày {when} ({origin}): {summary}.\n"
+"Trạng thái hiện tại được sao lưu trước; mọi thứ đều được kiểm tra, và đặt lại như cũ nếu thất bại."
+
+msgid "RESTAURER CETTE SAUVEGARDE ?"
+msgstr "KHÔI PHỤC BẢN SAO LƯU NÀY?"
+
+msgid "QUITTER OMEGA-TAIL ?"
+msgstr "THOÁT OMEGA-TAIL?"
+
+msgid "RAPPORT"
+msgstr "BÁO CÁO"
+
+msgid ""
+"Tout ce qu'omega-tail sait de cette machine, en faits : Tailscale, "
+"publication, machine, pare-feu, survie, alertes, et les attaques des 7 "
+"derniers jours (journal de la porte). Enregistré dans le dossier des exports"
+" ; « Voir les exports » les ouvre pour les lire."
+msgstr ""
+"Mọi điều omega-tail biết về máy này, dưới dạng dữ kiện: Tailscale, công bố, "
+"máy, tường lửa, sinh tồn, cảnh báo, và các cuộc tấn công trong 7 ngày gần "
+"nhất (nhật ký cổng gác). Được lưu trong thư mục bản xuất; « Xem bản xuất » "
+"mở chúng để đọc."
+
+msgid ""
+"Inclure le compte Tailscale et les appareils du tailnet (noms, adresses)"
+msgstr ""
+"Bao gồm tài khoản Tailscale và các thiết bị của tailnet (tên, địa chỉ)"
+
+msgid ""
+"Sans cette case, seul leur nombre figure : le rapport peut être envoyé à "
+"quelqu'un sans dévoiler votre tailnet. Les adresses des attaquants y restent"
+" toujours."
+msgstr ""
+"Nếu không đánh dấu ô này, chỉ có số lượng của chúng: có thể gửi báo cáo cho "
+"người khác mà không để lộ tailnet của bạn. Địa chỉ của kẻ tấn công luôn được"
+" giữ lại."
+
+msgid "APERÇU"
+msgstr "XEM TRƯỚC"
+
+msgid "Actualiser"
+msgstr "Làm mới"
+
+msgid ""
+"Rapport en préparation (journal de la porte des 7 derniers jours compris)…"
+msgstr ""
+"Đang chuẩn bị báo cáo (gồm cả nhật ký cổng gác trong 7 ngày gần nhất)…"
+
+#, python-brace-format
+msgid "Erreur : {message}"
+msgstr "Lỗi: {message}"
+
+#, python-brace-format
+msgid "Rapport prêt ({time})."
+msgstr "Báo cáo đã sẵn sàng ({time})."
+
+msgid "ARRÊTER TAILSCALED ?"
+msgstr "DỪNG TAILSCALED?"
+
+msgid "DÉMARRER TAILSCALED ?"
+msgstr "KHỞI ĐỘNG TAILSCALED?"
+
+msgid "REDÉMARRER TAILSCALED ?"
+msgstr "KHỞI ĐỘNG LẠI TAILSCALED?"
+
+msgid ""
+"Tailscale se reconnecte au tailnet ; les publications (Serve, Funnel) "
+"reprennent."
+msgstr ""
+"Tailscale kết nối lại với tailnet; các cấu hình công bố (Serve, Funnel) hoạt"
+" động trở lại."
+
+msgid ""
+"Tailscale est coupé : plus d'accès par le tailnet, publications (Serve, "
+"Funnel) interrompues jusqu'au prochain démarrage."
+msgstr ""
+"Tailscale bị ngắt: không còn truy cập qua tailnet, các cấu hình công bố "
+"(Serve, Funnel) bị gián đoạn cho đến lần khởi động tới."
+
+msgid ""
+"Coupure de quelques secondes : le tailnet et les publications (Serve, "
+"Funnel) reviennent d'eux-mêmes. Applique une mise à jour déjà installée."
+msgstr ""
+"Gián đoạn vài giây: tailnet và các cấu hình công bố (Serve, Funnel) tự trở "
+"lại. Áp dụng một bản cập nhật đã cài."
+
+msgid "systemd ne connaît pas le service tailscaled sur cette machine."
+msgstr "systemd không biết dịch vụ tailscaled trên máy này."
+
+#, python-brace-format
+msgid "Depuis : {since}"
+msgstr "Từ: {since}"
+
+#, python-brace-format
+msgid "Processus : {pid} · mémoire {memory}"
+msgstr "Tiến trình: {pid} · bộ nhớ {memory}"
+
+#, python-brace-format
+msgid "Version en marche : {version}"
+msgstr "Phiên bản đang chạy: {version}"
+
+msgid ""
+"→ La mise à jour est installée mais pas appliquée : « Redémarrer » "
+"l'applique."
+msgstr ""
+"→ Bản cập nhật đã được cài nhưng chưa áp dụng: « Khởi động lại » sẽ áp dụng "
+"nó."
+
+#, python-brace-format
+msgid "Système d'init : {init} · service « {name} »"
+msgstr "Hệ thống init: {init} · dịch vụ « {name} »"
+
+#, python-brace-format
+msgid "Lancement : {command}"
+msgstr "Khởi chạy: {command}"
+
+#, python-brace-format
+msgid "Fichier du service : {path}"
+msgstr "Tệp dịch vụ: {path}"
+
+msgid "Fichiers d'ajout (lus, jamais modifiés par omega-tail) :"
+msgstr "Tệp bổ sung (được đọc, không bao giờ bị omega-tail sửa):"
+
+msgid "Fichiers d'ajout : aucun."
+msgstr "Tệp bổ sung: không có."
+
+msgid ""
+"⚠ Le démarrage lance « tailscale up » : si un réglage change (opérateur, "
+"nom, routes…), Tailscale le refusera et tailscaled ne redémarrera plus. « "
+"Corriger le démarrage » ajoute « - » devant la commande (son refus n'arrête "
+"plus le service)."
+msgstr ""
+"⚠ Khi khởi động sẽ chạy « tailscale up »: nếu một thiết lập thay đổi (người "
+"vận hành, tên, tuyến…), Tailscale sẽ từ chối và tailscaled sẽ không khởi "
+"động lại được nữa. « Sửa khởi động » thêm « - » trước lệnh (việc nó bị từ "
+"chối không còn làm dừng dịch vụ)."
+
+#, python-brace-format
+msgid "Confinement : {state}"
+msgstr "Giới hạn tài nguyên: {state}"
+
+#, python-brace-format
+msgid ""
+"  plafond CPU {quota} · poids {weight} · cœurs {cpus} · priorité {nice}"
+msgstr "  trần CPU {quota} · trọng số {weight} · lõi {cpus} · ưu tiên {nice}"
+
+msgid "tous"
+msgstr "tất cả"
+
+msgid ""
+"  ⚠ Confinement perdu au redémarrage de tailscaled : « Survie » → « "
+"Appliquer le confinement »."
+msgstr ""
+"  ⚠ Mất giới hạn tài nguyên khi tailscaled khởi động lại: « Sinh tồn » → « "
+"Áp dụng giới hạn tài nguyên »."
+
+msgid "  Le confinement se règle dans « Survie »."
+msgstr "  Giới hạn tài nguyên được chỉnh trong « Sinh tồn »."
+
+msgid "⚠ Cette session passe par Tailscale : arrêter tailscaled la couperait."
+msgstr "⚠ Phiên này đi qua Tailscale: dừng tailscaled sẽ ngắt nó."
+
+msgid "SERVICE TAILSCALED"
+msgstr "DỊCH VỤ TAILSCALED"
+
+msgid ""
+"Chaque action montre sa commande avant d'être lancée ; le mot de passe sudo "
+"se saisit dans le terminal."
+msgstr ""
+"Mỗi thao tác hiển thị lệnh của nó trước khi chạy; mật khẩu sudo được nhập "
+"trong terminal."
+
+msgid "Démarrer"
+msgstr "Khởi động"
+
+msgid "Corriger le démarrage"
+msgstr "Sửa khởi động"
+
+msgid "VOUS ALLEZ PERDRE CETTE SESSION"
+msgstr "BẠN SẮP MẤT PHIÊN NÀY"
+
+msgid ""
+"Dernière confirmation : tailscaled sera arrêté et cette session coupée. Vous"
+" devrez le relancer depuis le réseau local ou la machine elle-même."
+msgstr ""
+"Xác nhận cuối cùng: tailscaled sẽ bị dừng và phiên này bị ngắt. Bạn sẽ phải "
+"khởi động lại nó từ mạng cục bộ hoặc từ chính máy đó."
+
+msgid "Arrêter quand même"
+msgstr "Vẫn dừng"
+
+msgid "Enregistrés dans var/settings.json, appliqués tout de suite."
+msgstr "Được lưu trong var/settings.json, áp dụng ngay."
+
+msgid "Thème de l'interface"
+msgstr "Giao diện của ứng dụng"
+
+msgid "Thème des exports (rapport HTML, aide exportée)"
+msgstr "Giao diện của bản xuất (báo cáo HTML, trợ giúp đã xuất)"
+
+msgid "Dossier des exports"
+msgstr "Thư mục xuất"
+
+#, python-brace-format
+msgid "Par défaut : {path}. Laissez vide pour revenir au dossier par défaut."
+msgstr "Mặc định: {path}. Để trống để trở về thư mục mặc định."
+
+msgid "Dossier des captures d'écran"
+msgstr "Thư mục ảnh chụp màn hình"
+
+#, python-brace-format
+msgid "Par défaut : {path}. Capture : Ctrl+P → « Capture d'écran »."
+msgstr "Mặc định: {path}. Chụp màn hình: Ctrl+P → “Chụp màn hình”."
+
+msgid "Enregistrer les dossiers"
+msgstr "Lưu các thư mục"
+
+msgid "Maintenance des dossiers"
+msgstr "Bảo trì thư mục"
+
+msgid ""
+"Supprime définitivement le contenu du dossier configuré ; le dossier reste."
+msgstr "Xóa vĩnh viễn nội dung của thư mục đã cấu hình; thư mục vẫn còn."
+
+msgid "Vider le dossier des exports"
+msgstr "Làm trống thư mục xuất"
+
+msgid "Vider le dossier des captures"
+msgstr "Làm trống thư mục ảnh chụp"
+
+msgid "des exports"
+msgstr "xuất"
+
+msgid "des captures"
+msgstr "ảnh chụp"
+
+#, python-brace-format
+msgid "Chemin à donner en entier (commençant par / ou ~) : {path}"
+msgstr "Phải nhập đường dẫn đầy đủ (bắt đầu bằng / hoặc ~): {path}"
+
+#, python-brace-format
+msgid "Dossiers enregistrés : {paths}"
+msgstr "Đã lưu các thư mục: {paths}"
+
+#, python-brace-format
+msgid "VIDER LE DOSSIER {label} ?"
+msgstr "LÀM TRỐNG THƯ MỤC {label}?"
+
+#, python-brace-format
+msgid ""
+"Supprime définitivement tout le contenu de {directory}. Le dossier reste."
+msgstr "Xóa vĩnh viễn toàn bộ nội dung của {directory}. Thư mục vẫn còn."
+
+#, python-brace-format
+msgid "Refusé — {path} : {reason}"
+msgstr "Bị từ chối — {path}: {reason}"
+
+#, python-brace-format
+msgid "{count} élément(s) supprimé(s) dans {path}."
+msgstr "Đã xóa {count} mục trong {path}."
+
+#, python-brace-format
+msgid "Non supprimés : {items}"
+msgstr "Không xóa được: {items}"
+
+msgid "Pairs connus"
+msgstr "Máy ngang hàng đã biết"
+
+msgid "Poignées de main"
+msgstr "Bắt tay"
+
+msgid "Poignées de main en excès (par source)"
+msgstr "Bắt tay vượt mức (mỗi nguồn)"
+
+msgid "Sources inconnues, paquets bien formés"
+msgstr "Nguồn lạ, gói đúng định dạng"
+
+msgid "Sources inconnues en excès (par source)"
+msgstr "Nguồn lạ vượt mức (mỗi nguồn)"
+
+msgid "Excès de l'ensemble des sources inconnues"
+msgstr "Tổng vượt mức của các nguồn lạ"
+
+msgid "Paquets qui ne sont pas du WireGuard"
+msgstr "Gói không phải WireGuard"
+
+msgid "Poser (observation)"
+msgstr "Đặt (quan sát)"
+
+msgid "Passer en actif"
+msgstr "Chuyển sang hoạt động"
+
+msgid "Reposer"
+msgstr "Đặt lại"
+
+msgid "Confier à omega-fire"
+msgstr "Giao lại cho omega-fire"
+
+msgid "Reprendre la gestion"
+msgstr "Lấy lại quyền quản lý"
+
+msgid "POSER LE BOUCLIER DU PORT WIREGUARD ?"
+msgstr "ĐẶT LÁ CHẮN CỔNG WIREGUARD?"
+
+msgid "CHANGER LE MODE DU BOUCLIER ?"
+msgstr "ĐỔI CHẾ ĐỘ CỦA LÁ CHẮN?"
+
+msgid "REPOSER LE BOUCLIER ?"
+msgstr "ĐẶT LẠI LÁ CHẮN?"
+
+msgid "CONFIER LE BOUCLIER À OMEGA-FIRE ?"
+msgstr "GIAO LÁ CHẮN CHO OMEGA-FIRE?"
+
+msgid "REPRENDRE LA GESTION DU BOUCLIER ?"
+msgstr "LẤY LẠI QUYỀN QUẢN LÝ LÁ CHẮN?"
+
+msgid "RETIRER LE BOUCLIER ?"
+msgstr "GỠ LÁ CHẮN?"
+
+msgid ""
+"Une table nftables devant tailscaled, en OBSERVATION : rien n'est refusé, "
+"les compteurs disent ce qui l'aurait été. Un service la remet en place à "
+"chaque démarrage."
+msgstr ""
+"Một bảng nftables đặt trước tailscaled, ở chế độ QUAN SÁT: không từ chối gì,"
+" các bộ đếm cho biết những gì lẽ ra đã bị từ chối. Một dịch vụ đặt lại nó ở "
+"mỗi lần khởi động."
+
+msgid ""
+"La table enregistrée est remise ; ses compteurs et la liste des pairs "
+"repartent de zéro."
+msgstr ""
+"Bảng đã lưu được đặt lại; các bộ đếm và danh sách máy ngang hàng bắt đầu lại"
+" từ số không."
+
+msgid ""
+"omega-fire gérera le bouclier (remise au démarrage, commandes, liste des "
+"règles). La table, ses compteurs et les pairs connus ne sont pas touchés."
+msgstr ""
+"omega-fire sẽ quản lý lá chắn (đặt lại khi khởi động, lệnh, danh sách quy "
+"tắc). Bảng, các bộ đếm và các máy ngang hàng đã biết không bị động chạm."
+
+msgid ""
+"omega-fire n'est plus relié : omega-tail gère de nouveau le bouclier. La "
+"table n'est pas touchée."
+msgstr ""
+"omega-fire không còn được liên kết: omega-tail quản lý lại lá chắn. Bảng "
+"không bị động chạm."
+
+msgid ""
+"La table, ses fichiers et son service sont supprimés : tailscaled ne sera "
+"plus protégé contre les flots de paquets."
+msgstr ""
+"Bảng, các tệp và dịch vụ của nó bị xóa: tailscaled sẽ không còn được bảo vệ "
+"trước các đợt lũ gói tin."
+
+msgid ""
+"tailscaled tire son port au hasard (--port 0) : aucun bouclier possible. "
+"Fixez un port (PORT= dans /etc/default/tailscaled), puis redémarrez "
+"tailscaled."
+msgstr ""
+"tailscaled chọn cổng ngẫu nhiên (--port 0): không thể đặt lá chắn. Hãy cố "
+"định một cổng (PORT= trong /etc/default/tailscaled), rồi khởi động lại "
+"tailscaled."
+
+msgid "Aucune carte réseau matérielle trouvée : rien à protéger."
+msgstr "Không tìm thấy card mạng vật lý nào: không có gì để bảo vệ."
+
+msgid "Port ou nom de carte réseau refusé."
+msgstr "Cổng hoặc tên card mạng bị từ chối."
+
+msgid "Aucun bouclier enregistré sur cette machine."
+msgstr "Không có lá chắn nào được lưu trên máy này."
+
+msgid ""
+"Le noyau a été mis à jour sans redémarrage : ses modules ne peuvent plus "
+"être chargés et la table serait refusée. Redémarrez la machine, puis "
+"recommencez."
+msgstr ""
+"Nhân đã được cập nhật mà chưa khởi động lại: các module của nó không thể nạp"
+" được nữa và bảng sẽ bị từ chối. Hãy khởi động lại máy, rồi thử lại."
+
+#, python-brace-format
+msgid ""
+"Origine : {tool} (outil qui l'a demandé) · port {port}/udp · cartes réseau :"
+" {devices}"
+msgstr ""
+"Nguồn gốc: {tool} (công cụ đã yêu cầu) · cổng {port}/udp · card mạng: "
+"{devices}"
+
+#, python-brace-format
+msgid "Pairs connus : {count} (jamais limités)."
+msgstr "Máy ngang hàng đã biết: {count} (không bao giờ bị giới hạn)."
+
+#, python-brace-format
+msgid "Détecté : port de tailscaled {port}, cartes réseau {devices}."
+msgstr "Đã phát hiện: cổng của tailscaled {port}, card mạng {devices}."
+
+msgid "au hasard"
+msgstr "ngẫu nhiên"
+
+msgid ""
+"Noyau antérieur à 5.16 : sans liste des pairs, seuls le tri des paquets et "
+"la limite des poignées de main sont posés."
+msgstr ""
+"Nhân cũ hơn 5.16: không có danh sách máy ngang hàng, chỉ đặt việc phân loại "
+"gói và giới hạn bắt tay."
+
+#, python-brace-format
+msgid ""
+"omega-fire {version} relié : il pose et gère le bouclier ; sa liste des "
+"règles l'affiche avec l'origine omega-tail."
+msgstr ""
+"omega-fire {version} đã liên kết: nó đặt và quản lý lá chắn; danh sách quy "
+"tắc của nó hiển thị lá chắn với nguồn gốc omega-tail."
+
+#, python-brace-format
+msgid ""
+"omega-fire {version} relié, mais trop ancien pour le bouclier (il faut "
+"{needed} ou plus récent) : omega-tail le gère lui-même. Mettez omega-fire à "
+"jour."
+msgstr ""
+"omega-fire {version} đã liên kết, nhưng quá cũ cho lá chắn (cần {needed} trở"
+" lên): omega-tail tự quản lý nó. Hãy cập nhật omega-fire."
+
+msgid ""
+"omega-fire n'est pas relié par omega-connect : omega-tail pose et gère le "
+"bouclier lui-même, même si ufw ou firewalld sont présents."
+msgstr ""
+"omega-fire chưa được omega-connect liên kết: omega-tail tự đặt và quản lý lá"
+" chắn, kể cả khi có ufw hoặc firewalld."
+
+msgid ""
+"Géré par omega-fire, qui n'est plus relié : « Reprendre la gestion » le rend"
+" à omega-tail."
+msgstr ""
+"Do omega-fire quản lý, nhưng nó không còn được liên kết: « Lấy lại quyền "
+"quản lý » trả nó về cho omega-tail."
+
+msgid ""
+"Noyau mis à jour sans redémarrage : la table ne peut pas être posée avant un"
+" redémarrage."
+msgstr ""
+"Nhân đã được cập nhật mà chưa khởi động lại: không thể đặt bảng trước khi "
+"khởi động lại."
+
+msgid ""
+"Système d'init inconnu : le bouclier ne sera pas remis en place au "
+"redémarrage."
+msgstr ""
+"Không rõ hệ thống init: lá chắn sẽ không được đặt lại khi khởi động lại."
+
+msgid "BOUCLIER DU PORT WIREGUARD"
+msgstr "LÁ CHẮN CỔNG WIREGUARD"
+
+msgid ""
+"Devant tailscaled : poignées de main limitées par source, budget pour les "
+"sources qui ne sont pas des pairs connus, paquets qui ne sont pas du "
+"WireGuard refusés. Mesuré : un flot qui prenait un cœur entier à tailscaled "
+"n'en prend plus que 1 %. Commencez en observation."
+msgstr ""
+"Đặt trước tailscaled: bắt tay bị giới hạn theo nguồn, ngân sách cho các "
+"nguồn không phải máy ngang hàng đã biết, gói không phải WireGuard bị từ "
+"chối. Đã đo: một luồng từng chiếm trọn một lõi của tailscaled giờ chỉ còn "
+"chiếm 1 %. Hãy bắt đầu ở chế độ quan sát."
+
+msgid "COMPTEURS DEPUIS LA POSE"
+msgstr "BỘ ĐẾM TỪ KHI ĐẶT"
+
+msgid "Compteur"
+msgstr "Bộ đếm"
+
+msgid "Effet"
+msgstr "Tác dụng"
+
+msgid "Paquets"
+msgstr "Gói"
+
+msgid "admis"
+msgstr "được chấp nhận"
+
+msgid "auraient été refusés"
+msgstr "lẽ ra đã bị từ chối"
+
+msgid "refusés"
+msgstr "bị từ chối"
+
+msgid "Passer en observation"
+msgstr "Chuyển sang quan sát"
+
+#, python-brace-format
+msgid ""
+"En observation, {count} paquet(s) auraient été refusés : en actif, ils le "
+"seront. Les pairs connus ne sont jamais limités."
+msgstr ""
+"Ở chế độ quan sát, {count} gói lẽ ra đã bị từ chối: ở chế độ hoạt động, "
+"chúng sẽ bị từ chối. Các máy ngang hàng đã biết không bao giờ bị giới hạn."
+
+msgid ""
+"Plus rien n'est refusé ; les compteurs continuent de dire ce qui l'aurait "
+"été."
+msgstr ""
+"Không còn từ chối gì nữa; các bộ đếm vẫn tiếp tục cho biết những gì lẽ ra đã"
+" bị từ chối."
+
+#, python-brace-format
+msgid ""
+"Par omega-fire (il garde l'origine {tool} et l'inscrit à son journal "
+"d'audit)."
+msgstr ""
+"Bởi omega-fire (nó giữ nguồn gốc {tool} và ghi vào nhật ký kiểm toán của "
+"nó)."
+
+msgid "systemd ne connaît pas tailscaled : confinement impossible ici."
+msgstr "systemd không biết tailscaled: không thể giới hạn tài nguyên ở đây."
+
+msgid "perdu (tailscaled a redémarré) : « Appliquer le confinement » le remet"
+msgstr ""
+"đã mất (tailscaled đã khởi động lại): « Áp dụng giới hạn tài nguyên » sẽ đặt"
+" lại nó"
+
+msgid "actif (groupe de contrôle d'omega-tail)"
+msgstr "hoạt động (nhóm điều khiển của omega-tail)"
+
+#, python-brace-format
+msgid "Confinement actuel : {state}"
+msgstr "Giới hạn tài nguyên hiện tại: {state}"
+
+#, python-brace-format
+msgid "  plafond {quota} · poids {weight} · système d'init {init}"
+msgstr "  trần {quota} · trọng số {weight} · hệ thống init {init}"
+
+msgid "actif, posé par omega-tail"
+msgstr "hoạt động, do omega-tail đặt"
+
+msgid "posé par omega-tail, pas encore appliqué (rechargement ou redémarrage)"
+msgstr "do omega-tail đặt, chưa áp dụng (nạp lại hoặc khởi động lại)"
+
+msgid "actif, posé hors d'omega-tail"
+msgstr "hoạt động, được đặt ngoài omega-tail"
+
+#, python-brace-format
+msgid "  plafond {quota} · poids {weight} · priorité {nice}"
+msgstr "  trần {quota} · trọng số {weight} · ưu tiên {nice}"
+
+#, python-brace-format
+msgid "  Vos fichiers d'ajout (jamais modifiés) : {paths}"
+msgstr "  Các tệp bổ sung của bạn (không bao giờ bị sửa): {paths}"
+
+#, python-brace-format
+msgid ""
+"Funnel COUPÉ par omega-tail depuis {since} (coupure totale) : « Rétablir "
+"maintenant » le remet à l'identique."
+msgstr ""
+"Funnel BỊ omega-tail NGẮT từ {since} (ngắt hoàn toàn): « Khôi phục ngay » "
+"đặt lại nó y như cũ."
+
+#, python-brace-format
+msgid ""
+"Funnel COUPÉ par omega-tail depuis {since}, remis en route automatiquement à"
+" {until}."
+msgstr "Funnel BỊ omega-tail NGẮT từ {since}, tự động bật lại lúc {until}."
+
+#, python-brace-format
+msgid "Funnel ouvert : port {ports}."
+msgstr "Funnel đang mở: cổng {ports}."
+
+msgid "Funnel n'est pas ouvert : rien à couper."
+msgstr "Funnel không mở: không có gì để ngắt."
+
+msgid ""
+"Désactivée : sous attaque, omega-tail ouvert PROPOSE la coupure (il faut "
+"être devant la machine)."
+msgstr ""
+"Đã tắt: khi bị tấn công, omega-tail đang mở sẽ ĐỀ XUẤT ngắt (cần có người "
+"trước máy)."
+
+msgid ""
+"Activée mais arrêtée (aucun signe de vie) : « Activer la veille » la "
+"relance."
+msgstr ""
+"Đã bật nhưng đã dừng (không có tín hiệu sống): « Bật giám sát » sẽ khởi chạy"
+" lại nó."
+
+msgid ""
+"En marche, même omega-tail fermé : sous attaque, elle coupe Funnel seule et "
+"le remet seule."
+msgstr ""
+"Đang chạy, kể cả khi omega-tail đã đóng: khi bị tấn công, nó tự ngắt Funnel "
+"và tự bật lại."
+
+#, python-brace-format
+msgid ""
+"  Dépassements récents : {strikes}/{total} (fenêtre de {window} min) · "
+"prochaine coupure : {minutes} min"
+msgstr ""
+"  Vượt ngưỡng gần đây: {strikes}/{total} (cửa sổ {window} phút) · lần ngắt "
+"tới: {minutes} phút"
+
+msgid ""
+"Garder la machine debout sous attaque. Chaque action montre ses commandes "
+"avant ; le mot de passe sudo se saisit dans le terminal."
+msgstr ""
+"Giữ cho máy đứng vững khi bị tấn công. Mỗi thao tác hiển thị lệnh của nó "
+"trước; mật khẩu sudo được nhập trong terminal."
+
+msgid "CONFINEMENT DE TAILSCALED"
+msgstr "GIỚI HẠN TÀI NGUYÊN CỦA TAILSCALED"
+
+#, python-brace-format
+msgid "Proposé pour cette machine ({count} fils), dans {path} :"
+msgstr "Đề xuất cho máy này ({count} luồng), trong {path}:"
+
+#, python-brace-format
+msgid ""
+"Proposé pour cette machine ({count} fils), dans un groupe de contrôle à part"
+" :"
+msgstr "Đề xuất cho máy này ({count} luồng), trong một nhóm điều khiển riêng:"
+
+#, python-brace-format
+msgid "Donner la priorité à l'accès SSH ({unit})"
+msgstr "Ưu tiên truy cập SSH ({unit})"
+
+msgid ""
+"Redémarrer tailscaled tout de suite (la priorité ne s'applique qu'au "
+"redémarrage ; coupure de quelques secondes)"
+msgstr ""
+"Khởi động lại tailscaled ngay (mức ưu tiên chỉ áp dụng khi khởi động lại; "
+"gián đoạn vài giây)"
+
+msgid "Appliquer le confinement"
+msgstr "Áp dụng giới hạn tài nguyên"
+
+msgid "Retirer le confinement"
+msgstr "Gỡ giới hạn tài nguyên"
+
+msgid "VEILLE AUTOMATIQUE"
+msgstr "GIÁM SÁT TỰ ĐỘNG"
+
+#, python-brace-format
+msgid ""
+"Pour une machine sans personne devant. Un dépassement : un seuil du "
+"disjoncteur tenu (plus bas). {strikes} dépassements dans la fenêtre : Funnel"
+" coupé {first} min, puis {second} min la fois suivante, puis {last} min à "
+"chaque fois ; toujours remis en route seul, à l'identique. Retour à {first} "
+"min après {hours} h sans coupure. Seul Funnel est coupé : tailscaled, le "
+"tailnet et SSH restent joignables."
+msgstr ""
+"Cho máy không có ai ngồi trước. Một lần vượt ngưỡng: một ngưỡng của cầu dao "
+"bị vượt liên tục (bên dưới). {strikes} lần vượt ngưỡng trong cửa sổ: Funnel "
+"bị ngắt {first} phút, rồi {second} phút lần sau, rồi {last} phút mỗi lần; "
+"luôn tự bật lại, y như cũ. Trở về {first} phút sau {hours} giờ không ngắt. "
+"Chỉ Funnel bị ngắt: tailscaled, tailnet và SSH vẫn truy cập được."
+
+msgid "Fenêtre (min)"
+msgstr "Cửa sổ (phút)"
+
+msgid "Enregistrer"
+msgstr "Lưu"
+
+msgid "Activer la veille"
+msgstr "Bật giám sát"
+
+msgid "Désactiver la veille"
+msgstr "Tắt giám sát"
+
+msgid ""
+"Protège tailscaled des flots de paquets envoyés sur son port (même sans "
+"Funnel)."
+msgstr ""
+"Bảo vệ tailscaled trước các đợt lũ gói tin gửi tới cổng của nó (kể cả khi "
+"không có Funnel)."
+
+msgid "Bouclier du port WireGuard"
+msgstr "Lá chắn cổng WireGuard"
+
+msgid "DISJONCTEUR FUNNEL"
+msgstr "CẦU DAO FUNNEL"
+
+msgid ""
+"Sans veille, il propose, il ne coupe jamais seul : quand un seuil est "
+"dépassé, omega-tail ouvert vous propose une coupure momentanée ou totale. "
+"Avec la veille automatique (ci-dessus), il agit seul."
+msgstr ""
+"Khi không có giám sát, nó chỉ đề xuất, không bao giờ tự ngắt: khi một ngưỡng"
+" bị vượt, omega-tail đang mở đề xuất với bạn ngắt tạm thời hoặc ngắt hoàn "
+"toàn. Với giám sát tự động (ở trên), nó tự hành động."
+
+msgid "CPU tailscaled ≥ (% d'un cœur)"
+msgstr "CPU tailscaled ≥ (% một lõi)"
+
+msgid "pendant (s)"
+msgstr "trong (s)"
+
+msgid "ou température ≥ (°C)"
+msgstr "hoặc nhiệt độ ≥ (°C)"
+
+msgid "coupure momentanée (min)"
+msgstr "ngắt tạm thời (phút)"
+
+msgid "Enregistrer les seuils"
+msgstr "Lưu ngưỡng"
+
+msgid "Rétablir maintenant"
+msgstr "Khôi phục ngay"
+
+msgid "Journal de la veille :"
+msgstr "Nhật ký giám sát:"
+
+msgid ""
+"Le disjoncteur demande d'être opérateur de Tailscale (tableau de bord, « "
+"Devenir opérateur ») : la remise en route programmée tourne sous votre "
+"compte, jamais en root."
+msgstr ""
+"Cầu dao yêu cầu bạn là người vận hành Tailscale (bảng điều khiển, « Trở "
+"thành người vận hành »): việc bật lại theo lịch chạy dưới tài khoản của bạn,"
+" không bao giờ dưới root."
+
+msgid "Tailscale absent"
+msgstr "Không có Tailscale"
+
+#, python-brace-format
+msgid "CPU machine {cpu:.0f} %"
+msgstr "CPU máy {cpu:.0f} %"
+
+#, python-brace-format
+msgid "CPU tailscaled {cpu:.0f} %"
+msgstr "CPU tailscaled {cpu:.0f} %"
+
+#, python-brace-format
+msgid "RAM {used:.0f} %"
+msgstr "RAM {used:.0f} %"
+
+msgid "Funnel coupé"
+msgstr "Funnel bị ngắt"
+
+msgid "Funnel fermé"
+msgstr "Funnel đóng"
+
+msgid "Pare-feu actif · attaque"
+msgstr "Tường lửa bật · tấn công"
+
+msgid "Pare-feu actif"
+msgstr "Tường lửa bật"
+
+msgid "Pare-feu arrêté"
+msgstr "Tường lửa dừng"
+
+msgid "Pare-feu inactif"
+msgstr "Tường lửa tắt"
+
+msgid "Veille active"
+msgstr "Giám sát bật"
+
+msgid "Veille arrêtée"
+msgstr "Giám sát dừng"
+
+msgid "Veille inactive"
+msgstr "Giám sát tắt"
+
+msgid "Tailscale injoignable"
+msgstr "Không tới được Tailscale"
+
+msgid "Lecture de l'état…"
+msgstr "Đang đọc trạng thái…"

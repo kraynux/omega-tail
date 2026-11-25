@@ -1,0 +1,4342 @@
+# Statut X-Omega-Status : validated (2026-11-25, choix de vocabulaire et de ton arbitrés par Claude à la demande de l'auteur).
+msgid ""
+msgstr ""
+"Project-Id-Version: omega-tail\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Omega-Status: validated\n"
+
+msgid ""
+"omega-tail : pas de terminal interactif ; utilisez « omega-tail etat »."
+msgstr "omega-tail：対話型ターミナルがありません。「omega-tail etat」を使ってください。"
+
+msgid "Nom de la machine inconnu : Tailscale est-il connecté ?"
+msgstr "マシン名が不明です。Tailscale は接続されていますか？"
+
+#, python-brace-format
+msgid "Certificat refusé ({error}). Êtes-vous opérateur de Tailscale ?"
+msgstr "証明書が拒否されました（{error}）。Tailscale のオペレーターですか？"
+
+#, python-brace-format
+msgid "Certificat renouvelé, mais la porte ne l'a pas repris ({error})."
+msgstr "証明書は更新されましたが、ゲートが読み込み直していません（{error}）。"
+
+#, python-brace-format
+msgid "Certificat de {name} à jour."
+msgstr "{name} の証明書は最新です。"
+
+#, python-brace-format
+msgid "Publication non prise en charge : {reason}."
+msgstr "この公開には対応していません：{reason}。"
+
+#, python-brace-format
+msgid "Publication illisible ({error})."
+msgstr "公開設定を読み取れません（{error}）。"
+
+msgid "HAProxy n'est pas installé : « Installer HAProxy » d'abord."
+msgstr "HAProxy がインストールされていません。先に「HAProxy をインストール」を実行してください。"
+
+#, python-brace-format
+msgid "Configuration de la porte refusée par HAProxy : {error}"
+msgstr "ゲートの設定が HAProxy に拒否されました：{error}"
+
+#, python-brace-format
+msgid "Renouvellement du certificat non programmé (crontab : {error})."
+msgstr "証明書の更新がスケジュールされていません（crontab：{error}）。"
+
+msgid "Porte prête : certificat, listes et configuration vérifiés."
+msgstr "ゲートの準備完了：証明書、リスト、設定を検証しました。"
+
+msgid "La porte protège déjà Funnel."
+msgstr "ゲートはすでに Funnel を保護しています。"
+
+#, python-brace-format
+msgid "La porte ne répond pas en local ({detail}) : rien n'a été basculé."
+msgstr "ゲートがローカルで応答しません（{detail}）。何も切り替えていません。"
+
+#, python-brace-format
+msgid "Bascule refusée ({error}) : publication d'origine remise."
+msgstr "切り替えが拒否されました（{error}）。元の公開設定に戻しました。"
+
+#, python-brace-format
+msgid "Funnel passe par la porte : essai public réussi ({detail})."
+msgstr "Funnel はゲートを経由しています。公開テスト成功（{detail}）。"
+
+#, python-brace-format
+msgid "Essai public échoué ({detail}) : publication d'origine remise."
+msgstr "公開テストに失敗しました（{detail}）。元の公開設定に戻しました。"
+
+msgid "La porte ne protège pas Funnel : rien à remettre."
+msgstr "ゲートは Funnel を保護していません。戻すものはありません。"
+
+#, python-brace-format
+msgid ""
+"Publication d'origine incomplète ({errors}) : sauvegarde gardée dans {path}."
+msgstr "元の公開設定の復元が不完全です（{errors}）。バックアップを {path} に保存しています。"
+
+msgid "Publication d'origine remise, à l'identique."
+msgstr "元の公開設定をそのまま復元しました。"
+
+msgid "Règles enregistrées ; elles s'appliqueront à l'activation."
+msgstr "ルールを保存しました。有効化時に適用されます。"
+
+#, python-brace-format
+msgid "Règles enregistrées, configuration non régénérée ({error})."
+msgstr "ルールを保存しましたが、設定は再生成されていません（{error}）。"
+
+#, python-brace-format
+msgid "Règles refusées par HAProxy ({error}) : ancienne configuration gardée."
+msgstr "ルールが HAProxy に拒否されました（{error}）。以前の設定を維持します。"
+
+#, python-brace-format
+msgid "Règles écrites, rechargement impossible ({error})."
+msgstr "ルールを書き込みましたが、再読み込みできません（{error}）。"
+
+#, python-brace-format
+msgid "Règles appliquées à chaud (mode {mode})."
+msgstr "ルールをホット適用しました（モード {mode}）。"
+
+msgid "Regroupements indisponibles."
+msgstr "グループ化は利用できません。"
+
+#, python-brace-format
+msgid ""
+"Apprentissage des empreintes en cours (encore {days} jour(s)) : les "
+"regroupements restent en observation jusqu'à la fin ; « appliqués » sera "
+"possible ensuite."
+msgstr "フィンガープリントの学習中です（残り {days} 日）。終了までグループ化は観察のままです。その後「適用」にできます。"
+
+msgid "appliqués"
+msgstr "適用"
+
+msgid "en observation"
+msgstr "観察中"
+
+#, python-brace-format
+msgid "Regroupements appliqués à chaud ({mode})."
+msgstr "グループ化をホット適用しました（{mode}）。"
+
+#, python-brace-format
+msgid ""
+"Apprentissage recommencé : regroupements repassés en observation pour les "
+"{days} jours d'apprentissage."
+msgstr "学習をやり直しました。学習期間の {days} 日間、グループ化は観察に戻ります。"
+
+msgid ""
+"Base AS / pays : trop longue (plus de 15 minutes), abandonnée ; l'ancienne "
+"reste en place."
+msgstr "AS / 国データベース：時間がかかりすぎたため（15 分超）中止しました。以前のものはそのまま残ります。"
+
+#, python-brace-format
+msgid "{text}"
+msgstr "{text}"
+
+#, python-brace-format
+msgid ""
+"Liste noire pleine ({max} entrées) : purgez ou exportez-la dans « Gestion de"
+" la liste noire » avant d'en ajouter."
+msgstr "ブラックリストが満杯です（{max} 件）。追加する前に「ブラックリストの管理」でパージまたはエクスポートしてください。"
+
+#, python-brace-format
+msgid "Adresse ou réseau invalide : {text}"
+msgstr "無効なアドレスまたはネットワーク：{text}"
+
+#, python-brace-format
+msgid ""
+"{address} fait partie du tailnet : la porte admet toujours les machines "
+"Tailscale, elle ne peut pas être bloquée."
+msgstr "{address} は tailnet の一部です。ゲートは Tailscale のマシンを常に許可するため、ブロックできません。"
+
+#, python-brace-format
+msgid "{address} est déjà dans la liste noire (ou dans un de ses réseaux)."
+msgstr "{address} はすでにブラックリストにあります（またはそのネットワークのいずれかに含まれます）。"
+
+#, python-brace-format
+msgid "{address} → liste noire (refusée jusqu'au retrait)."
+msgstr "{address} → ブラックリスト（削除するまで拒否）。"
+
+#, python-brace-format
+msgid "{count} entrée(s) retirée(s) de la liste noire ; il en reste {left}."
+msgstr "ブラックリストから {count} 件を削除しました。残り {left} 件。"
+
+#, python-brace-format
+msgid ""
+"Import : {added} ajoutée(s), {duplicates} doublon(s), {tailnet} du tailnet "
+"écartée(s), {invalid} ligne(s) invalide(s)."
+msgstr ""
+"インポート：追加 {added} 件、重複 {duplicates} 件、tailnet のため除外 {tailnet} 件、無効な行 "
+"{invalid} 件。"
+
+#, python-brace-format
+msgid ""
+"Import : {added} ajoutée(s), {duplicates} doublon(s), {tailnet} du tailnet "
+"écartée(s), {invalid} ligne(s) invalide(s), {over} au-delà du plafond de "
+"{max}."
+msgstr ""
+"インポート：追加 {added} 件、重複 {duplicates} 件、tailnet のため除外 {tailnet} 件、無効な行 "
+"{invalid} 件、上限 {max} 件の超過分 {over} 件。"
+
+msgid "Aucune entrée ne correspond : rien n'a été retiré."
+msgstr "一致する項目がありません。何も削除していません。"
+
+#, python-brace-format
+msgid ""
+"Purge : {count} entrée(s) retirée(s) de la liste noire ; il en reste {left}."
+msgstr "パージ：ブラックリストから {count} 件を削除しました。残り {left} 件。"
+
+#, python-brace-format
+msgid "Adresse invalide : {text}"
+msgstr "無効なアドレス：{text}"
+
+#, python-brace-format
+msgid ""
+"{address} → liste noire (refusée jusqu'au retrait), retirée de la confiance."
+msgstr "{address} → ブラックリスト（削除するまで拒否）、信頼から削除しました。"
+
+#, python-brace-format
+msgid ""
+"{address} est en confiance (jamais limitée) : la confiance passe avant le "
+"blocage. Retirez-la de la confiance d'abord."
+msgstr "{address} は信頼（制限なし）に入っています。信頼はブロックより優先されます。先に信頼から削除してください。"
+
+#, python-brace-format
+msgid ""
+"Porte injoignable ({error}) : blocage temporaire impossible porte arrêtée."
+msgstr "ゲートに接続できません（{error}）。ゲートが停止しているため一時ブロックはできません。"
+
+#, python-brace-format
+msgid "{address} → bloquée {minutes} min (blocage temporaire)."
+msgstr "{address} → {minutes} 分間ブロック（一時ブロック）。"
+
+#, python-brace-format
+msgid ""
+"{address} → toujours refusée : elle fait partie d'un réseau en liste noire."
+msgstr "{address} → 引き続き拒否：ブラックリストのネットワークに含まれています。"
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles), retirée de la liste noire."
+msgstr "{address} → 許可（ルールの対象）、ブラックリストから削除しました。"
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles), blocage temporaire levé."
+msgstr "{address} → 許可（ルールの対象）、一時ブロックを解除しました。"
+
+#, python-brace-format
+msgid "{address} → confiance (jamais limitée), retirée de la liste noire."
+msgstr "{address} → 信頼（制限なし）、ブラックリストから削除しました。"
+
+#, python-brace-format
+msgid "{address} → confiance (jamais limitée)."
+msgstr "{address} → 信頼（制限なし）。"
+
+#, python-brace-format
+msgid "{address} → toujours admise : elle fait partie du tailnet."
+msgstr "{address} → 常に許可：tailnet の一部です。"
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles)."
+msgstr "{address} → 許可（ルールの対象）。"
+
+#, python-brace-format
+msgid "Apprentissage recommencé : {days} jours avant que la référence compte."
+msgstr "学習をやり直しました。基準が有効になるまで {days} 日です。"
+
+#, python-brace-format
+msgid "Base AS / pays non mise à jour ({error}) : l'ancienne reste en place."
+msgstr "AS / 国データベースは更新されませんでした（{error}）。以前のものはそのまま残ります。"
+
+#, python-brace-format
+msgid "Base AS / pays à jour ({countries} plages pays, {asns} plages AS)."
+msgstr "AS / 国データベースを更新しました（国の範囲 {countries} 件、AS の範囲 {asns} 件）。"
+
+msgid "habituelle"
+msgstr "通常"
+
+msgid "limité en attaque"
+msgstr "攻撃時に制限"
+
+msgid "Funnel est coupé par le disjoncteur : rétablissez-le d'abord (Survie)."
+msgstr "Funnel はブレーカーで遮断されています。先に復旧してください（サバイバル）。"
+
+#, python-brace-format
+msgid "Refusé par Tailscale ({error}) : rien n'a changé."
+msgstr "Tailscale に拒否されました（{error}）。何も変更していません。"
+
+#, python-brace-format
+msgid "Changement impossible ({error}) : publication d'avant remise."
+msgstr "変更できません（{error}）。以前の公開設定に戻しました。"
+
+#, python-brace-format
+msgid "Publication incomplète ({error}) : restaurez la sauvegarde {path}."
+msgstr "公開設定が不完全です（{error}）。バックアップ {path} を復元してください。"
+
+#, python-brace-format
+msgid "Ajout refusé : {reason}."
+msgstr "追加が拒否されました：{reason}。"
+
+#, python-brace-format
+msgid "Publié : {kind} {port}{path} → {target} ({who})."
+msgstr "公開しました：{kind} {port}{path} → {target}（{who}）。"
+
+msgid ""
+"Ce port passe par la porte : « Désactiver la protection » (Pare-feu Funnel) "
+"d'abord."
+msgstr "このポートはゲートを経由しています。先に「保護を無効化」（Funnel ファイアウォール）を実行してください。"
+
+msgid "Ce point n'est plus publié."
+msgstr "この項目はもう公開されていません。"
+
+#, python-brace-format
+msgid "Retiré : {kind} {port}{path}."
+msgstr "撤去しました：{kind} {port}{path}。"
+
+#, python-brace-format
+msgid "Sauvegarde illisible ({error})."
+msgstr "バックアップを読み取れません（{error}）。"
+
+msgid ""
+"La protection est active : « Désactiver la protection » (Pare-feu Funnel) "
+"d'abord, puis restaurez."
+msgstr "保護が有効です。先に「保護を無効化」（Funnel ファイアウォール）を実行してから復元してください。"
+
+msgid ""
+"Cette sauvegarde passe par la porte, arrêtée : « Activer la protection » "
+"(Pare-feu Funnel) la recrée proprement."
+msgstr "このバックアップは停止中のゲートを経由しています。「保護を有効化」（Funnel ファイアウォール）で正しく作り直されます。"
+
+#, python-brace-format
+msgid "Sauvegarde du {when} restaurée."
+msgstr "{when} のバックアップを復元しました。"
+
+msgid "essai public indisponible"
+msgstr "公開テストは利用できません"
+
+msgid "adresse du tailnet inconnue"
+msgstr "tailnet のアドレスが不明"
+
+msgid "Funnel encore autorisé sur les ports"
+msgstr "まだ Funnel が許可されているポート"
+
+msgid "Funnel est déjà coupé par omega-tail."
+msgstr "Funnel はすでに omega-tail によって遮断されています。"
+
+msgid "Rien à couper : aucun port n'est ouvert à Internet."
+msgstr "遮断するものはありません。インターネットに開いているポートはありません。"
+
+msgid "Remise en route programmée impossible ici."
+msgstr "ここでは再開をスケジュールできません。"
+
+#, python-brace-format
+msgid ""
+"Minuterie de remise en route refusée (code {code}) : rien n'a été coupé."
+msgstr "再開タイマーが拒否されました（コード {code}）。何も遮断していません。"
+
+#, python-brace-format
+msgid "Coupure impossible ({error}) : la publication a été remise."
+msgstr "遮断できません（{error}）。公開設定は元に戻しました。"
+
+#, python-brace-format
+msgid ""
+"Funnel coupé ({ports}) pour {minutes} min, puis remis en route "
+"automatiquement."
+msgstr "Funnel を {minutes} 分間遮断しました（{ports}）。その後自動で再開します。"
+
+#, python-brace-format
+msgid "Funnel coupé ({ports}) jusqu'à votre remise en route."
+msgstr "Funnel を遮断しました（{ports}）。再開するまで遮断されたままです。"
+
+msgid "Rien à rétablir : Funnel n'est pas coupé par omega-tail."
+msgstr "復旧するものはありません。Funnel は omega-tail によって遮断されていません。"
+
+msgid "Minuterie d'une ancienne coupure : rien à faire."
+msgstr "以前の遮断のタイマーです。何もする必要はありません。"
+
+#, python-brace-format
+msgid "Remise en route incomplète ({errors}) : sauvegarde gardée dans {path}."
+msgstr "再開が不完全です（{errors}）。バックアップを {path} に保存しています。"
+
+msgid "Funnel remis en route, à l'identique."
+msgstr "Funnel をそのまま再開しました。"
+
+msgid "Tailscale n'est pas installé sur cette machine."
+msgstr "このマシンには Tailscale がインストールされていません。"
+
+msgid "Le service tailscaled ne répond pas (arrêté ou en échec)."
+msgstr "tailscaled サービスが応答しません（停止または失敗）。"
+
+#, python-brace-format
+msgid ""
+"tailscaled n'a pas été redémarré après la mise à jour : {daemon} en marche, "
+"{client} installé."
+msgstr "更新後に tailscaled が再起動されていません：実行中 {daemon}、インストール済み {client}。"
+
+msgid "Tailscale attend la connexion d'un compte."
+msgstr "Tailscale はアカウントのログインを待っています。"
+
+msgid "Tailscale est déconnecté (« tailscale down »)."
+msgstr "Tailscale は切断されています（「tailscale down」）。"
+
+#, python-brace-format
+msgid "La clé de cette machine expire dans {days} jour(s)."
+msgstr "このマシンのキーはあと {days} 日で期限切れになります。"
+
+msgid ""
+"Site en panne : Funnel passe par la porte (pare-feu), mais la porte est "
+"arrêtée."
+msgstr "サイト停止中：Funnel はゲート（ファイアウォール）を経由していますが、ゲートが停止しています。"
+
+msgid ""
+"La porte est en MODE ATTAQUE : trop de connexions entrantes ; les "
+"regroupements (empreintes, AS, pays) s'appliquent jusqu'au retour au calme."
+msgstr "ゲートは攻撃モードです。受信接続が多すぎます。落ち着くまでグループ化（フィンガープリント、AS、国）が適用されます。"
+
+#, python-brace-format
+msgid ""
+"Funnel publié sans protection sur le port {port} : tailscaled fait le TLS de"
+" chaque connexion (une rafale peut saturer la machine)."
+msgstr ""
+"Funnel が保護なしでポート {port} に公開されています。tailscaled が接続ごとに TLS "
+"を処理します（集中的なアクセスでマシンが飽和するおそれがあります）。"
+
+#, python-brace-format
+msgid "Température élevée : {temperature:.0f} °C."
+msgstr "温度が高い：{temperature:.0f} °C。"
+
+#, python-brace-format
+msgid "tailscaled consomme {cpu:.0f} % d'un cœur."
+msgstr "tailscaled がコア 1 つの {cpu:.0f} % を使用しています。"
+
+msgid ""
+"La veille automatique est activée mais ne tourne plus : Funnel ne sera pas "
+"coupé seul sous attaque."
+msgstr "自動監視は有効ですが動作していません。攻撃を受けても Funnel は自動で遮断されません。"
+
+#, python-brace-format
+msgid ""
+"Liste noire de la porte : {count} entrées (plafond {max}). Exportez-la puis "
+"purgez les plus anciennes : « Attaques et décisions » → « Gestion de la "
+"liste noire »."
+msgstr ""
+"ゲートのブラックリスト：{count} 件（上限 "
+"{max}）。エクスポートしてから古いものをパージしてください：「攻撃と判断」→「ブラックリストの管理」。"
+
+msgid ""
+"Bouclier du port WireGuard ABSENT : un autre outil a effacé sa table (nft "
+"flush ruleset, pare-feu relancé…). Il n'est pas reposé seul : « Survie » → «"
+" Bouclier du port WireGuard » → « Reposer »."
+msgstr ""
+"WireGuard ポートのシールドがありません。別のツールがそのテーブルを消去しました（nft flush "
+"ruleset、ファイアウォールの再起動など）。自動では再設置されません：「サバイバル」→「WireGuard ポートのシールド」→「再設置」。"
+
+msgid ""
+"Bouclier du port WireGuard : état non mis à jour depuis plus de 3 minutes "
+"(service omega-bouclier-wg arrêté ?)."
+msgstr "WireGuard ポートのシールド：状態が 3 分以上更新されていません（omega-bouclier-wg サービスが停止？）。"
+
+msgid ""
+"Le démarrage de tailscaled lance « tailscale up » : si un réglage change "
+"(opérateur, nom, routes…), Tailscale le refusera et tailscaled ne "
+"redémarrera plus. « Service » → « Corriger le démarrage »."
+msgstr ""
+"tailscaled の起動時に「tailscale up」が実行されます。設定（オペレーター、名前、ルートなど）が変わると Tailscale "
+"が拒否し、tailscaled は起動しなくなります。「サービス」→「起動を修正」。"
+
+msgid ""
+"Confinement de tailscaled perdu (le service a redémarré) : « Survie » → « "
+"Appliquer le confinement »."
+msgstr "tailscaled の封じ込めが失われました（サービスが再起動しました）：「サバイバル」→「封じ込めを適用」。"
+
+msgid ""
+"tailscaled n'est pas confiné : sous attaque, il peut prendre tous les cœurs."
+msgstr "tailscaled は封じ込められていません。攻撃を受けるとすべてのコアを使い切るおそれがあります。"
+
+msgid ""
+"Vous n'êtes pas opérateur de Tailscale : chaque réglage demandera sudo."
+msgstr "Tailscale のオペレーターではありません。設定のたびに sudo が必要です。"
+
+msgid ""
+"Funnel coupé par omega-tail (coupure totale) : remise en route manuelle, "
+"dans « Survie »."
+msgstr "Funnel は omega-tail によって遮断されています（完全遮断）。「サバイバル」で手動で再開してください。"
+
+#, python-brace-format
+msgid ""
+"Funnel devait être remis en route à {time} et ne l'est pas : « Rétablir » "
+"dans « Survie »."
+msgstr "Funnel は {time} に再開されるはずでしたが、再開されていません。「サバイバル」で「復旧」してください。"
+
+#, python-brace-format
+msgid ""
+"Funnel coupé par omega-tail jusqu'à {time}, puis remis en route "
+"automatiquement."
+msgstr "Funnel は omega-tail によって {time} まで遮断され、その後自動で再開します。"
+
+#, python-brace-format
+msgid "Tailscale signale : {message}"
+msgstr "Tailscale からの通知：{message}"
+
+msgid "ajout manuel"
+msgstr "手動追加"
+
+msgid "import"
+msgstr "インポート"
+
+msgid "écran Attaques"
+msgstr "攻撃画面"
+
+msgid "avant les dates"
+msgstr "日付より前"
+
+#, python-brace-format
+msgid "Température de {temperature:.0f} °C (seuil {threshold:.0f} °C)."
+msgstr "温度 {temperature:.0f} °C（しきい値 {threshold:.0f} °C）。"
+
+#, python-brace-format
+msgid ""
+"tailscaled au-dessus de {threshold:.0f} % d'un cœur depuis {seconds} s "
+"(moyenne {average:.0f} %)."
+msgstr ""
+"tailscaled が {seconds} 秒間、コア 1 つの {threshold:.0f} % を超えています（平均 {average:.0f}"
+" %）。"
+
+msgid "cible non prise en charge"
+msgstr "対応していない転送先"
+
+msgid "nom de machine inattendu"
+msgstr "予期しないマシン名"
+
+msgid "aucun port n'est ouvert à Internet (Funnel)"
+msgstr "インターネットに開いているポートはありません（Funnel）"
+
+msgid "plusieurs ports Funnel : la porte n'en protège qu'un pour l'instant"
+msgstr "Funnel のポートが複数あります。現在ゲートが保護できるのは 1 つだけです"
+
+msgid "Funnel passe déjà par une porte (TCP + PROXY v2)"
+msgstr "Funnel はすでにゲートを経由しています（TCP + PROXY v2）"
+
+msgid "seule une publication HTTPS avec le chemin « / » est prise en charge"
+msgstr "パスが「/」の HTTPS 公開のみ対応しています"
+
+msgid "Chrome, Edge, Firefox récent"
+msgstr "Chrome、Edge、最近の Firefox"
+
+msgid "Firefox (ancien)"
+msgstr "Firefox（旧版）"
+
+msgid "empreinte"
+msgstr "フィンガープリント"
+
+msgid "hébergeur"
+msgstr "ホスティング事業者"
+
+msgid "pays"
+msgstr "国"
+
+msgid "Identité"
+msgstr "識別情報"
+
+msgid "Réseau"
+msgstr "ネットワーク"
+
+msgid "Sortie"
+msgstr "出口"
+
+msgid "Services Tailscale"
+msgstr "Tailscale サービス"
+
+msgid "Opérateur"
+msgstr "オペレーター"
+
+msgid "Nom de la machine"
+msgstr "マシン名"
+
+msgid ""
+"Nom dans le tailnet (vide : celui du système). Change aussi l'adresse "
+"*.ts.net : les liens publiés et le certificat suivent."
+msgstr "tailnet での名前（空欄：システムの名前）。*.ts.net のアドレスも変わり、公開中のリンクと証明書もそれに従います。"
+
+msgid "ex. serveur-maison"
+msgstr "例：home-server"
+
+msgid "Surnom du compte"
+msgstr "アカウントの別名"
+
+msgid ""
+"Surnom du compte en cours, pour le reconnaître dans « Changer de compte »."
+msgstr "現在のアカウントの別名です。「アカウントを切り替え」で見分けるために使います。"
+
+msgid "ex. maison"
+msgstr "例：home"
+
+msgid "Accepter les routes"
+msgstr "ルートを受け入れる"
+
+msgid ""
+"Utiliser les sous-réseaux annoncés par les autres machines. À éviter sur une"
+" machine du même réseau local que le routeur qui l'annonce."
+msgstr "ほかのマシンがアドバタイズするサブネットを使います。アドバタイズするルーターと同じローカルネットワーク上のマシンでは避けてください。"
+
+msgid "Accepter le DNS du tailnet"
+msgstr "tailnet の DNS を受け入れる"
+
+msgid "MagicDNS : les noms des machines du tailnet se résolvent ici."
+msgstr "MagicDNS：tailnet のマシン名をここで解決できます。"
+
+msgid "Bouclier (refuser les connexions entrantes)"
+msgstr "シールド（受信接続を拒否）"
+
+msgid ""
+"Aucune machine du tailnet ne peut se connecter à celle-ci (SSH et Serve "
+"compris). Funnel n'est pas concerné."
+msgstr "tailnet のどのマシンもこのマシンに接続できなくなります（SSH と Serve を含む）。Funnel は対象外です。"
+
+msgid "Filtrage avec état"
+msgstr "ステートフルフィルタリング"
+
+msgid ""
+"Pour un routeur de sous-réseau ou un nœud de sortie : ne laisse revenir que "
+"les réponses."
+msgstr "サブネットルーターまたは出口ノード用：応答だけを通します。"
+
+msgid "Mode netfilter"
+msgstr "netfilter モード"
+
+msgid ""
+"on : Tailscale gère ses règles de pare-feu ; nodivert : ses chaînes sans les"
+" brancher ; off : aucune règle (à vos risques)."
+msgstr "on：Tailscale がファイアウォールのルールを管理、nodivert：チェーンを作るが接続しない、off：ルールなし（自己責任）。"
+
+msgid "Nœud de sortie utilisé"
+msgstr "使用する出口ノード"
+
+msgid ""
+"Faire passer le trafic Internet de cette machine par une autre machine du "
+"tailnet (vide : aucun)."
+msgstr "このマシンのインターネット通信を tailnet の別のマシン経由にします（空欄：なし）。"
+
+msgid "Garder l'accès au réseau local"
+msgstr "ローカルネットワークへのアクセスを維持"
+
+msgid "Avec un nœud de sortie : le réseau local reste joignable directement."
+msgstr "出口ノードの使用中も、ローカルネットワークに直接到達できます。"
+
+msgid "Proposer cette machine comme nœud de sortie"
+msgstr "このマシンを出口ノードとして提供"
+
+msgid ""
+"Les autres machines pourront sortir sur Internet par celle-ci (à approuver "
+"dans la console d'administration)."
+msgstr "ほかのマシンがこのマシン経由でインターネットに出られるようになります（管理コンソールで承認が必要）。"
+
+msgid "Sous-réseaux annoncés"
+msgstr "アドバタイズするサブネット"
+
+msgid ""
+"Réseaux locaux rendus joignables au tailnet, séparés par des virgules "
+"(192.168.1.0/24) ; vide : aucun."
+msgstr "tailnet から到達可能にするローカルネットワーク。カンマ区切り（192.168.1.0/24）、空欄：なし。"
+
+msgid "ex. 192.168.1.0/24, 10.0.0.0/8"
+msgstr "例：192.168.1.0/24, 10.0.0.0/8"
+
+msgid "SSH Tailscale"
+msgstr "Tailscale SSH"
+
+msgid ""
+"Serveur SSH de Tailscale, selon les règles du tailnet. Votre SSH habituel "
+"n'est pas touché."
+msgstr "tailnet のルールに従う Tailscale の SSH サーバーです。普段の SSH には影響しません。"
+
+msgid "Interface web (port 5252)"
+msgstr "Web インターフェース（ポート 5252）"
+
+msgid "Page de gestion de cette machine, joignable par le tailnet seulement."
+msgstr "このマシンの管理ページです。tailnet からのみアクセスできます。"
+
+msgid "Mises à jour automatiques"
+msgstr "自動更新"
+
+msgid ""
+"Tailscale se met à jour seul quand sa distribution le permet. Sinon : "
+"gestionnaire de paquets."
+msgstr "ディストリビューションが対応していれば Tailscale は自動で更新されます。そうでなければパッケージマネージャーを使います。"
+
+msgid "Signaler les mises à jour"
+msgstr "更新を通知"
+
+msgid "Tailscale prévient quand une version plus récente existe."
+msgstr "新しいバージョンがあると Tailscale が知らせます。"
+
+msgid "Port du relais pair (UDP)"
+msgstr "ピアリレーのポート（UDP）"
+
+msgid ""
+"Cette machine relaie les connexions d'autres machines du tailnet sur ce port"
+" UDP ; vide : non."
+msgstr "このマシンがこの UDP ポートで tailnet のほかのマシンの接続を中継します。空欄：なし。"
+
+msgid "ex. 40000"
+msgstr "例：40000"
+
+msgid ""
+"Nom du compte Linux qui pilote Tailscale sans sudo (« Mon compte » le "
+"remplit) ; vide : root seul. Changer l'opérateur demande sudo une fois."
+msgstr ""
+"sudo なしで Tailscale を操作する Linux アカウント名（「自分のアカウント」で入力されます）。空欄：root "
+"のみ。オペレーターの変更には一度 sudo が必要です。"
+
+msgid "ex. votre compte Linux"
+msgstr "例：あなたの Linux アカウント"
+
+msgid "réglage inconnu"
+msgstr "不明な設定"
+
+msgid "caractère de contrôle"
+msgstr "制御文字"
+
+msgid "valeur hors liste"
+msgstr "一覧にない値"
+
+msgid "lettres, chiffres et tirets seulement (63 au plus)"
+msgstr "英字、数字、ハイフンのみ（63 文字以内）"
+
+msgid "64 caractères au plus"
+msgstr "64 文字以内"
+
+msgid "nom de compte Unix attendu"
+msgstr "Unix アカウント名が必要です"
+
+msgid "adresse ou nom de machine attendu"
+msgstr "アドレスまたはマシン名が必要です"
+
+msgid "port de 0 à 65535"
+msgstr "ポートは 0〜65535"
+
+#, python-brace-format
+msgid "réseau invalide : {value}"
+msgstr "無効なネットワーク：{value}"
+
+msgid "port de 1 à 65535 attendu"
+msgstr "ポートは 1〜65535 が必要です"
+
+msgid "cible locale attendue : un port, ou http://127.0.0.1:PORT"
+msgstr "ローカルの転送先が必要です：ポート、または http://127.0.0.1:PORT"
+
+msgid "cible locale attendue : un port, ou tcp://127.0.0.1:PORT"
+msgstr "ローカルの転送先が必要です：ポート、または tcp://127.0.0.1:PORT"
+
+msgid "mode inconnu"
+msgstr "不明なモード"
+
+msgid "Funnel n'ouvre que les ports 443, 8443 et 10000"
+msgstr "Funnel が開けるのはポート 443、8443、10000 のみです"
+
+msgid "chemin attendu : /, /site, /api/v1…"
+msgstr "パスが必要です：/、/site、/api/v1…"
+
+msgid "ce port est déjà publié pour un autre public (tailnet / Internet)"
+msgstr "このポートはすでに別の公開先（tailnet / インターネット）に公開されています"
+
+msgid "ce port est déjà publié"
+msgstr "このポートはすでに公開されています"
+
+msgid "ce port est déjà publié dans un autre mode"
+msgstr "このポートはすでに別のモードで公開されています"
+
+msgid "ce chemin est déjà publié sur ce port"
+msgstr "このパスはすでにこのポートで公開されています"
+
+msgid "pare-feu"
+msgstr "ファイアウォール"
+
+msgid "publication"
+msgstr "公開"
+
+msgid "veille automatique"
+msgstr "自動監視"
+
+msgid "disjoncteur"
+msgstr "ブレーカー"
+
+msgid ""
+"Cette session passe par Tailscale : arrêter tailscaled la coupera, et vous "
+"ne pourrez pas le relancer d'ici. Accès de secours : le réseau local ou la "
+"machine elle-même."
+msgstr ""
+"このセッションは Tailscale を経由しています。tailscaled "
+"を停止すると切断され、ここから再起動することはできません。緊急用のアクセス：ローカルネットワークまたはマシン本体。"
+
+msgid ""
+"Cette session passe par Tailscale : pendant le redémarrage elle se figera "
+"quelques secondes, puis reviendra en général d'elle-même."
+msgstr "このセッションは Tailscale を経由しています。再起動中は数秒間固まりますが、通常は自動で戻ります。"
+
+msgid "réponse DNS invalide"
+msgstr "無効な DNS 応答"
+
+msgid "aucune adresse publique pour ce nom"
+msgstr "この名前にはパブリックアドレスがありません"
+
+msgid "HAProxy absent"
+msgstr "HAProxy がありません"
+
+msgid "crontab absent (installez cronie ou un autre cron)"
+msgstr "crontab がありません（cronie などの cron をインストールしてください）"
+
+msgid "fichier trop gros"
+msgstr "ファイルが大きすぎます"
+
+msgid "téléchargement impossible"
+msgstr "ダウンロードできません"
+
+msgid "base incomplète (trop peu de plages) : ancienne base gardée"
+msgstr "データベースが不完全です（範囲が少なすぎます）。以前のものを維持します"
+
+msgid "contient l'installation d'omega-tail"
+msgstr "omega-tail のインストール先を含んでいます"
+
+msgid "lecture refusée"
+msgstr "読み取りが拒否されました"
+
+msgid "aucun journal trouvé"
+msgstr "ログが見つかりません"
+
+msgid ""
+"Votre compte ne peut pas lire le journal du système. Ajoutez-le au groupe « "
+"systemd-journal » (ou « adm » / « wheel » selon la distribution), puis "
+"rouvrez votre session."
+msgstr ""
+"あなたのアカウントはシステムのログを読めません。「systemd-"
+"journal」グループ（ディストリビューションによっては「adm」/「wheel」）に追加し、セッションを開き直してください。"
+
+msgid ""
+"Ce journal est réservé à root sur cette machine : ajoutez votre compte au "
+"groupe qui peut le lire (souvent « adm » ou « wheel »), ou lisez-le avec "
+"sudo."
+msgstr ""
+"このマシンではこのログは root 専用です。読み取れるグループ（多くは「adm」または「wheel」）にアカウントを追加するか、sudo "
+"で読んでください。"
+
+msgid "journal vide ou illisible pour ce compte"
+msgstr "ログが空か、このアカウントでは読めません"
+
+msgid "DNS public"
+msgstr "パブリック DNS"
+
+msgid "réponse vide"
+msgstr "空の応答"
+
+msgid "Pilotage de Tailscale et protection de Funnel."
+msgstr "Tailscale の操作と Funnel の保護。"
+
+msgid "état de Tailscale, de la machine et alertes"
+msgstr "Tailscale とマシンの状態、アラート"
+
+msgid "aide complète en texte"
+msgstr "テキストの完全なヘルプ"
+
+msgid "rapport de la machine (faits seulement)"
+msgstr "マシンのレポート（事実のみ）"
+
+msgid "enregistrer dans le dossier des exports (sinon : affiché)"
+msgstr "エクスポートフォルダーに保存（指定なし：表示のみ）"
+
+msgid ""
+"inclure le compte Tailscale et les noms / adresses des appareils du tailnet"
+msgstr "Tailscale のアカウントと tailnet のデバイス名 / アドレスを含める"
+
+msgid "couper ou remettre Funnel (Survie)"
+msgstr "Funnel を遮断または再開（サバイバル）"
+
+msgid "coupure en cours"
+msgstr "現在の遮断状態"
+
+msgid "couper Funnel"
+msgstr "Funnel を遮断"
+
+msgid "coupure momentanée, remise en route automatique (minuterie)"
+msgstr "一時遮断、自動で再開（タイマー）"
+
+msgid "coupure jusqu'à « retablir »"
+msgstr "「retablir」まで遮断"
+
+msgid "remettre Funnel à l'identique"
+msgstr "Funnel を元どおりに再開"
+
+msgid "coupure visée (minuterie) ; une autre coupure est ignorée"
+msgstr "対象の遮断（タイマー）。ほかの遮断は無視"
+
+msgid "secondes d'attente avant (hors systemd)"
+msgstr "開始前の待機秒数（systemd 以外）"
+
+msgid "veille automatique (coupe Funnel seule sous attaque)"
+msgstr "自動監視（攻撃時に Funnel を自動で遮断）"
+
+msgid "tourner en continu (lancé par le service de la veille)"
+msgstr "常時実行（監視サービスが起動）"
+
+msgid "état de la veille et dernières lignes du journal"
+msgstr "監視の状態とログの最終行"
+
+msgid "pare-feu Funnel (porte HAProxy)"
+msgstr "Funnel ファイアウォール（HAProxy ゲート）"
+
+msgid "état de la porte et compteurs"
+msgstr "ゲートの状態とカウンター"
+
+msgid "renouveler le certificat *.ts.net de la porte"
+msgstr "ゲートの *.ts.net 証明書を更新"
+
+msgid "seulement s'il expire dans moins de 30 jours"
+msgstr "30 日以内に期限切れになる場合のみ"
+
+msgid "regroupements : mode attaque, empreintes, AS, pays (lot 6)"
+msgstr "グループ化：攻撃モード、フィンガープリント、AS、国（ロット 6）"
+
+msgid "mettre à jour la base AS / pays (DB-IP Lite)"
+msgstr "AS / 国データベースを更新（DB-IP Lite）"
+
+msgid "bloquer une adresse (durée de blocage) ou un réseau"
+msgstr "アドレス（ブロック期間）またはネットワークをブロック"
+
+msgid "liste noire, jusqu'à « debloquer »"
+msgstr "ブラックリスト、「debloquer」まで"
+
+msgid "débloquer une adresse ou un réseau"
+msgstr "アドレスまたはネットワークのブロックを解除"
+
+msgid "mettre en confiance (jamais limitée)"
+msgstr "信頼に追加（制限なし）"
+
+#, python-brace-format
+msgid "Export impossible : {error}"
+msgstr "エクスポートできません：{error}"
+
+#, python-brace-format
+msgid "Rapport enregistré : {path}"
+msgstr "レポートを保存しました：{path}"
+
+msgid "Funnel n'est pas coupé par omega-tail."
+msgstr "Funnel は omega-tail によって遮断されていません。"
+
+#, python-brace-format
+msgid "remise en route prévue {when}"
+msgstr "{when} に再開予定"
+
+msgid "coupure totale"
+msgstr "完全遮断"
+
+#, python-brace-format
+msgid ""
+"Funnel coupé depuis {since} ({until}), ports {ports} ; sauvegarde {saved}"
+msgstr "Funnel は {since} から遮断中（{until}）、ポート {ports}、バックアップ {saved}"
+
+msgid "--minutes : 1 au moins."
+msgstr "--minutes：1 以上。"
+
+msgid ""
+"La porte n'est pas active : les listes s'appliqueront à son activation."
+msgstr "ゲートは有効ではありません。リストは有効化時に適用されます。"
+
+msgid "Veille automatique : désactivée."
+msgstr "自動監視：無効。"
+
+msgid "ARRÊTÉE (signe de vie trop vieux)"
+msgstr "停止中（生存信号が古すぎます）"
+
+msgid "en marche"
+msgstr "実行中"
+
+#, python-brace-format
+msgid ""
+"Veille automatique : {state} ; dépassements récents {strikes}/3 ; prochaine "
+"coupure {minutes} min"
+msgstr "自動監視：{state}、最近の超過 {strikes}/3、次回の遮断 {minutes} 分"
+
+msgid "Porte inactive : Funnel ne passe pas par elle."
+msgstr "ゲートは無効です。Funnel はゲートを経由していません。"
+
+#, python-brace-format
+msgid ""
+"Porte active depuis {since} : Funnel {port} -> 127.0.0.1:{gate} -> {backend}"
+msgstr "ゲートは {since} から有効：Funnel {port} -> 127.0.0.1:{gate} -> {backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions : {total} reçues, {refused} refusées avant chiffrement, {current}"
+" en cours"
+msgstr "接続：受信 {total}、暗号化前に拒否 {refused}、処理中 {current}"
+
+#, python-brace-format
+msgid "{days} jour(s) restants"
+msgstr "残り {days} 日"
+
+#, python-brace-format
+msgid "Certificat : {left}"
+msgstr "証明書：{left}"
+
+#, python-brace-format
+msgid "Certificat valable encore {days} jour(s) : rien à faire."
+msgstr "証明書はあと {days} 日有効です。何もする必要はありません。"
+
+msgid ""
+"HAProxy sans Lua : regroupements (JA4, AS, pays) indisponibles, porte du lot"
+" 4 seule."
+msgstr "HAProxy に Lua がありません。グループ化（JA4、AS、国）は利用できず、ロット 4 のゲートのみです。"
+
+msgid "observation (rien n'est refusé par ces règles)"
+msgstr "観察（これらのルールでは何も拒否しません）"
+
+#, python-brace-format
+msgid "ATTAQUE (retour au normal dans {seconds} s sans dépassement)"
+msgstr "攻撃（超過がなければ {seconds} 秒後に通常に戻る）"
+
+msgid "normal"
+msgstr "通常"
+
+#, python-brace-format
+msgid "Regroupements : {mode} ; mode {attack}"
+msgstr "グループ化：{mode}、モード {attack}"
+
+#, python-brace-format
+msgid ""
+"Mode attaque au-delà de {rate} connexions entrantes / s ; calme {minutes} "
+"min"
+msgstr "受信接続が {rate} 件/秒を超えると攻撃モード、平穏 {minutes} 分"
+
+msgid "référence prête"
+msgstr "基準の準備完了"
+
+#, python-brace-format
+msgid "apprentissage : encore {days} jour(s)"
+msgstr "学習中：残り {days} 日"
+
+#, python-brace-format
+msgid "Empreintes habituelles : {known} ({learning})"
+msgstr "通常のフィンガープリント：{known}（{learning}）"
+
+#, python-brace-format
+msgid "mise à jour il y a {days} jour(s)"
+msgstr "{days} 日前に更新"
+
+msgid "absente (« omega-tail porte base »)"
+msgstr "なし（「omega-tail porte base」）"
+
+#, python-brace-format
+msgid "Base AS / pays : {base}"
+msgstr "AS / 国データベース：{base}"
+
+#, python-brace-format
+msgid "Connexions refusées (7 j) : {found}"
+msgstr "拒否された接続（7 日）：{found}"
+
+#, python-brace-format
+msgid "Connexions qui auraient été refusées (7 j) : {found}"
+msgstr "拒否されていたはずの接続（7 日）：{found}"
+
+msgid "Empreintes les plus actives (connexions / 10 s, total) :"
+msgstr "最も活発なフィンガープリント（接続 / 10 秒、合計）："
+
+msgid "AS les plus actifs (connexions / 10 s, total) :"
+msgstr "最も活発な AS（接続 / 10 秒、合計）："
+
+msgid "Pays les plus actifs (connexions / 10 s, total) :"
+msgstr "最も活発な国（接続 / 10 秒、合計）："
+
+msgid "Tailscale n'est pas installé."
+msgstr "Tailscale がインストールされていません。"
+
+#, python-brace-format
+msgid "Service tailscaled : {state}"
+msgstr "tailscaled サービス：{state}"
+
+#, python-brace-format
+msgid "Version : {daemon} en marche, {client} installée"
+msgstr "バージョン：実行中 {daemon}、インストール済み {client}"
+
+#, python-brace-format
+msgid "Nom : {name}"
+msgstr "名前：{name}"
+
+#, python-brace-format
+msgid "Adresses : {addresses}"
+msgstr "アドレス：{addresses}"
+
+#, python-brace-format
+msgid "Opérateur : {operator}"
+msgstr "オペレーター：{operator}"
+
+#, python-brace-format
+msgid "tailscaled : {cpu} d'un cœur, {memory}"
+msgstr "tailscaled：コア 1 つの {cpu}、{memory}"
+
+#, python-brace-format
+msgid "Température : {value}"
+msgstr "温度：{value}"
+
+msgid "PUBLICATION"
+msgstr "公開"
+
+msgid "rien de publié"
+msgstr "公開中のものはありません"
+
+msgid "ALERTES"
+msgstr "アラート"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — LISTE NOIRE DE LA PORTE ({machine})"
+msgstr "OMEGA-TAIL {version} — ゲートのブラックリスト（{machine}）"
+
+#, python-brace-format
+msgid ""
+"Établie le {date} : {count} entrée(s), la plus ancienne d'abord. L'export "
+"TXT se réimporte tel quel."
+msgstr "作成日 {date}：{count} 件、古い順。TXT エクスポートはそのまま再インポートできます。"
+
+msgid "Adresse ou réseau"
+msgstr "アドレスまたはネットワーク"
+
+msgid "Ajoutée le"
+msgstr "追加日"
+
+msgid "Origine"
+msgstr "追加元"
+
+msgid "Liste noire - Omega-Tail"
+msgstr "ブラックリスト - Omega-Tail"
+
+msgid "Passer d'un élément à l'autre (lignes d'un tableau, boutons)"
+msgstr "要素間を移動（表の行、ボタン）"
+
+msgid "Passer d'une zone de l'écran à l'autre"
+msgstr "画面の領域間を移動"
+
+msgid "Activer le bouton choisi ; dans le tableau des alertes, « Corriger »"
+msgstr "選択したボタンを実行。アラートの表では「修正」"
+
+msgid "Entrée / Clic"
+msgstr "Enter / クリック"
+
+msgid "Revenir à l'écran précédent (au menu : quitter)"
+msgstr "前の画面に戻る（メニューでは終了）"
+
+msgid "Cette aide, depuis n'importe quel écran"
+msgstr "このヘルプ（どの画面からでも）"
+
+msgid "Réglages, depuis n'importe quel écran"
+msgstr "設定（どの画面からでも）"
+
+msgid "Thème suivant (enregistré)"
+msgstr "次のテーマ（保存されます）"
+
+msgid "Redessiner l'écran, afficher la taille du terminal et relire l'état"
+msgstr "画面を再描画し、端末のサイズを表示して状態を読み直す"
+
+msgid ""
+"Commandes : thème, capture d'écran (SVG, dans le dossier des captures), "
+"quitter"
+msgstr "コマンド：テーマ、スクリーンショット（SVG、スクリーンショットフォルダーへ）、終了"
+
+msgid "Ctrl+P"
+msgstr "Ctrl+P"
+
+msgid ""
+"omega-tail pilote Tailscale sur cette machine et la protège quand elle publie un service sur Internet par Tailscale Funnel.\n"
+"\n"
+"1. [b]Tableau de bord[/b] : l'état de Tailscale, de la machine et de ce qui est publié, puis les alertes. Choisissez une alerte et « Corriger » : omega-tail ouvre l'écran qui la corrige.\n"
+"2. [b]Service tailscaled[/b] : démarrer, arrêter ou redémarrer le service (par exemple pour appliquer une mise à jour déjà installée).\n"
+"3. [b]Connexion et réglages[/b] : connexion, compte et réglages de Tailscale, vérifiés avant d'être appliqués.\n"
+"4. [b]Publication[/b] : ce que Serve et Funnel publient ; publier, retirer, essayer, restaurer.\n"
+"5. [b]Journaux[/b] : ce que tailscaled a écrit, filtrable et exportable.\n"
+"6. [b]Survie[/b] : confiner tailscaled, et couper Funnel un moment (puis le remettre tout seul) ou totalement quand la machine est attaquée.\n"
+"7. [b]Pare-feu Funnel[/b] : une porte qui refuse les connexions abusives avant tout chiffrement ; [b]Attaques et décisions[/b] pour voir et décider en direct.\n"
+"\n"
+"La [b]bande d'état[/b] (cadre « État », sous le titre de chaque écran) résume tout : service, consommation de tailscaled, température, mémoire vive utilisée (RAM), Funnel, pare-feu (actif, arrêté, inactif), veille automatique (active, arrêtée, inactive) et connexion. Elle est relue toutes les 5 secondes. La taille de la fenêtre est affichée à côté du thème, en haut ; « r » la relit après un redimensionnement.\n"
+"\n"
+"Chaque action qui change la machine montre d'abord sa commande ; le mot de passe sudo se saisit dans le terminal, l'interface revient ensuite. Rien n'est jamais lancé en arrière-plan sans vous."
+msgstr ""
+"omega-tail はこのマシンの Tailscale を操作し、マシンが Tailscale Funnel でインターネットにサービスを公開するときにマシンを保護します。\n"
+"\n"
+"1. [b]ダッシュボード[/b]：Tailscale、マシン、公開中のものの状態、続いてアラート。アラートを選んで「修正」を押すと、omega-tail が修正用の画面を開きます。\n"
+"2. [b]tailscaled サービス[/b]：サービスの起動、停止、再起動（たとえばインストール済みの更新を適用するため）。\n"
+"3. [b]接続と設定[/b]：Tailscale の接続、アカウント、設定。適用前に検証されます。\n"
+"4. [b]公開[/b]：Serve と Funnel が公開しているもの。公開、撤去、テスト、復元。\n"
+"5. [b]ログ[/b]：tailscaled が書き出した内容。絞り込みとエクスポートが可能です。\n"
+"6. [b]サバイバル[/b]：tailscaled を封じ込め、マシンが攻撃を受けたときに Funnel を一時的に（その後自動で再開）または完全に遮断します。\n"
+"7. [b]Funnel ファイアウォール[/b]：あらゆる暗号化の前に悪用的な接続を拒否するゲート。[b]攻撃と判断[/b]でリアルタイムに確認・判断できます。\n"
+"\n"
+"[b]ステータスバー[/b]（各画面のタイトル下にある「状態」の枠）がすべてをまとめます：サービス、tailscaled の使用量、温度、使用中のメモリー（RAM）、Funnel、ファイアウォール（有効、停止、無効）、自動監視（有効、停止、無効）、接続。5 秒ごとに読み直されます。ウィンドウのサイズは上部のテーマの横に表示され、サイズ変更後は「r」で読み直せます。\n"
+"\n"
+"マシンを変更する操作はすべて、最初にそのコマンドを表示します。sudo のパスワードはターミナルで入力し、その後インターフェースに戻ります。あなたの知らないうちにバックグラウンドで何かが実行されることはありません。"
+
+msgid "Tableau de bord"
+msgstr "ダッシュボード"
+
+msgid ""
+"Trois cadres et une liste d'alertes.\n"
+"- [b]Tailscale[/b] : service, état de la connexion, version (en marche et installée), nom de la machine, adresses, compte, appareils en ligne, expiration de la clé, opérateur.\n"
+"- [b]Tailscale[/b] dit aussi si la machine se propose comme nœud de sortie, lequel elle utilise, et les sous-réseaux qu'elle annonce.\n"
+"- [b]Machine[/b] : CPU de toute la machine, charge, température, mémoire, CPU et mémoire de tailscaled (en % d'un cœur), confinement, puis l'état des protections : Funnel, pare-feu (porte, mode attaque), liste noire, veille, bouclier du port WireGuard.\n"
+"- Libellés dans la couleur d'accent du thème, valeurs en vert, orange ou rouge selon les seuils (CPU machine 70 / 90 %, charge 1 / 2 par cœur, température 75 / 85 °C, mémoire 85 / 95 %, tailscaled 50 / 90 % d'un cœur, liste noire 25 000 / 50 000 entrées).\n"
+"- [b]Publication[/b] : chaque port publié, pour Internet (Funnel) ou le tailnet seul (Serve), son mode et sa cible.\n"
+"- [b]Alertes[/b] : de la plus grave à la moins grave. « Corriger » (ou Entrée) ouvre l'écran qui corrige ; un écran pas encore construit le dit.\n"
+"\n"
+"Alertes possibles : service arrêté ; mise à jour installée mais pas appliquée (redémarrer le service) ; compte à connecter ; clé qui expire ; Funnel publié sans protection (tailscaled fait le chiffrement de chaque visiteur : une rafale peut saturer la machine) ; température élevée ; tailscaled trop gourmand ; tailscaled non confiné ; vous n'êtes pas opérateur ; liste noire de plus de 25 000 entrées ; messages de Tailscale lui-même.\n"
+"\n"
+"La bande d'état en haut de chaque écran sépare [b]CPU machine[/b] (toute la machine, en % de tous ses cœurs) et [b]CPU tailscaled[/b] (le seul service, en % d'un cœur)."
+msgstr ""
+"3 つの枠とアラートの一覧。\n"
+"- [b]Tailscale[/b]：サービス、接続状態、バージョン（実行中とインストール済み）、マシン名、アドレス、アカウント、オンラインのデバイス、キーの有効期限、オペレーター。\n"
+"- [b]Tailscale[/b] では、マシンが出口ノードとして提供されているか、どの出口ノードを使っているか、アドバタイズしているサブネットも表示されます。\n"
+"- [b]マシン[/b]：マシン全体の CPU、負荷、温度、メモリー、tailscaled の CPU とメモリー（コア 1 つに対する %）、封じ込め、続いて各保護機能の状態：Funnel、ファイアウォール（ゲート、攻撃モード）、ブラックリスト、監視、WireGuard ポートのシールド。\n"
+"- ラベルはテーマのアクセントカラー、値はしきい値に応じて緑、オレンジ、赤（マシンの CPU 70 / 90 %、コアあたりの負荷 1 / 2、温度 75 / 85 °C、メモリー 85 / 95 %、tailscaled はコア 1 つの 50 / 90 %、ブラックリスト 25 000 / 50 000 件）。\n"
+"- [b]公開[/b]：公開中の各ポート、インターネット向け（Funnel）か tailnet のみ（Serve）か、そのモードと転送先。\n"
+"- [b]アラート[/b]：重大なものから順に。「修正」（または Enter）で修正用の画面が開きます。まだ作られていない画面の場合はそう表示されます。\n"
+"\n"
+"想定されるアラート：サービスの停止、インストール済みだが未適用の更新（サービスを再起動）、ログイン待ちのアカウント、期限切れが近いキー、保護なしで公開された Funnel（tailscaled が訪問者ごとに暗号化を処理するため、集中的なアクセスでマシンが飽和するおそれがあります）、高温、リソースを使いすぎる tailscaled、封じ込められていない tailscaled、オペレーターではない、25 000 件を超えるブラックリスト、Tailscale 自身からのメッセージ。\n"
+"\n"
+"各画面の上部にあるステータスバーは [b]マシンの CPU[/b]（マシン全体、全コアに対する %）と [b]tailscaled の CPU[/b]（サービス単体、コア 1 つに対する %）を分けて表示します。"
+
+msgid "Service tailscaled"
+msgstr "tailscaled サービス"
+
+msgid ""
+"L'état du service vu par systemd : actif ou non, lancé au démarrage, depuis quand, mémoire ; la version en marche et la version installée ; la commande de lancement ; les fichiers d'ajout (affichés, modifiés seulement par « Corriger le démarrage », sur votre accord) ; le confinement.\n"
+"\n"
+"[b]Démarrer[/b], [b]Arrêter[/b], [b]Redémarrer[/b] : la commande s'affiche avant d'être lancée.\n"
+"[b]Garde-fou[/b] : si votre session passe par Tailscale (SSH par le tailnet), Arrêter vous couperait sans pouvoir relancer : omega-tail demande une seconde confirmation. Redémarrer fige la session quelques secondes, puis elle revient en général.\n"
+"\n"
+"[b]Corriger le démarrage[/b] (affiché seulement si besoin) : un de vos fichiers d'ajout lance « tailscale up » après le démarrage. Dès qu'un réglage change ensuite (opérateur, nom, routes…), Tailscale refuse ce « up » incomplet ; systemd arrête alors tailscaled et abandonne après cinq essais : la machine sort du tailnet au premier redémarrage. La correction ajoute « - » devant la commande (son refus n'arrête plus le service ; vos réglages restent gardés par Tailscale), et rien d'autre ; l'original est gardé dans var/survie. Avant tout redémarrage qu'il lance (Redémarrer, confinement, opérateur), omega-tail fait d'abord cette correction, commandes montrées."
+msgstr ""
+"systemd から見たサービスの状態：動作中かどうか、起動時に開始されるか、開始時刻、メモリー。実行中とインストール済みのバージョン、起動コマンド、追加設定ファイル（表示のみ。同意を得たうえで「起動を修正」だけが変更します）、封じ込め。\n"
+"\n"
+"[b]起動[/b]、[b]停止[/b]、[b]再起動[/b]：コマンドは実行前に表示されます。\n"
+"[b]セーフガード[/b]：セッションが Tailscale 経由（tailnet 経由の SSH）の場合、停止すると切断され再起動できなくなるため、omega-tail は 2 回目の確認を求めます。再起動ではセッションが数秒間固まりますが、通常は戻ります。\n"
+"\n"
+"[b]起動を修正[/b]（必要な場合のみ表示）：追加設定ファイルの 1 つが起動後に「tailscale up」を実行しています。その後で設定（オペレーター、名前、ルートなど）が変わると、Tailscale はこの不完全な「up」を拒否します。すると systemd は tailscaled を停止し、5 回試したあとで諦めます。マシンは最初の再起動で tailnet から外れてしまいます。修正はコマンドの前に「-」を付けるだけです（拒否されてもサービスは止まらなくなり、設定は Tailscale が保持します）。元のファイルは var/survie に保存されます。omega-tail が行う再起動（再起動、封じ込め、オペレーター）の前には、必ず先にこの修正を行い、コマンドを表示します。"
+
+msgid "Connexion et réglages"
+msgstr "接続と設定"
+
+msgid ""
+"L'état de la connexion (connecté ou non, compte, tailnet, nom et adresses de la machine, expiration de la clé, opérateur).\n"
+"\n"
+"[b]Se connecter[/b] / [b]Se déconnecter[/b] : la machine rejoint ou quitte le tailnet ; le compte reste enregistré. [b]Ajouter un compte[/b] : Tailscale affiche dans le terminal l'adresse à ouvrir pour s'identifier. [b]Changer de compte[/b] : choisissez un compte déjà connu de la machine. [b]Déconnexion définitive[/b] : la machine est retirée du compte (clé révoquée) ; il faut taper son nom pour confirmer.\n"
+"[b]Garde-fou[/b] : si votre session passe par Tailscale, se déconnecter la coupe sans retour possible ; omega-tail le dit avant.\n"
+"\n"
+"[b]Réglages[/b] (ceux de tailscale set), chacun avec sa phrase d'explication : nom de la machine, surnom, routes, DNS du tailnet, bouclier, filtrage avec état, mode netfilter, nœud de sortie, accès au réseau local, proposer la machine comme nœud de sortie, sous-réseaux annoncés, SSH Tailscale, interface web, mises à jour, relais pair, opérateur. Les valeurs sont vérifiées ; pendant la saisie, un cadre au-dessus des boutons montre avant → après et la commande ; « Appliquer » la lance dans le terminal (sans sudo si vous êtes opérateur ; changer l'opérateur demande sudo). Un avertissement s'affiche quand un changement peut couper une session passée par Tailscale (bouclier, SSH Tailscale coupé, nœud de sortie, netfilter). Après application, le cadre garde le résultat, vérifié sur les valeurs relues (✔ pris en compte, ✖ non). « Relire » reprend les valeurs actuelles.\n"
+"\n"
+"[b]Nœud de sortie[/b] : la liste ne propose que les machines du tailnet qui se proposent comme nœud de sortie (et approuvées dans la console d'administration de Tailscale) ; s'il n'y en a aucune, l'écran le dit.\n"
+"[b]Transfert IP[/b] : une machine qui se propose comme nœud de sortie ou annonce des sous-réseaux doit faire suivre les paquets. S'il est désactivé, un avertissement et le bouton « Activer le transfert IP » apparaissent : un fichier à part (/etc/sysctl.d/99-omega-tail-forwarding.conf), appliqué tout de suite et relu au démarrage (systemd, OpenRC, runit). Pour annuler : supprimer ce fichier puis redémarrer."
+msgstr ""
+"接続状態（接続中かどうか、アカウント、tailnet、マシン名とアドレス、キーの有効期限、オペレーター）。\n"
+"\n"
+"[b]ログイン[/b] / [b]ログアウト[/b]：マシンが tailnet に参加または離脱します。アカウントは保存されたままです。[b]アカウントを追加[/b]：Tailscale がターミナルに認証用のアドレスを表示します。[b]アカウントを切り替え[/b]：マシンが把握しているアカウントを選びます。[b]完全ログアウト[/b]：マシンがアカウントから削除されます（キーは失効）。確認のためにマシン名の入力が必要です。\n"
+"[b]セーフガード[/b]：セッションが Tailscale 経由の場合、ログアウトすると戻れなくなります。omega-tail は事前にそう伝えます。\n"
+"\n"
+"[b]設定[/b]（tailscale set の設定）、それぞれに 1 文の説明付き：マシン名、別名、ルート、tailnet の DNS、シールド、ステートフルフィルタリング、netfilter モード、出口ノード、ローカルネットワークへのアクセス、このマシンを出口ノードとして提供、アドバタイズするサブネット、Tailscale SSH、Web インターフェース、更新、ピアリレー、オペレーター。値は検証されます。入力中はボタンの上の枠に変更前 → 変更後とコマンドが表示され、「適用」でターミナルで実行します（オペレーターなら sudo 不要、オペレーターの変更には sudo が必要）。Tailscale 経由のセッションが切断されるおそれのある変更（シールド、Tailscale SSH の無効化、出口ノード、netfilter）では警告が表示されます。適用後、枠には結果が残り、読み直した値で検証されます（✔ 反映済み、✖ 未反映）。「再読み込み」で現在の値を取り込みます。\n"
+"\n"
+"[b]出口ノード[/b]：一覧には、出口ノードとして提供されている（かつ Tailscale の管理コンソールで承認された）tailnet のマシンだけが表示されます。1 台もなければ画面にそう表示されます。\n"
+"[b]IP 転送[/b]：出口ノードとして提供されるマシンやサブネットをアドバタイズするマシンは、パケットを転送する必要があります。無効な場合は警告と「IP 転送を有効化」ボタンが表示されます。独立したファイル（/etc/sysctl.d/99-omega-tail-forwarding.conf）で、すぐに適用され、起動時にも読み込まれます（systemd、OpenRC、runit）。元に戻すには、このファイルを削除して再起動します。"
+
+msgid "Publication"
+msgstr "公開"
+
+msgid ""
+"Tout ce que la machine publie : port, pour qui (le tailnet seul avec Serve, Internet avec Funnel), mode, chemin, cible, et si la porte du pare-feu protège le port.\n"
+"\n"
+"[b]Publier[/b] : un service local (un port, ou http://127.0.0.1:PORT), pour le tailnet ou pour Internet (Funnel n'ouvre que les ports 443, 8443 et 10000), en HTTPS, HTTP, TCP ou TLS terminé, sur un chemin. Pour Internet, le plus sûr est HTTPS sur 443 puis « Activer la protection » (Pare-feu Funnel).\n"
+"[b]Retirer[/b] : la ligne choisie (un chemin seul si le port en publie d'autres). Le port protégé par la porte se retire par « Désactiver la protection ».\n"
+"[b]Suspendre Funnel[/b] / [b]Rétablir Funnel[/b] : coupe les ports ouverts à Internet sans perdre leur configuration (même mécanisme que le disjoncteur de Survie), puis les remet à l'identique.\n"
+"[b]Essai de bout en bout[/b] : une vraie connexion, comme un visiteur (par Internet pour un port public, par le tailnet sinon) : réponse, temps, certificat (émetteur, échéance) et version de TLS.\n"
+"[b]Sauvegardes[/b] : l'état d'avant chaque changement (publication, pare-feu, disjoncteur), les 50 plus récentes ; « Restaurer » remet celle choisie, après avoir sauvegardé l'état actuel.\n"
+"\n"
+"Chaque changement est vérifié. Si le résultat n'est pas celui voulu, la publication est reconstruite (remise à zéro puis chaque point recréé) ; si cela échoue aussi, l'état d'avant est remis. Changer la publication demande d'être opérateur de Tailscale."
+msgstr ""
+"マシンが公開しているすべて：ポート、公開先（tailnet のみは Serve、インターネットは Funnel）、モード、パス、転送先、そしてファイアウォールのゲートがそのポートを保護しているかどうか。\n"
+"\n"
+"[b]公開[/b]：ローカルのサービス（ポート、または http://127.0.0.1:PORT）を、tailnet またはインターネット向けに（Funnel が開けるのはポート 443、8443、10000 のみ）、HTTPS、HTTP、TCP、または TLS 終端で、あるパスに公開します。インターネット向けで最も安全なのは、443 で HTTPS にしてから「保護を有効化」（Funnel ファイアウォール）を実行することです。\n"
+"[b]撤去[/b]：選択した行（そのポートがほかのものも公開している場合はそのパスだけ）。ゲートで保護されたポートは「保護を無効化」で撤去します。\n"
+"[b]Funnel を一時停止[/b] / [b]Funnel を復旧[/b]：インターネットに開いているポートを、設定を失わずに遮断し（サバイバルのブレーカーと同じ仕組み）、その後まったく同じ状態に戻します。\n"
+"[b]エンドツーエンドテスト[/b]：訪問者と同じように実際に接続します（公開ポートはインターネット経由、それ以外は tailnet 経由）。応答、時間、証明書（発行者、有効期限）、TLS のバージョン。\n"
+"[b]バックアップ[/b]：各変更（公開、ファイアウォール、ブレーカー）前の状態、最新 50 件。「復元」は現在の状態を保存したうえで、選んだものを戻します。\n"
+"\n"
+"変更はすべて検証されます。結果が期待どおりでなければ公開設定を作り直します（リセットしてから各項目を再作成）。それも失敗した場合は変更前の状態に戻します。公開設定の変更には Tailscale のオペレーターである必要があります。"
+
+msgid "Journaux"
+msgstr "ログ"
+
+msgid ""
+"Le journal de tailscaled (journalctl) ou celui de la porte. Choisissez le nombre de lignes, filtrez par texte. Chaque information a sa couleur, prise dans le thème : la date, la machine en grisé, le processus, puis la catégorie du message, une couleur par famille (contrôle et connexion, réseau et relais, DNS, moteur WireGuard) ; les adresses en gras ; le message en rouge s'il signale une erreur, en orange pour un avertissement. Pour la porte : l'adresse du visiteur, le motif de refus en rouge, le regroupement en orange, puis l'AS et le pays. « Exporter » enregistre les lignes affichées dans le dossier des exports ; « Voir les exports » les ouvre (voir Rapport).\n"
+"Si rien ne s'affiche : votre compte doit pouvoir lire le journal du système (groupe systemd-journal, adm ou wheel selon la distribution)."
+msgstr ""
+"tailscaled のログ（journalctl）またはゲートのログ。行数を選び、テキストで絞り込めます。各情報にはテーマから取った固有の色が付きます：日付、薄く表示されるマシン名、プロセス、続いてメッセージのカテゴリー（系統ごとに1色：制御と接続、ネットワークとリレー、DNS、WireGuard エンジン）。アドレスは太字、メッセージはエラーを示す場合は赤、警告の場合はオレンジです。ゲートの場合：訪問者のアドレス、赤の拒否理由、オレンジのグループ化、続いて AS と国。「エクスポート」は表示中の行をエクスポートフォルダーに保存し、「エクスポートを見る」で開けます（レポートを参照）。\n"
+"何も表示されない場合：アカウントがシステムのログを読める必要があります（ディストリビューションに応じて systemd-journal、adm、wheel グループ）。"
+
+msgid "Devenir opérateur"
+msgstr "オペレーターになる"
+
+msgid ""
+"Par défaut, chaque réglage de Tailscale demande sudo. Devenir opérateur (une"
+" seule fois, par sudo) permet à votre compte de régler Tailscale sans sudo. "
+"Le bouton apparaît dans le tableau de bord tant que ce n'est pas fait ; dans"
+" « Connexion et réglages », le bouton « Mon compte » met votre nom dans le "
+"champ Opérateur, puis « Appliquer ». Pour annuler : vider le champ et "
+"appliquer, ou sudo tailscale set --operator="
+msgstr ""
+"既定では、Tailscale の設定のたびに sudo が必要です。オペレーターになると（一度だけ、sudo で）、あなたのアカウントは sudo "
+"なしで Tailscale "
+"を設定できます。完了するまでボタンはダッシュボードに表示されます。「接続と設定」では「自分のアカウント」ボタンでオペレーター欄に名前が入るので、「適用」を押します。元に戻すには、欄を空にして適用するか、sudo"
+" tailscale set --operator="
+
+msgid "Survie"
+msgstr "サバイバル"
+
+msgid ""
+"Garder la machine debout sous attaque : le confinement, le disjoncteur et la veille automatique, toujours proposés, jamais imposés.\n"
+"\n"
+"[b]Confinement de tailscaled[/b] : un fichier d'ajout systemd à part (50-omega-tail.conf) plafonne tailscaled (par exemple un cœur entier sur une machine à 4 fils), baisse son poids et sa priorité. Sous attaque, il ne peut plus prendre toute la machine : l'administration et les autres services restent utilisables. Option : donner la priorité à l'accès SSH. Votre propre override.conf n'est jamais modifié ; « Retirer le confinement » supprime seulement les fichiers d'omega-tail. Le plafond s'applique au rechargement ; la priorité au redémarrage de tailscaled (case cochée par défaut).\n"
+"\n"
+"[b]Disjoncteur Funnel[/b] : quand tailscaled reste au-dessus du seuil CPU pendant toute la durée choisie (80 % d'un cœur pendant 60 s par défaut), ou quand la température atteint son seuil (85 °C), omega-tail ouvert vous propose :\n"
+"- [b]Couper 10 min[/b] (durée réglable) : les ports ouverts à Internet sont coupés, puis remis en route automatiquement, à l'identique, même si omega-tail est fermé (minuterie systemd, sudo une fois) ;\n"
+"- [b]Coupure totale[/b] : Funnel reste coupé jusqu'à « Rétablir maintenant » ;\n"
+"- [b]Pas maintenant[/b] : plus de proposition pendant 15 minutes.\n"
+"Le tailnet (Serve, SSH par Tailscale) n'est jamais coupé. La publication est sauvegardée avant chaque coupure (var/funnel/sauvegardes/) et la remise en route est vérifiée identique. Un port Funnel en TCP (celui de la porte) garde son autorisation Funnel après « off » : la coupure repart alors de zéro avec les seuls points du tailnet et vérifie que plus rien n'est ouvert à Internet. Le disjoncteur demande d'être opérateur de Tailscale : la remise en route tourne sous votre compte, jamais en root.\n"
+"En ligne de commande : omega-tail disjoncteur etat | couper --minutes 10 | couper --totale | retablir.\n"
+"\n"
+"[b]Veille automatique[/b] (désactivée par défaut) : pour une machine sans personne devant. Un service tourne en permanence sous votre compte, même omega-tail fermé (systemd, OpenRC ou runit). Un dépassement : un seuil du disjoncteur tenu. 3 dépassements dans la fenêtre (10 min, réglable) : la veille coupe Funnel seule, 15 min la première fois, 30 min la deuxième, puis 1 h à chaque fois, et le remet en route seule, à l'identique. Retour à 15 min après 24 h sans coupure ; après chaque remise en route, 2 min de calme avant de mesurer de nouveau. Seul Funnel est coupé : tailscaled, le tailnet et SSH restent joignables. Quand la veille tourne, omega-tail ouvert ne propose plus la coupure (elle agit seule). Les 6 dernières lignes de son journal s'affichent dans Survie (le fichier var/veille/journal.log garde 512 Ko, puis passe en journal.log.1) ; une veille activée mais arrêtée est signalée au tableau de bord.\n"
+"En ligne de commande : omega-tail veille etat.\n"
+"\n"
+"[b]Bouclier du port WireGuard[/b] (bouton dans Survie) : tailscaled dépense environ un cœur de processeur pour 100 000 paquets par seconde reçus sur son port, même invalides, Funnel ouvert ou non. Le bouclier est une table nftables posée devant lui, sur les cartes réseau matérielles : les pairs connus (ceux à qui tailscaled écrit, appris par le noyau) ne sont jamais limités ; les poignées de main sont limitées à 20 par seconde et par source ; les autres sources ont un budget (500 paquets par seconde chacune, 5 000 en tout) ; les paquets qui ne sont pas du WireGuard sont refusés. Mesuré : un flot qui prenait un cœur entier à tailscaled n'en prend plus que 1 %.\n"
+"- [b]Observation[/b] d'abord : rien n'est refusé, les compteurs disent ce qui l'aurait été ; « Passer en actif » quand ils ne montrent que des attaques.\n"
+"- [b]Qui le pose[/b] : omega-fire 3.7.0 ou plus récent s'il est relié par omega-connect (sa liste des règles l'affiche avec l'origine omega-tail) ; sinon omega-tail lui-même, même si ufw ou firewalld sont présents. C'est la même table dans les deux cas : « Confier à omega-fire » ou, dans omega-fire, « Reprendre la gestion » la fait changer de mains sans la toucher ; si omega-fire n'est plus relié, « Reprendre la gestion » la rend à omega-tail.\n"
+"- Un service (omega-bouclier-wg) la remet en place à chaque démarrage et écrit son état chaque minute.\n"
+"- Si un autre outil efface la table (nft flush ruleset, pare-feu relancé), le tableau de bord et la veille le signalent ; elle n'est jamais reposée seule : « Reposer ».\n"
+"- Retiré depuis omega-fire : omega-tail l'affiche."
+msgstr ""
+"攻撃を受けてもマシンを稼働させ続けます：封じ込め、ブレーカー、自動監視。常に提案するだけで、押し付けることはありません。\n"
+"\n"
+"[b]tailscaled の封じ込め[/b]：独立した systemd の追加設定ファイル（50-omega-tail.conf）が tailscaled に上限を設け（たとえば 4 スレッドのマシンでコア 1 つ分）、重みと優先度を下げます。攻撃を受けてもマシン全体を使い切ることはなくなり、管理とほかのサービスは引き続き使えます。オプション：SSH アクセスを優先。あなた自身の override.conf が変更されることはありません。「封じ込めを撤去」は omega-tail のファイルだけを削除します。上限は再読み込み時に、優先度は tailscaled の再起動時に適用されます（既定でチェック済み）。\n"
+"\n"
+"[b]Funnel ブレーカー[/b]：tailscaled が選んだ期間ずっと CPU のしきい値を超えている場合（既定はコア 1 つの 80 % が 60 秒間）、または温度がしきい値（85 °C）に達した場合、起動中の omega-tail が次を提案します：\n"
+"- [b]10 分間遮断[/b]（期間は調整可能）：インターネットに開いているポートを遮断し、omega-tail を閉じていても自動でまったく同じ状態に再開します（systemd タイマー、sudo は一度）。\n"
+"- [b]完全遮断[/b]：「今すぐ復旧」まで Funnel は遮断されたままです。\n"
+"- [b]今はしない[/b]：15 分間は提案しません。\n"
+"tailnet（Serve、Tailscale 経由の SSH）が遮断されることはありません。遮断のたびに公開設定がバックアップされ（var/funnel/sauvegardes/）、再開後に同一であることが検証されます。TCP の Funnel ポート（ゲートのポート）は「off」の後も Funnel の許可を保持するため、その場合は tailnet の項目だけで一から作り直し、インターネットに何も開いていないことを検証します。ブレーカーには Tailscale のオペレーターである必要があります。再開はあなたのアカウントで実行され、root で実行されることはありません。\n"
+"コマンドライン：omega-tail disjoncteur etat | couper --minutes 10 | couper --totale | retablir。\n"
+"\n"
+"[b]自動監視[/b]（既定で無効）：画面の前に誰もいないマシン向けです。omega-tail を閉じていても、サービスがあなたのアカウントで常時動作します（systemd、OpenRC、runit）。超過 1 回：ブレーカーのしきい値が持続したこと。ウィンドウ内（10 分、調整可能）で超過 3 回：監視が自動で Funnel を遮断します。1 回目は 15 分、2 回目は 30 分、以降は毎回 1 時間で、その後自動でまったく同じ状態に再開します。遮断なしで 24 時間たつと 15 分に戻ります。再開のたびに、2 分間落ち着いてから再び測定します。遮断するのは Funnel だけで、tailscaled、tailnet、SSH には引き続き到達できます。監視が動作中は、起動中の omega-tail は遮断を提案しません（監視が自動で行います）。ログの最後の 6 行がサバイバルに表示されます（ファイル var/veille/journal.log は 512 KB まで保持し、その後 journal.log.1 に移ります）。有効なのに停止している監視はダッシュボードで知らせます。\n"
+"コマンドライン：omega-tail veille etat。\n"
+"\n"
+"[b]WireGuard ポートのシールド[/b]（サバイバル内のボタン）：tailscaled は、自分のポートで毎秒 100 000 パケットを受信すると、無効なパケットでも、Funnel が開いているかどうかにかかわらず、プロセッサーのコアを約 1 つ消費します。シールドは、その手前の物理ネットワークカードに設置する nftables のテーブルです。既知のピア（tailscaled が送信する相手で、カーネルが学習）は制限されません。ハンドシェイクは送信元ごとに毎秒 20 回までに制限され、ほかの送信元には予算があり（それぞれ毎秒 500 パケット、合計 5 000）、WireGuard でないパケットは拒否されます。測定結果：tailscaled のコアを 1 つ丸ごと使っていたトラフィックが、1 % しか使わなくなりました。\n"
+"- まず [b]観察[/b]：何も拒否せず、拒否されていたはずのものをカウンターが示します。カウンターが攻撃だけを示すようになったら「有効に切り替え」。\n"
+"- [b]誰が設置するか[/b]：omega-fire 3.7.0 以降が omega-connect で連携していれば omega-fire（そのルール一覧に由来 omega-tail として表示）。そうでなければ ufw や firewalld があっても omega-tail 自身。どちらの場合も同じテーブルです。「omega-fire に委任」または omega-fire 側の「管理を取り戻す」で、テーブルに触れずに管理者が切り替わります。omega-fire が連携していなければ、「管理を取り戻す」で omega-tail に戻ります。\n"
+"- サービス（omega-bouclier-wg）が起動のたびにテーブルを設置し直し、毎分状態を書き込みます。\n"
+"- 別のツールがテーブルを消去した場合（nft flush ruleset、ファイアウォールの再起動）、ダッシュボードと監視が知らせます。自動で設置し直すことはありません：「再設置」。\n"
+"- omega-fire から撤去された場合：omega-tail がそう表示します。"
+
+msgid "Pare-feu Funnel"
+msgstr "Funnel ファイアウォール"
+
+msgid ""
+"En Funnel ordinaire, tailscaled fait le chiffrement (TLS) de chaque visiteur : une rafale sature la machine. La protection place une porte (HAProxy, installé par le gestionnaire de paquets) entre Funnel et votre site : Funnel lui transmet le flux encore chiffré avec l'adresse réelle du visiteur, la porte décide AVANT tout chiffrement, puis ne chiffre que pour les connexions admises. Mesuré : une connexion refusée coûte 4,6 fois moins, une connexion admise 2 fois moins.\n"
+"\n"
+"[b]Activer la protection[/b] : préparation (certificat *.ts.net par Tailscale, listes, configuration vérifiée), services de la porte et de son certificat (sudo, dans le terminal ; la porte tourne sous votre compte, jamais en root), bascule de Funnel puis essai depuis Internet. En cas d'échec, la publication d'origine est remise aussitôt. Prérequis : être opérateur de Tailscale ; Funnel publié en HTTPS sur un seul port avec le chemin « / ».\n"
+"[b]Désactiver la protection[/b] : Funnel est remis exactement comme avant, vérifié, puis la porte est arrêtée ; réglages et listes sont gardés.\n"
+"\n"
+"[b]Règles[/b], appliquées à chaud (les adresses bloquées le restent) :\n"
+"- machines du tailnet (100.64.0.0/10 et fd7a:115c:a1e0::/48) : toujours admises, avant toute règle ; seuls les visiteurs de Funnel sont filtrés ;\n"
+"- liste de confiance : jamais limitée ; liste noire : refusée jusqu'à son retrait ;\n"
+"- débit par adresse (40 connexions / 10 s par défaut) : au-delà, l'adresse est bloquée pour la durée choisie (60 min) ;\n"
+"- débit par préfixe /24 (IPv4) ou /64 (IPv6) ;\n"
+"- budget global de connexions admises par seconde : le processeur n'est jamais débordé ;\n"
+"- nom visé : une connexion qui ne vise pas le nom de la machine est refusée.\n"
+"Mode [b]observation[/b] : tout est compté, rien n'est refusé (pour régler les seuils sans risque).\n"
+"\n"
+"Le certificat est vérifié chaque jour et renouvelé à chaud 30 jours avant son échéance.\n"
+"\n"
+"[b]Regroupements[/b] (empreintes, AS, pays) : contre les attaques à adresses dispersées, que les règles par adresse ne voient qu'une fois chacune. Avant tout chiffrement, la porte calcule l'[b]empreinte JA4[/b] du client (la façon dont son logiciel se présente : un navigateur et un outil d'attaque n'ont pas la même), son [b]AS[/b] (le réseau d'origine : fournisseur d'accès, hébergeur, nuage) et son [b]pays[/b], et compte le débit de chaque groupe.\n"
+"- [b]Mode attaque automatique[/b] : quand les connexions entrantes dépassent le seuil (80 / s par défaut), la porte passe seule en mode attaque, et y reste jusqu'à 5 minutes de calme. Rien à faire, même à distance.\n"
+"- En mode attaque seulement : une empreinte inconnue qui explose, un AS d'hébergeur ou de nuage (liste modifiable) ou un pays de votre liste (vide par défaut) qui dépasse son débit est refusé.\n"
+"- Les [b]navigateurs courants[/b] (Chrome, Edge, Firefox) ne sont jamais touchés par ces règles, et les [b]clients connus[/b] (admis dans les dernières 24 h) passent avant le budget global.\n"
+"- [b]Référence apprise[/b] : pendant 7 jours, la porte apprend les empreintes habituelles de votre site (jamais pendant une attaque) ; pendant ce temps, les regroupements restent en [b]observation[/b], même si « appliqués » est choisi. « Recommencer l'apprentissage » repart de zéro et les remet en observation.\n"
+"- [b]Observation[/b] (par défaut) : tout est compté (« aurait été refusée »), rien n'est refusé ; une fois l'apprentissage fini, passez en « appliqués » quand les chiffres vous conviennent.\n"
+"- Hors attaque, une connexion sur dix seulement est classée (assez pour apprendre, dix fois moins de calcul) ; en attaque, toutes. Il faut un HAProxy avec Lua (cas des distributions courantes).\n"
+"- [b]Base AS / pays[/b] : DB-IP Lite, téléchargée et mise à jour une fois par mois par la veille automatique, ou par « Mettre à jour la base ». IP Geolocation by DB-IP (https://db-ip.com), licence CC BY 4.0."
+msgstr ""
+"通常の Funnel では、tailscaled が訪問者ごとに暗号化（TLS）を処理するため、集中的なアクセスでマシンが飽和します。保護機能は、Funnel とあなたのサイトの間にゲート（HAProxy、パッケージマネージャーでインストール）を置きます。Funnel はまだ暗号化されたままのストリームを訪問者の実アドレスとともにゲートへ渡し、ゲートはあらゆる暗号化の前に判断し、許可した接続だけを暗号化します。測定結果：拒否した接続のコストは 4.6 分の 1、許可した接続は 2 分の 1 になります。\n"
+"\n"
+"[b]保護を有効化[/b]：準備（Tailscale による *.ts.net 証明書、リスト、検証済みの設定）、ゲートとその証明書のサービス（sudo、ターミナルで。ゲートはあなたのアカウントで動作し、root で動作することはありません）、Funnel の切り替え、続いてインターネットからのテスト。失敗した場合は、元の公開設定がただちに戻されます。前提条件：Tailscale のオペレーターであること、Funnel が単一のポートでパス「/」の HTTPS として公開されていること。\n"
+"[b]保護を無効化[/b]：Funnel は以前とまったく同じ状態に戻されて検証され、その後ゲートが停止します。設定とリストは保持されます。\n"
+"\n"
+"[b]ルール[/b]、ホット適用（ブロック済みのアドレスはそのまま）：\n"
+"- tailnet のマシン（100.64.0.0/10 と fd7a:115c:a1e0::/48）：どのルールよりも先に常に許可。フィルタリングされるのは Funnel の訪問者だけです。\n"
+"- 信頼リスト：制限なし。ブラックリスト：削除するまで拒否。\n"
+"- アドレスごとのレート（既定は 40 接続 / 10 秒）：超えると、そのアドレスは選んだ期間（60 分）ブロックされます。\n"
+"- /24（IPv4）または /64（IPv6）プレフィックスごとのレート。\n"
+"- 毎秒の許可接続数の全体予算：プロセッサーが溢れることはありません。\n"
+"- 宛先名：マシン名を宛先としない接続は拒否されます。\n"
+"[b]観察[/b]モード：すべて数えますが、何も拒否しません（リスクなしでしきい値を調整するため）。\n"
+"\n"
+"証明書は毎日確認され、期限の 30 日前にホット更新されます。\n"
+"\n"
+"[b]グループ化[/b]（フィンガープリント、AS、国）：アドレスを分散させた攻撃への対策です。アドレス単位のルールでは、それぞれのアドレスが一度しか見えません。あらゆる暗号化の前に、ゲートはクライアントの [b]JA4 フィンガープリント[/b]（ソフトウェアの名乗り方。ブラウザーと攻撃ツールでは異なります）、[b]AS[/b]（送信元ネットワーク：プロバイダー、ホスティング事業者、クラウド）、[b]国[/b]を算出し、グループごとのレートを数えます。\n"
+"- [b]自動攻撃モード[/b]：受信接続がしきい値（既定は 80 / 秒）を超えると、ゲートは自動で攻撃モードに入り、5 分間落ち着くまでそのままです。リモートからでも、何もする必要はありません。\n"
+"- 攻撃モードのときだけ：急増した未知のフィンガープリント、ホスティング事業者やクラウドの AS（一覧は変更可能）、あなたのリストにある国（既定は空）がそのレートを超えると拒否されます。\n"
+"- [b]一般的なブラウザー[/b]（Chrome、Edge、Firefox）がこれらのルールの影響を受けることはなく、[b]既知のクライアント[/b]（直近 24 時間に許可されたもの）は全体予算より優先されます。\n"
+"- [b]学習した基準[/b]：7 日間、ゲートはあなたのサイトの通常のフィンガープリントを学習します（攻撃中は学習しません）。その間、「適用」を選んでいてもグループ化は [b]観察[/b] のままです。「学習をやり直す」で一からやり直し、観察に戻します。\n"
+"- [b]観察[/b]（既定）：すべて数えますが（「拒否されていたはず」）、何も拒否しません。学習が終わり、数値に納得できたら「適用」に切り替えてください。\n"
+"- 攻撃中でなければ分類するのは 10 接続に 1 つだけです（学習には十分で、計算は 10 分の 1）。攻撃中はすべて分類します。Lua 付きの HAProxy が必要です（一般的なディストリビューションはそうです）。\n"
+"- [b]AS / 国データベース[/b]：DB-IP Lite。自動監視が月に一度ダウンロードして更新するか、「データベースを更新」で更新します。IP Geolocation by DB-IP (https://db-ip.com)、ライセンス CC BY 4.0。"
+
+msgid "Attaques et décisions"
+msgstr "攻撃と判断"
+
+#, python-format
+msgid ""
+"Les compteurs de la porte (connexions reçues, refusées avant chiffrement, admises, en cours) et les adresses les plus actives, relus toutes les 2 secondes. La colonne État dit où se trouve chaque adresse : liste noire (refusée jusqu'au retrait), bloquée (pour la durée de blocage), admise, ou confiance (jamais limitée) ; les adresses des listes sans connexion récente apparaissent aussi. Choisissez une ligne puis [b]Bloquer[/b], [b]Liste noire[/b], [b]Débloquer[/b] ou [b]Confiance[/b] / [b]Retirer la confiance[/b] : appliqué tout de suite, sans redémarrer la porte ; la notification dit en une ligne l'action et la place de l'adresse (ex. « 1.2.3.4 → liste noire »). Une adresse n'est jamais dans les deux listes : la mettre en liste noire la retire de la confiance, et l'inverse. Une adresse en confiance ou du tailnet ne peut pas être bloquée (elle passe avant). Porte arrêtée : les listes s'appliqueront à son activation.\n"
+"\n"
+"Chaque adresse affiche son pays et son AS. La ligne sous les compteurs dit si la porte est en [b]mode attaque[/b] (et dans combien de temps elle revient au normal) et combien de connexions les regroupements ont refusées (ou auraient refusées, en observation) sur 7 jours. Les vues [b]Empreintes[/b], [b]AS[/b] et [b]Pays[/b] montrent les groupes les plus actifs (connexions / 10 s, total), avec le navigateur reconnu, le nom de l'AS (hébergeur ou non) ou « limité en attaque ». Hors attaque, ces chiffres portent sur une connexion sur dix.\n"
+"\n"
+"[b]Gestion de la liste noire[/b] (seconde ligne de boutons) : toute la liste, avec la date d'ajout et l'origine de chaque entrée, filtrable.\n"
+"- [b]Ajouter[/b] une adresse ou un réseau en prévision ; [b]Supprimer[/b] la ligne choisie.\n"
+"- [b]Importer[/b] un fichier TXT (une adresse ou un réseau par ligne, # = commentaire) : doublons, adresses déjà couvertes par un réseau de la liste et adresses du tailnet écartés et comptés ; les lignes invalides sont citées, comme une adresse IPv6 suivie d'un identifiant de zone (« %eth0 »), refusée par sécurité.\n"
+"- [b]Purger[/b], avec aperçu puis confirmation : plus anciennes que N jours, les N plus anciennes, de la ligne A à la ligne B, par origine, ou toute la liste (confirmation tapée).\n"
+"- [b]Exporter[/b] TXT (réimportable tel quel, pour une récidive), HTML (thème d'export choisi) ou JSON.\n"
+"- Plafond : 50 000 entrées (alerte au tableau de bord à 25 000). HAProxy en tiendrait bien plus ; c'est omega-tail qui ralentirait. Au plafond, l'ajout est refusé : exportez puis purgez."
+msgstr ""
+"ゲートのカウンター（受信、暗号化前に拒否、許可、処理中の接続）と最も活発なアドレス。2 秒ごとに読み直されます。「状態」列は各アドレスの位置付けを示します：ブラックリスト（削除するまで拒否）、ブロック中（ブロック期間中）、許可、または信頼（制限なし）。最近接続のないリスト上のアドレスも表示されます。行を選んで [b]ブロック[/b]、[b]ブラックリスト[/b]、[b]ブロック解除[/b]、[b]信頼[/b] / [b]信頼を解除[/b]：ゲートを再起動せずにただちに適用されます。通知は、行った操作とそのアドレスの位置付けを 1 行で伝えます（例：「1.2.3.4 → ブラックリスト」）。1 つのアドレスが両方のリストに入ることはありません。ブラックリストに入れると信頼から外れ、その逆も同様です。信頼に入っているアドレスや tailnet のアドレスはブロックできません（そちらが優先されます）。ゲートが停止中の場合：リストは有効化時に適用されます。\n"
+"\n"
+"各アドレスには国と AS が表示されます。カウンターの下の行は、ゲートが [b]攻撃モード[/b] かどうか（そしてあとどれくらいで通常に戻るか）と、7 日間にグループ化で拒否した（観察中なら拒否していたはずの）接続数を示します。[b]フィンガープリント[/b]、[b]AS[/b]、[b]国[/b] の表示では、最も活発なグループ（接続 / 10 秒、合計）を、識別されたブラウザー、AS の名前（ホスティング事業者かどうか）、または「攻撃時に制限」とともに示します。攻撃中でなければ、これらの数値は 10 接続に 1 つの割合に基づきます。\n"
+"\n"
+"[b]ブラックリストの管理[/b]（2 行目のボタン）：リスト全体を、各項目の追加日と追加元付きで表示し、絞り込めます。\n"
+"- アドレスまたはネットワークを事前に [b]追加[/b]。選択した行を [b]削除[/b]。\n"
+"- TXT ファイルを [b]インポート[/b]（1 行に 1 つのアドレスまたはネットワーク、# = コメント）：重複、リスト内のネットワークにすでに含まれるアドレス、tailnet のアドレスは除外して数えます。無効な行は表示されます。たとえばゾーン識別子（「%eth0」）付きの IPv6 アドレスは、安全のため拒否されます。\n"
+"- プレビューと確認のうえで [b]パージ[/b]：N 日より古いもの、古い順に N 件、A 行目から B 行目まで、追加元ごと、またはリスト全体（確認の入力が必要）。\n"
+"- TXT（再発時にそのまま再インポート可能）、HTML（選択したエクスポートのテーマ）、JSON で [b]エクスポート[/b]。\n"
+"- 上限：50 000 件（25 000 件でダッシュボードにアラート）。HAProxy はもっと多く保持できますが、遅くなるのは omega-tail のほうです。上限に達すると追加は拒否されます。エクスポートしてからパージしてください。"
+
+msgid "Réseau et appareils"
+msgstr "ネットワークとデバイス"
+
+msgid ""
+"Ce que voit Tailscale depuis cette machine. Lecture seule : rien n'y change un réglage.\n"
+"- [b]Appareils[/b] : nom, système, en ligne ou non, [b]chemin[/b] (direct, ou par un relais de Tailscale quand la connexion directe est impossible), dernière fois vu, adresse, trafic échangé. Filtrez par nom, système ou adresse. Les [b]relais Funnel de Tailscale[/b] (« funnel-ingress-node ») apparaissent dans le tailnet dès que Funnel est actif : ce ne sont pas vos appareils, ils sont cachés sauf si vous cochez la case.\n"
+"- [b]Ping Tailscale[/b] : dit si le chemin vers l'appareil est direct ou relayé, et sa latence (3 essais). [b]Qui est-ce ?[/b] : à quelle machine et quel compte appartient une adresse du tailnet. Sans texte tapé, la ligne choisie est utilisée.\n"
+"- [b]Diagnostic réseau[/b] (quelques secondes) : UDP, IPv4 / IPv6, type de NAT (simple : connexions directes faciles ; difficile : plus de relais), ouverture de port par la box (UPnP, NAT-PMP, PCP), relais le plus proche et latences.\n"
+"- [b]DNS[/b], [b]verrou du tailnet[/b] et [b]compteurs internes[/b] (octets reçus et envoyés en direct ou par relais, paquets jetés, messages de santé) : tels que Tailscale les donne."
+msgstr ""
+"このマシンから Tailscale が見ているもの。読み取り専用：ここで設定が変わることはありません。\n"
+"- [b]デバイス[/b]：名前、システム、オンラインかどうか、[b]経路[/b]（直接、または直接接続できない場合は Tailscale のリレー経由）、最終確認時刻、アドレス、やり取りしたトラフィック。名前、システム、アドレスで絞り込めます。Funnel が有効になると、[b]Tailscale の Funnel リレー[/b]（「funnel-ingress-node」）が tailnet に現れます。これはあなたのデバイスではないため、チェックボックスをオンにしない限り非表示です。\n"
+"- [b]Tailscale Ping[/b]：デバイスへの経路が直接かリレー経由か、その遅延（3 回試行）を示します。[b]これは誰？[/b]：tailnet のアドレスがどのマシン・どのアカウントのものか。テキストを入力しなければ、選択した行が使われます。\n"
+"- [b]ネットワーク診断[/b]（数秒）：UDP、IPv4 / IPv6、NAT の種類（簡単：直接接続しやすい、困難：リレーが増える）、ルーターによるポート開放（UPnP、NAT-PMP、PCP）、最寄りのリレーと遅延。\n"
+"- [b]DNS[/b]、[b]tailnet ロック[/b]、[b]内部カウンター[/b]（直接またはリレー経由で送受信したバイト数、破棄したパケット、ヘルスメッセージ）：Tailscale が返すとおりに表示します。"
+
+msgid "Rapport"
+msgstr "レポート"
+
+msgid ""
+"Tout ce qu'omega-tail sait de la machine, en faits : Tailscale (version, préférences), publication, machine, pare-feu (règles, compteurs, listes, regroupements), survie (confinement, veille, disjoncteur), alertes, et les [b]attaques des 7 derniers jours[/b] lues dans le journal de la porte (connexions marquées par motif, par jour, adresses les plus marquées avec leur AS et leur pays).\n"
+"- [b]Vie privée[/b] : par défaut, le compte Tailscale et les noms / adresses des appareils du tailnet n'y figurent pas (seulement leur nombre), pour pouvoir envoyer le rapport à quelqu'un. Cochez la case pour les inclure. Les adresses des attaquants y restent toujours.\n"
+"- [b]Exporter[/b] en TXT, HTML (thème au choix) ou JSON, dans le dossier des exports. [b]Voir les exports[/b] ouvre ce dossier dans votre navigateur (chaque export se lit d'un clic) ; sans navigateur ni bureau (serveur, SSH), la liste et la lecture se font dans omega-tail.\n"
+"- Le journal de la porte doit être lisible par votre compte (groupe systemd-journal, adm ou wheel selon la distribution), sinon le rapport le dit."
+msgstr ""
+"omega-tail がマシンについて把握しているすべての事実：Tailscale（バージョン、設定）、公開、マシン、ファイアウォール（ルール、カウンター、リスト、グループ化）、サバイバル（封じ込め、監視、ブレーカー）、アラート、そしてゲートのログから読み取った [b]直近 7 日間の攻撃[/b]（理由別・日別にマークされた接続、最も多くマークされたアドレスとその AS と国）。\n"
+"- [b]プライバシー[/b]：既定では Tailscale のアカウントや tailnet のデバイス名 / アドレスは含まれず（数だけ）、レポートを誰かに送れます。含めるにはチェックボックスをオンにします。攻撃者のアドレスは常に含まれます。\n"
+"- TXT、HTML（テーマを選択可能）、JSON でエクスポートフォルダーに [b]エクスポート[/b]。[b]エクスポートを見る[/b] でそのフォルダーをブラウザーで開きます（各エクスポートはクリックで読めます）。ブラウザーやデスクトップがない場合（サーバー、SSH）は、omega-tail 内で一覧と閲覧ができます。\n"
+"- ゲートのログがあなたのアカウントで読める必要があります（ディストリビューションに応じて systemd-journal、adm、wheel グループ）。読めない場合はレポートにそう表示されます。"
+
+msgid "systemd, OpenRC, runit"
+msgstr "systemd, OpenRC, runit"
+
+msgid ""
+"omega-tail reconnaît le système d'init de la machine et s'y adapte :\n"
+"- [b]service tailscaled[/b] : systemctl, rc-service ou sv ;\n"
+"- [b]journaux[/b] : journalctl, ou les fichiers du service (/var/log/tailscaled.log, svlogd, socklog…) ;\n"
+"- [b]confinement[/b] : fichier d'ajout systemd ; ailleurs, un groupe de contrôle à part (cgroup v2), perdu si tailscaled redémarre (une alerte propose alors de le remettre) ;\n"
+"- [b]coupure momentanée[/b] : minuterie systemd ; ailleurs, un processus détaché sous votre compte ;\n"
+"- [b]porte du pare-feu[/b] : service systemd, OpenRC ou runit ; certificat renouvelé par minuterie systemd ou par une ligne de votre crontab (marquée omega-tail, retirée à la désactivation)."
+msgstr ""
+"omega-tail はマシンの init システムを認識し、それに合わせます：\n"
+"- [b]tailscaled サービス[/b]：systemctl、rc-service、sv。\n"
+"- [b]ログ[/b]：journalctl、またはサービスのファイル（/var/log/tailscaled.log、svlogd、socklog など）。\n"
+"- [b]封じ込め[/b]：systemd の追加設定ファイル。それ以外では独立したコントロールグループ（cgroup v2）で、tailscaled が再起動すると失われます（その場合はアラートが再適用を提案します）。\n"
+"- [b]一時遮断[/b]：systemd タイマー。それ以外では、あなたのアカウントで動く切り離されたプロセス。\n"
+"- [b]ファイアウォールのゲート[/b]：systemd、OpenRC、runit のサービス。証明書は systemd タイマー、または crontab の 1 行（omega-tail の印付き、無効化時に削除）で更新されます。"
+
+msgid ""
+"Langue de l'interface et des exports, thème de l'interface et des exports, "
+"dossiers des exports et des captures d'écran (par défaut var/exports/ et "
+"var/screenshots/), et leur purge après confirmation."
+msgstr ""
+"インターフェースとエクスポートの言語、インターフェースとエクスポートのテーマ、エクスポートとスクリーンショットのフォルダー（既定は "
+"var/exports/ と var/screenshots/）、および確認後のパージ。"
+
+msgid "Ligne de commande"
+msgstr "コマンドライン"
+
+msgid ""
+"- omega-tail : l'interface.\n"
+"- omega-tail etat : l'état et les alertes en texte ; --format json pour un script.\n"
+"- omega-tail aide : cette aide en texte.\n"
+"- omega-tail rapport [--format txt|html|json] [--prive] [--exporter] : le rapport, affiché ou enregistré dans le dossier des exports ; --prive ajoute le compte et les appareils du tailnet.\n"
+"- omega-tail disjoncteur etat | couper --minutes N | couper --totale | retablir\n"
+"- omega-tail porte etat | certificat [--si-besoin] | bloquer ADRESSE [--toujours] | debloquer ADRESSE | confiance ADRESSE\n"
+"- omega-tail --version"
+msgstr ""
+"- omega-tail：インターフェース。\n"
+"- omega-tail etat：状態とアラートをテキストで。スクリプト用には --format json。\n"
+"- omega-tail aide：このヘルプをテキストで。\n"
+"- omega-tail rapport [--format txt|html|json] [--prive] [--exporter]：レポートを表示、またはエクスポートフォルダーに保存。--prive でアカウントと tailnet のデバイスを追加。\n"
+"- omega-tail disjoncteur etat | couper --minutes N | couper --totale | retablir\n"
+"- omega-tail porte etat | certificat [--si-besoin] | bloquer ADRESSE [--toujours] | debloquer ADRESSE | confiance ADRESSE\n"
+"- omega-tail --version"
+
+msgid ""
+"Depuis cette aide : écrire à l'auteur, le formulaire du site, un café, et "
+"vérifier les mises à jour."
+msgstr "このヘルプから：作者へのメール、サイトのフォーム、コーヒー、更新の確認ができます。"
+
+msgid "DÉMARRAGE RAPIDE"
+msgstr "クイックスタート"
+
+msgid "RACCOURCIS"
+msgstr "ショートカット"
+
+msgid "Aide d’omega-tail"
+msgstr "omega-tail のヘルプ"
+
+msgid "Aide complète : chaque menu, sa fonction et le détail."
+msgstr "完全なヘルプ：各メニュー、その機能と詳細。"
+
+msgid "Démarrage rapide"
+msgstr "クイックスタート"
+
+msgid "Raccourcis"
+msgstr "ショートカット"
+
+msgid "Touche"
+msgstr "キー"
+
+msgid "Action"
+msgstr "操作"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — aide."
+msgstr "OMEGA-TAIL {version} — ヘルプ。"
+
+msgid "Aide - Omega-Tail"
+msgstr "ヘルプ - Omega-Tail"
+
+#, python-brace-format
+msgid "{name} (hébergeur)"
+msgstr "{name}（ホスティング事業者）"
+
+msgid "connecté"
+msgstr "接続済み"
+
+msgid "déconnecté"
+msgstr "切断"
+
+msgid "connexion du compte attendue"
+msgstr "アカウントのログイン待ち"
+
+msgid "machine à approuver dans la console"
+msgstr "コンソールでのマシン承認待ち"
+
+msgid "démarrage"
+msgstr "起動中"
+
+msgid "sans état"
+msgstr "状態なし"
+
+msgid "inconnu"
+msgstr "不明"
+
+msgid "HTTP"
+msgstr "HTTP"
+
+msgid "HTTPS (TLS par tailscaled)"
+msgstr "HTTPS（TLS は tailscaled）"
+
+msgid "TCP (TLS transmis tel quel)"
+msgstr "TCP（TLS をそのまま転送）"
+
+msgid "TCP, TLS par tailscaled"
+msgstr "TCP、TLS は tailscaled"
+
+msgid "Go"
+msgstr "GB"
+
+msgid "Ko"
+msgstr "KB"
+
+msgid "Mo"
+msgstr "MB"
+
+msgid "o"
+msgstr "B"
+
+msgid "Internet (Funnel)"
+msgstr "インターネット（Funnel）"
+
+msgid "tailnet seul (Serve)"
+msgstr "tailnet のみ（Serve）"
+
+msgid "inconnu de systemd"
+msgstr "systemd に不明"
+
+msgid "actif"
+msgstr "有効"
+
+msgid "arrêté"
+msgstr "停止中"
+
+msgid "en échec"
+msgstr "失敗"
+
+msgid "arrêt en cours"
+msgstr "停止中"
+
+msgid "lancé au démarrage"
+msgstr "起動時に開始"
+
+msgid "pas lancé au démarrage"
+msgstr "起動時に開始しない"
+
+msgid "observation"
+msgstr "観察"
+
+msgid "Bouclier du port WireGuard : état illisible."
+msgstr "WireGuard ポートのシールド：状態を読み取れません。"
+
+msgid "Bouclier du port WireGuard : retiré depuis omega-fire (ou à la main)."
+msgstr "WireGuard ポートのシールド：omega-fire から（または手動で）撤去されました。"
+
+msgid ""
+"Bouclier du port WireGuard : aucun. Sans lui, tailscaled dépense environ un "
+"cœur pour 100 000 paquets par seconde, même invalides."
+msgstr ""
+"WireGuard ポートのシールド：なし。シールドがないと、tailscaled は無効なものでも毎秒 100 000 パケットでコアを約 1 "
+"つ消費します。"
+
+msgid ""
+"Bouclier du port WireGuard ABSENT : un autre outil a effacé sa table ; « "
+"Reposer » la remet."
+msgstr "WireGuard ポートのシールドがありません。別のツールがテーブルを消去しました。「再設置」で戻せます。"
+
+msgid ""
+"Bouclier du port WireGuard : état non mis à jour (service omega-bouclier-wg "
+"arrêté ?)."
+msgstr "WireGuard ポートのシールド：状態が更新されていません（omega-bouclier-wg サービスが停止？）。"
+
+#, python-brace-format
+msgid ""
+"Bouclier du port WireGuard : {mode}, géré par {manager} ; {count} paquet(s) "
+"refusé(s)"
+msgstr "WireGuard ポートのシールド：{mode}、管理 {manager}、拒否 {count} パケット"
+
+#, python-brace-format
+msgid ""
+"Bouclier du port WireGuard : {mode}, géré par {manager} ; {count} paquet(s) "
+"auraient été refusés"
+msgstr "WireGuard ポートのシールド：{mode}、管理 {manager}、拒否していたはず {count} パケット"
+
+msgid "adresse bloquée"
+msgstr "ブロック中のアドレス"
+
+msgid "budget global dépassé"
+msgstr "全体予算を超過"
+
+msgid "liste noire"
+msgstr "ブラックリスト"
+
+msgid "trop de connexions d'un réseau"
+msgstr "1 つのネットワークからの接続が多すぎる"
+
+msgid "trop de connexions d'une adresse"
+msgstr "1 つのアドレスからの接続が多すぎる"
+
+msgid "mauvais nom de site (SNI)"
+msgstr "サイト名が不正（SNI）"
+
+msgid "pas une connexion TLS"
+msgstr "TLS 接続ではない"
+
+msgid "AS d'hébergeur en rafale"
+msgstr "ホスティング事業者の AS が急増"
+
+msgid "empreinte inconnue en rafale"
+msgstr "未知のフィンガープリントが急増"
+
+msgid "pays limité en rafale"
+msgstr "制限対象の国が急増"
+
+#, python-brace-format
+msgid "tailscaled ne répond pas : {error}"
+msgstr "tailscaled が応答しません：{error}"
+
+#, python-brace-format
+msgid "État : {state}"
+msgstr "状態：{state}"
+
+#, python-brace-format
+msgid "Version : {daemon} en marche, {client} installé"
+msgstr "バージョン：実行中 {daemon}、インストール済み {client}"
+
+#, python-brace-format
+msgid "Nom de la machine : {name}"
+msgstr "マシン名：{name}"
+
+#, python-brace-format
+msgid "Compte : {user}"
+msgstr "アカウント：{user}"
+
+msgid "Compte : masqué (non inclus dans ce rapport)"
+msgstr "アカウント：非表示（このレポートには含まれません）"
+
+#, python-brace-format
+msgid ""
+"Appareils du tailnet : {online} en ligne sur {total} (plus {relays} relais "
+"Funnel de Tailscale)"
+msgstr ""
+"tailnet のデバイス：{total} 台中 {online} 台がオンライン（ほかに Tailscale の Funnel リレー "
+"{relays} 台）"
+
+#, python-brace-format
+msgid "Appareils du tailnet : {online} en ligne sur {total}"
+msgstr "tailnet のデバイス：{total} 台中 {online} 台がオンライン"
+
+#, python-brace-format
+msgid "Clé de la machine : {expiry}"
+msgstr "マシンのキー：{expiry}"
+
+msgid "sans expiration"
+msgstr "期限なし"
+
+msgid "aucun"
+msgstr "なし"
+
+msgid "Préférence"
+msgstr "設定項目"
+
+msgid "Valeur"
+msgstr "値"
+
+msgid "Rien n'est publié (ni Serve, ni Funnel)."
+msgstr "何も公開されていません（Serve も Funnel もなし）。"
+
+#, python-brace-format
+msgid "Machine : {name} ({count} fils)"
+msgstr "マシン：{name}（{count} スレッド）"
+
+#, python-brace-format
+msgid "Charge : {a:.2f} {b:.2f} {c:.2f}"
+msgstr "負荷：{a:.2f} {b:.2f} {c:.2f}"
+
+msgid "pas de capteur"
+msgstr "センサーなし"
+
+#, python-brace-format
+msgid "Mémoire vive utilisée : {value}"
+msgstr "使用中のメモリー：{value}"
+
+msgid "MACHINE"
+msgstr "マシン"
+
+msgid "PARE-FEU FUNNEL"
+msgstr "FUNNEL ファイアウォール"
+
+msgid "Pare-feu indisponible sur cette machine."
+msgstr "このマシンではファイアウォールを利用できません。"
+
+#, python-brace-format
+msgid "Service de la porte : {state}"
+msgstr "ゲートのサービス：{state}"
+
+#, python-brace-format
+msgid "Protection active depuis {since} : Funnel {port} → porte → {backend}"
+msgstr "{since} から保護が有効：Funnel {port} → ゲート → {backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions depuis le démarrage de la porte : {total} reçues · {refused} "
+"refusées avant chiffrement · {admitted} admises · {current} en cours"
+msgstr ""
+"ゲート起動以降の接続：受信 {total} · 暗号化前に拒否 {refused} · 許可 {admitted} · 処理中 {current}"
+
+msgid "Protection inactive : Funnel ne passe pas par la porte."
+msgstr "保護は無効です。Funnel はゲートを経由していません。"
+
+#, python-brace-format
+msgid "Mode : {mode}"
+msgstr "モード：{mode}"
+
+msgid "observation (rien n'est refusé)"
+msgstr "観察（何も拒否しない）"
+
+msgid "normal (les règles refusent)"
+msgstr "通常（ルールで拒否）"
+
+#, python-brace-format
+msgid ""
+"Règles : {ip} connexions / 10 s par adresse · {prefix} / 10 s par réseau · "
+"budget global {budget} / s · {maximum} connexions au plus · blocage {block} "
+"min · nom du site {sni}"
+msgstr ""
+"ルール：アドレスごとに {ip} 接続 / 10 秒 · ネットワークごとに {prefix} / 10 秒 · 全体予算 {budget} / 秒 ·"
+" 最大 {maximum} 接続 · ブロック {block} 分 · サイト名 {sni}"
+
+msgid "non vérifié"
+msgstr "検証しない"
+
+msgid "vérifié"
+msgstr "検証する"
+
+#, python-brace-format
+msgid "Certificat : encore {days} jour(s)"
+msgstr "証明書：残り {days} 日"
+
+#, python-brace-format
+msgid "Confiance : {count} adresse(s) ou réseau(x)"
+msgstr "信頼：{count} 件のアドレスまたはネットワーク"
+
+#, python-brace-format
+msgid "Liste noire : {entries}"
+msgstr "ブラックリスト：{entries}"
+
+msgid "vide"
+msgstr "空"
+
+#, python-brace-format
+msgid "Bloquées en ce moment : {entries}"
+msgstr "現在ブロック中：{entries}"
+
+msgid "Bloquées en ce moment : aucune"
+msgstr "現在ブロック中：なし"
+
+#, python-brace-format
+msgid "Regroupements : {mode} · {attack}"
+msgstr "グループ化：{mode} · {attack}"
+
+msgid "MODE ATTAQUE en cours"
+msgstr "攻撃モード中"
+
+msgid "mode normal"
+msgstr "通常モード"
+
+#, python-brace-format
+msgid "Empreintes : apprentissage, encore {days} jour(s)"
+msgstr "フィンガープリント：学習中、残り {days} 日"
+
+#, python-brace-format
+msgid "Empreintes habituelles : {count} (référence prête)"
+msgstr "通常のフィンガープリント：{count}（基準の準備完了）"
+
+#, python-brace-format
+msgid "Base AS / pays : à jour il y a {days} jour(s)"
+msgstr "AS / 国データベース：{days} 日前に更新"
+
+msgid "Base AS / pays : absente"
+msgstr "AS / 国データベース：なし"
+
+msgid "Empreintes les plus actives"
+msgstr "最も活発なフィンガープリント"
+
+msgid "AS les plus actifs"
+msgstr "最も活発な AS"
+
+msgid "Pays les plus actifs"
+msgstr "最も活発な国"
+
+msgid "Adresse la plus active"
+msgstr "最も活発なアドレス"
+
+msgid "Connexions / 10 s"
+msgstr "接続 / 10 秒"
+
+msgid "confiance"
+msgstr "信頼"
+
+msgid "admise"
+msgstr "許可"
+
+msgid "bloquée"
+msgstr "ブロック中"
+
+#, python-brace-format
+msgid "Confinement de tailscaled : {state}"
+msgstr "tailscaled の封じ込め：{state}"
+
+msgid "Veille automatique : désactivée"
+msgstr "自動監視：無効"
+
+msgid "Veille automatique : activée mais arrêtée (aucun signe de vie)"
+msgstr "自動監視：有効だが停止中（生存信号なし）"
+
+#, python-brace-format
+msgid ""
+"Veille automatique : active · {strikes} dépassement(s) récent(s) · prochaine"
+" coupure {minutes} min"
+msgstr "自動監視：有効 · 最近の超過 {strikes} 回 · 次回の遮断 {minutes} 分"
+
+#, python-brace-format
+msgid ""
+"Disjoncteur : tailscaled au-delà de {cpu:.0f} % d'un cœur pendant {seconds} "
+"s, ou machine au-delà de {temperature:.0f} °C ; coupure proposée de "
+"{minutes} min"
+msgstr ""
+"ブレーカー：tailscaled が {seconds} 秒間コア 1 つの {cpu:.0f} % を超えるか、マシンが "
+"{temperature:.0f} °C を超えた場合、{minutes} 分間の遮断を提案"
+
+#, python-brace-format
+msgid "Funnel coupé depuis {since} ; remise en route {until}"
+msgstr "Funnel は {since} から遮断中、再開 {until}"
+
+msgid "manuelle"
+msgstr "手動"
+
+msgid "Aucune coupure de Funnel en cours."
+msgstr "現在 Funnel の遮断はありません。"
+
+#, python-brace-format
+msgid "  origine : {tool} · géré par {manager} · pairs connus : {peers}"
+msgstr "  由来：{tool} · 管理 {manager} · 既知のピア：{peers}"
+
+msgid "Journal de la veille (derniers événements) :"
+msgstr "監視のログ（最近のイベント）："
+
+msgid "SURVIE"
+msgstr "サバイバル"
+
+msgid "Aucune alerte."
+msgstr "アラートはありません。"
+
+#, python-brace-format
+msgid "ATTAQUES DES {days} DERNIERS JOURS"
+msgstr "直近 {days} 日間の攻撃"
+
+msgid "Pare-feu indisponible : rien à compter."
+msgstr "ファイアウォールを利用できません。数えるものはありません。"
+
+#, python-brace-format
+msgid "Journal de la porte illisible : {error}"
+msgstr "ゲートのログを読み取れません：{error}"
+
+msgid ""
+"Lu dans le journal de la porte : chaque connexion marquée par une règle "
+"(refusée, ou seulement comptée en observation, selon le mode du moment)."
+msgstr "ゲートのログから読み取り：ルールによってマークされた各接続（その時点のモードに応じて、拒否、または観察中なら数えただけ）。"
+
+msgid "Aucune connexion marquée sur la période."
+msgstr "この期間にマークされた接続はありません。"
+
+#, python-brace-format
+msgid "Connexions marquées : {count}{floor}"
+msgstr "マークされた接続：{count}{floor}"
+
+msgid " (au moins : journal trop long, seules les plus récentes ont été lues)"
+msgstr "（以上：ログが長すぎるため、最新のものだけを読みました）"
+
+#, python-brace-format
+msgid ""
+"Règles de la porte, connexions qui auraient été refusées (observation) : "
+"{reasons}"
+msgstr "ゲートのルール、拒否されていたはずの接続（観察）：{reasons}"
+
+#, python-brace-format
+msgid "Règles de la porte, connexions refusées : {reasons}"
+msgstr "ゲートのルール、拒否された接続：{reasons}"
+
+#, python-brace-format
+msgid "Regroupements, connexions refusées : {reasons}"
+msgstr "グループ化、拒否された接続：{reasons}"
+
+#, python-brace-format
+msgid ""
+"Regroupements, connexions qui auraient été refusées (observation) : "
+"{reasons}"
+msgstr "グループ化、拒否されていたはずの接続（観察）：{reasons}"
+
+#, python-brace-format
+msgid "Par jour : {days}"
+msgstr "日別：{days}"
+
+msgid "AS"
+msgstr "AS"
+
+msgid "Adresse"
+msgstr "アドレス"
+
+msgid "Connexions marquées"
+msgstr "マークされた接続"
+
+msgid "Pays"
+msgstr "国"
+
+msgid "en ligne"
+msgstr "オンライン"
+
+msgid "hors ligne"
+msgstr "オフライン"
+
+msgid "APPAREILS DU TAILNET"
+msgstr "TAILNET のデバイス"
+
+msgid "Aucun appareil lu."
+msgstr "デバイスを読み取れませんでした。"
+
+msgid "Système"
+msgstr "システム"
+
+msgid "Compte et appareils du tailnet inclus."
+msgstr "アカウントと tailnet のデバイスを含みます。"
+
+msgid ""
+"Compte et appareils du tailnet non inclus (seulement leur nombre) ; les "
+"adresses des attaquants restent."
+msgstr "アカウントと tailnet のデバイスは含みません（数のみ）。攻撃者のアドレスは含まれます。"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — RAPPORT DE LA MACHINE {machine}"
+msgstr "OMEGA-TAIL {version} — マシン {machine} のレポート"
+
+#, python-brace-format
+msgid "Établi le {date} (lecture seule, sans droits)."
+msgstr "作成日 {date}（読み取り専用、権限なし）。"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — rapport."
+msgstr "OMEGA-TAIL {version} — レポート。"
+
+msgid "Rapport - Omega-Tail"
+msgstr "レポート - Omega-Tail"
+
+msgid ""
+"Le démarrage de tailscaled lance « tailscale up » (votre fichier d'ajout). "
+"Depuis qu'un réglage a changé (opérateur, nom, routes…), Tailscale refuse ce"
+" « up » incomplet : systemd arrête alors tailscaled et abandonne après cinq "
+"essais (la machine sort du tailnet). omega-tail ajoute « - » devant cette "
+"commande : son refus n'arrête plus le service, et vos réglages restent "
+"gardés par Tailscale. Rien d'autre ne change ; l'original est gardé dans "
+"var/survie."
+msgstr ""
+"tailscaled の起動時に「tailscale "
+"up」が実行されます（あなたの追加設定ファイル）。設定（オペレーター、名前、ルートなど）が変わって以来、Tailscale "
+"はこの不完全な「up」を拒否します。すると systemd は tailscaled を停止し、5 回試したあとで諦めます（マシンは tailnet "
+"から外れます）。omega-tail はこのコマンドの前に「-」を付けます。拒否されてもサービスは止まらなくなり、設定は Tailscale "
+"が保持します。ほかは何も変わりません。元のファイルは var/survie に保存されます。"
+
+msgid "Lecture de l'état"
+msgstr "状態を読み込み中"
+
+#, python-brace-format
+msgid "Valeurs refusées (nombre hors limites) : {keys}"
+msgstr "拒否された値（範囲外の数値）：{keys}"
+
+msgid "Seuils enregistrés."
+msgstr "しきい値を保存しました。"
+
+#, python-brace-format
+msgid "Pas de nouvelle proposition pendant {minutes} min."
+msgstr "{minutes} 分間は提案しません。"
+
+#, python-brace-format
+msgid ""
+"Funnel sera coupé {minutes} min puis remis en route automatiquement, à "
+"l'identique (minuterie systemd : sudo une fois, dans le terminal)."
+msgstr ""
+"Funnel を {minutes} 分間遮断し、その後自動でまったく同じ状態に再開します（systemd タイマー：ターミナルで sudo を一度）。"
+
+msgid ""
+"Funnel sera coupé jusqu'à ce que vous le rétablissiez (« Rétablir maintenant"
+" »)."
+msgstr "Funnel は復旧するまで遮断されたままです（「今すぐ復旧」）。"
+
+msgid "COUPER FUNNEL ?"
+msgstr "FUNNEL を遮断しますか？"
+
+msgid ""
+"Les connexions venues d'Internet s'arrêtent aussitôt ; le tailnet (Serve, "
+"SSH) n'est pas touché."
+msgstr "インターネットからの接続はただちに止まります。tailnet（Serve、SSH）には影響しません。"
+
+msgid "Couper"
+msgstr "遮断"
+
+msgid "Disjoncteur"
+msgstr "ブレーカー"
+
+msgid "Pare-feu indisponible."
+msgstr "ファイアウォールを利用できません。"
+
+#, python-brace-format
+msgid "HAProxy : {path}"
+msgstr "HAProxy：{path}"
+
+msgid "non installé (« Installer HAProxy »)"
+msgstr "未インストール（「HAProxy をインストール」）"
+
+#, python-brace-format
+msgid ""
+"Protection ACTIVE depuis {since} : Funnel {port} → porte 127.0.0.1:{gate} → "
+"{backend}"
+msgstr "{since} から保護が有効：Funnel {port} → ゲート 127.0.0.1:{gate} → {backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions : {total} reçues · {refused} refusées avant chiffrement · "
+"{current} en cours"
+msgstr "接続：受信 {total} · 暗号化前に拒否 {refused} · 処理中 {current}"
+
+#, python-brace-format
+msgid ""
+"Protection inactive. Funnel {port} (HTTPS par tailscaled) → {backend} : pris"
+" en charge."
+msgstr "保護は無効です。Funnel {port}（HTTPS は tailscaled）→ {backend}：対応しています。"
+
+#, python-brace-format
+msgid "Protection inactive : {reason}."
+msgstr "保護は無効です：{reason}。"
+
+#, python-brace-format
+msgid "Certificat : encore {days} jour(s) (renouvelé chaque jour si besoin)"
+msgstr "証明書：残り {days} 日（必要なら毎日更新）"
+
+#, python-brace-format
+msgid ""
+"Mode : {mode} · {ip} connexions / 10 s par adresse · budget {budget} / s · "
+"blocage {block} min"
+msgstr ""
+"モード：{mode} · アドレスごとに {ip} 接続 / 10 秒 · 予算 {budget} / 秒 · ブロック {block} 分"
+
+msgid ""
+"⚠ Devenez opérateur de Tailscale (tableau de bord) : la porte en a besoin."
+msgstr "⚠ Tailscale のオペレーターになってください（ダッシュボード）。ゲートに必要です。"
+
+msgid "Pare-feu"
+msgstr "ファイアウォール"
+
+msgid "Changement en cours, puis vérification…"
+msgstr "変更中、その後検証します…"
+
+msgid ""
+"Gestionnaire de paquets inconnu : installez HAProxy avec celui de votre "
+"système."
+msgstr "不明なパッケージマネージャーです。システムのパッケージマネージャーで HAProxy をインストールしてください。"
+
+msgid "INSTALLER HAPROXY ?"
+msgstr "HAPROXY をインストールしますか？"
+
+msgid ""
+"HAProxy est installé par le gestionnaire de paquets de la distribution "
+"(mises à jour de sécurité comprises)."
+msgstr "HAProxy はディストリビューションのパッケージマネージャーでインストールされます（セキュリティ更新を含む）。"
+
+msgid "ACTIVER LA PROTECTION ?"
+msgstr "保護を有効化しますか？"
+
+msgid ""
+"1. Préparation (certificat *.ts.net, listes, configuration vérifiée).\n"
+"2. Services de la porte et de son certificat (sudo, dans le terminal ; la porte tourne sous votre compte, jamais en root).\n"
+"3. Bascule de Funnel vers la porte, puis essai depuis Internet. En cas d'échec, la publication d'origine est remise aussitôt.\n"
+"\n"
+"Coupure du site : quelques secondes pendant la bascule."
+msgstr ""
+"1. 準備（*.ts.net 証明書、リスト、検証済みの設定）。\n"
+"2. ゲートとその証明書のサービス（sudo、ターミナルで。ゲートはあなたのアカウントで動作し、root で動作することはありません）。\n"
+"3. Funnel をゲートに切り替え、続いてインターネットからテスト。失敗した場合は、元の公開設定がただちに戻されます。\n"
+"\n"
+"サイトの停止：切り替え中の数秒間。"
+
+msgid "Activer"
+msgstr "有効化"
+
+msgid "Préparation de la porte…"
+msgstr "ゲートを準備中…"
+
+msgid "Porte lancée ; bascule de Funnel et essai depuis Internet…"
+msgstr "ゲートを起動しました。Funnel を切り替えてインターネットからテスト中…"
+
+msgid "DÉSACTIVER LA PROTECTION ?"
+msgstr "保護を無効化しますか？"
+
+msgid ""
+"Funnel est remis exactement comme avant (HTTPS par tailscaled), vérifié, "
+"puis la porte est arrêtée (sudo, dans le terminal). Vos réglages et vos "
+"listes sont gardés."
+msgstr ""
+"Funnel を以前とまったく同じ状態（HTTPS は "
+"tailscaled）に戻して検証し、その後ゲートを停止します（sudo、ターミナルで）。設定とリストは保持されます。"
+
+msgid "Désactiver"
+msgstr "無効化"
+
+msgid "tailscaled ne tourne pas : rien à confiner."
+msgstr "tailscaled が動作していません。封じ込めるものはありません。"
+
+#, python-brace-format
+msgid ""
+"Pose le fichier d'ajout {path} (votre propre override.conf n'est pas "
+"modifié), recharge systemd{restart}."
+msgstr ""
+"追加設定ファイル {path} を設置し（あなた自身の override.conf は変更しません）、systemd "
+"を再読み込み{restart}します。"
+
+msgid ", puis redémarre tailscaled"
+msgstr "し、続いて tailscaled を再起動"
+
+msgid ""
+"Place tailscaled dans un groupe de contrôle à part (cgroup v2), avec son "
+"plafond et sa priorité. Aucun de vos fichiers n'est modifié. Perdu si "
+"tailscaled redémarre : omega-tail le signalera."
+msgstr ""
+"tailscaled を独立したコントロールグループ（cgroup "
+"v2）に入れ、上限と優先度を設定します。あなたのファイルは一切変更しません。tailscaled が再起動すると失われますが、omega-tail "
+"が知らせます。"
+
+msgid "CONFINER TAILSCALED ?"
+msgstr "TAILSCALED を封じ込めますか？"
+
+msgid ""
+"Supprime les fichiers d'ajout posés par omega-tail, puis recharge systemd."
+msgstr "omega-tail が設置した追加設定ファイルを削除し、systemd を再読み込みします。"
+
+msgid "RETIRER LE CONFINEMENT ?"
+msgstr "封じ込めを撤去しますか？"
+
+msgid ""
+"Rien à corriger ici : la commande n'est pas dans un fichier de /etc/systemd "
+"(à corriger à la main, avec « - » devant la commande)."
+msgstr ""
+"ここで修正するものはありません。コマンドが /etc/systemd のファイルにありません（コマンドの前に「-」を付けて手動で修正してください）。"
+
+msgid "CORRIGER LE DÉMARRAGE DE TAILSCALED ?"
+msgstr "TAILSCALED の起動を修正しますか？"
+
+msgid ""
+"Cette session passe par Tailscale : elle se figera quelques secondes pendant"
+" le redémarrage, puis reviendra en général."
+msgstr "このセッションは Tailscale を経由しています。再起動中は数秒間固まりますが、通常は戻ります。"
+
+msgid "Commandes :"
+msgstr "コマンド："
+
+msgid ""
+"La veille coupe et remet Funnel sous votre compte : devenez d'abord "
+"opérateur de Tailscale (tableau de bord)."
+msgstr "監視はあなたのアカウントで Funnel を遮断・再開します。先に Tailscale のオペレーターになってください（ダッシュボード）。"
+
+msgid ""
+"La veille tournera en permanence, sous votre compte (jamais root), même "
+"omega-tail fermé. Sous attaque, elle coupe Funnel seule par paliers (15 min,"
+" 30 min, puis 1 h renouvelable) et le remet en route seule."
+msgstr ""
+"監視は omega-tail を閉じていても、あなたのアカウントで（root ではなく）常時動作します。攻撃を受けると段階的に（15 分、30 "
+"分、以降は 1 時間ずつ）Funnel を自動で遮断し、自動で再開します。"
+
+msgid ""
+"La veille s'arrête : sous attaque, omega-tail ouvert vous proposera de "
+"nouveau la coupure."
+msgstr "監視を停止します。攻撃を受けると、起動中の omega-tail が再び遮断を提案します。"
+
+msgid "ACTIVER LA VEILLE AUTOMATIQUE ?"
+msgstr "自動監視を有効化しますか？"
+
+msgid "DÉSACTIVER LA VEILLE AUTOMATIQUE ?"
+msgstr "自動監視を無効化しますか？"
+
+msgid "Veille automatique activée."
+msgstr "自動監視を有効化しました。"
+
+msgid "Veille automatique désactivée."
+msgstr "自動監視を無効化しました。"
+
+#, python-brace-format
+msgid "Commande refusée (code {code}) : rien n'a changé."
+msgstr "コマンドが拒否されました（コード {code}）。何も変更していません。"
+
+msgid "omega-tail — commandes lancées une à une :"
+msgstr "omega-tail — 1 つずつ実行するコマンド："
+
+msgid "Le mot de passe sudo ne s'affiche pas pendant la saisie."
+msgstr "sudo のパスワードは入力中に表示されません。"
+
+msgid "✔ Terminé."
+msgstr "✔ 完了。"
+
+#, python-brace-format
+msgid "✖ Échec (code {code})."
+msgstr "✖ 失敗（コード {code}）。"
+
+msgid "Entrée pour revenir à omega-tail… "
+msgstr "Enter で omega-tail に戻ります… "
+
+#, python-brace-format
+msgid "Fait : {command}"
+msgstr "完了：{command}"
+
+#, python-brace-format
+msgid "Échec (code {code}) : {command}"
+msgstr "失敗（コード {code}）：{command}"
+
+msgid "Compte inconnu ou root : rien à faire."
+msgstr "アカウントが不明または root です。何もする必要はありません。"
+
+#, python-brace-format
+msgid ""
+"Le compte « {user} » pourra régler Tailscale (connexion, publication, "
+"préférences) sans sudo. Une seule fois ; annulable ensuite avec « sudo "
+"tailscale set --operator= »."
+msgstr ""
+"アカウント「{user}」は sudo なしで Tailscale を設定できるようになります（接続、公開、設定）。一度だけで、あとから「sudo "
+"tailscale set --operator=」で取り消せます。"
+
+msgid "DEVENIR OPÉRATEUR DE TAILSCALE ?"
+msgstr "TAILSCALE のオペレーターになりますか？"
+
+msgid "Dossier des captures non configuré."
+msgstr "スクリーンショットフォルダーが設定されていません。"
+
+msgid "Redémarrer"
+msgstr "再起動"
+
+msgid "PROTECTION"
+msgstr "保護"
+
+msgid "TAILSCALE"
+msgstr "TAILSCALE"
+
+msgid ""
+"omega-tail — authentification sudo pour les commandes affichées (le mot de "
+"passe ne s'affiche pas pendant la saisie). L'interface revient ensuite."
+msgstr ""
+"omega-tail — 表示されたコマンドのための sudo 認証（パスワードは入力中に表示されません）。その後インターフェースに戻ります。"
+
+msgid "Aucune commande à copier."
+msgstr "コピーするコマンドはありません。"
+
+#, python-brace-format
+msgid ""
+"{count} commande(s) copiée(s) dans le presse-papiers ({tool}) : collez-les "
+"dans un terminal (Ctrl+Maj+V)."
+msgstr "{count} 件のコマンドをクリップボードにコピーしました（{tool}）：端末に貼り付けてください（Ctrl+Shift+V）。"
+
+msgid ""
+"omega-tail — commandes à copier. Sélectionnez-les à la souris puis copiez "
+"avec le raccourci de votre terminal (souvent Ctrl+Maj+C) :"
+msgstr ""
+"omega-tail — コピーするコマンド。マウスで選択し、ターミナルのショートカット（多くは Ctrl+Shift+C）でコピーしてください："
+
+msgid "Adresses"
+msgstr "アドレス"
+
+msgid "Empreintes"
+msgstr "フィンガープリント"
+
+#, python-brace-format
+msgid "MODE ATTAQUE (retour au normal après {seconds} s de calme)"
+msgstr "攻撃モード（{seconds} 秒間落ち着けば通常に戻る）"
+
+msgid "regroupements appliqués"
+msgstr "グループ化は適用中"
+
+msgid "regroupements en observation"
+msgstr "グループ化は観察中"
+
+#, python-brace-format
+msgid "auraient été refusées (7 j) : {reasons}"
+msgstr "拒否されていたはず（7 日）：{reasons}"
+
+#, python-brace-format
+msgid "refusées (7 j) : {reasons}"
+msgstr "拒否（7 日）：{reasons}"
+
+msgid "ATTAQUES ET DÉCISIONS"
+msgstr "攻撃と判断"
+
+msgid ""
+"La liste noire d'abord, puis les adresses bloquées, les plus actives, et la "
+"confiance. Choisissez une ligne puis une action."
+msgstr "まずブラックリスト、続いてブロック中のアドレス、最も活発なアドレス、信頼。行を選んでから操作を選んでください。"
+
+msgid "Bloquer"
+msgstr "ブロック"
+
+msgid "Liste noire"
+msgstr "ブラックリスト"
+
+msgid "Débloquer"
+msgstr "ブロック解除"
+
+msgid "Gestion de la liste noire"
+msgstr "ブラックリストの管理"
+
+msgid "Expire dans"
+msgstr "残り時間"
+
+msgid "Empreinte JA4"
+msgstr "JA4 フィンガープリント"
+
+msgid "Remarque"
+msgstr "注記"
+
+msgid "Total"
+msgstr "合計"
+
+#, python-brace-format
+msgid ""
+"Connexions reçues : {total} · refusées avant chiffrement : {refused} · "
+"admises : {admitted} · en cours : {current}"
+msgstr "受信した接続：{total} · 暗号化前に拒否：{refused} · 許可：{admitted} · 処理中：{current}"
+
+msgid "jusqu'au retrait"
+msgstr "削除まで"
+
+msgid "Retirer la confiance"
+msgstr "信頼を解除"
+
+msgid "Aucune adresse choisie."
+msgstr "アドレスが選択されていません。"
+
+msgid "Plus anciennes que N jours"
+msgstr "N 日より古いもの"
+
+msgid "Les N plus anciennes"
+msgstr "古い順に N 件"
+
+msgid "De la ligne A à la ligne B"
+msgstr "A 行目から B 行目まで"
+
+msgid "Origine : import"
+msgstr "追加元：インポート"
+
+msgid "Origine : écran Attaques"
+msgstr "追加元：攻撃画面"
+
+msgid "Origine : ajout manuel"
+msgstr "追加元：手動追加"
+
+msgid "Origine : avant les dates"
+msgstr "追加元：日付より前"
+
+msgid "Toute la liste"
+msgstr "リスト全体"
+
+msgid "GESTION DE LA LISTE NOIRE"
+msgstr "ブラックリストの管理"
+
+msgid "AJOUTER OU IMPORTER"
+msgstr "追加またはインポート"
+
+msgid "adresse ou réseau (ex. 203.0.113.7 ou 198.51.100.0/24)"
+msgstr "アドレスまたはネットワーク（例：203.0.113.7 または 198.51.100.0/24）"
+
+msgid "fichier TXT : une adresse ou un réseau par ligne, # = commentaire"
+msgstr "TXT ファイル：1 行に 1 つのアドレスまたはネットワーク、# = コメント"
+
+msgid "Importer"
+msgstr "インポート"
+
+msgid ""
+"Les doublons, les adresses déjà couvertes par un réseau de la liste et "
+"celles du tailnet sont écartés et comptés. Un export TXT se réimporte tel "
+"quel (récidive)."
+msgstr ""
+"重複、リスト内のネットワークにすでに含まれるアドレス、tailnet のアドレスは除外して数えます。TXT "
+"エクスポートはそのまま再インポートできます（再発時）。"
+
+msgid "LISTE"
+msgstr "リスト"
+
+msgid "filtrer : début d'adresse, réseau, date (2026-11), origine"
+msgstr "絞り込み：アドレスの先頭、ネットワーク、日付（2026-11）、追加元"
+
+msgid "PURGER"
+msgstr "パージ"
+
+msgid "N ou A"
+msgstr "N または A"
+
+msgid "Aperçu"
+msgstr "プレビュー"
+
+msgid "Purger"
+msgstr "パージ"
+
+msgid ""
+"Les lignes sont numérotées de la plus ancienne à la plus récente, comme dans"
+" le tableau sans filtre. L'aperçu dit combien d'entrées partiraient ; rien "
+"n'est retiré sans confirmation."
+msgstr "行は古い順に番号が付いています（絞り込みなしの表と同じ）。プレビューで削除される件数がわかります。確認なしに削除されることはありません。"
+
+msgid "THÈME DE LA PAGE HTML"
+msgstr "HTML ページのテーマ"
+
+msgid "Exporter HTML"
+msgstr "HTML をエクスポート"
+
+msgid "Exporter TXT"
+msgstr "TXT をエクスポート"
+
+msgid "Exporter JSON"
+msgstr "JSON をエクスポート"
+
+msgid "Voir les exports"
+msgstr "エクスポートを見る"
+
+#, python-brace-format
+msgid ""
+"{count} entrée(s) sur {max} au plus. Refusées par la porte avant tout "
+"chiffrement, jusqu'à leur retrait."
+msgstr "{count} 件（上限 {max} 件）。削除されるまで、あらゆる暗号化の前にゲートが拒否します。"
+
+msgid "La liste grossit : exportez-la puis purgez les plus anciennes."
+msgstr "リストが増えています。エクスポートしてから古いものをパージしてください。"
+
+#, python-brace-format
+msgid ""
+"{shown} premières lignes affichées sur {total} : affinez le filtre, ou "
+"exportez pour tout voir."
+msgstr "{total} 行中、最初の {shown} 行を表示しています。絞り込みを細かくするか、エクスポートしてすべてを見てください。"
+
+#, python-brace-format
+msgid "{count} entrée(s) correspondent au filtre."
+msgstr "{count} 件が絞り込みに一致します。"
+
+msgid "La liste noire est vide."
+msgstr "ブラックリストは空です。"
+
+#, python-brace-format
+msgid "{error}"
+msgstr "{error}"
+
+#, python-brace-format
+msgid "Lignes invalides : {lines}"
+msgstr "無効な行：{lines}"
+
+msgid "Tapez une adresse ou un réseau."
+msgstr "アドレスまたはネットワークを入力してください。"
+
+msgid "Indiquez le chemin du fichier TXT à importer."
+msgstr "インポートする TXT ファイルのパスを入力してください。"
+
+#, python-brace-format
+msgid "Fichier introuvable : {path}"
+msgstr "ファイルが見つかりません：{path}"
+
+#, python-brace-format
+msgid "Fichier trop gros (plus de {size} Mo) : découpez-le."
+msgstr "ファイルが大きすぎます（{size} MB 超）。分割してください。"
+
+msgid "Import en cours…"
+msgstr "インポート中…"
+
+msgid "Aucune entrée choisie."
+msgstr "項目が選択されていません。"
+
+msgid "Tapez N (un nombre entier) dans le premier champ."
+msgstr "最初の欄に N（整数）を入力してください。"
+
+msgid "Tapez A et B (numéros de ligne) dans les deux champs."
+msgstr "2 つの欄に A と B（行番号）を入力してください。"
+
+#, python-brace-format
+msgid "Aperçu : {count} entrée(s) sur {total} partiraient."
+msgstr "プレビュー：{total} 件中 {count} 件が削除されます。"
+
+#, python-brace-format
+msgid "De {first} à {last}."
+msgstr "{first} から {last} まで。"
+
+msgid "Aucune entrée ne correspond : rien à purger."
+msgstr "一致する項目がありません。パージするものはありません。"
+
+#, python-brace-format
+msgid ""
+"{count} entrée(s) vont quitter la liste noire : ces adresses seront de "
+"nouveau admises (soumises aux règles). Exportez la liste avant si vous "
+"voulez pouvoir les réinjecter."
+msgstr ""
+"{count} "
+"件がブラックリストから外れます。これらのアドレスは再び許可されます（ルールの対象）。あとで戻せるようにしたい場合は、先にリストをエクスポートしてください。"
+
+msgid "Purge en cours…"
+msgstr "パージ中…"
+
+msgid "VIDER"
+msgstr "空にする"
+
+msgid "VIDER LA LISTE NOIRE ?"
+msgstr "ブラックリストを空にしますか？"
+
+msgid "Vider"
+msgstr "空にする"
+
+msgid "PURGER LA LISTE NOIRE ?"
+msgstr "ブラックリストをパージしますか？"
+
+#, python-brace-format
+msgid "Liste noire enregistrée ({count} entrée(s)) : {path}"
+msgstr "ブラックリストを保存しました（{count} 件）：{path}"
+
+msgid "ATTAQUE PROBABLE — COUPER FUNNEL ?"
+msgstr "攻撃の可能性 — FUNNEL を遮断しますか？"
+
+#, python-brace-format
+msgid ""
+"{reason}\n"
+"\n"
+"Couper Funnel (port {ports}) arrête aussitôt les connexions venues d'Internet : la machine respire. Le tailnet (Serve, SSH) n'est pas touché.\n"
+"\n"
+"• Coupure de {minutes} min : Funnel est remis en route tout seul, à l'identique, même si omega-tail est fermé.\n"
+"• Coupure totale : Funnel reste coupé jusqu'à ce que vous le rétablissiez (menu Survie)."
+msgstr ""
+"{reason}\n"
+"\n"
+"Funnel（ポート {ports}）を遮断すると、インターネットからの接続がただちに止まり、マシンが一息つけます。tailnet（Serve、SSH）には影響しません。\n"
+"\n"
+"• {minutes} 分間の遮断：omega-tail を閉じていても、Funnel は自動でまったく同じ状態に再開します。\n"
+"• 完全遮断：復旧するまで Funnel は遮断されたままです（サバイバルのメニュー）。"
+
+#, python-brace-format
+msgid "Couper {minutes} min"
+msgstr "{minutes} 分間遮断"
+
+msgid "Coupure totale"
+msgstr "完全遮断"
+
+msgid "Pas maintenant"
+msgstr "今はしない"
+
+msgid "déconnecté (tailscale down)"
+msgstr "切断（tailscale down）"
+
+msgid "compte à connecter"
+msgstr "アカウントのログイン待ち"
+
+msgid "machine à approuver"
+msgstr "マシンの承認待ち"
+
+msgid "CONNEXION ET RÉGLAGES"
+msgstr "接続と設定"
+
+msgid ""
+"La connexion de cette machine au tailnet, son compte, et les réglages de "
+"Tailscale. Chaque commande s'affiche avant d'être lancée, dans le terminal "
+"(sans sudo si vous êtes opérateur)."
+msgstr ""
+"このマシンの tailnet への接続、アカウント、Tailscale の設定。各コマンドはターミナルで実行する前に表示されます（オペレーターなら "
+"sudo 不要）。"
+
+msgid "Se connecter"
+msgstr "ログイン"
+
+msgid "Se déconnecter"
+msgstr "ログアウト"
+
+msgid "Ajouter un compte"
+msgstr "アカウントを追加"
+
+msgid "Déconnexion définitive"
+msgstr "完全ログアウト"
+
+msgid "COMPTE"
+msgstr "アカウント"
+
+msgid "Comptes de cette machine (lecture…)"
+msgstr "このマシンのアカウント（読み込み中…）"
+
+msgid "Changer de compte"
+msgstr "アカウントを切り替え"
+
+msgid "Appliquer"
+msgstr "適用"
+
+msgid "Relire"
+msgstr "再読み込み"
+
+msgid "Mon compte"
+msgstr "自分のアカウント"
+
+msgid "Activer le transfert IP"
+msgstr "IP 転送を有効化"
+
+msgid " (en cours)"
+msgstr "（使用中）"
+
+#, python-brace-format
+msgid "Comptes illisibles ({error}) : devenez opérateur (tableau de bord)."
+msgstr "アカウントを読み取れません（{error}）。オペレーターになってください（ダッシュボード）。"
+
+msgid ""
+"Un seul compte sur cette machine : « Ajouter un compte » pour en connecter "
+"un autre."
+msgstr "このマシンのアカウントは 1 つだけです。別のアカウントは「アカウントを追加」で接続できます。"
+
+msgid ""
+"Aucune machine du tailnet ne se propose comme nœud de sortie. Sur la machine"
+" voulue : cocher « Proposer cette machine comme nœud de sortie », appliquer,"
+" puis l'approuver dans la console d'administration de Tailscale (Machines → "
+"Edit route settings)."
+msgstr ""
+"出口ノードとして提供されている tailnet "
+"のマシンはありません。目的のマシンで「このマシンを出口ノードとして提供」をオンにして適用し、Tailscale "
+"の管理コンソールで承認してください（Machines → Edit route settings）。"
+
+#, python-brace-format
+msgid "ex. {user}"
+msgstr "例：{user}"
+
+msgid "tailscaled ne répond pas"
+msgstr "tailscaled が応答しません"
+
+#, python-brace-format
+msgid "Compte : {user} · tailnet : {tailnet}"
+msgstr "アカウント：{user} · tailnet：{tailnet}"
+
+#, python-brace-format
+msgid "Machine : {name} · {addresses}"
+msgstr "マシン：{name} · {addresses}"
+
+#, python-brace-format
+msgid "Expiration de la clé : {expiry} · opérateur : {operator}"
+msgstr "キーの有効期限：{expiry} · オペレーター：{operator}"
+
+msgid "aucun (sudo)"
+msgstr "なし（sudo）"
+
+msgid "Votre session passe par Tailscale : se déconnecter vous couperait."
+msgstr "このセッションは Tailscale を経由しています。ログアウトすると切断されます。"
+
+#, python-brace-format
+msgid ""
+"Transfert IP désactivé ({keys}) : le nœud de sortie et les sous-réseaux "
+"annoncés ne transmettront rien. « Activer le transfert IP » écrit un fichier"
+" à part ({path}), gardé au redémarrage."
+msgstr ""
+"IP 転送が無効です（{keys}）。出口ノードとアドバタイズするサブネットは何も転送しません。「IP "
+"転送を有効化」は独立したファイル（{path}）を書き込み、再起動後も保持されます。"
+
+msgid ""
+"Compte inconnu ou root : tapez le nom du compte Linux à rendre opérateur."
+msgstr "アカウントが不明または root です。オペレーターにする Linux アカウント名を入力してください。"
+
+#, python-brace-format
+msgid "{name} : {reason}"
+msgstr "{name}：{reason}"
+
+#, python-brace-format
+msgid "{label} : {before} → {after}"
+msgstr "{label}：{before} → {after}"
+
+msgid "Aucun changement."
+msgstr "変更はありません。"
+
+msgid "Commande :"
+msgstr "コマンド："
+
+#, python-brace-format
+msgid "Transfert IP désactivé ({keys}) : « Activer le transfert IP » aussi."
+msgstr "IP 転送が無効です（{keys}）。「IP 転送を有効化」も実行してください。"
+
+#, python-brace-format
+msgid ""
+"Votre session passe par Tailscale ; ces changements peuvent la couper : "
+"{names}."
+msgstr "このセッションは Tailscale を経由しています。次の変更で切断されるおそれがあります：{names}。"
+
+#, python-brace-format
+msgid "Dernière application ({time}) : la commande a échoué (code {code})."
+msgstr "前回の適用（{time}）：コマンドが失敗しました（コード {code}）。"
+
+#, python-brace-format
+msgid "Dernière application ({time}) :"
+msgstr "前回の適用（{time}）："
+
+#, python-brace-format
+msgid "{label} : {after}"
+msgstr "{label}：{after}"
+
+#, python-brace-format
+msgid "{label} : {after} demandé, {now} lu"
+msgstr "{label}：要求 {after}、読み取り {now}"
+
+msgid "À appliquer :"
+msgstr "適用する内容："
+
+msgid "Valeur refusée : corrigez la ligne marquée ✖."
+msgstr "値が拒否されました。✖ の付いた行を修正してください。"
+
+msgid "APPLIQUER LES RÉGLAGES ?"
+msgstr "設定を適用しますか？"
+
+msgid ""
+"Votre session passe par Tailscale : elle sera COUPÉE et ne reviendra pas. Il"
+" faudra un accès local (ou un autre chemin) pour vous reconnecter."
+msgstr "このセッションは Tailscale を経由しています。切断され、戻りません。再接続にはローカルアクセス（または別の経路）が必要です。"
+
+msgid "Ce qui est publié (Serve et Funnel) ne sera plus joignable."
+msgstr "公開中のもの（Serve と Funnel）に到達できなくなります。"
+
+msgid "ACTIVER LE TRANSFERT IP ?"
+msgstr "IP 転送を有効化しますか？"
+
+#, python-brace-format
+msgid ""
+"Le noyau fera suivre les paquets (IPv4 et IPv6) : nécessaire pour un nœud de"
+" sortie ou des sous-réseaux annoncés. Fichier à part {path}, relu au "
+"démarrage (systemd, OpenRC, runit) ; pour annuler : supprimer ce fichier "
+"puis redémarrer."
+msgstr ""
+"カーネルがパケットを転送します（IPv4 と IPv6）。出口ノードやアドバタイズするサブネットに必要です。独立したファイル {path} "
+"で、起動時に読み込まれます（systemd、OpenRC、runit）。元に戻すには、このファイルを削除して再起動します。"
+
+msgid "SE CONNECTER ?"
+msgstr "ログインしますか？"
+
+msgid ""
+"Remet cette machine dans le tailnet. Si un compte doit s'identifier, "
+"Tailscale affiche dans le terminal l'adresse à ouvrir dans un navigateur."
+msgstr ""
+"このマシンを tailnet に戻します。アカウントの認証が必要な場合、Tailscale がブラウザーで開くアドレスをターミナルに表示します。"
+
+msgid "SE DÉCONNECTER ?"
+msgstr "ログアウトしますか？"
+
+msgid ""
+"La machine quitte le tailnet (le compte reste enregistré : « Se connecter » "
+"la remet)."
+msgstr "マシンは tailnet から離脱します（アカウントは保存されたままで、「ログイン」で戻せます）。"
+
+msgid "AJOUTER UN COMPTE ?"
+msgstr "アカウントを追加しますか？"
+
+msgid ""
+"Connecte un autre compte (ou un autre tailnet) sur cette machine ; il "
+"devient le compte en cours. Tailscale affiche l'adresse à ouvrir pour vous "
+"identifier. L'ancien compte reste dans « Changer de compte »."
+msgstr ""
+"このマシンに別のアカウント（または別の tailnet）を接続します。それが現在のアカウントになります。Tailscale "
+"が認証用のアドレスを表示します。以前のアカウントは「アカウントを切り替え」に残ります。"
+
+msgid "Choisissez un autre compte que le compte en cours."
+msgstr "現在のアカウント以外を選んでください。"
+
+msgid "CHANGER DE COMPTE ?"
+msgstr "アカウントを切り替えますか？"
+
+#, python-brace-format
+msgid ""
+"La machine passe sur le compte {account} (tailnet {tailnet}). Son adresse et"
+" ce qu'elle voit du tailnet changent."
+msgstr ""
+"マシンはアカウント {account}（tailnet {tailnet}）に切り替わります。アドレスと tailnet から見えるものが変わります。"
+
+#, python-brace-format
+msgid ""
+"La machine est retirée du compte : sa clé est révoquée, il faudra s'identifier à nouveau (et peut-être la réapprouver) pour la remettre dans le tailnet.\n"
+"\n"
+"Commande : {command}"
+msgstr ""
+"マシンはアカウントから削除されます。キーは失効し、tailnet に戻すには再度認証（場合によっては再承認）が必要です。\n"
+"\n"
+"コマンド：{command}"
+
+#, python-brace-format
+msgid "Pour confirmer, tapez le nom de la machine : {word}"
+msgstr "確認のため、マシン名を入力してください：{word}"
+
+msgid "DÉCONNEXION DÉFINITIVE ?"
+msgstr "完全ログアウトしますか？"
+
+msgid "Déconnecter"
+msgstr "ログアウト"
+
+msgid "bouton « Devenir opérateur »"
+msgstr "「オペレーターになる」ボタン"
+
+#, python-brace-format
+msgid "lot {lot}"
+msgstr "ロット {lot}"
+
+msgid "Tailscale"
+msgstr "Tailscale"
+
+msgid "n'est pas installé"
+msgstr "未インストール"
+
+#, python-brace-format
+msgid "ne répond pas : {error}"
+msgstr "応答なし：{error}"
+
+msgid "tailscaled"
+msgstr "tailscaled"
+
+msgid "Client installé"
+msgstr "インストール済みクライアント"
+
+#, python-brace-format
+msgid "{daemon} en marche, {client} installé"
+msgstr "実行中 {daemon}、インストール済み {client}"
+
+msgid "Version"
+msgstr "バージョン"
+
+msgid "Compte"
+msgstr "アカウント"
+
+msgid "Appareils du tailnet"
+msgstr "tailnet のデバイス"
+
+#, python-brace-format
+msgid "{online} en ligne sur {total}"
+msgstr "{total} 台中 {online} 台オンライン"
+
+msgid "Clé de la machine"
+msgstr "マシンのキー"
+
+msgid "aucun (sudo requis)"
+msgstr "なし（sudo が必要）"
+
+msgid "Nœud de sortie proposé"
+msgstr "提供する出口ノード"
+
+msgid "Machine"
+msgstr "マシン"
+
+#, python-brace-format
+msgid "{name} ({count} fils)"
+msgstr "{name}（{count} スレッド）"
+
+msgid "CPU machine"
+msgstr "マシンの CPU"
+
+msgid "Charge"
+msgstr "負荷"
+
+msgid "Température"
+msgstr "温度"
+
+msgid "Mémoire"
+msgstr "メモリ"
+
+#, python-brace-format
+msgid "{used} utilisés sur {total}"
+msgstr "{total} 中 {used} 使用"
+
+msgid "CPU tailscaled"
+msgstr "tailscaled の CPU"
+
+#, python-brace-format
+msgid "{cpu} d'un cœur, {memory}"
+msgstr "コア 1 つの {cpu}、{memory}"
+
+msgid "Confinement"
+msgstr "封じ込め"
+
+msgid "Funnel"
+msgstr "Funnel"
+
+msgid "coupé par le disjoncteur"
+msgstr "ブレーカーで遮断"
+
+#, python-brace-format
+msgid "ouvert sur {ports}"
+msgstr "{ports} で公開中"
+
+msgid "sans porte"
+msgstr "ゲートなし"
+
+msgid "fermé"
+msgstr "閉鎖"
+
+msgid "actif · MODE ATTAQUE"
+msgstr "有効 · 攻撃モード"
+
+msgid "Pare-feu (porte)"
+msgstr "ファイアウォール（ゲート）"
+
+msgid "inactif"
+msgstr "無効"
+
+#, python-brace-format
+msgid "{count} entrée(s)"
+msgstr "{count} 件"
+
+msgid "Veille"
+msgstr "監視"
+
+msgid "inactive"
+msgstr "無効"
+
+msgid "arrêtée"
+msgstr "停止中"
+
+#, python-brace-format
+msgid "active, palier {level}"
+msgstr "有効、段階 {level}"
+
+msgid "Bouclier WireGuard"
+msgstr "WireGuard シールド"
+
+msgid "non posé"
+msgstr "未設置"
+
+msgid "ABSENT (table effacée)"
+msgstr "なし（テーブル消去）"
+
+msgid "état non mis à jour"
+msgstr "状態が未更新"
+
+#, python-brace-format
+msgid "posé, mode {mode}"
+msgstr "設置済み、モード {mode}"
+
+msgid "TABLEAU DE BORD"
+msgstr "ダッシュボード"
+
+msgid "Corriger"
+msgstr "修正"
+
+msgid "Alerte"
+msgstr "アラート"
+
+msgid "Où corriger"
+msgstr "修正する場所"
+
+#, python-brace-format
+msgid "Lu à {time} · relu toutes les 5 s"
+msgstr "{time} に読み込み · 5 秒ごとに更新"
+
+msgid "Choisissez une alerte puis « Corriger » (ou Entrée)."
+msgstr "アラートを選んで「修正」（または Enter）を押してください。"
+
+msgid "Aucune alerte choisie."
+msgstr "アラートが選択されていません。"
+
+msgid "Rien à ouvrir pour cette alerte : elle vient de Tailscale lui-même."
+msgstr "このアラートで開く画面はありません。Tailscale 自身からのものです。"
+
+#, python-brace-format
+msgid "Fichier trop volumineux pour être lu ici : {path}"
+msgstr "ファイルが大きすぎてここでは読めません：{path}"
+
+#, python-brace-format
+msgid "Lecture impossible : {error}"
+msgstr "読み込めません：{error}"
+
+msgid "EXPORTS"
+msgstr "エクスポート"
+
+msgid ""
+"Pas de navigateur dans cette session (serveur, connexion SSH) : les exports "
+"sont listés et lus ici. Choisissez une ligne (Entrée) pour la lire."
+msgstr ""
+"このセッションにはブラウザーがありません（サーバー、SSH 接続）：エクスポートをここに一覧表示し、ここで読みます。行を選んで（Enter）読みます。"
+
+msgid "Lire"
+msgstr "読む"
+
+msgid "Taille"
+msgstr "サイズ"
+
+msgid "Aucun export pour l'instant."
+msgstr "まだエクスポートはありません。"
+
+#, python-brace-format
+msgid "Dossier des exports ouvert dans le navigateur : {path}"
+msgstr "エクスポートフォルダーをブラウザーで開きました：{path}"
+
+msgid "Connexions par adresse / 10 s"
+msgstr "アドレスごとの接続 / 10 秒"
+
+msgid "Par préfixe /24 ou /64 / 10 s"
+msgstr "/24 または /64 プレフィックスごと / 10 秒"
+
+msgid "Budget global (admises / s)"
+msgstr "全体予算（許可 / 秒）"
+
+msgid "Connexions simultanées"
+msgstr "同時接続"
+
+msgid "Durée de blocage (min)"
+msgstr "ブロック期間（分）"
+
+msgid "Mode attaque au-delà de (entrantes / s)"
+msgstr "攻撃モードのしきい値（受信 / 秒）"
+
+msgid "Retour au normal après (min de calme)"
+msgstr "通常に戻るまでの平穏（分）"
+
+msgid "AS d'hébergeur / 10 s"
+msgstr "ホスティング事業者の AS / 10 秒"
+
+msgid "Empreinte inconnue / 10 s"
+msgstr "未知のフィンガープリント / 10 秒"
+
+msgid "Pays limité / 10 s"
+msgstr "制限対象の国 / 10 秒"
+
+msgid ""
+"HAProxy sans Lua : regroupements indisponibles (la porte du lot 4 protège "
+"seule)."
+msgstr "HAProxy に Lua がありません。グループ化は利用できません（ロット 4 のゲートだけで保護）。"
+
+msgid "Regroupements : appliqués (refusent en mode attaque)"
+msgstr "グループ化：適用（攻撃モードで拒否）"
+
+msgid ""
+"Regroupements : en observation (comptent « aurait refusé », ne refusent "
+"rien)"
+msgstr "グループ化：観察中（「拒否していたはず」を数え、何も拒否しない）"
+
+#, python-brace-format
+msgid "Mode : ATTAQUE — retour au normal après {seconds} s de calme"
+msgstr "モード：攻撃 — {seconds} 秒間落ち着けば通常に戻る"
+
+msgid "Mode : normal"
+msgstr "モード：通常"
+
+#, python-brace-format
+msgid ""
+"Empreintes : apprentissage, encore {days} jour(s) ; les regroupements "
+"restent en observation jusqu'à la fin."
+msgstr "フィンガープリント：学習中、残り {days} 日。終了までグループ化は観察のままです。"
+
+#, python-brace-format
+msgid ""
+"Empreintes habituelles : {count} (référence prête) ; « appliqués » est "
+"maintenant possible."
+msgstr "通常のフィンガープリント：{count}（基準の準備完了）。「適用」にできるようになりました。"
+
+msgid ""
+"Base AS / pays : absente (« Mettre à jour la base », ou la veille une fois "
+"par mois)"
+msgstr "AS / 国データベース：なし（「データベースを更新」、または監視が月に一度更新）"
+
+#, python-brace-format
+msgid ""
+"Base AS / pays : à jour il y a {days} jour(s) ; renouvelée chaque mois par "
+"la veille"
+msgstr "AS / 国データベース：{days} 日前に更新。監視が毎月更新します"
+
+msgid ""
+"Navigateurs courants (Chrome, Edge, Firefox) jamais limités par ces règles."
+msgstr "一般的なブラウザー（Chrome、Edge、Firefox）がこれらのルールで制限されることはありません。"
+
+msgid ""
+"Une porte (HAProxy) se place entre Funnel et votre site : elle voit "
+"l'adresse réelle de chaque visiteur et refuse les abus AVANT tout "
+"chiffrement (4,6 fois moins de calcul par connexion refusée, mesuré). "
+"Activation et désactivation avec retour arrière automatique."
+msgstr ""
+"ゲート（HAProxy）が Funnel "
+"とあなたのサイトの間に入ります。各訪問者の実アドレスを見て、あらゆる暗号化の前に悪用を拒否します（測定結果：拒否した接続あたりの計算は 4.6 分の "
+"1）。有効化・無効化とも自動でロールバックします。"
+
+msgid "Installer HAProxy"
+msgstr "HAProxy をインストール"
+
+msgid "Activer la protection"
+msgstr "保護を有効化"
+
+msgid "Désactiver la protection"
+msgstr "保護を無効化"
+
+msgid "Renouveler le certificat"
+msgstr "証明書を更新"
+
+msgid "RÈGLES (appliquées à chaud)"
+msgstr "ルール（ホット適用）"
+
+msgid "Mode"
+msgstr "モード"
+
+msgid "normal : refuse"
+msgstr "通常：拒否する"
+
+msgid "observation : compte sans refuser"
+msgstr "観察：数えるだけで拒否しない"
+
+msgid "Vérifier le nom visé"
+msgstr "宛先名を検証"
+
+msgid "nombre"
+msgstr "数値"
+
+msgid "Appliquer les règles"
+msgstr "ルールを適用"
+
+msgid "LISTES"
+msgstr "リスト"
+
+msgid "Adresse ou réseau (203.0.113.7, 198.51.100.0/24, 2001:db8::/48)"
+msgstr "アドレスまたはネットワーク（203.0.113.7、198.51.100.0/24、2001:db8::/48）"
+
+msgid "Mettre en confiance"
+msgstr "信頼に追加"
+
+msgid "REGROUPEMENTS : EMPREINTES, AS, PAYS"
+msgstr "グループ化：フィンガープリント、AS、国"
+
+msgid ""
+"Contre les attaques à adresses dispersées : chaque connexion reçoit, avant "
+"tout chiffrement, son empreinte (JA4), son AS et son pays. Quand les "
+"connexions entrantes dépassent le seuil, la porte passe seule en MODE "
+"ATTAQUE : une empreinte inconnue qui explose, un AS d'hébergeur ou un pays "
+"choisi qui dépasse son débit est alors refusé. Les navigateurs courants ne "
+"sont jamais touchés ; les clients connus passent avant le budget. En "
+"observation, tout est compté (« aurait refusé ») et rien n'est refusé."
+msgstr ""
+"アドレスを分散させた攻撃への対策です。各接続は、あらゆる暗号化の前にフィンガープリント（JA4）、AS、国が割り出されます。受信接続がしきい値を超えると、ゲートは自動で攻撃モードに入ります。そのとき、急増した未知のフィンガープリントや、レートを超えたホスティング事業者の"
+" "
+"AS・選んだ国は拒否されます。一般的なブラウザーが影響を受けることはなく、既知のクライアントは予算より優先されます。観察中はすべて数えますが（「拒否していたはず」）、何も拒否しません。"
+
+msgid "Regroupements"
+msgstr "グループ化"
+
+msgid "observation : comptent sans refuser"
+msgstr "観察：数えるだけで拒否しない"
+
+msgid "appliqués : refusent en mode attaque (après l'apprentissage)"
+msgstr "適用：攻撃モードで拒否（学習後）"
+
+msgid "Clients connus avant le budget"
+msgstr "既知のクライアントを予算より優先"
+
+msgid "Pays limités en mode attaque"
+msgstr "攻撃モードで制限する国"
+
+msgid "ex. CN, RU (vide : aucun)"
+msgstr "例：CN, RU（空欄：なし）"
+
+msgid "AS d'hébergeurs"
+msgstr "ホスティング事業者の AS"
+
+msgid "ex. 16509 24940 (numéros d'AS)"
+msgstr "例：16509 24940（AS 番号）"
+
+msgid "Appliquer les regroupements"
+msgstr "グループ化を適用"
+
+msgid "Mettre à jour la base"
+msgstr "データベースを更新"
+
+msgid "Recommencer l'apprentissage"
+msgstr "学習をやり直す"
+
+#, python-brace-format
+msgid ""
+"Confiance (jamais limitées) : {trusted}\n"
+"Liste noire (refusées jusqu'à leur retrait) : {black}"
+msgstr ""
+"信頼（制限なし）：{trusted}\n"
+"ブラックリスト（削除するまで拒否）：{black}"
+
+msgid ""
+"Téléchargement et préparation de la base AS / pays (DB-IP Lite) : une à "
+"quelques minutes, l'écran reste utilisable…"
+msgstr "AS / 国データベース（DB-IP Lite）をダウンロードして準備中です。1〜数分かかりますが、画面は引き続き使えます…"
+
+msgid ""
+"Chaque menu, sa fonction et le détail. Cliquez sur un titre pour l'ouvrir."
+msgstr "各メニュー、その機能と詳細。タイトルをクリックすると開きます。"
+
+msgid "Exporter l'aide en HTML"
+msgstr "ヘルプを HTML でエクスポート"
+
+#, python-brace-format
+msgid "Aide exportée : {path}"
+msgstr "ヘルプをエクスポートしました：{path}"
+
+#, python-brace-format
+msgid "Cet écran arrive dans une prochaine version (lot {lot})."
+msgstr "この画面は今後のバージョンで追加されます（ロット {lot}）。"
+
+msgid "Cet écran n'est pas disponible dans cette session."
+msgstr "この画面はこのセッションでは利用できません。"
+
+msgid "JOURNAUX"
+msgstr "ログ"
+
+msgid "porte (pare-feu)"
+msgstr "ゲート（ファイアウォール）"
+
+#, python-brace-format
+msgid "{count} lignes"
+msgstr "{count} 行"
+
+msgid "Filtrer (texte, adresse…)"
+msgstr "絞り込み（テキスト、アドレスなど）"
+
+msgid "Lecture du journal…"
+msgstr "ログを読み込み中…"
+
+msgid "Aucune ligne lue."
+msgstr "読み込んだ行はありません。"
+
+#, python-brace-format
+msgid "{shown} ligne(s) affichée(s) sur {total} lue(s)."
+msgstr "読み込んだ {total} 行のうち {shown} 行を表示。"
+
+msgid "Rien à exporter."
+msgstr "エクスポートするものはありません。"
+
+#, python-brace-format
+msgid "Journal exporté : {path}"
+msgstr "ログをエクスポートしました：{path}"
+
+msgid "maintenant"
+msgstr "たった今"
+
+#, python-brace-format
+msgid "il y a {count} min"
+msgstr "{count} 分前"
+
+#, python-brace-format
+msgid "il y a {count} h"
+msgstr "{count} 時間前"
+
+#, python-brace-format
+msgid "il y a {count} j"
+msgstr "{count} 日前"
+
+msgid "direct"
+msgstr "直接"
+
+msgid "relais"
+msgstr "リレー"
+
+#, python-brace-format
+msgid "relais {code}"
+msgstr "リレー {code}"
+
+msgid "sortie Internet"
+msgstr "インターネット出口"
+
+#, python-brace-format
+msgid "Diagnostic impossible : {error}"
+msgstr "診断できません：{error}"
+
+msgid "Tailscale n'a rien répondu."
+msgstr "Tailscale から応答がありません。"
+
+#, python-brace-format
+msgid "oui, adresse publique {address}"
+msgstr "はい、パブリックアドレス {address}"
+
+#, python-brace-format
+msgid "UDP : {value}"
+msgstr "UDP：{value}"
+
+msgid "non — tout passe par les relais de Tailscale (plus lent)"
+msgstr "いいえ — すべて Tailscale のリレー経由（低速）"
+
+#, python-brace-format
+msgid "IPv4 : {value}"
+msgstr "IPv4：{value}"
+
+#, python-brace-format
+msgid "IPv6 : {value}"
+msgstr "IPv6：{value}"
+
+#, python-brace-format
+msgid "NAT : {value}"
+msgstr "NAT：{value}"
+
+msgid ""
+"difficile — le port change selon la destination, les relais seront plus "
+"fréquents"
+msgstr "困難 — 宛先によってポートが変わるため、リレーが増えます"
+
+msgid "simple — les connexions directes se font facilement"
+msgstr "簡単 — 直接接続が容易です"
+
+#, python-brace-format
+msgid "Ouverture de port par la box : {value}"
+msgstr "ルーターによるポート開放：{value}"
+
+#, python-brace-format
+msgid "Relais le plus proche : {value}"
+msgstr "最寄りのリレー：{value}"
+
+#, python-brace-format
+msgid "Latence des relais : {values}"
+msgstr "リレーの遅延：{values}"
+
+msgid "Compteurs internes illisibles (Tailscale trop ancien ?)."
+msgstr "内部カウンターを読み取れません（Tailscale が古すぎる？）。"
+
+msgid "Reçu"
+msgstr "受信"
+
+msgid "Envoyé"
+msgstr "送信"
+
+#, python-brace-format
+msgid ""
+"{title} depuis le démarrage : direct {direct} · relais DERP {derp} · relais "
+"d'un pair {peer}"
+msgstr "起動以降の{title}：直接 {direct} · DERP リレー {derp} · ピアのリレー {peer}"
+
+#, python-brace-format
+msgid "Paquets jetés en sortie : {count}"
+msgstr "送信時に破棄したパケット：{count}"
+
+#, python-brace-format
+msgid "Messages de santé : {count}"
+msgstr "ヘルスメッセージ：{count}"
+
+msgid "RÉSEAU ET APPAREILS"
+msgstr "ネットワークとデバイス"
+
+msgid ""
+"Ce que voit Tailscale depuis cette machine : les appareils du tailnet, le "
+"chemin vers chacun (direct ou par un relais), et l'état du réseau. Lecture "
+"seule : rien n'est changé ici."
+msgstr ""
+"このマシンから Tailscale が見ているもの：tailnet "
+"のデバイス、各デバイスへの経路（直接またはリレー経由）、ネットワークの状態。読み取り専用：ここでは何も変更しません。"
+
+msgid "APPAREILS"
+msgstr "デバイス"
+
+msgid "filtrer : nom, système, adresse"
+msgstr "絞り込み：名前、システム、アドレス"
+
+msgid "Relais Funnel de Tailscale"
+msgstr "Tailscale の Funnel リレー"
+
+msgid "Chemin"
+msgstr "パス"
+
+msgid "Vu"
+msgstr "最終確認"
+
+msgid "nom ou adresse (vide : la ligne choisie)"
+msgstr "名前またはアドレス（空欄：選択した行）"
+
+msgid "Ping Tailscale"
+msgstr "Tailscale Ping"
+
+msgid "Qui est-ce ?"
+msgstr "これは誰？"
+
+msgid "DIAGNOSTIC RÉSEAU"
+msgstr "ネットワーク診断"
+
+msgid ""
+"UDP, IPv4 / IPv6, type de NAT, ouverture de port par la box, relais le plus "
+"proche : ce qui décide si les connexions sont directes. Prend quelques "
+"secondes."
+msgstr ""
+"UDP、IPv4 / IPv6、NAT の種類、ルーターによるポート開放、最寄りのリレー：接続が直接になるかどうかを決めるものです。数秒かかります。"
+
+msgid "Lancer le diagnostic"
+msgstr "診断を開始"
+
+msgid "DIAGNOSTIC"
+msgstr "診断"
+
+msgid "VERROU DU TAILNET"
+msgstr "TAILNET ロック"
+
+msgid "COMPTEURS INTERNES"
+msgstr "内部カウンター"
+
+#, python-brace-format
+msgid "Illisible : {error}"
+msgstr "読み取れません：{error}"
+
+#, python-brace-format
+msgid ""
+"{online} en ligne sur {total} appareil(s) ; {relays} relais Funnel de "
+"Tailscale (cochez pour les voir)."
+msgstr ""
+"{total} 台中 {online} 台のデバイスがオンライン。Tailscale の Funnel リレー {relays} "
+"台（チェックすると表示）。"
+
+#, python-brace-format
+msgid "Appareils illisibles : {error}"
+msgstr "デバイスを読み取れません：{error}"
+
+msgid "Choisissez un appareil, ou tapez un nom ou une adresse."
+msgstr "デバイスを選ぶか、名前またはアドレスを入力してください。"
+
+#, python-brace-format
+msgid "PING {target}"
+msgstr "PING {target}"
+
+#, python-brace-format
+msgid "QUI EST-CE ? {target}"
+msgstr "これは誰？ {target}"
+
+msgid "Lecture…"
+msgstr "読み込み中…"
+
+msgid "Ping en cours (3 essais au plus)…"
+msgstr "Ping 中（最大 3 回）…"
+
+#, python-brace-format
+msgid "« {target} » n'est pas un nom ou une adresse valable."
+msgstr "「{target}」は有効な名前またはアドレスではありません。"
+
+msgid "Diagnostic en cours (quelques secondes)…"
+msgstr "診断中（数秒）…"
+
+msgid "tailnet seul"
+msgstr "tailnet のみ"
+
+msgid "par la porte ✔"
+msgstr "ゲート経由 ✔"
+
+msgid "non protégé"
+msgstr "保護なし"
+
+#, python-brace-format
+msgid "depuis Internet (relais Funnel {via})"
+msgstr "インターネットから（Funnel リレー {via}）"
+
+#, python-brace-format
+msgid "par le tailnet ({via})"
+msgstr "tailnet 経由（{via}）"
+
+#, python-brace-format
+msgid "{kind} {port}{path} {where} : {detail}"
+msgstr "{kind} {port}{path} {where}：{detail}"
+
+#, python-brace-format
+msgid "Temps : {ms:.0f} ms"
+msgstr "時間：{ms:.0f} ms"
+
+#, python-brace-format
+msgid "Certificat : {subject} · émis par {issuer} · échéance {expiry} · {tls}"
+msgstr "証明書：{subject} · 発行者 {issuer} · 期限 {expiry} · {tls}"
+
+msgid ""
+"Le nom n'est pas encore publié pour Internet : juste après un ajout, Funnel "
+"met parfois une minute. Réessayez."
+msgstr "この名前はまだインターネットに公開されていません。追加直後は Funnel に 1 分ほどかかることがあります。もう一度試してください。"
+
+msgid ""
+"Un essai par le tailnet depuis la machine elle-même peut échouer selon le "
+"système : essayez aussi depuis un autre appareil."
+msgstr "マシン自身から tailnet 経由でテストすると、システムによっては失敗することがあります。別のデバイスからも試してください。"
+
+msgid ""
+"Ce que cette machine publie : pour le tailnet seul (Serve) ou pour Internet "
+"(Funnel). Chaque changement est vérifié, et l'état d'avant est sauvegardé "
+"(restaurable en un bouton)."
+msgstr ""
+"このマシンが公開しているもの：tailnet "
+"のみ（Serve）またはインターネット向け（Funnel）。変更はすべて検証され、変更前の状態が保存されます（ボタン 1 つで復元可能）。"
+
+msgid "Essai de bout en bout"
+msgstr "エンドツーエンドテスト"
+
+msgid "Retirer"
+msgstr "撤去"
+
+msgid "Suspendre Funnel"
+msgstr "Funnel を一時停止"
+
+msgid "Rétablir Funnel"
+msgstr "Funnel を復旧"
+
+msgid "AJOUTER"
+msgstr "追加"
+
+msgid ""
+"Pour Internet, le plus sûr : HTTPS sur le port 443, puis « Activer la "
+"protection » (Pare-feu Funnel) pour que la porte filtre avant tout "
+"chiffrement."
+msgstr ""
+"インターネット向けで最も安全なのは、ポート 443 で HTTPS にしてから「保護を有効化」（Funnel "
+"ファイアウォール）を実行し、あらゆる暗号化の前にゲートでフィルタリングすることです。"
+
+msgid "Service local"
+msgstr "ローカルサービス"
+
+msgid "8080 ou http://127.0.0.1:8080"
+msgstr "8080 または http://127.0.0.1:8080"
+
+msgid "Pour"
+msgstr "公開先"
+
+msgid "le tailnet seul (Serve)"
+msgstr "tailnet のみ（Serve）"
+
+msgid "Port (Funnel : 443, 8443, 10000)"
+msgstr "ポート（Funnel：443、8443、10000）"
+
+msgid "Chemin (HTTPS / HTTP)"
+msgstr "パス（HTTPS / HTTP）"
+
+msgid "Publier"
+msgstr "公開"
+
+msgid "SAUVEGARDES"
+msgstr "バックアップ"
+
+msgid ""
+"L'état d'avant chaque changement (publication, pare-feu, disjoncteur) ; les "
+"50 plus récentes sont gardées dans var/funnel/sauvegardes/."
+msgstr "各変更（公開、ファイアウォール、ブレーカー）前の状態。最新 50 件を var/funnel/sauvegardes/ に保存します。"
+
+msgid "Aucune sauvegarde"
+msgstr "バックアップなし"
+
+msgid "Restaurer"
+msgstr "復元"
+
+#, python-brace-format
+msgid "Publication illisible : {error}"
+msgstr "公開設定を読み取れません：{error}"
+
+msgid "Internet"
+msgstr "インターネット"
+
+msgid "tailnet"
+msgstr "tailnet"
+
+msgid "Rien n'est publié. « Publier » ci-dessous pour commencer."
+msgstr "何も公開されていません。下の「公開」から始めてください。"
+
+msgid ""
+"Pour changer la publication, devenez opérateur de Tailscale (tableau de "
+"bord)."
+msgstr "公開設定を変更するには、Tailscale のオペレーターになってください（ダッシュボード）。"
+
+msgid "Essai en cours…"
+msgstr "テスト中…"
+
+#, python-brace-format
+msgid ""
+"Retire {kind} {port}{path} → {target} ({who}). L'état d'avant est sauvegardé.\n"
+"\n"
+"Commande : {command}"
+msgstr ""
+"{kind} {port}{path} → {target}（{who}）を撤去します。変更前の状態は保存されます。\n"
+"\n"
+"コマンド：{command}"
+
+msgid "RETIRER CETTE PUBLICATION ?"
+msgstr "この公開を撤去しますか？"
+
+#, python-brace-format
+msgid ""
+"Le service {target} sera joignable depuis Internet (Funnel, port {port}). "
+"Pensez ensuite à « Activer la protection » (Pare-feu Funnel)."
+msgstr ""
+"サービス {target} はインターネットから到達可能になります（Funnel、ポート {port}）。その後「保護を有効化」（Funnel "
+"ファイアウォール）を忘れずに。"
+
+msgid "PUBLIER SUR INTERNET ?"
+msgstr "インターネットに公開しますか？"
+
+msgid "Choisissez une sauvegarde."
+msgstr "バックアップを選んでください。"
+
+#, python-brace-format
+msgid ""
+"La publication redevient celle du {when} ({origin}) : {summary}.\n"
+"L'état actuel est sauvegardé d'abord ; tout est vérifié, et remis comme avant en cas d'échec."
+msgstr ""
+"公開設定は {when} の状態（{origin}）に戻ります：{summary}。\n"
+"現在の状態を先に保存し、すべて検証します。失敗した場合は元に戻します。"
+
+msgid "RESTAURER CETTE SAUVEGARDE ?"
+msgstr "このバックアップを復元しますか？"
+
+msgid "QUITTER OMEGA-TAIL ?"
+msgstr "OMEGA-TAIL を終了しますか？"
+
+msgid "RAPPORT"
+msgstr "レポート"
+
+msgid ""
+"Tout ce qu'omega-tail sait de cette machine, en faits : Tailscale, "
+"publication, machine, pare-feu, survie, alertes, et les attaques des 7 "
+"derniers jours (journal de la porte). Enregistré dans le dossier des exports"
+" ; « Voir les exports » les ouvre pour les lire."
+msgstr ""
+"omega-tail がこのマシンについて把握しているすべての事実：Tailscale、公開、マシン、ファイアウォール、サバイバル、アラート、直近 7 "
+"日間の攻撃（ゲートのログ）。エクスポートフォルダーに保存され、「エクスポートを見る」で開いて読めます。"
+
+msgid ""
+"Inclure le compte Tailscale et les appareils du tailnet (noms, adresses)"
+msgstr "Tailscale のアカウントと tailnet のデバイス（名前、アドレス）を含める"
+
+msgid ""
+"Sans cette case, seul leur nombre figure : le rapport peut être envoyé à "
+"quelqu'un sans dévoiler votre tailnet. Les adresses des attaquants y restent"
+" toujours."
+msgstr "オフの場合は数だけが記載され、tailnet を明かさずにレポートを誰かに送れます。攻撃者のアドレスは常に含まれます。"
+
+msgid "APERÇU"
+msgstr "プレビュー"
+
+msgid "Actualiser"
+msgstr "更新"
+
+msgid ""
+"Rapport en préparation (journal de la porte des 7 derniers jours compris)…"
+msgstr "レポートを準備中（直近 7 日間のゲートのログを含む）…"
+
+#, python-brace-format
+msgid "Erreur : {message}"
+msgstr "エラー：{message}"
+
+#, python-brace-format
+msgid "Rapport prêt ({time})."
+msgstr "レポートの準備ができました（{time}）。"
+
+msgid "ARRÊTER TAILSCALED ?"
+msgstr "TAILSCALED を停止しますか？"
+
+msgid "DÉMARRER TAILSCALED ?"
+msgstr "TAILSCALED を起動しますか？"
+
+msgid "REDÉMARRER TAILSCALED ?"
+msgstr "TAILSCALED を再起動しますか？"
+
+msgid ""
+"Tailscale se reconnecte au tailnet ; les publications (Serve, Funnel) "
+"reprennent."
+msgstr "Tailscale が tailnet に再接続し、公開（Serve、Funnel）が再開します。"
+
+msgid ""
+"Tailscale est coupé : plus d'accès par le tailnet, publications (Serve, "
+"Funnel) interrompues jusqu'au prochain démarrage."
+msgstr "Tailscale を止めます。次に起動するまで tailnet 経由でアクセスできず、公開（Serve、Funnel）も中断します。"
+
+msgid ""
+"Coupure de quelques secondes : le tailnet et les publications (Serve, "
+"Funnel) reviennent d'eux-mêmes. Applique une mise à jour déjà installée."
+msgstr "数秒間の切断：tailnet と公開（Serve、Funnel）は自動で戻ります。インストール済みの更新が適用されます。"
+
+msgid "systemd ne connaît pas le service tailscaled sur cette machine."
+msgstr "このマシンの systemd は tailscaled サービスを認識していません。"
+
+#, python-brace-format
+msgid "Depuis : {since}"
+msgstr "開始日時：{since}"
+
+#, python-brace-format
+msgid "Processus : {pid} · mémoire {memory}"
+msgstr "プロセス：{pid} · メモリー {memory}"
+
+#, python-brace-format
+msgid "Version en marche : {version}"
+msgstr "実行中のバージョン：{version}"
+
+msgid ""
+"→ La mise à jour est installée mais pas appliquée : « Redémarrer » "
+"l'applique."
+msgstr "→ 更新はインストール済みですが未適用です。「再起動」で適用されます。"
+
+#, python-brace-format
+msgid "Système d'init : {init} · service « {name} »"
+msgstr "init システム：{init} · サービス「{name}」"
+
+#, python-brace-format
+msgid "Lancement : {command}"
+msgstr "起動コマンド：{command}"
+
+#, python-brace-format
+msgid "Fichier du service : {path}"
+msgstr "サービスファイル：{path}"
+
+msgid "Fichiers d'ajout (lus, jamais modifiés par omega-tail) :"
+msgstr "追加設定ファイル（読み取りのみ、omega-tail は変更しません）："
+
+msgid "Fichiers d'ajout : aucun."
+msgstr "追加設定ファイル：なし。"
+
+msgid ""
+"⚠ Le démarrage lance « tailscale up » : si un réglage change (opérateur, "
+"nom, routes…), Tailscale le refusera et tailscaled ne redémarrera plus. « "
+"Corriger le démarrage » ajoute « - » devant la commande (son refus n'arrête "
+"plus le service)."
+msgstr ""
+"⚠ 起動時に「tailscale up」が実行されます。設定（オペレーター、名前、ルートなど）が変わると Tailscale "
+"が拒否し、tailscaled は起動しなくなります。「起動を修正」はコマンドの前に「-」を付けます（拒否されてもサービスは止まらなくなります）。"
+
+#, python-brace-format
+msgid "Confinement : {state}"
+msgstr "封じ込め：{state}"
+
+#, python-brace-format
+msgid ""
+"  plafond CPU {quota} · poids {weight} · cœurs {cpus} · priorité {nice}"
+msgstr "  CPU 上限 {quota} · 重み {weight} · コア {cpus} · 優先度 {nice}"
+
+msgid "tous"
+msgstr "すべて"
+
+msgid ""
+"  ⚠ Confinement perdu au redémarrage de tailscaled : « Survie » → « "
+"Appliquer le confinement »."
+msgstr "  ⚠ tailscaled の再起動で封じ込めが失われました：「サバイバル」→「封じ込めを適用」。"
+
+msgid "  Le confinement se règle dans « Survie »."
+msgstr "  封じ込めは「サバイバル」で設定します。"
+
+msgid "⚠ Cette session passe par Tailscale : arrêter tailscaled la couperait."
+msgstr "⚠ このセッションは Tailscale を経由しています。tailscaled を停止すると切断されます。"
+
+msgid "SERVICE TAILSCALED"
+msgstr "TAILSCALED サービス"
+
+msgid ""
+"Chaque action montre sa commande avant d'être lancée ; le mot de passe sudo "
+"se saisit dans le terminal."
+msgstr "各操作は実行前にコマンドを表示します。sudo のパスワードはターミナルで入力します。"
+
+msgid "Démarrer"
+msgstr "起動"
+
+msgid "Corriger le démarrage"
+msgstr "起動を修正"
+
+msgid "VOUS ALLEZ PERDRE CETTE SESSION"
+msgstr "このセッションは切断されます"
+
+msgid ""
+"Dernière confirmation : tailscaled sera arrêté et cette session coupée. Vous"
+" devrez le relancer depuis le réseau local ou la machine elle-même."
+msgstr "最終確認：tailscaled を停止し、このセッションは切断されます。ローカルネットワークまたはマシン本体から再起動する必要があります。"
+
+msgid "Arrêter quand même"
+msgstr "それでも停止"
+
+msgid "Enregistrés dans var/settings.json, appliqués tout de suite."
+msgstr "var/settings.json に保存され、すぐに適用されます。"
+
+msgid "Thème de l'interface"
+msgstr "インターフェースのテーマ"
+
+msgid "Thème des exports (rapport HTML, aide exportée)"
+msgstr "エクスポートのテーマ（HTML レポート、エクスポートしたヘルプ）"
+
+msgid "Dossier des exports"
+msgstr "エクスポートフォルダー"
+
+#, python-brace-format
+msgid "Par défaut : {path}. Laissez vide pour revenir au dossier par défaut."
+msgstr "既定：{path}。空にすると既定のフォルダーに戻ります。"
+
+msgid "Dossier des captures d'écran"
+msgstr "スクリーンショットフォルダー"
+
+#, python-brace-format
+msgid "Par défaut : {path}. Capture : Ctrl+P → « Capture d'écran »."
+msgstr "既定：{path}。スクリーンショット：Ctrl+P →「スクリーンショット」。"
+
+msgid "Enregistrer les dossiers"
+msgstr "フォルダーを保存"
+
+msgid "Maintenance des dossiers"
+msgstr "フォルダーの保守"
+
+msgid ""
+"Supprime définitivement le contenu du dossier configuré ; le dossier reste."
+msgstr "設定されたフォルダーの中身を完全に削除します。フォルダーは残ります。"
+
+msgid "Vider le dossier des exports"
+msgstr "エクスポートフォルダーを空にする"
+
+msgid "Vider le dossier des captures"
+msgstr "スクリーンショットフォルダーを空にする"
+
+msgid "des exports"
+msgstr "エクスポート"
+
+msgid "des captures"
+msgstr "スクリーンショット"
+
+#, python-brace-format
+msgid "Chemin à donner en entier (commençant par / ou ~) : {path}"
+msgstr "フルパスで指定してください（/ または ~ で始まる）：{path}"
+
+#, python-brace-format
+msgid "Dossiers enregistrés : {paths}"
+msgstr "保存したフォルダー：{paths}"
+
+#, python-brace-format
+msgid "VIDER LE DOSSIER {label} ?"
+msgstr "{label}フォルダーを空にしますか？"
+
+#, python-brace-format
+msgid ""
+"Supprime définitivement tout le contenu de {directory}. Le dossier reste."
+msgstr "{directory} の中身をすべて完全に削除します。フォルダーは残ります。"
+
+#, python-brace-format
+msgid "Refusé — {path} : {reason}"
+msgstr "拒否 — {path}：{reason}"
+
+#, python-brace-format
+msgid "{count} élément(s) supprimé(s) dans {path}."
+msgstr "{path} 内の {count} 件を削除しました。"
+
+#, python-brace-format
+msgid "Non supprimés : {items}"
+msgstr "削除されなかったもの：{items}"
+
+msgid "Pairs connus"
+msgstr "既知のピア"
+
+msgid "Poignées de main"
+msgstr "ハンドシェイク"
+
+msgid "Poignées de main en excès (par source)"
+msgstr "過剰なハンドシェイク（送信元ごと）"
+
+msgid "Sources inconnues, paquets bien formés"
+msgstr "未知の送信元、正しい形式のパケット"
+
+msgid "Sources inconnues en excès (par source)"
+msgstr "過剰な未知の送信元（送信元ごと）"
+
+msgid "Excès de l'ensemble des sources inconnues"
+msgstr "未知の送信元全体の超過"
+
+msgid "Paquets qui ne sont pas du WireGuard"
+msgstr "WireGuard でないパケット"
+
+msgid "Poser (observation)"
+msgstr "設置（観察）"
+
+msgid "Passer en actif"
+msgstr "有効に切り替え"
+
+msgid "Reposer"
+msgstr "再設置"
+
+msgid "Confier à omega-fire"
+msgstr "omega-fire に委任"
+
+msgid "Reprendre la gestion"
+msgstr "管理を取り戻す"
+
+msgid "POSER LE BOUCLIER DU PORT WIREGUARD ?"
+msgstr "WIREGUARD ポートのシールドを設置しますか？"
+
+msgid "CHANGER LE MODE DU BOUCLIER ?"
+msgstr "シールドのモードを変更しますか？"
+
+msgid "REPOSER LE BOUCLIER ?"
+msgstr "シールドを再設置しますか？"
+
+msgid "CONFIER LE BOUCLIER À OMEGA-FIRE ?"
+msgstr "シールドを OMEGA-FIRE に委任しますか？"
+
+msgid "REPRENDRE LA GESTION DU BOUCLIER ?"
+msgstr "シールドの管理を取り戻しますか？"
+
+msgid "RETIRER LE BOUCLIER ?"
+msgstr "シールドを撤去しますか？"
+
+msgid ""
+"Une table nftables devant tailscaled, en OBSERVATION : rien n'est refusé, "
+"les compteurs disent ce qui l'aurait été. Un service la remet en place à "
+"chaque démarrage."
+msgstr ""
+"tailscaled の手前に置く nftables "
+"のテーブルで、観察モードです。何も拒否せず、拒否されていたはずのものをカウンターが示します。サービスが起動のたびに設置し直します。"
+
+msgid ""
+"La table enregistrée est remise ; ses compteurs et la liste des pairs "
+"repartent de zéro."
+msgstr "保存したテーブルを戻します。カウンターとピアの一覧はゼロから始まります。"
+
+msgid ""
+"omega-fire gérera le bouclier (remise au démarrage, commandes, liste des "
+"règles). La table, ses compteurs et les pairs connus ne sont pas touchés."
+msgstr "omega-fire がシールドを管理します（起動時の再設置、コマンド、ルール一覧）。テーブル、カウンター、既知のピアには触れません。"
+
+msgid ""
+"omega-fire n'est plus relié : omega-tail gère de nouveau le bouclier. La "
+"table n'est pas touchée."
+msgstr "omega-fire はもう連携していません。omega-tail が再びシールドを管理します。テーブルには触れません。"
+
+msgid ""
+"La table, ses fichiers et son service sont supprimés : tailscaled ne sera "
+"plus protégé contre les flots de paquets."
+msgstr "テーブル、そのファイル、サービスを削除します。tailscaled はパケットの洪水から保護されなくなります。"
+
+msgid ""
+"tailscaled tire son port au hasard (--port 0) : aucun bouclier possible. "
+"Fixez un port (PORT= dans /etc/default/tailscaled), puis redémarrez "
+"tailscaled."
+msgstr ""
+"tailscaled のポートがランダムです（--port 0）。シールドは使えません。ポートを固定し（/etc/default/tailscaled "
+"の PORT=）、tailscaled を再起動してください。"
+
+msgid "Aucune carte réseau matérielle trouvée : rien à protéger."
+msgstr "物理ネットワークカードが見つかりません。保護するものはありません。"
+
+msgid "Port ou nom de carte réseau refusé."
+msgstr "ポートまたはネットワークカード名が拒否されました。"
+
+msgid "Aucun bouclier enregistré sur cette machine."
+msgstr "このマシンには保存されたシールドがありません。"
+
+msgid ""
+"Le noyau a été mis à jour sans redémarrage : ses modules ne peuvent plus "
+"être chargés et la table serait refusée. Redémarrez la machine, puis "
+"recommencez."
+msgstr "カーネルが再起動なしで更新されました。モジュールを読み込めないため、テーブルは拒否されます。マシンを再起動してからやり直してください。"
+
+#, python-brace-format
+msgid ""
+"Origine : {tool} (outil qui l'a demandé) · port {port}/udp · cartes réseau :"
+" {devices}"
+msgstr "由来：{tool}（要求したツール）· ポート {port}/udp · ネットワークカード：{devices}"
+
+#, python-brace-format
+msgid "Pairs connus : {count} (jamais limités)."
+msgstr "既知のピア：{count}（制限なし）。"
+
+#, python-brace-format
+msgid "Détecté : port de tailscaled {port}, cartes réseau {devices}."
+msgstr "検出：tailscaled のポート {port}、ネットワークカード {devices}。"
+
+msgid "au hasard"
+msgstr "ランダム"
+
+msgid ""
+"Noyau antérieur à 5.16 : sans liste des pairs, seuls le tri des paquets et "
+"la limite des poignées de main sont posés."
+msgstr "カーネルが 5.16 より前です。ピアの一覧がないため、パケットの振り分けとハンドシェイクの制限だけを設置します。"
+
+#, python-brace-format
+msgid ""
+"omega-fire {version} relié : il pose et gère le bouclier ; sa liste des "
+"règles l'affiche avec l'origine omega-tail."
+msgstr ""
+"omega-fire {version} が連携しています。omega-fire がシールドを設置・管理し、そのルール一覧に由来 omega-tail "
+"として表示されます。"
+
+#, python-brace-format
+msgid ""
+"omega-fire {version} relié, mais trop ancien pour le bouclier (il faut "
+"{needed} ou plus récent) : omega-tail le gère lui-même. Mettez omega-fire à "
+"jour."
+msgstr ""
+"omega-fire {version} が連携していますが、シールドには古すぎます（{needed} 以降が必要）。omega-tail "
+"が自分で管理します。omega-fire を更新してください。"
+
+msgid ""
+"omega-fire n'est pas relié par omega-connect : omega-tail pose et gère le "
+"bouclier lui-même, même si ufw ou firewalld sont présents."
+msgstr ""
+"omega-fire は omega-connect で連携していません。ufw や firewalld があっても、omega-tail "
+"が自分でシールドを設置・管理します。"
+
+msgid ""
+"Géré par omega-fire, qui n'est plus relié : « Reprendre la gestion » le rend"
+" à omega-tail."
+msgstr "omega-fire が管理していますが、もう連携していません。「管理を取り戻す」で omega-tail に戻します。"
+
+msgid ""
+"Noyau mis à jour sans redémarrage : la table ne peut pas être posée avant un"
+" redémarrage."
+msgstr "カーネルが再起動なしで更新されました。再起動するまでテーブルを設置できません。"
+
+msgid ""
+"Système d'init inconnu : le bouclier ne sera pas remis en place au "
+"redémarrage."
+msgstr "不明な init システムです。再起動時にシールドは設置し直されません。"
+
+msgid "BOUCLIER DU PORT WIREGUARD"
+msgstr "WIREGUARD ポートのシールド"
+
+msgid ""
+"Devant tailscaled : poignées de main limitées par source, budget pour les "
+"sources qui ne sont pas des pairs connus, paquets qui ne sont pas du "
+"WireGuard refusés. Mesuré : un flot qui prenait un cœur entier à tailscaled "
+"n'en prend plus que 1 %. Commencez en observation."
+msgstr ""
+"tailscaled の手前で：ハンドシェイクを送信元ごとに制限し、既知のピア以外の送信元に予算を設け、WireGuard "
+"でないパケットを拒否します。測定結果：tailscaled のコアを 1 つ丸ごと使っていたトラフィックが 1 % "
+"しか使わなくなりました。観察から始めてください。"
+
+msgid "COMPTEURS DEPUIS LA POSE"
+msgstr "設置以降のカウンター"
+
+msgid "Compteur"
+msgstr "カウンター"
+
+msgid "Effet"
+msgstr "効果"
+
+msgid "Paquets"
+msgstr "パケット"
+
+msgid "admis"
+msgstr "許可"
+
+msgid "auraient été refusés"
+msgstr "拒否されていたはず"
+
+msgid "refusés"
+msgstr "拒否"
+
+msgid "Passer en observation"
+msgstr "観察に切り替え"
+
+#, python-brace-format
+msgid ""
+"En observation, {count} paquet(s) auraient été refusés : en actif, ils le "
+"seront. Les pairs connus ne sont jamais limités."
+msgstr "観察中に {count} パケットが拒否されていたはずです。有効にすると拒否されます。既知のピアが制限されることはありません。"
+
+msgid ""
+"Plus rien n'est refusé ; les compteurs continuent de dire ce qui l'aurait "
+"été."
+msgstr "何も拒否しなくなります。拒否されていたはずのものはカウンターが引き続き示します。"
+
+#, python-brace-format
+msgid ""
+"Par omega-fire (il garde l'origine {tool} et l'inscrit à son journal "
+"d'audit)."
+msgstr "omega-fire が実行します（由来 {tool} を保持し、監査ログに記録します）。"
+
+msgid "systemd ne connaît pas tailscaled : confinement impossible ici."
+msgstr "systemd が tailscaled を認識していません。ここでは封じ込めできません。"
+
+msgid "perdu (tailscaled a redémarré) : « Appliquer le confinement » le remet"
+msgstr "失われました（tailscaled が再起動）。「封じ込めを適用」で戻せます"
+
+msgid "actif (groupe de contrôle d'omega-tail)"
+msgstr "有効（omega-tail のコントロールグループ）"
+
+#, python-brace-format
+msgid "Confinement actuel : {state}"
+msgstr "現在の封じ込め：{state}"
+
+#, python-brace-format
+msgid "  plafond {quota} · poids {weight} · système d'init {init}"
+msgstr "  上限 {quota} · 重み {weight} · init システム {init}"
+
+msgid "actif, posé par omega-tail"
+msgstr "有効、omega-tail が設置"
+
+msgid "posé par omega-tail, pas encore appliqué (rechargement ou redémarrage)"
+msgstr "omega-tail が設置、未適用（再読み込みまたは再起動が必要）"
+
+msgid "actif, posé hors d'omega-tail"
+msgstr "有効、omega-tail 以外が設置"
+
+#, python-brace-format
+msgid "  plafond {quota} · poids {weight} · priorité {nice}"
+msgstr "  上限 {quota} · 重み {weight} · 優先度 {nice}"
+
+#, python-brace-format
+msgid "  Vos fichiers d'ajout (jamais modifiés) : {paths}"
+msgstr "  あなたの追加設定ファイル（変更しません）：{paths}"
+
+#, python-brace-format
+msgid ""
+"Funnel COUPÉ par omega-tail depuis {since} (coupure totale) : « Rétablir "
+"maintenant » le remet à l'identique."
+msgstr ""
+"Funnel は {since} から omega-tail によって遮断されています（完全遮断）。「今すぐ復旧」でまったく同じ状態に戻ります。"
+
+#, python-brace-format
+msgid ""
+"Funnel COUPÉ par omega-tail depuis {since}, remis en route automatiquement à"
+" {until}."
+msgstr "Funnel は {since} から omega-tail によって遮断されています。{until} に自動で再開します。"
+
+#, python-brace-format
+msgid "Funnel ouvert : port {ports}."
+msgstr "Funnel は公開中：ポート {ports}。"
+
+msgid "Funnel n'est pas ouvert : rien à couper."
+msgstr "Funnel は公開されていません。遮断するものはありません。"
+
+msgid ""
+"Désactivée : sous attaque, omega-tail ouvert PROPOSE la coupure (il faut "
+"être devant la machine)."
+msgstr "無効：攻撃を受けると、起動中の omega-tail が遮断を提案します（マシンの前に人がいる必要があります）。"
+
+msgid ""
+"Activée mais arrêtée (aucun signe de vie) : « Activer la veille » la "
+"relance."
+msgstr "有効だが停止中（生存信号なし）：「監視を有効化」で再起動します。"
+
+msgid ""
+"En marche, même omega-tail fermé : sous attaque, elle coupe Funnel seule et "
+"le remet seule."
+msgstr "omega-tail を閉じていても動作中：攻撃を受けると Funnel を自動で遮断し、自動で再開します。"
+
+#, python-brace-format
+msgid ""
+"  Dépassements récents : {strikes}/{total} (fenêtre de {window} min) · "
+"prochaine coupure : {minutes} min"
+msgstr "  最近の超過：{strikes}/{total}（{window} 分のウィンドウ）· 次回の遮断：{minutes} 分"
+
+msgid ""
+"Garder la machine debout sous attaque. Chaque action montre ses commandes "
+"avant ; le mot de passe sudo se saisit dans le terminal."
+msgstr "攻撃を受けてもマシンを稼働させ続けます。各操作は先にコマンドを表示します。sudo のパスワードはターミナルで入力します。"
+
+msgid "CONFINEMENT DE TAILSCALED"
+msgstr "TAILSCALED の封じ込め"
+
+#, python-brace-format
+msgid "Proposé pour cette machine ({count} fils), dans {path} :"
+msgstr "このマシン（{count} スレッド）への提案、{path} に："
+
+#, python-brace-format
+msgid ""
+"Proposé pour cette machine ({count} fils), dans un groupe de contrôle à part"
+" :"
+msgstr "このマシン（{count} スレッド）への提案、独立したコントロールグループで："
+
+#, python-brace-format
+msgid "Donner la priorité à l'accès SSH ({unit})"
+msgstr "SSH アクセスを優先（{unit}）"
+
+msgid ""
+"Redémarrer tailscaled tout de suite (la priorité ne s'applique qu'au "
+"redémarrage ; coupure de quelques secondes)"
+msgstr "すぐに tailscaled を再起動（優先度は再起動時のみ適用、数秒間の切断）"
+
+msgid "Appliquer le confinement"
+msgstr "封じ込めを適用"
+
+msgid "Retirer le confinement"
+msgstr "封じ込めを撤去"
+
+msgid "VEILLE AUTOMATIQUE"
+msgstr "自動監視"
+
+#, python-brace-format
+msgid ""
+"Pour une machine sans personne devant. Un dépassement : un seuil du "
+"disjoncteur tenu (plus bas). {strikes} dépassements dans la fenêtre : Funnel"
+" coupé {first} min, puis {second} min la fois suivante, puis {last} min à "
+"chaque fois ; toujours remis en route seul, à l'identique. Retour à {first} "
+"min après {hours} h sans coupure. Seul Funnel est coupé : tailscaled, le "
+"tailnet et SSH restent joignables."
+msgstr ""
+"画面の前に誰もいないマシン向けです。超過 1 回：ブレーカーのしきい値が持続したこと（下記）。ウィンドウ内で超過 {strikes} 回：Funnel "
+"を {first} 分遮断、次は {second} 分、以降は毎回 {last} 分。常に自動でまったく同じ状態に再開します。遮断なしで {hours}"
+" 時間たつと {first} 分に戻ります。遮断するのは Funnel だけで、tailscaled、tailnet、SSH には引き続き到達できます。"
+
+msgid "Fenêtre (min)"
+msgstr "ウィンドウ（分）"
+
+msgid "Enregistrer"
+msgstr "保存"
+
+msgid "Activer la veille"
+msgstr "監視を有効化"
+
+msgid "Désactiver la veille"
+msgstr "監視を無効化"
+
+msgid ""
+"Protège tailscaled des flots de paquets envoyés sur son port (même sans "
+"Funnel)."
+msgstr "tailscaled のポートに送られるパケットの洪水から tailscaled を守ります（Funnel がなくても）。"
+
+msgid "Bouclier du port WireGuard"
+msgstr "WireGuard ポートのシールド"
+
+msgid "DISJONCTEUR FUNNEL"
+msgstr "FUNNEL ブレーカー"
+
+msgid ""
+"Sans veille, il propose, il ne coupe jamais seul : quand un seuil est "
+"dépassé, omega-tail ouvert vous propose une coupure momentanée ou totale. "
+"Avec la veille automatique (ci-dessus), il agit seul."
+msgstr ""
+"監視がない場合は提案するだけで、自動で遮断することはありません。しきい値を超えると、起動中の omega-tail "
+"が一時遮断か完全遮断を提案します。自動監視（上記）があれば自動で動作します。"
+
+msgid "CPU tailscaled ≥ (% d'un cœur)"
+msgstr "tailscaled の CPU ≥（コア 1 つの %）"
+
+msgid "pendant (s)"
+msgstr "継続（秒）"
+
+msgid "ou température ≥ (°C)"
+msgstr "または温度 ≥（°C）"
+
+msgid "coupure momentanée (min)"
+msgstr "一時遮断（分）"
+
+msgid "Enregistrer les seuils"
+msgstr "しきい値を保存"
+
+msgid "Rétablir maintenant"
+msgstr "今すぐ復旧"
+
+msgid "Journal de la veille :"
+msgstr "監視のログ："
+
+msgid ""
+"Le disjoncteur demande d'être opérateur de Tailscale (tableau de bord, « "
+"Devenir opérateur ») : la remise en route programmée tourne sous votre "
+"compte, jamais en root."
+msgstr ""
+"ブレーカーには Tailscale "
+"のオペレーターである必要があります（ダッシュボード、「オペレーターになる」）。予定された再開はあなたのアカウントで実行され、root "
+"で実行されることはありません。"
+
+msgid "Tailscale absent"
+msgstr "Tailscale なし"
+
+#, python-brace-format
+msgid "CPU machine {cpu:.0f} %"
+msgstr "マシン CPU {cpu:.0f} %"
+
+#, python-brace-format
+msgid "CPU tailscaled {cpu:.0f} %"
+msgstr "tailscaled CPU {cpu:.0f} %"
+
+#, python-brace-format
+msgid "RAM {used:.0f} %"
+msgstr "RAM {used:.0f} %"
+
+msgid "Funnel coupé"
+msgstr "Funnel 遮断"
+
+msgid "Funnel fermé"
+msgstr "Funnel 閉鎖"
+
+msgid "Pare-feu actif · attaque"
+msgstr "ファイアウォール有効 · 攻撃"
+
+msgid "Pare-feu actif"
+msgstr "ファイアウォール有効"
+
+msgid "Pare-feu arrêté"
+msgstr "ファイアウォール停止"
+
+msgid "Pare-feu inactif"
+msgstr "ファイアウォール無効"
+
+msgid "Veille active"
+msgstr "監視中"
+
+msgid "Veille arrêtée"
+msgstr "監視停止"
+
+msgid "Veille inactive"
+msgstr "監視無効"
+
+msgid "Tailscale injoignable"
+msgstr "Tailscale 応答なし"
+
+msgid "Lecture de l'état…"
+msgstr "状態を読み込み中…"

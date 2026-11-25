@@ -1,0 +1,4348 @@
+# Statut X-Omega-Status : validated (2026-11-25, choix de vocabulaire et de ton arbitrés par Claude à la demande de l'auteur).
+msgid ""
+msgstr ""
+"Project-Id-Version: omega-tail\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Omega-Status: validated\n"
+
+msgid ""
+"omega-tail : pas de terminal interactif ; utilisez « omega-tail etat »."
+msgstr "omega-tail: 대화형 터미널이 없습니다. 「omega-tail etat」를 사용하십시오."
+
+msgid "Nom de la machine inconnu : Tailscale est-il connecté ?"
+msgstr "머신 이름을 알 수 없습니다: Tailscale이 연결되어 있습니까?"
+
+#, python-brace-format
+msgid "Certificat refusé ({error}). Êtes-vous opérateur de Tailscale ?"
+msgstr "인증서가 거부되었습니다({error}). Tailscale 운영자입니까?"
+
+#, python-brace-format
+msgid "Certificat renouvelé, mais la porte ne l'a pas repris ({error})."
+msgstr "인증서는 갱신되었지만 게이트가 이를 다시 불러오지 않았습니다({error})."
+
+#, python-brace-format
+msgid "Certificat de {name} à jour."
+msgstr "{name}의 인증서가 최신 상태입니다."
+
+#, python-brace-format
+msgid "Publication non prise en charge : {reason}."
+msgstr "지원되지 않는 게시: {reason}."
+
+#, python-brace-format
+msgid "Publication illisible ({error})."
+msgstr "게시 정보를 읽을 수 없습니다({error})."
+
+msgid "HAProxy n'est pas installé : « Installer HAProxy » d'abord."
+msgstr "HAProxy가 설치되어 있지 않습니다: 먼저 「HAProxy 설치」를 실행하십시오."
+
+#, python-brace-format
+msgid "Configuration de la porte refusée par HAProxy : {error}"
+msgstr "HAProxy가 게이트 구성을 거부했습니다: {error}"
+
+#, python-brace-format
+msgid "Renouvellement du certificat non programmé (crontab : {error})."
+msgstr "인증서 갱신이 예약되지 않았습니다(crontab: {error})."
+
+msgid "Porte prête : certificat, listes et configuration vérifiés."
+msgstr "게이트 준비 완료: 인증서, 목록, 구성을 확인했습니다."
+
+msgid "La porte protège déjà Funnel."
+msgstr "게이트가 이미 Funnel을 보호하고 있습니다."
+
+#, python-brace-format
+msgid "La porte ne répond pas en local ({detail}) : rien n'a été basculé."
+msgstr "게이트가 로컬에서 응답하지 않습니다({detail}): 아무것도 전환하지 않았습니다."
+
+#, python-brace-format
+msgid "Bascule refusée ({error}) : publication d'origine remise."
+msgstr "전환이 거부되었습니다({error}): 원래 게시를 복원했습니다."
+
+#, python-brace-format
+msgid "Funnel passe par la porte : essai public réussi ({detail})."
+msgstr "Funnel이 게이트를 거칩니다: 공개 테스트 성공({detail})."
+
+#, python-brace-format
+msgid "Essai public échoué ({detail}) : publication d'origine remise."
+msgstr "공개 테스트 실패({detail}): 원래 게시를 복원했습니다."
+
+msgid "La porte ne protège pas Funnel : rien à remettre."
+msgstr "게이트가 Funnel을 보호하지 않습니다: 복원할 것이 없습니다."
+
+#, python-brace-format
+msgid ""
+"Publication d'origine incomplète ({errors}) : sauvegarde gardée dans {path}."
+msgstr "원래 게시가 불완전합니다({errors}): 백업을 {path}에 보관했습니다."
+
+msgid "Publication d'origine remise, à l'identique."
+msgstr "원래 게시를 그대로 복원했습니다."
+
+msgid "Règles enregistrées ; elles s'appliqueront à l'activation."
+msgstr "규칙을 저장했습니다. 활성화할 때 적용됩니다."
+
+#, python-brace-format
+msgid "Règles enregistrées, configuration non régénérée ({error})."
+msgstr "규칙을 저장했지만 구성을 다시 생성하지 못했습니다({error})."
+
+#, python-brace-format
+msgid "Règles refusées par HAProxy ({error}) : ancienne configuration gardée."
+msgstr "HAProxy가 규칙을 거부했습니다({error}): 이전 구성을 유지합니다."
+
+#, python-brace-format
+msgid "Règles écrites, rechargement impossible ({error})."
+msgstr "규칙을 기록했지만 다시 불러올 수 없습니다({error})."
+
+#, python-brace-format
+msgid "Règles appliquées à chaud (mode {mode})."
+msgstr "규칙을 즉시 적용했습니다(모드 {mode})."
+
+msgid "Regroupements indisponibles."
+msgstr "그룹화를 사용할 수 없습니다."
+
+#, python-brace-format
+msgid ""
+"Apprentissage des empreintes en cours (encore {days} jour(s)) : les "
+"regroupements restent en observation jusqu'à la fin ; « appliqués » sera "
+"possible ensuite."
+msgstr ""
+"지문 학습 진행 중(앞으로 {days}일): 끝날 때까지 그룹화는 관찰 상태로 유지되며, 그 후에 「적용」을 선택할 수 있습니다."
+
+msgid "appliqués"
+msgstr "적용"
+
+msgid "en observation"
+msgstr "관찰 중"
+
+#, python-brace-format
+msgid "Regroupements appliqués à chaud ({mode})."
+msgstr "그룹화를 즉시 적용했습니다({mode})."
+
+#, python-brace-format
+msgid ""
+"Apprentissage recommencé : regroupements repassés en observation pour les "
+"{days} jours d'apprentissage."
+msgstr "학습을 다시 시작했습니다: 그룹화가 {days}일의 학습 기간 동안 관찰 상태로 돌아갑니다."
+
+msgid ""
+"Base AS / pays : trop longue (plus de 15 minutes), abandonnée ; l'ancienne "
+"reste en place."
+msgstr "AS / 국가 데이터베이스: 너무 오래 걸려(15분 초과) 중단했습니다. 이전 데이터베이스가 유지됩니다."
+
+#, python-brace-format
+msgid "{text}"
+msgstr "{text}"
+
+#, python-brace-format
+msgid ""
+"Liste noire pleine ({max} entrées) : purgez ou exportez-la dans « Gestion de"
+" la liste noire » avant d'en ajouter."
+msgstr "블랙리스트가 가득 찼습니다({max}개 항목): 추가하기 전에 「블랙리스트 관리」에서 정리하거나 내보내십시오."
+
+#, python-brace-format
+msgid "Adresse ou réseau invalide : {text}"
+msgstr "잘못된 주소 또는 네트워크: {text}"
+
+#, python-brace-format
+msgid ""
+"{address} fait partie du tailnet : la porte admet toujours les machines "
+"Tailscale, elle ne peut pas être bloquée."
+msgstr "{address}은(는) tailnet에 속합니다: 게이트는 Tailscale 머신을 항상 허용하므로 차단할 수 없습니다."
+
+#, python-brace-format
+msgid "{address} est déjà dans la liste noire (ou dans un de ses réseaux)."
+msgstr "{address}은(는) 이미 블랙리스트(또는 그 네트워크 중 하나)에 있습니다."
+
+#, python-brace-format
+msgid "{address} → liste noire (refusée jusqu'au retrait)."
+msgstr "{address} → 블랙리스트(제거할 때까지 거부)."
+
+#, python-brace-format
+msgid "{count} entrée(s) retirée(s) de la liste noire ; il en reste {left}."
+msgstr "블랙리스트에서 항목 {count}개를 제거했습니다. {left}개 남았습니다."
+
+#, python-brace-format
+msgid ""
+"Import : {added} ajoutée(s), {duplicates} doublon(s), {tailnet} du tailnet "
+"écartée(s), {invalid} ligne(s) invalide(s)."
+msgstr ""
+"가져오기: {added}개 추가, {duplicates}개 중복, tailnet {tailnet}개 제외, 잘못된 줄 "
+"{invalid}개."
+
+#, python-brace-format
+msgid ""
+"Import : {added} ajoutée(s), {duplicates} doublon(s), {tailnet} du tailnet "
+"écartée(s), {invalid} ligne(s) invalide(s), {over} au-delà du plafond de "
+"{max}."
+msgstr ""
+"가져오기: {added}개 추가, {duplicates}개 중복, tailnet {tailnet}개 제외, 잘못된 줄 "
+"{invalid}개, 상한 {max}개 초과 {over}개."
+
+msgid "Aucune entrée ne correspond : rien n'a été retiré."
+msgstr "일치하는 항목이 없습니다: 아무것도 제거하지 않았습니다."
+
+#, python-brace-format
+msgid ""
+"Purge : {count} entrée(s) retirée(s) de la liste noire ; il en reste {left}."
+msgstr "정리: 블랙리스트에서 항목 {count}개를 제거했습니다. {left}개 남았습니다."
+
+#, python-brace-format
+msgid "Adresse invalide : {text}"
+msgstr "잘못된 주소: {text}"
+
+#, python-brace-format
+msgid ""
+"{address} → liste noire (refusée jusqu'au retrait), retirée de la confiance."
+msgstr "{address} → 블랙리스트(제거할 때까지 거부), 신뢰 목록에서 제거."
+
+#, python-brace-format
+msgid ""
+"{address} est en confiance (jamais limitée) : la confiance passe avant le "
+"blocage. Retirez-la de la confiance d'abord."
+msgstr "{address}은(는) 신뢰 대상입니다(제한 없음): 신뢰가 차단보다 우선합니다. 먼저 신뢰 목록에서 제거하십시오."
+
+#, python-brace-format
+msgid ""
+"Porte injoignable ({error}) : blocage temporaire impossible porte arrêtée."
+msgstr "게이트에 연결할 수 없습니다({error}): 게이트가 중지된 상태에서는 임시 차단을 할 수 없습니다."
+
+#, python-brace-format
+msgid "{address} → bloquée {minutes} min (blocage temporaire)."
+msgstr "{address} → {minutes}분 차단(임시 차단)."
+
+#, python-brace-format
+msgid ""
+"{address} → toujours refusée : elle fait partie d'un réseau en liste noire."
+msgstr "{address} → 계속 거부: 블랙리스트에 있는 네트워크에 속합니다."
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles), retirée de la liste noire."
+msgstr "{address} → 허용(규칙 적용), 블랙리스트에서 제거."
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles), blocage temporaire levé."
+msgstr "{address} → 허용(규칙 적용), 임시 차단 해제."
+
+#, python-brace-format
+msgid "{address} → confiance (jamais limitée), retirée de la liste noire."
+msgstr "{address} → 신뢰(제한 없음), 블랙리스트에서 제거."
+
+#, python-brace-format
+msgid "{address} → confiance (jamais limitée)."
+msgstr "{address} → 신뢰(제한 없음)."
+
+#, python-brace-format
+msgid "{address} → toujours admise : elle fait partie du tailnet."
+msgstr "{address} → 항상 허용: tailnet에 속합니다."
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles)."
+msgstr "{address} → 허용(규칙 적용)."
+
+#, python-brace-format
+msgid "Apprentissage recommencé : {days} jours avant que la référence compte."
+msgstr "학습을 다시 시작했습니다: 기준이 반영되기까지 {days}일."
+
+#, python-brace-format
+msgid "Base AS / pays non mise à jour ({error}) : l'ancienne reste en place."
+msgstr "AS / 국가 데이터베이스를 업데이트하지 못했습니다({error}): 이전 데이터베이스가 유지됩니다."
+
+#, python-brace-format
+msgid "Base AS / pays à jour ({countries} plages pays, {asns} plages AS)."
+msgstr "AS / 국가 데이터베이스 최신({countries}개 국가 범위, {asns}개 AS 범위)."
+
+msgid "habituelle"
+msgstr "평소"
+
+msgid "limité en attaque"
+msgstr "공격 시 제한"
+
+msgid "Funnel est coupé par le disjoncteur : rétablissez-le d'abord (Survie)."
+msgstr "Funnel이 서킷 브레이커로 차단되었습니다: 먼저 복원하십시오(생존)."
+
+#, python-brace-format
+msgid "Refusé par Tailscale ({error}) : rien n'a changé."
+msgstr "Tailscale이 거부했습니다({error}): 아무것도 바뀌지 않았습니다."
+
+#, python-brace-format
+msgid "Changement impossible ({error}) : publication d'avant remise."
+msgstr "변경할 수 없습니다({error}): 이전 게시를 복원했습니다."
+
+#, python-brace-format
+msgid "Publication incomplète ({error}) : restaurez la sauvegarde {path}."
+msgstr "게시가 불완전합니다({error}): 백업 {path}을(를) 복원하십시오."
+
+#, python-brace-format
+msgid "Ajout refusé : {reason}."
+msgstr "추가 거부: {reason}."
+
+#, python-brace-format
+msgid "Publié : {kind} {port}{path} → {target} ({who})."
+msgstr "게시됨: {kind} {port}{path} → {target} ({who})."
+
+msgid ""
+"Ce port passe par la porte : « Désactiver la protection » (Pare-feu Funnel) "
+"d'abord."
+msgstr "이 포트는 게이트를 거칩니다: 먼저 「보호 비활성화」(Funnel 방화벽)를 실행하십시오."
+
+msgid "Ce point n'est plus publié."
+msgstr "이 항목은 더 이상 게시되지 않습니다."
+
+#, python-brace-format
+msgid "Retiré : {kind} {port}{path}."
+msgstr "제거됨: {kind} {port}{path}."
+
+#, python-brace-format
+msgid "Sauvegarde illisible ({error})."
+msgstr "백업을 읽을 수 없습니다({error})."
+
+msgid ""
+"La protection est active : « Désactiver la protection » (Pare-feu Funnel) "
+"d'abord, puis restaurez."
+msgstr "보호가 활성화되어 있습니다: 먼저 「보호 비활성화」(Funnel 방화벽)를 실행한 다음 복원하십시오."
+
+msgid ""
+"Cette sauvegarde passe par la porte, arrêtée : « Activer la protection » "
+"(Pare-feu Funnel) la recrée proprement."
+msgstr "이 백업은 중지된 게이트를 거칩니다: 「보호 활성화」(Funnel 방화벽)가 이를 깔끔하게 다시 만듭니다."
+
+#, python-brace-format
+msgid "Sauvegarde du {when} restaurée."
+msgstr "{when} 백업을 복원했습니다."
+
+msgid "essai public indisponible"
+msgstr "공개 테스트를 사용할 수 없음"
+
+msgid "adresse du tailnet inconnue"
+msgstr "tailnet 주소를 알 수 없음"
+
+msgid "Funnel encore autorisé sur les ports"
+msgstr "Funnel이 아직 허용된 포트"
+
+msgid "Funnel est déjà coupé par omega-tail."
+msgstr "Funnel은 이미 omega-tail이 차단했습니다."
+
+msgid "Rien à couper : aucun port n'est ouvert à Internet."
+msgstr "차단할 것이 없습니다: 인터넷에 열린 포트가 없습니다."
+
+msgid "Remise en route programmée impossible ici."
+msgstr "여기서는 예약된 재개를 사용할 수 없습니다."
+
+#, python-brace-format
+msgid ""
+"Minuterie de remise en route refusée (code {code}) : rien n'a été coupé."
+msgstr "재개 타이머가 거부되었습니다(코드 {code}): 아무것도 차단하지 않았습니다."
+
+#, python-brace-format
+msgid "Coupure impossible ({error}) : la publication a été remise."
+msgstr "차단할 수 없습니다({error}): 게시를 복원했습니다."
+
+#, python-brace-format
+msgid ""
+"Funnel coupé ({ports}) pour {minutes} min, puis remis en route "
+"automatiquement."
+msgstr "Funnel 차단({ports}) {minutes}분 동안, 이후 자동 재개."
+
+#, python-brace-format
+msgid "Funnel coupé ({ports}) jusqu'à votre remise en route."
+msgstr "Funnel 차단({ports}), 직접 재개할 때까지."
+
+msgid "Rien à rétablir : Funnel n'est pas coupé par omega-tail."
+msgstr "복원할 것이 없습니다: Funnel은 omega-tail이 차단하지 않았습니다."
+
+msgid "Minuterie d'une ancienne coupure : rien à faire."
+msgstr "이전 차단의 타이머입니다: 할 일이 없습니다."
+
+#, python-brace-format
+msgid "Remise en route incomplète ({errors}) : sauvegarde gardée dans {path}."
+msgstr "재개가 불완전합니다({errors}): 백업을 {path}에 보관했습니다."
+
+msgid "Funnel remis en route, à l'identique."
+msgstr "Funnel을 그대로 재개했습니다."
+
+msgid "Tailscale n'est pas installé sur cette machine."
+msgstr "이 머신에 Tailscale이 설치되어 있지 않습니다."
+
+msgid "Le service tailscaled ne répond pas (arrêté ou en échec)."
+msgstr "tailscaled 서비스가 응답하지 않습니다(중지 또는 실패)."
+
+#, python-brace-format
+msgid ""
+"tailscaled n'a pas été redémarré après la mise à jour : {daemon} en marche, "
+"{client} installé."
+msgstr "업데이트 후 tailscaled를 다시 시작하지 않았습니다: {daemon} 실행 중, {client} 설치됨."
+
+msgid "Tailscale attend la connexion d'un compte."
+msgstr "Tailscale이 계정 연결을 기다리고 있습니다."
+
+msgid "Tailscale est déconnecté (« tailscale down »)."
+msgstr "Tailscale 연결이 해제되어 있습니다(「tailscale down」)."
+
+#, python-brace-format
+msgid "La clé de cette machine expire dans {days} jour(s)."
+msgstr "이 머신의 키가 {days}일 후 만료됩니다."
+
+msgid ""
+"Site en panne : Funnel passe par la porte (pare-feu), mais la porte est "
+"arrêtée."
+msgstr "사이트 중단: Funnel이 게이트(방화벽)를 거치지만 게이트가 중지되어 있습니다."
+
+msgid ""
+"La porte est en MODE ATTAQUE : trop de connexions entrantes ; les "
+"regroupements (empreintes, AS, pays) s'appliquent jusqu'au retour au calme."
+msgstr "게이트가 공격 모드입니다: 들어오는 연결이 너무 많습니다. 안정될 때까지 그룹화(지문, AS, 국가)가 적용됩니다."
+
+#, python-brace-format
+msgid ""
+"Funnel publié sans protection sur le port {port} : tailscaled fait le TLS de"
+" chaque connexion (une rafale peut saturer la machine)."
+msgstr ""
+"포트 {port}에서 Funnel이 보호 없이 게시되어 있습니다: tailscaled가 연결마다 TLS를 처리합니다(폭주 한 번으로 "
+"머신이 포화될 수 있음)."
+
+#, python-brace-format
+msgid "Température élevée : {temperature:.0f} °C."
+msgstr "높은 온도: {temperature:.0f} °C."
+
+#, python-brace-format
+msgid "tailscaled consomme {cpu:.0f} % d'un cœur."
+msgstr "tailscaled가 코어 하나의 {cpu:.0f} %를 사용합니다."
+
+msgid ""
+"La veille automatique est activée mais ne tourne plus : Funnel ne sera pas "
+"coupé seul sous attaque."
+msgstr "자동 감시가 활성화되어 있지만 더 이상 실행되지 않습니다: 공격을 받아도 Funnel이 자동으로 차단되지 않습니다."
+
+#, python-brace-format
+msgid ""
+"Liste noire de la porte : {count} entrées (plafond {max}). Exportez-la puis "
+"purgez les plus anciennes : « Attaques et décisions » → « Gestion de la "
+"liste noire »."
+msgstr ""
+"게이트 블랙리스트: 항목 {count}개(상한 {max}). 내보낸 다음 가장 오래된 항목을 정리하십시오: 「공격과 결정」 → "
+"「블랙리스트 관리」."
+
+msgid ""
+"Bouclier du port WireGuard ABSENT : un autre outil a effacé sa table (nft "
+"flush ruleset, pare-feu relancé…). Il n'est pas reposé seul : « Survie » → «"
+" Bouclier du port WireGuard » → « Reposer »."
+msgstr ""
+"WireGuard 포트 방패가 없습니다: 다른 도구가 테이블을 지웠습니다(nft flush ruleset, 방화벽 재시작…). 자동으로 "
+"다시 설치되지 않습니다: 「생존」 → 「WireGuard 포트 방패」 → 「재설치」."
+
+msgid ""
+"Bouclier du port WireGuard : état non mis à jour depuis plus de 3 minutes "
+"(service omega-bouclier-wg arrêté ?)."
+msgstr "WireGuard 포트 방패: 3분 넘게 상태가 갱신되지 않았습니다(omega-bouclier-wg 서비스 중지?)."
+
+msgid ""
+"Le démarrage de tailscaled lance « tailscale up » : si un réglage change "
+"(opérateur, nom, routes…), Tailscale le refusera et tailscaled ne "
+"redémarrera plus. « Service » → « Corriger le démarrage »."
+msgstr ""
+"tailscaled가 시작할 때 「tailscale up」을 실행합니다: 설정(운영자, 이름, 경로…)이 바뀌면 Tailscale이 이를"
+" 거부하고 tailscaled가 다시 시작되지 않습니다. 「서비스」 → 「시작 설정 수정」."
+
+msgid ""
+"Confinement de tailscaled perdu (le service a redémarré) : « Survie » → « "
+"Appliquer le confinement »."
+msgstr "tailscaled의 자원 제한이 사라졌습니다(서비스 재시작): 「생존」 → 「자원 제한 적용」."
+
+msgid ""
+"tailscaled n'est pas confiné : sous attaque, il peut prendre tous les cœurs."
+msgstr "tailscaled에 자원 제한이 없습니다: 공격을 받으면 모든 코어를 차지할 수 있습니다."
+
+msgid ""
+"Vous n'êtes pas opérateur de Tailscale : chaque réglage demandera sudo."
+msgstr "Tailscale 운영자가 아닙니다: 설정마다 sudo가 필요합니다."
+
+msgid ""
+"Funnel coupé par omega-tail (coupure totale) : remise en route manuelle, "
+"dans « Survie »."
+msgstr "omega-tail이 Funnel을 차단했습니다(완전 차단): 「생존」에서 직접 재개하십시오."
+
+#, python-brace-format
+msgid ""
+"Funnel devait être remis en route à {time} et ne l'est pas : « Rétablir » "
+"dans « Survie »."
+msgstr "Funnel이 {time}에 재개되어야 했지만 재개되지 않았습니다: 「생존」에서 「복원」."
+
+#, python-brace-format
+msgid ""
+"Funnel coupé par omega-tail jusqu'à {time}, puis remis en route "
+"automatiquement."
+msgstr "omega-tail이 {time}까지 Funnel을 차단하며, 이후 자동으로 재개합니다."
+
+#, python-brace-format
+msgid "Tailscale signale : {message}"
+msgstr "Tailscale 알림: {message}"
+
+msgid "ajout manuel"
+msgstr "수동 추가"
+
+msgid "import"
+msgstr "가져오기"
+
+msgid "écran Attaques"
+msgstr "공격 화면"
+
+msgid "avant les dates"
+msgstr "날짜 기록 이전"
+
+#, python-brace-format
+msgid "Température de {temperature:.0f} °C (seuil {threshold:.0f} °C)."
+msgstr "온도 {temperature:.0f} °C(임계값 {threshold:.0f} °C)."
+
+#, python-brace-format
+msgid ""
+"tailscaled au-dessus de {threshold:.0f} % d'un cœur depuis {seconds} s "
+"(moyenne {average:.0f} %)."
+msgstr ""
+"tailscaled가 {seconds}초 동안 코어 하나의 {threshold:.0f} %를 넘었습니다(평균 {average:.0f} "
+"%)."
+
+msgid "cible non prise en charge"
+msgstr "지원되지 않는 대상"
+
+msgid "nom de machine inattendu"
+msgstr "예상치 못한 머신 이름"
+
+msgid "aucun port n'est ouvert à Internet (Funnel)"
+msgstr "인터넷에 열린 포트가 없습니다(Funnel)"
+
+msgid "plusieurs ports Funnel : la porte n'en protège qu'un pour l'instant"
+msgstr "Funnel 포트가 여러 개입니다: 현재 게이트는 하나만 보호합니다"
+
+msgid "Funnel passe déjà par une porte (TCP + PROXY v2)"
+msgstr "Funnel이 이미 게이트를 거칩니다(TCP + PROXY v2)"
+
+msgid "seule une publication HTTPS avec le chemin « / » est prise en charge"
+msgstr "경로가 「/」인 HTTPS 게시만 지원됩니다"
+
+msgid "Chrome, Edge, Firefox récent"
+msgstr "Chrome, Edge, 최신 Firefox"
+
+msgid "Firefox (ancien)"
+msgstr "Firefox(구버전)"
+
+msgid "empreinte"
+msgstr "지문"
+
+msgid "hébergeur"
+msgstr "호스팅 업체"
+
+msgid "pays"
+msgstr "국가"
+
+msgid "Identité"
+msgstr "식별 정보"
+
+msgid "Réseau"
+msgstr "네트워크"
+
+msgid "Sortie"
+msgstr "출구"
+
+msgid "Services Tailscale"
+msgstr "Tailscale 서비스"
+
+msgid "Opérateur"
+msgstr "운영자"
+
+msgid "Nom de la machine"
+msgstr "머신 이름"
+
+msgid ""
+"Nom dans le tailnet (vide : celui du système). Change aussi l'adresse "
+"*.ts.net : les liens publiés et le certificat suivent."
+msgstr "tailnet에서의 이름(비우면 시스템 이름). *.ts.net 주소도 바뀌며, 게시된 링크와 인증서도 따라 바뀝니다."
+
+msgid "ex. serveur-maison"
+msgstr "예) home-server"
+
+msgid "Surnom du compte"
+msgstr "계정 별칭"
+
+msgid ""
+"Surnom du compte en cours, pour le reconnaître dans « Changer de compte »."
+msgstr "현재 계정의 별칭으로, 「계정 전환」에서 알아보기 위한 것입니다."
+
+msgid "ex. maison"
+msgstr "예) 집"
+
+msgid "Accepter les routes"
+msgstr "경로 수락"
+
+msgid ""
+"Utiliser les sous-réseaux annoncés par les autres machines. À éviter sur une"
+" machine du même réseau local que le routeur qui l'annonce."
+msgstr "다른 머신이 광고한 서브넷을 사용합니다. 그 서브넷을 광고하는 라우터와 같은 로컬 네트워크에 있는 머신에서는 피하십시오."
+
+msgid "Accepter le DNS du tailnet"
+msgstr "tailnet DNS 수락"
+
+msgid "MagicDNS : les noms des machines du tailnet se résolvent ici."
+msgstr "MagicDNS: tailnet 머신 이름을 여기서 확인합니다."
+
+msgid "Bouclier (refuser les connexions entrantes)"
+msgstr "방패(들어오는 연결 거부)"
+
+msgid ""
+"Aucune machine du tailnet ne peut se connecter à celle-ci (SSH et Serve "
+"compris). Funnel n'est pas concerné."
+msgstr "tailnet의 어떤 머신도 이 머신에 연결할 수 없습니다(SSH와 Serve 포함). Funnel은 영향을 받지 않습니다."
+
+msgid "Filtrage avec état"
+msgstr "상태 기반 필터링"
+
+msgid ""
+"Pour un routeur de sous-réseau ou un nœud de sortie : ne laisse revenir que "
+"les réponses."
+msgstr "서브넷 라우터나 출구 노드용: 응답만 돌아오게 합니다."
+
+msgid "Mode netfilter"
+msgstr "netfilter 모드"
+
+msgid ""
+"on : Tailscale gère ses règles de pare-feu ; nodivert : ses chaînes sans les"
+" brancher ; off : aucune règle (à vos risques)."
+msgstr ""
+"on: Tailscale이 방화벽 규칙을 관리합니다. nodivert: 체인만 만들고 연결하지 않습니다. off: 규칙 없음(위험 "
+"감수)."
+
+msgid "Nœud de sortie utilisé"
+msgstr "사용 중인 출구 노드"
+
+msgid ""
+"Faire passer le trafic Internet de cette machine par une autre machine du "
+"tailnet (vide : aucun)."
+msgstr "이 머신의 인터넷 트래픽을 tailnet의 다른 머신을 거쳐 보냅니다(비우면 없음)."
+
+msgid "Garder l'accès au réseau local"
+msgstr "로컬 네트워크 접근 유지"
+
+msgid "Avec un nœud de sortie : le réseau local reste joignable directement."
+msgstr "출구 노드 사용 시: 로컬 네트워크에 계속 직접 접근할 수 있습니다."
+
+msgid "Proposer cette machine comme nœud de sortie"
+msgstr "이 머신을 출구 노드로 제공"
+
+msgid ""
+"Les autres machines pourront sortir sur Internet par celle-ci (à approuver "
+"dans la console d'administration)."
+msgstr "다른 머신이 이 머신을 통해 인터넷으로 나갈 수 있습니다(관리 콘솔에서 승인 필요)."
+
+msgid "Sous-réseaux annoncés"
+msgstr "광고된 서브넷"
+
+msgid ""
+"Réseaux locaux rendus joignables au tailnet, séparés par des virgules "
+"(192.168.1.0/24) ; vide : aucun."
+msgstr "tailnet에서 접근할 수 있게 할 로컬 네트워크, 쉼표로 구분(192.168.1.0/24). 비우면 없음."
+
+msgid "ex. 192.168.1.0/24, 10.0.0.0/8"
+msgstr "예) 192.168.1.0/24, 10.0.0.0/8"
+
+msgid "SSH Tailscale"
+msgstr "Tailscale SSH"
+
+msgid ""
+"Serveur SSH de Tailscale, selon les règles du tailnet. Votre SSH habituel "
+"n'est pas touché."
+msgstr "tailnet 규칙에 따른 Tailscale의 SSH 서버입니다. 평소 사용하는 SSH는 건드리지 않습니다."
+
+msgid "Interface web (port 5252)"
+msgstr "웹 인터페이스(포트 5252)"
+
+msgid "Page de gestion de cette machine, joignable par le tailnet seulement."
+msgstr "이 머신의 관리 페이지로, tailnet에서만 접근할 수 있습니다."
+
+msgid "Mises à jour automatiques"
+msgstr "자동 업데이트"
+
+msgid ""
+"Tailscale se met à jour seul quand sa distribution le permet. Sinon : "
+"gestionnaire de paquets."
+msgstr "배포판이 허용하면 Tailscale이 스스로 업데이트합니다. 아니면 패키지 관리자를 사용합니다."
+
+msgid "Signaler les mises à jour"
+msgstr "업데이트 알림"
+
+msgid "Tailscale prévient quand une version plus récente existe."
+msgstr "더 새로운 버전이 있으면 Tailscale이 알려 줍니다."
+
+msgid "Port du relais pair (UDP)"
+msgstr "피어 릴레이 포트(UDP)"
+
+msgid ""
+"Cette machine relaie les connexions d'autres machines du tailnet sur ce port"
+" UDP ; vide : non."
+msgstr "이 머신이 이 UDP 포트로 tailnet의 다른 머신 연결을 릴레이합니다. 비우면 사용 안 함."
+
+msgid "ex. 40000"
+msgstr "예) 40000"
+
+msgid ""
+"Nom du compte Linux qui pilote Tailscale sans sudo (« Mon compte » le "
+"remplit) ; vide : root seul. Changer l'opérateur demande sudo une fois."
+msgstr ""
+"sudo 없이 Tailscale을 제어하는 Linux 계정 이름(「내 계정」이 채워 줌). 비우면 root만. 운영자를 바꾸려면 "
+"sudo가 한 번 필요합니다."
+
+msgid "ex. votre compte Linux"
+msgstr "예) 내 Linux 계정"
+
+msgid "réglage inconnu"
+msgstr "알 수 없는 설정"
+
+msgid "caractère de contrôle"
+msgstr "제어 문자"
+
+msgid "valeur hors liste"
+msgstr "목록에 없는 값"
+
+msgid "lettres, chiffres et tirets seulement (63 au plus)"
+msgstr "영문자, 숫자, 하이픈만(최대 63자)"
+
+msgid "64 caractères au plus"
+msgstr "최대 64자"
+
+msgid "nom de compte Unix attendu"
+msgstr "Unix 계정 이름이 필요합니다"
+
+msgid "adresse ou nom de machine attendu"
+msgstr "주소 또는 머신 이름이 필요합니다"
+
+msgid "port de 0 à 65535"
+msgstr "포트 0~65535"
+
+#, python-brace-format
+msgid "réseau invalide : {value}"
+msgstr "잘못된 네트워크: {value}"
+
+msgid "port de 1 à 65535 attendu"
+msgstr "포트 1~65535가 필요합니다"
+
+msgid "cible locale attendue : un port, ou http://127.0.0.1:PORT"
+msgstr "로컬 대상이 필요합니다: 포트 또는 http://127.0.0.1:PORT"
+
+msgid "cible locale attendue : un port, ou tcp://127.0.0.1:PORT"
+msgstr "로컬 대상이 필요합니다: 포트 또는 tcp://127.0.0.1:PORT"
+
+msgid "mode inconnu"
+msgstr "알 수 없는 모드"
+
+msgid "Funnel n'ouvre que les ports 443, 8443 et 10000"
+msgstr "Funnel은 443, 8443, 10000 포트만 엽니다"
+
+msgid "chemin attendu : /, /site, /api/v1…"
+msgstr "경로가 필요합니다: /, /site, /api/v1…"
+
+msgid "ce port est déjà publié pour un autre public (tailnet / Internet)"
+msgstr "이 포트는 이미 다른 대상(tailnet / 인터넷)에 게시되어 있습니다"
+
+msgid "ce port est déjà publié"
+msgstr "이 포트는 이미 게시되어 있습니다"
+
+msgid "ce port est déjà publié dans un autre mode"
+msgstr "이 포트는 이미 다른 모드로 게시되어 있습니다"
+
+msgid "ce chemin est déjà publié sur ce port"
+msgstr "이 경로는 이 포트에 이미 게시되어 있습니다"
+
+msgid "pare-feu"
+msgstr "방화벽"
+
+msgid "publication"
+msgstr "게시"
+
+msgid "veille automatique"
+msgstr "자동 감시"
+
+msgid "disjoncteur"
+msgstr "서킷 브레이커"
+
+msgid ""
+"Cette session passe par Tailscale : arrêter tailscaled la coupera, et vous "
+"ne pourrez pas le relancer d'ici. Accès de secours : le réseau local ou la "
+"machine elle-même."
+msgstr ""
+"이 세션은 Tailscale을 거칩니다: tailscaled를 중지하면 세션이 끊기고 여기서 다시 시작할 수 없습니다. 비상 접속: 로컬"
+" 네트워크 또는 머신 자체."
+
+msgid ""
+"Cette session passe par Tailscale : pendant le redémarrage elle se figera "
+"quelques secondes, puis reviendra en général d'elle-même."
+msgstr "이 세션은 Tailscale을 거칩니다: 다시 시작하는 동안 몇 초간 멈춘 뒤 대개 저절로 돌아옵니다."
+
+msgid "réponse DNS invalide"
+msgstr "잘못된 DNS 응답"
+
+msgid "aucune adresse publique pour ce nom"
+msgstr "이 이름에 대한 공인 주소가 없습니다"
+
+msgid "HAProxy absent"
+msgstr "HAProxy 없음"
+
+msgid "crontab absent (installez cronie ou un autre cron)"
+msgstr "crontab 없음(cronie 또는 다른 cron을 설치하십시오)"
+
+msgid "fichier trop gros"
+msgstr "파일이 너무 큽니다"
+
+msgid "téléchargement impossible"
+msgstr "다운로드할 수 없습니다"
+
+msgid "base incomplète (trop peu de plages) : ancienne base gardée"
+msgstr "데이터베이스가 불완전합니다(범위가 너무 적음): 이전 데이터베이스를 유지합니다"
+
+msgid "contient l'installation d'omega-tail"
+msgstr "omega-tail 설치를 포함합니다"
+
+msgid "lecture refusée"
+msgstr "읽기 거부"
+
+msgid "aucun journal trouvé"
+msgstr "로그를 찾을 수 없습니다"
+
+msgid ""
+"Votre compte ne peut pas lire le journal du système. Ajoutez-le au groupe « "
+"systemd-journal » (ou « adm » / « wheel » selon la distribution), puis "
+"rouvrez votre session."
+msgstr ""
+"계정이 시스템 로그를 읽을 수 없습니다. 「systemd-journal」 그룹(배포판에 따라 「adm」 / 「wheel」)에 추가한 다음"
+" 세션을 다시 여십시오."
+
+msgid ""
+"Ce journal est réservé à root sur cette machine : ajoutez votre compte au "
+"groupe qui peut le lire (souvent « adm » ou « wheel »), ou lisez-le avec "
+"sudo."
+msgstr ""
+"이 머신에서 이 로그는 root 전용입니다: 읽을 수 있는 그룹(대개 「adm」 또는 「wheel」)에 계정을 추가하거나 sudo로 "
+"읽으십시오."
+
+msgid "journal vide ou illisible pour ce compte"
+msgstr "이 계정에서는 로그가 비어 있거나 읽을 수 없습니다"
+
+msgid "DNS public"
+msgstr "공용 DNS"
+
+msgid "réponse vide"
+msgstr "빈 응답"
+
+msgid "Pilotage de Tailscale et protection de Funnel."
+msgstr "Tailscale 제어와 Funnel 보호."
+
+msgid "état de Tailscale, de la machine et alertes"
+msgstr "Tailscale, 머신 상태 및 경고"
+
+msgid "aide complète en texte"
+msgstr "전체 도움말(텍스트)"
+
+msgid "rapport de la machine (faits seulement)"
+msgstr "머신 보고서(사실만)"
+
+msgid "enregistrer dans le dossier des exports (sinon : affiché)"
+msgstr "내보내기 폴더에 저장(아니면 화면에 표시)"
+
+msgid ""
+"inclure le compte Tailscale et les noms / adresses des appareils du tailnet"
+msgstr "Tailscale 계정과 tailnet 장치의 이름 / 주소 포함"
+
+msgid "couper ou remettre Funnel (Survie)"
+msgstr "Funnel 차단 또는 재개(생존)"
+
+msgid "coupure en cours"
+msgstr "진행 중인 차단"
+
+msgid "couper Funnel"
+msgstr "Funnel 차단"
+
+msgid "coupure momentanée, remise en route automatique (minuterie)"
+msgstr "일시 차단, 자동 재개(타이머)"
+
+msgid "coupure jusqu'à « retablir »"
+msgstr "「retablir」까지 차단"
+
+msgid "remettre Funnel à l'identique"
+msgstr "Funnel을 그대로 재개"
+
+msgid "coupure visée (minuterie) ; une autre coupure est ignorée"
+msgstr "대상 차단(타이머). 다른 차단은 무시됩니다"
+
+msgid "secondes d'attente avant (hors systemd)"
+msgstr "실행 전 대기 시간(초, systemd 외)"
+
+msgid "veille automatique (coupe Funnel seule sous attaque)"
+msgstr "자동 감시(공격 시 Funnel을 자동 차단)"
+
+msgid "tourner en continu (lancé par le service de la veille)"
+msgstr "계속 실행(감시 서비스가 실행)"
+
+msgid "état de la veille et dernières lignes du journal"
+msgstr "감시 상태와 로그의 마지막 줄"
+
+msgid "pare-feu Funnel (porte HAProxy)"
+msgstr "Funnel 방화벽(HAProxy 게이트)"
+
+msgid "état de la porte et compteurs"
+msgstr "게이트 상태와 카운터"
+
+msgid "renouveler le certificat *.ts.net de la porte"
+msgstr "게이트의 *.ts.net 인증서 갱신"
+
+msgid "seulement s'il expire dans moins de 30 jours"
+msgstr "30일 이내에 만료되는 경우에만"
+
+msgid "regroupements : mode attaque, empreintes, AS, pays (lot 6)"
+msgstr "그룹화: 공격 모드, 지문, AS, 국가(6차)"
+
+msgid "mettre à jour la base AS / pays (DB-IP Lite)"
+msgstr "AS / 국가 데이터베이스 업데이트(DB-IP Lite)"
+
+msgid "bloquer une adresse (durée de blocage) ou un réseau"
+msgstr "주소(차단 기간) 또는 네트워크 차단"
+
+msgid "liste noire, jusqu'à « debloquer »"
+msgstr "블랙리스트, 「debloquer」까지"
+
+msgid "débloquer une adresse ou un réseau"
+msgstr "주소 또는 네트워크 차단 해제"
+
+msgid "mettre en confiance (jamais limitée)"
+msgstr "신뢰 지정(제한 없음)"
+
+#, python-brace-format
+msgid "Export impossible : {error}"
+msgstr "내보낼 수 없습니다: {error}"
+
+#, python-brace-format
+msgid "Rapport enregistré : {path}"
+msgstr "보고서 저장됨: {path}"
+
+msgid "Funnel n'est pas coupé par omega-tail."
+msgstr "Funnel은 omega-tail이 차단하지 않았습니다."
+
+#, python-brace-format
+msgid "remise en route prévue {when}"
+msgstr "{when} 재개 예정"
+
+msgid "coupure totale"
+msgstr "완전 차단"
+
+#, python-brace-format
+msgid ""
+"Funnel coupé depuis {since} ({until}), ports {ports} ; sauvegarde {saved}"
+msgstr "Funnel 차단: {since}부터({until}), 포트 {ports}, 백업 {saved}"
+
+msgid "--minutes : 1 au moins."
+msgstr "--minutes: 최소 1."
+
+msgid ""
+"La porte n'est pas active : les listes s'appliqueront à son activation."
+msgstr "게이트가 비활성 상태입니다: 목록은 게이트를 활성화할 때 적용됩니다."
+
+msgid "Veille automatique : désactivée."
+msgstr "자동 감시: 비활성."
+
+msgid "ARRÊTÉE (signe de vie trop vieux)"
+msgstr "중지됨(생존 신호가 너무 오래됨)"
+
+msgid "en marche"
+msgstr "실행 중"
+
+#, python-brace-format
+msgid ""
+"Veille automatique : {state} ; dépassements récents {strikes}/3 ; prochaine "
+"coupure {minutes} min"
+msgstr "자동 감시: {state}, 최근 초과 {strikes}/3, 다음 차단 {minutes}분"
+
+msgid "Porte inactive : Funnel ne passe pas par elle."
+msgstr "게이트 비활성: Funnel이 게이트를 거치지 않습니다."
+
+#, python-brace-format
+msgid ""
+"Porte active depuis {since} : Funnel {port} -> 127.0.0.1:{gate} -> {backend}"
+msgstr "{since}부터 게이트 활성: Funnel {port} -> 127.0.0.1:{gate} -> {backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions : {total} reçues, {refused} refusées avant chiffrement, {current}"
+" en cours"
+msgstr "연결: 수신 {total}, 암호화 전 거부 {refused}, 진행 중 {current}"
+
+#, python-brace-format
+msgid "{days} jour(s) restants"
+msgstr "{days}일 남음"
+
+#, python-brace-format
+msgid "Certificat : {left}"
+msgstr "인증서: {left}"
+
+#, python-brace-format
+msgid "Certificat valable encore {days} jour(s) : rien à faire."
+msgstr "인증서가 앞으로 {days}일 유효합니다: 할 일이 없습니다."
+
+msgid ""
+"HAProxy sans Lua : regroupements (JA4, AS, pays) indisponibles, porte du lot"
+" 4 seule."
+msgstr "Lua 없는 HAProxy: 그룹화(JA4, AS, 국가)를 사용할 수 없으며 4차 게이트만 동작합니다."
+
+msgid "observation (rien n'est refusé par ces règles)"
+msgstr "관찰(이 규칙으로 거부되는 것은 없음)"
+
+#, python-brace-format
+msgid "ATTAQUE (retour au normal dans {seconds} s sans dépassement)"
+msgstr "공격(초과 없이 {seconds}초 후 일반으로 복귀)"
+
+msgid "normal"
+msgstr "일반"
+
+#, python-brace-format
+msgid "Regroupements : {mode} ; mode {attack}"
+msgstr "그룹화: {mode}, 모드 {attack}"
+
+#, python-brace-format
+msgid ""
+"Mode attaque au-delà de {rate} connexions entrantes / s ; calme {minutes} "
+"min"
+msgstr "들어오는 연결 초당 {rate}개 초과 시 공격 모드, 안정 {minutes}분"
+
+msgid "référence prête"
+msgstr "기준 준비됨"
+
+#, python-brace-format
+msgid "apprentissage : encore {days} jour(s)"
+msgstr "학습: {days}일 남음"
+
+#, python-brace-format
+msgid "Empreintes habituelles : {known} ({learning})"
+msgstr "평소 지문: {known}({learning})"
+
+#, python-brace-format
+msgid "mise à jour il y a {days} jour(s)"
+msgstr "{days}일 전 업데이트"
+
+msgid "absente (« omega-tail porte base »)"
+msgstr "없음(「omega-tail porte base」)"
+
+#, python-brace-format
+msgid "Base AS / pays : {base}"
+msgstr "AS / 국가 데이터베이스: {base}"
+
+#, python-brace-format
+msgid "Connexions refusées (7 j) : {found}"
+msgstr "거부된 연결(7일): {found}"
+
+#, python-brace-format
+msgid "Connexions qui auraient été refusées (7 j) : {found}"
+msgstr "거부되었을 연결(7일): {found}"
+
+msgid "Empreintes les plus actives (connexions / 10 s, total) :"
+msgstr "가장 활발한 지문(연결 / 10초, 합계):"
+
+msgid "AS les plus actifs (connexions / 10 s, total) :"
+msgstr "가장 활발한 AS(연결 / 10초, 합계):"
+
+msgid "Pays les plus actifs (connexions / 10 s, total) :"
+msgstr "가장 활발한 국가(연결 / 10초, 합계):"
+
+msgid "Tailscale n'est pas installé."
+msgstr "Tailscale이 설치되어 있지 않습니다."
+
+#, python-brace-format
+msgid "Service tailscaled : {state}"
+msgstr "tailscaled 서비스: {state}"
+
+#, python-brace-format
+msgid "Version : {daemon} en marche, {client} installée"
+msgstr "버전: {daemon} 실행 중, {client} 설치됨"
+
+#, python-brace-format
+msgid "Nom : {name}"
+msgstr "이름: {name}"
+
+#, python-brace-format
+msgid "Adresses : {addresses}"
+msgstr "주소: {addresses}"
+
+#, python-brace-format
+msgid "Opérateur : {operator}"
+msgstr "운영자: {operator}"
+
+#, python-brace-format
+msgid "tailscaled : {cpu} d'un cœur, {memory}"
+msgstr "tailscaled: 코어 하나의 {cpu}, {memory}"
+
+#, python-brace-format
+msgid "Température : {value}"
+msgstr "온도: {value}"
+
+msgid "PUBLICATION"
+msgstr "게시"
+
+msgid "rien de publié"
+msgstr "게시된 항목 없음"
+
+msgid "ALERTES"
+msgstr "경고"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — LISTE NOIRE DE LA PORTE ({machine})"
+msgstr "OMEGA-TAIL {version} — 게이트 블랙리스트({machine})"
+
+#, python-brace-format
+msgid ""
+"Établie le {date} : {count} entrée(s), la plus ancienne d'abord. L'export "
+"TXT se réimporte tel quel."
+msgstr "{date} 작성: 항목 {count}개, 오래된 것부터. TXT 내보내기는 그대로 다시 가져올 수 있습니다."
+
+msgid "Adresse ou réseau"
+msgstr "주소 또는 네트워크"
+
+msgid "Ajoutée le"
+msgstr "추가 일시"
+
+msgid "Origine"
+msgstr "출처"
+
+msgid "Liste noire - Omega-Tail"
+msgstr "블랙리스트 - Omega-Tail"
+
+msgid "Passer d'un élément à l'autre (lignes d'un tableau, boutons)"
+msgstr "요소 간 이동 (표의 행, 버튼)"
+
+msgid "Passer d'une zone de l'écran à l'autre"
+msgstr "화면 영역 간 이동"
+
+msgid "Activer le bouton choisi ; dans le tableau des alertes, « Corriger »"
+msgstr "선택한 버튼 실행. 경고 표에서는 「수정」"
+
+msgid "Entrée / Clic"
+msgstr "Enter / 클릭"
+
+msgid "Revenir à l'écran précédent (au menu : quitter)"
+msgstr "이전 화면으로 돌아가기(메뉴에서는 종료)"
+
+msgid "Cette aide, depuis n'importe quel écran"
+msgstr "이 도움말, 어느 화면에서나"
+
+msgid "Réglages, depuis n'importe quel écran"
+msgstr "설정, 어느 화면에서나"
+
+msgid "Thème suivant (enregistré)"
+msgstr "다음 테마 (저장됨)"
+
+msgid "Redessiner l'écran, afficher la taille du terminal et relire l'état"
+msgstr "화면을 다시 그리고 터미널 크기를 표시하며 상태를 다시 읽기"
+
+msgid ""
+"Commandes : thème, capture d'écran (SVG, dans le dossier des captures), "
+"quitter"
+msgstr "명령: 테마, 스크린샷 (SVG, 스크린샷 폴더에 저장), 종료"
+
+msgid "Ctrl+P"
+msgstr "Ctrl+P"
+
+msgid ""
+"omega-tail pilote Tailscale sur cette machine et la protège quand elle publie un service sur Internet par Tailscale Funnel.\n"
+"\n"
+"1. [b]Tableau de bord[/b] : l'état de Tailscale, de la machine et de ce qui est publié, puis les alertes. Choisissez une alerte et « Corriger » : omega-tail ouvre l'écran qui la corrige.\n"
+"2. [b]Service tailscaled[/b] : démarrer, arrêter ou redémarrer le service (par exemple pour appliquer une mise à jour déjà installée).\n"
+"3. [b]Connexion et réglages[/b] : connexion, compte et réglages de Tailscale, vérifiés avant d'être appliqués.\n"
+"4. [b]Publication[/b] : ce que Serve et Funnel publient ; publier, retirer, essayer, restaurer.\n"
+"5. [b]Journaux[/b] : ce que tailscaled a écrit, filtrable et exportable.\n"
+"6. [b]Survie[/b] : confiner tailscaled, et couper Funnel un moment (puis le remettre tout seul) ou totalement quand la machine est attaquée.\n"
+"7. [b]Pare-feu Funnel[/b] : une porte qui refuse les connexions abusives avant tout chiffrement ; [b]Attaques et décisions[/b] pour voir et décider en direct.\n"
+"\n"
+"La [b]bande d'état[/b] (cadre « État », sous le titre de chaque écran) résume tout : service, consommation de tailscaled, température, mémoire vive utilisée (RAM), Funnel, pare-feu (actif, arrêté, inactif), veille automatique (active, arrêtée, inactive) et connexion. Elle est relue toutes les 5 secondes. La taille de la fenêtre est affichée à côté du thème, en haut ; « r » la relit après un redimensionnement.\n"
+"\n"
+"Chaque action qui change la machine montre d'abord sa commande ; le mot de passe sudo se saisit dans le terminal, l'interface revient ensuite. Rien n'est jamais lancé en arrière-plan sans vous."
+msgstr ""
+"omega-tail은 이 머신의 Tailscale을 제어하고, 머신이 Tailscale Funnel로 인터넷에 서비스를 게시할 때 머신을 보호합니다.\n"
+"\n"
+"1. [b]대시보드[/b]: Tailscale, 머신, 게시된 항목의 상태와 경고. 경고를 선택하고 「수정」을 누르면 omega-tail이 그 문제를 고치는 화면을 엽니다.\n"
+"2. [b]tailscaled 서비스[/b]: 서비스 시작, 중지, 다시 시작(예: 이미 설치된 업데이트 적용).\n"
+"3. [b]연결 및 설정[/b]: Tailscale의 연결, 계정, 설정을 적용 전에 검사합니다.\n"
+"4. [b]게시[/b]: Serve와 Funnel이 게시하는 항목. 게시, 제거, 테스트, 복원.\n"
+"5. [b]로그[/b]: tailscaled가 기록한 내용을 필터링하고 내보낼 수 있습니다.\n"
+"6. [b]생존[/b]: tailscaled의 자원을 제한하고, 머신이 공격받을 때 Funnel을 잠시(이후 자동 재개) 또는 완전히 차단합니다.\n"
+"7. [b]Funnel 방화벽[/b]: 모든 암호화 전에 남용 연결을 거부하는 게이트. [b]공격과 결정[/b]에서 실시간으로 보고 결정합니다.\n"
+"\n"
+"[b]상태 표시줄[/b](각 화면 제목 아래의 「상태」 틀)이 모든 것을 요약합니다: 서비스, tailscaled 사용량, 온도, 사용 중인 메모리(RAM), Funnel, 방화벽(활성, 중지, 비활성), 자동 감시(활성, 중지, 비활성), 연결. 5초마다 다시 읽습니다. 창 크기는 위쪽 테마 옆에 표시되며, 크기를 바꾼 뒤 「r」로 다시 읽습니다.\n"
+"\n"
+"머신을 바꾸는 모든 작업은 먼저 그 명령을 보여 줍니다. sudo 비밀번호는 터미널에서 입력하고, 그 후 인터페이스로 돌아옵니다. 여러분 모르게 백그라운드에서 실행되는 것은 없습니다."
+
+msgid "Tableau de bord"
+msgstr "대시보드"
+
+msgid ""
+"Trois cadres et une liste d'alertes.\n"
+"- [b]Tailscale[/b] : service, état de la connexion, version (en marche et installée), nom de la machine, adresses, compte, appareils en ligne, expiration de la clé, opérateur.\n"
+"- [b]Tailscale[/b] dit aussi si la machine se propose comme nœud de sortie, lequel elle utilise, et les sous-réseaux qu'elle annonce.\n"
+"- [b]Machine[/b] : CPU de toute la machine, charge, température, mémoire, CPU et mémoire de tailscaled (en % d'un cœur), confinement, puis l'état des protections : Funnel, pare-feu (porte, mode attaque), liste noire, veille, bouclier du port WireGuard.\n"
+"- Libellés dans la couleur d'accent du thème, valeurs en vert, orange ou rouge selon les seuils (CPU machine 70 / 90 %, charge 1 / 2 par cœur, température 75 / 85 °C, mémoire 85 / 95 %, tailscaled 50 / 90 % d'un cœur, liste noire 25 000 / 50 000 entrées).\n"
+"- [b]Publication[/b] : chaque port publié, pour Internet (Funnel) ou le tailnet seul (Serve), son mode et sa cible.\n"
+"- [b]Alertes[/b] : de la plus grave à la moins grave. « Corriger » (ou Entrée) ouvre l'écran qui corrige ; un écran pas encore construit le dit.\n"
+"\n"
+"Alertes possibles : service arrêté ; mise à jour installée mais pas appliquée (redémarrer le service) ; compte à connecter ; clé qui expire ; Funnel publié sans protection (tailscaled fait le chiffrement de chaque visiteur : une rafale peut saturer la machine) ; température élevée ; tailscaled trop gourmand ; tailscaled non confiné ; vous n'êtes pas opérateur ; liste noire de plus de 25 000 entrées ; messages de Tailscale lui-même.\n"
+"\n"
+"La bande d'état en haut de chaque écran sépare [b]CPU machine[/b] (toute la machine, en % de tous ses cœurs) et [b]CPU tailscaled[/b] (le seul service, en % d'un cœur)."
+msgstr ""
+"세 개의 틀과 경고 목록.\n"
+"- [b]Tailscale[/b]: 서비스, 연결 상태, 버전(실행 중과 설치됨), 머신 이름, 주소, 계정, 온라인 장치, 키 만료, 운영자.\n"
+"- [b]Tailscale[/b]은 머신이 출구 노드로 자신을 제공하는지, 어떤 출구 노드를 사용하는지, 광고하는 서브넷도 알려 줍니다.\n"
+"- [b]머신[/b]: 머신 전체 CPU, 부하, 온도, 메모리, tailscaled의 CPU와 메모리(코어 하나 대비 %), 자원 제한, 그리고 보호 상태: Funnel, 방화벽(게이트, 공격 모드), 블랙리스트, 감시, WireGuard 포트 방패.\n"
+"- 레이블은 테마의 강조 색, 값은 임계값에 따라 녹색, 주황, 빨강(머신 CPU 70 / 90 %, 코어당 부하 1 / 2, 온도 75 / 85 °C, 메모리 85 / 95 %, tailscaled 코어 하나의 50 / 90 %, 블랙리스트 25,000 / 50 000개 항목).\n"
+"- [b]게시[/b]: 인터넷(Funnel) 또는 tailnet 전용(Serve)으로 게시된 각 포트, 그 모드와 대상.\n"
+"- [b]경고[/b]: 가장 심각한 것부터 가벼운 것까지. 「수정」(또는 Enter)이 해결 화면을 엽니다. 아직 만들어지지 않은 화면이면 그렇다고 알려 줍니다.\n"
+"\n"
+"가능한 경고: 서비스 중지, 업데이트가 설치되었지만 적용되지 않음(서비스 다시 시작), 연결할 계정, 만료되는 키, 보호 없이 게시된 Funnel(tailscaled가 방문자마다 암호화를 처리: 폭주 한 번으로 머신이 포화될 수 있음), 높은 온도, 자원을 너무 쓰는 tailscaled, 자원 제한이 없는 tailscaled, 운영자가 아님, 25 000개를 넘는 블랙리스트, Tailscale 자체의 메시지.\n"
+"\n"
+"각 화면 위쪽의 상태 표시줄은 [b]머신 CPU[/b](머신 전체, 모든 코어 대비 %)와 [b]tailscaled CPU[/b](그 서비스만, 코어 하나 대비 %)를 구분합니다."
+
+msgid "Service tailscaled"
+msgstr "tailscaled 서비스"
+
+msgid ""
+"L'état du service vu par systemd : actif ou non, lancé au démarrage, depuis quand, mémoire ; la version en marche et la version installée ; la commande de lancement ; les fichiers d'ajout (affichés, modifiés seulement par « Corriger le démarrage », sur votre accord) ; le confinement.\n"
+"\n"
+"[b]Démarrer[/b], [b]Arrêter[/b], [b]Redémarrer[/b] : la commande s'affiche avant d'être lancée.\n"
+"[b]Garde-fou[/b] : si votre session passe par Tailscale (SSH par le tailnet), Arrêter vous couperait sans pouvoir relancer : omega-tail demande une seconde confirmation. Redémarrer fige la session quelques secondes, puis elle revient en général.\n"
+"\n"
+"[b]Corriger le démarrage[/b] (affiché seulement si besoin) : un de vos fichiers d'ajout lance « tailscale up » après le démarrage. Dès qu'un réglage change ensuite (opérateur, nom, routes…), Tailscale refuse ce « up » incomplet ; systemd arrête alors tailscaled et abandonne après cinq essais : la machine sort du tailnet au premier redémarrage. La correction ajoute « - » devant la commande (son refus n'arrête plus le service ; vos réglages restent gardés par Tailscale), et rien d'autre ; l'original est gardé dans var/survie. Avant tout redémarrage qu'il lance (Redémarrer, confinement, opérateur), omega-tail fait d'abord cette correction, commandes montrées."
+msgstr ""
+"systemd가 본 서비스 상태: 활성 여부, 부팅 시 시작 여부, 시작 시각, 메모리, 실행 중인 버전과 설치된 버전, 실행 명령, 추가 설정 파일(표시만 하며, 동의를 받아 「시작 설정 수정」으로만 수정), 자원 제한.\n"
+"\n"
+"[b]시작[/b], [b]중지[/b], [b]다시 시작[/b]: 명령을 실행하기 전에 보여 줍니다.\n"
+"[b]안전장치[/b]: 세션이 Tailscale을 거치는 경우(tailnet을 통한 SSH), 중지하면 다시 시작할 수 없이 연결이 끊기므로 omega-tail이 한 번 더 확인을 요청합니다. 다시 시작하면 세션이 몇 초간 멈추지만 대개 돌아옵니다.\n"
+"\n"
+"[b]시작 설정 수정[/b](필요할 때만 표시): 추가 설정 파일 중 하나가 시작 후 「tailscale up」을 실행합니다. 이후 설정(운영자, 이름, 경로…)이 바뀌면 Tailscale이 이 불완전한 「up」을 거부하고, systemd가 tailscaled를 중지한 뒤 다섯 번 시도 후 포기합니다: 첫 재부팅 때 머신이 tailnet에서 빠집니다. 수정은 명령 앞에 「-」만 추가합니다(거부되어도 서비스가 멈추지 않으며, 설정은 Tailscale이 계속 보관). 원본은 var/survie에 보관합니다. omega-tail은 자신이 실행하는 모든 재시작(다시 시작, 자원 제한, 운영자) 전에 먼저 이 수정을 하며, 명령을 보여 줍니다."
+
+msgid "Connexion et réglages"
+msgstr "연결 및 설정"
+
+msgid ""
+"L'état de la connexion (connecté ou non, compte, tailnet, nom et adresses de la machine, expiration de la clé, opérateur).\n"
+"\n"
+"[b]Se connecter[/b] / [b]Se déconnecter[/b] : la machine rejoint ou quitte le tailnet ; le compte reste enregistré. [b]Ajouter un compte[/b] : Tailscale affiche dans le terminal l'adresse à ouvrir pour s'identifier. [b]Changer de compte[/b] : choisissez un compte déjà connu de la machine. [b]Déconnexion définitive[/b] : la machine est retirée du compte (clé révoquée) ; il faut taper son nom pour confirmer.\n"
+"[b]Garde-fou[/b] : si votre session passe par Tailscale, se déconnecter la coupe sans retour possible ; omega-tail le dit avant.\n"
+"\n"
+"[b]Réglages[/b] (ceux de tailscale set), chacun avec sa phrase d'explication : nom de la machine, surnom, routes, DNS du tailnet, bouclier, filtrage avec état, mode netfilter, nœud de sortie, accès au réseau local, proposer la machine comme nœud de sortie, sous-réseaux annoncés, SSH Tailscale, interface web, mises à jour, relais pair, opérateur. Les valeurs sont vérifiées ; pendant la saisie, un cadre au-dessus des boutons montre avant → après et la commande ; « Appliquer » la lance dans le terminal (sans sudo si vous êtes opérateur ; changer l'opérateur demande sudo). Un avertissement s'affiche quand un changement peut couper une session passée par Tailscale (bouclier, SSH Tailscale coupé, nœud de sortie, netfilter). Après application, le cadre garde le résultat, vérifié sur les valeurs relues (✔ pris en compte, ✖ non). « Relire » reprend les valeurs actuelles.\n"
+"\n"
+"[b]Nœud de sortie[/b] : la liste ne propose que les machines du tailnet qui se proposent comme nœud de sortie (et approuvées dans la console d'administration de Tailscale) ; s'il n'y en a aucune, l'écran le dit.\n"
+"[b]Transfert IP[/b] : une machine qui se propose comme nœud de sortie ou annonce des sous-réseaux doit faire suivre les paquets. S'il est désactivé, un avertissement et le bouton « Activer le transfert IP » apparaissent : un fichier à part (/etc/sysctl.d/99-omega-tail-forwarding.conf), appliqué tout de suite et relu au démarrage (systemd, OpenRC, runit). Pour annuler : supprimer ce fichier puis redémarrer."
+msgstr ""
+"연결 상태(연결 여부, 계정, tailnet, 머신 이름과 주소, 키 만료, 운영자).\n"
+"\n"
+"[b]연결[/b] / [b]연결 해제[/b]: 머신이 tailnet에 참여하거나 나갑니다. 계정은 저장된 채로 남습니다. [b]계정 추가[/b]: Tailscale이 로그인할 때 열 주소를 터미널에 표시합니다. [b]계정 전환[/b]: 머신이 이미 아는 계정을 선택합니다. [b]영구 로그아웃[/b]: 머신이 계정에서 제거됩니다(키 폐기). 확인하려면 머신 이름을 입력해야 합니다.\n"
+"[b]안전장치[/b]: 세션이 Tailscale을 거치면 연결을 해제할 때 돌아올 수 없이 세션이 끊깁니다. omega-tail이 미리 알려 줍니다.\n"
+"\n"
+"[b]설정[/b](tailscale set의 설정), 각각 설명 문장과 함께: 머신 이름, 별칭, 경로, tailnet DNS, 방패, 상태 기반 필터링, netfilter 모드, 출구 노드, 로컬 네트워크 접근, 머신을 출구 노드로 제공, 광고된 서브넷, Tailscale SSH, 웹 인터페이스, 업데이트, 피어 릴레이, 운영자. 값은 검사됩니다. 입력하는 동안 버튼 위의 틀에 이전 → 이후와 명령이 표시되며, 「적용」이 터미널에서 실행합니다(운영자이면 sudo 없이, 운영자 변경에는 sudo 필요). Tailscale을 거치는 세션을 끊을 수 있는 변경(방패, Tailscale SSH 끄기, 출구 노드, netfilter)에는 경고가 표시됩니다. 적용 후 틀은 다시 읽은 값으로 확인한 결과를 유지합니다(✔ 반영됨, ✖ 반영 안 됨). 「다시 읽기」는 현재 값을 다시 가져옵니다.\n"
+"\n"
+"[b]출구 노드[/b]: 목록에는 출구 노드로 자신을 제공하는(그리고 Tailscale 관리 콘솔에서 승인된) tailnet 머신만 나옵니다. 하나도 없으면 화면이 그렇다고 알려 줍니다.\n"
+"[b]IP 포워딩[/b]: 출구 노드로 자신을 제공하거나 서브넷을 광고하는 머신은 패킷을 전달해야 합니다. 비활성화되어 있으면 경고와 「IP 포워딩 활성화」 버튼이 나타납니다: 별도 파일(/etc/sysctl.d/99-omega-tail-forwarding.conf)로, 즉시 적용되고 부팅 시 다시 읽힙니다(systemd, OpenRC, runit). 취소하려면 이 파일을 삭제한 뒤 다시 시작하십시오."
+
+msgid "Publication"
+msgstr "게시"
+
+msgid ""
+"Tout ce que la machine publie : port, pour qui (le tailnet seul avec Serve, Internet avec Funnel), mode, chemin, cible, et si la porte du pare-feu protège le port.\n"
+"\n"
+"[b]Publier[/b] : un service local (un port, ou http://127.0.0.1:PORT), pour le tailnet ou pour Internet (Funnel n'ouvre que les ports 443, 8443 et 10000), en HTTPS, HTTP, TCP ou TLS terminé, sur un chemin. Pour Internet, le plus sûr est HTTPS sur 443 puis « Activer la protection » (Pare-feu Funnel).\n"
+"[b]Retirer[/b] : la ligne choisie (un chemin seul si le port en publie d'autres). Le port protégé par la porte se retire par « Désactiver la protection ».\n"
+"[b]Suspendre Funnel[/b] / [b]Rétablir Funnel[/b] : coupe les ports ouverts à Internet sans perdre leur configuration (même mécanisme que le disjoncteur de Survie), puis les remet à l'identique.\n"
+"[b]Essai de bout en bout[/b] : une vraie connexion, comme un visiteur (par Internet pour un port public, par le tailnet sinon) : réponse, temps, certificat (émetteur, échéance) et version de TLS.\n"
+"[b]Sauvegardes[/b] : l'état d'avant chaque changement (publication, pare-feu, disjoncteur), les 50 plus récentes ; « Restaurer » remet celle choisie, après avoir sauvegardé l'état actuel.\n"
+"\n"
+"Chaque changement est vérifié. Si le résultat n'est pas celui voulu, la publication est reconstruite (remise à zéro puis chaque point recréé) ; si cela échoue aussi, l'état d'avant est remis. Changer la publication demande d'être opérateur de Tailscale."
+msgstr ""
+"머신이 게시하는 모든 것: 포트, 대상(Serve로 tailnet만, Funnel로 인터넷), 모드, 경로, 대상 서비스, 그리고 방화벽 게이트가 그 포트를 보호하는지 여부.\n"
+"\n"
+"[b]게시[/b]: 로컬 서비스(포트 또는 http://127.0.0.1:PORT)를 tailnet 또는 인터넷(Funnel은 443, 8443, 10000 포트만 엶)에 HTTPS, HTTP, TCP 또는 종료된 TLS로, 특정 경로에 게시합니다. 인터넷용으로는 443의 HTTPS 후 「보호 활성화」(Funnel 방화벽)가 가장 안전합니다.\n"
+"[b]제거[/b]: 선택한 줄(포트가 다른 경로도 게시하면 그 경로만). 게이트가 보호하는 포트는 「보호 비활성화」로 제거합니다.\n"
+"[b]Funnel 일시 중지[/b] / [b]Funnel 복원[/b]: 인터넷에 열린 포트를 구성을 잃지 않고 차단한 뒤(생존의 서킷 브레이커와 같은 방식) 그대로 되돌립니다.\n"
+"[b]종단 간 테스트[/b]: 방문자처럼 실제로 연결합니다(공개 포트는 인터넷으로, 아니면 tailnet으로): 응답, 시간, 인증서(발급자, 만료일), TLS 버전.\n"
+"[b]백업[/b]: 각 변경(게시, 방화벽, 서킷 브레이커) 이전의 상태, 최근 50개. 「복원」은 현재 상태를 백업한 뒤 선택한 백업을 되돌립니다.\n"
+"\n"
+"모든 변경은 검사됩니다. 결과가 의도와 다르면 게시를 다시 구성하고(초기화 후 각 항목을 다시 생성), 그것도 실패하면 이전 상태로 되돌립니다. 게시를 바꾸려면 Tailscale 운영자여야 합니다."
+
+msgid "Journaux"
+msgstr "로그"
+
+msgid ""
+"Le journal de tailscaled (journalctl) ou celui de la porte. Choisissez le nombre de lignes, filtrez par texte. Chaque information a sa couleur, prise dans le thème : la date, la machine en grisé, le processus, puis la catégorie du message, une couleur par famille (contrôle et connexion, réseau et relais, DNS, moteur WireGuard) ; les adresses en gras ; le message en rouge s'il signale une erreur, en orange pour un avertissement. Pour la porte : l'adresse du visiteur, le motif de refus en rouge, le regroupement en orange, puis l'AS et le pays. « Exporter » enregistre les lignes affichées dans le dossier des exports ; « Voir les exports » les ouvre (voir Rapport).\n"
+"Si rien ne s'affiche : votre compte doit pouvoir lire le journal du système (groupe systemd-journal, adm ou wheel selon la distribution)."
+msgstr ""
+"tailscaled의 로그(journalctl) 또는 게이트의 로그. 줄 수를 고르고 텍스트로 필터링합니다. 각 정보에는 테마에서 가져온 고유한 색이 있습니다: 날짜, 흐리게 표시된 머신 이름, 프로세스, 그다음 메시지 범주(계열마다 한 가지 색: 제어와 연결, 네트워크와 릴레이, DNS, WireGuard 엔진). 주소는 굵게, 메시지는 오류를 알리면 빨강, 경고면 주황입니다. 게이트의 경우: 방문자 주소, 빨간색 거부 사유, 주황색 그룹화, 그다음 AS와 국가. 「내보내기」는 표시된 줄을 내보내기 폴더에 저장하고, 「내보내기 보기」는 이를 엽니다(보고서 참조).\n"
+"아무것도 표시되지 않으면: 계정이 시스템 로그를 읽을 수 있어야 합니다(배포판에 따라 systemd-journal, adm 또는 wheel 그룹)."
+
+msgid "Devenir opérateur"
+msgstr "운영자 되기"
+
+msgid ""
+"Par défaut, chaque réglage de Tailscale demande sudo. Devenir opérateur (une"
+" seule fois, par sudo) permet à votre compte de régler Tailscale sans sudo. "
+"Le bouton apparaît dans le tableau de bord tant que ce n'est pas fait ; dans"
+" « Connexion et réglages », le bouton « Mon compte » met votre nom dans le "
+"champ Opérateur, puis « Appliquer ». Pour annuler : vider le champ et "
+"appliquer, ou sudo tailscale set --operator="
+msgstr ""
+"기본적으로 Tailscale의 모든 설정에는 sudo가 필요합니다. 운영자가 되면(한 번만, sudo로) 계정이 sudo 없이 "
+"Tailscale을 설정할 수 있습니다. 아직 하지 않았다면 대시보드에 버튼이 나타납니다. 「연결 및 설정」에서 「내 계정」 버튼이 "
+"운영자 필드에 이름을 넣고, 「적용」을 누릅니다. 취소하려면 필드를 비우고 적용하거나 sudo tailscale set "
+"--operator="
+
+msgid "Survie"
+msgstr "생존"
+
+msgid ""
+"Garder la machine debout sous attaque : le confinement, le disjoncteur et la veille automatique, toujours proposés, jamais imposés.\n"
+"\n"
+"[b]Confinement de tailscaled[/b] : un fichier d'ajout systemd à part (50-omega-tail.conf) plafonne tailscaled (par exemple un cœur entier sur une machine à 4 fils), baisse son poids et sa priorité. Sous attaque, il ne peut plus prendre toute la machine : l'administration et les autres services restent utilisables. Option : donner la priorité à l'accès SSH. Votre propre override.conf n'est jamais modifié ; « Retirer le confinement » supprime seulement les fichiers d'omega-tail. Le plafond s'applique au rechargement ; la priorité au redémarrage de tailscaled (case cochée par défaut).\n"
+"\n"
+"[b]Disjoncteur Funnel[/b] : quand tailscaled reste au-dessus du seuil CPU pendant toute la durée choisie (80 % d'un cœur pendant 60 s par défaut), ou quand la température atteint son seuil (85 °C), omega-tail ouvert vous propose :\n"
+"- [b]Couper 10 min[/b] (durée réglable) : les ports ouverts à Internet sont coupés, puis remis en route automatiquement, à l'identique, même si omega-tail est fermé (minuterie systemd, sudo une fois) ;\n"
+"- [b]Coupure totale[/b] : Funnel reste coupé jusqu'à « Rétablir maintenant » ;\n"
+"- [b]Pas maintenant[/b] : plus de proposition pendant 15 minutes.\n"
+"Le tailnet (Serve, SSH par Tailscale) n'est jamais coupé. La publication est sauvegardée avant chaque coupure (var/funnel/sauvegardes/) et la remise en route est vérifiée identique. Un port Funnel en TCP (celui de la porte) garde son autorisation Funnel après « off » : la coupure repart alors de zéro avec les seuls points du tailnet et vérifie que plus rien n'est ouvert à Internet. Le disjoncteur demande d'être opérateur de Tailscale : la remise en route tourne sous votre compte, jamais en root.\n"
+"En ligne de commande : omega-tail disjoncteur etat | couper --minutes 10 | couper --totale | retablir.\n"
+"\n"
+"[b]Veille automatique[/b] (désactivée par défaut) : pour une machine sans personne devant. Un service tourne en permanence sous votre compte, même omega-tail fermé (systemd, OpenRC ou runit). Un dépassement : un seuil du disjoncteur tenu. 3 dépassements dans la fenêtre (10 min, réglable) : la veille coupe Funnel seule, 15 min la première fois, 30 min la deuxième, puis 1 h à chaque fois, et le remet en route seule, à l'identique. Retour à 15 min après 24 h sans coupure ; après chaque remise en route, 2 min de calme avant de mesurer de nouveau. Seul Funnel est coupé : tailscaled, le tailnet et SSH restent joignables. Quand la veille tourne, omega-tail ouvert ne propose plus la coupure (elle agit seule). Les 6 dernières lignes de son journal s'affichent dans Survie (le fichier var/veille/journal.log garde 512 Ko, puis passe en journal.log.1) ; une veille activée mais arrêtée est signalée au tableau de bord.\n"
+"En ligne de commande : omega-tail veille etat.\n"
+"\n"
+"[b]Bouclier du port WireGuard[/b] (bouton dans Survie) : tailscaled dépense environ un cœur de processeur pour 100 000 paquets par seconde reçus sur son port, même invalides, Funnel ouvert ou non. Le bouclier est une table nftables posée devant lui, sur les cartes réseau matérielles : les pairs connus (ceux à qui tailscaled écrit, appris par le noyau) ne sont jamais limités ; les poignées de main sont limitées à 20 par seconde et par source ; les autres sources ont un budget (500 paquets par seconde chacune, 5 000 en tout) ; les paquets qui ne sont pas du WireGuard sont refusés. Mesuré : un flot qui prenait un cœur entier à tailscaled n'en prend plus que 1 %.\n"
+"- [b]Observation[/b] d'abord : rien n'est refusé, les compteurs disent ce qui l'aurait été ; « Passer en actif » quand ils ne montrent que des attaques.\n"
+"- [b]Qui le pose[/b] : omega-fire 3.7.0 ou plus récent s'il est relié par omega-connect (sa liste des règles l'affiche avec l'origine omega-tail) ; sinon omega-tail lui-même, même si ufw ou firewalld sont présents. C'est la même table dans les deux cas : « Confier à omega-fire » ou, dans omega-fire, « Reprendre la gestion » la fait changer de mains sans la toucher ; si omega-fire n'est plus relié, « Reprendre la gestion » la rend à omega-tail.\n"
+"- Un service (omega-bouclier-wg) la remet en place à chaque démarrage et écrit son état chaque minute.\n"
+"- Si un autre outil efface la table (nft flush ruleset, pare-feu relancé), le tableau de bord et la veille le signalent ; elle n'est jamais reposée seule : « Reposer ».\n"
+"- Retiré depuis omega-fire : omega-tail l'affiche."
+msgstr ""
+"공격 중에도 머신이 버티게 합니다: 자원 제한, 서킷 브레이커, 자동 감시. 항상 제안할 뿐 결코 강요하지 않습니다.\n"
+"\n"
+"[b]tailscaled 자원 제한[/b]: 별도의 systemd 추가 설정 파일(50-omega-tail.conf)이 tailscaled에 상한을 두고(예: 4스레드 머신에서 코어 하나 전체), 가중치와 우선순위를 낮춥니다. 공격을 받아도 머신 전체를 차지할 수 없어 관리 접속과 다른 서비스를 계속 사용할 수 있습니다. 옵션: SSH 접속에 우선순위 부여. 사용자의 override.conf는 결코 수정하지 않으며, 「자원 제한 해제」는 omega-tail의 파일만 삭제합니다. 상한은 다시 불러올 때, 우선순위는 tailscaled를 다시 시작할 때 적용됩니다(기본으로 체크됨).\n"
+"\n"
+"[b]Funnel 서킷 브레이커[/b]: tailscaled가 선택한 시간 내내 CPU 임계값을 넘거나(기본: 60초 동안 코어 하나의 80 %), 온도가 임계값(85 °C)에 이르면, 열려 있는 omega-tail이 다음을 제안합니다:\n"
+"- [b]10분 차단[/b](시간 조정 가능): 인터넷에 열린 포트를 차단한 뒤, omega-tail을 닫아도 자동으로 그대로 재개합니다(systemd 타이머, sudo 한 번).\n"
+"- [b]완전 차단[/b]: 「지금 복원」까지 Funnel이 차단된 상태로 남습니다.\n"
+"- [b]나중에[/b]: 15분 동안 다시 제안하지 않습니다.\n"
+"tailnet(Serve, Tailscale을 통한 SSH)은 결코 차단하지 않습니다. 각 차단 전에 게시를 백업하고(var/funnel/sauvegardes/), 재개 후 동일한지 확인합니다. TCP로 된 Funnel 포트(게이트의 포트)는 「off」 후에도 Funnel 권한이 남으므로, 차단은 tailnet 항목만으로 처음부터 다시 구성하고 인터넷에 열린 것이 없는지 확인합니다. 서킷 브레이커를 쓰려면 Tailscale 운영자여야 합니다: 재개는 root가 아니라 사용자 계정으로 실행됩니다.\n"
+"명령줄: omega-tail disjoncteur etat | couper --minutes 10 | couper --totale | retablir.\n"
+"\n"
+"[b]자동 감시[/b](기본 비활성): 아무도 지켜보지 않는 머신용입니다. omega-tail을 닫아도 서비스 하나가 사용자 계정으로 계속 실행됩니다(systemd, OpenRC 또는 runit). 초과 한 번: 서킷 브레이커 임계값 하나가 유지된 경우. 시간 창(10분, 조정 가능) 안에 초과 3번: 감시가 스스로 Funnel을 차단합니다. 처음 15분, 두 번째 30분, 이후 매번 1시간이며, 스스로 그대로 재개합니다. 24시간 동안 차단이 없으면 15분으로 돌아갑니다. 재개할 때마다 2분간 안정 기간을 둔 뒤 다시 측정합니다. Funnel만 차단됩니다: tailscaled, tailnet, SSH는 계속 접근할 수 있습니다. 감시가 실행 중이면 열려 있는 omega-tail은 차단을 더 이상 제안하지 않습니다(감시가 스스로 처리). 로그의 마지막 6줄이 생존 화면에 표시됩니다(var/veille/journal.log 파일은 512 KB까지 보관한 뒤 journal.log.1로 넘어감). 활성화되었지만 중지된 감시는 대시보드에 표시됩니다.\n"
+"명령줄: omega-tail veille etat.\n"
+"\n"
+"[b]WireGuard 포트 방패[/b](생존의 버튼): tailscaled는 자신의 포트로 받는 초당 100,000 패킷마다, 잘못된 패킷이라도, Funnel이 열려 있든 아니든, 프로세서 코어 약 하나를 씁니다. 방패는 그 앞의 물리 네트워크 카드에 설치하는 nftables 테이블입니다: 알려진 피어(tailscaled가 보내는 대상, 커널이 학습)는 결코 제한하지 않습니다. 핸드셰이크는 출처당 초당 20개로 제한합니다. 다른 출처에는 예산이 있습니다(각각 초당 500 패킷, 전체 5,000). WireGuard가 아닌 패킷은 거부합니다. 측정 결과: tailscaled의 코어 하나를 모두 차지하던 흐름이 이제 1 %만 차지합니다.\n"
+"- 먼저 [b]관찰[/b]: 아무것도 거부하지 않고, 카운터가 거부되었을 것을 보여 줍니다. 카운터에 공격만 보이면 「활성으로 전환」.\n"
+"- [b]누가 설치하나[/b]: omega-connect로 연결된 omega-fire 3.7.0 이상(그 규칙 목록에 출처 omega-tail로 표시됨). 아니면 ufw나 firewalld가 있어도 omega-tail이 직접 설치합니다. 두 경우 모두 같은 테이블입니다: 「omega-fire에 위임」 또는 omega-fire의 「관리 되찾기」가 테이블을 건드리지 않고 관리 주체만 바꿉니다. omega-fire가 더 이상 연결되어 있지 않으면 「관리 되찾기」가 omega-tail에 돌려줍니다.\n"
+"- 서비스(omega-bouclier-wg)가 부팅할 때마다 테이블을 다시 설치하고 1분마다 상태를 기록합니다.\n"
+"- 다른 도구가 테이블을 지우면(nft flush ruleset, 방화벽 재시작) 대시보드와 감시가 알립니다. 결코 자동으로 다시 설치하지 않습니다: 「재설치」.\n"
+"- omega-fire에서 제거한 경우: omega-tail이 이를 표시합니다."
+
+msgid "Pare-feu Funnel"
+msgstr "Funnel 방화벽"
+
+msgid ""
+"En Funnel ordinaire, tailscaled fait le chiffrement (TLS) de chaque visiteur : une rafale sature la machine. La protection place une porte (HAProxy, installé par le gestionnaire de paquets) entre Funnel et votre site : Funnel lui transmet le flux encore chiffré avec l'adresse réelle du visiteur, la porte décide AVANT tout chiffrement, puis ne chiffre que pour les connexions admises. Mesuré : une connexion refusée coûte 4,6 fois moins, une connexion admise 2 fois moins.\n"
+"\n"
+"[b]Activer la protection[/b] : préparation (certificat *.ts.net par Tailscale, listes, configuration vérifiée), services de la porte et de son certificat (sudo, dans le terminal ; la porte tourne sous votre compte, jamais en root), bascule de Funnel puis essai depuis Internet. En cas d'échec, la publication d'origine est remise aussitôt. Prérequis : être opérateur de Tailscale ; Funnel publié en HTTPS sur un seul port avec le chemin « / ».\n"
+"[b]Désactiver la protection[/b] : Funnel est remis exactement comme avant, vérifié, puis la porte est arrêtée ; réglages et listes sont gardés.\n"
+"\n"
+"[b]Règles[/b], appliquées à chaud (les adresses bloquées le restent) :\n"
+"- machines du tailnet (100.64.0.0/10 et fd7a:115c:a1e0::/48) : toujours admises, avant toute règle ; seuls les visiteurs de Funnel sont filtrés ;\n"
+"- liste de confiance : jamais limitée ; liste noire : refusée jusqu'à son retrait ;\n"
+"- débit par adresse (40 connexions / 10 s par défaut) : au-delà, l'adresse est bloquée pour la durée choisie (60 min) ;\n"
+"- débit par préfixe /24 (IPv4) ou /64 (IPv6) ;\n"
+"- budget global de connexions admises par seconde : le processeur n'est jamais débordé ;\n"
+"- nom visé : une connexion qui ne vise pas le nom de la machine est refusée.\n"
+"Mode [b]observation[/b] : tout est compté, rien n'est refusé (pour régler les seuils sans risque).\n"
+"\n"
+"Le certificat est vérifié chaque jour et renouvelé à chaud 30 jours avant son échéance.\n"
+"\n"
+"[b]Regroupements[/b] (empreintes, AS, pays) : contre les attaques à adresses dispersées, que les règles par adresse ne voient qu'une fois chacune. Avant tout chiffrement, la porte calcule l'[b]empreinte JA4[/b] du client (la façon dont son logiciel se présente : un navigateur et un outil d'attaque n'ont pas la même), son [b]AS[/b] (le réseau d'origine : fournisseur d'accès, hébergeur, nuage) et son [b]pays[/b], et compte le débit de chaque groupe.\n"
+"- [b]Mode attaque automatique[/b] : quand les connexions entrantes dépassent le seuil (80 / s par défaut), la porte passe seule en mode attaque, et y reste jusqu'à 5 minutes de calme. Rien à faire, même à distance.\n"
+"- En mode attaque seulement : une empreinte inconnue qui explose, un AS d'hébergeur ou de nuage (liste modifiable) ou un pays de votre liste (vide par défaut) qui dépasse son débit est refusé.\n"
+"- Les [b]navigateurs courants[/b] (Chrome, Edge, Firefox) ne sont jamais touchés par ces règles, et les [b]clients connus[/b] (admis dans les dernières 24 h) passent avant le budget global.\n"
+"- [b]Référence apprise[/b] : pendant 7 jours, la porte apprend les empreintes habituelles de votre site (jamais pendant une attaque) ; pendant ce temps, les regroupements restent en [b]observation[/b], même si « appliqués » est choisi. « Recommencer l'apprentissage » repart de zéro et les remet en observation.\n"
+"- [b]Observation[/b] (par défaut) : tout est compté (« aurait été refusée »), rien n'est refusé ; une fois l'apprentissage fini, passez en « appliqués » quand les chiffres vous conviennent.\n"
+"- Hors attaque, une connexion sur dix seulement est classée (assez pour apprendre, dix fois moins de calcul) ; en attaque, toutes. Il faut un HAProxy avec Lua (cas des distributions courantes).\n"
+"- [b]Base AS / pays[/b] : DB-IP Lite, téléchargée et mise à jour une fois par mois par la veille automatique, ou par « Mettre à jour la base ». IP Geolocation by DB-IP (https://db-ip.com), licence CC BY 4.0."
+msgstr ""
+"일반 Funnel에서는 tailscaled가 방문자마다 암호화(TLS)를 처리합니다: 폭주 한 번으로 머신이 포화됩니다. 보호 기능은 Funnel과 사이트 사이에 게이트(패키지 관리자로 설치한 HAProxy)를 둡니다: Funnel이 아직 암호화된 흐름을 방문자의 실제 주소와 함께 게이트에 넘기고, 게이트가 모든 암호화 전에 결정한 뒤 허용된 연결만 암호화합니다. 측정 결과: 거부된 연결은 비용이 4.6배, 허용된 연결은 2배 줄어듭니다.\n"
+"\n"
+"[b]보호 활성화[/b]: 준비(Tailscale의 *.ts.net 인증서, 목록, 구성 검사), 게이트와 인증서 서비스(sudo, 터미널에서. 게이트는 root가 아니라 사용자 계정으로 실행), Funnel 전환, 그리고 인터넷에서 테스트. 실패하면 원래 게시를 즉시 복원합니다. 전제 조건: Tailscale 운영자일 것, Funnel이 경로 「/」로 단일 포트에 HTTPS로 게시되어 있을 것.\n"
+"[b]보호 비활성화[/b]: Funnel을 이전과 똑같이 되돌리고 확인한 뒤 게이트를 중지합니다. 설정과 목록은 보관됩니다.\n"
+"\n"
+"[b]규칙[/b], 즉시 적용(차단된 주소는 계속 차단):\n"
+"- tailnet 머신(100.64.0.0/10 및 fd7a:115c:a1e0::/48): 모든 규칙보다 먼저 항상 허용. Funnel 방문자만 필터링합니다.\n"
+"- 신뢰 목록: 제한 없음. 블랙리스트: 제거할 때까지 거부.\n"
+"- 주소별 속도(기본 10초당 연결 40개): 넘으면 선택한 기간(60분) 동안 주소를 차단합니다.\n"
+"- /24(IPv4) 또는 /64(IPv6) 접두사별 속도.\n"
+"- 초당 허용 연결의 전체 예산: 프로세서가 결코 넘치지 않습니다.\n"
+"- 대상 이름: 머신 이름을 대상으로 하지 않는 연결은 거부합니다.\n"
+"[b]관찰[/b] 모드: 모두 집계하되 아무것도 거부하지 않습니다(위험 없이 임계값 조정).\n"
+"\n"
+"인증서는 매일 확인하며 만료 30일 전에 즉시 갱신합니다.\n"
+"\n"
+"[b]그룹화[/b](지문, AS, 국가): 주소별 규칙에는 각각 한 번씩만 보이는, 흩어진 주소로 하는 공격에 대응합니다. 모든 암호화 전에 게이트는 클라이언트의 [b]JA4 지문[/b](소프트웨어가 자신을 드러내는 방식: 브라우저와 공격 도구는 서로 다름), [b]AS[/b](출발 네트워크: 인터넷 서비스 제공업체, 호스팅 업체, 클라우드), [b]국가[/b]를 계산하고 그룹별 속도를 셉니다.\n"
+"- [b]자동 공격 모드[/b]: 들어오는 연결이 임계값(기본 초당 80)을 넘으면 게이트가 스스로 공격 모드로 전환하고, 5분간 안정될 때까지 유지합니다. 원격에서도 할 일이 없습니다.\n"
+"- 공격 모드에서만: 폭증하는 알 수 없는 지문, 호스팅 업체나 클라우드의 AS(목록 수정 가능), 또는 사용자 목록(기본은 비어 있음)의 국가가 속도를 넘으면 거부합니다.\n"
+"- [b]일반 브라우저[/b](Chrome, Edge, Firefox)는 이 규칙의 영향을 받지 않으며, [b]알려진 클라이언트[/b](최근 24시간 내 허용)는 전체 예산보다 우선합니다.\n"
+"- [b]학습된 기준[/b]: 7일 동안 게이트가 사이트의 평소 지문을 학습합니다(공격 중에는 학습하지 않음). 그동안 「적용」을 선택해도 그룹화는 [b]관찰[/b] 상태로 남습니다. 「학습 다시 시작」은 처음부터 다시 시작하고 관찰 상태로 되돌립니다.\n"
+"- [b]관찰[/b](기본): 모두 집계하되(「거부되었을 연결」) 아무것도 거부하지 않습니다. 학습이 끝나고 수치가 만족스러우면 「적용」으로 전환하십시오.\n"
+"- 공격이 아닐 때는 연결 10개 중 하나만 분류합니다(학습에는 충분하고 계산은 10분의 1). 공격 중에는 모두 분류합니다. Lua가 포함된 HAProxy가 필요합니다(일반 배포판은 해당).\n"
+"- [b]AS / 국가 데이터베이스[/b]: DB-IP Lite. 자동 감시가 한 달에 한 번 내려받아 업데이트하거나 「데이터베이스 업데이트」로 업데이트합니다. IP Geolocation by DB-IP (https://db-ip.com), CC BY 4.0 라이선스."
+
+msgid "Attaques et décisions"
+msgstr "공격과 결정"
+
+#, python-format
+msgid ""
+"Les compteurs de la porte (connexions reçues, refusées avant chiffrement, admises, en cours) et les adresses les plus actives, relus toutes les 2 secondes. La colonne État dit où se trouve chaque adresse : liste noire (refusée jusqu'au retrait), bloquée (pour la durée de blocage), admise, ou confiance (jamais limitée) ; les adresses des listes sans connexion récente apparaissent aussi. Choisissez une ligne puis [b]Bloquer[/b], [b]Liste noire[/b], [b]Débloquer[/b] ou [b]Confiance[/b] / [b]Retirer la confiance[/b] : appliqué tout de suite, sans redémarrer la porte ; la notification dit en une ligne l'action et la place de l'adresse (ex. « 1.2.3.4 → liste noire »). Une adresse n'est jamais dans les deux listes : la mettre en liste noire la retire de la confiance, et l'inverse. Une adresse en confiance ou du tailnet ne peut pas être bloquée (elle passe avant). Porte arrêtée : les listes s'appliqueront à son activation.\n"
+"\n"
+"Chaque adresse affiche son pays et son AS. La ligne sous les compteurs dit si la porte est en [b]mode attaque[/b] (et dans combien de temps elle revient au normal) et combien de connexions les regroupements ont refusées (ou auraient refusées, en observation) sur 7 jours. Les vues [b]Empreintes[/b], [b]AS[/b] et [b]Pays[/b] montrent les groupes les plus actifs (connexions / 10 s, total), avec le navigateur reconnu, le nom de l'AS (hébergeur ou non) ou « limité en attaque ». Hors attaque, ces chiffres portent sur une connexion sur dix.\n"
+"\n"
+"[b]Gestion de la liste noire[/b] (seconde ligne de boutons) : toute la liste, avec la date d'ajout et l'origine de chaque entrée, filtrable.\n"
+"- [b]Ajouter[/b] une adresse ou un réseau en prévision ; [b]Supprimer[/b] la ligne choisie.\n"
+"- [b]Importer[/b] un fichier TXT (une adresse ou un réseau par ligne, # = commentaire) : doublons, adresses déjà couvertes par un réseau de la liste et adresses du tailnet écartés et comptés ; les lignes invalides sont citées, comme une adresse IPv6 suivie d'un identifiant de zone (« %eth0 »), refusée par sécurité.\n"
+"- [b]Purger[/b], avec aperçu puis confirmation : plus anciennes que N jours, les N plus anciennes, de la ligne A à la ligne B, par origine, ou toute la liste (confirmation tapée).\n"
+"- [b]Exporter[/b] TXT (réimportable tel quel, pour une récidive), HTML (thème d'export choisi) ou JSON.\n"
+"- Plafond : 50 000 entrées (alerte au tableau de bord à 25 000). HAProxy en tiendrait bien plus ; c'est omega-tail qui ralentirait. Au plafond, l'ajout est refusé : exportez puis purgez."
+msgstr ""
+"게이트의 카운터(수신, 암호화 전 거부, 허용, 진행 중 연결)와 가장 활발한 주소를 2초마다 다시 읽습니다. 상태 열은 각 주소의 위치를 알려 줍니다: 블랙리스트(제거할 때까지 거부), 차단(차단 기간 동안), 허용, 신뢰(제한 없음). 최근 연결이 없는 목록의 주소도 표시됩니다. 줄을 선택한 뒤 [b]차단[/b], [b]블랙리스트[/b], [b]차단 해제[/b] 또는 [b]신뢰[/b] / [b]신뢰 해제[/b]: 게이트를 다시 시작하지 않고 즉시 적용됩니다. 알림이 작업과 주소의 위치를 한 줄로 알려 줍니다(예: 「1.2.3.4 → 블랙리스트」). 한 주소가 두 목록에 동시에 있을 수는 없습니다: 블랙리스트에 넣으면 신뢰 목록에서 빠지고, 그 반대도 마찬가지입니다. 신뢰 주소나 tailnet 주소는 차단할 수 없습니다(우선함). 게이트가 중지된 경우: 목록은 게이트를 활성화할 때 적용됩니다.\n"
+"\n"
+"각 주소에는 국가와 AS가 표시됩니다. 카운터 아래 줄은 게이트가 [b]공격 모드[/b]인지(그리고 언제 일반으로 돌아오는지), 7일 동안 그룹화가 거부한(관찰 중이면 거부했을) 연결 수를 알려 줍니다. [b]지문[/b], [b]AS[/b], [b]국가[/b] 보기는 가장 활발한 그룹(연결 / 10초, 합계)을 인식된 브라우저, AS 이름(호스팅 업체 여부) 또는 「공격 시 제한」과 함께 보여 줍니다. 공격이 아닐 때 이 수치는 연결 10개 중 하나를 기준으로 합니다.\n"
+"\n"
+"[b]블랙리스트 관리[/b](두 번째 버튼 줄): 각 항목의 추가 일시와 출처가 포함된 전체 목록, 필터 가능.\n"
+"- 미리 대비해 주소나 네트워크를 [b]추가[/b]. 선택한 줄을 [b]삭제[/b].\n"
+"- TXT 파일 [b]가져오기[/b](한 줄에 주소나 네트워크 하나, # = 주석): 중복, 목록의 네트워크에 이미 포함된 주소, tailnet 주소는 제외하고 집계합니다. 잘못된 줄은 표시되며, 영역 식별자(「%eth0」)가 붙은 IPv6 주소처럼 보안상 거부됩니다.\n"
+"- 미리 보기 후 확인을 거쳐 [b]정리[/b]: N일보다 오래된 항목, 가장 오래된 N개, A줄부터 B줄까지, 출처별, 또는 전체 목록(확인 문구 입력).\n"
+"- [b]내보내기[/b]: TXT(재발 시 그대로 다시 가져오기 가능), HTML(선택한 내보내기 테마), JSON.\n"
+"- 상한: 50 000개 항목(25 000개에서 대시보드 경고). HAProxy는 훨씬 더 많이 감당하지만 omega-tail이 느려집니다. 상한에 이르면 추가가 거부됩니다: 내보낸 다음 정리하십시오."
+
+msgid "Réseau et appareils"
+msgstr "네트워크와 장치"
+
+msgid ""
+"Ce que voit Tailscale depuis cette machine. Lecture seule : rien n'y change un réglage.\n"
+"- [b]Appareils[/b] : nom, système, en ligne ou non, [b]chemin[/b] (direct, ou par un relais de Tailscale quand la connexion directe est impossible), dernière fois vu, adresse, trafic échangé. Filtrez par nom, système ou adresse. Les [b]relais Funnel de Tailscale[/b] (« funnel-ingress-node ») apparaissent dans le tailnet dès que Funnel est actif : ce ne sont pas vos appareils, ils sont cachés sauf si vous cochez la case.\n"
+"- [b]Ping Tailscale[/b] : dit si le chemin vers l'appareil est direct ou relayé, et sa latence (3 essais). [b]Qui est-ce ?[/b] : à quelle machine et quel compte appartient une adresse du tailnet. Sans texte tapé, la ligne choisie est utilisée.\n"
+"- [b]Diagnostic réseau[/b] (quelques secondes) : UDP, IPv4 / IPv6, type de NAT (simple : connexions directes faciles ; difficile : plus de relais), ouverture de port par la box (UPnP, NAT-PMP, PCP), relais le plus proche et latences.\n"
+"- [b]DNS[/b], [b]verrou du tailnet[/b] et [b]compteurs internes[/b] (octets reçus et envoyés en direct ou par relais, paquets jetés, messages de santé) : tels que Tailscale les donne."
+msgstr ""
+"이 머신에서 Tailscale이 보는 것. 읽기 전용: 여기서는 어떤 설정도 바뀌지 않습니다.\n"
+"- [b]장치[/b]: 이름, 시스템, 온라인 여부, [b]경로[/b](직접, 또는 직접 연결이 불가능할 때 Tailscale 릴레이 경유), 마지막 확인 시각, 주소, 주고받은 트래픽. 이름, 시스템, 주소로 필터링합니다. [b]Tailscale의 Funnel 릴레이[/b](「funnel-ingress-node」)는 Funnel이 활성화되면 tailnet에 나타납니다: 사용자의 장치가 아니므로 체크 상자를 선택하지 않으면 숨겨집니다.\n"
+"- [b]Tailscale 핑[/b]: 장치까지의 경로가 직접인지 릴레이 경유인지와 지연 시간(3회 시도)을 알려 줍니다. [b]누구인가요?[/b]: tailnet 주소가 어느 머신과 계정에 속하는지. 입력한 텍스트가 없으면 선택한 줄을 사용합니다.\n"
+"- [b]네트워크 진단[/b](몇 초): UDP, IPv4 / IPv6, NAT 유형(쉬움: 직접 연결이 쉬움, 어려움: 릴레이가 늘어남), 공유기의 포트 열기(UPnP, NAT-PMP, PCP), 가장 가까운 릴레이와 지연 시간.\n"
+"- [b]DNS[/b], [b]tailnet 잠금[/b], [b]내부 카운터[/b](직접 또는 릴레이로 받고 보낸 바이트, 버린 패킷, 상태 메시지): Tailscale이 제공하는 그대로."
+
+msgid "Rapport"
+msgstr "보고서"
+
+msgid ""
+"Tout ce qu'omega-tail sait de la machine, en faits : Tailscale (version, préférences), publication, machine, pare-feu (règles, compteurs, listes, regroupements), survie (confinement, veille, disjoncteur), alertes, et les [b]attaques des 7 derniers jours[/b] lues dans le journal de la porte (connexions marquées par motif, par jour, adresses les plus marquées avec leur AS et leur pays).\n"
+"- [b]Vie privée[/b] : par défaut, le compte Tailscale et les noms / adresses des appareils du tailnet n'y figurent pas (seulement leur nombre), pour pouvoir envoyer le rapport à quelqu'un. Cochez la case pour les inclure. Les adresses des attaquants y restent toujours.\n"
+"- [b]Exporter[/b] en TXT, HTML (thème au choix) ou JSON, dans le dossier des exports. [b]Voir les exports[/b] ouvre ce dossier dans votre navigateur (chaque export se lit d'un clic) ; sans navigateur ni bureau (serveur, SSH), la liste et la lecture se font dans omega-tail.\n"
+"- Le journal de la porte doit être lisible par votre compte (groupe systemd-journal, adm ou wheel selon la distribution), sinon le rapport le dit."
+msgstr ""
+"omega-tail이 머신에 대해 아는 모든 것을 사실로: Tailscale(버전, 기본 설정), 게시, 머신, 방화벽(규칙, 카운터, 목록, 그룹화), 생존(자원 제한, 감시, 서킷 브레이커), 경고, 그리고 게이트 로그에서 읽은 [b]최근 7일간의 공격[/b](사유별·일별로 표시된 연결, 가장 많이 표시된 주소와 그 AS 및 국가).\n"
+"- [b]개인정보 보호[/b]: 기본적으로 Tailscale 계정과 tailnet 장치의 이름 / 주소는 포함되지 않습니다(개수만). 보고서를 다른 사람에게 보낼 수 있도록 하기 위함입니다. 포함하려면 체크 상자를 선택하십시오. 공격자의 주소는 항상 포함됩니다.\n"
+"- TXT, HTML(테마 선택), JSON으로 내보내기 폴더에 [b]내보내기[/b]. [b]내보내기 보기[/b]는 이 폴더를 브라우저에서 엽니다(각 내보내기를 클릭 한 번으로 읽음). 브라우저나 데스크톱이 없으면(서버, SSH) 목록과 읽기를 omega-tail 안에서 합니다.\n"
+"- 게이트 로그를 계정으로 읽을 수 있어야 합니다(배포판에 따라 systemd-journal, adm 또는 wheel 그룹). 아니면 보고서가 이를 알려 줍니다."
+
+msgid "systemd, OpenRC, runit"
+msgstr "systemd, OpenRC, runit"
+
+msgid ""
+"omega-tail reconnaît le système d'init de la machine et s'y adapte :\n"
+"- [b]service tailscaled[/b] : systemctl, rc-service ou sv ;\n"
+"- [b]journaux[/b] : journalctl, ou les fichiers du service (/var/log/tailscaled.log, svlogd, socklog…) ;\n"
+"- [b]confinement[/b] : fichier d'ajout systemd ; ailleurs, un groupe de contrôle à part (cgroup v2), perdu si tailscaled redémarre (une alerte propose alors de le remettre) ;\n"
+"- [b]coupure momentanée[/b] : minuterie systemd ; ailleurs, un processus détaché sous votre compte ;\n"
+"- [b]porte du pare-feu[/b] : service systemd, OpenRC ou runit ; certificat renouvelé par minuterie systemd ou par une ligne de votre crontab (marquée omega-tail, retirée à la désactivation)."
+msgstr ""
+"omega-tail은 머신의 init 시스템을 알아보고 그에 맞춥니다:\n"
+"- [b]tailscaled 서비스[/b]: systemctl, rc-service 또는 sv.\n"
+"- [b]로그[/b]: journalctl, 또는 서비스의 파일(/var/log/tailscaled.log, svlogd, socklog…).\n"
+"- [b]자원 제한[/b]: systemd 추가 설정 파일. 그 밖에는 별도 제어 그룹(cgroup v2)이며, tailscaled가 다시 시작하면 사라집니다(그때 경고가 다시 적용을 제안).\n"
+"- [b]일시 차단[/b]: systemd 타이머. 그 밖에는 사용자 계정으로 실행되는 분리된 프로세스.\n"
+"- [b]방화벽 게이트[/b]: systemd, OpenRC 또는 runit 서비스. 인증서는 systemd 타이머나 crontab의 한 줄(omega-tail 표시, 비활성화 시 제거)로 갱신합니다."
+
+msgid ""
+"Langue de l'interface et des exports, thème de l'interface et des exports, "
+"dossiers des exports et des captures d'écran (par défaut var/exports/ et "
+"var/screenshots/), et leur purge après confirmation."
+msgstr ""
+"인터페이스와 내보내기의 언어, 인터페이스와 내보내기의 테마, 내보내기와 스크린샷 폴더(기본 var/exports/, "
+"var/screenshots/), 그리고 확인 후 정리."
+
+msgid "Ligne de commande"
+msgstr "명령줄"
+
+msgid ""
+"- omega-tail : l'interface.\n"
+"- omega-tail etat : l'état et les alertes en texte ; --format json pour un script.\n"
+"- omega-tail aide : cette aide en texte.\n"
+"- omega-tail rapport [--format txt|html|json] [--prive] [--exporter] : le rapport, affiché ou enregistré dans le dossier des exports ; --prive ajoute le compte et les appareils du tailnet.\n"
+"- omega-tail disjoncteur etat | couper --minutes N | couper --totale | retablir\n"
+"- omega-tail porte etat | certificat [--si-besoin] | bloquer ADRESSE [--toujours] | debloquer ADRESSE | confiance ADRESSE\n"
+"- omega-tail --version"
+msgstr ""
+"- omega-tail: 인터페이스.\n"
+"- omega-tail etat: 상태와 경고를 텍스트로. 스크립트용 --format json.\n"
+"- omega-tail aide: 이 도움말을 텍스트로.\n"
+"- omega-tail rapport [--format txt|html|json] [--prive] [--exporter]: 보고서를 표시하거나 내보내기 폴더에 저장. --prive는 계정과 tailnet 장치를 추가합니다.\n"
+"- omega-tail disjoncteur etat | couper --minutes N | couper --totale | retablir\n"
+"- omega-tail porte etat | certificat [--si-besoin] | bloquer ADRESSE [--toujours] | debloquer ADRESSE | confiance ADRESSE\n"
+"- omega-tail --version"
+
+msgid ""
+"Depuis cette aide : écrire à l'auteur, le formulaire du site, un café, et "
+"vérifier les mises à jour."
+msgstr "이 도움말에서: 개발자에게 메일 보내기, 사이트 양식, 커피 한 잔, 업데이트 확인."
+
+msgid "DÉMARRAGE RAPIDE"
+msgstr "빠른 시작"
+
+msgid "RACCOURCIS"
+msgstr "단축키"
+
+msgid "Aide d’omega-tail"
+msgstr "omega-tail 도움말"
+
+msgid "Aide complète : chaque menu, sa fonction et le détail."
+msgstr "전체 도움말: 각 메뉴, 그 기능과 세부 내용."
+
+msgid "Démarrage rapide"
+msgstr "빠른 시작"
+
+msgid "Raccourcis"
+msgstr "단축키"
+
+msgid "Touche"
+msgstr "키"
+
+msgid "Action"
+msgstr "작업"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — aide."
+msgstr "OMEGA-TAIL {version} — 도움말."
+
+msgid "Aide - Omega-Tail"
+msgstr "도움말 - Omega-Tail"
+
+#, python-brace-format
+msgid "{name} (hébergeur)"
+msgstr "{name} (호스팅 업체)"
+
+msgid "connecté"
+msgstr "연결됨"
+
+msgid "déconnecté"
+msgstr "연결 해제됨"
+
+msgid "connexion du compte attendue"
+msgstr "계정 연결 대기"
+
+msgid "machine à approuver dans la console"
+msgstr "콘솔에서 머신 승인 필요"
+
+msgid "démarrage"
+msgstr "시작 중"
+
+msgid "sans état"
+msgstr "상태 없음"
+
+msgid "inconnu"
+msgstr "알 수 없음"
+
+msgid "HTTP"
+msgstr "HTTP"
+
+msgid "HTTPS (TLS par tailscaled)"
+msgstr "HTTPS(tailscaled가 TLS 처리)"
+
+msgid "TCP (TLS transmis tel quel)"
+msgstr "TCP(TLS 그대로 전달)"
+
+msgid "TCP, TLS par tailscaled"
+msgstr "TCP, tailscaled가 TLS 처리"
+
+msgid "Go"
+msgstr "GB"
+
+msgid "Ko"
+msgstr "KB"
+
+msgid "Mo"
+msgstr "MB"
+
+msgid "o"
+msgstr "B"
+
+msgid "Internet (Funnel)"
+msgstr "인터넷(Funnel)"
+
+msgid "tailnet seul (Serve)"
+msgstr "tailnet 전용(Serve)"
+
+msgid "inconnu de systemd"
+msgstr "systemd가 모름"
+
+msgid "actif"
+msgstr "활성"
+
+msgid "arrêté"
+msgstr "중지됨"
+
+msgid "en échec"
+msgstr "실패"
+
+msgid "arrêt en cours"
+msgstr "중지 중"
+
+msgid "lancé au démarrage"
+msgstr "부팅 시 시작"
+
+msgid "pas lancé au démarrage"
+msgstr "부팅 시 시작 안 함"
+
+msgid "observation"
+msgstr "관찰"
+
+msgid "Bouclier du port WireGuard : état illisible."
+msgstr "WireGuard 포트 방패: 상태를 읽을 수 없습니다."
+
+msgid "Bouclier du port WireGuard : retiré depuis omega-fire (ou à la main)."
+msgstr "WireGuard 포트 방패: omega-fire에서(또는 수동으로) 제거됨."
+
+msgid ""
+"Bouclier du port WireGuard : aucun. Sans lui, tailscaled dépense environ un "
+"cœur pour 100 000 paquets par seconde, même invalides."
+msgstr ""
+"WireGuard 포트 방패: 없음. 방패가 없으면 tailscaled는 잘못된 패킷이라도 초당 100,000 패킷마다 코어 약 하나를 "
+"씁니다."
+
+msgid ""
+"Bouclier du port WireGuard ABSENT : un autre outil a effacé sa table ; « "
+"Reposer » la remet."
+msgstr "WireGuard 포트 방패가 없습니다: 다른 도구가 테이블을 지웠습니다. 「재설치」로 되돌립니다."
+
+msgid ""
+"Bouclier du port WireGuard : état non mis à jour (service omega-bouclier-wg "
+"arrêté ?)."
+msgstr "WireGuard 포트 방패: 상태가 갱신되지 않음(omega-bouclier-wg 서비스 중지?)."
+
+#, python-brace-format
+msgid ""
+"Bouclier du port WireGuard : {mode}, géré par {manager} ; {count} paquet(s) "
+"refusé(s)"
+msgstr "WireGuard 포트 방패: {mode}, 관리 {manager}, 거부된 패킷 {count}개"
+
+#, python-brace-format
+msgid ""
+"Bouclier du port WireGuard : {mode}, géré par {manager} ; {count} paquet(s) "
+"auraient été refusés"
+msgstr "WireGuard 포트 방패: {mode}, 관리 {manager}, 거부되었을 패킷 {count}개"
+
+msgid "adresse bloquée"
+msgstr "차단된 주소"
+
+msgid "budget global dépassé"
+msgstr "전체 예산 초과"
+
+msgid "liste noire"
+msgstr "블랙리스트"
+
+msgid "trop de connexions d'un réseau"
+msgstr "한 네트워크에서 연결이 너무 많음"
+
+msgid "trop de connexions d'une adresse"
+msgstr "한 주소에서 연결이 너무 많음"
+
+msgid "mauvais nom de site (SNI)"
+msgstr "잘못된 사이트 이름(SNI)"
+
+msgid "pas une connexion TLS"
+msgstr "TLS 연결이 아님"
+
+msgid "AS d'hébergeur en rafale"
+msgstr "호스팅 업체 AS 폭주"
+
+msgid "empreinte inconnue en rafale"
+msgstr "알 수 없는 지문 폭주"
+
+msgid "pays limité en rafale"
+msgstr "제한 국가 폭주"
+
+#, python-brace-format
+msgid "tailscaled ne répond pas : {error}"
+msgstr "tailscaled가 응답하지 않습니다: {error}"
+
+#, python-brace-format
+msgid "État : {state}"
+msgstr "상태: {state}"
+
+#, python-brace-format
+msgid "Version : {daemon} en marche, {client} installé"
+msgstr "버전: {daemon} 실행 중, {client} 설치됨"
+
+#, python-brace-format
+msgid "Nom de la machine : {name}"
+msgstr "머신 이름: {name}"
+
+#, python-brace-format
+msgid "Compte : {user}"
+msgstr "계정: {user}"
+
+msgid "Compte : masqué (non inclus dans ce rapport)"
+msgstr "계정: 숨김(이 보고서에 포함 안 됨)"
+
+#, python-brace-format
+msgid ""
+"Appareils du tailnet : {online} en ligne sur {total} (plus {relays} relais "
+"Funnel de Tailscale)"
+msgstr ""
+"tailnet 장치: {total}개 중 {online}개 온라인(Tailscale Funnel 릴레이 {relays}개 별도)"
+
+#, python-brace-format
+msgid "Appareils du tailnet : {online} en ligne sur {total}"
+msgstr "tailnet 장치: {total}개 중 {online}개 온라인"
+
+#, python-brace-format
+msgid "Clé de la machine : {expiry}"
+msgstr "머신 키: {expiry}"
+
+msgid "sans expiration"
+msgstr "만료 없음"
+
+msgid "aucun"
+msgstr "없음"
+
+msgid "Préférence"
+msgstr "기본 설정"
+
+msgid "Valeur"
+msgstr "값"
+
+msgid "Rien n'est publié (ni Serve, ni Funnel)."
+msgstr "게시된 것이 없습니다(Serve도 Funnel도 없음)."
+
+#, python-brace-format
+msgid "Machine : {name} ({count} fils)"
+msgstr "머신: {name}(스레드 {count}개)"
+
+#, python-brace-format
+msgid "Charge : {a:.2f} {b:.2f} {c:.2f}"
+msgstr "부하: {a:.2f} {b:.2f} {c:.2f}"
+
+msgid "pas de capteur"
+msgstr "센서 없음"
+
+#, python-brace-format
+msgid "Mémoire vive utilisée : {value}"
+msgstr "사용 중인 메모리: {value}"
+
+msgid "MACHINE"
+msgstr "머신"
+
+msgid "PARE-FEU FUNNEL"
+msgstr "FUNNEL 방화벽"
+
+msgid "Pare-feu indisponible sur cette machine."
+msgstr "이 머신에서는 방화벽을 사용할 수 없습니다."
+
+#, python-brace-format
+msgid "Service de la porte : {state}"
+msgstr "게이트 서비스: {state}"
+
+#, python-brace-format
+msgid "Protection active depuis {since} : Funnel {port} → porte → {backend}"
+msgstr "{since}부터 보호 활성: Funnel {port} → 게이트 → {backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions depuis le démarrage de la porte : {total} reçues · {refused} "
+"refusées avant chiffrement · {admitted} admises · {current} en cours"
+msgstr ""
+"게이트 시작 이후 연결: 수신 {total} · 암호화 전 거부 {refused} · 허용 {admitted} · 진행 중 "
+"{current}"
+
+msgid "Protection inactive : Funnel ne passe pas par la porte."
+msgstr "보호 비활성: Funnel이 게이트를 거치지 않습니다."
+
+#, python-brace-format
+msgid "Mode : {mode}"
+msgstr "모드: {mode}"
+
+msgid "observation (rien n'est refusé)"
+msgstr "관찰(아무것도 거부 안 함)"
+
+msgid "normal (les règles refusent)"
+msgstr "일반(규칙이 거부함)"
+
+#, python-brace-format
+msgid ""
+"Règles : {ip} connexions / 10 s par adresse · {prefix} / 10 s par réseau · "
+"budget global {budget} / s · {maximum} connexions au plus · blocage {block} "
+"min · nom du site {sni}"
+msgstr ""
+"규칙: 주소별 10초당 연결 {ip}개 · 네트워크별 10초당 {prefix}개 · 전체 예산 초당 {budget} · 최대 연결 "
+"{maximum}개 · 차단 {block}분 · 사이트 이름 {sni}"
+
+msgid "non vérifié"
+msgstr "확인 안 함"
+
+msgid "vérifié"
+msgstr "확인함"
+
+#, python-brace-format
+msgid "Certificat : encore {days} jour(s)"
+msgstr "인증서: {days}일 남음"
+
+#, python-brace-format
+msgid "Confiance : {count} adresse(s) ou réseau(x)"
+msgstr "신뢰: 주소 또는 네트워크 {count}개"
+
+#, python-brace-format
+msgid "Liste noire : {entries}"
+msgstr "블랙리스트: {entries}"
+
+msgid "vide"
+msgstr "비어 있음"
+
+#, python-brace-format
+msgid "Bloquées en ce moment : {entries}"
+msgstr "현재 차단됨: {entries}"
+
+msgid "Bloquées en ce moment : aucune"
+msgstr "현재 차단됨: 없음"
+
+#, python-brace-format
+msgid "Regroupements : {mode} · {attack}"
+msgstr "그룹화: {mode} · {attack}"
+
+msgid "MODE ATTAQUE en cours"
+msgstr "공격 모드 진행 중"
+
+msgid "mode normal"
+msgstr "일반 모드"
+
+#, python-brace-format
+msgid "Empreintes : apprentissage, encore {days} jour(s)"
+msgstr "지문: 학습 중, {days}일 남음"
+
+#, python-brace-format
+msgid "Empreintes habituelles : {count} (référence prête)"
+msgstr "평소 지문: {count}(기준 준비됨)"
+
+#, python-brace-format
+msgid "Base AS / pays : à jour il y a {days} jour(s)"
+msgstr "AS / 국가 데이터베이스: {days}일 전 업데이트"
+
+msgid "Base AS / pays : absente"
+msgstr "AS / 국가 데이터베이스: 없음"
+
+msgid "Empreintes les plus actives"
+msgstr "가장 활발한 지문"
+
+msgid "AS les plus actifs"
+msgstr "가장 활발한 AS"
+
+msgid "Pays les plus actifs"
+msgstr "가장 활발한 국가"
+
+msgid "Adresse la plus active"
+msgstr "가장 활발한 주소"
+
+msgid "Connexions / 10 s"
+msgstr "연결 / 10초"
+
+msgid "confiance"
+msgstr "신뢰"
+
+msgid "admise"
+msgstr "허용"
+
+msgid "bloquée"
+msgstr "차단"
+
+#, python-brace-format
+msgid "Confinement de tailscaled : {state}"
+msgstr "tailscaled 자원 제한: {state}"
+
+msgid "Veille automatique : désactivée"
+msgstr "자동 감시: 비활성"
+
+msgid "Veille automatique : activée mais arrêtée (aucun signe de vie)"
+msgstr "자동 감시: 활성화되었지만 중지됨(생존 신호 없음)"
+
+#, python-brace-format
+msgid ""
+"Veille automatique : active · {strikes} dépassement(s) récent(s) · prochaine"
+" coupure {minutes} min"
+msgstr "자동 감시: 활성 · 최근 초과 {strikes}회 · 다음 차단 {minutes}분"
+
+#, python-brace-format
+msgid ""
+"Disjoncteur : tailscaled au-delà de {cpu:.0f} % d'un cœur pendant {seconds} "
+"s, ou machine au-delà de {temperature:.0f} °C ; coupure proposée de "
+"{minutes} min"
+msgstr ""
+"서킷 브레이커: tailscaled가 {seconds}초 동안 코어 하나의 {cpu:.0f} % 초과, 또는 머신이 "
+"{temperature:.0f} °C 초과. 제안 차단 {minutes}분"
+
+#, python-brace-format
+msgid "Funnel coupé depuis {since} ; remise en route {until}"
+msgstr "Funnel 차단: {since}부터, 재개 {until}"
+
+msgid "manuelle"
+msgstr "수동"
+
+msgid "Aucune coupure de Funnel en cours."
+msgstr "진행 중인 Funnel 차단이 없습니다."
+
+#, python-brace-format
+msgid "  origine : {tool} · géré par {manager} · pairs connus : {peers}"
+msgstr "  출처: {tool} · 관리: {manager} · 알려진 피어: {peers}"
+
+msgid "Journal de la veille (derniers événements) :"
+msgstr "감시 로그(최근 이벤트):"
+
+msgid "SURVIE"
+msgstr "생존"
+
+msgid "Aucune alerte."
+msgstr "경고가 없습니다."
+
+#, python-brace-format
+msgid "ATTAQUES DES {days} DERNIERS JOURS"
+msgstr "최근 {days}일간의 공격"
+
+msgid "Pare-feu indisponible : rien à compter."
+msgstr "방화벽을 사용할 수 없습니다: 집계할 것이 없습니다."
+
+#, python-brace-format
+msgid "Journal de la porte illisible : {error}"
+msgstr "게이트 로그를 읽을 수 없습니다: {error}"
+
+msgid ""
+"Lu dans le journal de la porte : chaque connexion marquée par une règle "
+"(refusée, ou seulement comptée en observation, selon le mode du moment)."
+msgstr "게이트 로그에서 읽음: 규칙이 표시한 모든 연결(당시 모드에 따라 거부되었거나 관찰 중 집계만 됨)."
+
+msgid "Aucune connexion marquée sur la période."
+msgstr "이 기간에 표시된 연결이 없습니다."
+
+#, python-brace-format
+msgid "Connexions marquées : {count}{floor}"
+msgstr "표시된 연결: {count}{floor}"
+
+msgid " (au moins : journal trop long, seules les plus récentes ont été lues)"
+msgstr " (최소값: 로그가 너무 길어 최근 것만 읽음)"
+
+#, python-brace-format
+msgid ""
+"Règles de la porte, connexions qui auraient été refusées (observation) : "
+"{reasons}"
+msgstr "게이트 규칙, 거부되었을 연결(관찰): {reasons}"
+
+#, python-brace-format
+msgid "Règles de la porte, connexions refusées : {reasons}"
+msgstr "게이트 규칙, 거부된 연결: {reasons}"
+
+#, python-brace-format
+msgid "Regroupements, connexions refusées : {reasons}"
+msgstr "그룹화, 거부된 연결: {reasons}"
+
+#, python-brace-format
+msgid ""
+"Regroupements, connexions qui auraient été refusées (observation) : "
+"{reasons}"
+msgstr "그룹화, 거부되었을 연결(관찰): {reasons}"
+
+#, python-brace-format
+msgid "Par jour : {days}"
+msgstr "일별: {days}"
+
+msgid "AS"
+msgstr "AS"
+
+msgid "Adresse"
+msgstr "주소"
+
+msgid "Connexions marquées"
+msgstr "표시된 연결"
+
+msgid "Pays"
+msgstr "국가"
+
+msgid "en ligne"
+msgstr "온라인"
+
+msgid "hors ligne"
+msgstr "오프라인"
+
+msgid "APPAREILS DU TAILNET"
+msgstr "TAILNET 장치"
+
+msgid "Aucun appareil lu."
+msgstr "읽은 장치가 없습니다."
+
+msgid "Système"
+msgstr "시스템"
+
+msgid "Compte et appareils du tailnet inclus."
+msgstr "계정과 tailnet 장치가 포함되었습니다."
+
+msgid ""
+"Compte et appareils du tailnet non inclus (seulement leur nombre) ; les "
+"adresses des attaquants restent."
+msgstr "계정과 tailnet 장치는 포함되지 않았습니다(개수만). 공격자의 주소는 남아 있습니다."
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — RAPPORT DE LA MACHINE {machine}"
+msgstr "OMEGA-TAIL {version} — 머신 보고서 {machine}"
+
+#, python-brace-format
+msgid "Établi le {date} (lecture seule, sans droits)."
+msgstr "{date} 작성(읽기 전용, 권한 없음)."
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — rapport."
+msgstr "OMEGA-TAIL {version} — 보고서."
+
+msgid "Rapport - Omega-Tail"
+msgstr "보고서 - Omega-Tail"
+
+msgid ""
+"Le démarrage de tailscaled lance « tailscale up » (votre fichier d'ajout). "
+"Depuis qu'un réglage a changé (opérateur, nom, routes…), Tailscale refuse ce"
+" « up » incomplet : systemd arrête alors tailscaled et abandonne après cinq "
+"essais (la machine sort du tailnet). omega-tail ajoute « - » devant cette "
+"commande : son refus n'arrête plus le service, et vos réglages restent "
+"gardés par Tailscale. Rien d'autre ne change ; l'original est gardé dans "
+"var/survie."
+msgstr ""
+"tailscaled가 시작할 때 「tailscale up」을 실행합니다(사용자의 추가 설정 파일). 설정(운영자, 이름, 경로…)이 바뀐"
+" 뒤로 Tailscale이 이 불완전한 「up」을 거부합니다: systemd가 tailscaled를 중지하고 다섯 번 시도 후 "
+"포기합니다(머신이 tailnet에서 빠짐). omega-tail은 이 명령 앞에 「-」를 추가합니다: 거부되어도 서비스가 멈추지 않으며,"
+" 설정은 Tailscale이 계속 보관합니다. 다른 것은 바뀌지 않으며, 원본은 var/survie에 보관합니다."
+
+msgid "Lecture de l'état"
+msgstr "상태 읽는 중"
+
+#, python-brace-format
+msgid "Valeurs refusées (nombre hors limites) : {keys}"
+msgstr "거부된 값(범위를 벗어난 숫자): {keys}"
+
+msgid "Seuils enregistrés."
+msgstr "임계값을 저장했습니다."
+
+#, python-brace-format
+msgid "Pas de nouvelle proposition pendant {minutes} min."
+msgstr "{minutes}분 동안 새로 제안하지 않습니다."
+
+#, python-brace-format
+msgid ""
+"Funnel sera coupé {minutes} min puis remis en route automatiquement, à "
+"l'identique (minuterie systemd : sudo une fois, dans le terminal)."
+msgstr ""
+"Funnel을 {minutes}분 동안 차단한 뒤 자동으로 그대로 재개합니다(systemd 타이머: 터미널에서 sudo 한 번)."
+
+msgid ""
+"Funnel sera coupé jusqu'à ce que vous le rétablissiez (« Rétablir maintenant"
+" »)."
+msgstr "직접 복원할 때까지 Funnel을 차단합니다(「지금 복원」)."
+
+msgid "COUPER FUNNEL ?"
+msgstr "FUNNEL을 차단하시겠습니까?"
+
+msgid ""
+"Les connexions venues d'Internet s'arrêtent aussitôt ; le tailnet (Serve, "
+"SSH) n'est pas touché."
+msgstr "인터넷에서 오는 연결이 즉시 멈춥니다. tailnet(Serve, SSH)은 영향을 받지 않습니다."
+
+msgid "Couper"
+msgstr "차단"
+
+msgid "Disjoncteur"
+msgstr "서킷 브레이커"
+
+msgid "Pare-feu indisponible."
+msgstr "방화벽을 사용할 수 없습니다."
+
+#, python-brace-format
+msgid "HAProxy : {path}"
+msgstr "HAProxy: {path}"
+
+msgid "non installé (« Installer HAProxy »)"
+msgstr "설치 안 됨(「HAProxy 설치」)"
+
+#, python-brace-format
+msgid ""
+"Protection ACTIVE depuis {since} : Funnel {port} → porte 127.0.0.1:{gate} → "
+"{backend}"
+msgstr "{since}부터 보호 활성: Funnel {port} → 게이트 127.0.0.1:{gate} → {backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions : {total} reçues · {refused} refusées avant chiffrement · "
+"{current} en cours"
+msgstr "연결: 수신 {total} · 암호화 전 거부 {refused} · 진행 중 {current}"
+
+#, python-brace-format
+msgid ""
+"Protection inactive. Funnel {port} (HTTPS par tailscaled) → {backend} : pris"
+" en charge."
+msgstr "보호 비활성. Funnel {port}(tailscaled의 HTTPS) → {backend}: 지원됨."
+
+#, python-brace-format
+msgid "Protection inactive : {reason}."
+msgstr "보호 비활성: {reason}."
+
+#, python-brace-format
+msgid "Certificat : encore {days} jour(s) (renouvelé chaque jour si besoin)"
+msgstr "인증서: {days}일 남음(필요하면 매일 갱신)"
+
+#, python-brace-format
+msgid ""
+"Mode : {mode} · {ip} connexions / 10 s par adresse · budget {budget} / s · "
+"blocage {block} min"
+msgstr "모드: {mode} · 주소별 10초당 연결 {ip}개 · 예산 초당 {budget} · 차단 {block}분"
+
+msgid ""
+"⚠ Devenez opérateur de Tailscale (tableau de bord) : la porte en a besoin."
+msgstr "⚠ Tailscale 운영자가 되십시오(대시보드): 게이트에 필요합니다."
+
+msgid "Pare-feu"
+msgstr "방화벽"
+
+msgid "Changement en cours, puis vérification…"
+msgstr "변경 중, 이후 확인…"
+
+msgid ""
+"Gestionnaire de paquets inconnu : installez HAProxy avec celui de votre "
+"système."
+msgstr "알 수 없는 패키지 관리자: 시스템의 패키지 관리자로 HAProxy를 설치하십시오."
+
+msgid "INSTALLER HAPROXY ?"
+msgstr "HAPROXY를 설치하시겠습니까?"
+
+msgid ""
+"HAProxy est installé par le gestionnaire de paquets de la distribution "
+"(mises à jour de sécurité comprises)."
+msgstr "HAProxy는 배포판의 패키지 관리자로 설치됩니다(보안 업데이트 포함)."
+
+msgid "ACTIVER LA PROTECTION ?"
+msgstr "보호를 활성화하시겠습니까?"
+
+msgid ""
+"1. Préparation (certificat *.ts.net, listes, configuration vérifiée).\n"
+"2. Services de la porte et de son certificat (sudo, dans le terminal ; la porte tourne sous votre compte, jamais en root).\n"
+"3. Bascule de Funnel vers la porte, puis essai depuis Internet. En cas d'échec, la publication d'origine est remise aussitôt.\n"
+"\n"
+"Coupure du site : quelques secondes pendant la bascule."
+msgstr ""
+"1. 준비(*.ts.net 인증서, 목록, 구성 검사).\n"
+"2. 게이트와 인증서 서비스(sudo, 터미널에서. 게이트는 root가 아니라 사용자 계정으로 실행).\n"
+"3. Funnel을 게이트로 전환한 뒤 인터넷에서 테스트. 실패하면 원래 게시를 즉시 복원합니다.\n"
+"\n"
+"사이트 중단: 전환하는 동안 몇 초."
+
+msgid "Activer"
+msgstr "활성화"
+
+msgid "Préparation de la porte…"
+msgstr "게이트 준비 중…"
+
+msgid "Porte lancée ; bascule de Funnel et essai depuis Internet…"
+msgstr "게이트 실행됨. Funnel 전환 및 인터넷에서 테스트 중…"
+
+msgid "DÉSACTIVER LA PROTECTION ?"
+msgstr "보호를 비활성화하시겠습니까?"
+
+msgid ""
+"Funnel est remis exactement comme avant (HTTPS par tailscaled), vérifié, "
+"puis la porte est arrêtée (sudo, dans le terminal). Vos réglages et vos "
+"listes sont gardés."
+msgstr ""
+"Funnel을 이전과 똑같이(tailscaled의 HTTPS) 되돌리고 확인한 뒤 게이트를 중지합니다(sudo, 터미널에서). 설정과 "
+"목록은 보관됩니다."
+
+msgid "Désactiver"
+msgstr "비활성화"
+
+msgid "tailscaled ne tourne pas : rien à confiner."
+msgstr "tailscaled가 실행되고 있지 않습니다: 제한할 것이 없습니다."
+
+#, python-brace-format
+msgid ""
+"Pose le fichier d'ajout {path} (votre propre override.conf n'est pas "
+"modifié), recharge systemd{restart}."
+msgstr ""
+"추가 설정 파일 {path}을(를) 설치하고(사용자의 override.conf는 수정하지 않음) systemd를 다시 "
+"불러옵니다{restart}."
+
+msgid ", puis redémarre tailscaled"
+msgstr ", 그 후 tailscaled를 다시 시작"
+
+msgid ""
+"Place tailscaled dans un groupe de contrôle à part (cgroup v2), avec son "
+"plafond et sa priorité. Aucun de vos fichiers n'est modifié. Perdu si "
+"tailscaled redémarre : omega-tail le signalera."
+msgstr ""
+"tailscaled를 상한과 우선순위가 있는 별도 제어 그룹(cgroup v2)에 둡니다. 사용자의 파일은 수정하지 않습니다. "
+"tailscaled가 다시 시작하면 사라지며, omega-tail이 알려 줍니다."
+
+msgid "CONFINER TAILSCALED ?"
+msgstr "TAILSCALED 자원을 제한하시겠습니까?"
+
+msgid ""
+"Supprime les fichiers d'ajout posés par omega-tail, puis recharge systemd."
+msgstr "omega-tail이 설치한 추가 설정 파일을 삭제한 뒤 systemd를 다시 불러옵니다."
+
+msgid "RETIRER LE CONFINEMENT ?"
+msgstr "자원 제한을 해제하시겠습니까?"
+
+msgid ""
+"Rien à corriger ici : la commande n'est pas dans un fichier de /etc/systemd "
+"(à corriger à la main, avec « - » devant la commande)."
+msgstr "여기서 고칠 것이 없습니다: 명령이 /etc/systemd의 파일에 없습니다(명령 앞에 「-」를 붙여 직접 고치십시오)."
+
+msgid "CORRIGER LE DÉMARRAGE DE TAILSCALED ?"
+msgstr "TAILSCALED 시작 설정을 수정하시겠습니까?"
+
+msgid ""
+"Cette session passe par Tailscale : elle se figera quelques secondes pendant"
+" le redémarrage, puis reviendra en général."
+msgstr "이 세션은 Tailscale을 거칩니다: 다시 시작하는 동안 몇 초간 멈춘 뒤 대개 돌아옵니다."
+
+msgid "Commandes :"
+msgstr "명령:"
+
+msgid ""
+"La veille coupe et remet Funnel sous votre compte : devenez d'abord "
+"opérateur de Tailscale (tableau de bord)."
+msgstr "감시는 사용자 계정으로 Funnel을 차단하고 재개합니다: 먼저 Tailscale 운영자가 되십시오(대시보드)."
+
+msgid ""
+"La veille tournera en permanence, sous votre compte (jamais root), même "
+"omega-tail fermé. Sous attaque, elle coupe Funnel seule par paliers (15 min,"
+" 30 min, puis 1 h renouvelable) et le remet en route seule."
+msgstr ""
+"감시는 omega-tail을 닫아도 사용자 계정(root 아님)으로 계속 실행됩니다. 공격을 받으면 단계적으로(15분, 30분, 이후 "
+"1시간씩 반복) 스스로 Funnel을 차단하고 스스로 재개합니다."
+
+msgid ""
+"La veille s'arrête : sous attaque, omega-tail ouvert vous proposera de "
+"nouveau la coupure."
+msgstr "감시를 중지합니다: 공격을 받으면 열려 있는 omega-tail이 다시 차단을 제안합니다."
+
+msgid "ACTIVER LA VEILLE AUTOMATIQUE ?"
+msgstr "자동 감시를 활성화하시겠습니까?"
+
+msgid "DÉSACTIVER LA VEILLE AUTOMATIQUE ?"
+msgstr "자동 감시를 비활성화하시겠습니까?"
+
+msgid "Veille automatique activée."
+msgstr "자동 감시를 활성화했습니다."
+
+msgid "Veille automatique désactivée."
+msgstr "자동 감시를 비활성화했습니다."
+
+#, python-brace-format
+msgid "Commande refusée (code {code}) : rien n'a changé."
+msgstr "명령이 거부되었습니다(코드 {code}): 아무것도 바뀌지 않았습니다."
+
+msgid "omega-tail — commandes lancées une à une :"
+msgstr "omega-tail — 하나씩 실행한 명령:"
+
+msgid "Le mot de passe sudo ne s'affiche pas pendant la saisie."
+msgstr "sudo 비밀번호는 입력하는 동안 표시되지 않습니다."
+
+msgid "✔ Terminé."
+msgstr "✔ 완료."
+
+#, python-brace-format
+msgid "✖ Échec (code {code})."
+msgstr "✖ 실패(코드 {code})."
+
+msgid "Entrée pour revenir à omega-tail… "
+msgstr "Enter를 누르면 omega-tail로 돌아갑니다… "
+
+#, python-brace-format
+msgid "Fait : {command}"
+msgstr "완료: {command}"
+
+#, python-brace-format
+msgid "Échec (code {code}) : {command}"
+msgstr "실패(코드 {code}): {command}"
+
+msgid "Compte inconnu ou root : rien à faire."
+msgstr "알 수 없는 계정이거나 root입니다: 할 일이 없습니다."
+
+#, python-brace-format
+msgid ""
+"Le compte « {user} » pourra régler Tailscale (connexion, publication, "
+"préférences) sans sudo. Une seule fois ; annulable ensuite avec « sudo "
+"tailscale set --operator= »."
+msgstr ""
+"「{user}」 계정이 sudo 없이 Tailscale(연결, 게시, 기본 설정)을 설정할 수 있게 됩니다. 한 번만 하면 되며, 나중에"
+" 「sudo tailscale set --operator=」로 취소할 수 있습니다."
+
+msgid "DEVENIR OPÉRATEUR DE TAILSCALE ?"
+msgstr "TAILSCALE 운영자가 되시겠습니까?"
+
+msgid "Dossier des captures non configuré."
+msgstr "스크린샷 폴더가 설정되지 않았습니다."
+
+msgid "Redémarrer"
+msgstr "다시 시작"
+
+msgid "PROTECTION"
+msgstr "보호"
+
+msgid "TAILSCALE"
+msgstr "TAILSCALE"
+
+msgid ""
+"omega-tail — authentification sudo pour les commandes affichées (le mot de "
+"passe ne s'affiche pas pendant la saisie). L'interface revient ensuite."
+msgstr ""
+"omega-tail — 표시된 명령을 위한 sudo 인증(비밀번호는 입력하는 동안 표시되지 않음). 그 후 인터페이스로 돌아옵니다."
+
+msgid "Aucune commande à copier."
+msgstr "복사할 명령이 없습니다."
+
+#, python-brace-format
+msgid ""
+"{count} commande(s) copiée(s) dans le presse-papiers ({tool}) : collez-les "
+"dans un terminal (Ctrl+Maj+V)."
+msgstr "명령 {count}개를 클립보드에 복사했습니다 ({tool}): 터미널에 붙여 넣으세요 (Ctrl+Shift+V)."
+
+msgid ""
+"omega-tail — commandes à copier. Sélectionnez-les à la souris puis copiez "
+"avec le raccourci de votre terminal (souvent Ctrl+Maj+C) :"
+msgstr "omega-tail — 복사할 명령. 마우스로 선택한 뒤 터미널의 단축키(대개 Ctrl+Shift+C)로 복사하십시오:"
+
+msgid "Adresses"
+msgstr "주소"
+
+msgid "Empreintes"
+msgstr "지문"
+
+#, python-brace-format
+msgid "MODE ATTAQUE (retour au normal après {seconds} s de calme)"
+msgstr "공격 모드({seconds}초 안정 후 일반으로 복귀)"
+
+msgid "regroupements appliqués"
+msgstr "그룹화 적용"
+
+msgid "regroupements en observation"
+msgstr "그룹화 관찰 중"
+
+#, python-brace-format
+msgid "auraient été refusées (7 j) : {reasons}"
+msgstr "거부되었을 연결(7일): {reasons}"
+
+#, python-brace-format
+msgid "refusées (7 j) : {reasons}"
+msgstr "거부됨(7일): {reasons}"
+
+msgid "ATTAQUES ET DÉCISIONS"
+msgstr "공격과 결정"
+
+msgid ""
+"La liste noire d'abord, puis les adresses bloquées, les plus actives, et la "
+"confiance. Choisissez une ligne puis une action."
+msgstr "블랙리스트가 먼저, 그다음 차단된 주소, 가장 활발한 주소, 신뢰 주소 순입니다. 줄을 선택한 뒤 작업을 고르십시오."
+
+msgid "Bloquer"
+msgstr "차단"
+
+msgid "Liste noire"
+msgstr "블랙리스트"
+
+msgid "Débloquer"
+msgstr "차단 해제"
+
+msgid "Gestion de la liste noire"
+msgstr "블랙리스트 관리"
+
+msgid "Expire dans"
+msgstr "만료까지"
+
+msgid "Empreinte JA4"
+msgstr "JA4 지문"
+
+msgid "Remarque"
+msgstr "참고"
+
+msgid "Total"
+msgstr "합계"
+
+#, python-brace-format
+msgid ""
+"Connexions reçues : {total} · refusées avant chiffrement : {refused} · "
+"admises : {admitted} · en cours : {current}"
+msgstr ""
+"수신 연결: {total} · 암호화 전 거부: {refused} · 허용: {admitted} · 진행 중: {current}"
+
+msgid "jusqu'au retrait"
+msgstr "제거할 때까지"
+
+msgid "Retirer la confiance"
+msgstr "신뢰 해제"
+
+msgid "Aucune adresse choisie."
+msgstr "선택한 주소가 없습니다."
+
+msgid "Plus anciennes que N jours"
+msgstr "N일보다 오래된 항목"
+
+msgid "Les N plus anciennes"
+msgstr "가장 오래된 N개"
+
+msgid "De la ligne A à la ligne B"
+msgstr "A줄부터 B줄까지"
+
+msgid "Origine : import"
+msgstr "출처: 가져오기"
+
+msgid "Origine : écran Attaques"
+msgstr "출처: 공격 화면"
+
+msgid "Origine : ajout manuel"
+msgstr "출처: 수동 추가"
+
+msgid "Origine : avant les dates"
+msgstr "출처: 날짜 기록 이전"
+
+msgid "Toute la liste"
+msgstr "전체 목록"
+
+msgid "GESTION DE LA LISTE NOIRE"
+msgstr "블랙리스트 관리"
+
+msgid "AJOUTER OU IMPORTER"
+msgstr "추가 또는 가져오기"
+
+msgid "adresse ou réseau (ex. 203.0.113.7 ou 198.51.100.0/24)"
+msgstr "주소 또는 네트워크(예: 203.0.113.7 또는 198.51.100.0/24)"
+
+msgid "fichier TXT : une adresse ou un réseau par ligne, # = commentaire"
+msgstr "TXT 파일: 한 줄에 주소나 네트워크 하나, # = 주석"
+
+msgid "Importer"
+msgstr "가져오기"
+
+msgid ""
+"Les doublons, les adresses déjà couvertes par un réseau de la liste et "
+"celles du tailnet sont écartés et comptés. Un export TXT se réimporte tel "
+"quel (récidive)."
+msgstr ""
+"중복, 목록의 네트워크에 이미 포함된 주소, tailnet 주소는 제외하고 집계합니다. TXT 내보내기는 그대로 다시 가져올 수 "
+"있습니다(재발 시)."
+
+msgid "LISTE"
+msgstr "목록"
+
+msgid "filtrer : début d'adresse, réseau, date (2026-11), origine"
+msgstr "필터: 주소 앞부분, 네트워크, 날짜(2026-11), 출처"
+
+msgid "PURGER"
+msgstr "정리"
+
+msgid "N ou A"
+msgstr "N 또는 A"
+
+msgid "Aperçu"
+msgstr "미리 보기"
+
+msgid "Purger"
+msgstr "정리"
+
+msgid ""
+"Les lignes sont numérotées de la plus ancienne à la plus récente, comme dans"
+" le tableau sans filtre. L'aperçu dit combien d'entrées partiraient ; rien "
+"n'est retiré sans confirmation."
+msgstr ""
+"줄 번호는 필터 없는 표와 같이 가장 오래된 것부터 최신 순으로 매겨집니다. 미리 보기가 삭제될 항목 수를 알려 주며, 확인 없이는 "
+"아무것도 제거하지 않습니다."
+
+msgid "THÈME DE LA PAGE HTML"
+msgstr "HTML 페이지 테마"
+
+msgid "Exporter HTML"
+msgstr "HTML 내보내기"
+
+msgid "Exporter TXT"
+msgstr "TXT 내보내기"
+
+msgid "Exporter JSON"
+msgstr "JSON 내보내기"
+
+msgid "Voir les exports"
+msgstr "내보내기 보기"
+
+#, python-brace-format
+msgid ""
+"{count} entrée(s) sur {max} au plus. Refusées par la porte avant tout "
+"chiffrement, jusqu'à leur retrait."
+msgstr "항목 {count}개(최대 {max}개). 제거할 때까지 게이트가 모든 암호화 전에 거부합니다."
+
+msgid "La liste grossit : exportez-la puis purgez les plus anciennes."
+msgstr "목록이 커지고 있습니다: 내보낸 다음 가장 오래된 항목을 정리하십시오."
+
+#, python-brace-format
+msgid ""
+"{shown} premières lignes affichées sur {total} : affinez le filtre, ou "
+"exportez pour tout voir."
+msgstr "{total}줄 중 처음 {shown}줄 표시: 필터를 좁히거나 내보내서 전체를 보십시오."
+
+#, python-brace-format
+msgid "{count} entrée(s) correspondent au filtre."
+msgstr "필터와 일치하는 항목 {count}개."
+
+msgid "La liste noire est vide."
+msgstr "블랙리스트가 비어 있습니다."
+
+#, python-brace-format
+msgid "{error}"
+msgstr "{error}"
+
+#, python-brace-format
+msgid "Lignes invalides : {lines}"
+msgstr "잘못된 줄: {lines}"
+
+msgid "Tapez une adresse ou un réseau."
+msgstr "주소 또는 네트워크를 입력하십시오."
+
+msgid "Indiquez le chemin du fichier TXT à importer."
+msgstr "가져올 TXT 파일 경로를 입력하십시오."
+
+#, python-brace-format
+msgid "Fichier introuvable : {path}"
+msgstr "파일을 찾을 수 없음: {path}"
+
+#, python-brace-format
+msgid "Fichier trop gros (plus de {size} Mo) : découpez-le."
+msgstr "파일이 너무 큽니다({size} MB 초과): 나누십시오."
+
+msgid "Import en cours…"
+msgstr "가져오는 중…"
+
+msgid "Aucune entrée choisie."
+msgstr "선택한 항목이 없습니다."
+
+msgid "Tapez N (un nombre entier) dans le premier champ."
+msgstr "첫 번째 필드에 N(정수)을 입력하십시오."
+
+msgid "Tapez A et B (numéros de ligne) dans les deux champs."
+msgstr "두 필드에 A와 B(줄 번호)를 입력하십시오."
+
+#, python-brace-format
+msgid "Aperçu : {count} entrée(s) sur {total} partiraient."
+msgstr "미리 보기: {total}개 중 {count}개 항목이 삭제됩니다."
+
+#, python-brace-format
+msgid "De {first} à {last}."
+msgstr "{first}부터 {last}까지."
+
+msgid "Aucune entrée ne correspond : rien à purger."
+msgstr "일치하는 항목이 없습니다: 정리할 것이 없습니다."
+
+#, python-brace-format
+msgid ""
+"{count} entrée(s) vont quitter la liste noire : ces adresses seront de "
+"nouveau admises (soumises aux règles). Exportez la liste avant si vous "
+"voulez pouvoir les réinjecter."
+msgstr ""
+"항목 {count}개가 블랙리스트에서 빠집니다: 이 주소들은 다시 허용됩니다(규칙 적용). 다시 넣을 수 있게 하려면 먼저 목록을 "
+"내보내십시오."
+
+msgid "Purge en cours…"
+msgstr "정리 중…"
+
+msgid "VIDER"
+msgstr "비우기"
+
+msgid "VIDER LA LISTE NOIRE ?"
+msgstr "블랙리스트를 비우시겠습니까?"
+
+msgid "Vider"
+msgstr "비우기"
+
+msgid "PURGER LA LISTE NOIRE ?"
+msgstr "블랙리스트를 정리하시겠습니까?"
+
+#, python-brace-format
+msgid "Liste noire enregistrée ({count} entrée(s)) : {path}"
+msgstr "블랙리스트 저장됨(항목 {count}개): {path}"
+
+msgid "ATTAQUE PROBABLE — COUPER FUNNEL ?"
+msgstr "공격 가능성 — FUNNEL을 차단하시겠습니까?"
+
+#, python-brace-format
+msgid ""
+"{reason}\n"
+"\n"
+"Couper Funnel (port {ports}) arrête aussitôt les connexions venues d'Internet : la machine respire. Le tailnet (Serve, SSH) n'est pas touché.\n"
+"\n"
+"• Coupure de {minutes} min : Funnel est remis en route tout seul, à l'identique, même si omega-tail est fermé.\n"
+"• Coupure totale : Funnel reste coupé jusqu'à ce que vous le rétablissiez (menu Survie)."
+msgstr ""
+"{reason}\n"
+"\n"
+"Funnel(포트 {ports})을 차단하면 인터넷에서 오는 연결이 즉시 멈춰 머신이 숨을 돌립니다. tailnet(Serve, SSH)은 영향을 받지 않습니다.\n"
+"\n"
+"• {minutes}분 차단: omega-tail을 닫아도 Funnel이 자동으로 그대로 재개됩니다.\n"
+"• 완전 차단: 직접 복원할 때까지 Funnel이 차단된 상태로 남습니다(생존 메뉴)."
+
+#, python-brace-format
+msgid "Couper {minutes} min"
+msgstr "{minutes}분 차단"
+
+msgid "Coupure totale"
+msgstr "완전 차단"
+
+msgid "Pas maintenant"
+msgstr "나중에"
+
+msgid "déconnecté (tailscale down)"
+msgstr "연결 해제됨(tailscale down)"
+
+msgid "compte à connecter"
+msgstr "계정 연결 필요"
+
+msgid "machine à approuver"
+msgstr "머신 승인 필요"
+
+msgid "CONNEXION ET RÉGLAGES"
+msgstr "연결 및 설정"
+
+msgid ""
+"La connexion de cette machine au tailnet, son compte, et les réglages de "
+"Tailscale. Chaque commande s'affiche avant d'être lancée, dans le terminal "
+"(sans sudo si vous êtes opérateur)."
+msgstr ""
+"이 머신의 tailnet 연결, 계정, Tailscale 설정. 모든 명령은 실행 전에 표시되며 터미널에서 실행됩니다(운영자이면 sudo"
+" 없이)."
+
+msgid "Se connecter"
+msgstr "연결"
+
+msgid "Se déconnecter"
+msgstr "연결 해제"
+
+msgid "Ajouter un compte"
+msgstr "계정 추가"
+
+msgid "Déconnexion définitive"
+msgstr "영구 로그아웃"
+
+msgid "COMPTE"
+msgstr "계정"
+
+msgid "Comptes de cette machine (lecture…)"
+msgstr "이 머신의 계정(읽는 중…)"
+
+msgid "Changer de compte"
+msgstr "계정 전환"
+
+msgid "Appliquer"
+msgstr "적용"
+
+msgid "Relire"
+msgstr "다시 읽기"
+
+msgid "Mon compte"
+msgstr "내 계정"
+
+msgid "Activer le transfert IP"
+msgstr "IP 포워딩 활성화"
+
+msgid " (en cours)"
+msgstr " (현재)"
+
+#, python-brace-format
+msgid "Comptes illisibles ({error}) : devenez opérateur (tableau de bord)."
+msgstr "계정을 읽을 수 없습니다({error}): 운영자가 되십시오(대시보드)."
+
+msgid ""
+"Un seul compte sur cette machine : « Ajouter un compte » pour en connecter "
+"un autre."
+msgstr "이 머신에는 계정이 하나뿐입니다: 다른 계정을 연결하려면 「계정 추가」."
+
+msgid ""
+"Aucune machine du tailnet ne se propose comme nœud de sortie. Sur la machine"
+" voulue : cocher « Proposer cette machine comme nœud de sortie », appliquer,"
+" puis l'approuver dans la console d'administration de Tailscale (Machines → "
+"Edit route settings)."
+msgstr ""
+"출구 노드로 자신을 제공하는 tailnet 머신이 없습니다. 원하는 머신에서 「이 머신을 출구 노드로 제공」을 선택하고 적용한 다음, "
+"Tailscale 관리 콘솔에서 승인하십시오(Machines → Edit route settings)."
+
+#, python-brace-format
+msgid "ex. {user}"
+msgstr "예) {user}"
+
+msgid "tailscaled ne répond pas"
+msgstr "tailscaled가 응답하지 않음"
+
+#, python-brace-format
+msgid "Compte : {user} · tailnet : {tailnet}"
+msgstr "계정: {user} · tailnet: {tailnet}"
+
+#, python-brace-format
+msgid "Machine : {name} · {addresses}"
+msgstr "머신: {name} · {addresses}"
+
+#, python-brace-format
+msgid "Expiration de la clé : {expiry} · opérateur : {operator}"
+msgstr "키 만료: {expiry} · 운영자: {operator}"
+
+msgid "aucun (sudo)"
+msgstr "없음(sudo)"
+
+msgid "Votre session passe par Tailscale : se déconnecter vous couperait."
+msgstr "세션이 Tailscale을 거칩니다: 연결을 해제하면 세션이 끊깁니다."
+
+#, python-brace-format
+msgid ""
+"Transfert IP désactivé ({keys}) : le nœud de sortie et les sous-réseaux "
+"annoncés ne transmettront rien. « Activer le transfert IP » écrit un fichier"
+" à part ({path}), gardé au redémarrage."
+msgstr ""
+"IP 포워딩 비활성({keys}): 출구 노드와 광고된 서브넷이 아무것도 전달하지 않습니다. 「IP 포워딩 활성화」는 별도 "
+"파일({path})을 기록하며, 재부팅 후에도 유지됩니다."
+
+msgid ""
+"Compte inconnu ou root : tapez le nom du compte Linux à rendre opérateur."
+msgstr "알 수 없는 계정이거나 root입니다: 운영자로 만들 Linux 계정 이름을 입력하십시오."
+
+#, python-brace-format
+msgid "{name} : {reason}"
+msgstr "{name}: {reason}"
+
+#, python-brace-format
+msgid "{label} : {before} → {after}"
+msgstr "{label}: {before} → {after}"
+
+msgid "Aucun changement."
+msgstr "변경 사항이 없습니다."
+
+msgid "Commande :"
+msgstr "명령:"
+
+#, python-brace-format
+msgid "Transfert IP désactivé ({keys}) : « Activer le transfert IP » aussi."
+msgstr "IP 포워딩 비활성({keys}): 「IP 포워딩 활성화」도 실행하십시오."
+
+#, python-brace-format
+msgid ""
+"Votre session passe par Tailscale ; ces changements peuvent la couper : "
+"{names}."
+msgstr "세션이 Tailscale을 거칩니다. 다음 변경으로 세션이 끊길 수 있습니다: {names}."
+
+#, python-brace-format
+msgid "Dernière application ({time}) : la commande a échoué (code {code})."
+msgstr "마지막 적용({time}): 명령 실패(코드 {code})."
+
+#, python-brace-format
+msgid "Dernière application ({time}) :"
+msgstr "마지막 적용({time}):"
+
+#, python-brace-format
+msgid "{label} : {after}"
+msgstr "{label}: {after}"
+
+#, python-brace-format
+msgid "{label} : {after} demandé, {now} lu"
+msgstr "{label}: {after} 요청, {now} 읽음"
+
+msgid "À appliquer :"
+msgstr "적용할 항목:"
+
+msgid "Valeur refusée : corrigez la ligne marquée ✖."
+msgstr "거부된 값: ✖ 표시된 줄을 고치십시오."
+
+msgid "APPLIQUER LES RÉGLAGES ?"
+msgstr "설정을 적용하시겠습니까?"
+
+msgid ""
+"Votre session passe par Tailscale : elle sera COUPÉE et ne reviendra pas. Il"
+" faudra un accès local (ou un autre chemin) pour vous reconnecter."
+msgstr ""
+"세션이 Tailscale을 거칩니다: 세션이 끊기고 돌아오지 않습니다. 다시 연결하려면 로컬 접속(또는 다른 경로)이 필요합니다."
+
+msgid "Ce qui est publié (Serve et Funnel) ne sera plus joignable."
+msgstr "게시된 항목(Serve와 Funnel)에 더 이상 접근할 수 없게 됩니다."
+
+msgid "ACTIVER LE TRANSFERT IP ?"
+msgstr "IP 포워딩을 활성화하시겠습니까?"
+
+#, python-brace-format
+msgid ""
+"Le noyau fera suivre les paquets (IPv4 et IPv6) : nécessaire pour un nœud de"
+" sortie ou des sous-réseaux annoncés. Fichier à part {path}, relu au "
+"démarrage (systemd, OpenRC, runit) ; pour annuler : supprimer ce fichier "
+"puis redémarrer."
+msgstr ""
+"커널이 패킷(IPv4 및 IPv6)을 전달합니다: 출구 노드나 광고된 서브넷에 필요합니다. 별도 파일 {path}은(는) 부팅 시 다시 "
+"읽힙니다(systemd, OpenRC, runit). 취소하려면 이 파일을 삭제한 뒤 다시 시작하십시오."
+
+msgid "SE CONNECTER ?"
+msgstr "연결하시겠습니까?"
+
+msgid ""
+"Remet cette machine dans le tailnet. Si un compte doit s'identifier, "
+"Tailscale affiche dans le terminal l'adresse à ouvrir dans un navigateur."
+msgstr ""
+"이 머신을 tailnet에 다시 넣습니다. 계정 로그인이 필요하면 Tailscale이 브라우저에서 열 주소를 터미널에 표시합니다."
+
+msgid "SE DÉCONNECTER ?"
+msgstr "연결을 해제하시겠습니까?"
+
+msgid ""
+"La machine quitte le tailnet (le compte reste enregistré : « Se connecter » "
+"la remet)."
+msgstr "머신이 tailnet에서 나갑니다(계정은 저장된 채 남으며 「연결」로 되돌립니다)."
+
+msgid "AJOUTER UN COMPTE ?"
+msgstr "계정을 추가하시겠습니까?"
+
+msgid ""
+"Connecte un autre compte (ou un autre tailnet) sur cette machine ; il "
+"devient le compte en cours. Tailscale affiche l'adresse à ouvrir pour vous "
+"identifier. L'ancien compte reste dans « Changer de compte »."
+msgstr ""
+"이 머신에 다른 계정(또는 다른 tailnet)을 연결하며, 그 계정이 현재 계정이 됩니다. Tailscale이 로그인할 때 열 주소를 "
+"표시합니다. 이전 계정은 「계정 전환」에 남습니다."
+
+msgid "Choisissez un autre compte que le compte en cours."
+msgstr "현재 계정이 아닌 다른 계정을 선택하십시오."
+
+msgid "CHANGER DE COMPTE ?"
+msgstr "계정을 전환하시겠습니까?"
+
+#, python-brace-format
+msgid ""
+"La machine passe sur le compte {account} (tailnet {tailnet}). Son adresse et"
+" ce qu'elle voit du tailnet changent."
+msgstr ""
+"머신이 {account} 계정(tailnet {tailnet})으로 전환됩니다. 머신의 주소와 tailnet에서 보이는 것이 바뀝니다."
+
+#, python-brace-format
+msgid ""
+"La machine est retirée du compte : sa clé est révoquée, il faudra s'identifier à nouveau (et peut-être la réapprouver) pour la remettre dans le tailnet.\n"
+"\n"
+"Commande : {command}"
+msgstr ""
+"머신이 계정에서 제거됩니다: 키가 폐기되며, tailnet에 다시 넣으려면 다시 로그인해야(그리고 다시 승인해야 할 수도) 합니다.\n"
+"\n"
+"명령: {command}"
+
+#, python-brace-format
+msgid "Pour confirmer, tapez le nom de la machine : {word}"
+msgstr "확인하려면 머신 이름을 입력하십시오: {word}"
+
+msgid "DÉCONNEXION DÉFINITIVE ?"
+msgstr "영구 로그아웃하시겠습니까?"
+
+msgid "Déconnecter"
+msgstr "연결 해제"
+
+msgid "bouton « Devenir opérateur »"
+msgstr "「운영자 되기」 버튼"
+
+#, python-brace-format
+msgid "lot {lot}"
+msgstr "{lot}차"
+
+msgid "Tailscale"
+msgstr "Tailscale"
+
+msgid "n'est pas installé"
+msgstr "설치되지 않음"
+
+#, python-brace-format
+msgid "ne répond pas : {error}"
+msgstr "응답 없음: {error}"
+
+msgid "tailscaled"
+msgstr "tailscaled"
+
+msgid "Client installé"
+msgstr "설치된 클라이언트"
+
+#, python-brace-format
+msgid "{daemon} en marche, {client} installé"
+msgstr "{daemon} 실행 중, {client} 설치됨"
+
+msgid "Version"
+msgstr "버전"
+
+msgid "Compte"
+msgstr "계정"
+
+msgid "Appareils du tailnet"
+msgstr "tailnet 장치"
+
+#, python-brace-format
+msgid "{online} en ligne sur {total}"
+msgstr "{total}개 중 {online}개 온라인"
+
+msgid "Clé de la machine"
+msgstr "머신 키"
+
+msgid "aucun (sudo requis)"
+msgstr "없음(sudo 필요)"
+
+msgid "Nœud de sortie proposé"
+msgstr "출구 노드 제공"
+
+msgid "Machine"
+msgstr "머신"
+
+#, python-brace-format
+msgid "{name} ({count} fils)"
+msgstr "{name}(스레드 {count}개)"
+
+msgid "CPU machine"
+msgstr "머신 CPU"
+
+msgid "Charge"
+msgstr "부하"
+
+msgid "Température"
+msgstr "온도"
+
+msgid "Mémoire"
+msgstr "메모리"
+
+#, python-brace-format
+msgid "{used} utilisés sur {total}"
+msgstr "{total} 중 {used} 사용"
+
+msgid "CPU tailscaled"
+msgstr "tailscaled CPU"
+
+#, python-brace-format
+msgid "{cpu} d'un cœur, {memory}"
+msgstr "코어 하나의 {cpu}, {memory}"
+
+msgid "Confinement"
+msgstr "자원 제한"
+
+msgid "Funnel"
+msgstr "Funnel"
+
+msgid "coupé par le disjoncteur"
+msgstr "서킷 브레이커로 차단됨"
+
+#, python-brace-format
+msgid "ouvert sur {ports}"
+msgstr "{ports}에서 열림"
+
+msgid "sans porte"
+msgstr "게이트 없음"
+
+msgid "fermé"
+msgstr "닫힘"
+
+msgid "actif · MODE ATTAQUE"
+msgstr "활성 · 공격 모드"
+
+msgid "Pare-feu (porte)"
+msgstr "방화벽(게이트)"
+
+msgid "inactif"
+msgstr "비활성"
+
+#, python-brace-format
+msgid "{count} entrée(s)"
+msgstr "항목 {count}개"
+
+msgid "Veille"
+msgstr "감시"
+
+msgid "inactive"
+msgstr "비활성"
+
+msgid "arrêtée"
+msgstr "중지됨"
+
+#, python-brace-format
+msgid "active, palier {level}"
+msgstr "활성, 단계 {level}"
+
+msgid "Bouclier WireGuard"
+msgstr "WireGuard 방패"
+
+msgid "non posé"
+msgstr "설치 안 됨"
+
+msgid "ABSENT (table effacée)"
+msgstr "없음(테이블 삭제됨)"
+
+msgid "état non mis à jour"
+msgstr "상태 갱신 안 됨"
+
+#, python-brace-format
+msgid "posé, mode {mode}"
+msgstr "설치됨, 모드 {mode}"
+
+msgid "TABLEAU DE BORD"
+msgstr "대시보드"
+
+msgid "Corriger"
+msgstr "수정"
+
+msgid "Alerte"
+msgstr "경고"
+
+msgid "Où corriger"
+msgstr "수정 위치"
+
+#, python-brace-format
+msgid "Lu à {time} · relu toutes les 5 s"
+msgstr "{time}에 읽음 · 5초마다 다시 읽음"
+
+msgid "Choisissez une alerte puis « Corriger » (ou Entrée)."
+msgstr "경고를 선택한 뒤 「수정」(또는 Enter)."
+
+msgid "Aucune alerte choisie."
+msgstr "선택한 경고가 없습니다."
+
+msgid "Rien à ouvrir pour cette alerte : elle vient de Tailscale lui-même."
+msgstr "이 경고에는 열 화면이 없습니다: Tailscale 자체에서 온 경고입니다."
+
+#, python-brace-format
+msgid "Fichier trop volumineux pour être lu ici : {path}"
+msgstr "파일이 너무 커서 여기서 읽을 수 없음: {path}"
+
+#, python-brace-format
+msgid "Lecture impossible : {error}"
+msgstr "읽을 수 없음: {error}"
+
+msgid "EXPORTS"
+msgstr "내보내기"
+
+msgid ""
+"Pas de navigateur dans cette session (serveur, connexion SSH) : les exports "
+"sont listés et lus ici. Choisissez une ligne (Entrée) pour la lire."
+msgstr ""
+"이 세션에는 브라우저가 없습니다(서버, SSH 연결): 내보내기를 여기에 나열하고 여기서 읽습니다. 줄을 선택해(Enter) 읽으세요."
+
+msgid "Lire"
+msgstr "읽기"
+
+msgid "Taille"
+msgstr "크기"
+
+msgid "Aucun export pour l'instant."
+msgstr "아직 내보내기가 없습니다."
+
+#, python-brace-format
+msgid "Dossier des exports ouvert dans le navigateur : {path}"
+msgstr "내보내기 폴더를 브라우저에서 열었습니다: {path}"
+
+msgid "Connexions par adresse / 10 s"
+msgstr "주소별 연결 / 10초"
+
+msgid "Par préfixe /24 ou /64 / 10 s"
+msgstr "/24 또는 /64 접두사별 / 10초"
+
+msgid "Budget global (admises / s)"
+msgstr "전체 예산(허용 / 초)"
+
+msgid "Connexions simultanées"
+msgstr "동시 연결"
+
+msgid "Durée de blocage (min)"
+msgstr "차단 시간(분)"
+
+msgid "Mode attaque au-delà de (entrantes / s)"
+msgstr "공격 모드 기준(수신 / 초)"
+
+msgid "Retour au normal après (min de calme)"
+msgstr "일반 복귀(안정 분)"
+
+msgid "AS d'hébergeur / 10 s"
+msgstr "호스팅 업체 AS / 10초"
+
+msgid "Empreinte inconnue / 10 s"
+msgstr "알 수 없는 지문 / 10초"
+
+msgid "Pays limité / 10 s"
+msgstr "제한 국가 / 10초"
+
+msgid ""
+"HAProxy sans Lua : regroupements indisponibles (la porte du lot 4 protège "
+"seule)."
+msgstr "Lua 없는 HAProxy: 그룹화를 사용할 수 없습니다(4차 게이트만 보호)."
+
+msgid "Regroupements : appliqués (refusent en mode attaque)"
+msgstr "그룹화: 적용(공격 모드에서 거부)"
+
+msgid ""
+"Regroupements : en observation (comptent « aurait refusé », ne refusent "
+"rien)"
+msgstr "그룹화: 관찰 중(「거부되었을 연결」만 집계, 거부하지 않음)"
+
+#, python-brace-format
+msgid "Mode : ATTAQUE — retour au normal après {seconds} s de calme"
+msgstr "모드: 공격 — {seconds}초 안정 후 일반으로 복귀"
+
+msgid "Mode : normal"
+msgstr "모드: 일반"
+
+#, python-brace-format
+msgid ""
+"Empreintes : apprentissage, encore {days} jour(s) ; les regroupements "
+"restent en observation jusqu'à la fin."
+msgstr "지문: 학습 중, {days}일 남음. 끝날 때까지 그룹화는 관찰 상태로 유지됩니다."
+
+#, python-brace-format
+msgid ""
+"Empreintes habituelles : {count} (référence prête) ; « appliqués » est "
+"maintenant possible."
+msgstr "평소 지문: {count}(기준 준비됨). 이제 「적용」을 선택할 수 있습니다."
+
+msgid ""
+"Base AS / pays : absente (« Mettre à jour la base », ou la veille une fois "
+"par mois)"
+msgstr "AS / 국가 데이터베이스: 없음(「데이터베이스 업데이트」 또는 감시가 한 달에 한 번)"
+
+#, python-brace-format
+msgid ""
+"Base AS / pays : à jour il y a {days} jour(s) ; renouvelée chaque mois par "
+"la veille"
+msgstr "AS / 국가 데이터베이스: {days}일 전 업데이트, 감시가 매달 갱신"
+
+msgid ""
+"Navigateurs courants (Chrome, Edge, Firefox) jamais limités par ces règles."
+msgstr "일반 브라우저(Chrome, Edge, Firefox)는 이 규칙으로 결코 제한되지 않습니다."
+
+msgid ""
+"Une porte (HAProxy) se place entre Funnel et votre site : elle voit "
+"l'adresse réelle de chaque visiteur et refuse les abus AVANT tout "
+"chiffrement (4,6 fois moins de calcul par connexion refusée, mesuré). "
+"Activation et désactivation avec retour arrière automatique."
+msgstr ""
+"Funnel과 사이트 사이에 게이트(HAProxy)를 둡니다: 게이트는 각 방문자의 실제 주소를 보고 모든 암호화 전에 남용을 "
+"거부합니다(측정 결과 거부된 연결당 계산 4.6배 감소). 활성화와 비활성화 시 자동으로 되돌립니다."
+
+msgid "Installer HAProxy"
+msgstr "HAProxy 설치"
+
+msgid "Activer la protection"
+msgstr "보호 활성화"
+
+msgid "Désactiver la protection"
+msgstr "보호 비활성화"
+
+msgid "Renouveler le certificat"
+msgstr "인증서 갱신"
+
+msgid "RÈGLES (appliquées à chaud)"
+msgstr "규칙(즉시 적용)"
+
+msgid "Mode"
+msgstr "모드"
+
+msgid "normal : refuse"
+msgstr "일반: 거부"
+
+msgid "observation : compte sans refuser"
+msgstr "관찰: 거부 없이 집계"
+
+msgid "Vérifier le nom visé"
+msgstr "대상 이름 확인"
+
+msgid "nombre"
+msgstr "숫자"
+
+msgid "Appliquer les règles"
+msgstr "규칙 적용"
+
+msgid "LISTES"
+msgstr "목록"
+
+msgid "Adresse ou réseau (203.0.113.7, 198.51.100.0/24, 2001:db8::/48)"
+msgstr "주소 또는 네트워크(203.0.113.7, 198.51.100.0/24, 2001:db8::/48)"
+
+msgid "Mettre en confiance"
+msgstr "신뢰 지정"
+
+msgid "REGROUPEMENTS : EMPREINTES, AS, PAYS"
+msgstr "그룹화: 지문, AS, 국가"
+
+msgid ""
+"Contre les attaques à adresses dispersées : chaque connexion reçoit, avant "
+"tout chiffrement, son empreinte (JA4), son AS et son pays. Quand les "
+"connexions entrantes dépassent le seuil, la porte passe seule en MODE "
+"ATTAQUE : une empreinte inconnue qui explose, un AS d'hébergeur ou un pays "
+"choisi qui dépasse son débit est alors refusé. Les navigateurs courants ne "
+"sont jamais touchés ; les clients connus passent avant le budget. En "
+"observation, tout est compté (« aurait refusé ») et rien n'est refusé."
+msgstr ""
+"흩어진 주소로 하는 공격에 대응합니다: 모든 연결은 암호화 전에 지문(JA4), AS, 국가를 부여받습니다. 들어오는 연결이 임계값을 "
+"넘으면 게이트가 스스로 공격 모드로 전환합니다: 그러면 폭증하는 알 수 없는 지문, 호스팅 업체 AS, 속도를 넘는 선택 국가가 "
+"거부됩니다. 일반 브라우저는 결코 영향을 받지 않으며, 알려진 클라이언트는 예산보다 우선합니다. 관찰 중에는 모두 집계하되(「거부되었을 "
+"연결」) 아무것도 거부하지 않습니다."
+
+msgid "Regroupements"
+msgstr "그룹화"
+
+msgid "observation : comptent sans refuser"
+msgstr "관찰: 거부 없이 집계"
+
+msgid "appliqués : refusent en mode attaque (après l'apprentissage)"
+msgstr "적용: 공격 모드에서 거부(학습 후)"
+
+msgid "Clients connus avant le budget"
+msgstr "알려진 클라이언트 예산 우선"
+
+msgid "Pays limités en mode attaque"
+msgstr "공격 모드 시 제한 국가"
+
+msgid "ex. CN, RU (vide : aucun)"
+msgstr "예) CN, RU(비우면 없음)"
+
+msgid "AS d'hébergeurs"
+msgstr "호스팅 업체 AS"
+
+msgid "ex. 16509 24940 (numéros d'AS)"
+msgstr "예) 16509 24940(AS 번호)"
+
+msgid "Appliquer les regroupements"
+msgstr "그룹화 적용"
+
+msgid "Mettre à jour la base"
+msgstr "데이터베이스 업데이트"
+
+msgid "Recommencer l'apprentissage"
+msgstr "학습 다시 시작"
+
+#, python-brace-format
+msgid ""
+"Confiance (jamais limitées) : {trusted}\n"
+"Liste noire (refusées jusqu'à leur retrait) : {black}"
+msgstr ""
+"신뢰(제한 없음): {trusted}\n"
+"블랙리스트(제거할 때까지 거부): {black}"
+
+msgid ""
+"Téléchargement et préparation de la base AS / pays (DB-IP Lite) : une à "
+"quelques minutes, l'écran reste utilisable…"
+msgstr ""
+"AS / 국가 데이터베이스(DB-IP Lite) 다운로드 및 준비 중: 1분에서 몇 분 걸리며, 화면은 계속 사용할 수 있습니다…"
+
+msgid ""
+"Chaque menu, sa fonction et le détail. Cliquez sur un titre pour l'ouvrir."
+msgstr "각 메뉴, 그 기능과 세부 내용. 제목을 클릭하면 열립니다."
+
+msgid "Exporter l'aide en HTML"
+msgstr "도움말을 HTML로 내보내기"
+
+#, python-brace-format
+msgid "Aide exportée : {path}"
+msgstr "도움말 내보냄: {path}"
+
+#, python-brace-format
+msgid "Cet écran arrive dans une prochaine version (lot {lot})."
+msgstr "이 화면은 다음 버전({lot}차)에서 제공됩니다."
+
+msgid "Cet écran n'est pas disponible dans cette session."
+msgstr "이 세션에서는 이 화면을 사용할 수 없습니다."
+
+msgid "JOURNAUX"
+msgstr "로그"
+
+msgid "porte (pare-feu)"
+msgstr "게이트(방화벽)"
+
+#, python-brace-format
+msgid "{count} lignes"
+msgstr "{count}줄"
+
+msgid "Filtrer (texte, adresse…)"
+msgstr "필터(텍스트, 주소…)"
+
+msgid "Lecture du journal…"
+msgstr "로그 읽는 중…"
+
+msgid "Aucune ligne lue."
+msgstr "읽은 줄이 없습니다."
+
+#, python-brace-format
+msgid "{shown} ligne(s) affichée(s) sur {total} lue(s)."
+msgstr "읽은 {total}줄 중 {shown}줄 표시."
+
+msgid "Rien à exporter."
+msgstr "내보낼 것이 없습니다."
+
+#, python-brace-format
+msgid "Journal exporté : {path}"
+msgstr "로그 내보냄: {path}"
+
+msgid "maintenant"
+msgstr "방금"
+
+#, python-brace-format
+msgid "il y a {count} min"
+msgstr "{count}분 전"
+
+#, python-brace-format
+msgid "il y a {count} h"
+msgstr "{count}시간 전"
+
+#, python-brace-format
+msgid "il y a {count} j"
+msgstr "{count}일 전"
+
+msgid "direct"
+msgstr "직접"
+
+msgid "relais"
+msgstr "릴레이"
+
+#, python-brace-format
+msgid "relais {code}"
+msgstr "릴레이 {code}"
+
+msgid "sortie Internet"
+msgstr "인터넷 출구"
+
+#, python-brace-format
+msgid "Diagnostic impossible : {error}"
+msgstr "진단할 수 없습니다: {error}"
+
+msgid "Tailscale n'a rien répondu."
+msgstr "Tailscale이 아무 응답도 하지 않았습니다."
+
+#, python-brace-format
+msgid "oui, adresse publique {address}"
+msgstr "예, 공인 주소 {address}"
+
+#, python-brace-format
+msgid "UDP : {value}"
+msgstr "UDP: {value}"
+
+msgid "non — tout passe par les relais de Tailscale (plus lent)"
+msgstr "아니요 — 모두 Tailscale 릴레이를 거침(더 느림)"
+
+#, python-brace-format
+msgid "IPv4 : {value}"
+msgstr "IPv4: {value}"
+
+#, python-brace-format
+msgid "IPv6 : {value}"
+msgstr "IPv6: {value}"
+
+#, python-brace-format
+msgid "NAT : {value}"
+msgstr "NAT: {value}"
+
+msgid ""
+"difficile — le port change selon la destination, les relais seront plus "
+"fréquents"
+msgstr "어려움 — 목적지에 따라 포트가 바뀌어 릴레이를 더 자주 사용함"
+
+msgid "simple — les connexions directes se font facilement"
+msgstr "쉬움 — 직접 연결이 쉽게 이루어짐"
+
+#, python-brace-format
+msgid "Ouverture de port par la box : {value}"
+msgstr "공유기의 포트 열기: {value}"
+
+#, python-brace-format
+msgid "Relais le plus proche : {value}"
+msgstr "가장 가까운 릴레이: {value}"
+
+#, python-brace-format
+msgid "Latence des relais : {values}"
+msgstr "릴레이 지연 시간: {values}"
+
+msgid "Compteurs internes illisibles (Tailscale trop ancien ?)."
+msgstr "내부 카운터를 읽을 수 없습니다(Tailscale이 너무 오래된 버전?)."
+
+msgid "Reçu"
+msgstr "수신"
+
+msgid "Envoyé"
+msgstr "송신"
+
+#, python-brace-format
+msgid ""
+"{title} depuis le démarrage : direct {direct} · relais DERP {derp} · relais "
+"d'un pair {peer}"
+msgstr "시작 이후 {title}: 직접 {direct} · DERP 릴레이 {derp} · 피어 릴레이 {peer}"
+
+#, python-brace-format
+msgid "Paquets jetés en sortie : {count}"
+msgstr "송신 시 버린 패킷: {count}"
+
+#, python-brace-format
+msgid "Messages de santé : {count}"
+msgstr "상태 메시지: {count}"
+
+msgid "RÉSEAU ET APPAREILS"
+msgstr "네트워크와 장치"
+
+msgid ""
+"Ce que voit Tailscale depuis cette machine : les appareils du tailnet, le "
+"chemin vers chacun (direct ou par un relais), et l'état du réseau. Lecture "
+"seule : rien n'est changé ici."
+msgstr ""
+"이 머신에서 Tailscale이 보는 것: tailnet의 장치, 각 장치까지의 경로(직접 또는 릴레이 경유), 네트워크 상태. 읽기 "
+"전용: 여기서는 아무것도 바뀌지 않습니다."
+
+msgid "APPAREILS"
+msgstr "장치"
+
+msgid "filtrer : nom, système, adresse"
+msgstr "필터: 이름, 시스템, 주소"
+
+msgid "Relais Funnel de Tailscale"
+msgstr "Tailscale Funnel 릴레이"
+
+msgid "Chemin"
+msgstr "경로"
+
+msgid "Vu"
+msgstr "확인"
+
+msgid "nom ou adresse (vide : la ligne choisie)"
+msgstr "이름 또는 주소(비우면 선택한 줄)"
+
+msgid "Ping Tailscale"
+msgstr "Tailscale 핑"
+
+msgid "Qui est-ce ?"
+msgstr "누구인가요?"
+
+msgid "DIAGNOSTIC RÉSEAU"
+msgstr "네트워크 진단"
+
+msgid ""
+"UDP, IPv4 / IPv6, type de NAT, ouverture de port par la box, relais le plus "
+"proche : ce qui décide si les connexions sont directes. Prend quelques "
+"secondes."
+msgstr ""
+"UDP, IPv4 / IPv6, NAT 유형, 공유기의 포트 열기, 가장 가까운 릴레이: 연결이 직접 이루어질지를 결정하는 요소들. 몇 "
+"초 걸립니다."
+
+msgid "Lancer le diagnostic"
+msgstr "진단 실행"
+
+msgid "DIAGNOSTIC"
+msgstr "진단"
+
+msgid "VERROU DU TAILNET"
+msgstr "TAILNET 잠금"
+
+msgid "COMPTEURS INTERNES"
+msgstr "내부 카운터"
+
+#, python-brace-format
+msgid "Illisible : {error}"
+msgstr "읽을 수 없음: {error}"
+
+#, python-brace-format
+msgid ""
+"{online} en ligne sur {total} appareil(s) ; {relays} relais Funnel de "
+"Tailscale (cochez pour les voir)."
+msgstr "장치 {total}개 중 {online}개 온라인. Tailscale Funnel 릴레이 {relays}개(보려면 체크)."
+
+#, python-brace-format
+msgid "Appareils illisibles : {error}"
+msgstr "장치를 읽을 수 없습니다: {error}"
+
+msgid "Choisissez un appareil, ou tapez un nom ou une adresse."
+msgstr "장치를 선택하거나 이름 또는 주소를 입력하십시오."
+
+#, python-brace-format
+msgid "PING {target}"
+msgstr "핑 {target}"
+
+#, python-brace-format
+msgid "QUI EST-CE ? {target}"
+msgstr "누구인가요? {target}"
+
+msgid "Lecture…"
+msgstr "읽는 중…"
+
+msgid "Ping en cours (3 essais au plus)…"
+msgstr "핑 진행 중(최대 3회)…"
+
+#, python-brace-format
+msgid "« {target} » n'est pas un nom ou une adresse valable."
+msgstr "「{target}」은(는) 올바른 이름이나 주소가 아닙니다."
+
+msgid "Diagnostic en cours (quelques secondes)…"
+msgstr "진단 중(몇 초)…"
+
+msgid "tailnet seul"
+msgstr "tailnet 전용"
+
+msgid "par la porte ✔"
+msgstr "게이트 경유 ✔"
+
+msgid "non protégé"
+msgstr "보호 안 됨"
+
+#, python-brace-format
+msgid "depuis Internet (relais Funnel {via})"
+msgstr "인터넷에서(Funnel 릴레이 {via})"
+
+#, python-brace-format
+msgid "par le tailnet ({via})"
+msgstr "tailnet 경유({via})"
+
+#, python-brace-format
+msgid "{kind} {port}{path} {where} : {detail}"
+msgstr "{kind} {port}{path} {where}: {detail}"
+
+#, python-brace-format
+msgid "Temps : {ms:.0f} ms"
+msgstr "시간: {ms:.0f} ms"
+
+#, python-brace-format
+msgid "Certificat : {subject} · émis par {issuer} · échéance {expiry} · {tls}"
+msgstr "인증서: {subject} · 발급자 {issuer} · 만료 {expiry} · {tls}"
+
+msgid ""
+"Le nom n'est pas encore publié pour Internet : juste après un ajout, Funnel "
+"met parfois une minute. Réessayez."
+msgstr "이름이 아직 인터넷에 게시되지 않았습니다: 추가 직후에는 Funnel이 1분 정도 걸리기도 합니다. 다시 시도하십시오."
+
+msgid ""
+"Un essai par le tailnet depuis la machine elle-même peut échouer selon le "
+"système : essayez aussi depuis un autre appareil."
+msgstr "머신 자신에서 tailnet을 거친 테스트는 시스템에 따라 실패할 수 있습니다: 다른 장치에서도 시도해 보십시오."
+
+msgid ""
+"Ce que cette machine publie : pour le tailnet seul (Serve) ou pour Internet "
+"(Funnel). Chaque changement est vérifié, et l'état d'avant est sauvegardé "
+"(restaurable en un bouton)."
+msgstr ""
+"이 머신이 게시하는 것: tailnet 전용(Serve) 또는 인터넷(Funnel). 모든 변경은 검사되며, 이전 상태는 백업됩니다(버튼"
+" 하나로 복원 가능)."
+
+msgid "Essai de bout en bout"
+msgstr "종단 간 테스트"
+
+msgid "Retirer"
+msgstr "제거"
+
+msgid "Suspendre Funnel"
+msgstr "Funnel 일시 중지"
+
+msgid "Rétablir Funnel"
+msgstr "Funnel 복원"
+
+msgid "AJOUTER"
+msgstr "추가"
+
+msgid ""
+"Pour Internet, le plus sûr : HTTPS sur le port 443, puis « Activer la "
+"protection » (Pare-feu Funnel) pour que la porte filtre avant tout "
+"chiffrement."
+msgstr ""
+"인터넷용으로 가장 안전한 방법: 포트 443의 HTTPS, 그다음 「보호 활성화」(Funnel 방화벽)로 게이트가 모든 암호화 전에 "
+"필터링하게 합니다."
+
+msgid "Service local"
+msgstr "로컬 서비스"
+
+msgid "8080 ou http://127.0.0.1:8080"
+msgstr "8080 또는 http://127.0.0.1:8080"
+
+msgid "Pour"
+msgstr "대상"
+
+msgid "le tailnet seul (Serve)"
+msgstr "tailnet 전용(Serve)"
+
+msgid "Port (Funnel : 443, 8443, 10000)"
+msgstr "포트(Funnel: 443, 8443, 10000)"
+
+msgid "Chemin (HTTPS / HTTP)"
+msgstr "경로(HTTPS / HTTP)"
+
+msgid "Publier"
+msgstr "게시"
+
+msgid "SAUVEGARDES"
+msgstr "백업"
+
+msgid ""
+"L'état d'avant chaque changement (publication, pare-feu, disjoncteur) ; les "
+"50 plus récentes sont gardées dans var/funnel/sauvegardes/."
+msgstr ""
+"각 변경(게시, 방화벽, 서킷 브레이커) 이전의 상태. 최근 50개를 var/funnel/sauvegardes/에 보관합니다."
+
+msgid "Aucune sauvegarde"
+msgstr "백업 없음"
+
+msgid "Restaurer"
+msgstr "복원"
+
+#, python-brace-format
+msgid "Publication illisible : {error}"
+msgstr "게시 정보를 읽을 수 없습니다: {error}"
+
+msgid "Internet"
+msgstr "인터넷"
+
+msgid "tailnet"
+msgstr "tailnet"
+
+msgid "Rien n'est publié. « Publier » ci-dessous pour commencer."
+msgstr "게시된 것이 없습니다. 아래 「게시」로 시작하십시오."
+
+msgid ""
+"Pour changer la publication, devenez opérateur de Tailscale (tableau de "
+"bord)."
+msgstr "게시를 바꾸려면 Tailscale 운영자가 되십시오(대시보드)."
+
+msgid "Essai en cours…"
+msgstr "테스트 중…"
+
+#, python-brace-format
+msgid ""
+"Retire {kind} {port}{path} → {target} ({who}). L'état d'avant est sauvegardé.\n"
+"\n"
+"Commande : {command}"
+msgstr ""
+"{kind} {port}{path} → {target}({who})을(를) 제거합니다. 이전 상태는 백업됩니다.\n"
+"\n"
+"명령: {command}"
+
+msgid "RETIRER CETTE PUBLICATION ?"
+msgstr "이 게시를 제거하시겠습니까?"
+
+#, python-brace-format
+msgid ""
+"Le service {target} sera joignable depuis Internet (Funnel, port {port}). "
+"Pensez ensuite à « Activer la protection » (Pare-feu Funnel)."
+msgstr ""
+"{target} 서비스에 인터넷에서 접근할 수 있게 됩니다(Funnel, 포트 {port}). 그다음 「보호 활성화」(Funnel "
+"방화벽)를 잊지 마십시오."
+
+msgid "PUBLIER SUR INTERNET ?"
+msgstr "인터넷에 게시하시겠습니까?"
+
+msgid "Choisissez une sauvegarde."
+msgstr "백업을 선택하십시오."
+
+#, python-brace-format
+msgid ""
+"La publication redevient celle du {when} ({origin}) : {summary}.\n"
+"L'état actuel est sauvegardé d'abord ; tout est vérifié, et remis comme avant en cas d'échec."
+msgstr ""
+"게시가 {when}({origin})의 상태로 돌아갑니다: {summary}.\n"
+"현재 상태를 먼저 백업하며, 모두 검사하고 실패하면 이전대로 되돌립니다."
+
+msgid "RESTAURER CETTE SAUVEGARDE ?"
+msgstr "이 백업을 복원하시겠습니까?"
+
+msgid "QUITTER OMEGA-TAIL ?"
+msgstr "OMEGA-TAIL을 종료하시겠습니까?"
+
+msgid "RAPPORT"
+msgstr "보고서"
+
+msgid ""
+"Tout ce qu'omega-tail sait de cette machine, en faits : Tailscale, "
+"publication, machine, pare-feu, survie, alertes, et les attaques des 7 "
+"derniers jours (journal de la porte). Enregistré dans le dossier des exports"
+" ; « Voir les exports » les ouvre pour les lire."
+msgstr ""
+"omega-tail이 이 머신에 대해 아는 모든 것을 사실로: Tailscale, 게시, 머신, 방화벽, 생존, 경고, 최근 7일간의 "
+"공격(게이트 로그). 내보내기 폴더에 저장되며, 「내보내기 보기」로 열어 읽을 수 있습니다."
+
+msgid ""
+"Inclure le compte Tailscale et les appareils du tailnet (noms, adresses)"
+msgstr "Tailscale 계정과 tailnet 장치(이름, 주소) 포함"
+
+msgid ""
+"Sans cette case, seul leur nombre figure : le rapport peut être envoyé à "
+"quelqu'un sans dévoiler votre tailnet. Les adresses des attaquants y restent"
+" toujours."
+msgstr ""
+"이 상자를 선택하지 않으면 개수만 표시됩니다: tailnet을 드러내지 않고 보고서를 다른 사람에게 보낼 수 있습니다. 공격자의 주소는 "
+"항상 포함됩니다."
+
+msgid "APERÇU"
+msgstr "미리 보기"
+
+msgid "Actualiser"
+msgstr "새로 고침"
+
+msgid ""
+"Rapport en préparation (journal de la porte des 7 derniers jours compris)…"
+msgstr "보고서 준비 중(최근 7일간의 게이트 로그 포함)…"
+
+#, python-brace-format
+msgid "Erreur : {message}"
+msgstr "오류: {message}"
+
+#, python-brace-format
+msgid "Rapport prêt ({time})."
+msgstr "보고서 준비 완료({time})."
+
+msgid "ARRÊTER TAILSCALED ?"
+msgstr "TAILSCALED를 중지하시겠습니까?"
+
+msgid "DÉMARRER TAILSCALED ?"
+msgstr "TAILSCALED를 시작하시겠습니까?"
+
+msgid "REDÉMARRER TAILSCALED ?"
+msgstr "TAILSCALED를 다시 시작하시겠습니까?"
+
+msgid ""
+"Tailscale se reconnecte au tailnet ; les publications (Serve, Funnel) "
+"reprennent."
+msgstr "Tailscale이 tailnet에 다시 연결되며, 게시(Serve, Funnel)가 다시 시작됩니다."
+
+msgid ""
+"Tailscale est coupé : plus d'accès par le tailnet, publications (Serve, "
+"Funnel) interrompues jusqu'au prochain démarrage."
+msgstr ""
+"Tailscale이 중지됩니다: tailnet을 통한 접속이 끊기고, 다음 시작 때까지 게시(Serve, Funnel)가 중단됩니다."
+
+msgid ""
+"Coupure de quelques secondes : le tailnet et les publications (Serve, "
+"Funnel) reviennent d'eux-mêmes. Applique une mise à jour déjà installée."
+msgstr "몇 초간 끊깁니다: tailnet과 게시(Serve, Funnel)는 저절로 돌아옵니다. 이미 설치된 업데이트를 적용합니다."
+
+msgid "systemd ne connaît pas le service tailscaled sur cette machine."
+msgstr "이 머신의 systemd에 tailscaled 서비스가 없습니다."
+
+#, python-brace-format
+msgid "Depuis : {since}"
+msgstr "시작 시각: {since}"
+
+#, python-brace-format
+msgid "Processus : {pid} · mémoire {memory}"
+msgstr "프로세스: {pid} · 메모리 {memory}"
+
+#, python-brace-format
+msgid "Version en marche : {version}"
+msgstr "실행 중인 버전: {version}"
+
+msgid ""
+"→ La mise à jour est installée mais pas appliquée : « Redémarrer » "
+"l'applique."
+msgstr "→ 업데이트가 설치되었지만 적용되지 않았습니다: 「다시 시작」으로 적용합니다."
+
+#, python-brace-format
+msgid "Système d'init : {init} · service « {name} »"
+msgstr "init 시스템: {init} · 서비스 「{name}」"
+
+#, python-brace-format
+msgid "Lancement : {command}"
+msgstr "실행 명령: {command}"
+
+#, python-brace-format
+msgid "Fichier du service : {path}"
+msgstr "서비스 파일: {path}"
+
+msgid "Fichiers d'ajout (lus, jamais modifiés par omega-tail) :"
+msgstr "추가 설정 파일(읽기만, omega-tail이 수정하지 않음):"
+
+msgid "Fichiers d'ajout : aucun."
+msgstr "추가 설정 파일: 없음."
+
+msgid ""
+"⚠ Le démarrage lance « tailscale up » : si un réglage change (opérateur, "
+"nom, routes…), Tailscale le refusera et tailscaled ne redémarrera plus. « "
+"Corriger le démarrage » ajoute « - » devant la commande (son refus n'arrête "
+"plus le service)."
+msgstr ""
+"⚠ 시작할 때 「tailscale up」을 실행합니다: 설정(운영자, 이름, 경로…)이 바뀌면 Tailscale이 이를 거부하고 "
+"tailscaled가 다시 시작되지 않습니다. 「시작 설정 수정」은 명령 앞에 「-」를 추가합니다(거부되어도 서비스가 멈추지 않음)."
+
+#, python-brace-format
+msgid "Confinement : {state}"
+msgstr "자원 제한: {state}"
+
+#, python-brace-format
+msgid ""
+"  plafond CPU {quota} · poids {weight} · cœurs {cpus} · priorité {nice}"
+msgstr "  CPU 상한 {quota} · 가중치 {weight} · 코어 {cpus} · 우선순위 {nice}"
+
+msgid "tous"
+msgstr "전체"
+
+msgid ""
+"  ⚠ Confinement perdu au redémarrage de tailscaled : « Survie » → « "
+"Appliquer le confinement »."
+msgstr "  ⚠ tailscaled 재시작으로 자원 제한이 사라졌습니다: 「생존」 → 「자원 제한 적용」."
+
+msgid "  Le confinement se règle dans « Survie »."
+msgstr "  자원 제한은 「생존」에서 설정합니다."
+
+msgid "⚠ Cette session passe par Tailscale : arrêter tailscaled la couperait."
+msgstr "⚠ 이 세션은 Tailscale을 거칩니다: tailscaled를 중지하면 세션이 끊깁니다."
+
+msgid "SERVICE TAILSCALED"
+msgstr "TAILSCALED 서비스"
+
+msgid ""
+"Chaque action montre sa commande avant d'être lancée ; le mot de passe sudo "
+"se saisit dans le terminal."
+msgstr "모든 작업은 실행 전에 명령을 보여 줍니다. sudo 비밀번호는 터미널에서 입력합니다."
+
+msgid "Démarrer"
+msgstr "시작"
+
+msgid "Corriger le démarrage"
+msgstr "시작 설정 수정"
+
+msgid "VOUS ALLEZ PERDRE CETTE SESSION"
+msgstr "이 세션이 끊깁니다"
+
+msgid ""
+"Dernière confirmation : tailscaled sera arrêté et cette session coupée. Vous"
+" devrez le relancer depuis le réseau local ou la machine elle-même."
+msgstr "마지막 확인: tailscaled가 중지되고 이 세션이 끊깁니다. 로컬 네트워크나 머신 자체에서 다시 시작해야 합니다."
+
+msgid "Arrêter quand même"
+msgstr "그래도 중지"
+
+msgid "Enregistrés dans var/settings.json, appliqués tout de suite."
+msgstr "var/settings.json에 저장되며, 바로 적용됩니다."
+
+msgid "Thème de l'interface"
+msgstr "인터페이스 테마"
+
+msgid "Thème des exports (rapport HTML, aide exportée)"
+msgstr "내보내기 테마 (HTML 보고서, 내보낸 도움말)"
+
+msgid "Dossier des exports"
+msgstr "내보내기 폴더"
+
+#, python-brace-format
+msgid "Par défaut : {path}. Laissez vide pour revenir au dossier par défaut."
+msgstr "기본값: {path}. 비워 두면 기본 폴더로 돌아갑니다."
+
+msgid "Dossier des captures d'écran"
+msgstr "스크린샷 폴더"
+
+#, python-brace-format
+msgid "Par défaut : {path}. Capture : Ctrl+P → « Capture d'écran »."
+msgstr "기본값: {path}. 스크린샷: Ctrl+P → “스크린샷”."
+
+msgid "Enregistrer les dossiers"
+msgstr "폴더 저장"
+
+msgid "Maintenance des dossiers"
+msgstr "폴더 유지 관리"
+
+msgid ""
+"Supprime définitivement le contenu du dossier configuré ; le dossier reste."
+msgstr "설정된 폴더의 내용을 영구적으로 삭제합니다. 폴더는 남습니다."
+
+msgid "Vider le dossier des exports"
+msgstr "내보내기 폴더 비우기"
+
+msgid "Vider le dossier des captures"
+msgstr "스크린샷 폴더 비우기"
+
+msgid "des exports"
+msgstr "내보내기"
+
+msgid "des captures"
+msgstr "스크린샷"
+
+#, python-brace-format
+msgid "Chemin à donner en entier (commençant par / ou ~) : {path}"
+msgstr "전체 경로를 입력하세요 (/ 또는 ~로 시작): {path}"
+
+#, python-brace-format
+msgid "Dossiers enregistrés : {paths}"
+msgstr "폴더 저장됨: {paths}"
+
+#, python-brace-format
+msgid "VIDER LE DOSSIER {label} ?"
+msgstr "{label} 폴더를 비우시겠습니까?"
+
+#, python-brace-format
+msgid ""
+"Supprime définitivement tout le contenu de {directory}. Le dossier reste."
+msgstr "{directory}의 모든 내용을 영구적으로 삭제합니다. 폴더는 남습니다."
+
+#, python-brace-format
+msgid "Refusé — {path} : {reason}"
+msgstr "거부됨 — {path}: {reason}"
+
+#, python-brace-format
+msgid "{count} élément(s) supprimé(s) dans {path}."
+msgstr "{path}에서 항목 {count}개를 삭제했습니다."
+
+#, python-brace-format
+msgid "Non supprimés : {items}"
+msgstr "삭제되지 않음: {items}"
+
+msgid "Pairs connus"
+msgstr "알려진 피어"
+
+msgid "Poignées de main"
+msgstr "핸드셰이크"
+
+msgid "Poignées de main en excès (par source)"
+msgstr "초과 핸드셰이크(출처별)"
+
+msgid "Sources inconnues, paquets bien formés"
+msgstr "알 수 없는 출처, 정상 패킷"
+
+msgid "Sources inconnues en excès (par source)"
+msgstr "알 수 없는 출처 초과(출처별)"
+
+msgid "Excès de l'ensemble des sources inconnues"
+msgstr "알 수 없는 출처 전체 초과"
+
+msgid "Paquets qui ne sont pas du WireGuard"
+msgstr "WireGuard가 아닌 패킷"
+
+msgid "Poser (observation)"
+msgstr "설치(관찰)"
+
+msgid "Passer en actif"
+msgstr "활성으로 전환"
+
+msgid "Reposer"
+msgstr "재설치"
+
+msgid "Confier à omega-fire"
+msgstr "omega-fire에 위임"
+
+msgid "Reprendre la gestion"
+msgstr "관리 되찾기"
+
+msgid "POSER LE BOUCLIER DU PORT WIREGUARD ?"
+msgstr "WIREGUARD 포트 방패를 설치하시겠습니까?"
+
+msgid "CHANGER LE MODE DU BOUCLIER ?"
+msgstr "방패 모드를 바꾸시겠습니까?"
+
+msgid "REPOSER LE BOUCLIER ?"
+msgstr "방패를 재설치하시겠습니까?"
+
+msgid "CONFIER LE BOUCLIER À OMEGA-FIRE ?"
+msgstr "방패를 OMEGA-FIRE에 위임하시겠습니까?"
+
+msgid "REPRENDRE LA GESTION DU BOUCLIER ?"
+msgstr "방패 관리를 되찾으시겠습니까?"
+
+msgid "RETIRER LE BOUCLIER ?"
+msgstr "방패를 제거하시겠습니까?"
+
+msgid ""
+"Une table nftables devant tailscaled, en OBSERVATION : rien n'est refusé, "
+"les compteurs disent ce qui l'aurait été. Un service la remet en place à "
+"chaque démarrage."
+msgstr ""
+"tailscaled 앞의 nftables 테이블, 관찰 모드: 아무것도 거부하지 않고 카운터가 거부되었을 것을 보여 줍니다. 서비스가 "
+"부팅할 때마다 다시 설치합니다."
+
+msgid ""
+"La table enregistrée est remise ; ses compteurs et la liste des pairs "
+"repartent de zéro."
+msgstr "저장된 테이블을 다시 설치합니다. 카운터와 피어 목록은 0부터 다시 시작합니다."
+
+msgid ""
+"omega-fire gérera le bouclier (remise au démarrage, commandes, liste des "
+"règles). La table, ses compteurs et les pairs connus ne sont pas touchés."
+msgstr ""
+"omega-fire가 방패를 관리합니다(부팅 시 재설치, 명령, 규칙 목록). 테이블, 카운터, 알려진 피어는 건드리지 않습니다."
+
+msgid ""
+"omega-fire n'est plus relié : omega-tail gère de nouveau le bouclier. La "
+"table n'est pas touchée."
+msgstr ""
+"omega-fire가 더 이상 연결되어 있지 않습니다: omega-tail이 다시 방패를 관리합니다. 테이블은 건드리지 않습니다."
+
+msgid ""
+"La table, ses fichiers et son service sont supprimés : tailscaled ne sera "
+"plus protégé contre les flots de paquets."
+msgstr "테이블, 파일, 서비스를 삭제합니다: tailscaled는 더 이상 패킷 폭주로부터 보호되지 않습니다."
+
+msgid ""
+"tailscaled tire son port au hasard (--port 0) : aucun bouclier possible. "
+"Fixez un port (PORT= dans /etc/default/tailscaled), puis redémarrez "
+"tailscaled."
+msgstr ""
+"tailscaled가 포트를 무작위로 고릅니다(--port 0): 방패를 설치할 수 없습니다. 포트를 고정한 "
+"뒤(/etc/default/tailscaled의 PORT=) tailscaled를 다시 시작하십시오."
+
+msgid "Aucune carte réseau matérielle trouvée : rien à protéger."
+msgstr "물리 네트워크 카드를 찾지 못했습니다: 보호할 것이 없습니다."
+
+msgid "Port ou nom de carte réseau refusé."
+msgstr "포트 또는 네트워크 카드 이름이 거부되었습니다."
+
+msgid "Aucun bouclier enregistré sur cette machine."
+msgstr "이 머신에 저장된 방패가 없습니다."
+
+msgid ""
+"Le noyau a été mis à jour sans redémarrage : ses modules ne peuvent plus "
+"être chargés et la table serait refusée. Redémarrez la machine, puis "
+"recommencez."
+msgstr ""
+"재부팅 없이 커널이 업데이트되었습니다: 모듈을 더 이상 불러올 수 없어 테이블이 거부됩니다. 머신을 재부팅한 뒤 다시 하십시오."
+
+#, python-brace-format
+msgid ""
+"Origine : {tool} (outil qui l'a demandé) · port {port}/udp · cartes réseau :"
+" {devices}"
+msgstr "출처: {tool}(요청한 도구) · 포트 {port}/udp · 네트워크 카드: {devices}"
+
+#, python-brace-format
+msgid "Pairs connus : {count} (jamais limités)."
+msgstr "알려진 피어: {count}(제한 없음)."
+
+#, python-brace-format
+msgid "Détecté : port de tailscaled {port}, cartes réseau {devices}."
+msgstr "감지됨: tailscaled 포트 {port}, 네트워크 카드 {devices}."
+
+msgid "au hasard"
+msgstr "무작위"
+
+msgid ""
+"Noyau antérieur à 5.16 : sans liste des pairs, seuls le tri des paquets et "
+"la limite des poignées de main sont posés."
+msgstr "5.16 이전 커널: 피어 목록 없이 패킷 분류와 핸드셰이크 제한만 설치합니다."
+
+#, python-brace-format
+msgid ""
+"omega-fire {version} relié : il pose et gère le bouclier ; sa liste des "
+"règles l'affiche avec l'origine omega-tail."
+msgstr ""
+"omega-fire {version} 연결됨: omega-fire가 방패를 설치·관리하며, 그 규칙 목록에 출처 omega-tail로 "
+"표시됩니다."
+
+#, python-brace-format
+msgid ""
+"omega-fire {version} relié, mais trop ancien pour le bouclier (il faut "
+"{needed} ou plus récent) : omega-tail le gère lui-même. Mettez omega-fire à "
+"jour."
+msgstr ""
+"omega-fire {version}이(가) 연결되었지만 방패에는 너무 오래된 버전입니다({needed} 이상 필요): omega-"
+"tail이 직접 관리합니다. omega-fire를 업데이트하십시오."
+
+msgid ""
+"omega-fire n'est pas relié par omega-connect : omega-tail pose et gère le "
+"bouclier lui-même, même si ufw ou firewalld sont présents."
+msgstr ""
+"omega-fire가 omega-connect로 연결되어 있지 않습니다: ufw나 firewalld가 있어도 omega-tail이 직접 "
+"방패를 설치·관리합니다."
+
+msgid ""
+"Géré par omega-fire, qui n'est plus relié : « Reprendre la gestion » le rend"
+" à omega-tail."
+msgstr "더 이상 연결되지 않은 omega-fire가 관리 중: 「관리 되찾기」로 omega-tail에 돌려줍니다."
+
+msgid ""
+"Noyau mis à jour sans redémarrage : la table ne peut pas être posée avant un"
+" redémarrage."
+msgstr "재부팅 없이 커널이 업데이트되었습니다: 재부팅 전에는 테이블을 설치할 수 없습니다."
+
+msgid ""
+"Système d'init inconnu : le bouclier ne sera pas remis en place au "
+"redémarrage."
+msgstr "알 수 없는 init 시스템: 재부팅 시 방패가 다시 설치되지 않습니다."
+
+msgid "BOUCLIER DU PORT WIREGUARD"
+msgstr "WIREGUARD 포트 방패"
+
+msgid ""
+"Devant tailscaled : poignées de main limitées par source, budget pour les "
+"sources qui ne sont pas des pairs connus, paquets qui ne sont pas du "
+"WireGuard refusés. Mesuré : un flot qui prenait un cœur entier à tailscaled "
+"n'en prend plus que 1 %. Commencez en observation."
+msgstr ""
+"tailscaled 앞에서: 출처별 핸드셰이크 제한, 알려진 피어가 아닌 출처에 대한 예산, WireGuard가 아닌 패킷 거부. 측정 "
+"결과: tailscaled의 코어 하나를 모두 차지하던 흐름이 이제 1 %만 차지합니다. 관찰 모드로 시작하십시오."
+
+msgid "COMPTEURS DEPUIS LA POSE"
+msgstr "설치 이후 카운터"
+
+msgid "Compteur"
+msgstr "카운터"
+
+msgid "Effet"
+msgstr "효과"
+
+msgid "Paquets"
+msgstr "패킷"
+
+msgid "admis"
+msgstr "허용"
+
+msgid "auraient été refusés"
+msgstr "거부되었을 패킷"
+
+msgid "refusés"
+msgstr "거부됨"
+
+msgid "Passer en observation"
+msgstr "관찰로 전환"
+
+#, python-brace-format
+msgid ""
+"En observation, {count} paquet(s) auraient été refusés : en actif, ils le "
+"seront. Les pairs connus ne sont jamais limités."
+msgstr "관찰 중 거부되었을 패킷 {count}개: 활성 모드에서는 거부됩니다. 알려진 피어는 결코 제한되지 않습니다."
+
+msgid ""
+"Plus rien n'est refusé ; les compteurs continuent de dire ce qui l'aurait "
+"été."
+msgstr "더 이상 아무것도 거부하지 않습니다. 카운터는 계속 거부되었을 것을 보여 줍니다."
+
+#, python-brace-format
+msgid ""
+"Par omega-fire (il garde l'origine {tool} et l'inscrit à son journal "
+"d'audit)."
+msgstr "omega-fire가 수행(출처 {tool}을(를) 유지하고 감사 로그에 기록)."
+
+msgid "systemd ne connaît pas tailscaled : confinement impossible ici."
+msgstr "systemd가 tailscaled를 모릅니다: 여기서는 자원을 제한할 수 없습니다."
+
+msgid "perdu (tailscaled a redémarré) : « Appliquer le confinement » le remet"
+msgstr "사라짐(tailscaled 재시작): 「자원 제한 적용」으로 다시 적용"
+
+msgid "actif (groupe de contrôle d'omega-tail)"
+msgstr "활성(omega-tail 제어 그룹)"
+
+#, python-brace-format
+msgid "Confinement actuel : {state}"
+msgstr "현재 자원 제한: {state}"
+
+#, python-brace-format
+msgid "  plafond {quota} · poids {weight} · système d'init {init}"
+msgstr "  상한 {quota} · 가중치 {weight} · init 시스템 {init}"
+
+msgid "actif, posé par omega-tail"
+msgstr "활성, omega-tail이 설치"
+
+msgid "posé par omega-tail, pas encore appliqué (rechargement ou redémarrage)"
+msgstr "omega-tail이 설치, 아직 적용 안 됨(다시 불러오기 또는 다시 시작)"
+
+msgid "actif, posé hors d'omega-tail"
+msgstr "활성, omega-tail 외부에서 설치"
+
+#, python-brace-format
+msgid "  plafond {quota} · poids {weight} · priorité {nice}"
+msgstr "  상한 {quota} · 가중치 {weight} · 우선순위 {nice}"
+
+#, python-brace-format
+msgid "  Vos fichiers d'ajout (jamais modifiés) : {paths}"
+msgstr "  사용자의 추가 설정 파일(수정하지 않음): {paths}"
+
+#, python-brace-format
+msgid ""
+"Funnel COUPÉ par omega-tail depuis {since} (coupure totale) : « Rétablir "
+"maintenant » le remet à l'identique."
+msgstr "{since}부터 omega-tail이 Funnel을 차단 중(완전 차단): 「지금 복원」으로 그대로 되돌립니다."
+
+#, python-brace-format
+msgid ""
+"Funnel COUPÉ par omega-tail depuis {since}, remis en route automatiquement à"
+" {until}."
+msgstr "{since}부터 omega-tail이 Funnel을 차단 중, {until}에 자동 재개."
+
+#, python-brace-format
+msgid "Funnel ouvert : port {ports}."
+msgstr "Funnel 열림: 포트 {ports}."
+
+msgid "Funnel n'est pas ouvert : rien à couper."
+msgstr "Funnel이 열려 있지 않습니다: 차단할 것이 없습니다."
+
+msgid ""
+"Désactivée : sous attaque, omega-tail ouvert PROPOSE la coupure (il faut "
+"être devant la machine)."
+msgstr "비활성: 공격을 받으면 열려 있는 omega-tail이 차단을 제안합니다(머신 앞에 있어야 함)."
+
+msgid ""
+"Activée mais arrêtée (aucun signe de vie) : « Activer la veille » la "
+"relance."
+msgstr "활성화되었지만 중지됨(생존 신호 없음): 「감시 활성화」로 다시 시작합니다."
+
+msgid ""
+"En marche, même omega-tail fermé : sous attaque, elle coupe Funnel seule et "
+"le remet seule."
+msgstr "omega-tail을 닫아도 실행 중: 공격을 받으면 스스로 Funnel을 차단하고 스스로 재개합니다."
+
+#, python-brace-format
+msgid ""
+"  Dépassements récents : {strikes}/{total} (fenêtre de {window} min) · "
+"prochaine coupure : {minutes} min"
+msgstr "  최근 초과: {strikes}/{total}(시간 창 {window}분) · 다음 차단: {minutes}분"
+
+msgid ""
+"Garder la machine debout sous attaque. Chaque action montre ses commandes "
+"avant ; le mot de passe sudo se saisit dans le terminal."
+msgstr "공격 중에도 머신이 버티게 합니다. 모든 작업은 먼저 명령을 보여 주며, sudo 비밀번호는 터미널에서 입력합니다."
+
+msgid "CONFINEMENT DE TAILSCALED"
+msgstr "TAILSCALED 자원 제한"
+
+#, python-brace-format
+msgid "Proposé pour cette machine ({count} fils), dans {path} :"
+msgstr "이 머신(스레드 {count}개)에 제안, {path}:"
+
+#, python-brace-format
+msgid ""
+"Proposé pour cette machine ({count} fils), dans un groupe de contrôle à part"
+" :"
+msgstr "이 머신(스레드 {count}개)에 제안, 별도 제어 그룹:"
+
+#, python-brace-format
+msgid "Donner la priorité à l'accès SSH ({unit})"
+msgstr "SSH 접속 우선({unit})"
+
+msgid ""
+"Redémarrer tailscaled tout de suite (la priorité ne s'applique qu'au "
+"redémarrage ; coupure de quelques secondes)"
+msgstr "지금 tailscaled 다시 시작(우선순위는 다시 시작할 때만 적용, 몇 초간 끊김)"
+
+msgid "Appliquer le confinement"
+msgstr "자원 제한 적용"
+
+msgid "Retirer le confinement"
+msgstr "자원 제한 해제"
+
+msgid "VEILLE AUTOMATIQUE"
+msgstr "자동 감시"
+
+#, python-brace-format
+msgid ""
+"Pour une machine sans personne devant. Un dépassement : un seuil du "
+"disjoncteur tenu (plus bas). {strikes} dépassements dans la fenêtre : Funnel"
+" coupé {first} min, puis {second} min la fois suivante, puis {last} min à "
+"chaque fois ; toujours remis en route seul, à l'identique. Retour à {first} "
+"min après {hours} h sans coupure. Seul Funnel est coupé : tailscaled, le "
+"tailnet et SSH restent joignables."
+msgstr ""
+"아무도 지켜보지 않는 머신용. 초과 한 번: 서킷 브레이커 임계값(아래) 하나가 유지된 경우. 시간 창 안에 초과 {strikes}번: "
+"Funnel을 {first}분, 다음에는 {second}분, 이후 매번 {last}분 차단하며 항상 스스로 그대로 재개합니다. "
+"{hours}시간 동안 차단이 없으면 {first}분으로 돌아갑니다. Funnel만 차단됩니다: tailscaled, tailnet, "
+"SSH는 계속 접근할 수 있습니다."
+
+msgid "Fenêtre (min)"
+msgstr "시간 창(분)"
+
+msgid "Enregistrer"
+msgstr "저장"
+
+msgid "Activer la veille"
+msgstr "감시 활성화"
+
+msgid "Désactiver la veille"
+msgstr "감시 비활성화"
+
+msgid ""
+"Protège tailscaled des flots de paquets envoyés sur son port (même sans "
+"Funnel)."
+msgstr "tailscaled의 포트로 보내는 패킷 폭주로부터 보호합니다(Funnel이 없어도)."
+
+msgid "Bouclier du port WireGuard"
+msgstr "WireGuard 포트 방패"
+
+msgid "DISJONCTEUR FUNNEL"
+msgstr "FUNNEL 서킷 브레이커"
+
+msgid ""
+"Sans veille, il propose, il ne coupe jamais seul : quand un seuil est "
+"dépassé, omega-tail ouvert vous propose une coupure momentanée ou totale. "
+"Avec la veille automatique (ci-dessus), il agit seul."
+msgstr ""
+"감시가 없으면 제안만 하고 스스로 차단하지 않습니다: 임계값을 넘으면 열려 있는 omega-tail이 일시 또는 완전 차단을 제안합니다."
+" 자동 감시(위)가 있으면 스스로 동작합니다."
+
+msgid "CPU tailscaled ≥ (% d'un cœur)"
+msgstr "tailscaled CPU ≥(코어 하나 대비 %)"
+
+msgid "pendant (s)"
+msgstr "지속(초)"
+
+msgid "ou température ≥ (°C)"
+msgstr "또는 온도 ≥(°C)"
+
+msgid "coupure momentanée (min)"
+msgstr "일시 차단(분)"
+
+msgid "Enregistrer les seuils"
+msgstr "임계값 저장"
+
+msgid "Rétablir maintenant"
+msgstr "지금 복원"
+
+msgid "Journal de la veille :"
+msgstr "감시 로그:"
+
+msgid ""
+"Le disjoncteur demande d'être opérateur de Tailscale (tableau de bord, « "
+"Devenir opérateur ») : la remise en route programmée tourne sous votre "
+"compte, jamais en root."
+msgstr ""
+"서킷 브레이커를 쓰려면 Tailscale 운영자여야 합니다(대시보드, 「운영자 되기」): 예약된 재개는 root가 아니라 사용자 계정으로"
+" 실행됩니다."
+
+msgid "Tailscale absent"
+msgstr "Tailscale 없음"
+
+#, python-brace-format
+msgid "CPU machine {cpu:.0f} %"
+msgstr "머신 CPU {cpu:.0f} %"
+
+#, python-brace-format
+msgid "CPU tailscaled {cpu:.0f} %"
+msgstr "tailscaled CPU {cpu:.0f} %"
+
+#, python-brace-format
+msgid "RAM {used:.0f} %"
+msgstr "RAM {used:.0f} %"
+
+msgid "Funnel coupé"
+msgstr "Funnel 차단"
+
+msgid "Funnel fermé"
+msgstr "Funnel 닫힘"
+
+msgid "Pare-feu actif · attaque"
+msgstr "방화벽 활성 · 공격"
+
+msgid "Pare-feu actif"
+msgstr "방화벽 활성"
+
+msgid "Pare-feu arrêté"
+msgstr "방화벽 중지"
+
+msgid "Pare-feu inactif"
+msgstr "방화벽 비활성"
+
+msgid "Veille active"
+msgstr "감시 활성"
+
+msgid "Veille arrêtée"
+msgstr "감시 중지"
+
+msgid "Veille inactive"
+msgstr "감시 비활성"
+
+msgid "Tailscale injoignable"
+msgstr "Tailscale 연결 불가"
+
+msgid "Lecture de l'état…"
+msgstr "상태 읽는 중…"

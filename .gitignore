@@ -1,0 +1,45 @@
+# Environnement Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.import_linter_cache/
+*.egg-info/
+
+# État runtime généré localement (recréé automatiquement au démarrage).
+# TOUT var/ est ignoré (clé du coordinateur, traces SSH, jeton, déclaration, journaux, base…) ;
+# seuls les .gitkeep gardent les dossiers. Correctif du 2026-11-22 (var/distributed/ avait été poussé).
+var/**
+!var/
+!var/*/
+!var/*/.gitkeep
+
+# Archives de release (générées, pas du code source)
+*.tar.gz
+dist/
+
+
+# Secrets locaux
+.env
+
+# Éditeurs
+*~
+*.bak
+*.swp
+
+# Couverture de tests
+.coverage
+htmlcov/
+
+# Documents de travail (étude, mesures, banc) : hors dépôt public tant que l'auteur ne décide pas autrement
+banc-lot0/
+banc-debit/
+
+# Sauvegardes locales faites avant chaque modification (copies d'anciennes versions, documents de travail) et
+# rapports d'audit de sécurité (claude-security) : jamais publiés (2026-11-25)
+sauvegardes/
+CLAUDE-SECURITY-*/
+*.avant-*

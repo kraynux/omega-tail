@@ -1,0 +1,4635 @@
+# Statut X-Omega-Status : validated (2026-11-25, choix de vocabulaire et de ton arbitrés par Claude à la demande de l'auteur).
+msgid ""
+msgstr ""
+"Project-Id-Version: omega-tail\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Omega-Status: validated\n"
+
+msgid ""
+"omega-tail : pas de terminal interactif ; utilisez « omega-tail etat »."
+msgstr "omega-tail: brak interaktywnego terminala; użyj „omega-tail etat”."
+
+msgid "Nom de la machine inconnu : Tailscale est-il connecté ?"
+msgstr "Nieznana nazwa maszyny: czy Tailscale jest połączony?"
+
+#, python-brace-format
+msgid "Certificat refusé ({error}). Êtes-vous opérateur de Tailscale ?"
+msgstr "Certyfikat odrzucony ({error}). Czy jesteś operatorem Tailscale?"
+
+#, python-brace-format
+msgid "Certificat renouvelé, mais la porte ne l'a pas repris ({error})."
+msgstr "Certyfikat odnowiony, ale brama go nie przejęła ({error})."
+
+#, python-brace-format
+msgid "Certificat de {name} à jour."
+msgstr "Certyfikat {name} jest aktualny."
+
+#, python-brace-format
+msgid "Publication non prise en charge : {reason}."
+msgstr "Publikacja nieobsługiwana: {reason}."
+
+#, python-brace-format
+msgid "Publication illisible ({error})."
+msgstr "Nieczytelna publikacja ({error})."
+
+msgid "HAProxy n'est pas installé : « Installer HAProxy » d'abord."
+msgstr "HAProxy nie jest zainstalowany: najpierw „Zainstaluj HAProxy”."
+
+#, python-brace-format
+msgid "Configuration de la porte refusée par HAProxy : {error}"
+msgstr "Konfiguracja bramy odrzucona przez HAProxy: {error}"
+
+#, python-brace-format
+msgid "Renouvellement du certificat non programmé (crontab : {error})."
+msgstr "Odnawianie certyfikatu niezaplanowane (crontab: {error})."
+
+msgid "Porte prête : certificat, listes et configuration vérifiés."
+msgstr "Brama gotowa: certyfikat, listy i konfiguracja sprawdzone."
+
+msgid "La porte protège déjà Funnel."
+msgstr "Brama już chroni Funnel."
+
+#, python-brace-format
+msgid "La porte ne répond pas en local ({detail}) : rien n'a été basculé."
+msgstr "Brama nie odpowiada lokalnie ({detail}): nic nie zostało przełączone."
+
+#, python-brace-format
+msgid "Bascule refusée ({error}) : publication d'origine remise."
+msgstr "Przełączenie odrzucone ({error}): przywrócono pierwotną publikację."
+
+#, python-brace-format
+msgid "Funnel passe par la porte : essai public réussi ({detail})."
+msgstr "Funnel przechodzi przez bramę: test publiczny udany ({detail})."
+
+#, python-brace-format
+msgid "Essai public échoué ({detail}) : publication d'origine remise."
+msgstr "Test publiczny nieudany ({detail}): przywrócono pierwotną publikację."
+
+msgid "La porte ne protège pas Funnel : rien à remettre."
+msgstr "Brama nie chroni Funnel: nie ma czego przywracać."
+
+#, python-brace-format
+msgid ""
+"Publication d'origine incomplète ({errors}) : sauvegarde gardée dans {path}."
+msgstr ""
+"Pierwotna publikacja niekompletna ({errors}): kopia zapasowa zachowana w "
+"{path}."
+
+msgid "Publication d'origine remise, à l'identique."
+msgstr "Przywrócono pierwotną publikację, bez zmian."
+
+msgid "Règles enregistrées ; elles s'appliqueront à l'activation."
+msgstr "Reguły zapisane; zostaną zastosowane po włączeniu."
+
+#, python-brace-format
+msgid "Règles enregistrées, configuration non régénérée ({error})."
+msgstr ""
+"Reguły zapisane, konfiguracja nie została wygenerowana ponownie ({error})."
+
+#, python-brace-format
+msgid "Règles refusées par HAProxy ({error}) : ancienne configuration gardée."
+msgstr ""
+"Reguły odrzucone przez HAProxy ({error}): zachowano poprzednią konfigurację."
+
+#, python-brace-format
+msgid "Règles écrites, rechargement impossible ({error})."
+msgstr "Reguły zapisane, przeładowanie niemożliwe ({error})."
+
+#, python-brace-format
+msgid "Règles appliquées à chaud (mode {mode})."
+msgstr "Reguły zastosowane na gorąco (tryb {mode})."
+
+msgid "Regroupements indisponibles."
+msgstr "Grupowanie niedostępne."
+
+#, python-brace-format
+msgid ""
+"Apprentissage des empreintes en cours (encore {days} jour(s)) : les "
+"regroupements restent en observation jusqu'à la fin ; « appliqués » sera "
+"possible ensuite."
+msgstr ""
+"Trwa uczenie się odcisków (jeszcze {days} dni): grupowanie pozostaje w "
+"obserwacji do końca; tryb „stosowane” będzie potem możliwy."
+
+msgid "appliqués"
+msgstr "stosowane"
+
+msgid "en observation"
+msgstr "w obserwacji"
+
+#, python-brace-format
+msgid "Regroupements appliqués à chaud ({mode})."
+msgstr "Grupowanie zastosowane na gorąco ({mode})."
+
+#, python-brace-format
+msgid ""
+"Apprentissage recommencé : regroupements repassés en observation pour les "
+"{days} jours d'apprentissage."
+msgstr ""
+"Uczenie się rozpoczęte od nowa: grupowanie wróciło do obserwacji na {days} "
+"dni uczenia się."
+
+msgid ""
+"Base AS / pays : trop longue (plus de 15 minutes), abandonnée ; l'ancienne "
+"reste en place."
+msgstr ""
+"Baza AS / krajów: trwało zbyt długo (ponad 15 minut), przerwano; poprzednia "
+"baza pozostaje."
+
+#, python-brace-format
+msgid "{text}"
+msgstr "{text}"
+
+#, python-brace-format
+msgid ""
+"Liste noire pleine ({max} entrées) : purgez ou exportez-la dans « Gestion de"
+" la liste noire » avant d'en ajouter."
+msgstr ""
+"Czarna lista pełna ({max} wpisów): wyczyść ją lub wyeksportuj w „Zarządzanie"
+" czarną listą”, zanim dodasz kolejne."
+
+#, python-brace-format
+msgid "Adresse ou réseau invalide : {text}"
+msgstr "Nieprawidłowy adres lub sieć: {text}"
+
+#, python-brace-format
+msgid ""
+"{address} fait partie du tailnet : la porte admet toujours les machines "
+"Tailscale, elle ne peut pas être bloquée."
+msgstr ""
+"{address} należy do tailnetu: brama zawsze wpuszcza maszyny Tailscale, nie "
+"można go zablokować."
+
+#, python-brace-format
+msgid "{address} est déjà dans la liste noire (ou dans un de ses réseaux)."
+msgstr "{address} jest już na czarnej liście (lub w jednej z jej sieci)."
+
+#, python-brace-format
+msgid "{address} → liste noire (refusée jusqu'au retrait)."
+msgstr "{address} → czarna lista (odrzucany do czasu usunięcia)."
+
+#, python-brace-format
+msgid "{count} entrée(s) retirée(s) de la liste noire ; il en reste {left}."
+msgstr "Usunięto {count} wpis(ów) z czarnej listy; pozostało {left}."
+
+#, python-brace-format
+msgid ""
+"Import : {added} ajoutée(s), {duplicates} doublon(s), {tailnet} du tailnet "
+"écartée(s), {invalid} ligne(s) invalide(s)."
+msgstr ""
+"Import: dodano {added}, duplikaty {duplicates}, pominięte z tailnetu "
+"{tailnet}, nieprawidłowe wiersze {invalid}."
+
+#, python-brace-format
+msgid ""
+"Import : {added} ajoutée(s), {duplicates} doublon(s), {tailnet} du tailnet "
+"écartée(s), {invalid} ligne(s) invalide(s), {over} au-delà du plafond de "
+"{max}."
+msgstr ""
+"Import: dodano {added}, duplikaty {duplicates}, pominięte z tailnetu "
+"{tailnet}, nieprawidłowe wiersze {invalid}, ponad limit {max}: {over}."
+
+msgid "Aucune entrée ne correspond : rien n'a été retiré."
+msgstr "Żaden wpis nie pasuje: nic nie zostało usunięte."
+
+#, python-brace-format
+msgid ""
+"Purge : {count} entrée(s) retirée(s) de la liste noire ; il en reste {left}."
+msgstr ""
+"Czyszczenie: usunięto {count} wpis(ów) z czarnej listy; pozostało {left}."
+
+#, python-brace-format
+msgid "Adresse invalide : {text}"
+msgstr "Nieprawidłowy adres: {text}"
+
+#, python-brace-format
+msgid ""
+"{address} → liste noire (refusée jusqu'au retrait), retirée de la confiance."
+msgstr ""
+"{address} → czarna lista (odrzucany do czasu usunięcia), usunięty z "
+"zaufanych."
+
+#, python-brace-format
+msgid ""
+"{address} est en confiance (jamais limitée) : la confiance passe avant le "
+"blocage. Retirez-la de la confiance d'abord."
+msgstr ""
+"{address} jest zaufany (nigdy nie ograniczany): zaufanie ma pierwszeństwo "
+"przed blokadą. Najpierw usuń go z zaufanych."
+
+#, python-brace-format
+msgid ""
+"Porte injoignable ({error}) : blocage temporaire impossible porte arrêtée."
+msgstr ""
+"Brama nieosiągalna ({error}): tymczasowa blokada niemożliwa, brama "
+"zatrzymana."
+
+#, python-brace-format
+msgid "{address} → bloquée {minutes} min (blocage temporaire)."
+msgstr "{address} → zablokowany na {minutes} min (blokada tymczasowa)."
+
+#, python-brace-format
+msgid ""
+"{address} → toujours refusée : elle fait partie d'un réseau en liste noire."
+msgstr "{address} → nadal odrzucany: należy do sieci z czarnej listy."
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles), retirée de la liste noire."
+msgstr "{address} → wpuszczony (podlega regułom), usunięty z czarnej listy."
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles), blocage temporaire levé."
+msgstr "{address} → wpuszczony (podlega regułom), blokada tymczasowa zdjęta."
+
+#, python-brace-format
+msgid "{address} → confiance (jamais limitée), retirée de la liste noire."
+msgstr ""
+"{address} → zaufany (nigdy nie ograniczany), usunięty z czarnej listy."
+
+#, python-brace-format
+msgid "{address} → confiance (jamais limitée)."
+msgstr "{address} → zaufany (nigdy nie ograniczany)."
+
+#, python-brace-format
+msgid "{address} → toujours admise : elle fait partie du tailnet."
+msgstr "{address} → zawsze wpuszczany: należy do tailnetu."
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles)."
+msgstr "{address} → wpuszczony (podlega regułom)."
+
+#, python-brace-format
+msgid "Apprentissage recommencé : {days} jours avant que la référence compte."
+msgstr ""
+"Uczenie się rozpoczęte od nowa: {days} dni, zanim punkt odniesienia zacznie "
+"się liczyć."
+
+#, python-brace-format
+msgid "Base AS / pays non mise à jour ({error}) : l'ancienne reste en place."
+msgstr ""
+"Baza AS / krajów nie została zaktualizowana ({error}): poprzednia pozostaje."
+
+#, python-brace-format
+msgid "Base AS / pays à jour ({countries} plages pays, {asns} plages AS)."
+msgstr ""
+"Baza AS / krajów aktualna ({countries} zakresów krajów, {asns} zakresów AS)."
+
+msgid "habituelle"
+msgstr "zwykły"
+
+msgid "limité en attaque"
+msgstr "ograniczany podczas ataku"
+
+msgid "Funnel est coupé par le disjoncteur : rétablissez-le d'abord (Survie)."
+msgstr ""
+"Funnel został odcięty przez bezpiecznik: najpierw go przywróć (Przetrwanie)."
+
+#, python-brace-format
+msgid "Refusé par Tailscale ({error}) : rien n'a changé."
+msgstr "Odrzucone przez Tailscale ({error}): nic się nie zmieniło."
+
+#, python-brace-format
+msgid "Changement impossible ({error}) : publication d'avant remise."
+msgstr "Zmiana niemożliwa ({error}): przywrócono poprzednią publikację."
+
+#, python-brace-format
+msgid "Publication incomplète ({error}) : restaurez la sauvegarde {path}."
+msgstr "Publikacja niekompletna ({error}): przywróć kopię zapasową {path}."
+
+#, python-brace-format
+msgid "Ajout refusé : {reason}."
+msgstr "Dodanie odrzucone: {reason}."
+
+#, python-brace-format
+msgid "Publié : {kind} {port}{path} → {target} ({who})."
+msgstr "Opublikowano: {kind} {port}{path} → {target} ({who})."
+
+msgid ""
+"Ce port passe par la porte : « Désactiver la protection » (Pare-feu Funnel) "
+"d'abord."
+msgstr ""
+"Ten port przechodzi przez bramę: najpierw „Wyłącz ochronę” (Zapora Funnel)."
+
+msgid "Ce point n'est plus publié."
+msgstr "Ten punkt nie jest już publikowany."
+
+#, python-brace-format
+msgid "Retiré : {kind} {port}{path}."
+msgstr "Wycofano: {kind} {port}{path}."
+
+#, python-brace-format
+msgid "Sauvegarde illisible ({error})."
+msgstr "Nieczytelna kopia zapasowa ({error})."
+
+msgid ""
+"La protection est active : « Désactiver la protection » (Pare-feu Funnel) "
+"d'abord, puis restaurez."
+msgstr ""
+"Ochrona jest aktywna: najpierw „Wyłącz ochronę” (Zapora Funnel), potem "
+"przywróć."
+
+msgid ""
+"Cette sauvegarde passe par la porte, arrêtée : « Activer la protection » "
+"(Pare-feu Funnel) la recrée proprement."
+msgstr ""
+"Ta kopia zapasowa przechodzi przez bramę, która jest zatrzymana: „Włącz "
+"ochronę” (Zapora Funnel) odtworzy ją poprawnie."
+
+#, python-brace-format
+msgid "Sauvegarde du {when} restaurée."
+msgstr "Przywrócono kopię zapasową z {when}."
+
+msgid "essai public indisponible"
+msgstr "test publiczny niedostępny"
+
+msgid "adresse du tailnet inconnue"
+msgstr "nieznany adres tailnetu"
+
+msgid "Funnel encore autorisé sur les ports"
+msgstr "Funnel nadal dozwolony na portach"
+
+msgid "Funnel est déjà coupé par omega-tail."
+msgstr "Funnel jest już odcięty przez omega-tail."
+
+msgid "Rien à couper : aucun port n'est ouvert à Internet."
+msgstr "Nie ma czego odcinać: żaden port nie jest otwarty na Internet."
+
+msgid "Remise en route programmée impossible ici."
+msgstr "Zaplanowane przywrócenie nie jest tu możliwe."
+
+#, python-brace-format
+msgid ""
+"Minuterie de remise en route refusée (code {code}) : rien n'a été coupé."
+msgstr ""
+"Minutnik przywrócenia odrzucony (kod {code}): nic nie zostało odcięte."
+
+#, python-brace-format
+msgid "Coupure impossible ({error}) : la publication a été remise."
+msgstr "Odcięcie niemożliwe ({error}): publikacja została przywrócona."
+
+#, python-brace-format
+msgid ""
+"Funnel coupé ({ports}) pour {minutes} min, puis remis en route "
+"automatiquement."
+msgstr ""
+"Funnel odcięty ({ports}) na {minutes} min, potem przywrócony automatycznie."
+
+#, python-brace-format
+msgid "Funnel coupé ({ports}) jusqu'à votre remise en route."
+msgstr "Funnel odcięty ({ports}) do czasu, aż go przywrócisz."
+
+msgid "Rien à rétablir : Funnel n'est pas coupé par omega-tail."
+msgstr "Nie ma czego przywracać: Funnel nie jest odcięty przez omega-tail."
+
+msgid "Minuterie d'une ancienne coupure : rien à faire."
+msgstr "Minutnik starego odcięcia: nic do zrobienia."
+
+#, python-brace-format
+msgid "Remise en route incomplète ({errors}) : sauvegarde gardée dans {path}."
+msgstr ""
+"Przywrócenie niekompletne ({errors}): kopia zapasowa zachowana w {path}."
+
+msgid "Funnel remis en route, à l'identique."
+msgstr "Funnel przywrócony, bez zmian."
+
+msgid "Tailscale n'est pas installé sur cette machine."
+msgstr "Tailscale nie jest zainstalowany na tej maszynie."
+
+msgid "Le service tailscaled ne répond pas (arrêté ou en échec)."
+msgstr "Usługa tailscaled nie odpowiada (zatrzymana lub w stanie błędu)."
+
+#, python-brace-format
+msgid ""
+"tailscaled n'a pas été redémarré après la mise à jour : {daemon} en marche, "
+"{client} installé."
+msgstr ""
+"tailscaled nie został uruchomiony ponownie po aktualizacji: działa {daemon},"
+" zainstalowany {client}."
+
+msgid "Tailscale attend la connexion d'un compte."
+msgstr "Tailscale czeka na zalogowanie konta."
+
+msgid "Tailscale est déconnecté (« tailscale down »)."
+msgstr "Tailscale jest rozłączony („tailscale down”)."
+
+#, python-brace-format
+msgid "La clé de cette machine expire dans {days} jour(s)."
+msgstr "Klucz tej maszyny wygasa za {days} dni."
+
+msgid ""
+"Site en panne : Funnel passe par la porte (pare-feu), mais la porte est "
+"arrêtée."
+msgstr ""
+"Strona nie działa: Funnel przechodzi przez bramę (zaporę), ale brama jest "
+"zatrzymana."
+
+msgid ""
+"La porte est en MODE ATTAQUE : trop de connexions entrantes ; les "
+"regroupements (empreintes, AS, pays) s'appliquent jusqu'au retour au calme."
+msgstr ""
+"Brama jest w TRYBIE ATAKU: zbyt wiele połączeń przychodzących; grupowanie "
+"(odciski, AS, kraje) jest stosowane do czasu uspokojenia."
+
+#, python-brace-format
+msgid ""
+"Funnel publié sans protection sur le port {port} : tailscaled fait le TLS de"
+" chaque connexion (une rafale peut saturer la machine)."
+msgstr ""
+"Funnel opublikowany bez ochrony na porcie {port}: tailscaled obsługuje TLS "
+"każdego połączenia (seria połączeń może przeciążyć maszynę)."
+
+#, python-brace-format
+msgid "Température élevée : {temperature:.0f} °C."
+msgstr "Wysoka temperatura: {temperature:.0f} °C."
+
+#, python-brace-format
+msgid "tailscaled consomme {cpu:.0f} % d'un cœur."
+msgstr "tailscaled zużywa {cpu:.0f} % jednego rdzenia."
+
+msgid ""
+"La veille automatique est activée mais ne tourne plus : Funnel ne sera pas "
+"coupé seul sous attaque."
+msgstr ""
+"Automatyczny nadzór jest włączony, ale już nie działa: Funnel nie zostanie "
+"sam odcięty podczas ataku."
+
+#, python-brace-format
+msgid ""
+"Liste noire de la porte : {count} entrées (plafond {max}). Exportez-la puis "
+"purgez les plus anciennes : « Attaques et décisions » → « Gestion de la "
+"liste noire »."
+msgstr ""
+"Czarna lista bramy: {count} wpisów (limit {max}). Wyeksportuj ją, a potem "
+"wyczyść najstarsze: „Ataki i decyzje” → „Zarządzanie czarną listą”."
+
+msgid ""
+"Bouclier du port WireGuard ABSENT : un autre outil a effacé sa table (nft "
+"flush ruleset, pare-feu relancé…). Il n'est pas reposé seul : « Survie » → «"
+" Bouclier du port WireGuard » → « Reposer »."
+msgstr ""
+"Osłona portu WireGuard NIEOBECNA: inne narzędzie usunęło jej tabelę (nft "
+"flush ruleset, ponownie uruchomiona zapora…). Nie zostaje założona ponownie "
+"sama: „Przetrwanie” → „Osłona portu WireGuard” → „Załóż ponownie”."
+
+msgid ""
+"Bouclier du port WireGuard : état non mis à jour depuis plus de 3 minutes "
+"(service omega-bouclier-wg arrêté ?)."
+msgstr ""
+"Osłona portu WireGuard: stan nieaktualizowany od ponad 3 minut (usługa "
+"omega-bouclier-wg zatrzymana?)."
+
+msgid ""
+"Le démarrage de tailscaled lance « tailscale up » : si un réglage change "
+"(opérateur, nom, routes…), Tailscale le refusera et tailscaled ne "
+"redémarrera plus. « Service » → « Corriger le démarrage »."
+msgstr ""
+"Uruchomienie tailscaled wywołuje „tailscale up”: jeśli jakieś ustawienie się"
+" zmieni (operator, nazwa, trasy…), Tailscale je odrzuci i tailscaled już się"
+" nie uruchomi. „Usługa” → „Popraw uruchamianie”."
+
+msgid ""
+"Confinement de tailscaled perdu (le service a redémarré) : « Survie » → « "
+"Appliquer le confinement »."
+msgstr ""
+"Ograniczenie zasobów tailscaled utracone (usługa została ponownie "
+"uruchomiona): „Przetrwanie” → „Zastosuj ograniczenie”."
+
+msgid ""
+"tailscaled n'est pas confiné : sous attaque, il peut prendre tous les cœurs."
+msgstr ""
+"tailscaled nie ma ograniczenia zasobów: podczas ataku może zająć wszystkie "
+"rdzenie."
+
+msgid ""
+"Vous n'êtes pas opérateur de Tailscale : chaque réglage demandera sudo."
+msgstr ""
+"Nie jesteś operatorem Tailscale: każde ustawienie będzie wymagać sudo."
+
+msgid ""
+"Funnel coupé par omega-tail (coupure totale) : remise en route manuelle, "
+"dans « Survie »."
+msgstr ""
+"Funnel odcięty przez omega-tail (odcięcie całkowite): przywrócenie ręczne, w"
+" „Przetrwanie”."
+
+#, python-brace-format
+msgid ""
+"Funnel devait être remis en route à {time} et ne l'est pas : « Rétablir » "
+"dans « Survie »."
+msgstr ""
+"Funnel miał zostać przywrócony o {time}, ale nie został: „Przywróć” w "
+"„Przetrwanie”."
+
+#, python-brace-format
+msgid ""
+"Funnel coupé par omega-tail jusqu'à {time}, puis remis en route "
+"automatiquement."
+msgstr ""
+"Funnel odcięty przez omega-tail do {time}, potem przywrócony automatycznie."
+
+#, python-brace-format
+msgid "Tailscale signale : {message}"
+msgstr "Tailscale zgłasza: {message}"
+
+msgid "ajout manuel"
+msgstr "dodane ręcznie"
+
+msgid "import"
+msgstr "import"
+
+msgid "écran Attaques"
+msgstr "ekran Ataki"
+
+msgid "avant les dates"
+msgstr "sprzed dat"
+
+#, python-brace-format
+msgid "Température de {temperature:.0f} °C (seuil {threshold:.0f} °C)."
+msgstr "Temperatura {temperature:.0f} °C (próg {threshold:.0f} °C)."
+
+#, python-brace-format
+msgid ""
+"tailscaled au-dessus de {threshold:.0f} % d'un cœur depuis {seconds} s "
+"(moyenne {average:.0f} %)."
+msgstr ""
+"tailscaled powyżej {threshold:.0f} % jednego rdzenia od {seconds} s (średnio"
+" {average:.0f} %)."
+
+msgid "cible non prise en charge"
+msgstr "nieobsługiwany cel"
+
+msgid "nom de machine inattendu"
+msgstr "nieoczekiwana nazwa maszyny"
+
+msgid "aucun port n'est ouvert à Internet (Funnel)"
+msgstr "żaden port nie jest otwarty na Internet (Funnel)"
+
+msgid "plusieurs ports Funnel : la porte n'en protège qu'un pour l'instant"
+msgstr "kilka portów Funnel: brama na razie chroni tylko jeden"
+
+msgid "Funnel passe déjà par une porte (TCP + PROXY v2)"
+msgstr "Funnel już przechodzi przez bramę (TCP + PROXY v2)"
+
+msgid "seule une publication HTTPS avec le chemin « / » est prise en charge"
+msgstr "obsługiwana jest tylko publikacja HTTPS ze ścieżką „/”"
+
+msgid "Chrome, Edge, Firefox récent"
+msgstr "Chrome, Edge, nowy Firefox"
+
+msgid "Firefox (ancien)"
+msgstr "Firefox (stary)"
+
+msgid "empreinte"
+msgstr "odcisk"
+
+msgid "hébergeur"
+msgstr "hosting"
+
+msgid "pays"
+msgstr "kraj"
+
+msgid "Identité"
+msgstr "Tożsamość"
+
+msgid "Réseau"
+msgstr "Sieć"
+
+msgid "Sortie"
+msgstr "Wyjście"
+
+msgid "Services Tailscale"
+msgstr "Usługi Tailscale"
+
+msgid "Opérateur"
+msgstr "Operator"
+
+msgid "Nom de la machine"
+msgstr "Nazwa maszyny"
+
+msgid ""
+"Nom dans le tailnet (vide : celui du système). Change aussi l'adresse "
+"*.ts.net : les liens publiés et le certificat suivent."
+msgstr ""
+"Nazwa w tailnecie (puste: nazwa systemu). Zmienia też adres *.ts.net: "
+"opublikowane linki i certyfikat podążają za nią."
+
+msgid "ex. serveur-maison"
+msgstr "np. serwer-domowy"
+
+msgid "Surnom du compte"
+msgstr "Przydomek konta"
+
+msgid ""
+"Surnom du compte en cours, pour le reconnaître dans « Changer de compte »."
+msgstr "Przydomek bieżącego konta, by rozpoznać je w „Zmień konto”."
+
+msgid "ex. maison"
+msgstr "np. dom"
+
+msgid "Accepter les routes"
+msgstr "Akceptuj trasy"
+
+msgid ""
+"Utiliser les sous-réseaux annoncés par les autres machines. À éviter sur une"
+" machine du même réseau local que le routeur qui l'annonce."
+msgstr ""
+"Używaj podsieci rozgłaszanych przez inne maszyny. Unikaj tego na maszynie w "
+"tej samej sieci lokalnej co router, który ją rozgłasza."
+
+msgid "Accepter le DNS du tailnet"
+msgstr "Akceptuj DNS tailnetu"
+
+msgid "MagicDNS : les noms des machines du tailnet se résolvent ici."
+msgstr "MagicDNS: nazwy maszyn tailnetu są tu rozwiązywane."
+
+msgid "Bouclier (refuser les connexions entrantes)"
+msgstr "Osłona (odrzucaj połączenia przychodzące)"
+
+msgid ""
+"Aucune machine du tailnet ne peut se connecter à celle-ci (SSH et Serve "
+"compris). Funnel n'est pas concerné."
+msgstr ""
+"Żadna maszyna tailnetu nie może połączyć się z tą (łącznie z SSH i Serve). "
+"Nie dotyczy Funnel."
+
+msgid "Filtrage avec état"
+msgstr "Filtrowanie stanowe"
+
+msgid ""
+"Pour un routeur de sous-réseau ou un nœud de sortie : ne laisse revenir que "
+"les réponses."
+msgstr ""
+"Dla routera podsieci lub węzła wyjściowego: wpuszcza z powrotem tylko "
+"odpowiedzi."
+
+msgid "Mode netfilter"
+msgstr "Tryb netfilter"
+
+msgid ""
+"on : Tailscale gère ses règles de pare-feu ; nodivert : ses chaînes sans les"
+" brancher ; off : aucune règle (à vos risques)."
+msgstr ""
+"on: Tailscale zarządza swoimi regułami zapory; nodivert: swoje łańcuchy bez "
+"ich podpinania; off: żadnych reguł (na własne ryzyko)."
+
+msgid "Nœud de sortie utilisé"
+msgstr "Używany węzeł wyjściowy"
+
+msgid ""
+"Faire passer le trafic Internet de cette machine par une autre machine du "
+"tailnet (vide : aucun)."
+msgstr ""
+"Kieruj ruch internetowy tej maszyny przez inną maszynę tailnetu (puste: "
+"żaden)."
+
+msgid "Garder l'accès au réseau local"
+msgstr "Zachowaj dostęp do sieci lokalnej"
+
+msgid "Avec un nœud de sortie : le réseau local reste joignable directement."
+msgstr "Z węzłem wyjściowym: sieć lokalna pozostaje osiągalna bezpośrednio."
+
+msgid "Proposer cette machine comme nœud de sortie"
+msgstr "Oferuj tę maszynę jako węzeł wyjściowy"
+
+msgid ""
+"Les autres machines pourront sortir sur Internet par celle-ci (à approuver "
+"dans la console d'administration)."
+msgstr ""
+"Inne maszyny będą mogły wychodzić do Internetu przez tę (do zatwierdzenia w "
+"konsoli administracyjnej)."
+
+msgid "Sous-réseaux annoncés"
+msgstr "Rozgłaszane podsieci"
+
+msgid ""
+"Réseaux locaux rendus joignables au tailnet, séparés par des virgules "
+"(192.168.1.0/24) ; vide : aucun."
+msgstr ""
+"Sieci lokalne udostępniane tailnetowi, rozdzielone przecinkami "
+"(192.168.1.0/24); puste: żadne."
+
+msgid "ex. 192.168.1.0/24, 10.0.0.0/8"
+msgstr "np. 192.168.1.0/24, 10.0.0.0/8"
+
+msgid "SSH Tailscale"
+msgstr "SSH Tailscale"
+
+msgid ""
+"Serveur SSH de Tailscale, selon les règles du tailnet. Votre SSH habituel "
+"n'est pas touché."
+msgstr ""
+"Serwer SSH Tailscale, zgodnie z regułami tailnetu. Twój zwykły SSH pozostaje"
+" nietknięty."
+
+msgid "Interface web (port 5252)"
+msgstr "Interfejs WWW (port 5252)"
+
+msgid "Page de gestion de cette machine, joignable par le tailnet seulement."
+msgstr "Strona zarządzania tą maszyną, dostępna tylko przez tailnet."
+
+msgid "Mises à jour automatiques"
+msgstr "Automatyczne aktualizacje"
+
+msgid ""
+"Tailscale se met à jour seul quand sa distribution le permet. Sinon : "
+"gestionnaire de paquets."
+msgstr ""
+"Tailscale aktualizuje się sam, gdy pozwala na to dystrybucja. W przeciwnym "
+"razie: menedżer pakietów."
+
+msgid "Signaler les mises à jour"
+msgstr "Zgłaszaj aktualizacje"
+
+msgid "Tailscale prévient quand une version plus récente existe."
+msgstr "Tailscale powiadamia, gdy istnieje nowsza wersja."
+
+msgid "Port du relais pair (UDP)"
+msgstr "Port przekaźnika równorzędnego (UDP)"
+
+msgid ""
+"Cette machine relaie les connexions d'autres machines du tailnet sur ce port"
+" UDP ; vide : non."
+msgstr ""
+"Ta maszyna przekazuje połączenia innych maszyn tailnetu na tym porcie UDP; "
+"puste: nie."
+
+msgid "ex. 40000"
+msgstr "np. 40000"
+
+msgid ""
+"Nom du compte Linux qui pilote Tailscale sans sudo (« Mon compte » le "
+"remplit) ; vide : root seul. Changer l'opérateur demande sudo une fois."
+msgstr ""
+"Nazwa konta Linux, które steruje Tailscale bez sudo („Moje konto” ją "
+"wypełnia); puste: tylko root. Zmiana operatora wymaga sudo jeden raz."
+
+msgid "ex. votre compte Linux"
+msgstr "np. twoje konto Linux"
+
+msgid "réglage inconnu"
+msgstr "nieznane ustawienie"
+
+msgid "caractère de contrôle"
+msgstr "znak sterujący"
+
+msgid "valeur hors liste"
+msgstr "wartość spoza listy"
+
+msgid "lettres, chiffres et tirets seulement (63 au plus)"
+msgstr "tylko litery, cyfry i myślniki (najwyżej 63)"
+
+msgid "64 caractères au plus"
+msgstr "najwyżej 64 znaki"
+
+msgid "nom de compte Unix attendu"
+msgstr "oczekiwano nazwy konta Unix"
+
+msgid "adresse ou nom de machine attendu"
+msgstr "oczekiwano adresu lub nazwy maszyny"
+
+msgid "port de 0 à 65535"
+msgstr "port od 0 do 65535"
+
+#, python-brace-format
+msgid "réseau invalide : {value}"
+msgstr "nieprawidłowa sieć: {value}"
+
+msgid "port de 1 à 65535 attendu"
+msgstr "oczekiwano portu od 1 do 65535"
+
+msgid "cible locale attendue : un port, ou http://127.0.0.1:PORT"
+msgstr "oczekiwano celu lokalnego: port lub http://127.0.0.1:PORT"
+
+msgid "cible locale attendue : un port, ou tcp://127.0.0.1:PORT"
+msgstr "oczekiwano celu lokalnego: port lub tcp://127.0.0.1:PORT"
+
+msgid "mode inconnu"
+msgstr "nieznany tryb"
+
+msgid "Funnel n'ouvre que les ports 443, 8443 et 10000"
+msgstr "Funnel otwiera tylko porty 443, 8443 i 10000"
+
+msgid "chemin attendu : /, /site, /api/v1…"
+msgstr "oczekiwana ścieżka: /, /site, /api/v1…"
+
+msgid "ce port est déjà publié pour un autre public (tailnet / Internet)"
+msgstr ""
+"ten port jest już opublikowany dla innej publiczności (tailnet / Internet)"
+
+msgid "ce port est déjà publié"
+msgstr "ten port jest już opublikowany"
+
+msgid "ce port est déjà publié dans un autre mode"
+msgstr "ten port jest już opublikowany w innym trybie"
+
+msgid "ce chemin est déjà publié sur ce port"
+msgstr "ta ścieżka jest już opublikowana na tym porcie"
+
+msgid "pare-feu"
+msgstr "zapora"
+
+msgid "publication"
+msgstr "publikacja"
+
+msgid "veille automatique"
+msgstr "automatyczny nadzór"
+
+msgid "disjoncteur"
+msgstr "bezpiecznik"
+
+msgid ""
+"Cette session passe par Tailscale : arrêter tailscaled la coupera, et vous "
+"ne pourrez pas le relancer d'ici. Accès de secours : le réseau local ou la "
+"machine elle-même."
+msgstr ""
+"Ta sesja przechodzi przez Tailscale: zatrzymanie tailscaled ją przerwie i "
+"nie będzie można go stąd ponownie uruchomić. Dostęp awaryjny: sieć lokalna "
+"lub sama maszyna."
+
+msgid ""
+"Cette session passe par Tailscale : pendant le redémarrage elle se figera "
+"quelques secondes, puis reviendra en général d'elle-même."
+msgstr ""
+"Ta sesja przechodzi przez Tailscale: podczas ponownego uruchamiania zamrozi "
+"się na kilka sekund, a potem zwykle wróci sama."
+
+msgid "réponse DNS invalide"
+msgstr "nieprawidłowa odpowiedź DNS"
+
+msgid "aucune adresse publique pour ce nom"
+msgstr "brak adresu publicznego dla tej nazwy"
+
+msgid "HAProxy absent"
+msgstr "brak HAProxy"
+
+msgid "crontab absent (installez cronie ou un autre cron)"
+msgstr "brak crontab (zainstaluj cronie lub inny cron)"
+
+msgid "fichier trop gros"
+msgstr "plik zbyt duży"
+
+msgid "téléchargement impossible"
+msgstr "pobieranie niemożliwe"
+
+msgid "base incomplète (trop peu de plages) : ancienne base gardée"
+msgstr "niekompletna baza (zbyt mało zakresów): zachowano poprzednią bazę"
+
+msgid "contient l'installation d'omega-tail"
+msgstr "zawiera instalację omega-tail"
+
+msgid "lecture refusée"
+msgstr "odmowa odczytu"
+
+msgid "aucun journal trouvé"
+msgstr "nie znaleziono żadnego logu"
+
+msgid ""
+"Votre compte ne peut pas lire le journal du système. Ajoutez-le au groupe « "
+"systemd-journal » (ou « adm » / « wheel » selon la distribution), puis "
+"rouvrez votre session."
+msgstr ""
+"Twoje konto nie może czytać logu systemowego. Dodaj je do grupy „systemd-"
+"journal” (lub „adm” / „wheel” zależnie od dystrybucji), a potem otwórz sesję"
+" ponownie."
+
+msgid ""
+"Ce journal est réservé à root sur cette machine : ajoutez votre compte au "
+"groupe qui peut le lire (souvent « adm » ou « wheel »), ou lisez-le avec "
+"sudo."
+msgstr ""
+"Ten log jest na tej maszynie zarezerwowany dla roota: dodaj swoje konto do "
+"grupy, która może go czytać (często „adm” lub „wheel”), albo czytaj go przez"
+" sudo."
+
+msgid "journal vide ou illisible pour ce compte"
+msgstr "log pusty lub nieczytelny dla tego konta"
+
+msgid "DNS public"
+msgstr "Publiczny DNS"
+
+msgid "réponse vide"
+msgstr "pusta odpowiedź"
+
+msgid "Pilotage de Tailscale et protection de Funnel."
+msgstr "Sterowanie Tailscale i ochrona Funnel."
+
+msgid "état de Tailscale, de la machine et alertes"
+msgstr "stan Tailscale, maszyny i alerty"
+
+msgid "aide complète en texte"
+msgstr "pełna pomoc w formie tekstu"
+
+msgid "rapport de la machine (faits seulement)"
+msgstr "raport maszyny (tylko fakty)"
+
+msgid "enregistrer dans le dossier des exports (sinon : affiché)"
+msgstr "zapisz w katalogu eksportów (w przeciwnym razie: wyświetl)"
+
+msgid ""
+"inclure le compte Tailscale et les noms / adresses des appareils du tailnet"
+msgstr "dołącz konto Tailscale oraz nazwy / adresy urządzeń tailnetu"
+
+msgid "couper ou remettre Funnel (Survie)"
+msgstr "odetnij lub przywróć Funnel (Przetrwanie)"
+
+msgid "coupure en cours"
+msgstr "bieżące odcięcie"
+
+msgid "couper Funnel"
+msgstr "odetnij Funnel"
+
+msgid "coupure momentanée, remise en route automatique (minuterie)"
+msgstr "chwilowe odcięcie, automatyczne przywrócenie (minutnik)"
+
+msgid "coupure jusqu'à « retablir »"
+msgstr "odcięcie do „retablir”"
+
+msgid "remettre Funnel à l'identique"
+msgstr "przywróć Funnel bez zmian"
+
+msgid "coupure visée (minuterie) ; une autre coupure est ignorée"
+msgstr "docelowe odcięcie (minutnik); inne odcięcie jest ignorowane"
+
+msgid "secondes d'attente avant (hors systemd)"
+msgstr "sekundy oczekiwania przedtem (poza systemd)"
+
+msgid "veille automatique (coupe Funnel seule sous attaque)"
+msgstr "automatyczny nadzór (sam odcina Funnel podczas ataku)"
+
+msgid "tourner en continu (lancé par le service de la veille)"
+msgstr "działaj w sposób ciągły (uruchamiane przez usługę nadzoru)"
+
+msgid "état de la veille et dernières lignes du journal"
+msgstr "stan nadzoru i ostatnie wiersze logu"
+
+msgid "pare-feu Funnel (porte HAProxy)"
+msgstr "zapora Funnel (brama HAProxy)"
+
+msgid "état de la porte et compteurs"
+msgstr "stan bramy i liczniki"
+
+msgid "renouveler le certificat *.ts.net de la porte"
+msgstr "odnów certyfikat *.ts.net bramy"
+
+msgid "seulement s'il expire dans moins de 30 jours"
+msgstr "tylko jeśli wygasa za mniej niż 30 dni"
+
+msgid "regroupements : mode attaque, empreintes, AS, pays (lot 6)"
+msgstr "grupowanie: tryb ataku, odciski, AS, kraje (etap 6)"
+
+msgid "mettre à jour la base AS / pays (DB-IP Lite)"
+msgstr "aktualizuj bazę AS / krajów (DB-IP Lite)"
+
+msgid "bloquer une adresse (durée de blocage) ou un réseau"
+msgstr "zablokuj adres (czas blokady) lub sieć"
+
+msgid "liste noire, jusqu'à « debloquer »"
+msgstr "czarna lista, aż do „debloquer”"
+
+msgid "débloquer une adresse ou un réseau"
+msgstr "odblokuj adres lub sieć"
+
+msgid "mettre en confiance (jamais limitée)"
+msgstr "oznacz jako zaufany (nigdy nie ograniczany)"
+
+#, python-brace-format
+msgid "Export impossible : {error}"
+msgstr "Eksport niemożliwy: {error}"
+
+#, python-brace-format
+msgid "Rapport enregistré : {path}"
+msgstr "Raport zapisany: {path}"
+
+msgid "Funnel n'est pas coupé par omega-tail."
+msgstr "Funnel nie jest odcięty przez omega-tail."
+
+#, python-brace-format
+msgid "remise en route prévue {when}"
+msgstr "przywrócenie zaplanowane {when}"
+
+msgid "coupure totale"
+msgstr "odcięcie całkowite"
+
+#, python-brace-format
+msgid ""
+"Funnel coupé depuis {since} ({until}), ports {ports} ; sauvegarde {saved}"
+msgstr ""
+"Funnel odcięty od {since} ({until}), porty {ports}; kopia zapasowa {saved}"
+
+msgid "--minutes : 1 au moins."
+msgstr "--minutes: co najmniej 1."
+
+msgid ""
+"La porte n'est pas active : les listes s'appliqueront à son activation."
+msgstr "Brama nie jest aktywna: listy zostaną zastosowane po jej włączeniu."
+
+msgid "Veille automatique : désactivée."
+msgstr "Automatyczny nadzór: wyłączony."
+
+msgid "ARRÊTÉE (signe de vie trop vieux)"
+msgstr "ZATRZYMANY (sygnał życia zbyt stary)"
+
+msgid "en marche"
+msgstr "działa"
+
+#, python-brace-format
+msgid ""
+"Veille automatique : {state} ; dépassements récents {strikes}/3 ; prochaine "
+"coupure {minutes} min"
+msgstr ""
+"Automatyczny nadzór: {state}; ostatnie przekroczenia {strikes}/3; następne "
+"odcięcie {minutes} min"
+
+msgid "Porte inactive : Funnel ne passe pas par elle."
+msgstr "Brama nieaktywna: Funnel przez nią nie przechodzi."
+
+#, python-brace-format
+msgid ""
+"Porte active depuis {since} : Funnel {port} -> 127.0.0.1:{gate} -> {backend}"
+msgstr ""
+"Brama aktywna od {since}: Funnel {port} -> 127.0.0.1:{gate} -> {backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions : {total} reçues, {refused} refusées avant chiffrement, {current}"
+" en cours"
+msgstr ""
+"Połączenia: {total} odebrane, {refused} odrzucone przed szyfrowaniem, "
+"{current} w toku"
+
+#, python-brace-format
+msgid "{days} jour(s) restants"
+msgstr "pozostało dni: {days}"
+
+#, python-brace-format
+msgid "Certificat : {left}"
+msgstr "Certyfikat: {left}"
+
+#, python-brace-format
+msgid "Certificat valable encore {days} jour(s) : rien à faire."
+msgstr "Certyfikat ważny jeszcze {days} dni: nic do zrobienia."
+
+msgid ""
+"HAProxy sans Lua : regroupements (JA4, AS, pays) indisponibles, porte du lot"
+" 4 seule."
+msgstr ""
+"HAProxy bez Lua: grupowanie (JA4, AS, kraje) niedostępne, tylko brama z "
+"etapu 4."
+
+msgid "observation (rien n'est refusé par ces règles)"
+msgstr "obserwacja (te reguły niczego nie odrzucają)"
+
+#, python-brace-format
+msgid "ATTAQUE (retour au normal dans {seconds} s sans dépassement)"
+msgstr "ATAK (powrót do normy za {seconds} s bez przekroczenia)"
+
+msgid "normal"
+msgstr "normalny"
+
+#, python-brace-format
+msgid "Regroupements : {mode} ; mode {attack}"
+msgstr "Grupowanie: {mode}; tryb {attack}"
+
+#, python-brace-format
+msgid ""
+"Mode attaque au-delà de {rate} connexions entrantes / s ; calme {minutes} "
+"min"
+msgstr ""
+"Tryb ataku powyżej {rate} połączeń przychodzących / s; spokój {minutes} min"
+
+msgid "référence prête"
+msgstr "punkt odniesienia gotowy"
+
+#, python-brace-format
+msgid "apprentissage : encore {days} jour(s)"
+msgstr "uczenie się: jeszcze {days} dni"
+
+#, python-brace-format
+msgid "Empreintes habituelles : {known} ({learning})"
+msgstr "Zwykłe odciski: {known} ({learning})"
+
+#, python-brace-format
+msgid "mise à jour il y a {days} jour(s)"
+msgstr "zaktualizowana {days} dni temu"
+
+msgid "absente (« omega-tail porte base »)"
+msgstr "brak („omega-tail porte base”)"
+
+#, python-brace-format
+msgid "Base AS / pays : {base}"
+msgstr "Baza AS / krajów: {base}"
+
+#, python-brace-format
+msgid "Connexions refusées (7 j) : {found}"
+msgstr "Odrzucone połączenia (7 dni): {found}"
+
+#, python-brace-format
+msgid "Connexions qui auraient été refusées (7 j) : {found}"
+msgstr "Połączenia, które zostałyby odrzucone (7 dni): {found}"
+
+msgid "Empreintes les plus actives (connexions / 10 s, total) :"
+msgstr "Najaktywniejsze odciski (połączenia / 10 s, łącznie):"
+
+msgid "AS les plus actifs (connexions / 10 s, total) :"
+msgstr "Najaktywniejsze AS (połączenia / 10 s, łącznie):"
+
+msgid "Pays les plus actifs (connexions / 10 s, total) :"
+msgstr "Najaktywniejsze kraje (połączenia / 10 s, łącznie):"
+
+msgid "Tailscale n'est pas installé."
+msgstr "Tailscale nie jest zainstalowany."
+
+#, python-brace-format
+msgid "Service tailscaled : {state}"
+msgstr "Usługa tailscaled: {state}"
+
+#, python-brace-format
+msgid "Version : {daemon} en marche, {client} installée"
+msgstr "Wersja: działa {daemon}, zainstalowana {client}"
+
+#, python-brace-format
+msgid "Nom : {name}"
+msgstr "Nazwa: {name}"
+
+#, python-brace-format
+msgid "Adresses : {addresses}"
+msgstr "Adresy: {addresses}"
+
+#, python-brace-format
+msgid "Opérateur : {operator}"
+msgstr "Operator: {operator}"
+
+#, python-brace-format
+msgid "tailscaled : {cpu} d'un cœur, {memory}"
+msgstr "tailscaled: {cpu} jednego rdzenia, {memory}"
+
+#, python-brace-format
+msgid "Température : {value}"
+msgstr "Temperatura: {value}"
+
+msgid "PUBLICATION"
+msgstr "PUBLIKACJA"
+
+msgid "rien de publié"
+msgstr "nic nie opublikowano"
+
+msgid "ALERTES"
+msgstr "ALERTY"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — LISTE NOIRE DE LA PORTE ({machine})"
+msgstr "OMEGA-TAIL {version} — CZARNA LISTA BRAMY ({machine})"
+
+#, python-brace-format
+msgid ""
+"Établie le {date} : {count} entrée(s), la plus ancienne d'abord. L'export "
+"TXT se réimporte tel quel."
+msgstr ""
+"Sporządzono {date}: {count} wpis(ów), od najstarszego. Eksport TXT można "
+"zaimportować ponownie bez zmian."
+
+msgid "Adresse ou réseau"
+msgstr "Adres lub sieć"
+
+msgid "Ajoutée le"
+msgstr "Dodano"
+
+msgid "Origine"
+msgstr "Źródło"
+
+msgid "Liste noire - Omega-Tail"
+msgstr "Czarna lista - Omega-Tail"
+
+msgid "Passer d'un élément à l'autre (lignes d'un tableau, boutons)"
+msgstr "Przechodzenie między elementami (wiersze tabeli, przyciski)"
+
+msgid "Passer d'une zone de l'écran à l'autre"
+msgstr "Przechodzenie między obszarami ekranu"
+
+msgid "Activer le bouton choisi ; dans le tableau des alertes, « Corriger »"
+msgstr "Uruchom wybrany przycisk; w tabeli alertów „Popraw”"
+
+msgid "Entrée / Clic"
+msgstr "Enter / Kliknięcie"
+
+msgid "Revenir à l'écran précédent (au menu : quitter)"
+msgstr "Wróć do poprzedniego ekranu (w menu: wyjdź)"
+
+msgid "Cette aide, depuis n'importe quel écran"
+msgstr "Ta pomoc, z każdego ekranu"
+
+msgid "Réglages, depuis n'importe quel écran"
+msgstr "Ustawienia, z każdego ekranu"
+
+msgid "Thème suivant (enregistré)"
+msgstr "Następny motyw (zapisywany)"
+
+msgid "Redessiner l'écran, afficher la taille du terminal et relire l'état"
+msgstr "Przerysuj ekran, pokaż rozmiar terminala i odczytaj stan ponownie"
+
+msgid ""
+"Commandes : thème, capture d'écran (SVG, dans le dossier des captures), "
+"quitter"
+msgstr "Polecenia: motyw, zrzut ekranu (SVG, w katalogu zrzutów), wyjście"
+
+msgid "Ctrl+P"
+msgstr "Ctrl+P"
+
+msgid ""
+"omega-tail pilote Tailscale sur cette machine et la protège quand elle publie un service sur Internet par Tailscale Funnel.\n"
+"\n"
+"1. [b]Tableau de bord[/b] : l'état de Tailscale, de la machine et de ce qui est publié, puis les alertes. Choisissez une alerte et « Corriger » : omega-tail ouvre l'écran qui la corrige.\n"
+"2. [b]Service tailscaled[/b] : démarrer, arrêter ou redémarrer le service (par exemple pour appliquer une mise à jour déjà installée).\n"
+"3. [b]Connexion et réglages[/b] : connexion, compte et réglages de Tailscale, vérifiés avant d'être appliqués.\n"
+"4. [b]Publication[/b] : ce que Serve et Funnel publient ; publier, retirer, essayer, restaurer.\n"
+"5. [b]Journaux[/b] : ce que tailscaled a écrit, filtrable et exportable.\n"
+"6. [b]Survie[/b] : confiner tailscaled, et couper Funnel un moment (puis le remettre tout seul) ou totalement quand la machine est attaquée.\n"
+"7. [b]Pare-feu Funnel[/b] : une porte qui refuse les connexions abusives avant tout chiffrement ; [b]Attaques et décisions[/b] pour voir et décider en direct.\n"
+"\n"
+"La [b]bande d'état[/b] (cadre « État », sous le titre de chaque écran) résume tout : service, consommation de tailscaled, température, mémoire vive utilisée (RAM), Funnel, pare-feu (actif, arrêté, inactif), veille automatique (active, arrêtée, inactive) et connexion. Elle est relue toutes les 5 secondes. La taille de la fenêtre est affichée à côté du thème, en haut ; « r » la relit après un redimensionnement.\n"
+"\n"
+"Chaque action qui change la machine montre d'abord sa commande ; le mot de passe sudo se saisit dans le terminal, l'interface revient ensuite. Rien n'est jamais lancé en arrière-plan sans vous."
+msgstr ""
+"omega-tail steruje Tailscale na tej maszynie i chroni ją, gdy publikuje usługę w Internecie przez Tailscale Funnel.\n"
+"\n"
+"1. [b]Pulpit[/b]: stan Tailscale, maszyny i tego, co jest opublikowane, a potem alerty. Wybierz alert i „Popraw”: omega-tail otworzy ekran, który go naprawia.\n"
+"2. [b]Usługa tailscaled[/b]: uruchom, zatrzymaj lub uruchom ponownie usługę (na przykład, by zastosować już zainstalowaną aktualizację).\n"
+"3. [b]Połączenie i ustawienia[/b]: połączenie, konto i ustawienia Tailscale, sprawdzane przed zastosowaniem.\n"
+"4. [b]Publikacja[/b]: co publikują Serve i Funnel; opublikuj, wycofaj, przetestuj, przywróć.\n"
+"5. [b]Logi[/b]: co zapisał tailscaled, z filtrowaniem i eksportem.\n"
+"6. [b]Przetrwanie[/b]: ogranicz zasoby tailscaled i odetnij Funnel na chwilę (potem sam go przywróci) lub całkowicie, gdy maszyna jest atakowana.\n"
+"7. [b]Zapora Funnel[/b]: brama, która odrzuca nadużywające połączenia przed jakimkolwiek szyfrowaniem; [b]Ataki i decyzje[/b], by widzieć i decydować na żywo.\n"
+"\n"
+"[b]Pasek stanu[/b] (ramka „Stan” pod tytułem każdego ekranu) podsumowuje wszystko: usługę, zużycie tailscaled, temperaturę, używaną pamięć (RAM), Funnel, zaporę (aktywna, zatrzymana, nieaktywna), automatyczny nadzór (aktywny, zatrzymany, nieaktywny) i połączenie. Jest odczytywany co 5 sekund. Rozmiar okna jest wyświetlany obok motywu, na górze; „r” odczytuje go ponownie po zmianie rozmiaru.\n"
+"\n"
+"Każda akcja zmieniająca maszynę najpierw pokazuje swoje polecenie; hasło sudo wpisuje się w terminalu, a potem interfejs wraca. Nic nigdy nie jest uruchamiane w tle bez twojej wiedzy."
+
+msgid "Tableau de bord"
+msgstr "Pulpit"
+
+msgid ""
+"Trois cadres et une liste d'alertes.\n"
+"- [b]Tailscale[/b] : service, état de la connexion, version (en marche et installée), nom de la machine, adresses, compte, appareils en ligne, expiration de la clé, opérateur.\n"
+"- [b]Tailscale[/b] dit aussi si la machine se propose comme nœud de sortie, lequel elle utilise, et les sous-réseaux qu'elle annonce.\n"
+"- [b]Machine[/b] : CPU de toute la machine, charge, température, mémoire, CPU et mémoire de tailscaled (en % d'un cœur), confinement, puis l'état des protections : Funnel, pare-feu (porte, mode attaque), liste noire, veille, bouclier du port WireGuard.\n"
+"- Libellés dans la couleur d'accent du thème, valeurs en vert, orange ou rouge selon les seuils (CPU machine 70 / 90 %, charge 1 / 2 par cœur, température 75 / 85 °C, mémoire 85 / 95 %, tailscaled 50 / 90 % d'un cœur, liste noire 25 000 / 50 000 entrées).\n"
+"- [b]Publication[/b] : chaque port publié, pour Internet (Funnel) ou le tailnet seul (Serve), son mode et sa cible.\n"
+"- [b]Alertes[/b] : de la plus grave à la moins grave. « Corriger » (ou Entrée) ouvre l'écran qui corrige ; un écran pas encore construit le dit.\n"
+"\n"
+"Alertes possibles : service arrêté ; mise à jour installée mais pas appliquée (redémarrer le service) ; compte à connecter ; clé qui expire ; Funnel publié sans protection (tailscaled fait le chiffrement de chaque visiteur : une rafale peut saturer la machine) ; température élevée ; tailscaled trop gourmand ; tailscaled non confiné ; vous n'êtes pas opérateur ; liste noire de plus de 25 000 entrées ; messages de Tailscale lui-même.\n"
+"\n"
+"La bande d'état en haut de chaque écran sépare [b]CPU machine[/b] (toute la machine, en % de tous ses cœurs) et [b]CPU tailscaled[/b] (le seul service, en % d'un cœur)."
+msgstr ""
+"Trzy ramki i lista alertów.\n"
+"- [b]Tailscale[/b]: usługa, stan połączenia, wersja (działająca i zainstalowana), nazwa maszyny, adresy, konto, urządzenia online, wygaśnięcie klucza, operator.\n"
+"- [b]Tailscale[/b] mówi też, czy maszyna oferuje się jako węzeł wyjściowy, którego używa, oraz jakie podsieci rozgłasza.\n"
+"- [b]Maszyna[/b]: CPU całej maszyny, obciążenie, temperatura, pamięć, CPU i pamięć tailscaled (w % jednego rdzenia), ograniczenie zasobów, a potem stan zabezpieczeń: Funnel, zapora (brama, tryb ataku), czarna lista, nadzór, osłona portu WireGuard.\n"
+"- Etykiety w kolorze akcentu motywu, wartości na zielono, pomarańczowo lub czerwono zależnie od progów (CPU maszyny 70 / 90 %, obciążenie 1 / 2 na rdzeń, temperatura 75 / 85 °C, pamięć 85 / 95 %, tailscaled 50 / 90 % jednego rdzenia, czarna lista 25 000 / 50 000 wpisów).\n"
+"- [b]Publikacja[/b]: każdy opublikowany port, dla Internetu (Funnel) lub tylko dla tailnetu (Serve), jego tryb i cel.\n"
+"- [b]Alerty[/b]: od najpoważniejszego do najmniej poważnego. „Popraw” (lub Enter) otwiera ekran, który to naprawia; ekran jeszcze niezbudowany mówi o tym.\n"
+"\n"
+"Możliwe alerty: usługa zatrzymana; aktualizacja zainstalowana, ale niezastosowana (uruchom usługę ponownie); konto do zalogowania; wygasający klucz; Funnel opublikowany bez ochrony (tailscaled szyfruje każdego odwiedzającego: seria połączeń może przeciążyć maszynę); wysoka temperatura; tailscaled zbyt zachłanny; tailscaled bez ograniczenia zasobów; nie jesteś operatorem; czarna lista powyżej 25 000 wpisów; komunikaty samego Tailscale.\n"
+"\n"
+"Pasek stanu na górze każdego ekranu rozdziela [b]CPU maszyny[/b] (cała maszyna, w % wszystkich jej rdzeni) i [b]CPU tailscaled[/b] (sama usługa, w % jednego rdzenia)."
+
+msgid "Service tailscaled"
+msgstr "Usługa tailscaled"
+
+msgid ""
+"L'état du service vu par systemd : actif ou non, lancé au démarrage, depuis quand, mémoire ; la version en marche et la version installée ; la commande de lancement ; les fichiers d'ajout (affichés, modifiés seulement par « Corriger le démarrage », sur votre accord) ; le confinement.\n"
+"\n"
+"[b]Démarrer[/b], [b]Arrêter[/b], [b]Redémarrer[/b] : la commande s'affiche avant d'être lancée.\n"
+"[b]Garde-fou[/b] : si votre session passe par Tailscale (SSH par le tailnet), Arrêter vous couperait sans pouvoir relancer : omega-tail demande une seconde confirmation. Redémarrer fige la session quelques secondes, puis elle revient en général.\n"
+"\n"
+"[b]Corriger le démarrage[/b] (affiché seulement si besoin) : un de vos fichiers d'ajout lance « tailscale up » après le démarrage. Dès qu'un réglage change ensuite (opérateur, nom, routes…), Tailscale refuse ce « up » incomplet ; systemd arrête alors tailscaled et abandonne après cinq essais : la machine sort du tailnet au premier redémarrage. La correction ajoute « - » devant la commande (son refus n'arrête plus le service ; vos réglages restent gardés par Tailscale), et rien d'autre ; l'original est gardé dans var/survie. Avant tout redémarrage qu'il lance (Redémarrer, confinement, opérateur), omega-tail fait d'abord cette correction, commandes montrées."
+msgstr ""
+"Stan usługi widziany przez systemd: aktywna czy nie, uruchamiana przy starcie, od kiedy, pamięć; wersja działająca i wersja zainstalowana; polecenie uruchomienia; pliki nakładki (wyświetlane, zmieniane tylko przez „Popraw uruchamianie”, za twoją zgodą); ograniczenie zasobów.\n"
+"\n"
+"[b]Uruchom[/b], [b]Zatrzymaj[/b], [b]Uruchom ponownie[/b]: polecenie wyświetla się przed uruchomieniem.\n"
+"[b]Zabezpieczenie[/b]: jeśli twoja sesja przechodzi przez Tailscale (SSH przez tailnet), Zatrzymaj odcięłoby cię bez możliwości ponownego uruchomienia: omega-tail prosi o drugie potwierdzenie. Uruchom ponownie zamraża sesję na kilka sekund, a potem zwykle ona wraca.\n"
+"\n"
+"[b]Popraw uruchamianie[/b] (wyświetlane tylko w razie potrzeby): jeden z twoich plików nakładki wywołuje „tailscale up” po uruchomieniu. Gdy potem zmieni się jakieś ustawienie (operator, nazwa, trasy…), Tailscale odrzuca to niepełne „up”; systemd zatrzymuje wtedy tailscaled i rezygnuje po pięciu próbach: maszyna wypada z tailnetu przy pierwszym ponownym uruchomieniu. Poprawka dodaje „-” przed poleceniem (jego odrzucenie nie zatrzymuje już usługi; twoje ustawienia nadal przechowuje Tailscale) i nic więcej; oryginał jest zachowany w var/survie. Przed każdym ponownym uruchomieniem, które sam wywołuje (Uruchom ponownie, ograniczenie zasobów, operator), omega-tail najpierw wykonuje tę poprawkę, z pokazanymi poleceniami."
+
+msgid "Connexion et réglages"
+msgstr "Połączenie i ustawienia"
+
+msgid ""
+"L'état de la connexion (connecté ou non, compte, tailnet, nom et adresses de la machine, expiration de la clé, opérateur).\n"
+"\n"
+"[b]Se connecter[/b] / [b]Se déconnecter[/b] : la machine rejoint ou quitte le tailnet ; le compte reste enregistré. [b]Ajouter un compte[/b] : Tailscale affiche dans le terminal l'adresse à ouvrir pour s'identifier. [b]Changer de compte[/b] : choisissez un compte déjà connu de la machine. [b]Déconnexion définitive[/b] : la machine est retirée du compte (clé révoquée) ; il faut taper son nom pour confirmer.\n"
+"[b]Garde-fou[/b] : si votre session passe par Tailscale, se déconnecter la coupe sans retour possible ; omega-tail le dit avant.\n"
+"\n"
+"[b]Réglages[/b] (ceux de tailscale set), chacun avec sa phrase d'explication : nom de la machine, surnom, routes, DNS du tailnet, bouclier, filtrage avec état, mode netfilter, nœud de sortie, accès au réseau local, proposer la machine comme nœud de sortie, sous-réseaux annoncés, SSH Tailscale, interface web, mises à jour, relais pair, opérateur. Les valeurs sont vérifiées ; pendant la saisie, un cadre au-dessus des boutons montre avant → après et la commande ; « Appliquer » la lance dans le terminal (sans sudo si vous êtes opérateur ; changer l'opérateur demande sudo). Un avertissement s'affiche quand un changement peut couper une session passée par Tailscale (bouclier, SSH Tailscale coupé, nœud de sortie, netfilter). Après application, le cadre garde le résultat, vérifié sur les valeurs relues (✔ pris en compte, ✖ non). « Relire » reprend les valeurs actuelles.\n"
+"\n"
+"[b]Nœud de sortie[/b] : la liste ne propose que les machines du tailnet qui se proposent comme nœud de sortie (et approuvées dans la console d'administration de Tailscale) ; s'il n'y en a aucune, l'écran le dit.\n"
+"[b]Transfert IP[/b] : une machine qui se propose comme nœud de sortie ou annonce des sous-réseaux doit faire suivre les paquets. S'il est désactivé, un avertissement et le bouton « Activer le transfert IP » apparaissent : un fichier à part (/etc/sysctl.d/99-omega-tail-forwarding.conf), appliqué tout de suite et relu au démarrage (systemd, OpenRC, runit). Pour annuler : supprimer ce fichier puis redémarrer."
+msgstr ""
+"Stan połączenia (połączony czy nie, konto, tailnet, nazwa i adresy maszyny, wygaśnięcie klucza, operator).\n"
+"\n"
+"[b]Zaloguj się[/b] / [b]Wyloguj się[/b]: maszyna dołącza do tailnetu lub go opuszcza; konto pozostaje zapisane. [b]Dodaj konto[/b]: Tailscale wyświetla w terminalu adres do otwarcia w celu uwierzytelnienia. [b]Zmień konto[/b]: wybierz konto już znane maszynie. [b]Trwałe wylogowanie[/b]: maszyna zostaje usunięta z konta (klucz unieważniony); aby potwierdzić, trzeba wpisać jej nazwę.\n"
+"[b]Zabezpieczenie[/b]: jeśli twoja sesja przechodzi przez Tailscale, wylogowanie przerwie ją bez możliwości powrotu; omega-tail mówi o tym wcześniej.\n"
+"\n"
+"[b]Ustawienia[/b] (te z tailscale set), każde z opisem: nazwa maszyny, przydomek, trasy, DNS tailnetu, osłona, filtrowanie stanowe, tryb netfilter, węzeł wyjściowy, dostęp do sieci lokalnej, oferowanie maszyny jako węzła wyjściowego, rozgłaszane podsieci, SSH Tailscale, interfejs WWW, aktualizacje, przekaźnik równorzędny, operator. Wartości są sprawdzane; podczas wpisywania ramka nad przyciskami pokazuje przed → po oraz polecenie; „Zastosuj” uruchamia je w terminalu (bez sudo, jeśli jesteś operatorem; zmiana operatora wymaga sudo). Wyświetla się ostrzeżenie, gdy zmiana może przerwać sesję przechodzącą przez Tailscale (osłona, wyłączone SSH Tailscale, węzeł wyjściowy, netfilter). Po zastosowaniu ramka zachowuje wynik, sprawdzony na ponownie odczytanych wartościach (✔ uwzględnione, ✖ nie). „Odczytaj” pobiera bieżące wartości.\n"
+"\n"
+"[b]Węzeł wyjściowy[/b]: lista proponuje tylko maszyny tailnetu, które oferują się jako węzeł wyjściowy (i są zatwierdzone w konsoli administracyjnej Tailscale); jeśli nie ma żadnej, ekran o tym mówi.\n"
+"[b]Przekazywanie IP[/b]: maszyna, która oferuje się jako węzeł wyjściowy lub rozgłasza podsieci, musi przekazywać pakiety. Jeśli jest wyłączone, pojawia się ostrzeżenie i przycisk „Włącz przekazywanie IP”: osobny plik (/etc/sysctl.d/99-omega-tail-forwarding.conf), stosowany od razu i odczytywany przy starcie (systemd, OpenRC, runit). Aby cofnąć: usuń ten plik, a potem uruchom maszynę ponownie."
+
+msgid "Publication"
+msgstr "Publikacja"
+
+msgid ""
+"Tout ce que la machine publie : port, pour qui (le tailnet seul avec Serve, Internet avec Funnel), mode, chemin, cible, et si la porte du pare-feu protège le port.\n"
+"\n"
+"[b]Publier[/b] : un service local (un port, ou http://127.0.0.1:PORT), pour le tailnet ou pour Internet (Funnel n'ouvre que les ports 443, 8443 et 10000), en HTTPS, HTTP, TCP ou TLS terminé, sur un chemin. Pour Internet, le plus sûr est HTTPS sur 443 puis « Activer la protection » (Pare-feu Funnel).\n"
+"[b]Retirer[/b] : la ligne choisie (un chemin seul si le port en publie d'autres). Le port protégé par la porte se retire par « Désactiver la protection ».\n"
+"[b]Suspendre Funnel[/b] / [b]Rétablir Funnel[/b] : coupe les ports ouverts à Internet sans perdre leur configuration (même mécanisme que le disjoncteur de Survie), puis les remet à l'identique.\n"
+"[b]Essai de bout en bout[/b] : une vraie connexion, comme un visiteur (par Internet pour un port public, par le tailnet sinon) : réponse, temps, certificat (émetteur, échéance) et version de TLS.\n"
+"[b]Sauvegardes[/b] : l'état d'avant chaque changement (publication, pare-feu, disjoncteur), les 50 plus récentes ; « Restaurer » remet celle choisie, après avoir sauvegardé l'état actuel.\n"
+"\n"
+"Chaque changement est vérifié. Si le résultat n'est pas celui voulu, la publication est reconstruite (remise à zéro puis chaque point recréé) ; si cela échoue aussi, l'état d'avant est remis. Changer la publication demande d'être opérateur de Tailscale."
+msgstr ""
+"Wszystko, co maszyna publikuje: port, dla kogo (tylko tailnet z Serve, Internet z Funnel), tryb, ścieżka, cel oraz to, czy brama zapory chroni port.\n"
+"\n"
+"[b]Opublikuj[/b]: lokalna usługa (port lub http://127.0.0.1:PORT), dla tailnetu lub dla Internetu (Funnel otwiera tylko porty 443, 8443 i 10000), w HTTPS, HTTP, TCP lub z zakończeniem TLS, pod ścieżką. Dla Internetu najbezpieczniej jest użyć HTTPS na 443, a potem „Włącz ochronę” (Zapora Funnel).\n"
+"[b]Wycofaj[/b]: wybrany wiersz (samą ścieżkę, jeśli port publikuje inne). Port chroniony przez bramę wycofuje się przez „Wyłącz ochronę”.\n"
+"[b]Wstrzymaj Funnel[/b] / [b]Przywróć Funnel[/b]: odcina porty otwarte na Internet bez utraty ich konfiguracji (ten sam mechanizm co bezpiecznik z Przetrwania), a potem przywraca je bez zmian.\n"
+"[b]Test end-to-end[/b]: prawdziwe połączenie, jak odwiedzający (przez Internet dla portu publicznego, w przeciwnym razie przez tailnet): odpowiedź, czas, certyfikat (wystawca, termin ważności) i wersja TLS.\n"
+"[b]Kopie zapasowe[/b]: stan sprzed każdej zmiany (publikacja, zapora, bezpiecznik), 50 najnowszych; „Przywróć” przywraca wybraną, po zapisaniu bieżącego stanu.\n"
+"\n"
+"Każda zmiana jest sprawdzana. Jeśli wynik nie jest zgodny z oczekiwanym, publikacja jest odbudowywana (wyzerowana, a potem każdy punkt odtworzony); jeśli to też się nie uda, przywracany jest poprzedni stan. Zmiana publikacji wymaga bycia operatorem Tailscale."
+
+msgid "Journaux"
+msgstr "Logi"
+
+msgid ""
+"Le journal de tailscaled (journalctl) ou celui de la porte. Choisissez le nombre de lignes, filtrez par texte. Chaque information a sa couleur, prise dans le thème : la date, la machine en grisé, le processus, puis la catégorie du message, une couleur par famille (contrôle et connexion, réseau et relais, DNS, moteur WireGuard) ; les adresses en gras ; le message en rouge s'il signale une erreur, en orange pour un avertissement. Pour la porte : l'adresse du visiteur, le motif de refus en rouge, le regroupement en orange, puis l'AS et le pays. « Exporter » enregistre les lignes affichées dans le dossier des exports ; « Voir les exports » les ouvre (voir Rapport).\n"
+"Si rien ne s'affiche : votre compte doit pouvoir lire le journal du système (groupe systemd-journal, adm ou wheel selon la distribution)."
+msgstr ""
+"Log tailscaled (journalctl) lub log bramy. Wybierz liczbę wierszy, filtruj po tekście. Każda informacja ma swój kolor, wzięty z motywu: data, przyciemniona nazwa maszyny, proces, potem kategoria komunikatu, jeden kolor na rodzinę (sterowanie i połączenie, sieć i przekaźniki, DNS, silnik WireGuard); adresy pogrubione; komunikat na czerwono, jeśli zgłasza błąd, na pomarańczowo przy ostrzeżeniu. Dla bramy: adres odwiedzającego, powód odmowy na czerwono, grupowanie na pomarańczowo, potem AS i kraj. „Eksportuj” zapisuje wyświetlone wiersze w katalogu eksportów; „Pokaż eksporty” je otwiera (zob. Raport).\n"
+"Jeśli nic się nie wyświetla: twoje konto musi móc czytać log systemowy (grupa systemd-journal, adm lub wheel zależnie od dystrybucji)."
+
+msgid "Devenir opérateur"
+msgstr "Zostań operatorem"
+
+msgid ""
+"Par défaut, chaque réglage de Tailscale demande sudo. Devenir opérateur (une"
+" seule fois, par sudo) permet à votre compte de régler Tailscale sans sudo. "
+"Le bouton apparaît dans le tableau de bord tant que ce n'est pas fait ; dans"
+" « Connexion et réglages », le bouton « Mon compte » met votre nom dans le "
+"champ Opérateur, puis « Appliquer ». Pour annuler : vider le champ et "
+"appliquer, ou sudo tailscale set --operator="
+msgstr ""
+"Domyślnie każde ustawienie Tailscale wymaga sudo. Zostanie operatorem (jeden"
+" raz, przez sudo) pozwala twojemu kontu ustawiać Tailscale bez sudo. "
+"Przycisk pojawia się na pulpicie, dopóki nie zostanie to zrobione; w "
+"„Połączenie i ustawienia” przycisk „Moje konto” wpisuje twoją nazwę w pole "
+"Operator, a potem „Zastosuj”. Aby cofnąć: opróżnij pole i zastosuj albo sudo"
+" tailscale set --operator="
+
+msgid "Survie"
+msgstr "Przetrwanie"
+
+msgid ""
+"Garder la machine debout sous attaque : le confinement, le disjoncteur et la veille automatique, toujours proposés, jamais imposés.\n"
+"\n"
+"[b]Confinement de tailscaled[/b] : un fichier d'ajout systemd à part (50-omega-tail.conf) plafonne tailscaled (par exemple un cœur entier sur une machine à 4 fils), baisse son poids et sa priorité. Sous attaque, il ne peut plus prendre toute la machine : l'administration et les autres services restent utilisables. Option : donner la priorité à l'accès SSH. Votre propre override.conf n'est jamais modifié ; « Retirer le confinement » supprime seulement les fichiers d'omega-tail. Le plafond s'applique au rechargement ; la priorité au redémarrage de tailscaled (case cochée par défaut).\n"
+"\n"
+"[b]Disjoncteur Funnel[/b] : quand tailscaled reste au-dessus du seuil CPU pendant toute la durée choisie (80 % d'un cœur pendant 60 s par défaut), ou quand la température atteint son seuil (85 °C), omega-tail ouvert vous propose :\n"
+"- [b]Couper 10 min[/b] (durée réglable) : les ports ouverts à Internet sont coupés, puis remis en route automatiquement, à l'identique, même si omega-tail est fermé (minuterie systemd, sudo une fois) ;\n"
+"- [b]Coupure totale[/b] : Funnel reste coupé jusqu'à « Rétablir maintenant » ;\n"
+"- [b]Pas maintenant[/b] : plus de proposition pendant 15 minutes.\n"
+"Le tailnet (Serve, SSH par Tailscale) n'est jamais coupé. La publication est sauvegardée avant chaque coupure (var/funnel/sauvegardes/) et la remise en route est vérifiée identique. Un port Funnel en TCP (celui de la porte) garde son autorisation Funnel après « off » : la coupure repart alors de zéro avec les seuls points du tailnet et vérifie que plus rien n'est ouvert à Internet. Le disjoncteur demande d'être opérateur de Tailscale : la remise en route tourne sous votre compte, jamais en root.\n"
+"En ligne de commande : omega-tail disjoncteur etat | couper --minutes 10 | couper --totale | retablir.\n"
+"\n"
+"[b]Veille automatique[/b] (désactivée par défaut) : pour une machine sans personne devant. Un service tourne en permanence sous votre compte, même omega-tail fermé (systemd, OpenRC ou runit). Un dépassement : un seuil du disjoncteur tenu. 3 dépassements dans la fenêtre (10 min, réglable) : la veille coupe Funnel seule, 15 min la première fois, 30 min la deuxième, puis 1 h à chaque fois, et le remet en route seule, à l'identique. Retour à 15 min après 24 h sans coupure ; après chaque remise en route, 2 min de calme avant de mesurer de nouveau. Seul Funnel est coupé : tailscaled, le tailnet et SSH restent joignables. Quand la veille tourne, omega-tail ouvert ne propose plus la coupure (elle agit seule). Les 6 dernières lignes de son journal s'affichent dans Survie (le fichier var/veille/journal.log garde 512 Ko, puis passe en journal.log.1) ; une veille activée mais arrêtée est signalée au tableau de bord.\n"
+"En ligne de commande : omega-tail veille etat.\n"
+"\n"
+"[b]Bouclier du port WireGuard[/b] (bouton dans Survie) : tailscaled dépense environ un cœur de processeur pour 100 000 paquets par seconde reçus sur son port, même invalides, Funnel ouvert ou non. Le bouclier est une table nftables posée devant lui, sur les cartes réseau matérielles : les pairs connus (ceux à qui tailscaled écrit, appris par le noyau) ne sont jamais limités ; les poignées de main sont limitées à 20 par seconde et par source ; les autres sources ont un budget (500 paquets par seconde chacune, 5 000 en tout) ; les paquets qui ne sont pas du WireGuard sont refusés. Mesuré : un flot qui prenait un cœur entier à tailscaled n'en prend plus que 1 %.\n"
+"- [b]Observation[/b] d'abord : rien n'est refusé, les compteurs disent ce qui l'aurait été ; « Passer en actif » quand ils ne montrent que des attaques.\n"
+"- [b]Qui le pose[/b] : omega-fire 3.7.0 ou plus récent s'il est relié par omega-connect (sa liste des règles l'affiche avec l'origine omega-tail) ; sinon omega-tail lui-même, même si ufw ou firewalld sont présents. C'est la même table dans les deux cas : « Confier à omega-fire » ou, dans omega-fire, « Reprendre la gestion » la fait changer de mains sans la toucher ; si omega-fire n'est plus relié, « Reprendre la gestion » la rend à omega-tail.\n"
+"- Un service (omega-bouclier-wg) la remet en place à chaque démarrage et écrit son état chaque minute.\n"
+"- Si un autre outil efface la table (nft flush ruleset, pare-feu relancé), le tableau de bord et la veille le signalent ; elle n'est jamais reposée seule : « Reposer ».\n"
+"- Retiré depuis omega-fire : omega-tail l'affiche."
+msgstr ""
+"Utrzymać maszynę na nogach podczas ataku: ograniczenie zasobów, bezpiecznik i automatyczny nadzór, zawsze proponowane, nigdy narzucane.\n"
+"\n"
+"[b]Ograniczenie zasobów tailscaled[/b]: osobny plik nakładki systemd (50-omega-tail.conf) ogranicza tailscaled (na przykład do jednego pełnego rdzenia na maszynie z 4 wątkami), obniża jego wagę i priorytet. Podczas ataku nie może już zająć całej maszyny: administracja i inne usługi pozostają używalne. Opcja: priorytet dla dostępu SSH. Twój własny override.conf nigdy nie jest zmieniany; „Usuń ograniczenie” usuwa tylko pliki omega-tail. Limit działa po przeładowaniu; priorytet po ponownym uruchomieniu tailscaled (pole domyślnie zaznaczone).\n"
+"\n"
+"[b]Bezpiecznik Funnel[/b]: gdy tailscaled przez cały wybrany czas pozostaje powyżej progu CPU (domyślnie 80 % jednego rdzenia przez 60 s) lub gdy temperatura osiąga swój próg (85 °C), otwarty omega-tail proponuje:\n"
+"- [b]Odetnij na 10 min[/b] (czas regulowany): porty otwarte na Internet są odcinane, a potem przywracane automatycznie, bez zmian, nawet jeśli omega-tail jest zamknięty (minutnik systemd, sudo jeden raz);\n"
+"- [b]Odcięcie całkowite[/b]: Funnel pozostaje odcięty aż do „Przywróć teraz”;\n"
+"- [b]Nie teraz[/b]: brak propozycji przez 15 minut.\n"
+"Tailnet (Serve, SSH przez Tailscale) nigdy nie jest odcinany. Publikacja jest zapisywana przed każdym odcięciem (var/funnel/sauvegardes/), a przywrócenie jest sprawdzane jako identyczne. Port Funnel w TCP (ten bramy) zachowuje zezwolenie Funnel po „off”: odcięcie zaczyna wtedy od zera, tylko z punktami tailnetu, i sprawdza, że nic już nie jest otwarte na Internet. Bezpiecznik wymaga bycia operatorem Tailscale: przywrócenie działa na twoim koncie, nigdy jako root.\n"
+"W wierszu poleceń: omega-tail disjoncteur etat | couper --minutes 10 | couper --totale | retablir.\n"
+"\n"
+"[b]Automatyczny nadzór[/b] (domyślnie wyłączony): dla maszyny, przy której nikt nie siedzi. Usługa działa stale na twoim koncie, nawet przy zamkniętym omega-tail (systemd, OpenRC lub runit). Przekroczenie: utrzymany próg bezpiecznika. 3 przekroczenia w oknie czasowym (10 min, regulowane): nadzór sam odcina Funnel, na 15 min za pierwszym razem, 30 min za drugim, potem za każdym razem na 1 h, i sam go przywraca, bez zmian. Powrót do 15 min po 24 h bez odcięcia; po każdym przywróceniu 2 min spokoju przed ponownym pomiarem. Odcinany jest tylko Funnel: tailscaled, tailnet i SSH pozostają osiągalne. Gdy nadzór działa, otwarty omega-tail nie proponuje już odcięcia (nadzór działa sam). 6 ostatnich wierszy jego logu wyświetla się w Przetrwaniu (plik var/veille/journal.log trzyma 512 KB, potem przechodzi do journal.log.1); nadzór włączony, ale zatrzymany, jest zgłaszany na pulpicie.\n"
+"W wierszu poleceń: omega-tail veille etat.\n"
+"\n"
+"[b]Osłona portu WireGuard[/b] (przycisk w Przetrwaniu): tailscaled zużywa około jednego rdzenia procesora na 100 000 pakietów na sekundę odebranych na jego porcie, nawet nieprawidłowych, przy otwartym Funnel lub nie. Osłona to tabela nftables założona przed nim, na sprzętowych kartach sieciowych: znani partnerzy (ci, do których pisze tailscaled, poznani przez jądro) nigdy nie są ograniczani; uzgadnianie połączeń (handshake) jest ograniczone do 20 na sekundę na źródło; pozostałe źródła mają budżet (po 500 pakietów na sekundę, łącznie 5 000); pakiety, które nie są WireGuard, są odrzucane. Zmierzono: strumień, który zajmował tailscaled cały rdzeń, zajmuje już tylko 1 %.\n"
+"- Najpierw [b]obserwacja[/b]: nic nie jest odrzucane, liczniki mówią, co zostałoby odrzucone; „Przełącz na aktywny”, gdy pokazują tylko ataki.\n"
+"- [b]Kto ją zakłada[/b]: omega-fire 3.7.0 lub nowszy, jeśli jest połączony przez omega-connect (jego lista reguł pokazuje ją z pochodzeniem omega-tail); w przeciwnym razie sam omega-tail, nawet jeśli obecne są ufw lub firewalld. W obu przypadkach to ta sama tabela: „Przekaż omega-fire” lub, w omega-fire, „Przejmij zarządzanie” zmienia jej właściciela bez dotykania jej; jeśli omega-fire nie jest już połączony, „Przejmij zarządzanie” oddaje ją omega-tail.\n"
+"- Usługa (omega-bouclier-wg) przywraca ją przy każdym uruchomieniu i co minutę zapisuje jej stan.\n"
+"- Jeśli inne narzędzie usunie tabelę (nft flush ruleset, ponownie uruchomiona zapora), pulpit i nadzór to zgłaszają; nigdy nie jest zakładana ponownie sama: „Załóż ponownie”.\n"
+"- Zdjęta z poziomu omega-fire: omega-tail to pokazuje."
+
+msgid "Pare-feu Funnel"
+msgstr "Zapora Funnel"
+
+msgid ""
+"En Funnel ordinaire, tailscaled fait le chiffrement (TLS) de chaque visiteur : une rafale sature la machine. La protection place une porte (HAProxy, installé par le gestionnaire de paquets) entre Funnel et votre site : Funnel lui transmet le flux encore chiffré avec l'adresse réelle du visiteur, la porte décide AVANT tout chiffrement, puis ne chiffre que pour les connexions admises. Mesuré : une connexion refusée coûte 4,6 fois moins, une connexion admise 2 fois moins.\n"
+"\n"
+"[b]Activer la protection[/b] : préparation (certificat *.ts.net par Tailscale, listes, configuration vérifiée), services de la porte et de son certificat (sudo, dans le terminal ; la porte tourne sous votre compte, jamais en root), bascule de Funnel puis essai depuis Internet. En cas d'échec, la publication d'origine est remise aussitôt. Prérequis : être opérateur de Tailscale ; Funnel publié en HTTPS sur un seul port avec le chemin « / ».\n"
+"[b]Désactiver la protection[/b] : Funnel est remis exactement comme avant, vérifié, puis la porte est arrêtée ; réglages et listes sont gardés.\n"
+"\n"
+"[b]Règles[/b], appliquées à chaud (les adresses bloquées le restent) :\n"
+"- machines du tailnet (100.64.0.0/10 et fd7a:115c:a1e0::/48) : toujours admises, avant toute règle ; seuls les visiteurs de Funnel sont filtrés ;\n"
+"- liste de confiance : jamais limitée ; liste noire : refusée jusqu'à son retrait ;\n"
+"- débit par adresse (40 connexions / 10 s par défaut) : au-delà, l'adresse est bloquée pour la durée choisie (60 min) ;\n"
+"- débit par préfixe /24 (IPv4) ou /64 (IPv6) ;\n"
+"- budget global de connexions admises par seconde : le processeur n'est jamais débordé ;\n"
+"- nom visé : une connexion qui ne vise pas le nom de la machine est refusée.\n"
+"Mode [b]observation[/b] : tout est compté, rien n'est refusé (pour régler les seuils sans risque).\n"
+"\n"
+"Le certificat est vérifié chaque jour et renouvelé à chaud 30 jours avant son échéance.\n"
+"\n"
+"[b]Regroupements[/b] (empreintes, AS, pays) : contre les attaques à adresses dispersées, que les règles par adresse ne voient qu'une fois chacune. Avant tout chiffrement, la porte calcule l'[b]empreinte JA4[/b] du client (la façon dont son logiciel se présente : un navigateur et un outil d'attaque n'ont pas la même), son [b]AS[/b] (le réseau d'origine : fournisseur d'accès, hébergeur, nuage) et son [b]pays[/b], et compte le débit de chaque groupe.\n"
+"- [b]Mode attaque automatique[/b] : quand les connexions entrantes dépassent le seuil (80 / s par défaut), la porte passe seule en mode attaque, et y reste jusqu'à 5 minutes de calme. Rien à faire, même à distance.\n"
+"- En mode attaque seulement : une empreinte inconnue qui explose, un AS d'hébergeur ou de nuage (liste modifiable) ou un pays de votre liste (vide par défaut) qui dépasse son débit est refusé.\n"
+"- Les [b]navigateurs courants[/b] (Chrome, Edge, Firefox) ne sont jamais touchés par ces règles, et les [b]clients connus[/b] (admis dans les dernières 24 h) passent avant le budget global.\n"
+"- [b]Référence apprise[/b] : pendant 7 jours, la porte apprend les empreintes habituelles de votre site (jamais pendant une attaque) ; pendant ce temps, les regroupements restent en [b]observation[/b], même si « appliqués » est choisi. « Recommencer l'apprentissage » repart de zéro et les remet en observation.\n"
+"- [b]Observation[/b] (par défaut) : tout est compté (« aurait été refusée »), rien n'est refusé ; une fois l'apprentissage fini, passez en « appliqués » quand les chiffres vous conviennent.\n"
+"- Hors attaque, une connexion sur dix seulement est classée (assez pour apprendre, dix fois moins de calcul) ; en attaque, toutes. Il faut un HAProxy avec Lua (cas des distributions courantes).\n"
+"- [b]Base AS / pays[/b] : DB-IP Lite, téléchargée et mise à jour une fois par mois par la veille automatique, ou par « Mettre à jour la base ». IP Geolocation by DB-IP (https://db-ip.com), licence CC BY 4.0."
+msgstr ""
+"W zwykłym Funnel tailscaled szyfruje (TLS) każdego odwiedzającego: seria połączeń przeciąża maszynę. Ochrona umieszcza bramę (HAProxy, instalowany przez menedżer pakietów) między Funnel a twoją stroną: Funnel przekazuje jej jeszcze zaszyfrowany strumień wraz z prawdziwym adresem odwiedzającego, brama decyduje PRZED jakimkolwiek szyfrowaniem, a szyfruje tylko dla wpuszczonych połączeń. Zmierzono: odrzucone połączenie kosztuje 4,6 razy mniej, wpuszczone 2 razy mniej.\n"
+"\n"
+"[b]Włącz ochronę[/b]: przygotowanie (certyfikat *.ts.net od Tailscale, listy, sprawdzona konfiguracja), usługi bramy i jej certyfikatu (sudo, w terminalu; brama działa na twoim koncie, nigdy jako root), przełączenie Funnel, a potem test z Internetu. W razie niepowodzenia pierwotna publikacja jest natychmiast przywracana. Wymagania: bycie operatorem Tailscale; Funnel opublikowany w HTTPS na jednym porcie ze ścieżką „/”.\n"
+"[b]Wyłącz ochronę[/b]: Funnel jest przywracany dokładnie do poprzedniego stanu, sprawdzany, a potem brama jest zatrzymywana; ustawienia i listy są zachowywane.\n"
+"\n"
+"[b]Reguły[/b], stosowane na gorąco (zablokowane adresy pozostają zablokowane):\n"
+"- maszyny tailnetu (100.64.0.0/10 i fd7a:115c:a1e0::/48): zawsze wpuszczane, przed każdą regułą; filtrowani są tylko odwiedzający Funnel;\n"
+"- lista zaufanych: nigdy nie ograniczana; czarna lista: odrzucana aż do usunięcia z niej;\n"
+"- częstotliwość na adres (domyślnie 40 połączeń / 10 s): powyżej tego adres jest blokowany na wybrany czas (60 min);\n"
+"- częstotliwość na prefiks /24 (IPv4) lub /64 (IPv6);\n"
+"- budżet globalny wpuszczonych połączeń na sekundę: procesor nigdy nie jest przeciążony;\n"
+"- docelowa nazwa: połączenie, które nie jest skierowane do nazwy maszyny, jest odrzucane.\n"
+"Tryb [b]obserwacji[/b]: wszystko jest liczone, nic nie jest odrzucane (by bez ryzyka dostroić progi).\n"
+"\n"
+"Certyfikat jest sprawdzany codziennie i odnawiany na gorąco 30 dni przed wygaśnięciem.\n"
+"\n"
+"[b]Grupowanie[/b] (odciski, AS, kraje): przeciw atakom z rozproszonych adresów, które reguły na adres widzą tylko raz każdy. Przed jakimkolwiek szyfrowaniem brama oblicza [b]odcisk JA4[/b] klienta (sposób, w jaki przedstawia się jego oprogramowanie: przeglądarka i narzędzie ataku mają różne), jego [b]AS[/b] (sieć pochodzenia: dostawca internetu, hosting, chmura) i jego [b]kraj[/b], i liczy częstotliwość każdej grupy.\n"
+"- [b]Automatyczny tryb ataku[/b]: gdy połączenia przychodzące przekraczają próg (domyślnie 80 / s), brama sama przechodzi w tryb ataku i pozostaje w nim aż do 5 minut spokoju. Nic nie trzeba robić, nawet zdalnie.\n"
+"- Tylko w trybie ataku: nieznany odcisk, który gwałtownie rośnie, AS hostingu lub chmury (lista modyfikowalna) albo kraj z twojej listy (domyślnie pustej), który przekracza swoją częstotliwość, jest odrzucany.\n"
+"- [b]Popularne przeglądarki[/b] (Chrome, Edge, Firefox) nigdy nie są objęte tymi regułami, a [b]znani klienci[/b] (wpuszczeni w ciągu ostatnich 24 h) mają pierwszeństwo przed budżetem globalnym.\n"
+"- [b]Wyuczony punkt odniesienia[/b]: przez 7 dni brama uczy się zwykłych odcisków twojej strony (nigdy podczas ataku); w tym czasie grupowanie pozostaje w [b]obserwacji[/b], nawet jeśli wybrano „stosowane”. „Rozpocznij uczenie od nowa” zaczyna od zera i przywraca obserwację.\n"
+"- [b]Obserwacja[/b] (domyślnie): wszystko jest liczone („zostałoby odrzucone”), nic nie jest odrzucane; po zakończeniu uczenia się przełącz na „stosowane”, gdy liczby ci odpowiadają.\n"
+"- Poza atakiem klasyfikowane jest tylko co dziesiąte połączenie (wystarczy, by się uczyć, dziesięć razy mniej obliczeń); podczas ataku wszystkie. Potrzebny jest HAProxy z Lua (tak jest w popularnych dystrybucjach).\n"
+"- [b]Baza AS / krajów[/b]: DB-IP Lite, pobierana i aktualizowana raz w miesiącu przez automatyczny nadzór lub przez „Aktualizuj bazę”. IP Geolocation by DB-IP (https://db-ip.com), licencja CC BY 4.0."
+
+msgid "Attaques et décisions"
+msgstr "Ataki i decyzje"
+
+#, python-format
+msgid ""
+"Les compteurs de la porte (connexions reçues, refusées avant chiffrement, admises, en cours) et les adresses les plus actives, relus toutes les 2 secondes. La colonne État dit où se trouve chaque adresse : liste noire (refusée jusqu'au retrait), bloquée (pour la durée de blocage), admise, ou confiance (jamais limitée) ; les adresses des listes sans connexion récente apparaissent aussi. Choisissez une ligne puis [b]Bloquer[/b], [b]Liste noire[/b], [b]Débloquer[/b] ou [b]Confiance[/b] / [b]Retirer la confiance[/b] : appliqué tout de suite, sans redémarrer la porte ; la notification dit en une ligne l'action et la place de l'adresse (ex. « 1.2.3.4 → liste noire »). Une adresse n'est jamais dans les deux listes : la mettre en liste noire la retire de la confiance, et l'inverse. Une adresse en confiance ou du tailnet ne peut pas être bloquée (elle passe avant). Porte arrêtée : les listes s'appliqueront à son activation.\n"
+"\n"
+"Chaque adresse affiche son pays et son AS. La ligne sous les compteurs dit si la porte est en [b]mode attaque[/b] (et dans combien de temps elle revient au normal) et combien de connexions les regroupements ont refusées (ou auraient refusées, en observation) sur 7 jours. Les vues [b]Empreintes[/b], [b]AS[/b] et [b]Pays[/b] montrent les groupes les plus actifs (connexions / 10 s, total), avec le navigateur reconnu, le nom de l'AS (hébergeur ou non) ou « limité en attaque ». Hors attaque, ces chiffres portent sur une connexion sur dix.\n"
+"\n"
+"[b]Gestion de la liste noire[/b] (seconde ligne de boutons) : toute la liste, avec la date d'ajout et l'origine de chaque entrée, filtrable.\n"
+"- [b]Ajouter[/b] une adresse ou un réseau en prévision ; [b]Supprimer[/b] la ligne choisie.\n"
+"- [b]Importer[/b] un fichier TXT (une adresse ou un réseau par ligne, # = commentaire) : doublons, adresses déjà couvertes par un réseau de la liste et adresses du tailnet écartés et comptés ; les lignes invalides sont citées, comme une adresse IPv6 suivie d'un identifiant de zone (« %eth0 »), refusée par sécurité.\n"
+"- [b]Purger[/b], avec aperçu puis confirmation : plus anciennes que N jours, les N plus anciennes, de la ligne A à la ligne B, par origine, ou toute la liste (confirmation tapée).\n"
+"- [b]Exporter[/b] TXT (réimportable tel quel, pour une récidive), HTML (thème d'export choisi) ou JSON.\n"
+"- Plafond : 50 000 entrées (alerte au tableau de bord à 25 000). HAProxy en tiendrait bien plus ; c'est omega-tail qui ralentirait. Au plafond, l'ajout est refusé : exportez puis purgez."
+msgstr ""
+"Liczniki bramy (połączenia odebrane, odrzucone przed szyfrowaniem, wpuszczone, w toku) oraz najaktywniejsze adresy, odczytywane co 2 sekundy. Kolumna Stan mówi, gdzie znajduje się każdy adres: czarna lista (odrzucany do czasu usunięcia), zablokowany (na czas blokady), wpuszczony lub zaufany (nigdy nie ograniczany); pojawiają się też adresy z list bez niedawnych połączeń. Wybierz wiersz, a potem [b]Zablokuj[/b], [b]Czarna lista[/b], [b]Odblokuj[/b] lub [b]Zaufaj[/b] / [b]Cofnij zaufanie[/b]: stosowane od razu, bez ponownego uruchamiania bramy; powiadomienie mówi w jednym wierszu o akcji i miejscu adresu (np. „1.2.3.4 → czarna lista”). Adres nigdy nie jest na obu listach: dodanie go do czarnej listy usuwa go z zaufanych i odwrotnie. Adresu zaufanego lub z tailnetu nie można zablokować (ma pierwszeństwo). Brama zatrzymana: listy zostaną zastosowane po jej włączeniu.\n"
+"\n"
+"Każdy adres pokazuje swój kraj i AS. Wiersz pod licznikami mówi, czy brama jest w [b]trybie ataku[/b] (i za ile wróci do normy) oraz ile połączeń grupowanie odrzuciło (lub odrzuciłoby, w obserwacji) w ciągu 7 dni. Widoki [b]Odciski[/b], [b]AS[/b] i [b]Kraje[/b] pokazują najaktywniejsze grupy (połączenia / 10 s, łącznie), z rozpoznaną przeglądarką, nazwą AS (hosting czy nie) lub „ograniczany podczas ataku”. Poza atakiem liczby te dotyczą co dziesiątego połączenia.\n"
+"\n"
+"[b]Zarządzanie czarną listą[/b] (drugi rząd przycisków): cała lista, z datą dodania i pochodzeniem każdego wpisu, z filtrowaniem.\n"
+"- [b]Dodaj[/b] adres lub sieć zawczasu; [b]Usuń[/b] wybrany wiersz.\n"
+"- [b]Importuj[/b] plik TXT (jeden adres lub sieć na wiersz, # = komentarz): duplikaty, adresy już objęte siecią z listy i adresy tailnetu są pomijane i liczone; nieprawidłowe wiersze są wymieniane, np. adres IPv6 z identyfikatorem strefy („%eth0”), odrzucany ze względów bezpieczeństwa.\n"
+"- [b]Wyczyść[/b], z podglądem, a potem potwierdzeniem: starsze niż N dni, N najstarszych, od wiersza A do wiersza B, według pochodzenia lub całą listę (potwierdzenie wpisywane).\n"
+"- [b]Eksportuj[/b] TXT (do ponownego zaimportowania bez zmian, na wypadek recydywy), HTML (wybrany motyw eksportu) lub JSON.\n"
+"- Limit: 50 000 wpisów (alert na pulpicie przy 25 000). HAProxy zniósłby znacznie więcej; to omega-tail by zwalniał. Przy limicie dodawanie jest odrzucane: wyeksportuj, a potem wyczyść."
+
+msgid "Réseau et appareils"
+msgstr "Sieć i urządzenia"
+
+msgid ""
+"Ce que voit Tailscale depuis cette machine. Lecture seule : rien n'y change un réglage.\n"
+"- [b]Appareils[/b] : nom, système, en ligne ou non, [b]chemin[/b] (direct, ou par un relais de Tailscale quand la connexion directe est impossible), dernière fois vu, adresse, trafic échangé. Filtrez par nom, système ou adresse. Les [b]relais Funnel de Tailscale[/b] (« funnel-ingress-node ») apparaissent dans le tailnet dès que Funnel est actif : ce ne sont pas vos appareils, ils sont cachés sauf si vous cochez la case.\n"
+"- [b]Ping Tailscale[/b] : dit si le chemin vers l'appareil est direct ou relayé, et sa latence (3 essais). [b]Qui est-ce ?[/b] : à quelle machine et quel compte appartient une adresse du tailnet. Sans texte tapé, la ligne choisie est utilisée.\n"
+"- [b]Diagnostic réseau[/b] (quelques secondes) : UDP, IPv4 / IPv6, type de NAT (simple : connexions directes faciles ; difficile : plus de relais), ouverture de port par la box (UPnP, NAT-PMP, PCP), relais le plus proche et latences.\n"
+"- [b]DNS[/b], [b]verrou du tailnet[/b] et [b]compteurs internes[/b] (octets reçus et envoyés en direct ou par relais, paquets jetés, messages de santé) : tels que Tailscale les donne."
+msgstr ""
+"Co Tailscale widzi z tej maszyny. Tylko do odczytu: nic tutaj nie zmienia ustawień.\n"
+"- [b]Urządzenia[/b]: nazwa, system, online czy nie, [b]ścieżka[/b] (bezpośrednia lub przez przekaźnik Tailscale, gdy połączenie bezpośrednie jest niemożliwe), ostatnio widziane, adres, wymieniony ruch. Filtruj po nazwie, systemie lub adresie. [b]Przekaźniki Funnel Tailscale[/b] („funnel-ingress-node”) pojawiają się w tailnecie, gdy tylko Funnel jest aktywny: to nie są twoje urządzenia, są ukryte, chyba że zaznaczysz pole.\n"
+"- [b]Ping Tailscale[/b]: mówi, czy ścieżka do urządzenia jest bezpośrednia czy przekazywana, oraz jej opóźnienie (3 próby). [b]Kto to?[/b]: do jakiej maszyny i jakiego konta należy adres tailnetu. Bez wpisanego tekstu używany jest wybrany wiersz.\n"
+"- [b]Diagnostyka sieci[/b] (kilka sekund): UDP, IPv4 / IPv6, typ NAT (prosty: połączenia bezpośrednie łatwe; trudny: więcej przekaźników), otwieranie portu przez router (UPnP, NAT-PMP, PCP), najbliższy przekaźnik i opóźnienia.\n"
+"- [b]DNS[/b], [b]blokada tailnetu[/b] i [b]liczniki wewnętrzne[/b] (bajty odebrane i wysłane bezpośrednio lub przez przekaźnik, odrzucone pakiety, komunikaty o kondycji): tak, jak podaje je Tailscale."
+
+msgid "Rapport"
+msgstr "Raport"
+
+msgid ""
+"Tout ce qu'omega-tail sait de la machine, en faits : Tailscale (version, préférences), publication, machine, pare-feu (règles, compteurs, listes, regroupements), survie (confinement, veille, disjoncteur), alertes, et les [b]attaques des 7 derniers jours[/b] lues dans le journal de la porte (connexions marquées par motif, par jour, adresses les plus marquées avec leur AS et leur pays).\n"
+"- [b]Vie privée[/b] : par défaut, le compte Tailscale et les noms / adresses des appareils du tailnet n'y figurent pas (seulement leur nombre), pour pouvoir envoyer le rapport à quelqu'un. Cochez la case pour les inclure. Les adresses des attaquants y restent toujours.\n"
+"- [b]Exporter[/b] en TXT, HTML (thème au choix) ou JSON, dans le dossier des exports. [b]Voir les exports[/b] ouvre ce dossier dans votre navigateur (chaque export se lit d'un clic) ; sans navigateur ni bureau (serveur, SSH), la liste et la lecture se font dans omega-tail.\n"
+"- Le journal de la porte doit être lisible par votre compte (groupe systemd-journal, adm ou wheel selon la distribution), sinon le rapport le dit."
+msgstr ""
+"Wszystko, co omega-tail wie o maszynie, w faktach: Tailscale (wersja, preferencje), publikacja, maszyna, zapora (reguły, liczniki, listy, grupowanie), przetrwanie (ograniczenie zasobów, nadzór, bezpiecznik), alerty oraz [b]ataki z ostatnich 7 dni[/b] odczytane z logu bramy (połączenia oznaczone według powodu, według dnia, najczęściej oznaczane adresy z ich AS i krajem).\n"
+"- [b]Prywatność[/b]: domyślnie konto Tailscale oraz nazwy / adresy urządzeń tailnetu nie są uwzględniane (tylko ich liczba), by można było wysłać raport komuś innemu. Zaznacz pole, aby je dołączyć. Adresy atakujących zawsze pozostają.\n"
+"- [b]Eksportuj[/b] w TXT, HTML (motyw do wyboru) lub JSON, do katalogu eksportów. [b]Pokaż eksporty[/b] otwiera ten katalog w przeglądarce (każdy eksport czyta się jednym kliknięciem); bez przeglądarki i pulpitu graficznego (serwer, SSH) lista i odczyt odbywają się w omega-tail.\n"
+"- Log bramy musi być czytelny dla twojego konta (grupa systemd-journal, adm lub wheel zależnie od dystrybucji), w przeciwnym razie raport o tym mówi."
+
+msgid "systemd, OpenRC, runit"
+msgstr "systemd, OpenRC, runit"
+
+msgid ""
+"omega-tail reconnaît le système d'init de la machine et s'y adapte :\n"
+"- [b]service tailscaled[/b] : systemctl, rc-service ou sv ;\n"
+"- [b]journaux[/b] : journalctl, ou les fichiers du service (/var/log/tailscaled.log, svlogd, socklog…) ;\n"
+"- [b]confinement[/b] : fichier d'ajout systemd ; ailleurs, un groupe de contrôle à part (cgroup v2), perdu si tailscaled redémarre (une alerte propose alors de le remettre) ;\n"
+"- [b]coupure momentanée[/b] : minuterie systemd ; ailleurs, un processus détaché sous votre compte ;\n"
+"- [b]porte du pare-feu[/b] : service systemd, OpenRC ou runit ; certificat renouvelé par minuterie systemd ou par une ligne de votre crontab (marquée omega-tail, retirée à la désactivation)."
+msgstr ""
+"omega-tail rozpoznaje system init maszyny i dostosowuje się do niego:\n"
+"- [b]usługa tailscaled[/b]: systemctl, rc-service lub sv;\n"
+"- [b]logi[/b]: journalctl lub pliki usługi (/var/log/tailscaled.log, svlogd, socklog…);\n"
+"- [b]ograniczenie zasobów[/b]: plik nakładki systemd; gdzie indziej osobna grupa kontrolna (cgroup v2), tracona, jeśli tailscaled zostanie ponownie uruchomiony (alert proponuje wtedy jej przywrócenie);\n"
+"- [b]chwilowe odcięcie[/b]: minutnik systemd; gdzie indziej odłączony proces na twoim koncie;\n"
+"- [b]brama zapory[/b]: usługa systemd, OpenRC lub runit; certyfikat odnawiany przez minutnik systemd lub przez wiersz w twoim crontabie (oznaczony omega-tail, usuwany przy wyłączeniu)."
+
+msgid ""
+"Langue de l'interface et des exports, thème de l'interface et des exports, "
+"dossiers des exports et des captures d'écran (par défaut var/exports/ et "
+"var/screenshots/), et leur purge après confirmation."
+msgstr ""
+"Język interfejsu i eksportów, motyw interfejsu i eksportów, katalogi "
+"eksportów i zrzutów ekranu (domyślnie var/exports/ i var/screenshots/) oraz "
+"ich czyszczenie po potwierdzeniu."
+
+msgid "Ligne de commande"
+msgstr "Wiersz poleceń"
+
+msgid ""
+"- omega-tail : l'interface.\n"
+"- omega-tail etat : l'état et les alertes en texte ; --format json pour un script.\n"
+"- omega-tail aide : cette aide en texte.\n"
+"- omega-tail rapport [--format txt|html|json] [--prive] [--exporter] : le rapport, affiché ou enregistré dans le dossier des exports ; --prive ajoute le compte et les appareils du tailnet.\n"
+"- omega-tail disjoncteur etat | couper --minutes N | couper --totale | retablir\n"
+"- omega-tail porte etat | certificat [--si-besoin] | bloquer ADRESSE [--toujours] | debloquer ADRESSE | confiance ADRESSE\n"
+"- omega-tail --version"
+msgstr ""
+"- omega-tail: interfejs.\n"
+"- omega-tail etat: stan i alerty w formie tekstu; --format json dla skryptu.\n"
+"- omega-tail aide: ta pomoc w formie tekstu.\n"
+"- omega-tail rapport [--format txt|html|json] [--prive] [--exporter]: raport, wyświetlony lub zapisany w katalogu eksportów; --prive dodaje konto i urządzenia tailnetu.\n"
+"- omega-tail disjoncteur etat | couper --minutes N | couper --totale | retablir\n"
+"- omega-tail porte etat | certificat [--si-besoin] | bloquer ADRESSE [--toujours] | debloquer ADRESSE | confiance ADRESSE\n"
+"- omega-tail --version"
+
+msgid ""
+"Depuis cette aide : écrire à l'auteur, le formulaire du site, un café, et "
+"vérifier les mises à jour."
+msgstr ""
+"Z poziomu tej pomocy: napisz do autora, formularz na stronie, kawa i "
+"sprawdzenie aktualizacji."
+
+msgid "DÉMARRAGE RAPIDE"
+msgstr "SZYBKI START"
+
+msgid "RACCOURCIS"
+msgstr "SKRÓTY"
+
+msgid "Aide d’omega-tail"
+msgstr "Pomoc omega-tail"
+
+msgid "Aide complète : chaque menu, sa fonction et le détail."
+msgstr "Pełna pomoc: każde menu, jego funkcja i szczegóły."
+
+msgid "Démarrage rapide"
+msgstr "Szybki start"
+
+msgid "Raccourcis"
+msgstr "Skróty"
+
+msgid "Touche"
+msgstr "Klawisz"
+
+msgid "Action"
+msgstr "Akcja"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — aide."
+msgstr "OMEGA-TAIL {version} — pomoc."
+
+msgid "Aide - Omega-Tail"
+msgstr "Pomoc - Omega-Tail"
+
+#, python-brace-format
+msgid "{name} (hébergeur)"
+msgstr "{name} (hosting)"
+
+msgid "connecté"
+msgstr "połączony"
+
+msgid "déconnecté"
+msgstr "rozłączony"
+
+msgid "connexion du compte attendue"
+msgstr "oczekiwanie na zalogowanie konta"
+
+msgid "machine à approuver dans la console"
+msgstr "maszyna do zatwierdzenia w konsoli"
+
+msgid "démarrage"
+msgstr "uruchamianie"
+
+msgid "sans état"
+msgstr "brak stanu"
+
+msgid "inconnu"
+msgstr "nieznany"
+
+msgid "HTTP"
+msgstr "HTTP"
+
+msgid "HTTPS (TLS par tailscaled)"
+msgstr "HTTPS (TLS przez tailscaled)"
+
+msgid "TCP (TLS transmis tel quel)"
+msgstr "TCP (TLS przekazywany bez zmian)"
+
+msgid "TCP, TLS par tailscaled"
+msgstr "TCP, TLS przez tailscaled"
+
+msgid "Go"
+msgstr "GB"
+
+msgid "Ko"
+msgstr "KB"
+
+msgid "Mo"
+msgstr "MB"
+
+msgid "o"
+msgstr "B"
+
+msgid "Internet (Funnel)"
+msgstr "Internet (Funnel)"
+
+msgid "tailnet seul (Serve)"
+msgstr "tylko tailnet (Serve)"
+
+msgid "inconnu de systemd"
+msgstr "nieznana dla systemd"
+
+msgid "actif"
+msgstr "aktywny"
+
+msgid "arrêté"
+msgstr "zatrzymany"
+
+msgid "en échec"
+msgstr "błąd"
+
+msgid "arrêt en cours"
+msgstr "zatrzymywanie"
+
+msgid "lancé au démarrage"
+msgstr "uruchamiana przy starcie"
+
+msgid "pas lancé au démarrage"
+msgstr "nieuruchamiana przy starcie"
+
+msgid "observation"
+msgstr "obserwacja"
+
+msgid "Bouclier du port WireGuard : état illisible."
+msgstr "Osłona portu WireGuard: nieczytelny stan."
+
+msgid "Bouclier du port WireGuard : retiré depuis omega-fire (ou à la main)."
+msgstr "Osłona portu WireGuard: zdjęta z poziomu omega-fire (lub ręcznie)."
+
+msgid ""
+"Bouclier du port WireGuard : aucun. Sans lui, tailscaled dépense environ un "
+"cœur pour 100 000 paquets par seconde, même invalides."
+msgstr ""
+"Osłona portu WireGuard: brak. Bez niej tailscaled zużywa około jednego "
+"rdzenia na 100 000 pakietów na sekundę, nawet nieprawidłowych."
+
+msgid ""
+"Bouclier du port WireGuard ABSENT : un autre outil a effacé sa table ; « "
+"Reposer » la remet."
+msgstr ""
+"Osłona portu WireGuard NIEOBECNA: inne narzędzie usunęło jej tabelę; „Załóż "
+"ponownie” ją przywraca."
+
+msgid ""
+"Bouclier du port WireGuard : état non mis à jour (service omega-bouclier-wg "
+"arrêté ?)."
+msgstr ""
+"Osłona portu WireGuard: stan nieaktualizowany (usługa omega-bouclier-wg "
+"zatrzymana?)."
+
+#, python-brace-format
+msgid ""
+"Bouclier du port WireGuard : {mode}, géré par {manager} ; {count} paquet(s) "
+"refusé(s)"
+msgstr ""
+"Osłona portu WireGuard: {mode}, zarządza {manager}; odrzucone pakiety: "
+"{count}"
+
+#, python-brace-format
+msgid ""
+"Bouclier du port WireGuard : {mode}, géré par {manager} ; {count} paquet(s) "
+"auraient été refusés"
+msgstr ""
+"Osłona portu WireGuard: {mode}, zarządza {manager}; pakiety, które zostałyby"
+" odrzucone: {count}"
+
+msgid "adresse bloquée"
+msgstr "adres zablokowany"
+
+msgid "budget global dépassé"
+msgstr "przekroczony budżet globalny"
+
+msgid "liste noire"
+msgstr "czarna lista"
+
+msgid "trop de connexions d'un réseau"
+msgstr "zbyt wiele połączeń z jednej sieci"
+
+msgid "trop de connexions d'une adresse"
+msgstr "zbyt wiele połączeń z jednego adresu"
+
+msgid "mauvais nom de site (SNI)"
+msgstr "zła nazwa strony (SNI)"
+
+msgid "pas une connexion TLS"
+msgstr "to nie jest połączenie TLS"
+
+msgid "AS d'hébergeur en rafale"
+msgstr "seria z AS hostingu"
+
+msgid "empreinte inconnue en rafale"
+msgstr "seria z nieznanym odciskiem"
+
+msgid "pays limité en rafale"
+msgstr "seria z ograniczonego kraju"
+
+#, python-brace-format
+msgid "tailscaled ne répond pas : {error}"
+msgstr "tailscaled nie odpowiada: {error}"
+
+#, python-brace-format
+msgid "État : {state}"
+msgstr "Stan: {state}"
+
+#, python-brace-format
+msgid "Version : {daemon} en marche, {client} installé"
+msgstr "Wersja: działa {daemon}, zainstalowany {client}"
+
+#, python-brace-format
+msgid "Nom de la machine : {name}"
+msgstr "Nazwa maszyny: {name}"
+
+#, python-brace-format
+msgid "Compte : {user}"
+msgstr "Konto: {user}"
+
+msgid "Compte : masqué (non inclus dans ce rapport)"
+msgstr "Konto: ukryte (nieuwzględnione w tym raporcie)"
+
+#, python-brace-format
+msgid ""
+"Appareils du tailnet : {online} en ligne sur {total} (plus {relays} relais "
+"Funnel de Tailscale)"
+msgstr ""
+"Urządzenia tailnetu: {online} online z {total} (plus przekaźniki Funnel "
+"Tailscale: {relays})"
+
+#, python-brace-format
+msgid "Appareils du tailnet : {online} en ligne sur {total}"
+msgstr "Urządzenia tailnetu: {online} online z {total}"
+
+#, python-brace-format
+msgid "Clé de la machine : {expiry}"
+msgstr "Klucz maszyny: {expiry}"
+
+msgid "sans expiration"
+msgstr "bez wygaśnięcia"
+
+msgid "aucun"
+msgstr "brak"
+
+msgid "Préférence"
+msgstr "Preferencja"
+
+msgid "Valeur"
+msgstr "Wartość"
+
+msgid "Rien n'est publié (ni Serve, ni Funnel)."
+msgstr "Nic nie jest opublikowane (ani Serve, ani Funnel)."
+
+#, python-brace-format
+msgid "Machine : {name} ({count} fils)"
+msgstr "Maszyna: {name} (wątki: {count})"
+
+#, python-brace-format
+msgid "Charge : {a:.2f} {b:.2f} {c:.2f}"
+msgstr "Obciążenie: {a:.2f} {b:.2f} {c:.2f}"
+
+msgid "pas de capteur"
+msgstr "brak czujnika"
+
+#, python-brace-format
+msgid "Mémoire vive utilisée : {value}"
+msgstr "Używana pamięć RAM: {value}"
+
+msgid "MACHINE"
+msgstr "MASZYNA"
+
+msgid "PARE-FEU FUNNEL"
+msgstr "ZAPORA FUNNEL"
+
+msgid "Pare-feu indisponible sur cette machine."
+msgstr "Zapora niedostępna na tej maszynie."
+
+#, python-brace-format
+msgid "Service de la porte : {state}"
+msgstr "Usługa bramy: {state}"
+
+#, python-brace-format
+msgid "Protection active depuis {since} : Funnel {port} → porte → {backend}"
+msgstr "Ochrona aktywna od {since}: Funnel {port} → brama → {backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions depuis le démarrage de la porte : {total} reçues · {refused} "
+"refusées avant chiffrement · {admitted} admises · {current} en cours"
+msgstr ""
+"Połączenia od uruchomienia bramy: {total} odebrane · {refused} odrzucone "
+"przed szyfrowaniem · {admitted} wpuszczone · {current} w toku"
+
+msgid "Protection inactive : Funnel ne passe pas par la porte."
+msgstr "Ochrona nieaktywna: Funnel nie przechodzi przez bramę."
+
+#, python-brace-format
+msgid "Mode : {mode}"
+msgstr "Tryb: {mode}"
+
+msgid "observation (rien n'est refusé)"
+msgstr "obserwacja (nic nie jest odrzucane)"
+
+msgid "normal (les règles refusent)"
+msgstr "normalny (reguły odrzucają)"
+
+#, python-brace-format
+msgid ""
+"Règles : {ip} connexions / 10 s par adresse · {prefix} / 10 s par réseau · "
+"budget global {budget} / s · {maximum} connexions au plus · blocage {block} "
+"min · nom du site {sni}"
+msgstr ""
+"Reguły: {ip} połączeń / 10 s na adres · {prefix} / 10 s na sieć · budżet "
+"globalny {budget} / s · najwyżej {maximum} połączeń · blokada {block} min · "
+"nazwa strony {sni}"
+
+msgid "non vérifié"
+msgstr "niesprawdzona"
+
+msgid "vérifié"
+msgstr "sprawdzona"
+
+#, python-brace-format
+msgid "Certificat : encore {days} jour(s)"
+msgstr "Certyfikat: jeszcze {days} dni"
+
+#, python-brace-format
+msgid "Confiance : {count} adresse(s) ou réseau(x)"
+msgstr "Zaufane: {count} adres(ów) lub sieci"
+
+#, python-brace-format
+msgid "Liste noire : {entries}"
+msgstr "Czarna lista: {entries}"
+
+msgid "vide"
+msgstr "pusty"
+
+#, python-brace-format
+msgid "Bloquées en ce moment : {entries}"
+msgstr "Obecnie zablokowane: {entries}"
+
+msgid "Bloquées en ce moment : aucune"
+msgstr "Obecnie zablokowane: brak"
+
+#, python-brace-format
+msgid "Regroupements : {mode} · {attack}"
+msgstr "Grupowanie: {mode} · {attack}"
+
+msgid "MODE ATTAQUE en cours"
+msgstr "TRYB ATAKU w toku"
+
+msgid "mode normal"
+msgstr "tryb normalny"
+
+#, python-brace-format
+msgid "Empreintes : apprentissage, encore {days} jour(s)"
+msgstr "Odciski: uczenie się, jeszcze {days} dni"
+
+#, python-brace-format
+msgid "Empreintes habituelles : {count} (référence prête)"
+msgstr "Zwykłe odciski: {count} (punkt odniesienia gotowy)"
+
+#, python-brace-format
+msgid "Base AS / pays : à jour il y a {days} jour(s)"
+msgstr "Baza AS / krajów: zaktualizowana {days} dni temu"
+
+msgid "Base AS / pays : absente"
+msgstr "Baza AS / krajów: brak"
+
+msgid "Empreintes les plus actives"
+msgstr "Najaktywniejsze odciski"
+
+msgid "AS les plus actifs"
+msgstr "Najaktywniejsze AS"
+
+msgid "Pays les plus actifs"
+msgstr "Najaktywniejsze kraje"
+
+msgid "Adresse la plus active"
+msgstr "Najaktywniejszy adres"
+
+msgid "Connexions / 10 s"
+msgstr "Połączenia / 10 s"
+
+msgid "confiance"
+msgstr "zaufany"
+
+msgid "admise"
+msgstr "wpuszczony"
+
+msgid "bloquée"
+msgstr "zablokowany"
+
+#, python-brace-format
+msgid "Confinement de tailscaled : {state}"
+msgstr "Ograniczenie zasobów tailscaled: {state}"
+
+msgid "Veille automatique : désactivée"
+msgstr "Automatyczny nadzór: wyłączony"
+
+msgid "Veille automatique : activée mais arrêtée (aucun signe de vie)"
+msgstr "Automatyczny nadzór: włączony, ale zatrzymany (brak sygnału życia)"
+
+#, python-brace-format
+msgid ""
+"Veille automatique : active · {strikes} dépassement(s) récent(s) · prochaine"
+" coupure {minutes} min"
+msgstr ""
+"Automatyczny nadzór: aktywny · ostatnie przekroczenia: {strikes} · następne "
+"odcięcie {minutes} min"
+
+#, python-brace-format
+msgid ""
+"Disjoncteur : tailscaled au-delà de {cpu:.0f} % d'un cœur pendant {seconds} "
+"s, ou machine au-delà de {temperature:.0f} °C ; coupure proposée de "
+"{minutes} min"
+msgstr ""
+"Bezpiecznik: tailscaled powyżej {cpu:.0f} % jednego rdzenia przez {seconds} "
+"s lub maszyna powyżej {temperature:.0f} °C; proponowane odcięcie na "
+"{minutes} min"
+
+#, python-brace-format
+msgid "Funnel coupé depuis {since} ; remise en route {until}"
+msgstr "Funnel odcięty od {since}; przywrócenie {until}"
+
+msgid "manuelle"
+msgstr "ręczne"
+
+msgid "Aucune coupure de Funnel en cours."
+msgstr "Brak bieżącego odcięcia Funnel."
+
+#, python-brace-format
+msgid "  origine : {tool} · géré par {manager} · pairs connus : {peers}"
+msgstr "  pochodzenie: {tool} · zarządza {manager} · znani partnerzy: {peers}"
+
+msgid "Journal de la veille (derniers événements) :"
+msgstr "Log nadzoru (ostatnie zdarzenia):"
+
+msgid "SURVIE"
+msgstr "PRZETRWANIE"
+
+msgid "Aucune alerte."
+msgstr "Brak alertów."
+
+#, python-brace-format
+msgid "ATTAQUES DES {days} DERNIERS JOURS"
+msgstr "ATAKI Z OSTATNICH {days} DNI"
+
+msgid "Pare-feu indisponible : rien à compter."
+msgstr "Zapora niedostępna: nie ma czego liczyć."
+
+#, python-brace-format
+msgid "Journal de la porte illisible : {error}"
+msgstr "Nieczytelny log bramy: {error}"
+
+msgid ""
+"Lu dans le journal de la porte : chaque connexion marquée par une règle "
+"(refusée, ou seulement comptée en observation, selon le mode du moment)."
+msgstr ""
+"Odczytane z logu bramy: każde połączenie oznaczone przez regułę (odrzucone "
+"lub tylko policzone w obserwacji, zależnie od bieżącego trybu)."
+
+msgid "Aucune connexion marquée sur la période."
+msgstr "Brak oznaczonych połączeń w tym okresie."
+
+#, python-brace-format
+msgid "Connexions marquées : {count}{floor}"
+msgstr "Oznaczone połączenia: {count}{floor}"
+
+msgid " (au moins : journal trop long, seules les plus récentes ont été lues)"
+msgstr " (co najmniej: log zbyt długi, odczytano tylko najnowsze)"
+
+#, python-brace-format
+msgid ""
+"Règles de la porte, connexions qui auraient été refusées (observation) : "
+"{reasons}"
+msgstr ""
+"Reguły bramy, połączenia, które zostałyby odrzucone (obserwacja): {reasons}"
+
+#, python-brace-format
+msgid "Règles de la porte, connexions refusées : {reasons}"
+msgstr "Reguły bramy, odrzucone połączenia: {reasons}"
+
+#, python-brace-format
+msgid "Regroupements, connexions refusées : {reasons}"
+msgstr "Grupowanie, odrzucone połączenia: {reasons}"
+
+#, python-brace-format
+msgid ""
+"Regroupements, connexions qui auraient été refusées (observation) : "
+"{reasons}"
+msgstr ""
+"Grupowanie, połączenia, które zostałyby odrzucone (obserwacja): {reasons}"
+
+#, python-brace-format
+msgid "Par jour : {days}"
+msgstr "Według dni: {days}"
+
+msgid "AS"
+msgstr "AS"
+
+msgid "Adresse"
+msgstr "Adres"
+
+msgid "Connexions marquées"
+msgstr "Oznaczone połączenia"
+
+msgid "Pays"
+msgstr "Kraj"
+
+msgid "en ligne"
+msgstr "online"
+
+msgid "hors ligne"
+msgstr "offline"
+
+msgid "APPAREILS DU TAILNET"
+msgstr "URZĄDZENIA TAILNETU"
+
+msgid "Aucun appareil lu."
+msgstr "Nie odczytano żadnego urządzenia."
+
+msgid "Système"
+msgstr "System"
+
+msgid "Compte et appareils du tailnet inclus."
+msgstr "Konto i urządzenia tailnetu uwzględnione."
+
+msgid ""
+"Compte et appareils du tailnet non inclus (seulement leur nombre) ; les "
+"adresses des attaquants restent."
+msgstr ""
+"Konto i urządzenia tailnetu nieuwzględnione (tylko ich liczba); adresy "
+"atakujących pozostają."
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — RAPPORT DE LA MACHINE {machine}"
+msgstr "OMEGA-TAIL {version} — RAPORT MASZYNY {machine}"
+
+#, python-brace-format
+msgid "Établi le {date} (lecture seule, sans droits)."
+msgstr "Sporządzono {date} (tylko odczyt, bez uprawnień)."
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — rapport."
+msgstr "OMEGA-TAIL {version} — raport."
+
+msgid "Rapport - Omega-Tail"
+msgstr "Raport - Omega-Tail"
+
+msgid ""
+"Le démarrage de tailscaled lance « tailscale up » (votre fichier d'ajout). "
+"Depuis qu'un réglage a changé (opérateur, nom, routes…), Tailscale refuse ce"
+" « up » incomplet : systemd arrête alors tailscaled et abandonne après cinq "
+"essais (la machine sort du tailnet). omega-tail ajoute « - » devant cette "
+"commande : son refus n'arrête plus le service, et vos réglages restent "
+"gardés par Tailscale. Rien d'autre ne change ; l'original est gardé dans "
+"var/survie."
+msgstr ""
+"Uruchomienie tailscaled wywołuje „tailscale up” (twój plik nakładki). Odkąd "
+"zmieniło się jakieś ustawienie (operator, nazwa, trasy…), Tailscale odrzuca "
+"to niepełne „up”: systemd zatrzymuje wtedy tailscaled i rezygnuje po pięciu "
+"próbach (maszyna wypada z tailnetu). omega-tail dodaje „-” przed tym "
+"poleceniem: jego odrzucenie nie zatrzymuje już usługi, a twoje ustawienia "
+"nadal przechowuje Tailscale. Nic innego się nie zmienia; oryginał jest "
+"zachowany w var/survie."
+
+msgid "Lecture de l'état"
+msgstr "Odczyt stanu"
+
+#, python-brace-format
+msgid "Valeurs refusées (nombre hors limites) : {keys}"
+msgstr "Odrzucone wartości (liczba poza zakresem): {keys}"
+
+msgid "Seuils enregistrés."
+msgstr "Progi zapisane."
+
+#, python-brace-format
+msgid "Pas de nouvelle proposition pendant {minutes} min."
+msgstr "Brak nowej propozycji przez {minutes} min."
+
+#, python-brace-format
+msgid ""
+"Funnel sera coupé {minutes} min puis remis en route automatiquement, à "
+"l'identique (minuterie systemd : sudo une fois, dans le terminal)."
+msgstr ""
+"Funnel zostanie odcięty na {minutes} min, a potem przywrócony automatycznie,"
+" bez zmian (minutnik systemd: sudo jeden raz, w terminalu)."
+
+msgid ""
+"Funnel sera coupé jusqu'à ce que vous le rétablissiez (« Rétablir maintenant"
+" »)."
+msgstr ""
+"Funnel zostanie odcięty, dopóki go nie przywrócisz („Przywróć teraz”)."
+
+msgid "COUPER FUNNEL ?"
+msgstr "ODCIĄĆ FUNNEL?"
+
+msgid ""
+"Les connexions venues d'Internet s'arrêtent aussitôt ; le tailnet (Serve, "
+"SSH) n'est pas touché."
+msgstr ""
+"Połączenia z Internetu zostają natychmiast przerwane; tailnet (Serve, SSH) "
+"pozostaje nietknięty."
+
+msgid "Couper"
+msgstr "Odetnij"
+
+msgid "Disjoncteur"
+msgstr "Bezpiecznik"
+
+msgid "Pare-feu indisponible."
+msgstr "Zapora niedostępna."
+
+#, python-brace-format
+msgid "HAProxy : {path}"
+msgstr "HAProxy: {path}"
+
+msgid "non installé (« Installer HAProxy »)"
+msgstr "niezainstalowany („Zainstaluj HAProxy”)"
+
+#, python-brace-format
+msgid ""
+"Protection ACTIVE depuis {since} : Funnel {port} → porte 127.0.0.1:{gate} → "
+"{backend}"
+msgstr ""
+"Ochrona AKTYWNA od {since}: Funnel {port} → brama 127.0.0.1:{gate} → "
+"{backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions : {total} reçues · {refused} refusées avant chiffrement · "
+"{current} en cours"
+msgstr ""
+"Połączenia: {total} odebrane · {refused} odrzucone przed szyfrowaniem · "
+"{current} w toku"
+
+#, python-brace-format
+msgid ""
+"Protection inactive. Funnel {port} (HTTPS par tailscaled) → {backend} : pris"
+" en charge."
+msgstr ""
+"Ochrona nieaktywna. Funnel {port} (HTTPS przez tailscaled) → {backend}: "
+"obsługiwane."
+
+#, python-brace-format
+msgid "Protection inactive : {reason}."
+msgstr "Ochrona nieaktywna: {reason}."
+
+#, python-brace-format
+msgid "Certificat : encore {days} jour(s) (renouvelé chaque jour si besoin)"
+msgstr ""
+"Certyfikat: jeszcze {days} dni (w razie potrzeby odnawiany codziennie)"
+
+#, python-brace-format
+msgid ""
+"Mode : {mode} · {ip} connexions / 10 s par adresse · budget {budget} / s · "
+"blocage {block} min"
+msgstr ""
+"Tryb: {mode} · {ip} połączeń / 10 s na adres · budżet {budget} / s · blokada"
+" {block} min"
+
+msgid ""
+"⚠ Devenez opérateur de Tailscale (tableau de bord) : la porte en a besoin."
+msgstr "⚠ Zostań operatorem Tailscale (pulpit): brama tego potrzebuje."
+
+msgid "Pare-feu"
+msgstr "Zapora"
+
+msgid "Changement en cours, puis vérification…"
+msgstr "Trwa zmiana, potem sprawdzenie…"
+
+msgid ""
+"Gestionnaire de paquets inconnu : installez HAProxy avec celui de votre "
+"système."
+msgstr ""
+"Nieznany menedżer pakietów: zainstaluj HAProxy menedżerem swojego systemu."
+
+msgid "INSTALLER HAPROXY ?"
+msgstr "ZAINSTALOWAĆ HAPROXY?"
+
+msgid ""
+"HAProxy est installé par le gestionnaire de paquets de la distribution "
+"(mises à jour de sécurité comprises)."
+msgstr ""
+"HAProxy jest instalowany przez menedżer pakietów dystrybucji (łącznie z "
+"aktualizacjami bezpieczeństwa)."
+
+msgid "ACTIVER LA PROTECTION ?"
+msgstr "WŁĄCZYĆ OCHRONĘ?"
+
+msgid ""
+"1. Préparation (certificat *.ts.net, listes, configuration vérifiée).\n"
+"2. Services de la porte et de son certificat (sudo, dans le terminal ; la porte tourne sous votre compte, jamais en root).\n"
+"3. Bascule de Funnel vers la porte, puis essai depuis Internet. En cas d'échec, la publication d'origine est remise aussitôt.\n"
+"\n"
+"Coupure du site : quelques secondes pendant la bascule."
+msgstr ""
+"1. Przygotowanie (certyfikat *.ts.net, listy, sprawdzona konfiguracja).\n"
+"2. Usługi bramy i jej certyfikatu (sudo, w terminalu; brama działa na twoim koncie, nigdy jako root).\n"
+"3. Przełączenie Funnel na bramę, a potem test z Internetu. W razie niepowodzenia pierwotna publikacja jest natychmiast przywracana.\n"
+"\n"
+"Przerwa w działaniu strony: kilka sekund podczas przełączania."
+
+msgid "Activer"
+msgstr "Włącz"
+
+msgid "Préparation de la porte…"
+msgstr "Przygotowanie bramy…"
+
+msgid "Porte lancée ; bascule de Funnel et essai depuis Internet…"
+msgstr "Brama uruchomiona; przełączanie Funnel i test z Internetu…"
+
+msgid "DÉSACTIVER LA PROTECTION ?"
+msgstr "WYŁĄCZYĆ OCHRONĘ?"
+
+msgid ""
+"Funnel est remis exactement comme avant (HTTPS par tailscaled), vérifié, "
+"puis la porte est arrêtée (sudo, dans le terminal). Vos réglages et vos "
+"listes sont gardés."
+msgstr ""
+"Funnel zostaje przywrócony dokładnie do poprzedniego stanu (HTTPS przez "
+"tailscaled), sprawdzony, a potem brama zostaje zatrzymana (sudo, w "
+"terminalu). Twoje ustawienia i listy są zachowywane."
+
+msgid "Désactiver"
+msgstr "Wyłącz"
+
+msgid "tailscaled ne tourne pas : rien à confiner."
+msgstr "tailscaled nie działa: nie ma czego ograniczać."
+
+#, python-brace-format
+msgid ""
+"Pose le fichier d'ajout {path} (votre propre override.conf n'est pas "
+"modifié), recharge systemd{restart}."
+msgstr ""
+"Zakłada plik nakładki {path} (twój własny override.conf nie jest zmieniany),"
+" przeładowuje systemd{restart}."
+
+msgid ", puis redémarre tailscaled"
+msgstr ", a potem uruchamia ponownie tailscaled"
+
+msgid ""
+"Place tailscaled dans un groupe de contrôle à part (cgroup v2), avec son "
+"plafond et sa priorité. Aucun de vos fichiers n'est modifié. Perdu si "
+"tailscaled redémarre : omega-tail le signalera."
+msgstr ""
+"Umieszcza tailscaled w osobnej grupie kontrolnej (cgroup v2), z jego limitem"
+" i priorytetem. Żaden z twoich plików nie jest zmieniany. Tracone, jeśli "
+"tailscaled zostanie ponownie uruchomiony: omega-tail to zgłosi."
+
+msgid "CONFINER TAILSCALED ?"
+msgstr "OGRANICZYĆ ZASOBY TAILSCALED?"
+
+msgid ""
+"Supprime les fichiers d'ajout posés par omega-tail, puis recharge systemd."
+msgstr ""
+"Usuwa pliki nakładki założone przez omega-tail, a potem przeładowuje "
+"systemd."
+
+msgid "RETIRER LE CONFINEMENT ?"
+msgstr "USUNĄĆ OGRANICZENIE?"
+
+msgid ""
+"Rien à corriger ici : la commande n'est pas dans un fichier de /etc/systemd "
+"(à corriger à la main, avec « - » devant la commande)."
+msgstr ""
+"Nie ma tu czego poprawiać: polecenie nie znajduje się w pliku z /etc/systemd"
+" (popraw ręcznie, dodając „-” przed poleceniem)."
+
+msgid "CORRIGER LE DÉMARRAGE DE TAILSCALED ?"
+msgstr "POPRAWIĆ URUCHAMIANIE TAILSCALED?"
+
+msgid ""
+"Cette session passe par Tailscale : elle se figera quelques secondes pendant"
+" le redémarrage, puis reviendra en général."
+msgstr ""
+"Ta sesja przechodzi przez Tailscale: podczas ponownego uruchamiania zamrozi "
+"się na kilka sekund, a potem zwykle wróci."
+
+msgid "Commandes :"
+msgstr "Polecenia:"
+
+msgid ""
+"La veille coupe et remet Funnel sous votre compte : devenez d'abord "
+"opérateur de Tailscale (tableau de bord)."
+msgstr ""
+"Nadzór odcina i przywraca Funnel na twoim koncie: najpierw zostań operatorem"
+" Tailscale (pulpit)."
+
+msgid ""
+"La veille tournera en permanence, sous votre compte (jamais root), même "
+"omega-tail fermé. Sous attaque, elle coupe Funnel seule par paliers (15 min,"
+" 30 min, puis 1 h renouvelable) et le remet en route seule."
+msgstr ""
+"Nadzór będzie działał stale, na twoim koncie (nigdy jako root), nawet przy "
+"zamkniętym omega-tail. Podczas ataku sam odcina Funnel stopniowo (15 min, 30"
+" min, potem 1 h z odnawianiem) i sam go przywraca."
+
+msgid ""
+"La veille s'arrête : sous attaque, omega-tail ouvert vous proposera de "
+"nouveau la coupure."
+msgstr ""
+"Nadzór się zatrzymuje: podczas ataku otwarty omega-tail znów zaproponuje ci "
+"odcięcie."
+
+msgid "ACTIVER LA VEILLE AUTOMATIQUE ?"
+msgstr "WŁĄCZYĆ AUTOMATYCZNY NADZÓR?"
+
+msgid "DÉSACTIVER LA VEILLE AUTOMATIQUE ?"
+msgstr "WYŁĄCZYĆ AUTOMATYCZNY NADZÓR?"
+
+msgid "Veille automatique activée."
+msgstr "Automatyczny nadzór włączony."
+
+msgid "Veille automatique désactivée."
+msgstr "Automatyczny nadzór wyłączony."
+
+#, python-brace-format
+msgid "Commande refusée (code {code}) : rien n'a changé."
+msgstr "Polecenie odrzucone (kod {code}): nic się nie zmieniło."
+
+msgid "omega-tail — commandes lancées une à une :"
+msgstr "omega-tail — polecenia uruchamiane jedno po drugim:"
+
+msgid "Le mot de passe sudo ne s'affiche pas pendant la saisie."
+msgstr "Hasło sudo nie jest wyświetlane podczas wpisywania."
+
+msgid "✔ Terminé."
+msgstr "✔ Zakończono."
+
+#, python-brace-format
+msgid "✖ Échec (code {code})."
+msgstr "✖ Niepowodzenie (kod {code})."
+
+msgid "Entrée pour revenir à omega-tail… "
+msgstr "Enter, aby wrócić do omega-tail… "
+
+#, python-brace-format
+msgid "Fait : {command}"
+msgstr "Wykonano: {command}"
+
+#, python-brace-format
+msgid "Échec (code {code}) : {command}"
+msgstr "Niepowodzenie (kod {code}): {command}"
+
+msgid "Compte inconnu ou root : rien à faire."
+msgstr "Nieznane konto lub root: nic do zrobienia."
+
+#, python-brace-format
+msgid ""
+"Le compte « {user} » pourra régler Tailscale (connexion, publication, "
+"préférences) sans sudo. Une seule fois ; annulable ensuite avec « sudo "
+"tailscale set --operator= »."
+msgstr ""
+"Konto „{user}” będzie mogło ustawiać Tailscale (połączenie, publikacja, "
+"preferencje) bez sudo. Tylko raz; można to potem cofnąć przez „sudo "
+"tailscale set --operator=”."
+
+msgid "DEVENIR OPÉRATEUR DE TAILSCALE ?"
+msgstr "ZOSTAĆ OPERATOREM TAILSCALE?"
+
+msgid "Dossier des captures non configuré."
+msgstr "Katalog zrzutów ekranu nie jest skonfigurowany."
+
+msgid "Redémarrer"
+msgstr "Uruchom ponownie"
+
+msgid "PROTECTION"
+msgstr "OCHRONA"
+
+msgid "TAILSCALE"
+msgstr "TAILSCALE"
+
+msgid ""
+"omega-tail — authentification sudo pour les commandes affichées (le mot de "
+"passe ne s'affiche pas pendant la saisie). L'interface revient ensuite."
+msgstr ""
+"omega-tail — uwierzytelnianie sudo dla wyświetlonych poleceń (hasło nie jest"
+" wyświetlane podczas wpisywania). Potem interfejs wraca."
+
+msgid "Aucune commande à copier."
+msgstr "Brak poleceń do skopiowania."
+
+#, python-brace-format
+msgid ""
+"{count} commande(s) copiée(s) dans le presse-papiers ({tool}) : collez-les "
+"dans un terminal (Ctrl+Maj+V)."
+msgstr ""
+"Polecenia skopiowane do schowka ({tool}): {count} — wklej je w terminalu "
+"(Ctrl+Shift+V)."
+
+msgid ""
+"omega-tail — commandes à copier. Sélectionnez-les à la souris puis copiez "
+"avec le raccourci de votre terminal (souvent Ctrl+Maj+C) :"
+msgstr ""
+"omega-tail — polecenia do skopiowania. Zaznacz je myszą, a potem skopiuj "
+"skrótem swojego terminala (często Ctrl+Shift+C):"
+
+msgid "Adresses"
+msgstr "Adresy"
+
+msgid "Empreintes"
+msgstr "Odciski"
+
+#, python-brace-format
+msgid "MODE ATTAQUE (retour au normal après {seconds} s de calme)"
+msgstr "TRYB ATAKU (powrót do normy po {seconds} s spokoju)"
+
+msgid "regroupements appliqués"
+msgstr "grupowanie stosowane"
+
+msgid "regroupements en observation"
+msgstr "grupowanie w obserwacji"
+
+#, python-brace-format
+msgid "auraient été refusées (7 j) : {reasons}"
+msgstr "zostałyby odrzucone (7 dni): {reasons}"
+
+#, python-brace-format
+msgid "refusées (7 j) : {reasons}"
+msgstr "odrzucone (7 dni): {reasons}"
+
+msgid "ATTAQUES ET DÉCISIONS"
+msgstr "ATAKI I DECYZJE"
+
+msgid ""
+"La liste noire d'abord, puis les adresses bloquées, les plus actives, et la "
+"confiance. Choisissez une ligne puis une action."
+msgstr ""
+"Najpierw czarna lista, potem zablokowane adresy, najaktywniejsze i zaufane. "
+"Wybierz wiersz, a potem akcję."
+
+msgid "Bloquer"
+msgstr "Zablokuj"
+
+msgid "Liste noire"
+msgstr "Czarna lista"
+
+msgid "Débloquer"
+msgstr "Odblokuj"
+
+msgid "Gestion de la liste noire"
+msgstr "Zarządzanie czarną listą"
+
+msgid "Expire dans"
+msgstr "Wygasa za"
+
+msgid "Empreinte JA4"
+msgstr "Odcisk JA4"
+
+msgid "Remarque"
+msgstr "Uwaga"
+
+msgid "Total"
+msgstr "Łącznie"
+
+#, python-brace-format
+msgid ""
+"Connexions reçues : {total} · refusées avant chiffrement : {refused} · "
+"admises : {admitted} · en cours : {current}"
+msgstr ""
+"Połączenia odebrane: {total} · odrzucone przed szyfrowaniem: {refused} · "
+"wpuszczone: {admitted} · w toku: {current}"
+
+msgid "jusqu'au retrait"
+msgstr "do usunięcia"
+
+msgid "Retirer la confiance"
+msgstr "Cofnij zaufanie"
+
+msgid "Aucune adresse choisie."
+msgstr "Nie wybrano żadnego adresu."
+
+msgid "Plus anciennes que N jours"
+msgstr "Starsze niż N dni"
+
+msgid "Les N plus anciennes"
+msgstr "N najstarszych"
+
+msgid "De la ligne A à la ligne B"
+msgstr "Od wiersza A do wiersza B"
+
+msgid "Origine : import"
+msgstr "Pochodzenie: import"
+
+msgid "Origine : écran Attaques"
+msgstr "Pochodzenie: ekran Ataki"
+
+msgid "Origine : ajout manuel"
+msgstr "Pochodzenie: dodane ręcznie"
+
+msgid "Origine : avant les dates"
+msgstr "Pochodzenie: sprzed dat"
+
+msgid "Toute la liste"
+msgstr "Cała lista"
+
+msgid "GESTION DE LA LISTE NOIRE"
+msgstr "ZARZĄDZANIE CZARNĄ LISTĄ"
+
+msgid "AJOUTER OU IMPORTER"
+msgstr "DODAJ LUB IMPORTUJ"
+
+msgid "adresse ou réseau (ex. 203.0.113.7 ou 198.51.100.0/24)"
+msgstr "adres lub sieć (np. 203.0.113.7 lub 198.51.100.0/24)"
+
+msgid "fichier TXT : une adresse ou un réseau par ligne, # = commentaire"
+msgstr "plik TXT: jeden adres lub sieć na wiersz, # = komentarz"
+
+msgid "Importer"
+msgstr "Importuj"
+
+msgid ""
+"Les doublons, les adresses déjà couvertes par un réseau de la liste et "
+"celles du tailnet sont écartés et comptés. Un export TXT se réimporte tel "
+"quel (récidive)."
+msgstr ""
+"Duplikaty, adresy już objęte siecią z listy oraz adresy tailnetu są pomijane"
+" i liczone. Eksport TXT można zaimportować ponownie bez zmian (recydywa)."
+
+msgid "LISTE"
+msgstr "LISTA"
+
+msgid "filtrer : début d'adresse, réseau, date (2026-11), origine"
+msgstr "filtr: początek adresu, sieć, data (2026-11), pochodzenie"
+
+msgid "PURGER"
+msgstr "WYCZYŚĆ"
+
+msgid "N ou A"
+msgstr "N lub A"
+
+msgid "Aperçu"
+msgstr "Podgląd"
+
+msgid "Purger"
+msgstr "Wyczyść"
+
+msgid ""
+"Les lignes sont numérotées de la plus ancienne à la plus récente, comme dans"
+" le tableau sans filtre. L'aperçu dit combien d'entrées partiraient ; rien "
+"n'est retiré sans confirmation."
+msgstr ""
+"Wiersze są numerowane od najstarszego do najnowszego, jak w tabeli bez "
+"filtra. Podgląd mówi, ile wpisów by zniknęło; nic nie jest usuwane bez "
+"potwierdzenia."
+
+msgid "THÈME DE LA PAGE HTML"
+msgstr "MOTYW STRONY HTML"
+
+msgid "Exporter HTML"
+msgstr "Eksportuj HTML"
+
+msgid "Exporter TXT"
+msgstr "Eksportuj TXT"
+
+msgid "Exporter JSON"
+msgstr "Eksportuj JSON"
+
+msgid "Voir les exports"
+msgstr "Pokaż eksporty"
+
+#, python-brace-format
+msgid ""
+"{count} entrée(s) sur {max} au plus. Refusées par la porte avant tout "
+"chiffrement, jusqu'à leur retrait."
+msgstr ""
+"{count} wpis(ów) z najwyżej {max}. Odrzucane przez bramę przed jakimkolwiek "
+"szyfrowaniem, do czasu usunięcia."
+
+msgid "La liste grossit : exportez-la puis purgez les plus anciennes."
+msgstr "Lista rośnie: wyeksportuj ją, a potem wyczyść najstarsze wpisy."
+
+#, python-brace-format
+msgid ""
+"{shown} premières lignes affichées sur {total} : affinez le filtre, ou "
+"exportez pour tout voir."
+msgstr ""
+"Wyświetlono pierwsze {shown} wierszy z {total}: zawęź filtr lub wyeksportuj,"
+" aby zobaczyć wszystko."
+
+#, python-brace-format
+msgid "{count} entrée(s) correspondent au filtre."
+msgstr "Wpisy pasujące do filtra: {count}."
+
+msgid "La liste noire est vide."
+msgstr "Czarna lista jest pusta."
+
+#, python-brace-format
+msgid "{error}"
+msgstr "{error}"
+
+#, python-brace-format
+msgid "Lignes invalides : {lines}"
+msgstr "Nieprawidłowe wiersze: {lines}"
+
+msgid "Tapez une adresse ou un réseau."
+msgstr "Wpisz adres lub sieć."
+
+msgid "Indiquez le chemin du fichier TXT à importer."
+msgstr "Podaj ścieżkę pliku TXT do zaimportowania."
+
+#, python-brace-format
+msgid "Fichier introuvable : {path}"
+msgstr "Nie znaleziono pliku: {path}"
+
+#, python-brace-format
+msgid "Fichier trop gros (plus de {size} Mo) : découpez-le."
+msgstr "Plik zbyt duży (ponad {size} MB): podziel go."
+
+msgid "Import en cours…"
+msgstr "Trwa import…"
+
+msgid "Aucune entrée choisie."
+msgstr "Nie wybrano żadnego wpisu."
+
+msgid "Tapez N (un nombre entier) dans le premier champ."
+msgstr "Wpisz N (liczbę całkowitą) w pierwszym polu."
+
+msgid "Tapez A et B (numéros de ligne) dans les deux champs."
+msgstr "Wpisz A i B (numery wierszy) w obu polach."
+
+#, python-brace-format
+msgid "Aperçu : {count} entrée(s) sur {total} partiraient."
+msgstr "Podgląd: zniknęłoby {count} wpis(ów) z {total}."
+
+#, python-brace-format
+msgid "De {first} à {last}."
+msgstr "Od {first} do {last}."
+
+msgid "Aucune entrée ne correspond : rien à purger."
+msgstr "Żaden wpis nie pasuje: nie ma czego czyścić."
+
+#, python-brace-format
+msgid ""
+"{count} entrée(s) vont quitter la liste noire : ces adresses seront de "
+"nouveau admises (soumises aux règles). Exportez la liste avant si vous "
+"voulez pouvoir les réinjecter."
+msgstr ""
+"{count} wpis(ów) opuści czarną listę: te adresy znów będą wpuszczane (z "
+"zastosowaniem reguł). Najpierw wyeksportuj listę, jeśli chcesz móc je "
+"ponownie dodać."
+
+msgid "Purge en cours…"
+msgstr "Trwa czyszczenie…"
+
+msgid "VIDER"
+msgstr "WYCZYŚĆ"
+
+msgid "VIDER LA LISTE NOIRE ?"
+msgstr "WYCZYŚCIĆ CZARNĄ LISTĘ?"
+
+msgid "Vider"
+msgstr "Opróżnij"
+
+msgid "PURGER LA LISTE NOIRE ?"
+msgstr "OCZYŚCIĆ CZARNĄ LISTĘ?"
+
+#, python-brace-format
+msgid "Liste noire enregistrée ({count} entrée(s)) : {path}"
+msgstr "Czarna lista zapisana ({count} wpis(ów)): {path}"
+
+msgid "ATTAQUE PROBABLE — COUPER FUNNEL ?"
+msgstr "PRAWDOPODOBNY ATAK — ODCIĄĆ FUNNEL?"
+
+#, python-brace-format
+msgid ""
+"{reason}\n"
+"\n"
+"Couper Funnel (port {ports}) arrête aussitôt les connexions venues d'Internet : la machine respire. Le tailnet (Serve, SSH) n'est pas touché.\n"
+"\n"
+"• Coupure de {minutes} min : Funnel est remis en route tout seul, à l'identique, même si omega-tail est fermé.\n"
+"• Coupure totale : Funnel reste coupé jusqu'à ce que vous le rétablissiez (menu Survie)."
+msgstr ""
+"{reason}\n"
+"\n"
+"Odcięcie Funnel (port {ports}) natychmiast przerywa połączenia z Internetu: maszyna odetchnie. Tailnet (Serve, SSH) pozostaje nietknięty.\n"
+"\n"
+"• Odcięcie na {minutes} min: Funnel zostaje przywrócony sam, bez zmian, nawet jeśli omega-tail jest zamknięty.\n"
+"• Odcięcie całkowite: Funnel pozostaje odcięty, dopóki go nie przywrócisz (menu Przetrwanie)."
+
+#, python-brace-format
+msgid "Couper {minutes} min"
+msgstr "Odetnij na {minutes} min"
+
+msgid "Coupure totale"
+msgstr "Odcięcie całkowite"
+
+msgid "Pas maintenant"
+msgstr "Nie teraz"
+
+msgid "déconnecté (tailscale down)"
+msgstr "rozłączony (tailscale down)"
+
+msgid "compte à connecter"
+msgstr "konto do zalogowania"
+
+msgid "machine à approuver"
+msgstr "maszyna do zatwierdzenia"
+
+msgid "CONNEXION ET RÉGLAGES"
+msgstr "POŁĄCZENIE I USTAWIENIA"
+
+msgid ""
+"La connexion de cette machine au tailnet, son compte, et les réglages de "
+"Tailscale. Chaque commande s'affiche avant d'être lancée, dans le terminal "
+"(sans sudo si vous êtes opérateur)."
+msgstr ""
+"Połączenie tej maszyny z tailnetem, jej konto i ustawienia Tailscale. Każde "
+"polecenie wyświetla się przed uruchomieniem, w terminalu (bez sudo, jeśli "
+"jesteś operatorem)."
+
+msgid "Se connecter"
+msgstr "Zaloguj się"
+
+msgid "Se déconnecter"
+msgstr "Wyloguj się"
+
+msgid "Ajouter un compte"
+msgstr "Dodaj konto"
+
+msgid "Déconnexion définitive"
+msgstr "Trwałe wylogowanie"
+
+msgid "COMPTE"
+msgstr "KONTO"
+
+msgid "Comptes de cette machine (lecture…)"
+msgstr "Konta tej maszyny (odczyt…)"
+
+msgid "Changer de compte"
+msgstr "Zmień konto"
+
+msgid "Appliquer"
+msgstr "Zastosuj"
+
+msgid "Relire"
+msgstr "Odczytaj"
+
+msgid "Mon compte"
+msgstr "Moje konto"
+
+msgid "Activer le transfert IP"
+msgstr "Włącz przekazywanie IP"
+
+msgid " (en cours)"
+msgstr " (w toku)"
+
+#, python-brace-format
+msgid "Comptes illisibles ({error}) : devenez opérateur (tableau de bord)."
+msgstr "Nieczytelne konta ({error}): zostań operatorem (pulpit)."
+
+msgid ""
+"Un seul compte sur cette machine : « Ajouter un compte » pour en connecter "
+"un autre."
+msgstr "Tylko jedno konto na tej maszynie: „Dodaj konto”, aby zalogować inne."
+
+msgid ""
+"Aucune machine du tailnet ne se propose comme nœud de sortie. Sur la machine"
+" voulue : cocher « Proposer cette machine comme nœud de sortie », appliquer,"
+" puis l'approuver dans la console d'administration de Tailscale (Machines → "
+"Edit route settings)."
+msgstr ""
+"Żadna maszyna tailnetu nie oferuje się jako węzeł wyjściowy. Na wybranej "
+"maszynie: zaznacz „Oferuj tę maszynę jako węzeł wyjściowy”, zastosuj, a "
+"potem zatwierdź ją w konsoli administracyjnej Tailscale (Machines → Edit "
+"route settings)."
+
+#, python-brace-format
+msgid "ex. {user}"
+msgstr "np. {user}"
+
+msgid "tailscaled ne répond pas"
+msgstr "tailscaled nie odpowiada"
+
+#, python-brace-format
+msgid "Compte : {user} · tailnet : {tailnet}"
+msgstr "Konto: {user} · tailnet: {tailnet}"
+
+#, python-brace-format
+msgid "Machine : {name} · {addresses}"
+msgstr "Maszyna: {name} · {addresses}"
+
+#, python-brace-format
+msgid "Expiration de la clé : {expiry} · opérateur : {operator}"
+msgstr "Wygaśnięcie klucza: {expiry} · operator: {operator}"
+
+msgid "aucun (sudo)"
+msgstr "brak (sudo)"
+
+msgid "Votre session passe par Tailscale : se déconnecter vous couperait."
+msgstr "Twoja sesja przechodzi przez Tailscale: wylogowanie by cię odcięło."
+
+#, python-brace-format
+msgid ""
+"Transfert IP désactivé ({keys}) : le nœud de sortie et les sous-réseaux "
+"annoncés ne transmettront rien. « Activer le transfert IP » écrit un fichier"
+" à part ({path}), gardé au redémarrage."
+msgstr ""
+"Przekazywanie IP wyłączone ({keys}): węzeł wyjściowy i rozgłaszane podsieci "
+"niczego nie przekażą. „Włącz przekazywanie IP” zapisuje osobny plik "
+"({path}), zachowywany po ponownym uruchomieniu."
+
+msgid ""
+"Compte inconnu ou root : tapez le nom du compte Linux à rendre opérateur."
+msgstr ""
+"Nieznane konto lub root: wpisz nazwę konta Linux, które ma zostać "
+"operatorem."
+
+#, python-brace-format
+msgid "{name} : {reason}"
+msgstr "{name}: {reason}"
+
+#, python-brace-format
+msgid "{label} : {before} → {after}"
+msgstr "{label}: {before} → {after}"
+
+msgid "Aucun changement."
+msgstr "Brak zmian."
+
+msgid "Commande :"
+msgstr "Polecenie:"
+
+#, python-brace-format
+msgid "Transfert IP désactivé ({keys}) : « Activer le transfert IP » aussi."
+msgstr "Przekazywanie IP wyłączone ({keys}): także „Włącz przekazywanie IP”."
+
+#, python-brace-format
+msgid ""
+"Votre session passe par Tailscale ; ces changements peuvent la couper : "
+"{names}."
+msgstr ""
+"Twoja sesja przechodzi przez Tailscale; te zmiany mogą ją przerwać: {names}."
+
+#, python-brace-format
+msgid "Dernière application ({time}) : la commande a échoué (code {code})."
+msgstr ""
+"Ostatnie zastosowanie ({time}): polecenie nie powiodło się (kod {code})."
+
+#, python-brace-format
+msgid "Dernière application ({time}) :"
+msgstr "Ostatnie zastosowanie ({time}):"
+
+#, python-brace-format
+msgid "{label} : {after}"
+msgstr "{label}: {after}"
+
+#, python-brace-format
+msgid "{label} : {after} demandé, {now} lu"
+msgstr "{label}: żądano {after}, odczytano {now}"
+
+msgid "À appliquer :"
+msgstr "Do zastosowania:"
+
+msgid "Valeur refusée : corrigez la ligne marquée ✖."
+msgstr "Odrzucona wartość: popraw wiersz oznaczony ✖."
+
+msgid "APPLIQUER LES RÉGLAGES ?"
+msgstr "ZASTOSOWAĆ USTAWIENIA?"
+
+msgid ""
+"Votre session passe par Tailscale : elle sera COUPÉE et ne reviendra pas. Il"
+" faudra un accès local (ou un autre chemin) pour vous reconnecter."
+msgstr ""
+"Twoja sesja przechodzi przez Tailscale: zostanie PRZERWANA i nie wróci. Do "
+"ponownego połączenia potrzebny będzie dostęp lokalny (lub inna droga)."
+
+msgid "Ce qui est publié (Serve et Funnel) ne sera plus joignable."
+msgstr "To, co jest opublikowane (Serve i Funnel), przestanie być osiągalne."
+
+msgid "ACTIVER LE TRANSFERT IP ?"
+msgstr "WŁĄCZYĆ PRZEKAZYWANIE IP?"
+
+#, python-brace-format
+msgid ""
+"Le noyau fera suivre les paquets (IPv4 et IPv6) : nécessaire pour un nœud de"
+" sortie ou des sous-réseaux annoncés. Fichier à part {path}, relu au "
+"démarrage (systemd, OpenRC, runit) ; pour annuler : supprimer ce fichier "
+"puis redémarrer."
+msgstr ""
+"Jądro będzie przekazywać pakiety (IPv4 i IPv6): potrzebne dla węzła "
+"wyjściowego lub rozgłaszanych podsieci. Osobny plik {path}, odczytywany przy"
+" starcie (systemd, OpenRC, runit); aby cofnąć: usuń ten plik, a potem "
+"uruchom maszynę ponownie."
+
+msgid "SE CONNECTER ?"
+msgstr "ZALOGOWAĆ SIĘ?"
+
+msgid ""
+"Remet cette machine dans le tailnet. Si un compte doit s'identifier, "
+"Tailscale affiche dans le terminal l'adresse à ouvrir dans un navigateur."
+msgstr ""
+"Przywraca tę maszynę do tailnetu. Jeśli konto musi się uwierzytelnić, "
+"Tailscale wyświetla w terminalu adres do otwarcia w przeglądarce."
+
+msgid "SE DÉCONNECTER ?"
+msgstr "WYLOGOWAĆ SIĘ?"
+
+msgid ""
+"La machine quitte le tailnet (le compte reste enregistré : « Se connecter » "
+"la remet)."
+msgstr ""
+"Maszyna opuszcza tailnet (konto pozostaje zapisane: „Zaloguj się” ją "
+"przywraca)."
+
+msgid "AJOUTER UN COMPTE ?"
+msgstr "DODAĆ KONTO?"
+
+msgid ""
+"Connecte un autre compte (ou un autre tailnet) sur cette machine ; il "
+"devient le compte en cours. Tailscale affiche l'adresse à ouvrir pour vous "
+"identifier. L'ancien compte reste dans « Changer de compte »."
+msgstr ""
+"Loguje inne konto (lub inny tailnet) na tej maszynie; staje się ono bieżącym"
+" kontem. Tailscale wyświetla adres do otwarcia w celu uwierzytelnienia. "
+"Poprzednie konto pozostaje w „Zmień konto”."
+
+msgid "Choisissez un autre compte que le compte en cours."
+msgstr "Wybierz konto inne niż bieżące."
+
+msgid "CHANGER DE COMPTE ?"
+msgstr "ZMIENIĆ KONTO?"
+
+#, python-brace-format
+msgid ""
+"La machine passe sur le compte {account} (tailnet {tailnet}). Son adresse et"
+" ce qu'elle voit du tailnet changent."
+msgstr ""
+"Maszyna przechodzi na konto {account} (tailnet {tailnet}). Zmieniają się jej"
+" adres i to, co widzi z tailnetu."
+
+#, python-brace-format
+msgid ""
+"La machine est retirée du compte : sa clé est révoquée, il faudra s'identifier à nouveau (et peut-être la réapprouver) pour la remettre dans le tailnet.\n"
+"\n"
+"Commande : {command}"
+msgstr ""
+"Maszyna zostaje usunięta z konta: jej klucz zostaje unieważniony, trzeba będzie ponownie się uwierzytelnić (i może ponownie ją zatwierdzić), aby przywrócić ją do tailnetu.\n"
+"\n"
+"Polecenie: {command}"
+
+#, python-brace-format
+msgid "Pour confirmer, tapez le nom de la machine : {word}"
+msgstr "Aby potwierdzić, wpisz nazwę maszyny: {word}"
+
+msgid "DÉCONNEXION DÉFINITIVE ?"
+msgstr "TRWAŁE WYLOGOWANIE?"
+
+msgid "Déconnecter"
+msgstr "Wyloguj"
+
+msgid "bouton « Devenir opérateur »"
+msgstr "przycisk „Zostań operatorem”"
+
+#, python-brace-format
+msgid "lot {lot}"
+msgstr "etap {lot}"
+
+msgid "Tailscale"
+msgstr "Tailscale"
+
+msgid "n'est pas installé"
+msgstr "nie jest zainstalowany"
+
+#, python-brace-format
+msgid "ne répond pas : {error}"
+msgstr "nie odpowiada: {error}"
+
+msgid "tailscaled"
+msgstr "tailscaled"
+
+msgid "Client installé"
+msgstr "Zainstalowany klient"
+
+#, python-brace-format
+msgid "{daemon} en marche, {client} installé"
+msgstr "działa {daemon}, zainstalowany {client}"
+
+msgid "Version"
+msgstr "Wersja"
+
+msgid "Compte"
+msgstr "Konto"
+
+msgid "Appareils du tailnet"
+msgstr "Urządzenia tailnetu"
+
+#, python-brace-format
+msgid "{online} en ligne sur {total}"
+msgstr "{online} online z {total}"
+
+msgid "Clé de la machine"
+msgstr "Klucz maszyny"
+
+msgid "aucun (sudo requis)"
+msgstr "brak (wymagane sudo)"
+
+msgid "Nœud de sortie proposé"
+msgstr "Oferowany węzeł wyjściowy"
+
+msgid "Machine"
+msgstr "Maszyna"
+
+#, python-brace-format
+msgid "{name} ({count} fils)"
+msgstr "{name} (wątki: {count})"
+
+msgid "CPU machine"
+msgstr "CPU maszyny"
+
+msgid "Charge"
+msgstr "Obciążenie"
+
+msgid "Température"
+msgstr "Temperatura"
+
+msgid "Mémoire"
+msgstr "Pamięć"
+
+#, python-brace-format
+msgid "{used} utilisés sur {total}"
+msgstr "{used} używane z {total}"
+
+msgid "CPU tailscaled"
+msgstr "CPU tailscaled"
+
+#, python-brace-format
+msgid "{cpu} d'un cœur, {memory}"
+msgstr "{cpu} jednego rdzenia, {memory}"
+
+msgid "Confinement"
+msgstr "Ograniczenie"
+
+msgid "Funnel"
+msgstr "Funnel"
+
+msgid "coupé par le disjoncteur"
+msgstr "odcięty przez bezpiecznik"
+
+#, python-brace-format
+msgid "ouvert sur {ports}"
+msgstr "otwarty na {ports}"
+
+msgid "sans porte"
+msgstr "bez bramy"
+
+msgid "fermé"
+msgstr "zamknięty"
+
+msgid "actif · MODE ATTAQUE"
+msgstr "aktywna · TRYB ATAKU"
+
+msgid "Pare-feu (porte)"
+msgstr "Zapora (brama)"
+
+msgid "inactif"
+msgstr "nieaktywny"
+
+#, python-brace-format
+msgid "{count} entrée(s)"
+msgstr "wpisy: {count}"
+
+msgid "Veille"
+msgstr "Nadzór"
+
+msgid "inactive"
+msgstr "nieaktywny"
+
+msgid "arrêtée"
+msgstr "zatrzymany"
+
+#, python-brace-format
+msgid "active, palier {level}"
+msgstr "aktywny, poziom {level}"
+
+msgid "Bouclier WireGuard"
+msgstr "Osłona WireGuard"
+
+msgid "non posé"
+msgstr "niezałożona"
+
+msgid "ABSENT (table effacée)"
+msgstr "NIEOBECNA (tabela usunięta)"
+
+msgid "état non mis à jour"
+msgstr "stan nieaktualizowany"
+
+#, python-brace-format
+msgid "posé, mode {mode}"
+msgstr "założona, tryb {mode}"
+
+msgid "TABLEAU DE BORD"
+msgstr "PULPIT"
+
+msgid "Corriger"
+msgstr "Popraw"
+
+msgid "Alerte"
+msgstr "Alert"
+
+msgid "Où corriger"
+msgstr "Gdzie poprawić"
+
+#, python-brace-format
+msgid "Lu à {time} · relu toutes les 5 s"
+msgstr "Odczyt o {time} · odświeżany co 5 s"
+
+msgid "Choisissez une alerte puis « Corriger » (ou Entrée)."
+msgstr "Wybierz alert, a potem „Popraw” (lub Enter)."
+
+msgid "Aucune alerte choisie."
+msgstr "Nie wybrano żadnego alertu."
+
+msgid "Rien à ouvrir pour cette alerte : elle vient de Tailscale lui-même."
+msgstr "Nie ma czego otwierać dla tego alertu: pochodzi od samego Tailscale."
+
+#, python-brace-format
+msgid "Fichier trop volumineux pour être lu ici : {path}"
+msgstr "Plik zbyt duży, by go tu przeczytać: {path}"
+
+#, python-brace-format
+msgid "Lecture impossible : {error}"
+msgstr "Odczyt niemożliwy: {error}"
+
+msgid "EXPORTS"
+msgstr "EKSPORTY"
+
+msgid ""
+"Pas de navigateur dans cette session (serveur, connexion SSH) : les exports "
+"sont listés et lus ici. Choisissez une ligne (Entrée) pour la lire."
+msgstr ""
+"Brak przeglądarki w tej sesji (serwer, połączenie SSH): eksporty są tu "
+"wypisane i czytane. Wybierz wiersz (Enter), aby go przeczytać."
+
+msgid "Lire"
+msgstr "Czytaj"
+
+msgid "Taille"
+msgstr "Rozmiar"
+
+msgid "Aucun export pour l'instant."
+msgstr "Brak eksportów."
+
+#, python-brace-format
+msgid "Dossier des exports ouvert dans le navigateur : {path}"
+msgstr "Katalog eksportów otwarty w przeglądarce: {path}"
+
+msgid "Connexions par adresse / 10 s"
+msgstr "Połączenia na adres / 10 s"
+
+msgid "Par préfixe /24 ou /64 / 10 s"
+msgstr "Na prefiks /24 lub /64 / 10 s"
+
+msgid "Budget global (admises / s)"
+msgstr "Budżet globalny (wpuszczone / s)"
+
+msgid "Connexions simultanées"
+msgstr "Połączenia równoczesne"
+
+msgid "Durée de blocage (min)"
+msgstr "Czas blokady (min)"
+
+msgid "Mode attaque au-delà de (entrantes / s)"
+msgstr "Tryb ataku powyżej (przychodzące / s)"
+
+msgid "Retour au normal après (min de calme)"
+msgstr "Powrót do normy po (min spokoju)"
+
+msgid "AS d'hébergeur / 10 s"
+msgstr "AS hostingu / 10 s"
+
+msgid "Empreinte inconnue / 10 s"
+msgstr "Nieznany odcisk / 10 s"
+
+msgid "Pays limité / 10 s"
+msgstr "Ograniczony kraj / 10 s"
+
+msgid ""
+"HAProxy sans Lua : regroupements indisponibles (la porte du lot 4 protège "
+"seule)."
+msgstr ""
+"HAProxy bez Lua: grupowanie niedostępne (chroni tylko brama z etapu 4)."
+
+msgid "Regroupements : appliqués (refusent en mode attaque)"
+msgstr "Grupowanie: stosowane (odrzuca w trybie ataku)"
+
+msgid ""
+"Regroupements : en observation (comptent « aurait refusé », ne refusent "
+"rien)"
+msgstr ""
+"Grupowanie: w obserwacji (liczy „zostałoby odrzucone”, niczego nie odrzuca)"
+
+#, python-brace-format
+msgid "Mode : ATTAQUE — retour au normal après {seconds} s de calme"
+msgstr "Tryb: ATAK — powrót do normy po {seconds} s spokoju"
+
+msgid "Mode : normal"
+msgstr "Tryb: normalny"
+
+#, python-brace-format
+msgid ""
+"Empreintes : apprentissage, encore {days} jour(s) ; les regroupements "
+"restent en observation jusqu'à la fin."
+msgstr ""
+"Odciski: uczenie się, jeszcze {days} dni; grupowanie pozostaje w obserwacji "
+"do końca."
+
+#, python-brace-format
+msgid ""
+"Empreintes habituelles : {count} (référence prête) ; « appliqués » est "
+"maintenant possible."
+msgstr ""
+"Zwykłe odciski: {count} (punkt odniesienia gotowy); tryb „stosowane” jest "
+"teraz możliwy."
+
+msgid ""
+"Base AS / pays : absente (« Mettre à jour la base », ou la veille une fois "
+"par mois)"
+msgstr "Baza AS / krajów: brak („Aktualizuj bazę” lub nadzór raz w miesiącu)"
+
+#, python-brace-format
+msgid ""
+"Base AS / pays : à jour il y a {days} jour(s) ; renouvelée chaque mois par "
+"la veille"
+msgstr ""
+"Baza AS / krajów: zaktualizowana {days} dni temu; odnawiana co miesiąc przez"
+" nadzór"
+
+msgid ""
+"Navigateurs courants (Chrome, Edge, Firefox) jamais limités par ces règles."
+msgstr ""
+"Popularne przeglądarki (Chrome, Edge, Firefox) nigdy nie są ograniczane "
+"przez te reguły."
+
+msgid ""
+"Une porte (HAProxy) se place entre Funnel et votre site : elle voit "
+"l'adresse réelle de chaque visiteur et refuse les abus AVANT tout "
+"chiffrement (4,6 fois moins de calcul par connexion refusée, mesuré). "
+"Activation et désactivation avec retour arrière automatique."
+msgstr ""
+"Brama (HAProxy) staje między Funnel a twoją stroną: widzi prawdziwy adres "
+"każdego odwiedzającego i odrzuca nadużycia PRZED jakimkolwiek szyfrowaniem "
+"(4,6 razy mniej obliczeń na odrzucone połączenie, zmierzono). Włączanie i "
+"wyłączanie z automatycznym wycofaniem."
+
+msgid "Installer HAProxy"
+msgstr "Zainstaluj HAProxy"
+
+msgid "Activer la protection"
+msgstr "Włącz ochronę"
+
+msgid "Désactiver la protection"
+msgstr "Wyłącz ochronę"
+
+msgid "Renouveler le certificat"
+msgstr "Odnów certyfikat"
+
+msgid "RÈGLES (appliquées à chaud)"
+msgstr "REGUŁY (stosowane na gorąco)"
+
+msgid "Mode"
+msgstr "Tryb"
+
+msgid "normal : refuse"
+msgstr "normalny: odrzuca"
+
+msgid "observation : compte sans refuser"
+msgstr "obserwacja: liczy, nie odrzuca"
+
+msgid "Vérifier le nom visé"
+msgstr "Sprawdzaj docelową nazwę"
+
+msgid "nombre"
+msgstr "liczba"
+
+msgid "Appliquer les règles"
+msgstr "Zastosuj reguły"
+
+msgid "LISTES"
+msgstr "LISTY"
+
+msgid "Adresse ou réseau (203.0.113.7, 198.51.100.0/24, 2001:db8::/48)"
+msgstr "Adres lub sieć (203.0.113.7, 198.51.100.0/24, 2001:db8::/48)"
+
+msgid "Mettre en confiance"
+msgstr "Oznacz jako zaufany"
+
+msgid "REGROUPEMENTS : EMPREINTES, AS, PAYS"
+msgstr "GRUPOWANIE: ODCISKI, AS, KRAJE"
+
+msgid ""
+"Contre les attaques à adresses dispersées : chaque connexion reçoit, avant "
+"tout chiffrement, son empreinte (JA4), son AS et son pays. Quand les "
+"connexions entrantes dépassent le seuil, la porte passe seule en MODE "
+"ATTAQUE : une empreinte inconnue qui explose, un AS d'hébergeur ou un pays "
+"choisi qui dépasse son débit est alors refusé. Les navigateurs courants ne "
+"sont jamais touchés ; les clients connus passent avant le budget. En "
+"observation, tout est compté (« aurait refusé ») et rien n'est refusé."
+msgstr ""
+"Przeciw atakom z rozproszonych adresów: każde połączenie otrzymuje, przed "
+"jakimkolwiek szyfrowaniem, swój odcisk (JA4), swój AS i swój kraj. Gdy "
+"połączenia przychodzące przekraczają próg, brama sama przechodzi w TRYB "
+"ATAKU: nieznany odcisk, który gwałtownie rośnie, AS hostingu lub wybrany "
+"kraj, który przekracza swoją częstotliwość, jest wtedy odrzucany. Popularne "
+"przeglądarki nigdy nie są objęte; znani klienci mają pierwszeństwo przed "
+"budżetem. W obserwacji wszystko jest liczone („zostałoby odrzucone”) i nic "
+"nie jest odrzucane."
+
+msgid "Regroupements"
+msgstr "Grupowanie"
+
+msgid "observation : comptent sans refuser"
+msgstr "obserwacja: liczy, nie odrzuca"
+
+msgid "appliqués : refusent en mode attaque (après l'apprentissage)"
+msgstr "stosowane: odrzuca w trybie ataku (po uczeniu się)"
+
+msgid "Clients connus avant le budget"
+msgstr "Znani klienci przed budżetem"
+
+msgid "Pays limités en mode attaque"
+msgstr "Kraje ograniczane w trybie ataku"
+
+msgid "ex. CN, RU (vide : aucun)"
+msgstr "np. CN, RU (puste: żaden)"
+
+msgid "AS d'hébergeurs"
+msgstr "AS hostingów"
+
+msgid "ex. 16509 24940 (numéros d'AS)"
+msgstr "np. 16509 24940 (numery AS)"
+
+msgid "Appliquer les regroupements"
+msgstr "Zastosuj grupowanie"
+
+msgid "Mettre à jour la base"
+msgstr "Aktualizuj bazę"
+
+msgid "Recommencer l'apprentissage"
+msgstr "Rozpocznij uczenie od nowa"
+
+#, python-brace-format
+msgid ""
+"Confiance (jamais limitées) : {trusted}\n"
+"Liste noire (refusées jusqu'à leur retrait) : {black}"
+msgstr ""
+"Zaufane (nigdy nie ograniczane): {trusted}\n"
+"Czarna lista (odrzucane do czasu usunięcia): {black}"
+
+msgid ""
+"Téléchargement et préparation de la base AS / pays (DB-IP Lite) : une à "
+"quelques minutes, l'écran reste utilisable…"
+msgstr ""
+"Pobieranie i przygotowanie bazy AS / krajów (DB-IP Lite): od jednej do kilku"
+" minut, ekran pozostaje używalny…"
+
+msgid ""
+"Chaque menu, sa fonction et le détail. Cliquez sur un titre pour l'ouvrir."
+msgstr "Każde menu, jego funkcja i szczegóły. Kliknij tytuł, aby go rozwinąć."
+
+msgid "Exporter l'aide en HTML"
+msgstr "Eksportuj pomoc do HTML"
+
+#, python-brace-format
+msgid "Aide exportée : {path}"
+msgstr "Pomoc wyeksportowana: {path}"
+
+#, python-brace-format
+msgid "Cet écran arrive dans une prochaine version (lot {lot})."
+msgstr "Ten ekran pojawi się w jednej z następnych wersji (etap {lot})."
+
+msgid "Cet écran n'est pas disponible dans cette session."
+msgstr "Ten ekran nie jest dostępny w tej sesji."
+
+msgid "JOURNAUX"
+msgstr "LOGI"
+
+msgid "porte (pare-feu)"
+msgstr "brama (zapora)"
+
+#, python-brace-format
+msgid "{count} lignes"
+msgstr "{count} wierszy"
+
+msgid "Filtrer (texte, adresse…)"
+msgstr "Filtruj (tekst, adres…)"
+
+msgid "Lecture du journal…"
+msgstr "Odczyt logu…"
+
+msgid "Aucune ligne lue."
+msgstr "Nie odczytano żadnego wiersza."
+
+#, python-brace-format
+msgid "{shown} ligne(s) affichée(s) sur {total} lue(s)."
+msgstr "Wyświetlono {shown} z {total} odczytanych wierszy."
+
+msgid "Rien à exporter."
+msgstr "Nie ma czego eksportować."
+
+#, python-brace-format
+msgid "Journal exporté : {path}"
+msgstr "Log wyeksportowany: {path}"
+
+msgid "maintenant"
+msgstr "teraz"
+
+#, python-brace-format
+msgid "il y a {count} min"
+msgstr "{count} min temu"
+
+#, python-brace-format
+msgid "il y a {count} h"
+msgstr "{count} godz. temu"
+
+#, python-brace-format
+msgid "il y a {count} j"
+msgstr "{count} dni temu"
+
+msgid "direct"
+msgstr "bezpośrednio"
+
+msgid "relais"
+msgstr "przekaźnik"
+
+#, python-brace-format
+msgid "relais {code}"
+msgstr "przekaźnik {code}"
+
+msgid "sortie Internet"
+msgstr "wyjście do Internetu"
+
+#, python-brace-format
+msgid "Diagnostic impossible : {error}"
+msgstr "Diagnostyka niemożliwa: {error}"
+
+msgid "Tailscale n'a rien répondu."
+msgstr "Tailscale nic nie odpowiedział."
+
+#, python-brace-format
+msgid "oui, adresse publique {address}"
+msgstr "tak, adres publiczny {address}"
+
+#, python-brace-format
+msgid "UDP : {value}"
+msgstr "UDP: {value}"
+
+msgid "non — tout passe par les relais de Tailscale (plus lent)"
+msgstr "nie — wszystko przechodzi przez przekaźniki Tailscale (wolniej)"
+
+#, python-brace-format
+msgid "IPv4 : {value}"
+msgstr "IPv4: {value}"
+
+#, python-brace-format
+msgid "IPv6 : {value}"
+msgstr "IPv6: {value}"
+
+#, python-brace-format
+msgid "NAT : {value}"
+msgstr "NAT: {value}"
+
+msgid ""
+"difficile — le port change selon la destination, les relais seront plus "
+"fréquents"
+msgstr ""
+"trudny — port zmienia się zależnie od celu, przekaźniki będą używane "
+"częściej"
+
+msgid "simple — les connexions directes se font facilement"
+msgstr "prosty — połączenia bezpośrednie nawiązują się łatwo"
+
+#, python-brace-format
+msgid "Ouverture de port par la box : {value}"
+msgstr "Otwieranie portu przez router: {value}"
+
+#, python-brace-format
+msgid "Relais le plus proche : {value}"
+msgstr "Najbliższy przekaźnik: {value}"
+
+#, python-brace-format
+msgid "Latence des relais : {values}"
+msgstr "Opóźnienie przekaźników: {values}"
+
+msgid "Compteurs internes illisibles (Tailscale trop ancien ?)."
+msgstr "Nieczytelne liczniki wewnętrzne (zbyt stary Tailscale?)."
+
+msgid "Reçu"
+msgstr "Odebrane"
+
+msgid "Envoyé"
+msgstr "Wysłano"
+
+#, python-brace-format
+msgid ""
+"{title} depuis le démarrage : direct {direct} · relais DERP {derp} · relais "
+"d'un pair {peer}"
+msgstr ""
+"{title} od uruchomienia: bezpośrednio {direct} · przekaźnik DERP {derp} · "
+"przekaźnik równorzędny {peer}"
+
+#, python-brace-format
+msgid "Paquets jetés en sortie : {count}"
+msgstr "Pakiety odrzucone na wyjściu: {count}"
+
+#, python-brace-format
+msgid "Messages de santé : {count}"
+msgstr "Komunikaty o kondycji: {count}"
+
+msgid "RÉSEAU ET APPAREILS"
+msgstr "SIEĆ I URZĄDZENIA"
+
+msgid ""
+"Ce que voit Tailscale depuis cette machine : les appareils du tailnet, le "
+"chemin vers chacun (direct ou par un relais), et l'état du réseau. Lecture "
+"seule : rien n'est changé ici."
+msgstr ""
+"Co Tailscale widzi z tej maszyny: urządzenia tailnetu, ścieżkę do każdego z "
+"nich (bezpośrednią lub przez przekaźnik) i stan sieci. Tylko do odczytu: nic"
+" tutaj nie jest zmieniane."
+
+msgid "APPAREILS"
+msgstr "URZĄDZENIA"
+
+msgid "filtrer : nom, système, adresse"
+msgstr "filtr: nazwa, system, adres"
+
+msgid "Relais Funnel de Tailscale"
+msgstr "Przekaźniki Funnel Tailscale"
+
+msgid "Chemin"
+msgstr "Ścieżka"
+
+msgid "Vu"
+msgstr "Widziany"
+
+msgid "nom ou adresse (vide : la ligne choisie)"
+msgstr "nazwa lub adres (puste: wybrany wiersz)"
+
+msgid "Ping Tailscale"
+msgstr "Ping Tailscale"
+
+msgid "Qui est-ce ?"
+msgstr "Kto to?"
+
+msgid "DIAGNOSTIC RÉSEAU"
+msgstr "DIAGNOSTYKA SIECI"
+
+msgid ""
+"UDP, IPv4 / IPv6, type de NAT, ouverture de port par la box, relais le plus "
+"proche : ce qui décide si les connexions sont directes. Prend quelques "
+"secondes."
+msgstr ""
+"UDP, IPv4 / IPv6, typ NAT, otwieranie portu przez router, najbliższy "
+"przekaźnik: to decyduje, czy połączenia są bezpośrednie. Trwa kilka sekund."
+
+msgid "Lancer le diagnostic"
+msgstr "Uruchom diagnostykę"
+
+msgid "DIAGNOSTIC"
+msgstr "DIAGNOSTYKA"
+
+msgid "VERROU DU TAILNET"
+msgstr "BLOKADA TAILNETU"
+
+msgid "COMPTEURS INTERNES"
+msgstr "LICZNIKI WEWNĘTRZNE"
+
+#, python-brace-format
+msgid "Illisible : {error}"
+msgstr "Nieczytelne: {error}"
+
+#, python-brace-format
+msgid ""
+"{online} en ligne sur {total} appareil(s) ; {relays} relais Funnel de "
+"Tailscale (cochez pour les voir)."
+msgstr ""
+"{online} online z {total} urządzeń; przekaźniki Funnel Tailscale: {relays} "
+"(zaznacz, aby je zobaczyć)."
+
+#, python-brace-format
+msgid "Appareils illisibles : {error}"
+msgstr "Nieczytelne urządzenia: {error}"
+
+msgid "Choisissez un appareil, ou tapez un nom ou une adresse."
+msgstr "Wybierz urządzenie albo wpisz nazwę lub adres."
+
+#, python-brace-format
+msgid "PING {target}"
+msgstr "PING {target}"
+
+#, python-brace-format
+msgid "QUI EST-CE ? {target}"
+msgstr "KTO TO? {target}"
+
+msgid "Lecture…"
+msgstr "Odczyt…"
+
+msgid "Ping en cours (3 essais au plus)…"
+msgstr "Trwa ping (najwyżej 3 próby)…"
+
+#, python-brace-format
+msgid "« {target} » n'est pas un nom ou une adresse valable."
+msgstr "„{target}” nie jest prawidłową nazwą ani adresem."
+
+msgid "Diagnostic en cours (quelques secondes)…"
+msgstr "Trwa diagnostyka (kilka sekund)…"
+
+msgid "tailnet seul"
+msgstr "tylko tailnet"
+
+msgid "par la porte ✔"
+msgstr "przez bramę ✔"
+
+msgid "non protégé"
+msgstr "niechroniony"
+
+#, python-brace-format
+msgid "depuis Internet (relais Funnel {via})"
+msgstr "z Internetu (przekaźnik Funnel {via})"
+
+#, python-brace-format
+msgid "par le tailnet ({via})"
+msgstr "przez tailnet ({via})"
+
+#, python-brace-format
+msgid "{kind} {port}{path} {where} : {detail}"
+msgstr "{kind} {port}{path} {where}: {detail}"
+
+#, python-brace-format
+msgid "Temps : {ms:.0f} ms"
+msgstr "Czas: {ms:.0f} ms"
+
+#, python-brace-format
+msgid "Certificat : {subject} · émis par {issuer} · échéance {expiry} · {tls}"
+msgstr ""
+"Certyfikat: {subject} · wystawiony przez {issuer} · ważny do {expiry} · "
+"{tls}"
+
+msgid ""
+"Le nom n'est pas encore publié pour Internet : juste après un ajout, Funnel "
+"met parfois une minute. Réessayez."
+msgstr ""
+"Nazwa nie jest jeszcze opublikowana dla Internetu: tuż po dodaniu Funnel "
+"czasem potrzebuje minuty. Spróbuj ponownie."
+
+msgid ""
+"Un essai par le tailnet depuis la machine elle-même peut échouer selon le "
+"système : essayez aussi depuis un autre appareil."
+msgstr ""
+"Test przez tailnet z samej maszyny może się nie udać zależnie od systemu: "
+"spróbuj też z innego urządzenia."
+
+msgid ""
+"Ce que cette machine publie : pour le tailnet seul (Serve) ou pour Internet "
+"(Funnel). Chaque changement est vérifié, et l'état d'avant est sauvegardé "
+"(restaurable en un bouton)."
+msgstr ""
+"Co publikuje ta maszyna: tylko dla tailnetu (Serve) lub dla Internetu "
+"(Funnel). Każda zmiana jest sprawdzana, a poprzedni stan jest zapisywany (do"
+" przywrócenia jednym przyciskiem)."
+
+msgid "Essai de bout en bout"
+msgstr "Test end-to-end"
+
+msgid "Retirer"
+msgstr "Wycofaj"
+
+msgid "Suspendre Funnel"
+msgstr "Wstrzymaj Funnel"
+
+msgid "Rétablir Funnel"
+msgstr "Przywróć Funnel"
+
+msgid "AJOUTER"
+msgstr "DODAJ"
+
+msgid ""
+"Pour Internet, le plus sûr : HTTPS sur le port 443, puis « Activer la "
+"protection » (Pare-feu Funnel) pour que la porte filtre avant tout "
+"chiffrement."
+msgstr ""
+"Dla Internetu najbezpieczniej: HTTPS na porcie 443, a potem „Włącz ochronę” "
+"(Zapora Funnel), aby brama filtrowała przed jakimkolwiek szyfrowaniem."
+
+msgid "Service local"
+msgstr "Usługa lokalna"
+
+msgid "8080 ou http://127.0.0.1:8080"
+msgstr "8080 lub http://127.0.0.1:8080"
+
+msgid "Pour"
+msgstr "Dla"
+
+msgid "le tailnet seul (Serve)"
+msgstr "tylko tailnet (Serve)"
+
+msgid "Port (Funnel : 443, 8443, 10000)"
+msgstr "Port (Funnel: 443, 8443, 10000)"
+
+msgid "Chemin (HTTPS / HTTP)"
+msgstr "Ścieżka (HTTPS / HTTP)"
+
+msgid "Publier"
+msgstr "Opublikuj"
+
+msgid "SAUVEGARDES"
+msgstr "KOPIE ZAPASOWE"
+
+msgid ""
+"L'état d'avant chaque changement (publication, pare-feu, disjoncteur) ; les "
+"50 plus récentes sont gardées dans var/funnel/sauvegardes/."
+msgstr ""
+"Stan sprzed każdej zmiany (publikacja, zapora, bezpiecznik); 50 najnowszych "
+"jest przechowywanych w var/funnel/sauvegardes/."
+
+msgid "Aucune sauvegarde"
+msgstr "Brak kopii zapasowej"
+
+msgid "Restaurer"
+msgstr "Przywróć"
+
+#, python-brace-format
+msgid "Publication illisible : {error}"
+msgstr "Nieczytelna publikacja: {error}"
+
+msgid "Internet"
+msgstr "Internet"
+
+msgid "tailnet"
+msgstr "tailnet"
+
+msgid "Rien n'est publié. « Publier » ci-dessous pour commencer."
+msgstr "Nic nie jest opublikowane. Aby zacząć, „Opublikuj” poniżej."
+
+msgid ""
+"Pour changer la publication, devenez opérateur de Tailscale (tableau de "
+"bord)."
+msgstr "Aby zmienić publikację, zostań operatorem Tailscale (pulpit)."
+
+msgid "Essai en cours…"
+msgstr "Trwa test…"
+
+#, python-brace-format
+msgid ""
+"Retire {kind} {port}{path} → {target} ({who}). L'état d'avant est sauvegardé.\n"
+"\n"
+"Commande : {command}"
+msgstr ""
+"Wycofuje {kind} {port}{path} → {target} ({who}). Poprzedni stan jest zapisywany.\n"
+"\n"
+"Polecenie: {command}"
+
+msgid "RETIRER CETTE PUBLICATION ?"
+msgstr "WYCOFAĆ TĘ PUBLIKACJĘ?"
+
+#, python-brace-format
+msgid ""
+"Le service {target} sera joignable depuis Internet (Funnel, port {port}). "
+"Pensez ensuite à « Activer la protection » (Pare-feu Funnel)."
+msgstr ""
+"Usługa {target} będzie osiągalna z Internetu (Funnel, port {port}). Pamiętaj"
+" potem o „Włącz ochronę” (Zapora Funnel)."
+
+msgid "PUBLIER SUR INTERNET ?"
+msgstr "OPUBLIKOWAĆ W INTERNECIE?"
+
+msgid "Choisissez une sauvegarde."
+msgstr "Wybierz kopię zapasową."
+
+#, python-brace-format
+msgid ""
+"La publication redevient celle du {when} ({origin}) : {summary}.\n"
+"L'état actuel est sauvegardé d'abord ; tout est vérifié, et remis comme avant en cas d'échec."
+msgstr ""
+"Publikacja wraca do stanu z {when} ({origin}): {summary}.\n"
+"Najpierw zapisywany jest bieżący stan; wszystko jest sprawdzane i w razie niepowodzenia przywracane jak było."
+
+msgid "RESTAURER CETTE SAUVEGARDE ?"
+msgstr "PRZYWRÓCIĆ TĘ KOPIĘ ZAPASOWĄ?"
+
+msgid "QUITTER OMEGA-TAIL ?"
+msgstr "WYJŚĆ Z OMEGA-TAIL?"
+
+msgid "RAPPORT"
+msgstr "RAPORT"
+
+msgid ""
+"Tout ce qu'omega-tail sait de cette machine, en faits : Tailscale, "
+"publication, machine, pare-feu, survie, alertes, et les attaques des 7 "
+"derniers jours (journal de la porte). Enregistré dans le dossier des exports"
+" ; « Voir les exports » les ouvre pour les lire."
+msgstr ""
+"Wszystko, co omega-tail wie o tej maszynie, w faktach: Tailscale, "
+"publikacja, maszyna, zapora, przetrwanie, alerty oraz ataki z ostatnich 7 "
+"dni (log bramy). Zapisywane w katalogu eksportów; „Pokaż eksporty” otwiera "
+"je do odczytu."
+
+msgid ""
+"Inclure le compte Tailscale et les appareils du tailnet (noms, adresses)"
+msgstr "Dołącz konto Tailscale i urządzenia tailnetu (nazwy, adresy)"
+
+msgid ""
+"Sans cette case, seul leur nombre figure : le rapport peut être envoyé à "
+"quelqu'un sans dévoiler votre tailnet. Les adresses des attaquants y restent"
+" toujours."
+msgstr ""
+"Bez tego pola widnieje tylko ich liczba: raport można wysłać komuś bez "
+"ujawniania twojego tailnetu. Adresy atakujących zawsze pozostają."
+
+msgid "APERÇU"
+msgstr "PODGLĄD"
+
+msgid "Actualiser"
+msgstr "Odśwież"
+
+msgid ""
+"Rapport en préparation (journal de la porte des 7 derniers jours compris)…"
+msgstr "Przygotowywanie raportu (łącznie z logiem bramy z ostatnich 7 dni)…"
+
+#, python-brace-format
+msgid "Erreur : {message}"
+msgstr "Błąd: {message}"
+
+#, python-brace-format
+msgid "Rapport prêt ({time})."
+msgstr "Raport gotowy ({time})."
+
+msgid "ARRÊTER TAILSCALED ?"
+msgstr "ZATRZYMAĆ TAILSCALED?"
+
+msgid "DÉMARRER TAILSCALED ?"
+msgstr "URUCHOMIĆ TAILSCALED?"
+
+msgid "REDÉMARRER TAILSCALED ?"
+msgstr "URUCHOMIĆ PONOWNIE TAILSCALED?"
+
+msgid ""
+"Tailscale se reconnecte au tailnet ; les publications (Serve, Funnel) "
+"reprennent."
+msgstr ""
+"Tailscale ponownie łączy się z tailnetem; publikacje (Serve, Funnel) zostają"
+" wznowione."
+
+msgid ""
+"Tailscale est coupé : plus d'accès par le tailnet, publications (Serve, "
+"Funnel) interrompues jusqu'au prochain démarrage."
+msgstr ""
+"Tailscale jest wyłączony: brak dostępu przez tailnet, publikacje (Serve, "
+"Funnel) przerwane do następnego uruchomienia."
+
+msgid ""
+"Coupure de quelques secondes : le tailnet et les publications (Serve, "
+"Funnel) reviennent d'eux-mêmes. Applique une mise à jour déjà installée."
+msgstr ""
+"Przerwa na kilka sekund: tailnet i publikacje (Serve, Funnel) wracają same. "
+"Stosuje już zainstalowaną aktualizację."
+
+msgid "systemd ne connaît pas le service tailscaled sur cette machine."
+msgstr "systemd nie zna usługi tailscaled na tej maszynie."
+
+#, python-brace-format
+msgid "Depuis : {since}"
+msgstr "Od: {since}"
+
+#, python-brace-format
+msgid "Processus : {pid} · mémoire {memory}"
+msgstr "Proces: {pid} · pamięć {memory}"
+
+#, python-brace-format
+msgid "Version en marche : {version}"
+msgstr "Działająca wersja: {version}"
+
+msgid ""
+"→ La mise à jour est installée mais pas appliquée : « Redémarrer » "
+"l'applique."
+msgstr ""
+"→ Aktualizacja jest zainstalowana, ale niezastosowana: „Uruchom ponownie” ją"
+" stosuje."
+
+#, python-brace-format
+msgid "Système d'init : {init} · service « {name} »"
+msgstr "System init: {init} · usługa „{name}”"
+
+#, python-brace-format
+msgid "Lancement : {command}"
+msgstr "Uruchamianie: {command}"
+
+#, python-brace-format
+msgid "Fichier du service : {path}"
+msgstr "Plik usługi: {path}"
+
+msgid "Fichiers d'ajout (lus, jamais modifiés par omega-tail) :"
+msgstr "Pliki nakładki (odczytywane, nigdy niezmieniane przez omega-tail):"
+
+msgid "Fichiers d'ajout : aucun."
+msgstr "Pliki nakładki: brak."
+
+msgid ""
+"⚠ Le démarrage lance « tailscale up » : si un réglage change (opérateur, "
+"nom, routes…), Tailscale le refusera et tailscaled ne redémarrera plus. « "
+"Corriger le démarrage » ajoute « - » devant la commande (son refus n'arrête "
+"plus le service)."
+msgstr ""
+"⚠ Uruchomienie wywołuje „tailscale up”: jeśli jakieś ustawienie się zmieni "
+"(operator, nazwa, trasy…), Tailscale je odrzuci i tailscaled już się nie "
+"uruchomi. „Popraw uruchamianie” dodaje „-” przed poleceniem (jego odrzucenie"
+" nie zatrzymuje już usługi)."
+
+#, python-brace-format
+msgid "Confinement : {state}"
+msgstr "Ograniczenie zasobów: {state}"
+
+#, python-brace-format
+msgid ""
+"  plafond CPU {quota} · poids {weight} · cœurs {cpus} · priorité {nice}"
+msgstr ""
+"  limit CPU {quota} · waga {weight} · rdzenie {cpus} · priorytet {nice}"
+
+msgid "tous"
+msgstr "wszystkie"
+
+msgid ""
+"  ⚠ Confinement perdu au redémarrage de tailscaled : « Survie » → « "
+"Appliquer le confinement »."
+msgstr ""
+"  ⚠ Ograniczenie zasobów utracone przy ponownym uruchomieniu tailscaled: "
+"„Przetrwanie” → „Zastosuj ograniczenie”."
+
+msgid "  Le confinement se règle dans « Survie »."
+msgstr "  Ograniczenie zasobów ustawia się w „Przetrwanie”."
+
+msgid "⚠ Cette session passe par Tailscale : arrêter tailscaled la couperait."
+msgstr ""
+"⚠ Ta sesja przechodzi przez Tailscale: zatrzymanie tailscaled by ją "
+"przerwało."
+
+msgid "SERVICE TAILSCALED"
+msgstr "USŁUGA TAILSCALED"
+
+msgid ""
+"Chaque action montre sa commande avant d'être lancée ; le mot de passe sudo "
+"se saisit dans le terminal."
+msgstr ""
+"Każda akcja pokazuje swoje polecenie przed uruchomieniem; hasło sudo wpisuje"
+" się w terminalu."
+
+msgid "Démarrer"
+msgstr "Uruchom"
+
+msgid "Corriger le démarrage"
+msgstr "Popraw uruchamianie"
+
+msgid "VOUS ALLEZ PERDRE CETTE SESSION"
+msgstr "STRACISZ TĘ SESJĘ"
+
+msgid ""
+"Dernière confirmation : tailscaled sera arrêté et cette session coupée. Vous"
+" devrez le relancer depuis le réseau local ou la machine elle-même."
+msgstr ""
+"Ostatnie potwierdzenie: tailscaled zostanie zatrzymany, a ta sesja "
+"przerwana. Trzeba będzie uruchomić go ponownie z sieci lokalnej lub z samej "
+"maszyny."
+
+msgid "Arrêter quand même"
+msgstr "Zatrzymaj mimo to"
+
+msgid "Enregistrés dans var/settings.json, appliqués tout de suite."
+msgstr "Zapisywane w var/settings.json, stosowane od razu."
+
+msgid "Thème de l'interface"
+msgstr "Motyw interfejsu"
+
+msgid "Thème des exports (rapport HTML, aide exportée)"
+msgstr "Motyw eksportów (raport HTML, wyeksportowana pomoc)"
+
+msgid "Dossier des exports"
+msgstr "Katalog eksportów"
+
+#, python-brace-format
+msgid "Par défaut : {path}. Laissez vide pour revenir au dossier par défaut."
+msgstr "Domyślnie: {path}. Pozostaw puste, aby wrócić do katalogu domyślnego."
+
+msgid "Dossier des captures d'écran"
+msgstr "Katalog zrzutów ekranu"
+
+#, python-brace-format
+msgid "Par défaut : {path}. Capture : Ctrl+P → « Capture d'écran »."
+msgstr "Domyślnie: {path}. Zrzut: Ctrl+P → „Zrzut ekranu”."
+
+msgid "Enregistrer les dossiers"
+msgstr "Zapisz katalogi"
+
+msgid "Maintenance des dossiers"
+msgstr "Utrzymanie katalogów"
+
+msgid ""
+"Supprime définitivement le contenu du dossier configuré ; le dossier reste."
+msgstr "Trwale usuwa zawartość skonfigurowanego katalogu; katalog pozostaje."
+
+msgid "Vider le dossier des exports"
+msgstr "Opróżnij katalog eksportów"
+
+msgid "Vider le dossier des captures"
+msgstr "Opróżnij katalog zrzutów"
+
+msgid "des exports"
+msgstr "eksportów"
+
+msgid "des captures"
+msgstr "zrzutów"
+
+#, python-brace-format
+msgid "Chemin à donner en entier (commençant par / ou ~) : {path}"
+msgstr "Ścieżkę trzeba podać w całości (zaczynającą się od / lub ~): {path}"
+
+#, python-brace-format
+msgid "Dossiers enregistrés : {paths}"
+msgstr "Zapisane katalogi: {paths}"
+
+#, python-brace-format
+msgid "VIDER LE DOSSIER {label} ?"
+msgstr "OPRÓŻNIĆ KATALOG {label}?"
+
+#, python-brace-format
+msgid ""
+"Supprime définitivement tout le contenu de {directory}. Le dossier reste."
+msgstr "Trwale usuwa całą zawartość {directory}. Katalog pozostaje."
+
+#, python-brace-format
+msgid "Refusé — {path} : {reason}"
+msgstr "Odmowa — {path}: {reason}"
+
+#, python-brace-format
+msgid "{count} élément(s) supprimé(s) dans {path}."
+msgstr "Usunięte elementy w {path}: {count}."
+
+#, python-brace-format
+msgid "Non supprimés : {items}"
+msgstr "Nieusunięte: {items}"
+
+msgid "Pairs connus"
+msgstr "Znani partnerzy"
+
+msgid "Poignées de main"
+msgstr "Uzgadnianie (handshake)"
+
+msgid "Poignées de main en excès (par source)"
+msgstr "Nadmiar uzgadniania (na źródło)"
+
+msgid "Sources inconnues, paquets bien formés"
+msgstr "Nieznane źródła, poprawne pakiety"
+
+msgid "Sources inconnues en excès (par source)"
+msgstr "Nadmiar nieznanych źródeł (na źródło)"
+
+msgid "Excès de l'ensemble des sources inconnues"
+msgstr "Nadmiar wszystkich nieznanych źródeł"
+
+msgid "Paquets qui ne sont pas du WireGuard"
+msgstr "Pakiety, które nie są WireGuard"
+
+msgid "Poser (observation)"
+msgstr "Załóż (obserwacja)"
+
+msgid "Passer en actif"
+msgstr "Przełącz na aktywny"
+
+msgid "Reposer"
+msgstr "Załóż ponownie"
+
+msgid "Confier à omega-fire"
+msgstr "Przekaż omega-fire"
+
+msgid "Reprendre la gestion"
+msgstr "Przejmij zarządzanie"
+
+msgid "POSER LE BOUCLIER DU PORT WIREGUARD ?"
+msgstr "ZAŁOŻYĆ OSŁONĘ PORTU WIREGUARD?"
+
+msgid "CHANGER LE MODE DU BOUCLIER ?"
+msgstr "ZMIENIĆ TRYB OSŁONY?"
+
+msgid "REPOSER LE BOUCLIER ?"
+msgstr "ZAŁOŻYĆ OSŁONĘ PONOWNIE?"
+
+msgid "CONFIER LE BOUCLIER À OMEGA-FIRE ?"
+msgstr "PRZEKAZAĆ OSŁONĘ OMEGA-FIRE?"
+
+msgid "REPRENDRE LA GESTION DU BOUCLIER ?"
+msgstr "PRZEJĄĆ ZARZĄDZANIE OSŁONĄ?"
+
+msgid "RETIRER LE BOUCLIER ?"
+msgstr "ZDJĄĆ OSŁONĘ?"
+
+msgid ""
+"Une table nftables devant tailscaled, en OBSERVATION : rien n'est refusé, "
+"les compteurs disent ce qui l'aurait été. Un service la remet en place à "
+"chaque démarrage."
+msgstr ""
+"Tabela nftables przed tailscaled, w OBSERWACJI: nic nie jest odrzucane, "
+"liczniki mówią, co zostałoby odrzucone. Usługa przywraca ją przy każdym "
+"uruchomieniu."
+
+msgid ""
+"La table enregistrée est remise ; ses compteurs et la liste des pairs "
+"repartent de zéro."
+msgstr ""
+"Zapisana tabela zostaje przywrócona; jej liczniki i lista partnerów "
+"zaczynają od zera."
+
+msgid ""
+"omega-fire gérera le bouclier (remise au démarrage, commandes, liste des "
+"règles). La table, ses compteurs et les pairs connus ne sont pas touchés."
+msgstr ""
+"omega-fire będzie zarządzał osłoną (przywracanie przy starcie, polecenia, "
+"lista reguł). Tabela, jej liczniki i znani partnerzy pozostają nietknięci."
+
+msgid ""
+"omega-fire n'est plus relié : omega-tail gère de nouveau le bouclier. La "
+"table n'est pas touchée."
+msgstr ""
+"omega-fire nie jest już połączony: omega-tail znów zarządza osłoną. Tabela "
+"pozostaje nietknięta."
+
+msgid ""
+"La table, ses fichiers et son service sont supprimés : tailscaled ne sera "
+"plus protégé contre les flots de paquets."
+msgstr ""
+"Tabela, jej pliki i jej usługa zostają usunięte: tailscaled nie będzie już "
+"chroniony przed zalewem pakietów."
+
+msgid ""
+"tailscaled tire son port au hasard (--port 0) : aucun bouclier possible. "
+"Fixez un port (PORT= dans /etc/default/tailscaled), puis redémarrez "
+"tailscaled."
+msgstr ""
+"tailscaled losuje swój port (--port 0): osłona niemożliwa. Ustal port (PORT="
+" w /etc/default/tailscaled), a potem uruchom ponownie tailscaled."
+
+msgid "Aucune carte réseau matérielle trouvée : rien à protéger."
+msgstr ""
+"Nie znaleziono żadnej sprzętowej karty sieciowej: nie ma czego chronić."
+
+msgid "Port ou nom de carte réseau refusé."
+msgstr "Odrzucony port lub nazwa karty sieciowej."
+
+msgid "Aucun bouclier enregistré sur cette machine."
+msgstr "Brak zapisanej osłony na tej maszynie."
+
+msgid ""
+"Le noyau a été mis à jour sans redémarrage : ses modules ne peuvent plus "
+"être chargés et la table serait refusée. Redémarrez la machine, puis "
+"recommencez."
+msgstr ""
+"Jądro zostało zaktualizowane bez ponownego uruchomienia: jego modułów nie "
+"można już załadować, a tabela zostałaby odrzucona. Uruchom maszynę ponownie,"
+" a potem spróbuj jeszcze raz."
+
+#, python-brace-format
+msgid ""
+"Origine : {tool} (outil qui l'a demandé) · port {port}/udp · cartes réseau :"
+" {devices}"
+msgstr ""
+"Pochodzenie: {tool} (narzędzie, które o nią poprosiło) · port {port}/udp · "
+"karty sieciowe: {devices}"
+
+#, python-brace-format
+msgid "Pairs connus : {count} (jamais limités)."
+msgstr "Znani partnerzy: {count} (nigdy nie ograniczani)."
+
+#, python-brace-format
+msgid "Détecté : port de tailscaled {port}, cartes réseau {devices}."
+msgstr "Wykryto: port tailscaled {port}, karty sieciowe {devices}."
+
+msgid "au hasard"
+msgstr "losowy"
+
+msgid ""
+"Noyau antérieur à 5.16 : sans liste des pairs, seuls le tri des paquets et "
+"la limite des poignées de main sont posés."
+msgstr ""
+"Jądro starsze niż 5.16: bez listy partnerów zakładane są tylko sortowanie "
+"pakietów i limit uzgadniania."
+
+#, python-brace-format
+msgid ""
+"omega-fire {version} relié : il pose et gère le bouclier ; sa liste des "
+"règles l'affiche avec l'origine omega-tail."
+msgstr ""
+"omega-fire {version} połączony: zakłada osłonę i nią zarządza; jego lista "
+"reguł pokazuje ją z pochodzeniem omega-tail."
+
+#, python-brace-format
+msgid ""
+"omega-fire {version} relié, mais trop ancien pour le bouclier (il faut "
+"{needed} ou plus récent) : omega-tail le gère lui-même. Mettez omega-fire à "
+"jour."
+msgstr ""
+"omega-fire {version} połączony, ale zbyt stary dla osłony (potrzebny "
+"{needed} lub nowszy): omega-tail zarządza nią sam. Zaktualizuj omega-fire."
+
+msgid ""
+"omega-fire n'est pas relié par omega-connect : omega-tail pose et gère le "
+"bouclier lui-même, même si ufw ou firewalld sont présents."
+msgstr ""
+"omega-fire nie jest połączony przez omega-connect: omega-tail sam zakłada "
+"osłonę i nią zarządza, nawet jeśli obecne są ufw lub firewalld."
+
+msgid ""
+"Géré par omega-fire, qui n'est plus relié : « Reprendre la gestion » le rend"
+" à omega-tail."
+msgstr ""
+"Zarządzana przez omega-fire, który nie jest już połączony: „Przejmij "
+"zarządzanie” oddaje ją omega-tail."
+
+msgid ""
+"Noyau mis à jour sans redémarrage : la table ne peut pas être posée avant un"
+" redémarrage."
+msgstr ""
+"Jądro zaktualizowane bez ponownego uruchomienia: tabeli nie można założyć "
+"przed ponownym uruchomieniem."
+
+msgid ""
+"Système d'init inconnu : le bouclier ne sera pas remis en place au "
+"redémarrage."
+msgstr ""
+"Nieznany system init: osłona nie zostanie przywrócona po ponownym "
+"uruchomieniu."
+
+msgid "BOUCLIER DU PORT WIREGUARD"
+msgstr "OSŁONA PORTU WIREGUARD"
+
+msgid ""
+"Devant tailscaled : poignées de main limitées par source, budget pour les "
+"sources qui ne sont pas des pairs connus, paquets qui ne sont pas du "
+"WireGuard refusés. Mesuré : un flot qui prenait un cœur entier à tailscaled "
+"n'en prend plus que 1 %. Commencez en observation."
+msgstr ""
+"Przed tailscaled: uzgadnianie ograniczone na źródło, budżet dla źródeł, "
+"które nie są znanymi partnerami, pakiety niebędące WireGuard odrzucane. "
+"Zmierzono: strumień, który zajmował tailscaled cały rdzeń, zajmuje już tylko"
+" 1 %. Zacznij od obserwacji."
+
+msgid "COMPTEURS DEPUIS LA POSE"
+msgstr "LICZNIKI OD ZAŁOŻENIA"
+
+msgid "Compteur"
+msgstr "Licznik"
+
+msgid "Effet"
+msgstr "Efekt"
+
+msgid "Paquets"
+msgstr "Pakiety"
+
+msgid "admis"
+msgstr "wpuszczone"
+
+msgid "auraient été refusés"
+msgstr "zostałyby odrzucone"
+
+msgid "refusés"
+msgstr "odrzucone"
+
+msgid "Passer en observation"
+msgstr "Przełącz na obserwację"
+
+#, python-brace-format
+msgid ""
+"En observation, {count} paquet(s) auraient été refusés : en actif, ils le "
+"seront. Les pairs connus ne sont jamais limités."
+msgstr ""
+"W obserwacji {count} pakiet(ów) zostałoby odrzuconych: w trybie aktywnym "
+"zostaną odrzucone. Znani partnerzy nigdy nie są ograniczani."
+
+msgid ""
+"Plus rien n'est refusé ; les compteurs continuent de dire ce qui l'aurait "
+"été."
+msgstr ""
+"Nic nie jest już odrzucane; liczniki nadal mówią, co zostałoby odrzucone."
+
+#, python-brace-format
+msgid ""
+"Par omega-fire (il garde l'origine {tool} et l'inscrit à son journal "
+"d'audit)."
+msgstr ""
+"Przez omega-fire (zachowuje pochodzenie {tool} i zapisuje je w swoim "
+"dzienniku audytu)."
+
+msgid "systemd ne connaît pas tailscaled : confinement impossible ici."
+msgstr "systemd nie zna tailscaled: ograniczenie zasobów tu niemożliwe."
+
+msgid "perdu (tailscaled a redémarré) : « Appliquer le confinement » le remet"
+msgstr ""
+"utracone (tailscaled został ponownie uruchomiony): „Zastosuj ograniczenie” "
+"je przywraca"
+
+msgid "actif (groupe de contrôle d'omega-tail)"
+msgstr "aktywne (grupa kontrolna omega-tail)"
+
+#, python-brace-format
+msgid "Confinement actuel : {state}"
+msgstr "Bieżące ograniczenie zasobów: {state}"
+
+#, python-brace-format
+msgid "  plafond {quota} · poids {weight} · système d'init {init}"
+msgstr "  limit {quota} · waga {weight} · system init {init}"
+
+msgid "actif, posé par omega-tail"
+msgstr "aktywne, założone przez omega-tail"
+
+msgid "posé par omega-tail, pas encore appliqué (rechargement ou redémarrage)"
+msgstr ""
+"założone przez omega-tail, jeszcze niezastosowane (przeładowanie lub ponowne"
+" uruchomienie)"
+
+msgid "actif, posé hors d'omega-tail"
+msgstr "aktywne, założone poza omega-tail"
+
+#, python-brace-format
+msgid "  plafond {quota} · poids {weight} · priorité {nice}"
+msgstr "  limit {quota} · waga {weight} · priorytet {nice}"
+
+#, python-brace-format
+msgid "  Vos fichiers d'ajout (jamais modifiés) : {paths}"
+msgstr "  Twoje pliki nakładki (nigdy niezmieniane): {paths}"
+
+#, python-brace-format
+msgid ""
+"Funnel COUPÉ par omega-tail depuis {since} (coupure totale) : « Rétablir "
+"maintenant » le remet à l'identique."
+msgstr ""
+"Funnel ODCIĘTY przez omega-tail od {since} (odcięcie całkowite): „Przywróć "
+"teraz” przywraca go bez zmian."
+
+#, python-brace-format
+msgid ""
+"Funnel COUPÉ par omega-tail depuis {since}, remis en route automatiquement à"
+" {until}."
+msgstr ""
+"Funnel ODCIĘTY przez omega-tail od {since}, automatyczne przywrócenie o "
+"{until}."
+
+#, python-brace-format
+msgid "Funnel ouvert : port {ports}."
+msgstr "Funnel otwarty: port {ports}."
+
+msgid "Funnel n'est pas ouvert : rien à couper."
+msgstr "Funnel nie jest otwarty: nie ma czego odcinać."
+
+msgid ""
+"Désactivée : sous attaque, omega-tail ouvert PROPOSE la coupure (il faut "
+"être devant la machine)."
+msgstr ""
+"Wyłączony: podczas ataku otwarty omega-tail PROPONUJE odcięcie (trzeba być "
+"przy maszynie)."
+
+msgid ""
+"Activée mais arrêtée (aucun signe de vie) : « Activer la veille » la "
+"relance."
+msgstr ""
+"Włączony, ale zatrzymany (brak sygnału życia): „Włącz nadzór” uruchamia go "
+"ponownie."
+
+msgid ""
+"En marche, même omega-tail fermé : sous attaque, elle coupe Funnel seule et "
+"le remet seule."
+msgstr ""
+"Działa, nawet przy zamkniętym omega-tail: podczas ataku sam odcina Funnel i "
+"sam go przywraca."
+
+#, python-brace-format
+msgid ""
+"  Dépassements récents : {strikes}/{total} (fenêtre de {window} min) · "
+"prochaine coupure : {minutes} min"
+msgstr ""
+"  Ostatnie przekroczenia: {strikes}/{total} (okno {window} min) · następne "
+"odcięcie: {minutes} min"
+
+msgid ""
+"Garder la machine debout sous attaque. Chaque action montre ses commandes "
+"avant ; le mot de passe sudo se saisit dans le terminal."
+msgstr ""
+"Utrzymać maszynę na nogach podczas ataku. Każda akcja najpierw pokazuje "
+"swoje polecenia; hasło sudo wpisuje się w terminalu."
+
+msgid "CONFINEMENT DE TAILSCALED"
+msgstr "OGRANICZENIE ZASOBÓW TAILSCALED"
+
+#, python-brace-format
+msgid "Proposé pour cette machine ({count} fils), dans {path} :"
+msgstr "Proponowane dla tej maszyny (wątki: {count}), w {path}:"
+
+#, python-brace-format
+msgid ""
+"Proposé pour cette machine ({count} fils), dans un groupe de contrôle à part"
+" :"
+msgstr ""
+"Proponowane dla tej maszyny (wątki: {count}), w osobnej grupie kontrolnej:"
+
+#, python-brace-format
+msgid "Donner la priorité à l'accès SSH ({unit})"
+msgstr "Priorytet dla dostępu SSH ({unit})"
+
+msgid ""
+"Redémarrer tailscaled tout de suite (la priorité ne s'applique qu'au "
+"redémarrage ; coupure de quelques secondes)"
+msgstr ""
+"Uruchom tailscaled ponownie od razu (priorytet działa dopiero po ponownym "
+"uruchomieniu; przerwa na kilka sekund)"
+
+msgid "Appliquer le confinement"
+msgstr "Zastosuj ograniczenie"
+
+msgid "Retirer le confinement"
+msgstr "Usuń ograniczenie"
+
+msgid "VEILLE AUTOMATIQUE"
+msgstr "AUTOMATYCZNY NADZÓR"
+
+#, python-brace-format
+msgid ""
+"Pour une machine sans personne devant. Un dépassement : un seuil du "
+"disjoncteur tenu (plus bas). {strikes} dépassements dans la fenêtre : Funnel"
+" coupé {first} min, puis {second} min la fois suivante, puis {last} min à "
+"chaque fois ; toujours remis en route seul, à l'identique. Retour à {first} "
+"min après {hours} h sans coupure. Seul Funnel est coupé : tailscaled, le "
+"tailnet et SSH restent joignables."
+msgstr ""
+"Dla maszyny, przy której nikt nie siedzi. Przekroczenie: utrzymany próg "
+"bezpiecznika (poniżej). {strikes} przekroczeń w oknie czasowym: Funnel "
+"odcięty na {first} min, potem na {second} min następnym razem, potem za "
+"każdym razem na {last} min; zawsze przywracany sam, bez zmian. Powrót do "
+"{first} min po {hours} h bez odcięcia. Odcinany jest tylko Funnel: "
+"tailscaled, tailnet i SSH pozostają osiągalne."
+
+msgid "Fenêtre (min)"
+msgstr "Okno (min)"
+
+msgid "Enregistrer"
+msgstr "Zapisz"
+
+msgid "Activer la veille"
+msgstr "Włącz nadzór"
+
+msgid "Désactiver la veille"
+msgstr "Wyłącz nadzór"
+
+msgid ""
+"Protège tailscaled des flots de paquets envoyés sur son port (même sans "
+"Funnel)."
+msgstr ""
+"Chroni tailscaled przed zalewem pakietów wysyłanych na jego port (nawet bez "
+"Funnel)."
+
+msgid "Bouclier du port WireGuard"
+msgstr "Osłona portu WireGuard"
+
+msgid "DISJONCTEUR FUNNEL"
+msgstr "BEZPIECZNIK FUNNEL"
+
+msgid ""
+"Sans veille, il propose, il ne coupe jamais seul : quand un seuil est "
+"dépassé, omega-tail ouvert vous propose une coupure momentanée ou totale. "
+"Avec la veille automatique (ci-dessus), il agit seul."
+msgstr ""
+"Bez nadzoru proponuje, nigdy nie odcina sam: gdy próg zostanie przekroczony,"
+" otwarty omega-tail proponuje ci chwilowe lub całkowite odcięcie. Z "
+"automatycznym nadzorem (powyżej) działa sam."
+
+msgid "CPU tailscaled ≥ (% d'un cœur)"
+msgstr "CPU tailscaled ≥ (% jednego rdzenia)"
+
+msgid "pendant (s)"
+msgstr "przez (s)"
+
+msgid "ou température ≥ (°C)"
+msgstr "lub temperatura ≥ (°C)"
+
+msgid "coupure momentanée (min)"
+msgstr "chwilowe odcięcie (min)"
+
+msgid "Enregistrer les seuils"
+msgstr "Zapisz progi"
+
+msgid "Rétablir maintenant"
+msgstr "Przywróć teraz"
+
+msgid "Journal de la veille :"
+msgstr "Log nadzoru:"
+
+msgid ""
+"Le disjoncteur demande d'être opérateur de Tailscale (tableau de bord, « "
+"Devenir opérateur ») : la remise en route programmée tourne sous votre "
+"compte, jamais en root."
+msgstr ""
+"Bezpiecznik wymaga bycia operatorem Tailscale (pulpit, „Zostań operatorem”):"
+" zaplanowane przywrócenie działa na twoim koncie, nigdy jako root."
+
+msgid "Tailscale absent"
+msgstr "Brak Tailscale"
+
+#, python-brace-format
+msgid "CPU machine {cpu:.0f} %"
+msgstr "CPU maszyny {cpu:.0f} %"
+
+#, python-brace-format
+msgid "CPU tailscaled {cpu:.0f} %"
+msgstr "CPU tailscaled {cpu:.0f} %"
+
+#, python-brace-format
+msgid "RAM {used:.0f} %"
+msgstr "RAM {used:.0f} %"
+
+msgid "Funnel coupé"
+msgstr "Funnel odcięty"
+
+msgid "Funnel fermé"
+msgstr "Funnel zamknięty"
+
+msgid "Pare-feu actif · attaque"
+msgstr "Zapora aktywna · atak"
+
+msgid "Pare-feu actif"
+msgstr "Zapora aktywna"
+
+msgid "Pare-feu arrêté"
+msgstr "Zapora zatrzymana"
+
+msgid "Pare-feu inactif"
+msgstr "Zapora nieaktywna"
+
+msgid "Veille active"
+msgstr "Nadzór aktywny"
+
+msgid "Veille arrêtée"
+msgstr "Nadzór zatrzymany"
+
+msgid "Veille inactive"
+msgstr "Nadzór nieaktywny"
+
+msgid "Tailscale injoignable"
+msgstr "Tailscale nieosiągalny"
+
+msgid "Lecture de l'état…"
+msgstr "Odczyt stanu…"

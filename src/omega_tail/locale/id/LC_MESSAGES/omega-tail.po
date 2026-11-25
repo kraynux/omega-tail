@@ -1,0 +1,4658 @@
+# Statut X-Omega-Status : validated (2026-11-25, choix de vocabulaire et de ton arbitrés par Claude à la demande de l'auteur).
+msgid ""
+msgstr ""
+"Project-Id-Version: omega-tail\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Omega-Status: validated\n"
+
+msgid ""
+"omega-tail : pas de terminal interactif ; utilisez « omega-tail etat »."
+msgstr ""
+"omega-tail: tidak ada terminal interaktif; gunakan « omega-tail etat »."
+
+msgid "Nom de la machine inconnu : Tailscale est-il connecté ?"
+msgstr "Nama mesin tidak diketahui: apakah Tailscale terhubung?"
+
+#, python-brace-format
+msgid "Certificat refusé ({error}). Êtes-vous opérateur de Tailscale ?"
+msgstr "Sertifikat ditolak ({error}). Apakah Anda operator Tailscale?"
+
+#, python-brace-format
+msgid "Certificat renouvelé, mais la porte ne l'a pas repris ({error})."
+msgstr "Sertifikat diperbarui, tetapi gerbang tidak memuatnya ({error})."
+
+#, python-brace-format
+msgid "Certificat de {name} à jour."
+msgstr "Sertifikat {name} sudah mutakhir."
+
+#, python-brace-format
+msgid "Publication non prise en charge : {reason}."
+msgstr "Publikasi tidak didukung: {reason}."
+
+#, python-brace-format
+msgid "Publication illisible ({error})."
+msgstr "Publikasi tidak terbaca ({error})."
+
+msgid "HAProxy n'est pas installé : « Installer HAProxy » d'abord."
+msgstr "HAProxy belum terpasang: « Pasang HAProxy » terlebih dahulu."
+
+#, python-brace-format
+msgid "Configuration de la porte refusée par HAProxy : {error}"
+msgstr "Konfigurasi gerbang ditolak oleh HAProxy: {error}"
+
+#, python-brace-format
+msgid "Renouvellement du certificat non programmé (crontab : {error})."
+msgstr "Pembaruan sertifikat tidak terjadwal (crontab: {error})."
+
+msgid "Porte prête : certificat, listes et configuration vérifiés."
+msgstr "Gerbang siap: sertifikat, daftar, dan konfigurasi sudah diperiksa."
+
+msgid "La porte protège déjà Funnel."
+msgstr "Gerbang sudah melindungi Funnel."
+
+#, python-brace-format
+msgid "La porte ne répond pas en local ({detail}) : rien n'a été basculé."
+msgstr ""
+"Gerbang tidak merespons secara lokal ({detail}): tidak ada yang dialihkan."
+
+#, python-brace-format
+msgid "Bascule refusée ({error}) : publication d'origine remise."
+msgstr "Peralihan ditolak ({error}): publikasi asli dipulihkan."
+
+#, python-brace-format
+msgid "Funnel passe par la porte : essai public réussi ({detail})."
+msgstr "Funnel melewati gerbang: uji publik berhasil ({detail})."
+
+#, python-brace-format
+msgid "Essai public échoué ({detail}) : publication d'origine remise."
+msgstr "Uji publik gagal ({detail}): publikasi asli dipulihkan."
+
+msgid "La porte ne protège pas Funnel : rien à remettre."
+msgstr "Gerbang tidak melindungi Funnel: tidak ada yang perlu dipulihkan."
+
+#, python-brace-format
+msgid ""
+"Publication d'origine incomplète ({errors}) : sauvegarde gardée dans {path}."
+msgstr "Publikasi asli tidak lengkap ({errors}): cadangan disimpan di {path}."
+
+msgid "Publication d'origine remise, à l'identique."
+msgstr "Publikasi asli dipulihkan, persis seperti semula."
+
+msgid "Règles enregistrées ; elles s'appliqueront à l'activation."
+msgstr "Aturan disimpan; aturan akan diterapkan saat diaktifkan."
+
+#, python-brace-format
+msgid "Règles enregistrées, configuration non régénérée ({error})."
+msgstr "Aturan disimpan, konfigurasi tidak dibuat ulang ({error})."
+
+#, python-brace-format
+msgid "Règles refusées par HAProxy ({error}) : ancienne configuration gardée."
+msgstr ""
+"Aturan ditolak oleh HAProxy ({error}): konfigurasi lama dipertahankan."
+
+#, python-brace-format
+msgid "Règles écrites, rechargement impossible ({error})."
+msgstr "Aturan ditulis, tetapi tidak dapat dimuat ulang ({error})."
+
+#, python-brace-format
+msgid "Règles appliquées à chaud (mode {mode})."
+msgstr "Aturan diterapkan langsung (mode {mode})."
+
+msgid "Regroupements indisponibles."
+msgstr "Pengelompokan tidak tersedia."
+
+#, python-brace-format
+msgid ""
+"Apprentissage des empreintes en cours (encore {days} jour(s)) : les "
+"regroupements restent en observation jusqu'à la fin ; « appliqués » sera "
+"possible ensuite."
+msgstr ""
+"Pembelajaran sidik jari sedang berjalan (masih {days} hari): pengelompokan "
+"tetap dalam pengamatan sampai selesai; « diterapkan » baru bisa dipilih "
+"setelahnya."
+
+msgid "appliqués"
+msgstr "diterapkan"
+
+msgid "en observation"
+msgstr "dalam pengamatan"
+
+#, python-brace-format
+msgid "Regroupements appliqués à chaud ({mode})."
+msgstr "Pengelompokan diterapkan langsung ({mode})."
+
+#, python-brace-format
+msgid ""
+"Apprentissage recommencé : regroupements repassés en observation pour les "
+"{days} jours d'apprentissage."
+msgstr ""
+"Pembelajaran dimulai ulang: pengelompokan kembali ke pengamatan selama "
+"{days} hari pembelajaran."
+
+msgid ""
+"Base AS / pays : trop longue (plus de 15 minutes), abandonnée ; l'ancienne "
+"reste en place."
+msgstr ""
+"Basis data AS / negara: terlalu lama (lebih dari 15 menit), dibatalkan; yang"
+" lama tetap dipakai."
+
+#, python-brace-format
+msgid "{text}"
+msgstr "{text}"
+
+#, python-brace-format
+msgid ""
+"Liste noire pleine ({max} entrées) : purgez ou exportez-la dans « Gestion de"
+" la liste noire » avant d'en ajouter."
+msgstr ""
+"Daftar hitam penuh ({max} entri): bersihkan atau ekspor di « Pengelolaan "
+"daftar hitam » sebelum menambah lagi."
+
+#, python-brace-format
+msgid "Adresse ou réseau invalide : {text}"
+msgstr "Alamat atau jaringan tidak valid: {text}"
+
+#, python-brace-format
+msgid ""
+"{address} fait partie du tailnet : la porte admet toujours les machines "
+"Tailscale, elle ne peut pas être bloquée."
+msgstr ""
+"{address} termasuk tailnet: gerbang selalu mengizinkan mesin Tailscale, jadi"
+" alamat ini tidak bisa diblokir."
+
+#, python-brace-format
+msgid "{address} est déjà dans la liste noire (ou dans un de ses réseaux)."
+msgstr "{address} sudah ada di daftar hitam (atau di salah satu jaringannya)."
+
+#, python-brace-format
+msgid "{address} → liste noire (refusée jusqu'au retrait)."
+msgstr "{address} → daftar hitam (ditolak sampai dicabut)."
+
+#, python-brace-format
+msgid "{count} entrée(s) retirée(s) de la liste noire ; il en reste {left}."
+msgstr "{count} entri dicabut dari daftar hitam; tersisa {left}."
+
+#, python-brace-format
+msgid ""
+"Import : {added} ajoutée(s), {duplicates} doublon(s), {tailnet} du tailnet "
+"écartée(s), {invalid} ligne(s) invalide(s)."
+msgstr ""
+"Impor: {added} ditambahkan, {duplicates} duplikat, {tailnet} dari tailnet "
+"diabaikan, {invalid} baris tidak valid."
+
+#, python-brace-format
+msgid ""
+"Import : {added} ajoutée(s), {duplicates} doublon(s), {tailnet} du tailnet "
+"écartée(s), {invalid} ligne(s) invalide(s), {over} au-delà du plafond de "
+"{max}."
+msgstr ""
+"Impor: {added} ditambahkan, {duplicates} duplikat, {tailnet} dari tailnet "
+"diabaikan, {invalid} baris tidak valid, {over} melebihi batas {max}."
+
+msgid "Aucune entrée ne correspond : rien n'a été retiré."
+msgstr "Tidak ada entri yang cocok: tidak ada yang dicabut."
+
+#, python-brace-format
+msgid ""
+"Purge : {count} entrée(s) retirée(s) de la liste noire ; il en reste {left}."
+msgstr "Pembersihan: {count} entri dicabut dari daftar hitam; tersisa {left}."
+
+#, python-brace-format
+msgid "Adresse invalide : {text}"
+msgstr "Alamat tidak valid: {text}"
+
+#, python-brace-format
+msgid ""
+"{address} → liste noire (refusée jusqu'au retrait), retirée de la confiance."
+msgstr ""
+"{address} → daftar hitam (ditolak sampai dicabut), dicabut dari daftar "
+"tepercaya."
+
+#, python-brace-format
+msgid ""
+"{address} est en confiance (jamais limitée) : la confiance passe avant le "
+"blocage. Retirez-la de la confiance d'abord."
+msgstr ""
+"{address} tepercaya (tidak pernah dibatasi): kepercayaan didahulukan "
+"daripada pemblokiran. Cabut dulu dari daftar tepercaya."
+
+#, python-brace-format
+msgid ""
+"Porte injoignable ({error}) : blocage temporaire impossible porte arrêtée."
+msgstr ""
+"Gerbang tidak terjangkau ({error}): pemblokiran sementara tidak mungkin saat"
+" gerbang berhenti."
+
+#, python-brace-format
+msgid "{address} → bloquée {minutes} min (blocage temporaire)."
+msgstr "{address} → diblokir {minutes} menit (pemblokiran sementara)."
+
+#, python-brace-format
+msgid ""
+"{address} → toujours refusée : elle fait partie d'un réseau en liste noire."
+msgstr ""
+"{address} → tetap ditolak: alamat ini termasuk jaringan di daftar hitam."
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles), retirée de la liste noire."
+msgstr ""
+"{address} → diizinkan (tunduk pada aturan), dicabut dari daftar hitam."
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles), blocage temporaire levé."
+msgstr ""
+"{address} → diizinkan (tunduk pada aturan), pemblokiran sementara dicabut."
+
+#, python-brace-format
+msgid "{address} → confiance (jamais limitée), retirée de la liste noire."
+msgstr ""
+"{address} → tepercaya (tidak pernah dibatasi), dicabut dari daftar hitam."
+
+#, python-brace-format
+msgid "{address} → confiance (jamais limitée)."
+msgstr "{address} → tepercaya (tidak pernah dibatasi)."
+
+#, python-brace-format
+msgid "{address} → toujours admise : elle fait partie du tailnet."
+msgstr "{address} → selalu diizinkan: alamat ini termasuk tailnet."
+
+#, python-brace-format
+msgid "{address} → admise (soumise aux règles)."
+msgstr "{address} → diizinkan (tunduk pada aturan)."
+
+#, python-brace-format
+msgid "Apprentissage recommencé : {days} jours avant que la référence compte."
+msgstr "Pembelajaran dimulai ulang: {days} hari sebelum acuan diperhitungkan."
+
+#, python-brace-format
+msgid "Base AS / pays non mise à jour ({error}) : l'ancienne reste en place."
+msgstr ""
+"Basis data AS / negara tidak diperbarui ({error}): yang lama tetap dipakai."
+
+#, python-brace-format
+msgid "Base AS / pays à jour ({countries} plages pays, {asns} plages AS)."
+msgstr ""
+"Basis data AS / negara mutakhir ({countries} rentang negara, {asns} rentang "
+"AS)."
+
+msgid "habituelle"
+msgstr "biasa"
+
+msgid "limité en attaque"
+msgstr "dibatasi saat serangan"
+
+msgid "Funnel est coupé par le disjoncteur : rétablissez-le d'abord (Survie)."
+msgstr ""
+"Funnel diputus oleh pemutus sirkuit: pulihkan terlebih dahulu (Ketahanan)."
+
+#, python-brace-format
+msgid "Refusé par Tailscale ({error}) : rien n'a changé."
+msgstr "Ditolak oleh Tailscale ({error}): tidak ada yang berubah."
+
+#, python-brace-format
+msgid "Changement impossible ({error}) : publication d'avant remise."
+msgstr ""
+"Perubahan tidak dapat dilakukan ({error}): publikasi sebelumnya dipulihkan."
+
+#, python-brace-format
+msgid "Publication incomplète ({error}) : restaurez la sauvegarde {path}."
+msgstr "Publikasi tidak lengkap ({error}): pulihkan cadangan {path}."
+
+#, python-brace-format
+msgid "Ajout refusé : {reason}."
+msgstr "Penambahan ditolak: {reason}."
+
+#, python-brace-format
+msgid "Publié : {kind} {port}{path} → {target} ({who})."
+msgstr "Dipublikasikan: {kind} {port}{path} → {target} ({who})."
+
+msgid ""
+"Ce port passe par la porte : « Désactiver la protection » (Pare-feu Funnel) "
+"d'abord."
+msgstr ""
+"Port ini melewati gerbang: « Nonaktifkan perlindungan » (Firewall Funnel) "
+"terlebih dahulu."
+
+msgid "Ce point n'est plus publié."
+msgstr "Titik ini tidak lagi dipublikasikan."
+
+#, python-brace-format
+msgid "Retiré : {kind} {port}{path}."
+msgstr "Dicabut: {kind} {port}{path}."
+
+#, python-brace-format
+msgid "Sauvegarde illisible ({error})."
+msgstr "Cadangan tidak terbaca ({error})."
+
+msgid ""
+"La protection est active : « Désactiver la protection » (Pare-feu Funnel) "
+"d'abord, puis restaurez."
+msgstr ""
+"Perlindungan aktif: « Nonaktifkan perlindungan » (Firewall Funnel) terlebih "
+"dahulu, lalu pulihkan."
+
+msgid ""
+"Cette sauvegarde passe par la porte, arrêtée : « Activer la protection » "
+"(Pare-feu Funnel) la recrée proprement."
+msgstr ""
+"Cadangan ini melewati gerbang, yang sedang berhenti: « Aktifkan perlindungan"
+" » (Firewall Funnel) akan membuatnya ulang dengan rapi."
+
+#, python-brace-format
+msgid "Sauvegarde du {when} restaurée."
+msgstr "Cadangan tanggal {when} dipulihkan."
+
+msgid "essai public indisponible"
+msgstr "uji publik tidak tersedia"
+
+msgid "adresse du tailnet inconnue"
+msgstr "alamat tailnet tidak diketahui"
+
+msgid "Funnel encore autorisé sur les ports"
+msgstr "Funnel masih diizinkan pada port"
+
+msgid "Funnel est déjà coupé par omega-tail."
+msgstr "Funnel sudah diputus oleh omega-tail."
+
+msgid "Rien à couper : aucun port n'est ouvert à Internet."
+msgstr ""
+"Tidak ada yang perlu diputus: tidak ada port yang terbuka ke Internet."
+
+msgid "Remise en route programmée impossible ici."
+msgstr "Penghidupan kembali terjadwal tidak dapat dilakukan di sini."
+
+#, python-brace-format
+msgid ""
+"Minuterie de remise en route refusée (code {code}) : rien n'a été coupé."
+msgstr ""
+"Pewaktu penghidupan kembali ditolak (kode {code}): tidak ada yang diputus."
+
+#, python-brace-format
+msgid "Coupure impossible ({error}) : la publication a été remise."
+msgstr ""
+"Pemutusan tidak dapat dilakukan ({error}): publikasi telah dipulihkan."
+
+#, python-brace-format
+msgid ""
+"Funnel coupé ({ports}) pour {minutes} min, puis remis en route "
+"automatiquement."
+msgstr ""
+"Funnel diputus ({ports}) selama {minutes} menit, lalu dihidupkan kembali "
+"secara otomatis."
+
+#, python-brace-format
+msgid "Funnel coupé ({ports}) jusqu'à votre remise en route."
+msgstr "Funnel diputus ({ports}) sampai Anda menghidupkannya kembali."
+
+msgid "Rien à rétablir : Funnel n'est pas coupé par omega-tail."
+msgstr ""
+"Tidak ada yang perlu dipulihkan: Funnel tidak diputus oleh omega-tail."
+
+msgid "Minuterie d'une ancienne coupure : rien à faire."
+msgstr "Pewaktu dari pemutusan lama: tidak ada yang perlu dilakukan."
+
+#, python-brace-format
+msgid "Remise en route incomplète ({errors}) : sauvegarde gardée dans {path}."
+msgstr ""
+"Penghidupan kembali tidak lengkap ({errors}): cadangan disimpan di {path}."
+
+msgid "Funnel remis en route, à l'identique."
+msgstr "Funnel dihidupkan kembali, persis seperti semula."
+
+msgid "Tailscale n'est pas installé sur cette machine."
+msgstr "Tailscale belum terpasang di mesin ini."
+
+msgid "Le service tailscaled ne répond pas (arrêté ou en échec)."
+msgstr "Layanan tailscaled tidak merespons (berhenti atau gagal)."
+
+#, python-brace-format
+msgid ""
+"tailscaled n'a pas été redémarré après la mise à jour : {daemon} en marche, "
+"{client} installé."
+msgstr ""
+"tailscaled belum dimulai ulang setelah pembaruan: {daemon} berjalan, "
+"{client} terpasang."
+
+msgid "Tailscale attend la connexion d'un compte."
+msgstr "Tailscale menunggu koneksi sebuah akun."
+
+msgid "Tailscale est déconnecté (« tailscale down »)."
+msgstr "Tailscale terputus (« tailscale down »)."
+
+#, python-brace-format
+msgid "La clé de cette machine expire dans {days} jour(s)."
+msgstr "Kunci mesin ini kedaluwarsa dalam {days} hari."
+
+msgid ""
+"Site en panne : Funnel passe par la porte (pare-feu), mais la porte est "
+"arrêtée."
+msgstr ""
+"Situs mati: Funnel melewati gerbang (firewall), tetapi gerbang berhenti."
+
+msgid ""
+"La porte est en MODE ATTAQUE : trop de connexions entrantes ; les "
+"regroupements (empreintes, AS, pays) s'appliquent jusqu'au retour au calme."
+msgstr ""
+"Gerbang dalam MODE SERANGAN: terlalu banyak koneksi masuk; pengelompokan "
+"(sidik jari, AS, negara) berlaku sampai keadaan kembali tenang."
+
+#, python-brace-format
+msgid ""
+"Funnel publié sans protection sur le port {port} : tailscaled fait le TLS de"
+" chaque connexion (une rafale peut saturer la machine)."
+msgstr ""
+"Funnel dipublikasikan tanpa perlindungan di port {port}: tailscaled "
+"melakukan TLS untuk setiap koneksi (satu lonjakan dapat membuat mesin "
+"jenuh)."
+
+#, python-brace-format
+msgid "Température élevée : {temperature:.0f} °C."
+msgstr "Suhu tinggi: {temperature:.0f} °C."
+
+#, python-brace-format
+msgid "tailscaled consomme {cpu:.0f} % d'un cœur."
+msgstr "tailscaled memakai {cpu:.0f} % dari satu inti."
+
+msgid ""
+"La veille automatique est activée mais ne tourne plus : Funnel ne sera pas "
+"coupé seul sous attaque."
+msgstr ""
+"Pengawasan otomatis aktif tetapi tidak lagi berjalan: Funnel tidak akan "
+"diputus sendiri saat diserang."
+
+#, python-brace-format
+msgid ""
+"Liste noire de la porte : {count} entrées (plafond {max}). Exportez-la puis "
+"purgez les plus anciennes : « Attaques et décisions » → « Gestion de la "
+"liste noire »."
+msgstr ""
+"Daftar hitam gerbang: {count} entri (batas {max}). Ekspor lalu bersihkan "
+"yang paling lama: « Serangan dan keputusan » → « Pengelolaan daftar hitam »."
+
+msgid ""
+"Bouclier du port WireGuard ABSENT : un autre outil a effacé sa table (nft "
+"flush ruleset, pare-feu relancé…). Il n'est pas reposé seul : « Survie » → «"
+" Bouclier du port WireGuard » → « Reposer »."
+msgstr ""
+"Perisai port WireGuard TIDAK ADA: alat lain menghapus tabelnya (nft flush "
+"ruleset, firewall dimulai ulang…). Perisai tidak dipasang ulang sendiri: « "
+"Ketahanan » → « Perisai port WireGuard » → « Pasang ulang »."
+
+msgid ""
+"Bouclier du port WireGuard : état non mis à jour depuis plus de 3 minutes "
+"(service omega-bouclier-wg arrêté ?)."
+msgstr ""
+"Perisai port WireGuard: status tidak diperbarui selama lebih dari 3 menit "
+"(layanan omega-bouclier-wg berhenti?)."
+
+msgid ""
+"Le démarrage de tailscaled lance « tailscale up » : si un réglage change "
+"(opérateur, nom, routes…), Tailscale le refusera et tailscaled ne "
+"redémarrera plus. « Service » → « Corriger le démarrage »."
+msgstr ""
+"Saat tailscaled dimulai, ia menjalankan « tailscale up »: jika sebuah "
+"pengaturan berubah (operator, nama, rute…), Tailscale akan menolaknya dan "
+"tailscaled tidak akan mau mulai lagi. « Layanan » → « Perbaiki proses mulai "
+"»."
+
+msgid ""
+"Confinement de tailscaled perdu (le service a redémarré) : « Survie » → « "
+"Appliquer le confinement »."
+msgstr ""
+"Pembatasan tailscaled hilang (layanan dimulai ulang): « Ketahanan » → « "
+"Terapkan pembatasan »."
+
+msgid ""
+"tailscaled n'est pas confiné : sous attaque, il peut prendre tous les cœurs."
+msgstr ""
+"tailscaled tidak dibatasi: saat diserang, ia dapat memakai semua inti."
+
+msgid ""
+"Vous n'êtes pas opérateur de Tailscale : chaque réglage demandera sudo."
+msgstr "Anda bukan operator Tailscale: setiap pengaturan akan meminta sudo."
+
+msgid ""
+"Funnel coupé par omega-tail (coupure totale) : remise en route manuelle, "
+"dans « Survie »."
+msgstr ""
+"Funnel diputus oleh omega-tail (pemutusan total): hidupkan kembali secara "
+"manual di « Ketahanan »."
+
+#, python-brace-format
+msgid ""
+"Funnel devait être remis en route à {time} et ne l'est pas : « Rétablir » "
+"dans « Survie »."
+msgstr ""
+"Funnel seharusnya dihidupkan kembali pada {time} tetapi belum: « Pulihkan » "
+"di « Ketahanan »."
+
+#, python-brace-format
+msgid ""
+"Funnel coupé par omega-tail jusqu'à {time}, puis remis en route "
+"automatiquement."
+msgstr ""
+"Funnel diputus oleh omega-tail sampai {time}, lalu dihidupkan kembali secara"
+" otomatis."
+
+#, python-brace-format
+msgid "Tailscale signale : {message}"
+msgstr "Tailscale melaporkan: {message}"
+
+msgid "ajout manuel"
+msgstr "penambahan manual"
+
+msgid "import"
+msgstr "impor"
+
+msgid "écran Attaques"
+msgstr "layar Serangan"
+
+msgid "avant les dates"
+msgstr "sebelum ada tanggal"
+
+#, python-brace-format
+msgid "Température de {temperature:.0f} °C (seuil {threshold:.0f} °C)."
+msgstr "Suhu {temperature:.0f} °C (ambang {threshold:.0f} °C)."
+
+#, python-brace-format
+msgid ""
+"tailscaled au-dessus de {threshold:.0f} % d'un cœur depuis {seconds} s "
+"(moyenne {average:.0f} %)."
+msgstr ""
+"tailscaled di atas {threshold:.0f} % dari satu inti selama {seconds} dtk "
+"(rata-rata {average:.0f} %)."
+
+msgid "cible non prise en charge"
+msgstr "target tidak didukung"
+
+msgid "nom de machine inattendu"
+msgstr "nama mesin tidak terduga"
+
+msgid "aucun port n'est ouvert à Internet (Funnel)"
+msgstr "tidak ada port yang terbuka ke Internet (Funnel)"
+
+msgid "plusieurs ports Funnel : la porte n'en protège qu'un pour l'instant"
+msgstr "beberapa port Funnel: untuk saat ini gerbang hanya melindungi satu"
+
+msgid "Funnel passe déjà par une porte (TCP + PROXY v2)"
+msgstr "Funnel sudah melewati sebuah gerbang (TCP + PROXY v2)"
+
+msgid "seule une publication HTTPS avec le chemin « / » est prise en charge"
+msgstr "hanya publikasi HTTPS dengan jalur « / » yang didukung"
+
+msgid "Chrome, Edge, Firefox récent"
+msgstr "Chrome, Edge, Firefox terbaru"
+
+msgid "Firefox (ancien)"
+msgstr "Firefox (lama)"
+
+msgid "empreinte"
+msgstr "sidik jari"
+
+msgid "hébergeur"
+msgstr "penyedia hosting"
+
+msgid "pays"
+msgstr "negara"
+
+msgid "Identité"
+msgstr "Identitas"
+
+msgid "Réseau"
+msgstr "Jaringan"
+
+msgid "Sortie"
+msgstr "Jalur keluar"
+
+msgid "Services Tailscale"
+msgstr "Layanan Tailscale"
+
+msgid "Opérateur"
+msgstr "Operator"
+
+msgid "Nom de la machine"
+msgstr "Nama mesin"
+
+msgid ""
+"Nom dans le tailnet (vide : celui du système). Change aussi l'adresse "
+"*.ts.net : les liens publiés et le certificat suivent."
+msgstr ""
+"Nama di tailnet (kosong: nama sistem). Juga mengubah alamat *.ts.net: tautan"
+" yang dipublikasikan dan sertifikat ikut berubah."
+
+msgid "ex. serveur-maison"
+msgstr "mis. server-rumah"
+
+msgid "Surnom du compte"
+msgstr "Julukan akun"
+
+msgid ""
+"Surnom du compte en cours, pour le reconnaître dans « Changer de compte »."
+msgstr "Julukan akun saat ini, untuk mengenalinya di « Ganti akun »."
+
+msgid "ex. maison"
+msgstr "mis. rumah"
+
+msgid "Accepter les routes"
+msgstr "Terima rute"
+
+msgid ""
+"Utiliser les sous-réseaux annoncés par les autres machines. À éviter sur une"
+" machine du même réseau local que le routeur qui l'annonce."
+msgstr ""
+"Gunakan subnet yang diumumkan oleh mesin lain. Hindari pada mesin yang "
+"berada di jaringan lokal yang sama dengan router yang mengumumkannya."
+
+msgid "Accepter le DNS du tailnet"
+msgstr "Terima DNS tailnet"
+
+msgid "MagicDNS : les noms des machines du tailnet se résolvent ici."
+msgstr "MagicDNS: nama mesin di tailnet di-resolve di sini."
+
+msgid "Bouclier (refuser les connexions entrantes)"
+msgstr "Perisai (tolak koneksi masuk)"
+
+msgid ""
+"Aucune machine du tailnet ne peut se connecter à celle-ci (SSH et Serve "
+"compris). Funnel n'est pas concerné."
+msgstr ""
+"Tidak ada mesin tailnet yang dapat terhubung ke mesin ini (termasuk SSH dan "
+"Serve). Funnel tidak terpengaruh."
+
+msgid "Filtrage avec état"
+msgstr "Penyaringan stateful"
+
+msgid ""
+"Pour un routeur de sous-réseau ou un nœud de sortie : ne laisse revenir que "
+"les réponses."
+msgstr ""
+"Untuk router subnet atau simpul keluar: hanya membiarkan balasan kembali."
+
+msgid "Mode netfilter"
+msgstr "Mode netfilter"
+
+msgid ""
+"on : Tailscale gère ses règles de pare-feu ; nodivert : ses chaînes sans les"
+" brancher ; off : aucune règle (à vos risques)."
+msgstr ""
+"on: Tailscale mengelola aturan firewall-nya; nodivert: rantainya tanpa "
+"disambungkan; off: tanpa aturan (risiko Anda sendiri)."
+
+msgid "Nœud de sortie utilisé"
+msgstr "Simpul keluar yang dipakai"
+
+msgid ""
+"Faire passer le trafic Internet de cette machine par une autre machine du "
+"tailnet (vide : aucun)."
+msgstr ""
+"Lewatkan lalu lintas Internet mesin ini melalui mesin lain di tailnet "
+"(kosong: tidak ada)."
+
+msgid "Garder l'accès au réseau local"
+msgstr "Pertahankan akses ke jaringan lokal"
+
+msgid "Avec un nœud de sortie : le réseau local reste joignable directement."
+msgstr "Dengan simpul keluar: jaringan lokal tetap dapat dijangkau langsung."
+
+msgid "Proposer cette machine comme nœud de sortie"
+msgstr "Tawarkan mesin ini sebagai simpul keluar"
+
+msgid ""
+"Les autres machines pourront sortir sur Internet par celle-ci (à approuver "
+"dans la console d'administration)."
+msgstr ""
+"Mesin lain dapat keluar ke Internet melalui mesin ini (perlu disetujui di "
+"konsol admin)."
+
+msgid "Sous-réseaux annoncés"
+msgstr "Subnet yang diumumkan"
+
+msgid ""
+"Réseaux locaux rendus joignables au tailnet, séparés par des virgules "
+"(192.168.1.0/24) ; vide : aucun."
+msgstr ""
+"Jaringan lokal yang dibuat terjangkau dari tailnet, dipisahkan koma "
+"(192.168.1.0/24); kosong: tidak ada."
+
+msgid "ex. 192.168.1.0/24, 10.0.0.0/8"
+msgstr "mis. 192.168.1.0/24, 10.0.0.0/8"
+
+msgid "SSH Tailscale"
+msgstr "SSH Tailscale"
+
+msgid ""
+"Serveur SSH de Tailscale, selon les règles du tailnet. Votre SSH habituel "
+"n'est pas touché."
+msgstr ""
+"Server SSH milik Tailscale, mengikuti aturan tailnet. SSH Anda yang biasa "
+"tidak tersentuh."
+
+msgid "Interface web (port 5252)"
+msgstr "Antarmuka web (port 5252)"
+
+msgid "Page de gestion de cette machine, joignable par le tailnet seulement."
+msgstr "Halaman pengelolaan mesin ini, hanya dapat dijangkau melalui tailnet."
+
+msgid "Mises à jour automatiques"
+msgstr "Pembaruan otomatis"
+
+msgid ""
+"Tailscale se met à jour seul quand sa distribution le permet. Sinon : "
+"gestionnaire de paquets."
+msgstr ""
+"Tailscale memperbarui dirinya sendiri jika distribusinya memungkinkan. Jika "
+"tidak: manajer paket."
+
+msgid "Signaler les mises à jour"
+msgstr "Beri tahu pembaruan"
+
+msgid "Tailscale prévient quand une version plus récente existe."
+msgstr "Tailscale memberi tahu jika ada versi yang lebih baru."
+
+msgid "Port du relais pair (UDP)"
+msgstr "Port relai peer (UDP)"
+
+msgid ""
+"Cette machine relaie les connexions d'autres machines du tailnet sur ce port"
+" UDP ; vide : non."
+msgstr ""
+"Mesin ini me-relai koneksi mesin lain di tailnet pada port UDP ini; kosong: "
+"tidak."
+
+msgid "ex. 40000"
+msgstr "mis. 40000"
+
+msgid ""
+"Nom du compte Linux qui pilote Tailscale sans sudo (« Mon compte » le "
+"remplit) ; vide : root seul. Changer l'opérateur demande sudo une fois."
+msgstr ""
+"Nama akun Linux yang mengendalikan Tailscale tanpa sudo (« Akun saya » "
+"mengisinya); kosong: hanya root. Mengganti operator memerlukan sudo sekali."
+
+msgid "ex. votre compte Linux"
+msgstr "mis. akun Linux Anda"
+
+msgid "réglage inconnu"
+msgstr "pengaturan tidak dikenal"
+
+msgid "caractère de contrôle"
+msgstr "karakter kontrol"
+
+msgid "valeur hors liste"
+msgstr "nilai di luar daftar"
+
+msgid "lettres, chiffres et tirets seulement (63 au plus)"
+msgstr "hanya huruf, angka, dan tanda hubung (maks. 63)"
+
+msgid "64 caractères au plus"
+msgstr "maks. 64 karakter"
+
+msgid "nom de compte Unix attendu"
+msgstr "diharapkan nama akun Unix"
+
+msgid "adresse ou nom de machine attendu"
+msgstr "diharapkan alamat atau nama mesin"
+
+msgid "port de 0 à 65535"
+msgstr "port 0 sampai 65535"
+
+#, python-brace-format
+msgid "réseau invalide : {value}"
+msgstr "jaringan tidak valid: {value}"
+
+msgid "port de 1 à 65535 attendu"
+msgstr "diharapkan port 1 sampai 65535"
+
+msgid "cible locale attendue : un port, ou http://127.0.0.1:PORT"
+msgstr "diharapkan target lokal: sebuah port, atau http://127.0.0.1:PORT"
+
+msgid "cible locale attendue : un port, ou tcp://127.0.0.1:PORT"
+msgstr "diharapkan target lokal: sebuah port, atau tcp://127.0.0.1:PORT"
+
+msgid "mode inconnu"
+msgstr "mode tidak dikenal"
+
+msgid "Funnel n'ouvre que les ports 443, 8443 et 10000"
+msgstr "Funnel hanya membuka port 443, 8443, dan 10000"
+
+msgid "chemin attendu : /, /site, /api/v1…"
+msgstr "diharapkan jalur: /, /site, /api/v1…"
+
+msgid "ce port est déjà publié pour un autre public (tailnet / Internet)"
+msgstr "port ini sudah dipublikasikan untuk publik lain (tailnet / Internet)"
+
+msgid "ce port est déjà publié"
+msgstr "port ini sudah dipublikasikan"
+
+msgid "ce port est déjà publié dans un autre mode"
+msgstr "port ini sudah dipublikasikan dalam mode lain"
+
+msgid "ce chemin est déjà publié sur ce port"
+msgstr "jalur ini sudah dipublikasikan di port ini"
+
+msgid "pare-feu"
+msgstr "firewall"
+
+msgid "publication"
+msgstr "publikasi"
+
+msgid "veille automatique"
+msgstr "pengawasan otomatis"
+
+msgid "disjoncteur"
+msgstr "pemutus sirkuit"
+
+msgid ""
+"Cette session passe par Tailscale : arrêter tailscaled la coupera, et vous "
+"ne pourrez pas le relancer d'ici. Accès de secours : le réseau local ou la "
+"machine elle-même."
+msgstr ""
+"Sesi ini melewati Tailscale: menghentikan tailscaled akan memutusnya, dan "
+"Anda tidak akan bisa menjalankannya lagi dari sini. Akses cadangan: jaringan"
+" lokal atau mesin itu sendiri."
+
+msgid ""
+"Cette session passe par Tailscale : pendant le redémarrage elle se figera "
+"quelques secondes, puis reviendra en général d'elle-même."
+msgstr ""
+"Sesi ini melewati Tailscale: selama dimulai ulang, sesi akan membeku "
+"beberapa detik, lalu biasanya kembali dengan sendirinya."
+
+msgid "réponse DNS invalide"
+msgstr "respons DNS tidak valid"
+
+msgid "aucune adresse publique pour ce nom"
+msgstr "tidak ada alamat publik untuk nama ini"
+
+msgid "HAProxy absent"
+msgstr "HAProxy tidak ada"
+
+msgid "crontab absent (installez cronie ou un autre cron)"
+msgstr "crontab tidak ada (pasang cronie atau cron lain)"
+
+msgid "fichier trop gros"
+msgstr "berkas terlalu besar"
+
+msgid "téléchargement impossible"
+msgstr "unduhan tidak dapat dilakukan"
+
+msgid "base incomplète (trop peu de plages) : ancienne base gardée"
+msgstr ""
+"basis data tidak lengkap (terlalu sedikit rentang): basis data lama "
+"dipertahankan"
+
+msgid "contient l'installation d'omega-tail"
+msgstr "berisi instalasi omega-tail"
+
+msgid "lecture refusée"
+msgstr "pembacaan ditolak"
+
+msgid "aucun journal trouvé"
+msgstr "tidak ada log yang ditemukan"
+
+msgid ""
+"Votre compte ne peut pas lire le journal du système. Ajoutez-le au groupe « "
+"systemd-journal » (ou « adm » / « wheel » selon la distribution), puis "
+"rouvrez votre session."
+msgstr ""
+"Akun Anda tidak dapat membaca log sistem. Tambahkan ke grup « systemd-"
+"journal » (atau « adm » / « wheel » tergantung distribusi), lalu buka "
+"kembali sesi Anda."
+
+msgid ""
+"Ce journal est réservé à root sur cette machine : ajoutez votre compte au "
+"groupe qui peut le lire (souvent « adm » ou « wheel »), ou lisez-le avec "
+"sudo."
+msgstr ""
+"Log ini hanya untuk root di mesin ini: tambahkan akun Anda ke grup yang "
+"dapat membacanya (sering « adm » atau « wheel »), atau baca dengan sudo."
+
+msgid "journal vide ou illisible pour ce compte"
+msgstr "log kosong atau tidak terbaca untuk akun ini"
+
+msgid "DNS public"
+msgstr "DNS publik"
+
+msgid "réponse vide"
+msgstr "respons kosong"
+
+msgid "Pilotage de Tailscale et protection de Funnel."
+msgstr "Mengendalikan Tailscale dan melindungi Funnel."
+
+msgid "état de Tailscale, de la machine et alertes"
+msgstr "status Tailscale, mesin, dan peringatan"
+
+msgid "aide complète en texte"
+msgstr "bantuan lengkap dalam teks"
+
+msgid "rapport de la machine (faits seulement)"
+msgstr "laporan mesin (hanya fakta)"
+
+msgid "enregistrer dans le dossier des exports (sinon : affiché)"
+msgstr "simpan di folder ekspor (jika tidak: ditampilkan)"
+
+msgid ""
+"inclure le compte Tailscale et les noms / adresses des appareils du tailnet"
+msgstr "sertakan akun Tailscale dan nama / alamat perangkat tailnet"
+
+msgid "couper ou remettre Funnel (Survie)"
+msgstr "putus atau hidupkan kembali Funnel (Ketahanan)"
+
+msgid "coupure en cours"
+msgstr "pemutusan aktif"
+
+msgid "couper Funnel"
+msgstr "putus Funnel"
+
+msgid "coupure momentanée, remise en route automatique (minuterie)"
+msgstr "pemutusan sementara, dihidupkan kembali secara otomatis (pewaktu)"
+
+msgid "coupure jusqu'à « retablir »"
+msgstr "pemutusan sampai « retablir »"
+
+msgid "remettre Funnel à l'identique"
+msgstr "pulihkan Funnel seperti semula"
+
+msgid "coupure visée (minuterie) ; une autre coupure est ignorée"
+msgstr "pemutusan yang dituju (pewaktu); pemutusan lain diabaikan"
+
+msgid "secondes d'attente avant (hors systemd)"
+msgstr "detik tunggu sebelumnya (di luar systemd)"
+
+msgid "veille automatique (coupe Funnel seule sous attaque)"
+msgstr "pengawasan otomatis (memutus Funnel sendiri saat diserang)"
+
+msgid "tourner en continu (lancé par le service de la veille)"
+msgstr "berjalan terus-menerus (dijalankan oleh layanan pengawasan)"
+
+msgid "état de la veille et dernières lignes du journal"
+msgstr "status pengawasan dan baris terakhir log"
+
+msgid "pare-feu Funnel (porte HAProxy)"
+msgstr "firewall Funnel (gerbang HAProxy)"
+
+msgid "état de la porte et compteurs"
+msgstr "status gerbang dan penghitung"
+
+msgid "renouveler le certificat *.ts.net de la porte"
+msgstr "perbarui sertifikat *.ts.net gerbang"
+
+msgid "seulement s'il expire dans moins de 30 jours"
+msgstr "hanya jika kedaluwarsa dalam kurang dari 30 hari"
+
+msgid "regroupements : mode attaque, empreintes, AS, pays (lot 6)"
+msgstr "pengelompokan: mode serangan, sidik jari, AS, negara (tahap 6)"
+
+msgid "mettre à jour la base AS / pays (DB-IP Lite)"
+msgstr "perbarui basis data AS / negara (DB-IP Lite)"
+
+msgid "bloquer une adresse (durée de blocage) ou un réseau"
+msgstr "blokir sebuah alamat (durasi pemblokiran) atau sebuah jaringan"
+
+msgid "liste noire, jusqu'à « debloquer »"
+msgstr "daftar hitam, sampai « debloquer »"
+
+msgid "débloquer une adresse ou un réseau"
+msgstr "buka blokir sebuah alamat atau jaringan"
+
+msgid "mettre en confiance (jamais limitée)"
+msgstr "jadikan tepercaya (tidak pernah dibatasi)"
+
+#, python-brace-format
+msgid "Export impossible : {error}"
+msgstr "Ekspor gagal: {error}"
+
+#, python-brace-format
+msgid "Rapport enregistré : {path}"
+msgstr "Laporan disimpan: {path}"
+
+msgid "Funnel n'est pas coupé par omega-tail."
+msgstr "Funnel tidak diputus oleh omega-tail."
+
+#, python-brace-format
+msgid "remise en route prévue {when}"
+msgstr "dihidupkan kembali pada {when}"
+
+msgid "coupure totale"
+msgstr "pemutusan total"
+
+#, python-brace-format
+msgid ""
+"Funnel coupé depuis {since} ({until}), ports {ports} ; sauvegarde {saved}"
+msgstr ""
+"Funnel diputus sejak {since} ({until}), port {ports}; cadangan {saved}"
+
+msgid "--minutes : 1 au moins."
+msgstr "--minutes: minimal 1."
+
+msgid ""
+"La porte n'est pas active : les listes s'appliqueront à son activation."
+msgstr "Gerbang tidak aktif: daftar akan diterapkan saat gerbang diaktifkan."
+
+msgid "Veille automatique : désactivée."
+msgstr "Pengawasan otomatis: nonaktif."
+
+msgid "ARRÊTÉE (signe de vie trop vieux)"
+msgstr "BERHENTI (tanda hidup terlalu lama)"
+
+msgid "en marche"
+msgstr "berjalan"
+
+#, python-brace-format
+msgid ""
+"Veille automatique : {state} ; dépassements récents {strikes}/3 ; prochaine "
+"coupure {minutes} min"
+msgstr ""
+"Pengawasan otomatis: {state}; pelampauan terbaru {strikes}/3; pemutusan "
+"berikutnya {minutes} menit"
+
+msgid "Porte inactive : Funnel ne passe pas par elle."
+msgstr "Gerbang tidak aktif: Funnel tidak melewatinya."
+
+#, python-brace-format
+msgid ""
+"Porte active depuis {since} : Funnel {port} -> 127.0.0.1:{gate} -> {backend}"
+msgstr ""
+"Gerbang aktif sejak {since}: Funnel {port} -> 127.0.0.1:{gate} -> {backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions : {total} reçues, {refused} refusées avant chiffrement, {current}"
+" en cours"
+msgstr ""
+"Koneksi: {total} diterima masuk, {refused} ditolak sebelum enkripsi, "
+"{current} sedang berjalan"
+
+#, python-brace-format
+msgid "{days} jour(s) restants"
+msgstr "tersisa {days} hari"
+
+#, python-brace-format
+msgid "Certificat : {left}"
+msgstr "Sertifikat: {left}"
+
+#, python-brace-format
+msgid "Certificat valable encore {days} jour(s) : rien à faire."
+msgstr "Sertifikat masih berlaku {days} hari: tidak ada yang perlu dilakukan."
+
+msgid ""
+"HAProxy sans Lua : regroupements (JA4, AS, pays) indisponibles, porte du lot"
+" 4 seule."
+msgstr ""
+"HAProxy tanpa Lua: pengelompokan (JA4, AS, negara) tidak tersedia, hanya "
+"gerbang tahap 4."
+
+msgid "observation (rien n'est refusé par ces règles)"
+msgstr "pengamatan (tidak ada yang ditolak oleh aturan ini)"
+
+#, python-brace-format
+msgid "ATTAQUE (retour au normal dans {seconds} s sans dépassement)"
+msgstr "SERANGAN (kembali normal dalam {seconds} dtk tanpa pelampauan)"
+
+msgid "normal"
+msgstr "normal"
+
+#, python-brace-format
+msgid "Regroupements : {mode} ; mode {attack}"
+msgstr "Pengelompokan: {mode}; mode {attack}"
+
+#, python-brace-format
+msgid ""
+"Mode attaque au-delà de {rate} connexions entrantes / s ; calme {minutes} "
+"min"
+msgstr ""
+"Mode serangan di atas {rate} koneksi masuk / dtk; tenang {minutes} menit"
+
+msgid "référence prête"
+msgstr "acuan siap"
+
+#, python-brace-format
+msgid "apprentissage : encore {days} jour(s)"
+msgstr "pembelajaran: masih {days} hari"
+
+#, python-brace-format
+msgid "Empreintes habituelles : {known} ({learning})"
+msgstr "Sidik jari yang biasa: {known} ({learning})"
+
+#, python-brace-format
+msgid "mise à jour il y a {days} jour(s)"
+msgstr "diperbarui {days} hari lalu"
+
+msgid "absente (« omega-tail porte base »)"
+msgstr "tidak ada (« omega-tail porte base »)"
+
+#, python-brace-format
+msgid "Base AS / pays : {base}"
+msgstr "Basis data AS / negara: {base}"
+
+#, python-brace-format
+msgid "Connexions refusées (7 j) : {found}"
+msgstr "Koneksi ditolak (7 hari): {found}"
+
+#, python-brace-format
+msgid "Connexions qui auraient été refusées (7 j) : {found}"
+msgstr "Koneksi yang seharusnya ditolak (7 hari): {found}"
+
+msgid "Empreintes les plus actives (connexions / 10 s, total) :"
+msgstr "Sidik jari paling aktif (koneksi / 10 dtk, total):"
+
+msgid "AS les plus actifs (connexions / 10 s, total) :"
+msgstr "AS paling aktif (koneksi / 10 dtk, total):"
+
+msgid "Pays les plus actifs (connexions / 10 s, total) :"
+msgstr "Negara paling aktif (koneksi / 10 dtk, total):"
+
+msgid "Tailscale n'est pas installé."
+msgstr "Tailscale belum terpasang."
+
+#, python-brace-format
+msgid "Service tailscaled : {state}"
+msgstr "Layanan tailscaled: {state}"
+
+#, python-brace-format
+msgid "Version : {daemon} en marche, {client} installée"
+msgstr "Versi: {daemon} berjalan, {client} terpasang"
+
+#, python-brace-format
+msgid "Nom : {name}"
+msgstr "Nama: {name}"
+
+#, python-brace-format
+msgid "Adresses : {addresses}"
+msgstr "Alamat: {addresses}"
+
+#, python-brace-format
+msgid "Opérateur : {operator}"
+msgstr "Operator: {operator}"
+
+#, python-brace-format
+msgid "tailscaled : {cpu} d'un cœur, {memory}"
+msgstr "tailscaled: {cpu} dari satu inti, {memory}"
+
+#, python-brace-format
+msgid "Température : {value}"
+msgstr "Suhu: {value}"
+
+msgid "PUBLICATION"
+msgstr "PUBLIKASI"
+
+msgid "rien de publié"
+msgstr "tidak ada publikasi"
+
+msgid "ALERTES"
+msgstr "PERINGATAN"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — LISTE NOIRE DE LA PORTE ({machine})"
+msgstr "OMEGA-TAIL {version} — DAFTAR HITAM GERBANG ({machine})"
+
+#, python-brace-format
+msgid ""
+"Établie le {date} : {count} entrée(s), la plus ancienne d'abord. L'export "
+"TXT se réimporte tel quel."
+msgstr ""
+"Dibuat pada {date}: {count} entri, yang paling lama lebih dulu. Ekspor TXT "
+"dapat diimpor ulang apa adanya."
+
+msgid "Adresse ou réseau"
+msgstr "Alamat atau jaringan"
+
+msgid "Ajoutée le"
+msgstr "Ditambahkan pada"
+
+msgid "Origine"
+msgstr "Asal"
+
+msgid "Liste noire - Omega-Tail"
+msgstr "Daftar hitam - Omega-Tail"
+
+msgid "Passer d'un élément à l'autre (lignes d'un tableau, boutons)"
+msgstr "Berpindah dari satu elemen ke elemen lain (baris tabel, tombol)"
+
+msgid "Passer d'une zone de l'écran à l'autre"
+msgstr "Berpindah dari satu area layar ke area lain"
+
+msgid "Activer le bouton choisi ; dans le tableau des alertes, « Corriger »"
+msgstr "Aktifkan tombol yang dipilih; di tabel peringatan, « Perbaiki »"
+
+msgid "Entrée / Clic"
+msgstr "Enter / Klik"
+
+msgid "Revenir à l'écran précédent (au menu : quitter)"
+msgstr "Kembali ke layar sebelumnya (di menu: keluar)"
+
+msgid "Cette aide, depuis n'importe quel écran"
+msgstr "Bantuan ini, dari layar mana pun"
+
+msgid "Réglages, depuis n'importe quel écran"
+msgstr "Pengaturan, dari layar mana pun"
+
+msgid "Thème suivant (enregistré)"
+msgstr "Tema berikutnya (disimpan)"
+
+msgid "Redessiner l'écran, afficher la taille du terminal et relire l'état"
+msgstr "Gambar ulang layar, tampilkan ukuran terminal, dan baca ulang status"
+
+msgid ""
+"Commandes : thème, capture d'écran (SVG, dans le dossier des captures), "
+"quitter"
+msgstr ""
+"Perintah: tema, tangkapan layar (SVG, di folder tangkapan layar), keluar"
+
+msgid "Ctrl+P"
+msgstr "Ctrl+P"
+
+msgid ""
+"omega-tail pilote Tailscale sur cette machine et la protège quand elle publie un service sur Internet par Tailscale Funnel.\n"
+"\n"
+"1. [b]Tableau de bord[/b] : l'état de Tailscale, de la machine et de ce qui est publié, puis les alertes. Choisissez une alerte et « Corriger » : omega-tail ouvre l'écran qui la corrige.\n"
+"2. [b]Service tailscaled[/b] : démarrer, arrêter ou redémarrer le service (par exemple pour appliquer une mise à jour déjà installée).\n"
+"3. [b]Connexion et réglages[/b] : connexion, compte et réglages de Tailscale, vérifiés avant d'être appliqués.\n"
+"4. [b]Publication[/b] : ce que Serve et Funnel publient ; publier, retirer, essayer, restaurer.\n"
+"5. [b]Journaux[/b] : ce que tailscaled a écrit, filtrable et exportable.\n"
+"6. [b]Survie[/b] : confiner tailscaled, et couper Funnel un moment (puis le remettre tout seul) ou totalement quand la machine est attaquée.\n"
+"7. [b]Pare-feu Funnel[/b] : une porte qui refuse les connexions abusives avant tout chiffrement ; [b]Attaques et décisions[/b] pour voir et décider en direct.\n"
+"\n"
+"La [b]bande d'état[/b] (cadre « État », sous le titre de chaque écran) résume tout : service, consommation de tailscaled, température, mémoire vive utilisée (RAM), Funnel, pare-feu (actif, arrêté, inactif), veille automatique (active, arrêtée, inactive) et connexion. Elle est relue toutes les 5 secondes. La taille de la fenêtre est affichée à côté du thème, en haut ; « r » la relit après un redimensionnement.\n"
+"\n"
+"Chaque action qui change la machine montre d'abord sa commande ; le mot de passe sudo se saisit dans le terminal, l'interface revient ensuite. Rien n'est jamais lancé en arrière-plan sans vous."
+msgstr ""
+"omega-tail mengendalikan Tailscale di mesin ini dan melindunginya ketika mesin memublikasikan layanan ke Internet melalui Tailscale Funnel.\n"
+"\n"
+"1. [b]Dasbor[/b]: status Tailscale, mesin, dan apa yang dipublikasikan, lalu peringatan. Pilih sebuah peringatan lalu « Perbaiki »: omega-tail membuka layar yang memperbaikinya.\n"
+"2. [b]Layanan tailscaled[/b]: memulai, menghentikan, atau memulai ulang layanan (misalnya untuk menerapkan pembaruan yang sudah terpasang).\n"
+"3. [b]Koneksi dan pengaturan[/b]: koneksi, akun, dan pengaturan Tailscale, diperiksa sebelum diterapkan.\n"
+"4. [b]Publikasi[/b]: apa yang dipublikasikan Serve dan Funnel; publikasikan, cabut, uji, pulihkan.\n"
+"5. [b]Log[/b]: apa yang ditulis tailscaled, dapat disaring dan diekspor.\n"
+"6. [b]Ketahanan[/b]: membatasi tailscaled, dan memutus Funnel sebentar (lalu menghidupkannya kembali sendiri) atau sepenuhnya saat mesin diserang.\n"
+"7. [b]Firewall Funnel[/b]: gerbang yang menolak koneksi berlebihan sebelum enkripsi apa pun; [b]Serangan dan keputusan[/b] untuk melihat dan memutuskan secara langsung.\n"
+"\n"
+"[b]Pita status[/b] (bingkai « Status », di bawah judul setiap layar) merangkum semuanya: layanan, konsumsi tailscaled, suhu, memori yang dipakai (RAM), Funnel, firewall (aktif, berhenti, tidak aktif), pengawasan otomatis (aktif, berhenti, tidak aktif), dan koneksi. Pita ini dibaca ulang setiap 5 detik. Ukuran jendela ditampilkan di samping tema, di bagian atas; « r » membacanya ulang setelah ukuran diubah.\n"
+"\n"
+"Setiap tindakan yang mengubah mesin terlebih dahulu menampilkan perintahnya; kata sandi sudo diketik di terminal, lalu antarmuka kembali. Tidak ada yang pernah dijalankan di latar belakang tanpa sepengetahuan Anda."
+
+msgid "Tableau de bord"
+msgstr "Dasbor"
+
+msgid ""
+"Trois cadres et une liste d'alertes.\n"
+"- [b]Tailscale[/b] : service, état de la connexion, version (en marche et installée), nom de la machine, adresses, compte, appareils en ligne, expiration de la clé, opérateur.\n"
+"- [b]Tailscale[/b] dit aussi si la machine se propose comme nœud de sortie, lequel elle utilise, et les sous-réseaux qu'elle annonce.\n"
+"- [b]Machine[/b] : CPU de toute la machine, charge, température, mémoire, CPU et mémoire de tailscaled (en % d'un cœur), confinement, puis l'état des protections : Funnel, pare-feu (porte, mode attaque), liste noire, veille, bouclier du port WireGuard.\n"
+"- Libellés dans la couleur d'accent du thème, valeurs en vert, orange ou rouge selon les seuils (CPU machine 70 / 90 %, charge 1 / 2 par cœur, température 75 / 85 °C, mémoire 85 / 95 %, tailscaled 50 / 90 % d'un cœur, liste noire 25 000 / 50 000 entrées).\n"
+"- [b]Publication[/b] : chaque port publié, pour Internet (Funnel) ou le tailnet seul (Serve), son mode et sa cible.\n"
+"- [b]Alertes[/b] : de la plus grave à la moins grave. « Corriger » (ou Entrée) ouvre l'écran qui corrige ; un écran pas encore construit le dit.\n"
+"\n"
+"Alertes possibles : service arrêté ; mise à jour installée mais pas appliquée (redémarrer le service) ; compte à connecter ; clé qui expire ; Funnel publié sans protection (tailscaled fait le chiffrement de chaque visiteur : une rafale peut saturer la machine) ; température élevée ; tailscaled trop gourmand ; tailscaled non confiné ; vous n'êtes pas opérateur ; liste noire de plus de 25 000 entrées ; messages de Tailscale lui-même.\n"
+"\n"
+"La bande d'état en haut de chaque écran sépare [b]CPU machine[/b] (toute la machine, en % de tous ses cœurs) et [b]CPU tailscaled[/b] (le seul service, en % d'un cœur)."
+msgstr ""
+"Tiga bingkai dan daftar peringatan.\n"
+"- [b]Tailscale[/b]: layanan, status koneksi, versi (berjalan dan terpasang), nama mesin, alamat, akun, perangkat yang daring, kedaluwarsa kunci, operator.\n"
+"- [b]Tailscale[/b] juga menyebutkan apakah mesin menawarkan diri sebagai simpul keluar, simpul keluar mana yang dipakai, dan subnet yang diumumkannya.\n"
+"- [b]Mesin[/b]: CPU seluruh mesin, beban, suhu, memori, CPU dan memori tailscaled (dalam % dari satu inti), pembatasan, lalu status perlindungan: Funnel, firewall (gerbang, mode serangan), daftar hitam, pengawasan, perisai port WireGuard.\n"
+"- Label memakai warna aksen tema, nilai berwarna hijau, oranye, atau merah sesuai ambang (CPU mesin 70 / 90 %, beban 1 / 2 per inti, suhu 75 / 85 °C, memori 85 / 95 %, tailscaled 50 / 90 % dari satu inti, daftar hitam 25.000 / 50.000 entri).\n"
+"- [b]Publikasi[/b]: setiap port yang dipublikasikan, untuk Internet (Funnel) atau hanya tailnet (Serve), mode, dan targetnya.\n"
+"- [b]Peringatan[/b]: dari yang paling serius hingga yang paling ringan. « Perbaiki » (atau Enter) membuka layar yang memperbaikinya; layar yang belum dibuat akan memberi tahu.\n"
+"\n"
+"Peringatan yang mungkin: layanan berhenti; pembaruan terpasang tetapi belum diterapkan (mulai ulang layanan); akun perlu dihubungkan; kunci akan kedaluwarsa; Funnel dipublikasikan tanpa perlindungan (tailscaled melakukan enkripsi untuk setiap pengunjung: satu lonjakan dapat membuat mesin jenuh); suhu tinggi; tailscaled terlalu boros; tailscaled tidak dibatasi; Anda bukan operator; daftar hitam lebih dari 25.000 entri; pesan dari Tailscale sendiri.\n"
+"\n"
+"Pita status di bagian atas setiap layar memisahkan [b]CPU mesin[/b] (seluruh mesin, dalam % dari semua intinya) dan [b]CPU tailscaled[/b] (layanan itu saja, dalam % dari satu inti)."
+
+msgid "Service tailscaled"
+msgstr "Layanan tailscaled"
+
+msgid ""
+"L'état du service vu par systemd : actif ou non, lancé au démarrage, depuis quand, mémoire ; la version en marche et la version installée ; la commande de lancement ; les fichiers d'ajout (affichés, modifiés seulement par « Corriger le démarrage », sur votre accord) ; le confinement.\n"
+"\n"
+"[b]Démarrer[/b], [b]Arrêter[/b], [b]Redémarrer[/b] : la commande s'affiche avant d'être lancée.\n"
+"[b]Garde-fou[/b] : si votre session passe par Tailscale (SSH par le tailnet), Arrêter vous couperait sans pouvoir relancer : omega-tail demande une seconde confirmation. Redémarrer fige la session quelques secondes, puis elle revient en général.\n"
+"\n"
+"[b]Corriger le démarrage[/b] (affiché seulement si besoin) : un de vos fichiers d'ajout lance « tailscale up » après le démarrage. Dès qu'un réglage change ensuite (opérateur, nom, routes…), Tailscale refuse ce « up » incomplet ; systemd arrête alors tailscaled et abandonne après cinq essais : la machine sort du tailnet au premier redémarrage. La correction ajoute « - » devant la commande (son refus n'arrête plus le service ; vos réglages restent gardés par Tailscale), et rien d'autre ; l'original est gardé dans var/survie. Avant tout redémarrage qu'il lance (Redémarrer, confinement, opérateur), omega-tail fait d'abord cette correction, commandes montrées."
+msgstr ""
+"Status layanan menurut systemd: aktif atau tidak, dijalankan saat boot, sejak kapan, memori; versi yang berjalan dan versi yang terpasang; perintah peluncuran; berkas tambahan (ditampilkan, hanya diubah oleh « Perbaiki proses mulai », atas persetujuan Anda); pembatasan.\n"
+"\n"
+"[b]Mulai[/b], [b]Hentikan[/b], [b]Mulai ulang[/b]: perintah ditampilkan sebelum dijalankan.\n"
+"[b]Pengaman[/b]: jika sesi Anda melewati Tailscale (SSH melalui tailnet), Hentikan akan memutus Anda tanpa bisa menjalankannya kembali: omega-tail meminta konfirmasi kedua. Mulai ulang membekukan sesi beberapa detik, lalu biasanya sesi kembali.\n"
+"\n"
+"[b]Perbaiki proses mulai[/b] (hanya ditampilkan bila perlu): salah satu berkas tambahan Anda menjalankan « tailscale up » setelah layanan dimulai. Begitu sebuah pengaturan kemudian berubah (operator, nama, rute…), Tailscale menolak « up » yang tidak lengkap ini; systemd lalu menghentikan tailscaled dan menyerah setelah lima percobaan: mesin keluar dari tailnet pada boot berikutnya. Perbaikan ini menambahkan « - » di depan perintah (penolakannya tidak lagi menghentikan layanan; pengaturan Anda tetap disimpan oleh Tailscale), dan tidak ada yang lain; berkas asli disimpan di var/survie. Sebelum setiap mulai ulang yang dijalankannya (Mulai ulang, pembatasan, operator), omega-tail terlebih dahulu melakukan perbaikan ini, dengan perintah ditampilkan."
+
+msgid "Connexion et réglages"
+msgstr "Koneksi dan pengaturan"
+
+msgid ""
+"L'état de la connexion (connecté ou non, compte, tailnet, nom et adresses de la machine, expiration de la clé, opérateur).\n"
+"\n"
+"[b]Se connecter[/b] / [b]Se déconnecter[/b] : la machine rejoint ou quitte le tailnet ; le compte reste enregistré. [b]Ajouter un compte[/b] : Tailscale affiche dans le terminal l'adresse à ouvrir pour s'identifier. [b]Changer de compte[/b] : choisissez un compte déjà connu de la machine. [b]Déconnexion définitive[/b] : la machine est retirée du compte (clé révoquée) ; il faut taper son nom pour confirmer.\n"
+"[b]Garde-fou[/b] : si votre session passe par Tailscale, se déconnecter la coupe sans retour possible ; omega-tail le dit avant.\n"
+"\n"
+"[b]Réglages[/b] (ceux de tailscale set), chacun avec sa phrase d'explication : nom de la machine, surnom, routes, DNS du tailnet, bouclier, filtrage avec état, mode netfilter, nœud de sortie, accès au réseau local, proposer la machine comme nœud de sortie, sous-réseaux annoncés, SSH Tailscale, interface web, mises à jour, relais pair, opérateur. Les valeurs sont vérifiées ; pendant la saisie, un cadre au-dessus des boutons montre avant → après et la commande ; « Appliquer » la lance dans le terminal (sans sudo si vous êtes opérateur ; changer l'opérateur demande sudo). Un avertissement s'affiche quand un changement peut couper une session passée par Tailscale (bouclier, SSH Tailscale coupé, nœud de sortie, netfilter). Après application, le cadre garde le résultat, vérifié sur les valeurs relues (✔ pris en compte, ✖ non). « Relire » reprend les valeurs actuelles.\n"
+"\n"
+"[b]Nœud de sortie[/b] : la liste ne propose que les machines du tailnet qui se proposent comme nœud de sortie (et approuvées dans la console d'administration de Tailscale) ; s'il n'y en a aucune, l'écran le dit.\n"
+"[b]Transfert IP[/b] : une machine qui se propose comme nœud de sortie ou annonce des sous-réseaux doit faire suivre les paquets. S'il est désactivé, un avertissement et le bouton « Activer le transfert IP » apparaissent : un fichier à part (/etc/sysctl.d/99-omega-tail-forwarding.conf), appliqué tout de suite et relu au démarrage (systemd, OpenRC, runit). Pour annuler : supprimer ce fichier puis redémarrer."
+msgstr ""
+"Status koneksi (terhubung atau tidak, akun, tailnet, nama dan alamat mesin, kedaluwarsa kunci, operator).\n"
+"\n"
+"[b]Hubungkan[/b] / [b]Putuskan[/b]: mesin bergabung atau keluar dari tailnet; akun tetap tersimpan. [b]Tambah akun[/b]: Tailscale menampilkan di terminal alamat yang harus dibuka untuk masuk. [b]Ganti akun[/b]: pilih akun yang sudah dikenal mesin. [b]Logout permanen[/b]: mesin dicabut dari akun (kunci dicabut); Anda harus mengetik namanya untuk konfirmasi.\n"
+"[b]Pengaman[/b]: jika sesi Anda melewati Tailscale, memutuskan koneksi akan memutus sesi tanpa bisa kembali; omega-tail memberitahukannya terlebih dahulu.\n"
+"\n"
+"[b]Pengaturan[/b] (dari tailscale set), masing-masing dengan kalimat penjelasannya: nama mesin, julukan, rute, DNS tailnet, perisai, penyaringan stateful, mode netfilter, simpul keluar, akses ke jaringan lokal, menawarkan mesin sebagai simpul keluar, subnet yang diumumkan, SSH Tailscale, antarmuka web, pembaruan, relai peer, operator. Nilai-nilai diperiksa; saat mengetik, sebuah bingkai di atas tombol menampilkan sebelum → sesudah dan perintahnya; « Terapkan » menjalankannya di terminal (tanpa sudo jika Anda operator; mengganti operator memerlukan sudo). Sebuah peringatan muncul ketika perubahan dapat memutus sesi yang melewati Tailscale (perisai, SSH Tailscale dimatikan, simpul keluar, netfilter). Setelah diterapkan, bingkai menyimpan hasilnya, diperiksa terhadap nilai yang dibaca ulang (✔ diterapkan, ✖ tidak). « Baca ulang » mengambil nilai saat ini.\n"
+"\n"
+"[b]Simpul keluar[/b]: daftar hanya menawarkan mesin tailnet yang menawarkan diri sebagai simpul keluar (dan disetujui di konsol admin Tailscale); jika tidak ada, layar akan memberi tahu.\n"
+"[b]Penerusan IP[/b]: mesin yang menawarkan diri sebagai simpul keluar atau mengumumkan subnet harus meneruskan paket. Jika nonaktif, sebuah peringatan dan tombol « Aktifkan penerusan IP » muncul: sebuah berkas terpisah (/etc/sysctl.d/99-omega-tail-forwarding.conf), langsung diterapkan dan dibaca ulang saat boot (systemd, OpenRC, runit). Untuk membatalkan: hapus berkas ini lalu mulai ulang."
+
+msgid "Publication"
+msgstr "Publikasi"
+
+msgid ""
+"Tout ce que la machine publie : port, pour qui (le tailnet seul avec Serve, Internet avec Funnel), mode, chemin, cible, et si la porte du pare-feu protège le port.\n"
+"\n"
+"[b]Publier[/b] : un service local (un port, ou http://127.0.0.1:PORT), pour le tailnet ou pour Internet (Funnel n'ouvre que les ports 443, 8443 et 10000), en HTTPS, HTTP, TCP ou TLS terminé, sur un chemin. Pour Internet, le plus sûr est HTTPS sur 443 puis « Activer la protection » (Pare-feu Funnel).\n"
+"[b]Retirer[/b] : la ligne choisie (un chemin seul si le port en publie d'autres). Le port protégé par la porte se retire par « Désactiver la protection ».\n"
+"[b]Suspendre Funnel[/b] / [b]Rétablir Funnel[/b] : coupe les ports ouverts à Internet sans perdre leur configuration (même mécanisme que le disjoncteur de Survie), puis les remet à l'identique.\n"
+"[b]Essai de bout en bout[/b] : une vraie connexion, comme un visiteur (par Internet pour un port public, par le tailnet sinon) : réponse, temps, certificat (émetteur, échéance) et version de TLS.\n"
+"[b]Sauvegardes[/b] : l'état d'avant chaque changement (publication, pare-feu, disjoncteur), les 50 plus récentes ; « Restaurer » remet celle choisie, après avoir sauvegardé l'état actuel.\n"
+"\n"
+"Chaque changement est vérifié. Si le résultat n'est pas celui voulu, la publication est reconstruite (remise à zéro puis chaque point recréé) ; si cela échoue aussi, l'état d'avant est remis. Changer la publication demande d'être opérateur de Tailscale."
+msgstr ""
+"Semua yang dipublikasikan mesin: port, untuk siapa (hanya tailnet dengan Serve, Internet dengan Funnel), mode, jalur, target, dan apakah gerbang firewall melindungi port tersebut.\n"
+"\n"
+"[b]Publikasikan[/b]: sebuah layanan lokal (sebuah port, atau http://127.0.0.1:PORT), untuk tailnet atau untuk Internet (Funnel hanya membuka port 443, 8443, dan 10000), dalam HTTPS, HTTP, TCP, atau TLS yang diterminasi, pada sebuah jalur. Untuk Internet, yang paling aman adalah HTTPS di 443 lalu « Aktifkan perlindungan » (Firewall Funnel).\n"
+"[b]Cabut[/b]: baris yang dipilih (hanya satu jalur jika port mempublikasikan jalur lain). Port yang dilindungi gerbang dicabut melalui « Nonaktifkan perlindungan ».\n"
+"[b]Tangguhkan Funnel[/b] / [b]Pulihkan Funnel[/b]: memutus port yang terbuka ke Internet tanpa kehilangan konfigurasinya (mekanisme yang sama dengan pemutus sirkuit di Ketahanan), lalu memulihkannya persis seperti semula.\n"
+"[b]Uji ujung ke ujung[/b]: koneksi nyata, seperti seorang pengunjung (melalui Internet untuk port publik, melalui tailnet jika tidak): respons, waktu, sertifikat (penerbit, masa berlaku), dan versi TLS.\n"
+"[b]Cadangan[/b]: status sebelum setiap perubahan (publikasi, firewall, pemutus sirkuit), 50 yang terbaru; « Pulihkan » mengembalikan yang dipilih, setelah mencadangkan status saat ini.\n"
+"\n"
+"Setiap perubahan diperiksa. Jika hasilnya tidak sesuai yang diinginkan, publikasi dibangun ulang (diatur ulang lalu setiap titik dibuat ulang); jika itu juga gagal, status sebelumnya dikembalikan. Mengubah publikasi mengharuskan Anda menjadi operator Tailscale."
+
+msgid "Journaux"
+msgstr "Log"
+
+msgid ""
+"Le journal de tailscaled (journalctl) ou celui de la porte. Choisissez le nombre de lignes, filtrez par texte. Chaque information a sa couleur, prise dans le thème : la date, la machine en grisé, le processus, puis la catégorie du message, une couleur par famille (contrôle et connexion, réseau et relais, DNS, moteur WireGuard) ; les adresses en gras ; le message en rouge s'il signale une erreur, en orange pour un avertissement. Pour la porte : l'adresse du visiteur, le motif de refus en rouge, le regroupement en orange, puis l'AS et le pays. « Exporter » enregistre les lignes affichées dans le dossier des exports ; « Voir les exports » les ouvre (voir Rapport).\n"
+"Si rien ne s'affiche : votre compte doit pouvoir lire le journal du système (groupe systemd-journal, adm ou wheel selon la distribution)."
+msgstr ""
+"Log tailscaled (journalctl) atau log gerbang. Pilih jumlah baris, saring berdasarkan teks. Setiap informasi punya warnanya sendiri, diambil dari tema: tanggal, nama mesin yang diredupkan, proses, lalu kategori pesan, satu warna per kelompok (kontrol dan koneksi, jaringan dan relai, DNS, mesin WireGuard); alamat dicetak tebal; pesan berwarna merah jika melaporkan kesalahan, oranye untuk peringatan. Untuk gerbang: alamat pengunjung, alasan penolakan berwarna merah, pengelompokan berwarna oranye, lalu AS dan negara. « Ekspor » menyimpan baris yang ditampilkan ke folder ekspor; « Lihat ekspor » membukanya (lihat Laporan).\n"
+"Jika tidak ada yang tampil: akun Anda harus dapat membaca log sistem (grup systemd-journal, adm, atau wheel tergantung distribusi)."
+
+msgid "Devenir opérateur"
+msgstr "Jadi operator"
+
+msgid ""
+"Par défaut, chaque réglage de Tailscale demande sudo. Devenir opérateur (une"
+" seule fois, par sudo) permet à votre compte de régler Tailscale sans sudo. "
+"Le bouton apparaît dans le tableau de bord tant que ce n'est pas fait ; dans"
+" « Connexion et réglages », le bouton « Mon compte » met votre nom dans le "
+"champ Opérateur, puis « Appliquer ». Pour annuler : vider le champ et "
+"appliquer, ou sudo tailscale set --operator="
+msgstr ""
+"Secara bawaan, setiap pengaturan Tailscale memerlukan sudo. Menjadi operator"
+" (sekali saja, dengan sudo) memungkinkan akun Anda mengatur Tailscale tanpa "
+"sudo. Tombol ini muncul di dasbor selama belum dilakukan; di « Koneksi dan "
+"pengaturan », tombol « Akun saya » mengisi nama Anda di kolom Operator, lalu"
+" « Terapkan ». Untuk membatalkan: kosongkan kolom dan terapkan, atau sudo "
+"tailscale set --operator="
+
+msgid "Survie"
+msgstr "Ketahanan"
+
+msgid ""
+"Garder la machine debout sous attaque : le confinement, le disjoncteur et la veille automatique, toujours proposés, jamais imposés.\n"
+"\n"
+"[b]Confinement de tailscaled[/b] : un fichier d'ajout systemd à part (50-omega-tail.conf) plafonne tailscaled (par exemple un cœur entier sur une machine à 4 fils), baisse son poids et sa priorité. Sous attaque, il ne peut plus prendre toute la machine : l'administration et les autres services restent utilisables. Option : donner la priorité à l'accès SSH. Votre propre override.conf n'est jamais modifié ; « Retirer le confinement » supprime seulement les fichiers d'omega-tail. Le plafond s'applique au rechargement ; la priorité au redémarrage de tailscaled (case cochée par défaut).\n"
+"\n"
+"[b]Disjoncteur Funnel[/b] : quand tailscaled reste au-dessus du seuil CPU pendant toute la durée choisie (80 % d'un cœur pendant 60 s par défaut), ou quand la température atteint son seuil (85 °C), omega-tail ouvert vous propose :\n"
+"- [b]Couper 10 min[/b] (durée réglable) : les ports ouverts à Internet sont coupés, puis remis en route automatiquement, à l'identique, même si omega-tail est fermé (minuterie systemd, sudo une fois) ;\n"
+"- [b]Coupure totale[/b] : Funnel reste coupé jusqu'à « Rétablir maintenant » ;\n"
+"- [b]Pas maintenant[/b] : plus de proposition pendant 15 minutes.\n"
+"Le tailnet (Serve, SSH par Tailscale) n'est jamais coupé. La publication est sauvegardée avant chaque coupure (var/funnel/sauvegardes/) et la remise en route est vérifiée identique. Un port Funnel en TCP (celui de la porte) garde son autorisation Funnel après « off » : la coupure repart alors de zéro avec les seuls points du tailnet et vérifie que plus rien n'est ouvert à Internet. Le disjoncteur demande d'être opérateur de Tailscale : la remise en route tourne sous votre compte, jamais en root.\n"
+"En ligne de commande : omega-tail disjoncteur etat | couper --minutes 10 | couper --totale | retablir.\n"
+"\n"
+"[b]Veille automatique[/b] (désactivée par défaut) : pour une machine sans personne devant. Un service tourne en permanence sous votre compte, même omega-tail fermé (systemd, OpenRC ou runit). Un dépassement : un seuil du disjoncteur tenu. 3 dépassements dans la fenêtre (10 min, réglable) : la veille coupe Funnel seule, 15 min la première fois, 30 min la deuxième, puis 1 h à chaque fois, et le remet en route seule, à l'identique. Retour à 15 min après 24 h sans coupure ; après chaque remise en route, 2 min de calme avant de mesurer de nouveau. Seul Funnel est coupé : tailscaled, le tailnet et SSH restent joignables. Quand la veille tourne, omega-tail ouvert ne propose plus la coupure (elle agit seule). Les 6 dernières lignes de son journal s'affichent dans Survie (le fichier var/veille/journal.log garde 512 Ko, puis passe en journal.log.1) ; une veille activée mais arrêtée est signalée au tableau de bord.\n"
+"En ligne de commande : omega-tail veille etat.\n"
+"\n"
+"[b]Bouclier du port WireGuard[/b] (bouton dans Survie) : tailscaled dépense environ un cœur de processeur pour 100 000 paquets par seconde reçus sur son port, même invalides, Funnel ouvert ou non. Le bouclier est une table nftables posée devant lui, sur les cartes réseau matérielles : les pairs connus (ceux à qui tailscaled écrit, appris par le noyau) ne sont jamais limités ; les poignées de main sont limitées à 20 par seconde et par source ; les autres sources ont un budget (500 paquets par seconde chacune, 5 000 en tout) ; les paquets qui ne sont pas du WireGuard sont refusés. Mesuré : un flot qui prenait un cœur entier à tailscaled n'en prend plus que 1 %.\n"
+"- [b]Observation[/b] d'abord : rien n'est refusé, les compteurs disent ce qui l'aurait été ; « Passer en actif » quand ils ne montrent que des attaques.\n"
+"- [b]Qui le pose[/b] : omega-fire 3.7.0 ou plus récent s'il est relié par omega-connect (sa liste des règles l'affiche avec l'origine omega-tail) ; sinon omega-tail lui-même, même si ufw ou firewalld sont présents. C'est la même table dans les deux cas : « Confier à omega-fire » ou, dans omega-fire, « Reprendre la gestion » la fait changer de mains sans la toucher ; si omega-fire n'est plus relié, « Reprendre la gestion » la rend à omega-tail.\n"
+"- Un service (omega-bouclier-wg) la remet en place à chaque démarrage et écrit son état chaque minute.\n"
+"- Si un autre outil efface la table (nft flush ruleset, pare-feu relancé), le tableau de bord et la veille le signalent ; elle n'est jamais reposée seule : « Reposer ».\n"
+"- Retiré depuis omega-fire : omega-tail l'affiche."
+msgstr ""
+"Menjaga mesin tetap berdiri saat diserang: pembatasan, pemutus sirkuit, dan pengawasan otomatis, selalu ditawarkan, tidak pernah dipaksakan.\n"
+"\n"
+"[b]Pembatasan tailscaled[/b]: sebuah berkas tambahan systemd terpisah (50-omega-tail.conf) membatasi tailscaled (misalnya satu inti penuh pada mesin 4 thread), menurunkan bobot dan prioritasnya. Saat diserang, ia tidak bisa lagi memakai seluruh mesin: administrasi dan layanan lain tetap dapat digunakan. Opsi: memberi prioritas pada akses SSH. override.conf milik Anda tidak pernah diubah; « Lepas pembatasan » hanya menghapus berkas milik omega-tail. Batas berlaku saat dimuat ulang; prioritas saat tailscaled dimulai ulang (kotak dicentang secara bawaan).\n"
+"\n"
+"[b]Pemutus sirkuit Funnel[/b]: ketika tailscaled tetap di atas ambang CPU selama seluruh durasi yang dipilih (80 % dari satu inti selama 60 dtk secara bawaan), atau ketika suhu mencapai ambangnya (85 °C), omega-tail yang terbuka menawarkan:\n"
+"- [b]Putus 10 menit[/b] (durasi dapat diatur): port yang terbuka ke Internet diputus, lalu dihidupkan kembali secara otomatis, persis seperti semula, bahkan jika omega-tail ditutup (pewaktu systemd, sudo sekali);\n"
+"- [b]Pemutusan total[/b]: Funnel tetap terputus sampai « Pulihkan sekarang »;\n"
+"- [b]Jangan sekarang[/b]: tidak ada tawaran lagi selama 15 menit.\n"
+"Tailnet (Serve, SSH melalui Tailscale) tidak pernah diputus. Publikasi dicadangkan sebelum setiap pemutusan (var/funnel/sauvegardes/) dan penghidupan kembali diperiksa agar identik. Port Funnel dalam TCP (port gerbang) tetap memiliki izin Funnel setelah « off »: pemutusan lalu dimulai dari nol dengan hanya titik-titik tailnet dan memeriksa bahwa tidak ada lagi yang terbuka ke Internet. Pemutus sirkuit mengharuskan Anda menjadi operator Tailscale: penghidupan kembali berjalan di bawah akun Anda, tidak pernah sebagai root.\n"
+"Dari baris perintah: omega-tail disjoncteur etat | couper --minutes 10 | couper --totale | retablir.\n"
+"\n"
+"[b]Pengawasan otomatis[/b] (nonaktif secara bawaan): untuk mesin yang tidak ditunggui siapa pun. Sebuah layanan berjalan terus-menerus di bawah akun Anda, bahkan saat omega-tail ditutup (systemd, OpenRC, atau runit). Satu pelampauan: satu ambang pemutus sirkuit bertahan. 3 pelampauan dalam jendela waktu (10 menit, dapat diatur): pengawasan memutus Funnel sendiri, 15 menit pertama kali, 30 menit kedua kali, lalu 1 jam setiap kali, dan menghidupkannya kembali sendiri, persis seperti semula. Kembali ke 15 menit setelah 24 jam tanpa pemutusan; setelah setiap penghidupan kembali, 2 menit tenang sebelum mengukur lagi. Hanya Funnel yang diputus: tailscaled, tailnet, dan SSH tetap dapat dijangkau. Saat pengawasan berjalan, omega-tail yang terbuka tidak lagi menawarkan pemutusan (pengawasan bertindak sendiri). 6 baris terakhir lognya ditampilkan di Ketahanan (berkas var/veille/journal.log menyimpan 512 KB, lalu berpindah ke journal.log.1); pengawasan yang aktif tetapi berhenti dilaporkan di dasbor.\n"
+"Dari baris perintah: omega-tail veille etat.\n"
+"\n"
+"[b]Perisai port WireGuard[/b] (tombol di Ketahanan): tailscaled menghabiskan sekitar satu inti prosesor untuk 100.000 paket per detik yang diterima di port-nya, bahkan yang tidak valid, Funnel terbuka atau tidak. Perisai adalah tabel nftables yang dipasang di depannya, pada kartu jaringan fisik: peer yang dikenal (yang dikirimi tailscaled, dipelajari oleh kernel) tidak pernah dibatasi; jabat tangan dibatasi 20 per detik per sumber; sumber lain memiliki anggaran (masing-masing 500 paket per detik, total 5.000); paket yang bukan WireGuard ditolak. Hasil pengukuran: aliran yang memakan satu inti penuh tailscaled kini hanya memakan 1 %.\n"
+"- [b]Pengamatan[/b] dahulu: tidak ada yang ditolak, penghitung menunjukkan apa yang seharusnya ditolak; « Beralih ke aktif » ketika penghitung hanya menunjukkan serangan.\n"
+"- [b]Siapa yang memasangnya[/b]: omega-fire 3.7.0 atau lebih baru jika terhubung melalui omega-connect (daftar aturannya menampilkan perisai dengan asal omega-tail); jika tidak, omega-tail sendiri, bahkan jika ufw atau firewalld ada. Tabelnya sama dalam kedua kasus: « Serahkan ke omega-fire » atau, di omega-fire, « Ambil alih pengelolaan » memindahkannya tanpa menyentuhnya; jika omega-fire tidak lagi terhubung, « Ambil alih pengelolaan » mengembalikannya ke omega-tail.\n"
+"- Sebuah layanan (omega-bouclier-wg) memasangnya kembali di setiap boot dan menulis statusnya setiap menit.\n"
+"- Jika alat lain menghapus tabel (nft flush ruleset, firewall dimulai ulang), dasbor dan pengawasan melaporkannya; tabel tidak pernah dipasang ulang sendiri: « Pasang ulang ».\n"
+"- Dilepas dari omega-fire: omega-tail menampilkannya."
+
+msgid "Pare-feu Funnel"
+msgstr "Firewall Funnel"
+
+msgid ""
+"En Funnel ordinaire, tailscaled fait le chiffrement (TLS) de chaque visiteur : une rafale sature la machine. La protection place une porte (HAProxy, installé par le gestionnaire de paquets) entre Funnel et votre site : Funnel lui transmet le flux encore chiffré avec l'adresse réelle du visiteur, la porte décide AVANT tout chiffrement, puis ne chiffre que pour les connexions admises. Mesuré : une connexion refusée coûte 4,6 fois moins, une connexion admise 2 fois moins.\n"
+"\n"
+"[b]Activer la protection[/b] : préparation (certificat *.ts.net par Tailscale, listes, configuration vérifiée), services de la porte et de son certificat (sudo, dans le terminal ; la porte tourne sous votre compte, jamais en root), bascule de Funnel puis essai depuis Internet. En cas d'échec, la publication d'origine est remise aussitôt. Prérequis : être opérateur de Tailscale ; Funnel publié en HTTPS sur un seul port avec le chemin « / ».\n"
+"[b]Désactiver la protection[/b] : Funnel est remis exactement comme avant, vérifié, puis la porte est arrêtée ; réglages et listes sont gardés.\n"
+"\n"
+"[b]Règles[/b], appliquées à chaud (les adresses bloquées le restent) :\n"
+"- machines du tailnet (100.64.0.0/10 et fd7a:115c:a1e0::/48) : toujours admises, avant toute règle ; seuls les visiteurs de Funnel sont filtrés ;\n"
+"- liste de confiance : jamais limitée ; liste noire : refusée jusqu'à son retrait ;\n"
+"- débit par adresse (40 connexions / 10 s par défaut) : au-delà, l'adresse est bloquée pour la durée choisie (60 min) ;\n"
+"- débit par préfixe /24 (IPv4) ou /64 (IPv6) ;\n"
+"- budget global de connexions admises par seconde : le processeur n'est jamais débordé ;\n"
+"- nom visé : une connexion qui ne vise pas le nom de la machine est refusée.\n"
+"Mode [b]observation[/b] : tout est compté, rien n'est refusé (pour régler les seuils sans risque).\n"
+"\n"
+"Le certificat est vérifié chaque jour et renouvelé à chaud 30 jours avant son échéance.\n"
+"\n"
+"[b]Regroupements[/b] (empreintes, AS, pays) : contre les attaques à adresses dispersées, que les règles par adresse ne voient qu'une fois chacune. Avant tout chiffrement, la porte calcule l'[b]empreinte JA4[/b] du client (la façon dont son logiciel se présente : un navigateur et un outil d'attaque n'ont pas la même), son [b]AS[/b] (le réseau d'origine : fournisseur d'accès, hébergeur, nuage) et son [b]pays[/b], et compte le débit de chaque groupe.\n"
+"- [b]Mode attaque automatique[/b] : quand les connexions entrantes dépassent le seuil (80 / s par défaut), la porte passe seule en mode attaque, et y reste jusqu'à 5 minutes de calme. Rien à faire, même à distance.\n"
+"- En mode attaque seulement : une empreinte inconnue qui explose, un AS d'hébergeur ou de nuage (liste modifiable) ou un pays de votre liste (vide par défaut) qui dépasse son débit est refusé.\n"
+"- Les [b]navigateurs courants[/b] (Chrome, Edge, Firefox) ne sont jamais touchés par ces règles, et les [b]clients connus[/b] (admis dans les dernières 24 h) passent avant le budget global.\n"
+"- [b]Référence apprise[/b] : pendant 7 jours, la porte apprend les empreintes habituelles de votre site (jamais pendant une attaque) ; pendant ce temps, les regroupements restent en [b]observation[/b], même si « appliqués » est choisi. « Recommencer l'apprentissage » repart de zéro et les remet en observation.\n"
+"- [b]Observation[/b] (par défaut) : tout est compté (« aurait été refusée »), rien n'est refusé ; une fois l'apprentissage fini, passez en « appliqués » quand les chiffres vous conviennent.\n"
+"- Hors attaque, une connexion sur dix seulement est classée (assez pour apprendre, dix fois moins de calcul) ; en attaque, toutes. Il faut un HAProxy avec Lua (cas des distributions courantes).\n"
+"- [b]Base AS / pays[/b] : DB-IP Lite, téléchargée et mise à jour une fois par mois par la veille automatique, ou par « Mettre à jour la base ». IP Geolocation by DB-IP (https://db-ip.com), licence CC BY 4.0."
+msgstr ""
+"Dalam Funnel biasa, tailscaled melakukan enkripsi (TLS) untuk setiap pengunjung: satu lonjakan membuat mesin jenuh. Perlindungan menempatkan sebuah gerbang (HAProxy, dipasang oleh manajer paket) di antara Funnel dan situs Anda: Funnel meneruskan aliran yang masih terenkripsi beserta alamat asli pengunjung, gerbang memutuskan SEBELUM enkripsi apa pun, lalu hanya mengenkripsi untuk koneksi yang diizinkan. Hasil pengukuran: koneksi yang ditolak 4,6 kali lebih murah, koneksi yang diizinkan 2 kali lebih murah.\n"
+"\n"
+"[b]Aktifkan perlindungan[/b]: persiapan (sertifikat *.ts.net dari Tailscale, daftar, konfigurasi diperiksa), layanan gerbang dan sertifikatnya (sudo, di terminal; gerbang berjalan di bawah akun Anda, tidak pernah sebagai root), peralihan Funnel lalu uji dari Internet. Jika gagal, publikasi asli segera dikembalikan. Prasyarat: menjadi operator Tailscale; Funnel dipublikasikan dalam HTTPS pada satu port dengan jalur « / ».\n"
+"[b]Nonaktifkan perlindungan[/b]: Funnel dikembalikan persis seperti sebelumnya, diperiksa, lalu gerbang dihentikan; pengaturan dan daftar tetap disimpan.\n"
+"\n"
+"[b]Aturan[/b], diterapkan langsung (alamat yang diblokir tetap diblokir):\n"
+"- mesin tailnet (100.64.0.0/10 dan fd7a:115c:a1e0::/48): selalu diizinkan, sebelum aturan apa pun; hanya pengunjung Funnel yang disaring;\n"
+"- daftar tepercaya: tidak pernah dibatasi; daftar hitam: ditolak sampai dicabut;\n"
+"- laju per alamat (40 koneksi / 10 dtk secara bawaan): jika dilampaui, alamat diblokir selama durasi yang dipilih (60 menit);\n"
+"- laju per prefiks /24 (IPv4) atau /64 (IPv6);\n"
+"- anggaran global koneksi yang diizinkan per detik: prosesor tidak pernah kewalahan;\n"
+"- nama tujuan: koneksi yang tidak menuju nama mesin ditolak.\n"
+"Mode [b]pengamatan[/b]: semuanya dihitung, tidak ada yang ditolak (untuk mengatur ambang tanpa risiko).\n"
+"\n"
+"Sertifikat diperiksa setiap hari dan diperbarui langsung 30 hari sebelum kedaluwarsa.\n"
+"\n"
+"[b]Pengelompokan[/b] (sidik jari, AS, negara): melawan serangan dengan alamat yang tersebar, yang masing-masing hanya terlihat sekali oleh aturan per alamat. Sebelum enkripsi apa pun, gerbang menghitung [b]sidik jari JA4[/b] klien (cara perangkat lunaknya memperkenalkan diri: peramban dan alat serangan tidak memiliki sidik jari yang sama), [b]AS[/b]-nya (jaringan asal: penyedia akses, penyedia hosting, cloud), dan [b]negara[/b]-nya, lalu menghitung laju setiap kelompok.\n"
+"- [b]Mode serangan otomatis[/b]: ketika koneksi masuk melampaui ambang (80 / dtk secara bawaan), gerbang beralih sendiri ke mode serangan, dan tetap di sana sampai 5 menit tenang. Tidak ada yang perlu dilakukan, bahkan dari jarak jauh.\n"
+"- Hanya dalam mode serangan: sidik jari tidak dikenal yang melonjak, AS penyedia hosting atau cloud (daftar dapat diubah), atau negara dari daftar Anda (kosong secara bawaan) yang melampaui lajunya akan ditolak.\n"
+"- [b]Peramban umum[/b] (Chrome, Edge, Firefox) tidak pernah tersentuh aturan ini, dan [b]klien yang dikenal[/b] (diizinkan dalam 24 jam terakhir) didahulukan sebelum anggaran global.\n"
+"- [b]Acuan yang dipelajari[/b]: selama 7 hari, gerbang mempelajari sidik jari yang biasa di situs Anda (tidak pernah selama serangan); selama itu, pengelompokan tetap dalam [b]pengamatan[/b], bahkan jika « diterapkan » dipilih. « Mulai ulang pembelajaran » memulai dari nol dan mengembalikannya ke pengamatan.\n"
+"- [b]Pengamatan[/b] (bawaan): semuanya dihitung (« seharusnya ditolak »), tidak ada yang ditolak; setelah pembelajaran selesai, beralihlah ke « diterapkan » ketika angkanya sesuai bagi Anda.\n"
+"- Di luar serangan, hanya satu dari sepuluh koneksi yang diklasifikasikan (cukup untuk belajar, sepuluh kali lebih sedikit komputasi); saat serangan, semuanya. Diperlukan HAProxy dengan Lua (seperti di distribusi umum).\n"
+"- [b]Basis data AS / negara[/b]: DB-IP Lite, diunduh dan diperbarui sebulan sekali oleh pengawasan otomatis, atau dengan « Perbarui basis data ». IP Geolocation by DB-IP (https://db-ip.com), lisensi CC BY 4.0."
+
+msgid "Attaques et décisions"
+msgstr "Serangan dan keputusan"
+
+#, python-format
+msgid ""
+"Les compteurs de la porte (connexions reçues, refusées avant chiffrement, admises, en cours) et les adresses les plus actives, relus toutes les 2 secondes. La colonne État dit où se trouve chaque adresse : liste noire (refusée jusqu'au retrait), bloquée (pour la durée de blocage), admise, ou confiance (jamais limitée) ; les adresses des listes sans connexion récente apparaissent aussi. Choisissez une ligne puis [b]Bloquer[/b], [b]Liste noire[/b], [b]Débloquer[/b] ou [b]Confiance[/b] / [b]Retirer la confiance[/b] : appliqué tout de suite, sans redémarrer la porte ; la notification dit en une ligne l'action et la place de l'adresse (ex. « 1.2.3.4 → liste noire »). Une adresse n'est jamais dans les deux listes : la mettre en liste noire la retire de la confiance, et l'inverse. Une adresse en confiance ou du tailnet ne peut pas être bloquée (elle passe avant). Porte arrêtée : les listes s'appliqueront à son activation.\n"
+"\n"
+"Chaque adresse affiche son pays et son AS. La ligne sous les compteurs dit si la porte est en [b]mode attaque[/b] (et dans combien de temps elle revient au normal) et combien de connexions les regroupements ont refusées (ou auraient refusées, en observation) sur 7 jours. Les vues [b]Empreintes[/b], [b]AS[/b] et [b]Pays[/b] montrent les groupes les plus actifs (connexions / 10 s, total), avec le navigateur reconnu, le nom de l'AS (hébergeur ou non) ou « limité en attaque ». Hors attaque, ces chiffres portent sur une connexion sur dix.\n"
+"\n"
+"[b]Gestion de la liste noire[/b] (seconde ligne de boutons) : toute la liste, avec la date d'ajout et l'origine de chaque entrée, filtrable.\n"
+"- [b]Ajouter[/b] une adresse ou un réseau en prévision ; [b]Supprimer[/b] la ligne choisie.\n"
+"- [b]Importer[/b] un fichier TXT (une adresse ou un réseau par ligne, # = commentaire) : doublons, adresses déjà couvertes par un réseau de la liste et adresses du tailnet écartés et comptés ; les lignes invalides sont citées, comme une adresse IPv6 suivie d'un identifiant de zone (« %eth0 »), refusée par sécurité.\n"
+"- [b]Purger[/b], avec aperçu puis confirmation : plus anciennes que N jours, les N plus anciennes, de la ligne A à la ligne B, par origine, ou toute la liste (confirmation tapée).\n"
+"- [b]Exporter[/b] TXT (réimportable tel quel, pour une récidive), HTML (thème d'export choisi) ou JSON.\n"
+"- Plafond : 50 000 entrées (alerte au tableau de bord à 25 000). HAProxy en tiendrait bien plus ; c'est omega-tail qui ralentirait. Au plafond, l'ajout est refusé : exportez puis purgez."
+msgstr ""
+"Penghitung gerbang (koneksi diterima masuk, ditolak sebelum enkripsi, diizinkan, sedang berjalan) dan alamat paling aktif, dibaca ulang setiap 2 detik. Kolom Status menunjukkan posisi setiap alamat: daftar hitam (ditolak sampai dicabut), diblokir (selama durasi pemblokiran), diizinkan, atau tepercaya (tidak pernah dibatasi); alamat dalam daftar tanpa koneksi terbaru juga tampil. Pilih sebuah baris lalu [b]Blokir[/b], [b]Daftar hitam[/b], [b]Buka blokir[/b], atau [b]Percayai[/b] / [b]Cabut kepercayaan[/b]: langsung diterapkan, tanpa memulai ulang gerbang; notifikasi menyebutkan dalam satu baris tindakan dan posisi alamat (mis. « 1.2.3.4 → daftar hitam »). Sebuah alamat tidak pernah berada di kedua daftar: memasukkannya ke daftar hitam mencabutnya dari daftar tepercaya, dan sebaliknya. Alamat tepercaya atau dari tailnet tidak dapat diblokir (didahulukan). Gerbang berhenti: daftar akan diterapkan saat gerbang diaktifkan.\n"
+"\n"
+"Setiap alamat menampilkan negara dan AS-nya. Baris di bawah penghitung menyebutkan apakah gerbang dalam [b]mode serangan[/b] (dan berapa lama lagi kembali normal) dan berapa koneksi yang ditolak oleh pengelompokan (atau seharusnya ditolak, dalam pengamatan) selama 7 hari. Tampilan [b]Sidik jari[/b], [b]AS[/b], dan [b]Negara[/b] menampilkan kelompok paling aktif (koneksi / 10 dtk, total), dengan peramban yang dikenali, nama AS (penyedia hosting atau bukan), atau « dibatasi saat serangan ». Di luar serangan, angka ini berdasarkan satu dari sepuluh koneksi.\n"
+"\n"
+"[b]Pengelolaan daftar hitam[/b] (baris tombol kedua): seluruh daftar, dengan tanggal penambahan dan asal setiap entri, dapat disaring.\n"
+"- [b]Tambah[/b] sebuah alamat atau jaringan sebagai antisipasi; [b]Hapus[/b] baris yang dipilih.\n"
+"- [b]Impor[/b] berkas TXT (satu alamat atau jaringan per baris, # = komentar): duplikat, alamat yang sudah dicakup jaringan dalam daftar, dan alamat tailnet diabaikan dan dihitung; baris tidak valid disebutkan, seperti alamat IPv6 yang diikuti pengenal zona (« %eth0 »), ditolak demi keamanan.\n"
+"- [b]Bersihkan[/b], dengan pratinjau lalu konfirmasi: lebih lama dari N hari, N yang paling lama, dari baris A sampai baris B, berdasarkan asal, atau seluruh daftar (konfirmasi diketik).\n"
+"- [b]Ekspor[/b] TXT (dapat diimpor ulang apa adanya, untuk serangan berulang), HTML (tema ekspor yang dipilih), atau JSON.\n"
+"- Batas: 50.000 entri (peringatan di dasbor pada 25.000). HAProxy sanggup menampung jauh lebih banyak; omega-tail-lah yang akan melambat. Saat mencapai batas, penambahan ditolak: ekspor lalu bersihkan."
+
+msgid "Réseau et appareils"
+msgstr "Jaringan dan perangkat"
+
+msgid ""
+"Ce que voit Tailscale depuis cette machine. Lecture seule : rien n'y change un réglage.\n"
+"- [b]Appareils[/b] : nom, système, en ligne ou non, [b]chemin[/b] (direct, ou par un relais de Tailscale quand la connexion directe est impossible), dernière fois vu, adresse, trafic échangé. Filtrez par nom, système ou adresse. Les [b]relais Funnel de Tailscale[/b] (« funnel-ingress-node ») apparaissent dans le tailnet dès que Funnel est actif : ce ne sont pas vos appareils, ils sont cachés sauf si vous cochez la case.\n"
+"- [b]Ping Tailscale[/b] : dit si le chemin vers l'appareil est direct ou relayé, et sa latence (3 essais). [b]Qui est-ce ?[/b] : à quelle machine et quel compte appartient une adresse du tailnet. Sans texte tapé, la ligne choisie est utilisée.\n"
+"- [b]Diagnostic réseau[/b] (quelques secondes) : UDP, IPv4 / IPv6, type de NAT (simple : connexions directes faciles ; difficile : plus de relais), ouverture de port par la box (UPnP, NAT-PMP, PCP), relais le plus proche et latences.\n"
+"- [b]DNS[/b], [b]verrou du tailnet[/b] et [b]compteurs internes[/b] (octets reçus et envoyés en direct ou par relais, paquets jetés, messages de santé) : tels que Tailscale les donne."
+msgstr ""
+"Apa yang dilihat Tailscale dari mesin ini. Hanya baca: tidak ada pengaturan yang diubah di sini.\n"
+"- [b]Perangkat[/b]: nama, sistem, daring atau tidak, [b]jalur[/b] (langsung, atau melalui relai Tailscale jika koneksi langsung tidak mungkin), terakhir terlihat, alamat, lalu lintas yang dipertukarkan. Saring berdasarkan nama, sistem, atau alamat. [b]Relai Funnel Tailscale[/b] (« funnel-ingress-node ») muncul di tailnet begitu Funnel aktif: itu bukan perangkat Anda, jadi disembunyikan kecuali Anda mencentang kotaknya.\n"
+"- [b]Ping Tailscale[/b]: menyebutkan apakah jalur ke perangkat langsung atau melalui relai, dan latensinya (3 percobaan). [b]Siapa ini?[/b]: mesin dan akun mana pemilik sebuah alamat tailnet. Tanpa teks yang diketik, baris yang dipilih yang digunakan.\n"
+"- [b]Diagnostik jaringan[/b] (beberapa detik): UDP, IPv4 / IPv6, jenis NAT (mudah: koneksi langsung gampang; sulit: lebih banyak relai), pembukaan port oleh router (UPnP, NAT-PMP, PCP), relai terdekat dan latensi.\n"
+"- [b]DNS[/b], [b]kunci tailnet[/b], dan [b]penghitung internal[/b] (byte diterima dan dikirim secara langsung atau melalui relai, paket dibuang, pesan kesehatan): sebagaimana diberikan Tailscale."
+
+msgid "Rapport"
+msgstr "Laporan"
+
+msgid ""
+"Tout ce qu'omega-tail sait de la machine, en faits : Tailscale (version, préférences), publication, machine, pare-feu (règles, compteurs, listes, regroupements), survie (confinement, veille, disjoncteur), alertes, et les [b]attaques des 7 derniers jours[/b] lues dans le journal de la porte (connexions marquées par motif, par jour, adresses les plus marquées avec leur AS et leur pays).\n"
+"- [b]Vie privée[/b] : par défaut, le compte Tailscale et les noms / adresses des appareils du tailnet n'y figurent pas (seulement leur nombre), pour pouvoir envoyer le rapport à quelqu'un. Cochez la case pour les inclure. Les adresses des attaquants y restent toujours.\n"
+"- [b]Exporter[/b] en TXT, HTML (thème au choix) ou JSON, dans le dossier des exports. [b]Voir les exports[/b] ouvre ce dossier dans votre navigateur (chaque export se lit d'un clic) ; sans navigateur ni bureau (serveur, SSH), la liste et la lecture se font dans omega-tail.\n"
+"- Le journal de la porte doit être lisible par votre compte (groupe systemd-journal, adm ou wheel selon la distribution), sinon le rapport le dit."
+msgstr ""
+"Semua yang diketahui omega-tail tentang mesin, berupa fakta: Tailscale (versi, preferensi), publikasi, mesin, firewall (aturan, penghitung, daftar, pengelompokan), ketahanan (pembatasan, pengawasan, pemutus sirkuit), peringatan, dan [b]serangan 7 hari terakhir[/b] yang dibaca dari log gerbang (koneksi yang ditandai menurut alasan, per hari, alamat yang paling sering ditandai dengan AS dan negaranya).\n"
+"- [b]Privasi[/b]: secara bawaan, akun Tailscale dan nama / alamat perangkat tailnet tidak dicantumkan (hanya jumlahnya), agar laporan dapat dikirim ke orang lain. Centang kotaknya untuk menyertakannya. Alamat penyerang selalu tetap dicantumkan.\n"
+"- [b]Ekspor[/b] dalam TXT, HTML (tema pilihan), atau JSON, ke folder ekspor. [b]Lihat ekspor[/b] membuka folder ini di peramban Anda (setiap ekspor dibaca dengan satu klik); tanpa peramban atau desktop (server, SSH), daftar dan pembacaan dilakukan di dalam omega-tail.\n"
+"- Log gerbang harus dapat dibaca oleh akun Anda (grup systemd-journal, adm, atau wheel tergantung distribusi), jika tidak laporan akan menyebutkannya."
+
+msgid "systemd, OpenRC, runit"
+msgstr "systemd, OpenRC, runit"
+
+msgid ""
+"omega-tail reconnaît le système d'init de la machine et s'y adapte :\n"
+"- [b]service tailscaled[/b] : systemctl, rc-service ou sv ;\n"
+"- [b]journaux[/b] : journalctl, ou les fichiers du service (/var/log/tailscaled.log, svlogd, socklog…) ;\n"
+"- [b]confinement[/b] : fichier d'ajout systemd ; ailleurs, un groupe de contrôle à part (cgroup v2), perdu si tailscaled redémarre (une alerte propose alors de le remettre) ;\n"
+"- [b]coupure momentanée[/b] : minuterie systemd ; ailleurs, un processus détaché sous votre compte ;\n"
+"- [b]porte du pare-feu[/b] : service systemd, OpenRC ou runit ; certificat renouvelé par minuterie systemd ou par une ligne de votre crontab (marquée omega-tail, retirée à la désactivation)."
+msgstr ""
+"omega-tail mengenali sistem init mesin dan menyesuaikan diri:\n"
+"- [b]layanan tailscaled[/b]: systemctl, rc-service, atau sv;\n"
+"- [b]log[/b]: journalctl, atau berkas layanan (/var/log/tailscaled.log, svlogd, socklog…);\n"
+"- [b]pembatasan[/b]: berkas tambahan systemd; di tempat lain, grup kontrol terpisah (cgroup v2), hilang jika tailscaled dimulai ulang (sebuah peringatan lalu menawarkan untuk memasangnya kembali);\n"
+"- [b]pemutusan sementara[/b]: pewaktu systemd; di tempat lain, proses terlepas di bawah akun Anda;\n"
+"- [b]gerbang firewall[/b]: layanan systemd, OpenRC, atau runit; sertifikat diperbarui oleh pewaktu systemd atau oleh satu baris di crontab Anda (bertanda omega-tail, dihapus saat dinonaktifkan)."
+
+msgid ""
+"Langue de l'interface et des exports, thème de l'interface et des exports, "
+"dossiers des exports et des captures d'écran (par défaut var/exports/ et "
+"var/screenshots/), et leur purge après confirmation."
+msgstr ""
+"Bahasa antarmuka dan ekspor, tema antarmuka dan ekspor, folder ekspor dan "
+"tangkapan layar (secara bawaan var/exports/ dan var/screenshots/), serta "
+"pembersihannya setelah konfirmasi."
+
+msgid "Ligne de commande"
+msgstr "Baris perintah"
+
+msgid ""
+"- omega-tail : l'interface.\n"
+"- omega-tail etat : l'état et les alertes en texte ; --format json pour un script.\n"
+"- omega-tail aide : cette aide en texte.\n"
+"- omega-tail rapport [--format txt|html|json] [--prive] [--exporter] : le rapport, affiché ou enregistré dans le dossier des exports ; --prive ajoute le compte et les appareils du tailnet.\n"
+"- omega-tail disjoncteur etat | couper --minutes N | couper --totale | retablir\n"
+"- omega-tail porte etat | certificat [--si-besoin] | bloquer ADRESSE [--toujours] | debloquer ADRESSE | confiance ADRESSE\n"
+"- omega-tail --version"
+msgstr ""
+"- omega-tail: antarmuka.\n"
+"- omega-tail etat: status dan peringatan dalam teks; --format json untuk skrip.\n"
+"- omega-tail aide: bantuan ini dalam teks.\n"
+"- omega-tail rapport [--format txt|html|json] [--prive] [--exporter]: laporan, ditampilkan atau disimpan di folder ekspor; --prive menambahkan akun dan perangkat tailnet.\n"
+"- omega-tail disjoncteur etat | couper --minutes N | couper --totale | retablir\n"
+"- omega-tail porte etat | certificat [--si-besoin] | bloquer ADRESSE [--toujours] | debloquer ADRESSE | confiance ADRESSE\n"
+"- omega-tail --version"
+
+msgid ""
+"Depuis cette aide : écrire à l'auteur, le formulaire du site, un café, et "
+"vérifier les mises à jour."
+msgstr ""
+"Dari bantuan ini: menulis kepada pembuat, formulir situs, traktir kopi, dan "
+"memeriksa pembaruan."
+
+msgid "DÉMARRAGE RAPIDE"
+msgstr "MULAI CEPAT"
+
+msgid "RACCOURCIS"
+msgstr "PINTASAN"
+
+msgid "Aide d’omega-tail"
+msgstr "Bantuan omega-tail"
+
+msgid "Aide complète : chaque menu, sa fonction et le détail."
+msgstr "Bantuan lengkap: setiap menu, fungsinya, dan detailnya."
+
+msgid "Démarrage rapide"
+msgstr "Mulai cepat"
+
+msgid "Raccourcis"
+msgstr "Pintasan"
+
+msgid "Touche"
+msgstr "Tombol"
+
+msgid "Action"
+msgstr "Tindakan"
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — aide."
+msgstr "OMEGA-TAIL {version} — bantuan."
+
+msgid "Aide - Omega-Tail"
+msgstr "Bantuan - Omega-Tail"
+
+#, python-brace-format
+msgid "{name} (hébergeur)"
+msgstr "{name} (penyedia hosting)"
+
+msgid "connecté"
+msgstr "terhubung"
+
+msgid "déconnecté"
+msgstr "terputus"
+
+msgid "connexion du compte attendue"
+msgstr "menunggu koneksi akun"
+
+msgid "machine à approuver dans la console"
+msgstr "mesin perlu disetujui di konsol"
+
+msgid "démarrage"
+msgstr "sedang memulai"
+
+msgid "sans état"
+msgstr "tanpa status"
+
+msgid "inconnu"
+msgstr "tidak diketahui"
+
+msgid "HTTP"
+msgstr "HTTP"
+
+msgid "HTTPS (TLS par tailscaled)"
+msgstr "HTTPS (TLS oleh tailscaled)"
+
+msgid "TCP (TLS transmis tel quel)"
+msgstr "TCP (TLS diteruskan apa adanya)"
+
+msgid "TCP, TLS par tailscaled"
+msgstr "TCP, TLS oleh tailscaled"
+
+msgid "Go"
+msgstr "GB"
+
+msgid "Ko"
+msgstr "KB"
+
+msgid "Mo"
+msgstr "MB"
+
+msgid "o"
+msgstr "B"
+
+msgid "Internet (Funnel)"
+msgstr "Internet (Funnel)"
+
+msgid "tailnet seul (Serve)"
+msgstr "hanya tailnet (Serve)"
+
+msgid "inconnu de systemd"
+msgstr "tidak dikenal systemd"
+
+msgid "actif"
+msgstr "aktif"
+
+msgid "arrêté"
+msgstr "dihentikan"
+
+msgid "en échec"
+msgstr "gagal"
+
+msgid "arrêt en cours"
+msgstr "sedang berhenti"
+
+msgid "lancé au démarrage"
+msgstr "dijalankan saat boot"
+
+msgid "pas lancé au démarrage"
+msgstr "tidak dijalankan saat boot"
+
+msgid "observation"
+msgstr "pengamatan"
+
+msgid "Bouclier du port WireGuard : état illisible."
+msgstr "Perisai port WireGuard: status tidak terbaca."
+
+msgid "Bouclier du port WireGuard : retiré depuis omega-fire (ou à la main)."
+msgstr "Perisai port WireGuard: dilepas dari omega-fire (atau secara manual)."
+
+msgid ""
+"Bouclier du port WireGuard : aucun. Sans lui, tailscaled dépense environ un "
+"cœur pour 100 000 paquets par seconde, même invalides."
+msgstr ""
+"Perisai port WireGuard: tidak ada. Tanpa perisai, tailscaled menghabiskan "
+"sekitar satu inti untuk 100.000 paket per detik, bahkan yang tidak valid."
+
+msgid ""
+"Bouclier du port WireGuard ABSENT : un autre outil a effacé sa table ; « "
+"Reposer » la remet."
+msgstr ""
+"Perisai port WireGuard TIDAK ADA: alat lain menghapus tabelnya; « Pasang "
+"ulang » memasangnya kembali."
+
+msgid ""
+"Bouclier du port WireGuard : état non mis à jour (service omega-bouclier-wg "
+"arrêté ?)."
+msgstr ""
+"Perisai port WireGuard: status tidak diperbarui (layanan omega-bouclier-wg "
+"berhenti?)."
+
+#, python-brace-format
+msgid ""
+"Bouclier du port WireGuard : {mode}, géré par {manager} ; {count} paquet(s) "
+"refusé(s)"
+msgstr ""
+"Perisai port WireGuard: {mode}, dikelola oleh {manager}; {count} paket "
+"ditolak"
+
+#, python-brace-format
+msgid ""
+"Bouclier du port WireGuard : {mode}, géré par {manager} ; {count} paquet(s) "
+"auraient été refusés"
+msgstr ""
+"Perisai port WireGuard: {mode}, dikelola oleh {manager}; {count} paket "
+"seharusnya ditolak"
+
+msgid "adresse bloquée"
+msgstr "alamat diblokir"
+
+msgid "budget global dépassé"
+msgstr "anggaran global terlampaui"
+
+msgid "liste noire"
+msgstr "daftar hitam"
+
+msgid "trop de connexions d'un réseau"
+msgstr "terlalu banyak koneksi dari satu jaringan"
+
+msgid "trop de connexions d'une adresse"
+msgstr "terlalu banyak koneksi dari satu alamat"
+
+msgid "mauvais nom de site (SNI)"
+msgstr "nama situs salah (SNI)"
+
+msgid "pas une connexion TLS"
+msgstr "bukan koneksi TLS"
+
+msgid "AS d'hébergeur en rafale"
+msgstr "lonjakan AS penyedia hosting"
+
+msgid "empreinte inconnue en rafale"
+msgstr "lonjakan sidik jari tidak dikenal"
+
+msgid "pays limité en rafale"
+msgstr "lonjakan negara yang dibatasi"
+
+#, python-brace-format
+msgid "tailscaled ne répond pas : {error}"
+msgstr "tailscaled tidak merespons: {error}"
+
+#, python-brace-format
+msgid "État : {state}"
+msgstr "Status: {state}"
+
+#, python-brace-format
+msgid "Version : {daemon} en marche, {client} installé"
+msgstr "Versi: {daemon} berjalan, {client} terpasang"
+
+#, python-brace-format
+msgid "Nom de la machine : {name}"
+msgstr "Nama mesin: {name}"
+
+#, python-brace-format
+msgid "Compte : {user}"
+msgstr "Akun: {user}"
+
+msgid "Compte : masqué (non inclus dans ce rapport)"
+msgstr "Akun: disembunyikan (tidak disertakan dalam laporan ini)"
+
+#, python-brace-format
+msgid ""
+"Appareils du tailnet : {online} en ligne sur {total} (plus {relays} relais "
+"Funnel de Tailscale)"
+msgstr ""
+"Perangkat tailnet: {online} daring dari {total} (ditambah {relays} relai "
+"Funnel Tailscale)"
+
+#, python-brace-format
+msgid "Appareils du tailnet : {online} en ligne sur {total}"
+msgstr "Perangkat tailnet: {online} daring dari {total}"
+
+#, python-brace-format
+msgid "Clé de la machine : {expiry}"
+msgstr "Kunci mesin: {expiry}"
+
+msgid "sans expiration"
+msgstr "tanpa kedaluwarsa"
+
+msgid "aucun"
+msgstr "tidak ada"
+
+msgid "Préférence"
+msgstr "Preferensi"
+
+msgid "Valeur"
+msgstr "Nilai"
+
+msgid "Rien n'est publié (ni Serve, ni Funnel)."
+msgstr "Tidak ada yang dipublikasikan (baik Serve maupun Funnel)."
+
+#, python-brace-format
+msgid "Machine : {name} ({count} fils)"
+msgstr "Mesin: {name} ({count} thread)"
+
+#, python-brace-format
+msgid "Charge : {a:.2f} {b:.2f} {c:.2f}"
+msgstr "Beban: {a:.2f} {b:.2f} {c:.2f}"
+
+msgid "pas de capteur"
+msgstr "tidak ada sensor"
+
+#, python-brace-format
+msgid "Mémoire vive utilisée : {value}"
+msgstr "Memori yang dipakai: {value}"
+
+msgid "MACHINE"
+msgstr "MESIN"
+
+msgid "PARE-FEU FUNNEL"
+msgstr "FIREWALL FUNNEL"
+
+msgid "Pare-feu indisponible sur cette machine."
+msgstr "Firewall tidak tersedia di mesin ini."
+
+#, python-brace-format
+msgid "Service de la porte : {state}"
+msgstr "Layanan gerbang: {state}"
+
+#, python-brace-format
+msgid "Protection active depuis {since} : Funnel {port} → porte → {backend}"
+msgstr "Perlindungan aktif sejak {since}: Funnel {port} → gerbang → {backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions depuis le démarrage de la porte : {total} reçues · {refused} "
+"refusées avant chiffrement · {admitted} admises · {current} en cours"
+msgstr ""
+"Koneksi sejak gerbang dimulai: {total} diterima masuk · {refused} ditolak "
+"sebelum enkripsi · {admitted} diizinkan · {current} sedang berjalan"
+
+msgid "Protection inactive : Funnel ne passe pas par la porte."
+msgstr "Perlindungan tidak aktif: Funnel tidak melewati gerbang."
+
+#, python-brace-format
+msgid "Mode : {mode}"
+msgstr "Mode: {mode}"
+
+msgid "observation (rien n'est refusé)"
+msgstr "pengamatan (tidak ada yang ditolak)"
+
+msgid "normal (les règles refusent)"
+msgstr "normal (aturan menolak)"
+
+#, python-brace-format
+msgid ""
+"Règles : {ip} connexions / 10 s par adresse · {prefix} / 10 s par réseau · "
+"budget global {budget} / s · {maximum} connexions au plus · blocage {block} "
+"min · nom du site {sni}"
+msgstr ""
+"Aturan: {ip} koneksi / 10 dtk per alamat · {prefix} / 10 dtk per jaringan · "
+"anggaran global {budget} / dtk · maks. {maximum} koneksi · pemblokiran "
+"{block} menit · nama situs {sni}"
+
+msgid "non vérifié"
+msgstr "tidak diperiksa"
+
+msgid "vérifié"
+msgstr "diperiksa"
+
+#, python-brace-format
+msgid "Certificat : encore {days} jour(s)"
+msgstr "Sertifikat: masih {days} hari"
+
+#, python-brace-format
+msgid "Confiance : {count} adresse(s) ou réseau(x)"
+msgstr "Tepercaya: {count} alamat atau jaringan"
+
+#, python-brace-format
+msgid "Liste noire : {entries}"
+msgstr "Daftar hitam: {entries}"
+
+msgid "vide"
+msgstr "kosong"
+
+#, python-brace-format
+msgid "Bloquées en ce moment : {entries}"
+msgstr "Diblokir saat ini: {entries}"
+
+msgid "Bloquées en ce moment : aucune"
+msgstr "Diblokir saat ini: tidak ada"
+
+#, python-brace-format
+msgid "Regroupements : {mode} · {attack}"
+msgstr "Pengelompokan: {mode} · {attack}"
+
+msgid "MODE ATTAQUE en cours"
+msgstr "MODE SERANGAN aktif"
+
+msgid "mode normal"
+msgstr "mode normal"
+
+#, python-brace-format
+msgid "Empreintes : apprentissage, encore {days} jour(s)"
+msgstr "Sidik jari: pembelajaran, masih {days} hari"
+
+#, python-brace-format
+msgid "Empreintes habituelles : {count} (référence prête)"
+msgstr "Sidik jari yang biasa: {count} (acuan siap)"
+
+#, python-brace-format
+msgid "Base AS / pays : à jour il y a {days} jour(s)"
+msgstr "Basis data AS / negara: diperbarui {days} hari lalu"
+
+msgid "Base AS / pays : absente"
+msgstr "Basis data AS / negara: tidak ada"
+
+msgid "Empreintes les plus actives"
+msgstr "Sidik jari paling aktif"
+
+msgid "AS les plus actifs"
+msgstr "AS paling aktif"
+
+msgid "Pays les plus actifs"
+msgstr "Negara paling aktif"
+
+msgid "Adresse la plus active"
+msgstr "Alamat paling aktif"
+
+msgid "Connexions / 10 s"
+msgstr "Koneksi / 10 dtk"
+
+msgid "confiance"
+msgstr "tepercaya"
+
+msgid "admise"
+msgstr "diizinkan"
+
+msgid "bloquée"
+msgstr "diblokir"
+
+#, python-brace-format
+msgid "Confinement de tailscaled : {state}"
+msgstr "Pembatasan tailscaled: {state}"
+
+msgid "Veille automatique : désactivée"
+msgstr "Pengawasan otomatis: nonaktif"
+
+msgid "Veille automatique : activée mais arrêtée (aucun signe de vie)"
+msgstr "Pengawasan otomatis: aktif tetapi berhenti (tidak ada tanda hidup)"
+
+#, python-brace-format
+msgid ""
+"Veille automatique : active · {strikes} dépassement(s) récent(s) · prochaine"
+" coupure {minutes} min"
+msgstr ""
+"Pengawasan otomatis: aktif · {strikes} pelampauan terbaru · pemutusan "
+"berikutnya {minutes} menit"
+
+#, python-brace-format
+msgid ""
+"Disjoncteur : tailscaled au-delà de {cpu:.0f} % d'un cœur pendant {seconds} "
+"s, ou machine au-delà de {temperature:.0f} °C ; coupure proposée de "
+"{minutes} min"
+msgstr ""
+"Pemutus sirkuit: tailscaled di atas {cpu:.0f} % dari satu inti selama "
+"{seconds} dtk, atau mesin di atas {temperature:.0f} °C; pemutusan yang "
+"ditawarkan {minutes} menit"
+
+#, python-brace-format
+msgid "Funnel coupé depuis {since} ; remise en route {until}"
+msgstr "Funnel diputus sejak {since}; dihidupkan kembali {until}"
+
+msgid "manuelle"
+msgstr "manual"
+
+msgid "Aucune coupure de Funnel en cours."
+msgstr "Tidak ada pemutusan Funnel yang sedang berlaku."
+
+#, python-brace-format
+msgid "  origine : {tool} · géré par {manager} · pairs connus : {peers}"
+msgstr "  asal: {tool} · dikelola oleh {manager} · peer yang dikenal: {peers}"
+
+msgid "Journal de la veille (derniers événements) :"
+msgstr "Log pengawasan (peristiwa terakhir):"
+
+msgid "SURVIE"
+msgstr "KETAHANAN"
+
+msgid "Aucune alerte."
+msgstr "Tidak ada peringatan."
+
+#, python-brace-format
+msgid "ATTAQUES DES {days} DERNIERS JOURS"
+msgstr "SERANGAN {days} HARI TERAKHIR"
+
+msgid "Pare-feu indisponible : rien à compter."
+msgstr "Firewall tidak tersedia: tidak ada yang dihitung."
+
+#, python-brace-format
+msgid "Journal de la porte illisible : {error}"
+msgstr "Log gerbang tidak terbaca: {error}"
+
+msgid ""
+"Lu dans le journal de la porte : chaque connexion marquée par une règle "
+"(refusée, ou seulement comptée en observation, selon le mode du moment)."
+msgstr ""
+"Dibaca dari log gerbang: setiap koneksi yang ditandai oleh sebuah aturan "
+"(ditolak, atau hanya dihitung dalam pengamatan, tergantung mode saat itu)."
+
+msgid "Aucune connexion marquée sur la période."
+msgstr "Tidak ada koneksi yang ditandai pada periode ini."
+
+#, python-brace-format
+msgid "Connexions marquées : {count}{floor}"
+msgstr "Koneksi yang ditandai: {count}{floor}"
+
+msgid " (au moins : journal trop long, seules les plus récentes ont été lues)"
+msgstr " (minimal: log terlalu panjang, hanya yang terbaru yang dibaca)"
+
+#, python-brace-format
+msgid ""
+"Règles de la porte, connexions qui auraient été refusées (observation) : "
+"{reasons}"
+msgstr ""
+"Aturan gerbang, koneksi yang seharusnya ditolak (pengamatan): {reasons}"
+
+#, python-brace-format
+msgid "Règles de la porte, connexions refusées : {reasons}"
+msgstr "Aturan gerbang, koneksi ditolak: {reasons}"
+
+#, python-brace-format
+msgid "Regroupements, connexions refusées : {reasons}"
+msgstr "Pengelompokan, koneksi ditolak: {reasons}"
+
+#, python-brace-format
+msgid ""
+"Regroupements, connexions qui auraient été refusées (observation) : "
+"{reasons}"
+msgstr ""
+"Pengelompokan, koneksi yang seharusnya ditolak (pengamatan): {reasons}"
+
+#, python-brace-format
+msgid "Par jour : {days}"
+msgstr "Per hari: {days}"
+
+msgid "AS"
+msgstr "AS"
+
+msgid "Adresse"
+msgstr "Alamat"
+
+msgid "Connexions marquées"
+msgstr "Koneksi yang ditandai"
+
+msgid "Pays"
+msgstr "Negara"
+
+msgid "en ligne"
+msgstr "daring"
+
+msgid "hors ligne"
+msgstr "luring"
+
+msgid "APPAREILS DU TAILNET"
+msgstr "PERANGKAT TAILNET"
+
+msgid "Aucun appareil lu."
+msgstr "Tidak ada perangkat yang terbaca."
+
+msgid "Système"
+msgstr "Sistem"
+
+msgid "Compte et appareils du tailnet inclus."
+msgstr "Akun dan perangkat tailnet disertakan."
+
+msgid ""
+"Compte et appareils du tailnet non inclus (seulement leur nombre) ; les "
+"adresses des attaquants restent."
+msgstr ""
+"Akun dan perangkat tailnet tidak disertakan (hanya jumlahnya); alamat "
+"penyerang tetap dicantumkan."
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — RAPPORT DE LA MACHINE {machine}"
+msgstr "OMEGA-TAIL {version} — LAPORAN MESIN {machine}"
+
+#, python-brace-format
+msgid "Établi le {date} (lecture seule, sans droits)."
+msgstr "Dibuat pada {date} (hanya baca, tanpa hak akses)."
+
+#, python-brace-format
+msgid "OMEGA-TAIL {version} — rapport."
+msgstr "OMEGA-TAIL {version} — laporan."
+
+msgid "Rapport - Omega-Tail"
+msgstr "Laporan - Omega-Tail"
+
+msgid ""
+"Le démarrage de tailscaled lance « tailscale up » (votre fichier d'ajout). "
+"Depuis qu'un réglage a changé (opérateur, nom, routes…), Tailscale refuse ce"
+" « up » incomplet : systemd arrête alors tailscaled et abandonne après cinq "
+"essais (la machine sort du tailnet). omega-tail ajoute « - » devant cette "
+"commande : son refus n'arrête plus le service, et vos réglages restent "
+"gardés par Tailscale. Rien d'autre ne change ; l'original est gardé dans "
+"var/survie."
+msgstr ""
+"Saat tailscaled dimulai, ia menjalankan « tailscale up » (berkas tambahan "
+"Anda). Sejak sebuah pengaturan berubah (operator, nama, rute…), Tailscale "
+"menolak « up » yang tidak lengkap ini: systemd lalu menghentikan tailscaled "
+"dan menyerah setelah lima percobaan (mesin keluar dari tailnet). omega-tail "
+"menambahkan « - » di depan perintah ini: penolakannya tidak lagi "
+"menghentikan layanan, dan pengaturan Anda tetap disimpan oleh Tailscale. "
+"Tidak ada yang lain yang berubah; berkas asli disimpan di var/survie."
+
+msgid "Lecture de l'état"
+msgstr "Membaca status"
+
+#, python-brace-format
+msgid "Valeurs refusées (nombre hors limites) : {keys}"
+msgstr "Nilai ditolak (angka di luar batas): {keys}"
+
+msgid "Seuils enregistrés."
+msgstr "Ambang disimpan."
+
+#, python-brace-format
+msgid "Pas de nouvelle proposition pendant {minutes} min."
+msgstr "Tidak ada tawaran baru selama {minutes} menit."
+
+#, python-brace-format
+msgid ""
+"Funnel sera coupé {minutes} min puis remis en route automatiquement, à "
+"l'identique (minuterie systemd : sudo une fois, dans le terminal)."
+msgstr ""
+"Funnel akan diputus {minutes} menit lalu dihidupkan kembali secara otomatis,"
+" persis seperti semula (pewaktu systemd: sudo sekali, di terminal)."
+
+msgid ""
+"Funnel sera coupé jusqu'à ce que vous le rétablissiez (« Rétablir maintenant"
+" »)."
+msgstr ""
+"Funnel akan diputus sampai Anda memulihkannya (« Pulihkan sekarang »)."
+
+msgid "COUPER FUNNEL ?"
+msgstr "PUTUS FUNNEL?"
+
+msgid ""
+"Les connexions venues d'Internet s'arrêtent aussitôt ; le tailnet (Serve, "
+"SSH) n'est pas touché."
+msgstr ""
+"Koneksi dari Internet langsung berhenti; tailnet (Serve, SSH) tidak "
+"tersentuh."
+
+msgid "Couper"
+msgstr "Putus"
+
+msgid "Disjoncteur"
+msgstr "Pemutus sirkuit"
+
+msgid "Pare-feu indisponible."
+msgstr "Firewall tidak tersedia."
+
+#, python-brace-format
+msgid "HAProxy : {path}"
+msgstr "HAProxy: {path}"
+
+msgid "non installé (« Installer HAProxy »)"
+msgstr "belum terpasang (« Pasang HAProxy »)"
+
+#, python-brace-format
+msgid ""
+"Protection ACTIVE depuis {since} : Funnel {port} → porte 127.0.0.1:{gate} → "
+"{backend}"
+msgstr ""
+"Perlindungan AKTIF sejak {since}: Funnel {port} → gerbang 127.0.0.1:{gate} →"
+" {backend}"
+
+#, python-brace-format
+msgid ""
+"Connexions : {total} reçues · {refused} refusées avant chiffrement · "
+"{current} en cours"
+msgstr ""
+"Koneksi: {total} diterima masuk · {refused} ditolak sebelum enkripsi · "
+"{current} sedang berjalan"
+
+#, python-brace-format
+msgid ""
+"Protection inactive. Funnel {port} (HTTPS par tailscaled) → {backend} : pris"
+" en charge."
+msgstr ""
+"Perlindungan tidak aktif. Funnel {port} (HTTPS oleh tailscaled) → {backend}:"
+" didukung."
+
+#, python-brace-format
+msgid "Protection inactive : {reason}."
+msgstr "Perlindungan tidak aktif: {reason}."
+
+#, python-brace-format
+msgid "Certificat : encore {days} jour(s) (renouvelé chaque jour si besoin)"
+msgstr "Sertifikat: masih {days} hari (diperbarui setiap hari jika perlu)"
+
+#, python-brace-format
+msgid ""
+"Mode : {mode} · {ip} connexions / 10 s par adresse · budget {budget} / s · "
+"blocage {block} min"
+msgstr ""
+"Mode: {mode} · {ip} koneksi / 10 dtk per alamat · anggaran {budget} / dtk · "
+"pemblokiran {block} menit"
+
+msgid ""
+"⚠ Devenez opérateur de Tailscale (tableau de bord) : la porte en a besoin."
+msgstr "⚠ Jadilah operator Tailscale (dasbor): gerbang memerlukannya."
+
+msgid "Pare-feu"
+msgstr "Firewall"
+
+msgid "Changement en cours, puis vérification…"
+msgstr "Perubahan sedang berlangsung, lalu pemeriksaan…"
+
+msgid ""
+"Gestionnaire de paquets inconnu : installez HAProxy avec celui de votre "
+"système."
+msgstr ""
+"Manajer paket tidak dikenal: pasang HAProxy dengan manajer paket sistem "
+"Anda."
+
+msgid "INSTALLER HAPROXY ?"
+msgstr "PASANG HAPROXY?"
+
+msgid ""
+"HAProxy est installé par le gestionnaire de paquets de la distribution "
+"(mises à jour de sécurité comprises)."
+msgstr ""
+"HAProxy dipasang oleh manajer paket distribusi (termasuk pembaruan "
+"keamanan)."
+
+msgid "ACTIVER LA PROTECTION ?"
+msgstr "AKTIFKAN PERLINDUNGAN?"
+
+msgid ""
+"1. Préparation (certificat *.ts.net, listes, configuration vérifiée).\n"
+"2. Services de la porte et de son certificat (sudo, dans le terminal ; la porte tourne sous votre compte, jamais en root).\n"
+"3. Bascule de Funnel vers la porte, puis essai depuis Internet. En cas d'échec, la publication d'origine est remise aussitôt.\n"
+"\n"
+"Coupure du site : quelques secondes pendant la bascule."
+msgstr ""
+"1. Persiapan (sertifikat *.ts.net, daftar, konfigurasi diperiksa).\n"
+"2. Layanan gerbang dan sertifikatnya (sudo, di terminal; gerbang berjalan di bawah akun Anda, tidak pernah sebagai root).\n"
+"3. Peralihan Funnel ke gerbang, lalu uji dari Internet. Jika gagal, publikasi asli segera dikembalikan.\n"
+"\n"
+"Situs terputus: beberapa detik selama peralihan."
+
+msgid "Activer"
+msgstr "Aktifkan"
+
+msgid "Préparation de la porte…"
+msgstr "Menyiapkan gerbang…"
+
+msgid "Porte lancée ; bascule de Funnel et essai depuis Internet…"
+msgstr "Gerbang berjalan; mengalihkan Funnel dan menguji dari Internet…"
+
+msgid "DÉSACTIVER LA PROTECTION ?"
+msgstr "NONAKTIFKAN PERLINDUNGAN?"
+
+msgid ""
+"Funnel est remis exactement comme avant (HTTPS par tailscaled), vérifié, "
+"puis la porte est arrêtée (sudo, dans le terminal). Vos réglages et vos "
+"listes sont gardés."
+msgstr ""
+"Funnel dikembalikan persis seperti sebelumnya (HTTPS oleh tailscaled), "
+"diperiksa, lalu gerbang dihentikan (sudo, di terminal). Pengaturan dan "
+"daftar Anda tetap disimpan."
+
+msgid "Désactiver"
+msgstr "Nonaktifkan"
+
+msgid "tailscaled ne tourne pas : rien à confiner."
+msgstr "tailscaled tidak berjalan: tidak ada yang perlu dibatasi."
+
+#, python-brace-format
+msgid ""
+"Pose le fichier d'ajout {path} (votre propre override.conf n'est pas "
+"modifié), recharge systemd{restart}."
+msgstr ""
+"Memasang berkas tambahan {path} (override.conf milik Anda tidak diubah), "
+"memuat ulang systemd{restart}."
+
+msgid ", puis redémarre tailscaled"
+msgstr ", lalu memulai ulang tailscaled"
+
+msgid ""
+"Place tailscaled dans un groupe de contrôle à part (cgroup v2), avec son "
+"plafond et sa priorité. Aucun de vos fichiers n'est modifié. Perdu si "
+"tailscaled redémarre : omega-tail le signalera."
+msgstr ""
+"Menempatkan tailscaled dalam grup kontrol terpisah (cgroup v2), dengan batas"
+" dan prioritasnya. Tidak ada berkas Anda yang diubah. Hilang jika tailscaled"
+" dimulai ulang: omega-tail akan memberitahukannya."
+
+msgid "CONFINER TAILSCALED ?"
+msgstr "BATASI TAILSCALED?"
+
+msgid ""
+"Supprime les fichiers d'ajout posés par omega-tail, puis recharge systemd."
+msgstr ""
+"Menghapus berkas tambahan yang dipasang omega-tail, lalu memuat ulang "
+"systemd."
+
+msgid "RETIRER LE CONFINEMENT ?"
+msgstr "LEPAS PEMBATASAN?"
+
+msgid ""
+"Rien à corriger ici : la commande n'est pas dans un fichier de /etc/systemd "
+"(à corriger à la main, avec « - » devant la commande)."
+msgstr ""
+"Tidak ada yang perlu diperbaiki di sini: perintahnya tidak berada di berkas "
+"/etc/systemd (perbaiki secara manual, dengan « - » di depan perintah)."
+
+msgid "CORRIGER LE DÉMARRAGE DE TAILSCALED ?"
+msgstr "PERBAIKI PROSES MULAI TAILSCALED?"
+
+msgid ""
+"Cette session passe par Tailscale : elle se figera quelques secondes pendant"
+" le redémarrage, puis reviendra en général."
+msgstr ""
+"Sesi ini melewati Tailscale: sesi akan membeku beberapa detik selama dimulai"
+" ulang, lalu biasanya kembali."
+
+msgid "Commandes :"
+msgstr "Perintah:"
+
+msgid ""
+"La veille coupe et remet Funnel sous votre compte : devenez d'abord "
+"opérateur de Tailscale (tableau de bord)."
+msgstr ""
+"Pengawasan memutus dan menghidupkan kembali Funnel di bawah akun Anda: "
+"jadilah operator Tailscale terlebih dahulu (dasbor)."
+
+msgid ""
+"La veille tournera en permanence, sous votre compte (jamais root), même "
+"omega-tail fermé. Sous attaque, elle coupe Funnel seule par paliers (15 min,"
+" 30 min, puis 1 h renouvelable) et le remet en route seule."
+msgstr ""
+"Pengawasan akan berjalan terus-menerus, di bawah akun Anda (tidak pernah "
+"root), bahkan saat omega-tail ditutup. Saat diserang, pengawasan memutus "
+"Funnel sendiri secara bertahap (15 menit, 30 menit, lalu 1 jam yang dapat "
+"diperpanjang) dan menghidupkannya kembali sendiri."
+
+msgid ""
+"La veille s'arrête : sous attaque, omega-tail ouvert vous proposera de "
+"nouveau la coupure."
+msgstr ""
+"Pengawasan berhenti: saat diserang, omega-tail yang terbuka akan kembali "
+"menawarkan pemutusan."
+
+msgid "ACTIVER LA VEILLE AUTOMATIQUE ?"
+msgstr "AKTIFKAN PENGAWASAN OTOMATIS?"
+
+msgid "DÉSACTIVER LA VEILLE AUTOMATIQUE ?"
+msgstr "NONAKTIFKAN PENGAWASAN OTOMATIS?"
+
+msgid "Veille automatique activée."
+msgstr "Pengawasan otomatis diaktifkan."
+
+msgid "Veille automatique désactivée."
+msgstr "Pengawasan otomatis dinonaktifkan."
+
+#, python-brace-format
+msgid "Commande refusée (code {code}) : rien n'a changé."
+msgstr "Perintah ditolak (kode {code}): tidak ada yang berubah."
+
+msgid "omega-tail — commandes lancées une à une :"
+msgstr "omega-tail — perintah dijalankan satu per satu:"
+
+msgid "Le mot de passe sudo ne s'affiche pas pendant la saisie."
+msgstr "Kata sandi sudo tidak ditampilkan saat diketik."
+
+msgid "✔ Terminé."
+msgstr "✔ Selesai."
+
+#, python-brace-format
+msgid "✖ Échec (code {code})."
+msgstr "✖ Gagal (kode {code})."
+
+msgid "Entrée pour revenir à omega-tail… "
+msgstr "Enter untuk kembali ke omega-tail… "
+
+#, python-brace-format
+msgid "Fait : {command}"
+msgstr "Selesai: {command}"
+
+#, python-brace-format
+msgid "Échec (code {code}) : {command}"
+msgstr "Gagal (kode {code}): {command}"
+
+msgid "Compte inconnu ou root : rien à faire."
+msgstr "Akun tidak dikenal atau root: tidak ada yang perlu dilakukan."
+
+#, python-brace-format
+msgid ""
+"Le compte « {user} » pourra régler Tailscale (connexion, publication, "
+"préférences) sans sudo. Une seule fois ; annulable ensuite avec « sudo "
+"tailscale set --operator= »."
+msgstr ""
+"Akun « {user} » akan dapat mengatur Tailscale (koneksi, publikasi, "
+"preferensi) tanpa sudo. Sekali saja; dapat dibatalkan kemudian dengan « sudo"
+" tailscale set --operator= »."
+
+msgid "DEVENIR OPÉRATEUR DE TAILSCALE ?"
+msgstr "JADI OPERATOR TAILSCALE?"
+
+msgid "Dossier des captures non configuré."
+msgstr "Folder tangkapan layar belum dikonfigurasi."
+
+msgid "Redémarrer"
+msgstr "Mulai ulang"
+
+msgid "PROTECTION"
+msgstr "PERLINDUNGAN"
+
+msgid "TAILSCALE"
+msgstr "TAILSCALE"
+
+msgid ""
+"omega-tail — authentification sudo pour les commandes affichées (le mot de "
+"passe ne s'affiche pas pendant la saisie). L'interface revient ensuite."
+msgstr ""
+"omega-tail — autentikasi sudo untuk perintah yang ditampilkan (kata sandi "
+"tidak ditampilkan saat diketik). Antarmuka kembali setelahnya."
+
+msgid "Aucune commande à copier."
+msgstr "Tidak ada perintah untuk disalin."
+
+#, python-brace-format
+msgid ""
+"{count} commande(s) copiée(s) dans le presse-papiers ({tool}) : collez-les "
+"dans un terminal (Ctrl+Maj+V)."
+msgstr ""
+"{count} perintah disalin ke papan klip ({tool}): tempelkan di terminal "
+"(Ctrl+Shift+V)."
+
+msgid ""
+"omega-tail — commandes à copier. Sélectionnez-les à la souris puis copiez "
+"avec le raccourci de votre terminal (souvent Ctrl+Maj+C) :"
+msgstr ""
+"omega-tail — perintah untuk disalin. Pilih dengan mouse lalu salin dengan "
+"pintasan terminal Anda (sering Ctrl+Shift+C):"
+
+msgid "Adresses"
+msgstr "Alamat"
+
+msgid "Empreintes"
+msgstr "Sidik jari"
+
+#, python-brace-format
+msgid "MODE ATTAQUE (retour au normal après {seconds} s de calme)"
+msgstr "MODE SERANGAN (kembali normal setelah {seconds} dtk tenang)"
+
+msgid "regroupements appliqués"
+msgstr "pengelompokan diterapkan"
+
+msgid "regroupements en observation"
+msgstr "pengelompokan dalam pengamatan"
+
+#, python-brace-format
+msgid "auraient été refusées (7 j) : {reasons}"
+msgstr "seharusnya ditolak (7 hari): {reasons}"
+
+#, python-brace-format
+msgid "refusées (7 j) : {reasons}"
+msgstr "ditolak (7 hari): {reasons}"
+
+msgid "ATTAQUES ET DÉCISIONS"
+msgstr "SERANGAN DAN KEPUTUSAN"
+
+msgid ""
+"La liste noire d'abord, puis les adresses bloquées, les plus actives, et la "
+"confiance. Choisissez une ligne puis une action."
+msgstr ""
+"Daftar hitam terlebih dahulu, lalu alamat yang diblokir, yang paling aktif, "
+"dan yang tepercaya. Pilih sebuah baris lalu sebuah tindakan."
+
+msgid "Bloquer"
+msgstr "Blokir"
+
+msgid "Liste noire"
+msgstr "Daftar hitam"
+
+msgid "Débloquer"
+msgstr "Buka blokir"
+
+msgid "Gestion de la liste noire"
+msgstr "Pengelolaan daftar hitam"
+
+msgid "Expire dans"
+msgstr "Kedaluwarsa dalam"
+
+msgid "Empreinte JA4"
+msgstr "Sidik jari JA4"
+
+msgid "Remarque"
+msgstr "Catatan"
+
+msgid "Total"
+msgstr "Total"
+
+#, python-brace-format
+msgid ""
+"Connexions reçues : {total} · refusées avant chiffrement : {refused} · "
+"admises : {admitted} · en cours : {current}"
+msgstr ""
+"Koneksi diterima masuk: {total} · ditolak sebelum enkripsi: {refused} · "
+"diizinkan: {admitted} · sedang berjalan: {current}"
+
+msgid "jusqu'au retrait"
+msgstr "sampai dicabut"
+
+msgid "Retirer la confiance"
+msgstr "Cabut kepercayaan"
+
+msgid "Aucune adresse choisie."
+msgstr "Tidak ada alamat yang dipilih."
+
+msgid "Plus anciennes que N jours"
+msgstr "Lebih lama dari N hari"
+
+msgid "Les N plus anciennes"
+msgstr "N yang paling lama"
+
+msgid "De la ligne A à la ligne B"
+msgstr "Dari baris A sampai baris B"
+
+msgid "Origine : import"
+msgstr "Asal: impor"
+
+msgid "Origine : écran Attaques"
+msgstr "Asal: layar Serangan"
+
+msgid "Origine : ajout manuel"
+msgstr "Asal: penambahan manual"
+
+msgid "Origine : avant les dates"
+msgstr "Asal: sebelum ada tanggal"
+
+msgid "Toute la liste"
+msgstr "Seluruh daftar"
+
+msgid "GESTION DE LA LISTE NOIRE"
+msgstr "PENGELOLAAN DAFTAR HITAM"
+
+msgid "AJOUTER OU IMPORTER"
+msgstr "TAMBAH ATAU IMPOR"
+
+msgid "adresse ou réseau (ex. 203.0.113.7 ou 198.51.100.0/24)"
+msgstr "alamat atau jaringan (mis. 203.0.113.7 atau 198.51.100.0/24)"
+
+msgid "fichier TXT : une adresse ou un réseau par ligne, # = commentaire"
+msgstr "berkas TXT: satu alamat atau jaringan per baris, # = komentar"
+
+msgid "Importer"
+msgstr "Impor"
+
+msgid ""
+"Les doublons, les adresses déjà couvertes par un réseau de la liste et "
+"celles du tailnet sont écartés et comptés. Un export TXT se réimporte tel "
+"quel (récidive)."
+msgstr ""
+"Duplikat, alamat yang sudah dicakup jaringan dalam daftar, dan alamat "
+"tailnet diabaikan dan dihitung. Ekspor TXT dapat diimpor ulang apa adanya "
+"(serangan berulang)."
+
+msgid "LISTE"
+msgstr "DAFTAR"
+
+msgid "filtrer : début d'adresse, réseau, date (2026-11), origine"
+msgstr "saring: awal alamat, jaringan, tanggal (2026-11), asal"
+
+msgid "PURGER"
+msgstr "BERSIHKAN"
+
+msgid "N ou A"
+msgstr "N atau A"
+
+msgid "Aperçu"
+msgstr "Pratinjau"
+
+msgid "Purger"
+msgstr "Bersihkan"
+
+msgid ""
+"Les lignes sont numérotées de la plus ancienne à la plus récente, comme dans"
+" le tableau sans filtre. L'aperçu dit combien d'entrées partiraient ; rien "
+"n'est retiré sans confirmation."
+msgstr ""
+"Baris diberi nomor dari yang paling lama hingga yang terbaru, seperti di "
+"tabel tanpa saringan. Pratinjau menyebutkan berapa entri yang akan terhapus;"
+" tidak ada yang dicabut tanpa konfirmasi."
+
+msgid "THÈME DE LA PAGE HTML"
+msgstr "TEMA HALAMAN HTML"
+
+msgid "Exporter HTML"
+msgstr "Ekspor HTML"
+
+msgid "Exporter TXT"
+msgstr "Ekspor TXT"
+
+msgid "Exporter JSON"
+msgstr "Ekspor JSON"
+
+msgid "Voir les exports"
+msgstr "Lihat ekspor"
+
+#, python-brace-format
+msgid ""
+"{count} entrée(s) sur {max} au plus. Refusées par la porte avant tout "
+"chiffrement, jusqu'à leur retrait."
+msgstr ""
+"{count} entri dari maks. {max}. Ditolak oleh gerbang sebelum enkripsi apa "
+"pun, sampai dicabut."
+
+msgid "La liste grossit : exportez-la puis purgez les plus anciennes."
+msgstr "Daftar membesar: ekspor lalu bersihkan yang paling lama."
+
+#, python-brace-format
+msgid ""
+"{shown} premières lignes affichées sur {total} : affinez le filtre, ou "
+"exportez pour tout voir."
+msgstr ""
+"{shown} baris pertama ditampilkan dari {total}: persempit saringan, atau "
+"ekspor untuk melihat semuanya."
+
+#, python-brace-format
+msgid "{count} entrée(s) correspondent au filtre."
+msgstr "{count} entri cocok dengan saringan."
+
+msgid "La liste noire est vide."
+msgstr "Daftar hitam kosong."
+
+#, python-brace-format
+msgid "{error}"
+msgstr "{error}"
+
+#, python-brace-format
+msgid "Lignes invalides : {lines}"
+msgstr "Baris tidak valid: {lines}"
+
+msgid "Tapez une adresse ou un réseau."
+msgstr "Ketik sebuah alamat atau jaringan."
+
+msgid "Indiquez le chemin du fichier TXT à importer."
+msgstr "Masukkan jalur berkas TXT yang akan diimpor."
+
+#, python-brace-format
+msgid "Fichier introuvable : {path}"
+msgstr "Berkas tidak ditemukan: {path}"
+
+#, python-brace-format
+msgid "Fichier trop gros (plus de {size} Mo) : découpez-le."
+msgstr "Berkas terlalu besar (lebih dari {size} MB): pecah berkasnya."
+
+msgid "Import en cours…"
+msgstr "Mengimpor…"
+
+msgid "Aucune entrée choisie."
+msgstr "Tidak ada entri yang dipilih."
+
+msgid "Tapez N (un nombre entier) dans le premier champ."
+msgstr "Ketik N (bilangan bulat) di kolom pertama."
+
+msgid "Tapez A et B (numéros de ligne) dans les deux champs."
+msgstr "Ketik A dan B (nomor baris) di kedua kolom."
+
+#, python-brace-format
+msgid "Aperçu : {count} entrée(s) sur {total} partiraient."
+msgstr "Pratinjau: {count} entri dari {total} akan terhapus."
+
+#, python-brace-format
+msgid "De {first} à {last}."
+msgstr "Dari {first} sampai {last}."
+
+msgid "Aucune entrée ne correspond : rien à purger."
+msgstr "Tidak ada entri yang cocok: tidak ada yang perlu dibersihkan."
+
+#, python-brace-format
+msgid ""
+"{count} entrée(s) vont quitter la liste noire : ces adresses seront de "
+"nouveau admises (soumises aux règles). Exportez la liste avant si vous "
+"voulez pouvoir les réinjecter."
+msgstr ""
+"{count} entri akan keluar dari daftar hitam: alamat-alamat ini akan kembali "
+"diizinkan (tunduk pada aturan). Ekspor daftar terlebih dahulu jika Anda "
+"ingin dapat memasukkannya kembali."
+
+msgid "Purge en cours…"
+msgstr "Membersihkan…"
+
+msgid "VIDER"
+msgstr "KOSONGKAN"
+
+msgid "VIDER LA LISTE NOIRE ?"
+msgstr "KOSONGKAN DAFTAR HITAM?"
+
+msgid "Vider"
+msgstr "Kosongkan"
+
+msgid "PURGER LA LISTE NOIRE ?"
+msgstr "BERSIHKAN DAFTAR HITAM?"
+
+#, python-brace-format
+msgid "Liste noire enregistrée ({count} entrée(s)) : {path}"
+msgstr "Daftar hitam disimpan ({count} entri): {path}"
+
+msgid "ATTAQUE PROBABLE — COUPER FUNNEL ?"
+msgstr "KEMUNGKINAN SERANGAN — PUTUS FUNNEL?"
+
+#, python-brace-format
+msgid ""
+"{reason}\n"
+"\n"
+"Couper Funnel (port {ports}) arrête aussitôt les connexions venues d'Internet : la machine respire. Le tailnet (Serve, SSH) n'est pas touché.\n"
+"\n"
+"• Coupure de {minutes} min : Funnel est remis en route tout seul, à l'identique, même si omega-tail est fermé.\n"
+"• Coupure totale : Funnel reste coupé jusqu'à ce que vous le rétablissiez (menu Survie)."
+msgstr ""
+"{reason}\n"
+"\n"
+"Memutus Funnel (port {ports}) langsung menghentikan koneksi dari Internet: mesin bisa bernapas. Tailnet (Serve, SSH) tidak tersentuh.\n"
+"\n"
+"• Pemutusan {minutes} menit: Funnel dihidupkan kembali sendiri, persis seperti semula, bahkan jika omega-tail ditutup.\n"
+"• Pemutusan total: Funnel tetap terputus sampai Anda memulihkannya (menu Ketahanan)."
+
+#, python-brace-format
+msgid "Couper {minutes} min"
+msgstr "Putus {minutes} menit"
+
+msgid "Coupure totale"
+msgstr "Pemutusan total"
+
+msgid "Pas maintenant"
+msgstr "Jangan sekarang"
+
+msgid "déconnecté (tailscale down)"
+msgstr "terputus (tailscale down)"
+
+msgid "compte à connecter"
+msgstr "akun perlu dihubungkan"
+
+msgid "machine à approuver"
+msgstr "mesin perlu disetujui"
+
+msgid "CONNEXION ET RÉGLAGES"
+msgstr "KONEKSI DAN PENGATURAN"
+
+msgid ""
+"La connexion de cette machine au tailnet, son compte, et les réglages de "
+"Tailscale. Chaque commande s'affiche avant d'être lancée, dans le terminal "
+"(sans sudo si vous êtes opérateur)."
+msgstr ""
+"Koneksi mesin ini ke tailnet, akunnya, dan pengaturan Tailscale. Setiap "
+"perintah ditampilkan sebelum dijalankan, di terminal (tanpa sudo jika Anda "
+"operator)."
+
+msgid "Se connecter"
+msgstr "Hubungkan"
+
+msgid "Se déconnecter"
+msgstr "Putuskan"
+
+msgid "Ajouter un compte"
+msgstr "Tambah akun"
+
+msgid "Déconnexion définitive"
+msgstr "Logout permanen"
+
+msgid "COMPTE"
+msgstr "AKUN"
+
+msgid "Comptes de cette machine (lecture…)"
+msgstr "Akun di mesin ini (membaca…)"
+
+msgid "Changer de compte"
+msgstr "Ganti akun"
+
+msgid "Appliquer"
+msgstr "Terapkan"
+
+msgid "Relire"
+msgstr "Baca ulang"
+
+msgid "Mon compte"
+msgstr "Akun saya"
+
+msgid "Activer le transfert IP"
+msgstr "Aktifkan penerusan IP"
+
+msgid " (en cours)"
+msgstr " (saat ini)"
+
+#, python-brace-format
+msgid "Comptes illisibles ({error}) : devenez opérateur (tableau de bord)."
+msgstr "Akun tidak terbaca ({error}): jadilah operator (dasbor)."
+
+msgid ""
+"Un seul compte sur cette machine : « Ajouter un compte » pour en connecter "
+"un autre."
+msgstr ""
+"Hanya satu akun di mesin ini: « Tambah akun » untuk menghubungkan akun lain."
+
+msgid ""
+"Aucune machine du tailnet ne se propose comme nœud de sortie. Sur la machine"
+" voulue : cocher « Proposer cette machine comme nœud de sortie », appliquer,"
+" puis l'approuver dans la console d'administration de Tailscale (Machines → "
+"Edit route settings)."
+msgstr ""
+"Tidak ada mesin tailnet yang menawarkan diri sebagai simpul keluar. Di mesin"
+" yang diinginkan: centang « Tawarkan mesin ini sebagai simpul keluar », "
+"terapkan, lalu setujui di konsol admin Tailscale (Machines → Edit route "
+"settings)."
+
+#, python-brace-format
+msgid "ex. {user}"
+msgstr "mis. {user}"
+
+msgid "tailscaled ne répond pas"
+msgstr "tailscaled tidak merespons"
+
+#, python-brace-format
+msgid "Compte : {user} · tailnet : {tailnet}"
+msgstr "Akun: {user} · tailnet: {tailnet}"
+
+#, python-brace-format
+msgid "Machine : {name} · {addresses}"
+msgstr "Mesin: {name} · {addresses}"
+
+#, python-brace-format
+msgid "Expiration de la clé : {expiry} · opérateur : {operator}"
+msgstr "Kedaluwarsa kunci: {expiry} · operator: {operator}"
+
+msgid "aucun (sudo)"
+msgstr "tidak ada (sudo)"
+
+msgid "Votre session passe par Tailscale : se déconnecter vous couperait."
+msgstr "Sesi Anda melewati Tailscale: memutuskan koneksi akan memutus Anda."
+
+#, python-brace-format
+msgid ""
+"Transfert IP désactivé ({keys}) : le nœud de sortie et les sous-réseaux "
+"annoncés ne transmettront rien. « Activer le transfert IP » écrit un fichier"
+" à part ({path}), gardé au redémarrage."
+msgstr ""
+"Penerusan IP nonaktif ({keys}): simpul keluar dan subnet yang diumumkan "
+"tidak akan meneruskan apa pun. « Aktifkan penerusan IP » menulis berkas "
+"terpisah ({path}), tetap ada setelah boot ulang."
+
+msgid ""
+"Compte inconnu ou root : tapez le nom du compte Linux à rendre opérateur."
+msgstr ""
+"Akun tidak dikenal atau root: ketik nama akun Linux yang akan dijadikan "
+"operator."
+
+#, python-brace-format
+msgid "{name} : {reason}"
+msgstr "{name}: {reason}"
+
+#, python-brace-format
+msgid "{label} : {before} → {after}"
+msgstr "{label}: {before} → {after}"
+
+msgid "Aucun changement."
+msgstr "Tidak ada perubahan."
+
+msgid "Commande :"
+msgstr "Perintah:"
+
+#, python-brace-format
+msgid "Transfert IP désactivé ({keys}) : « Activer le transfert IP » aussi."
+msgstr "Penerusan IP nonaktif ({keys}): « Aktifkan penerusan IP » juga."
+
+#, python-brace-format
+msgid ""
+"Votre session passe par Tailscale ; ces changements peuvent la couper : "
+"{names}."
+msgstr ""
+"Sesi Anda melewati Tailscale; perubahan ini dapat memutusnya: {names}."
+
+#, python-brace-format
+msgid "Dernière application ({time}) : la commande a échoué (code {code})."
+msgstr "Penerapan terakhir ({time}): perintah gagal (kode {code})."
+
+#, python-brace-format
+msgid "Dernière application ({time}) :"
+msgstr "Penerapan terakhir ({time}):"
+
+#, python-brace-format
+msgid "{label} : {after}"
+msgstr "{label}: {after}"
+
+#, python-brace-format
+msgid "{label} : {after} demandé, {now} lu"
+msgstr "{label}: {after} diminta, {now} terbaca"
+
+msgid "À appliquer :"
+msgstr "Untuk diterapkan:"
+
+msgid "Valeur refusée : corrigez la ligne marquée ✖."
+msgstr "Nilai ditolak: perbaiki baris yang bertanda ✖."
+
+msgid "APPLIQUER LES RÉGLAGES ?"
+msgstr "TERAPKAN PENGATURAN?"
+
+msgid ""
+"Votre session passe par Tailscale : elle sera COUPÉE et ne reviendra pas. Il"
+" faudra un accès local (ou un autre chemin) pour vous reconnecter."
+msgstr ""
+"Sesi Anda melewati Tailscale: sesi akan TERPUTUS dan tidak akan kembali. "
+"Anda memerlukan akses lokal (atau jalur lain) untuk terhubung kembali."
+
+msgid "Ce qui est publié (Serve et Funnel) ne sera plus joignable."
+msgstr ""
+"Apa yang dipublikasikan (Serve dan Funnel) tidak akan dapat dijangkau lagi."
+
+msgid "ACTIVER LE TRANSFERT IP ?"
+msgstr "AKTIFKAN PENERUSAN IP?"
+
+#, python-brace-format
+msgid ""
+"Le noyau fera suivre les paquets (IPv4 et IPv6) : nécessaire pour un nœud de"
+" sortie ou des sous-réseaux annoncés. Fichier à part {path}, relu au "
+"démarrage (systemd, OpenRC, runit) ; pour annuler : supprimer ce fichier "
+"puis redémarrer."
+msgstr ""
+"Kernel akan meneruskan paket (IPv4 dan IPv6): diperlukan untuk simpul keluar"
+" atau subnet yang diumumkan. Berkas terpisah {path}, dibaca ulang saat boot "
+"(systemd, OpenRC, runit); untuk membatalkan: hapus berkas ini lalu mulai "
+"ulang."
+
+msgid "SE CONNECTER ?"
+msgstr "HUBUNGKAN?"
+
+msgid ""
+"Remet cette machine dans le tailnet. Si un compte doit s'identifier, "
+"Tailscale affiche dans le terminal l'adresse à ouvrir dans un navigateur."
+msgstr ""
+"Mengembalikan mesin ini ke tailnet. Jika sebuah akun perlu masuk, Tailscale "
+"menampilkan di terminal alamat yang harus dibuka di peramban."
+
+msgid "SE DÉCONNECTER ?"
+msgstr "PUTUSKAN?"
+
+msgid ""
+"La machine quitte le tailnet (le compte reste enregistré : « Se connecter » "
+"la remet)."
+msgstr ""
+"Mesin keluar dari tailnet (akun tetap tersimpan: « Hubungkan » "
+"mengembalikannya)."
+
+msgid "AJOUTER UN COMPTE ?"
+msgstr "TAMBAH AKUN?"
+
+msgid ""
+"Connecte un autre compte (ou un autre tailnet) sur cette machine ; il "
+"devient le compte en cours. Tailscale affiche l'adresse à ouvrir pour vous "
+"identifier. L'ancien compte reste dans « Changer de compte »."
+msgstr ""
+"Menghubungkan akun lain (atau tailnet lain) di mesin ini; akun itu menjadi "
+"akun saat ini. Tailscale menampilkan alamat yang harus dibuka untuk masuk. "
+"Akun lama tetap ada di « Ganti akun »."
+
+msgid "Choisissez un autre compte que le compte en cours."
+msgstr "Pilih akun selain akun saat ini."
+
+msgid "CHANGER DE COMPTE ?"
+msgstr "GANTI AKUN?"
+
+#, python-brace-format
+msgid ""
+"La machine passe sur le compte {account} (tailnet {tailnet}). Son adresse et"
+" ce qu'elle voit du tailnet changent."
+msgstr ""
+"Mesin beralih ke akun {account} (tailnet {tailnet}). Alamatnya dan apa yang "
+"dilihatnya dari tailnet akan berubah."
+
+#, python-brace-format
+msgid ""
+"La machine est retirée du compte : sa clé est révoquée, il faudra s'identifier à nouveau (et peut-être la réapprouver) pour la remettre dans le tailnet.\n"
+"\n"
+"Commande : {command}"
+msgstr ""
+"Mesin dicabut dari akun: kuncinya dicabut, Anda harus masuk lagi (dan mungkin menyetujuinya lagi) untuk mengembalikannya ke tailnet.\n"
+"\n"
+"Perintah: {command}"
+
+#, python-brace-format
+msgid "Pour confirmer, tapez le nom de la machine : {word}"
+msgstr "Untuk konfirmasi, ketik nama mesin: {word}"
+
+msgid "DÉCONNEXION DÉFINITIVE ?"
+msgstr "LOGOUT PERMANEN?"
+
+msgid "Déconnecter"
+msgstr "Putuskan"
+
+msgid "bouton « Devenir opérateur »"
+msgstr "tombol « Jadi operator »"
+
+#, python-brace-format
+msgid "lot {lot}"
+msgstr "tahap {lot}"
+
+msgid "Tailscale"
+msgstr "Tailscale"
+
+msgid "n'est pas installé"
+msgstr "belum terpasang"
+
+#, python-brace-format
+msgid "ne répond pas : {error}"
+msgstr "tidak merespons: {error}"
+
+msgid "tailscaled"
+msgstr "tailscaled"
+
+msgid "Client installé"
+msgstr "Klien terpasang"
+
+#, python-brace-format
+msgid "{daemon} en marche, {client} installé"
+msgstr "{daemon} berjalan, {client} terpasang"
+
+msgid "Version"
+msgstr "Versi"
+
+msgid "Compte"
+msgstr "Akun"
+
+msgid "Appareils du tailnet"
+msgstr "Perangkat tailnet"
+
+#, python-brace-format
+msgid "{online} en ligne sur {total}"
+msgstr "{online} daring dari {total}"
+
+msgid "Clé de la machine"
+msgstr "Kunci mesin"
+
+msgid "aucun (sudo requis)"
+msgstr "tidak ada (perlu sudo)"
+
+msgid "Nœud de sortie proposé"
+msgstr "Simpul keluar ditawarkan"
+
+msgid "Machine"
+msgstr "Mesin"
+
+#, python-brace-format
+msgid "{name} ({count} fils)"
+msgstr "{name} ({count} thread)"
+
+msgid "CPU machine"
+msgstr "CPU mesin"
+
+msgid "Charge"
+msgstr "Beban"
+
+msgid "Température"
+msgstr "Suhu"
+
+msgid "Mémoire"
+msgstr "Memori"
+
+#, python-brace-format
+msgid "{used} utilisés sur {total}"
+msgstr "{used} terpakai dari {total}"
+
+msgid "CPU tailscaled"
+msgstr "CPU tailscaled"
+
+#, python-brace-format
+msgid "{cpu} d'un cœur, {memory}"
+msgstr "{cpu} dari satu inti, {memory}"
+
+msgid "Confinement"
+msgstr "Pembatasan"
+
+msgid "Funnel"
+msgstr "Funnel"
+
+msgid "coupé par le disjoncteur"
+msgstr "diputus oleh pemutus sirkuit"
+
+#, python-brace-format
+msgid "ouvert sur {ports}"
+msgstr "terbuka di {ports}"
+
+msgid "sans porte"
+msgstr "tanpa gerbang"
+
+msgid "fermé"
+msgstr "tertutup"
+
+msgid "actif · MODE ATTAQUE"
+msgstr "aktif · MODE SERANGAN"
+
+msgid "Pare-feu (porte)"
+msgstr "Firewall (gerbang)"
+
+msgid "inactif"
+msgstr "nonaktif"
+
+#, python-brace-format
+msgid "{count} entrée(s)"
+msgstr "{count} entri"
+
+msgid "Veille"
+msgstr "Pengawasan"
+
+msgid "inactive"
+msgstr "nonaktif"
+
+msgid "arrêtée"
+msgstr "berhenti"
+
+#, python-brace-format
+msgid "active, palier {level}"
+msgstr "aktif, tingkat {level}"
+
+msgid "Bouclier WireGuard"
+msgstr "Perisai WireGuard"
+
+msgid "non posé"
+msgstr "belum dipasang"
+
+msgid "ABSENT (table effacée)"
+msgstr "TIDAK ADA (tabel dihapus)"
+
+msgid "état non mis à jour"
+msgstr "status tidak diperbarui"
+
+#, python-brace-format
+msgid "posé, mode {mode}"
+msgstr "terpasang, mode {mode}"
+
+msgid "TABLEAU DE BORD"
+msgstr "DASBOR"
+
+msgid "Corriger"
+msgstr "Perbaiki"
+
+msgid "Alerte"
+msgstr "Peringatan"
+
+msgid "Où corriger"
+msgstr "Diperbaiki di"
+
+#, python-brace-format
+msgid "Lu à {time} · relu toutes les 5 s"
+msgstr "Dibaca {time} · dibaca ulang tiap 5 dtk"
+
+msgid "Choisissez une alerte puis « Corriger » (ou Entrée)."
+msgstr "Pilih sebuah peringatan lalu « Perbaiki » (atau Enter)."
+
+msgid "Aucune alerte choisie."
+msgstr "Tidak ada peringatan yang dipilih."
+
+msgid "Rien à ouvrir pour cette alerte : elle vient de Tailscale lui-même."
+msgstr ""
+"Tidak ada yang perlu dibuka untuk peringatan ini: peringatan berasal dari "
+"Tailscale sendiri."
+
+#, python-brace-format
+msgid "Fichier trop volumineux pour être lu ici : {path}"
+msgstr "Berkas terlalu besar untuk dibaca di sini: {path}"
+
+#, python-brace-format
+msgid "Lecture impossible : {error}"
+msgstr "Tidak dapat dibaca: {error}"
+
+msgid "EXPORTS"
+msgstr "EKSPOR"
+
+msgid ""
+"Pas de navigateur dans cette session (serveur, connexion SSH) : les exports "
+"sont listés et lus ici. Choisissez une ligne (Entrée) pour la lire."
+msgstr ""
+"Tidak ada peramban di sesi ini (server, koneksi SSH): ekspor dicantumkan dan"
+" dibaca di sini. Pilih satu baris (Enter) untuk membacanya."
+
+msgid "Lire"
+msgstr "Baca"
+
+msgid "Taille"
+msgstr "Ukuran"
+
+msgid "Aucun export pour l'instant."
+msgstr "Belum ada ekspor."
+
+#, python-brace-format
+msgid "Dossier des exports ouvert dans le navigateur : {path}"
+msgstr "Folder ekspor dibuka di peramban: {path}"
+
+msgid "Connexions par adresse / 10 s"
+msgstr "Koneksi per alamat / 10 dtk"
+
+msgid "Par préfixe /24 ou /64 / 10 s"
+msgstr "Per prefiks /24 atau /64 / 10 dtk"
+
+msgid "Budget global (admises / s)"
+msgstr "Anggaran global (diizinkan / dtk)"
+
+msgid "Connexions simultanées"
+msgstr "Koneksi serentak"
+
+msgid "Durée de blocage (min)"
+msgstr "Durasi blokir (menit)"
+
+msgid "Mode attaque au-delà de (entrantes / s)"
+msgstr "Mode serangan di atas (masuk / dtk)"
+
+msgid "Retour au normal après (min de calme)"
+msgstr "Kembali normal setelah (menit tenang)"
+
+msgid "AS d'hébergeur / 10 s"
+msgstr "AS penyedia hosting / 10 dtk"
+
+msgid "Empreinte inconnue / 10 s"
+msgstr "Sidik jari tak dikenal / 10 dtk"
+
+msgid "Pays limité / 10 s"
+msgstr "Negara dibatasi / 10 dtk"
+
+msgid ""
+"HAProxy sans Lua : regroupements indisponibles (la porte du lot 4 protège "
+"seule)."
+msgstr ""
+"HAProxy tanpa Lua: pengelompokan tidak tersedia (gerbang tahap 4 melindungi "
+"sendiri)."
+
+msgid "Regroupements : appliqués (refusent en mode attaque)"
+msgstr "Pengelompokan: diterapkan (menolak dalam mode serangan)"
+
+msgid ""
+"Regroupements : en observation (comptent « aurait refusé », ne refusent "
+"rien)"
+msgstr ""
+"Pengelompokan: dalam pengamatan (menghitung « seharusnya ditolak », tidak "
+"menolak apa pun)"
+
+#, python-brace-format
+msgid "Mode : ATTAQUE — retour au normal après {seconds} s de calme"
+msgstr "Mode: SERANGAN — kembali normal setelah {seconds} dtk tenang"
+
+msgid "Mode : normal"
+msgstr "Mode: normal"
+
+#, python-brace-format
+msgid ""
+"Empreintes : apprentissage, encore {days} jour(s) ; les regroupements "
+"restent en observation jusqu'à la fin."
+msgstr ""
+"Sidik jari: pembelajaran, masih {days} hari; pengelompokan tetap dalam "
+"pengamatan sampai selesai."
+
+#, python-brace-format
+msgid ""
+"Empreintes habituelles : {count} (référence prête) ; « appliqués » est "
+"maintenant possible."
+msgstr ""
+"Sidik jari yang biasa: {count} (acuan siap); « diterapkan » kini dapat "
+"dipilih."
+
+msgid ""
+"Base AS / pays : absente (« Mettre à jour la base », ou la veille une fois "
+"par mois)"
+msgstr ""
+"Basis data AS / negara: tidak ada (« Perbarui basis data », atau pengawasan "
+"sebulan sekali)"
+
+#, python-brace-format
+msgid ""
+"Base AS / pays : à jour il y a {days} jour(s) ; renouvelée chaque mois par "
+"la veille"
+msgstr ""
+"Basis data AS / negara: diperbarui {days} hari lalu; diperbarui setiap bulan"
+" oleh pengawasan"
+
+msgid ""
+"Navigateurs courants (Chrome, Edge, Firefox) jamais limités par ces règles."
+msgstr ""
+"Peramban umum (Chrome, Edge, Firefox) tidak pernah dibatasi oleh aturan ini."
+
+msgid ""
+"Une porte (HAProxy) se place entre Funnel et votre site : elle voit "
+"l'adresse réelle de chaque visiteur et refuse les abus AVANT tout "
+"chiffrement (4,6 fois moins de calcul par connexion refusée, mesuré). "
+"Activation et désactivation avec retour arrière automatique."
+msgstr ""
+"Sebuah gerbang (HAProxy) ditempatkan di antara Funnel dan situs Anda: "
+"gerbang melihat alamat asli setiap pengunjung dan menolak penyalahgunaan "
+"SEBELUM enkripsi apa pun (4,6 kali lebih sedikit komputasi per koneksi yang "
+"ditolak, terukur). Aktivasi dan nonaktivasi dengan pengembalian otomatis."
+
+msgid "Installer HAProxy"
+msgstr "Pasang HAProxy"
+
+msgid "Activer la protection"
+msgstr "Aktifkan perlindungan"
+
+msgid "Désactiver la protection"
+msgstr "Nonaktifkan perlindungan"
+
+msgid "Renouveler le certificat"
+msgstr "Perbarui sertifikat"
+
+msgid "RÈGLES (appliquées à chaud)"
+msgstr "ATURAN (diterapkan langsung)"
+
+msgid "Mode"
+msgstr "Mode"
+
+msgid "normal : refuse"
+msgstr "normal: menolak"
+
+msgid "observation : compte sans refuser"
+msgstr "pengamatan: menghitung tanpa menolak"
+
+msgid "Vérifier le nom visé"
+msgstr "Periksa nama tujuan"
+
+msgid "nombre"
+msgstr "angka"
+
+msgid "Appliquer les règles"
+msgstr "Terapkan aturan"
+
+msgid "LISTES"
+msgstr "DAFTAR"
+
+msgid "Adresse ou réseau (203.0.113.7, 198.51.100.0/24, 2001:db8::/48)"
+msgstr "Alamat atau jaringan (203.0.113.7, 198.51.100.0/24, 2001:db8::/48)"
+
+msgid "Mettre en confiance"
+msgstr "Jadikan tepercaya"
+
+msgid "REGROUPEMENTS : EMPREINTES, AS, PAYS"
+msgstr "PENGELOMPOKAN: SIDIK JARI, AS, NEGARA"
+
+msgid ""
+"Contre les attaques à adresses dispersées : chaque connexion reçoit, avant "
+"tout chiffrement, son empreinte (JA4), son AS et son pays. Quand les "
+"connexions entrantes dépassent le seuil, la porte passe seule en MODE "
+"ATTAQUE : une empreinte inconnue qui explose, un AS d'hébergeur ou un pays "
+"choisi qui dépasse son débit est alors refusé. Les navigateurs courants ne "
+"sont jamais touchés ; les clients connus passent avant le budget. En "
+"observation, tout est compté (« aurait refusé ») et rien n'est refusé."
+msgstr ""
+"Melawan serangan dengan alamat yang tersebar: setiap koneksi menerima, "
+"sebelum enkripsi apa pun, sidik jarinya (JA4), AS-nya, dan negaranya. Ketika"
+" koneksi masuk melampaui ambang, gerbang beralih sendiri ke MODE SERANGAN: "
+"sidik jari tidak dikenal yang melonjak, AS penyedia hosting, atau negara "
+"pilihan yang melampaui lajunya lalu ditolak. Peramban umum tidak pernah "
+"tersentuh; klien yang dikenal didahulukan sebelum anggaran. Dalam "
+"pengamatan, semuanya dihitung (« seharusnya ditolak ») dan tidak ada yang "
+"ditolak."
+
+msgid "Regroupements"
+msgstr "Pengelompokan"
+
+msgid "observation : comptent sans refuser"
+msgstr "pengamatan: menghitung tanpa menolak"
+
+msgid "appliqués : refusent en mode attaque (après l'apprentissage)"
+msgstr "diterapkan: menolak dalam mode serangan (setelah pembelajaran)"
+
+msgid "Clients connus avant le budget"
+msgstr "Klien dikenal sebelum anggaran"
+
+msgid "Pays limités en mode attaque"
+msgstr "Negara dibatasi dalam mode serangan"
+
+msgid "ex. CN, RU (vide : aucun)"
+msgstr "mis. CN, RU (kosong: tidak ada)"
+
+msgid "AS d'hébergeurs"
+msgstr "AS penyedia hosting"
+
+msgid "ex. 16509 24940 (numéros d'AS)"
+msgstr "mis. 16509 24940 (nomor AS)"
+
+msgid "Appliquer les regroupements"
+msgstr "Terapkan pengelompokan"
+
+msgid "Mettre à jour la base"
+msgstr "Perbarui basis data"
+
+msgid "Recommencer l'apprentissage"
+msgstr "Mulai ulang pembelajaran"
+
+#, python-brace-format
+msgid ""
+"Confiance (jamais limitées) : {trusted}\n"
+"Liste noire (refusées jusqu'à leur retrait) : {black}"
+msgstr ""
+"Tepercaya (tidak pernah dibatasi): {trusted}\n"
+"Daftar hitam (ditolak sampai dicabut): {black}"
+
+msgid ""
+"Téléchargement et préparation de la base AS / pays (DB-IP Lite) : une à "
+"quelques minutes, l'écran reste utilisable…"
+msgstr ""
+"Mengunduh dan menyiapkan basis data AS / negara (DB-IP Lite): satu hingga "
+"beberapa menit, layar tetap dapat digunakan…"
+
+msgid ""
+"Chaque menu, sa fonction et le détail. Cliquez sur un titre pour l'ouvrir."
+msgstr ""
+"Setiap menu, fungsinya, dan detailnya. Klik sebuah judul untuk membukanya."
+
+msgid "Exporter l'aide en HTML"
+msgstr "Ekspor bantuan ke HTML"
+
+#, python-brace-format
+msgid "Aide exportée : {path}"
+msgstr "Bantuan diekspor: {path}"
+
+#, python-brace-format
+msgid "Cet écran arrive dans une prochaine version (lot {lot})."
+msgstr "Layar ini hadir di versi berikutnya (tahap {lot})."
+
+msgid "Cet écran n'est pas disponible dans cette session."
+msgstr "Layar ini tidak tersedia dalam sesi ini."
+
+msgid "JOURNAUX"
+msgstr "LOG"
+
+msgid "porte (pare-feu)"
+msgstr "gerbang (firewall)"
+
+#, python-brace-format
+msgid "{count} lignes"
+msgstr "{count} baris"
+
+msgid "Filtrer (texte, adresse…)"
+msgstr "Saring (teks, alamat…)"
+
+msgid "Lecture du journal…"
+msgstr "Membaca log…"
+
+msgid "Aucune ligne lue."
+msgstr "Tidak ada baris yang terbaca."
+
+#, python-brace-format
+msgid "{shown} ligne(s) affichée(s) sur {total} lue(s)."
+msgstr "{shown} baris ditampilkan dari {total} yang terbaca."
+
+msgid "Rien à exporter."
+msgstr "Tidak ada yang perlu diekspor."
+
+#, python-brace-format
+msgid "Journal exporté : {path}"
+msgstr "Log diekspor: {path}"
+
+msgid "maintenant"
+msgstr "baru saja"
+
+#, python-brace-format
+msgid "il y a {count} min"
+msgstr "{count} mnt lalu"
+
+#, python-brace-format
+msgid "il y a {count} h"
+msgstr "{count} j lalu"
+
+#, python-brace-format
+msgid "il y a {count} j"
+msgstr "{count} hr lalu"
+
+msgid "direct"
+msgstr "langsung"
+
+msgid "relais"
+msgstr "relai"
+
+#, python-brace-format
+msgid "relais {code}"
+msgstr "relai {code}"
+
+msgid "sortie Internet"
+msgstr "keluar ke Internet"
+
+#, python-brace-format
+msgid "Diagnostic impossible : {error}"
+msgstr "Diagnostik tidak dapat dilakukan: {error}"
+
+msgid "Tailscale n'a rien répondu."
+msgstr "Tailscale tidak memberikan jawaban."
+
+#, python-brace-format
+msgid "oui, adresse publique {address}"
+msgstr "ya, alamat publik {address}"
+
+#, python-brace-format
+msgid "UDP : {value}"
+msgstr "UDP: {value}"
+
+msgid "non — tout passe par les relais de Tailscale (plus lent)"
+msgstr "tidak — semuanya melewati relai Tailscale (lebih lambat)"
+
+#, python-brace-format
+msgid "IPv4 : {value}"
+msgstr "IPv4: {value}"
+
+#, python-brace-format
+msgid "IPv6 : {value}"
+msgstr "IPv6: {value}"
+
+#, python-brace-format
+msgid "NAT : {value}"
+msgstr "NAT: {value}"
+
+msgid ""
+"difficile — le port change selon la destination, les relais seront plus "
+"fréquents"
+msgstr ""
+"sulit — port berubah tergantung tujuan, relai akan lebih sering dipakai"
+
+msgid "simple — les connexions directes se font facilement"
+msgstr "mudah — koneksi langsung terjadi dengan mudah"
+
+#, python-brace-format
+msgid "Ouverture de port par la box : {value}"
+msgstr "Pembukaan port oleh router: {value}"
+
+#, python-brace-format
+msgid "Relais le plus proche : {value}"
+msgstr "Relai terdekat: {value}"
+
+#, python-brace-format
+msgid "Latence des relais : {values}"
+msgstr "Latensi relai: {values}"
+
+msgid "Compteurs internes illisibles (Tailscale trop ancien ?)."
+msgstr "Penghitung internal tidak terbaca (Tailscale terlalu lama?)."
+
+msgid "Reçu"
+msgstr "Diterima"
+
+msgid "Envoyé"
+msgstr "Terkirim"
+
+#, python-brace-format
+msgid ""
+"{title} depuis le démarrage : direct {direct} · relais DERP {derp} · relais "
+"d'un pair {peer}"
+msgstr ""
+"{title} sejak dimulai: langsung {direct} · relai DERP {derp} · relai peer "
+"{peer}"
+
+#, python-brace-format
+msgid "Paquets jetés en sortie : {count}"
+msgstr "Paket dibuang saat keluar: {count}"
+
+#, python-brace-format
+msgid "Messages de santé : {count}"
+msgstr "Pesan kesehatan: {count}"
+
+msgid "RÉSEAU ET APPAREILS"
+msgstr "JARINGAN DAN PERANGKAT"
+
+msgid ""
+"Ce que voit Tailscale depuis cette machine : les appareils du tailnet, le "
+"chemin vers chacun (direct ou par un relais), et l'état du réseau. Lecture "
+"seule : rien n'est changé ici."
+msgstr ""
+"Apa yang dilihat Tailscale dari mesin ini: perangkat tailnet, jalur ke "
+"masing-masing (langsung atau melalui relai), dan status jaringan. Hanya "
+"baca: tidak ada yang diubah di sini."
+
+msgid "APPAREILS"
+msgstr "PERANGKAT"
+
+msgid "filtrer : nom, système, adresse"
+msgstr "saring: nama, sistem, alamat"
+
+msgid "Relais Funnel de Tailscale"
+msgstr "Relai Funnel Tailscale"
+
+msgid "Chemin"
+msgstr "Jalur"
+
+msgid "Vu"
+msgstr "Terlihat"
+
+msgid "nom ou adresse (vide : la ligne choisie)"
+msgstr "nama atau alamat (kosong: baris yang dipilih)"
+
+msgid "Ping Tailscale"
+msgstr "Ping Tailscale"
+
+msgid "Qui est-ce ?"
+msgstr "Siapa ini?"
+
+msgid "DIAGNOSTIC RÉSEAU"
+msgstr "DIAGNOSTIK JARINGAN"
+
+msgid ""
+"UDP, IPv4 / IPv6, type de NAT, ouverture de port par la box, relais le plus "
+"proche : ce qui décide si les connexions sont directes. Prend quelques "
+"secondes."
+msgstr ""
+"UDP, IPv4 / IPv6, jenis NAT, pembukaan port oleh router, relai terdekat: "
+"hal-hal yang menentukan apakah koneksi bersifat langsung. Memerlukan "
+"beberapa detik."
+
+msgid "Lancer le diagnostic"
+msgstr "Jalankan diagnostik"
+
+msgid "DIAGNOSTIC"
+msgstr "DIAGNOSTIK"
+
+msgid "VERROU DU TAILNET"
+msgstr "KUNCI TAILNET"
+
+msgid "COMPTEURS INTERNES"
+msgstr "PENGHITUNG INTERNAL"
+
+#, python-brace-format
+msgid "Illisible : {error}"
+msgstr "Tidak terbaca: {error}"
+
+#, python-brace-format
+msgid ""
+"{online} en ligne sur {total} appareil(s) ; {relays} relais Funnel de "
+"Tailscale (cochez pour les voir)."
+msgstr ""
+"{online} daring dari {total} perangkat; {relays} relai Funnel Tailscale "
+"(centang untuk melihatnya)."
+
+#, python-brace-format
+msgid "Appareils illisibles : {error}"
+msgstr "Perangkat tidak terbaca: {error}"
+
+msgid "Choisissez un appareil, ou tapez un nom ou une adresse."
+msgstr "Pilih sebuah perangkat, atau ketik nama atau alamat."
+
+#, python-brace-format
+msgid "PING {target}"
+msgstr "PING {target}"
+
+#, python-brace-format
+msgid "QUI EST-CE ? {target}"
+msgstr "SIAPA INI? {target}"
+
+msgid "Lecture…"
+msgstr "Membaca…"
+
+msgid "Ping en cours (3 essais au plus)…"
+msgstr "Ping sedang berjalan (maks. 3 percobaan)…"
+
+#, python-brace-format
+msgid "« {target} » n'est pas un nom ou une adresse valable."
+msgstr "« {target} » bukan nama atau alamat yang valid."
+
+msgid "Diagnostic en cours (quelques secondes)…"
+msgstr "Diagnostik sedang berjalan (beberapa detik)…"
+
+msgid "tailnet seul"
+msgstr "hanya tailnet"
+
+msgid "par la porte ✔"
+msgstr "melalui gerbang ✔"
+
+msgid "non protégé"
+msgstr "tidak dilindungi"
+
+#, python-brace-format
+msgid "depuis Internet (relais Funnel {via})"
+msgstr "dari Internet (relai Funnel {via})"
+
+#, python-brace-format
+msgid "par le tailnet ({via})"
+msgstr "melalui tailnet ({via})"
+
+#, python-brace-format
+msgid "{kind} {port}{path} {where} : {detail}"
+msgstr "{kind} {port}{path} {where}: {detail}"
+
+#, python-brace-format
+msgid "Temps : {ms:.0f} ms"
+msgstr "Waktu: {ms:.0f} ms"
+
+#, python-brace-format
+msgid "Certificat : {subject} · émis par {issuer} · échéance {expiry} · {tls}"
+msgstr ""
+"Sertifikat: {subject} · diterbitkan oleh {issuer} · berakhir {expiry} · "
+"{tls}"
+
+msgid ""
+"Le nom n'est pas encore publié pour Internet : juste après un ajout, Funnel "
+"met parfois une minute. Réessayez."
+msgstr ""
+"Nama belum dipublikasikan untuk Internet: tepat setelah penambahan, Funnel "
+"kadang memerlukan satu menit. Coba lagi."
+
+msgid ""
+"Un essai par le tailnet depuis la machine elle-même peut échouer selon le "
+"système : essayez aussi depuis un autre appareil."
+msgstr ""
+"Uji melalui tailnet dari mesin itu sendiri dapat gagal tergantung sistem: "
+"coba juga dari perangkat lain."
+
+msgid ""
+"Ce que cette machine publie : pour le tailnet seul (Serve) ou pour Internet "
+"(Funnel). Chaque changement est vérifié, et l'état d'avant est sauvegardé "
+"(restaurable en un bouton)."
+msgstr ""
+"Apa yang dipublikasikan mesin ini: hanya untuk tailnet (Serve) atau untuk "
+"Internet (Funnel). Setiap perubahan diperiksa, dan status sebelumnya "
+"dicadangkan (dapat dipulihkan dengan satu tombol)."
+
+msgid "Essai de bout en bout"
+msgstr "Uji ujung ke ujung"
+
+msgid "Retirer"
+msgstr "Cabut"
+
+msgid "Suspendre Funnel"
+msgstr "Tangguhkan Funnel"
+
+msgid "Rétablir Funnel"
+msgstr "Pulihkan Funnel"
+
+msgid "AJOUTER"
+msgstr "TAMBAH"
+
+msgid ""
+"Pour Internet, le plus sûr : HTTPS sur le port 443, puis « Activer la "
+"protection » (Pare-feu Funnel) pour que la porte filtre avant tout "
+"chiffrement."
+msgstr ""
+"Untuk Internet, yang paling aman: HTTPS di port 443, lalu « Aktifkan "
+"perlindungan » (Firewall Funnel) agar gerbang menyaring sebelum enkripsi apa"
+" pun."
+
+msgid "Service local"
+msgstr "Layanan lokal"
+
+msgid "8080 ou http://127.0.0.1:8080"
+msgstr "8080 atau http://127.0.0.1:8080"
+
+msgid "Pour"
+msgstr "Untuk"
+
+msgid "le tailnet seul (Serve)"
+msgstr "hanya tailnet (Serve)"
+
+msgid "Port (Funnel : 443, 8443, 10000)"
+msgstr "Port (Funnel: 443, 8443, 10000)"
+
+msgid "Chemin (HTTPS / HTTP)"
+msgstr "Jalur (HTTPS / HTTP)"
+
+msgid "Publier"
+msgstr "Publikasikan"
+
+msgid "SAUVEGARDES"
+msgstr "CADANGAN"
+
+msgid ""
+"L'état d'avant chaque changement (publication, pare-feu, disjoncteur) ; les "
+"50 plus récentes sont gardées dans var/funnel/sauvegardes/."
+msgstr ""
+"Status sebelum setiap perubahan (publikasi, firewall, pemutus sirkuit); 50 "
+"yang terbaru disimpan di var/funnel/sauvegardes/."
+
+msgid "Aucune sauvegarde"
+msgstr "Tidak ada cadangan"
+
+msgid "Restaurer"
+msgstr "Pulihkan"
+
+#, python-brace-format
+msgid "Publication illisible : {error}"
+msgstr "Publikasi tidak terbaca: {error}"
+
+msgid "Internet"
+msgstr "Internet"
+
+msgid "tailnet"
+msgstr "tailnet"
+
+msgid "Rien n'est publié. « Publier » ci-dessous pour commencer."
+msgstr ""
+"Tidak ada yang dipublikasikan. « Publikasikan » di bawah untuk memulai."
+
+msgid ""
+"Pour changer la publication, devenez opérateur de Tailscale (tableau de "
+"bord)."
+msgstr "Untuk mengubah publikasi, jadilah operator Tailscale (dasbor)."
+
+msgid "Essai en cours…"
+msgstr "Uji sedang berjalan…"
+
+#, python-brace-format
+msgid ""
+"Retire {kind} {port}{path} → {target} ({who}). L'état d'avant est sauvegardé.\n"
+"\n"
+"Commande : {command}"
+msgstr ""
+"Mencabut {kind} {port}{path} → {target} ({who}). Status sebelumnya dicadangkan.\n"
+"\n"
+"Perintah: {command}"
+
+msgid "RETIRER CETTE PUBLICATION ?"
+msgstr "CABUT PUBLIKASI INI?"
+
+#, python-brace-format
+msgid ""
+"Le service {target} sera joignable depuis Internet (Funnel, port {port}). "
+"Pensez ensuite à « Activer la protection » (Pare-feu Funnel)."
+msgstr ""
+"Layanan {target} akan dapat dijangkau dari Internet (Funnel, port {port}). "
+"Setelah itu, jangan lupa « Aktifkan perlindungan » (Firewall Funnel)."
+
+msgid "PUBLIER SUR INTERNET ?"
+msgstr "PUBLIKASIKAN KE INTERNET?"
+
+msgid "Choisissez une sauvegarde."
+msgstr "Pilih sebuah cadangan."
+
+#, python-brace-format
+msgid ""
+"La publication redevient celle du {when} ({origin}) : {summary}.\n"
+"L'état actuel est sauvegardé d'abord ; tout est vérifié, et remis comme avant en cas d'échec."
+msgstr ""
+"Publikasi kembali menjadi seperti pada {when} ({origin}): {summary}.\n"
+"Status saat ini dicadangkan terlebih dahulu; semuanya diperiksa, dan dikembalikan seperti semula jika gagal."
+
+msgid "RESTAURER CETTE SAUVEGARDE ?"
+msgstr "PULIHKAN CADANGAN INI?"
+
+msgid "QUITTER OMEGA-TAIL ?"
+msgstr "KELUAR DARI OMEGA-TAIL?"
+
+msgid "RAPPORT"
+msgstr "LAPORAN"
+
+msgid ""
+"Tout ce qu'omega-tail sait de cette machine, en faits : Tailscale, "
+"publication, machine, pare-feu, survie, alertes, et les attaques des 7 "
+"derniers jours (journal de la porte). Enregistré dans le dossier des exports"
+" ; « Voir les exports » les ouvre pour les lire."
+msgstr ""
+"Semua yang diketahui omega-tail tentang mesin ini, berupa fakta: Tailscale, "
+"publikasi, mesin, firewall, ketahanan, peringatan, dan serangan 7 hari "
+"terakhir (log gerbang). Disimpan di folder ekspor; « Lihat ekspor » "
+"membukanya untuk dibaca."
+
+msgid ""
+"Inclure le compte Tailscale et les appareils du tailnet (noms, adresses)"
+msgstr "Sertakan akun Tailscale dan perangkat tailnet (nama, alamat)"
+
+msgid ""
+"Sans cette case, seul leur nombre figure : le rapport peut être envoyé à "
+"quelqu'un sans dévoiler votre tailnet. Les adresses des attaquants y restent"
+" toujours."
+msgstr ""
+"Tanpa kotak ini, hanya jumlahnya yang dicantumkan: laporan dapat dikirim ke "
+"orang lain tanpa membuka tailnet Anda. Alamat penyerang selalu tetap "
+"dicantumkan."
+
+msgid "APERÇU"
+msgstr "PRATINJAU"
+
+msgid "Actualiser"
+msgstr "Segarkan"
+
+msgid ""
+"Rapport en préparation (journal de la porte des 7 derniers jours compris)…"
+msgstr "Menyiapkan laporan (termasuk log gerbang 7 hari terakhir)…"
+
+#, python-brace-format
+msgid "Erreur : {message}"
+msgstr "Kesalahan: {message}"
+
+#, python-brace-format
+msgid "Rapport prêt ({time})."
+msgstr "Laporan siap ({time})."
+
+msgid "ARRÊTER TAILSCALED ?"
+msgstr "HENTIKAN TAILSCALED?"
+
+msgid "DÉMARRER TAILSCALED ?"
+msgstr "MULAI TAILSCALED?"
+
+msgid "REDÉMARRER TAILSCALED ?"
+msgstr "MULAI ULANG TAILSCALED?"
+
+msgid ""
+"Tailscale se reconnecte au tailnet ; les publications (Serve, Funnel) "
+"reprennent."
+msgstr ""
+"Tailscale terhubung kembali ke tailnet; publikasi (Serve, Funnel) berjalan "
+"lagi."
+
+msgid ""
+"Tailscale est coupé : plus d'accès par le tailnet, publications (Serve, "
+"Funnel) interrompues jusqu'au prochain démarrage."
+msgstr ""
+"Tailscale dimatikan: tidak ada lagi akses melalui tailnet, publikasi (Serve,"
+" Funnel) terhenti sampai dimulai lagi."
+
+msgid ""
+"Coupure de quelques secondes : le tailnet et les publications (Serve, "
+"Funnel) reviennent d'eux-mêmes. Applique une mise à jour déjà installée."
+msgstr ""
+"Terputus beberapa detik: tailnet dan publikasi (Serve, Funnel) kembali "
+"dengan sendirinya. Menerapkan pembaruan yang sudah terpasang."
+
+msgid "systemd ne connaît pas le service tailscaled sur cette machine."
+msgstr "systemd tidak mengenal layanan tailscaled di mesin ini."
+
+#, python-brace-format
+msgid "Depuis : {since}"
+msgstr "Sejak: {since}"
+
+#, python-brace-format
+msgid "Processus : {pid} · mémoire {memory}"
+msgstr "Proses: {pid} · memori {memory}"
+
+#, python-brace-format
+msgid "Version en marche : {version}"
+msgstr "Versi yang berjalan: {version}"
+
+msgid ""
+"→ La mise à jour est installée mais pas appliquée : « Redémarrer » "
+"l'applique."
+msgstr ""
+"→ Pembaruan sudah terpasang tetapi belum diterapkan: « Mulai ulang » "
+"menerapkannya."
+
+#, python-brace-format
+msgid "Système d'init : {init} · service « {name} »"
+msgstr "Sistem init: {init} · layanan « {name} »"
+
+#, python-brace-format
+msgid "Lancement : {command}"
+msgstr "Peluncuran: {command}"
+
+#, python-brace-format
+msgid "Fichier du service : {path}"
+msgstr "Berkas layanan: {path}"
+
+msgid "Fichiers d'ajout (lus, jamais modifiés par omega-tail) :"
+msgstr "Berkas tambahan (dibaca, tidak pernah diubah oleh omega-tail):"
+
+msgid "Fichiers d'ajout : aucun."
+msgstr "Berkas tambahan: tidak ada."
+
+msgid ""
+"⚠ Le démarrage lance « tailscale up » : si un réglage change (opérateur, "
+"nom, routes…), Tailscale le refusera et tailscaled ne redémarrera plus. « "
+"Corriger le démarrage » ajoute « - » devant la commande (son refus n'arrête "
+"plus le service)."
+msgstr ""
+"⚠ Saat dimulai, layanan menjalankan « tailscale up »: jika sebuah pengaturan"
+" berubah (operator, nama, rute…), Tailscale akan menolaknya dan tailscaled "
+"tidak akan mau mulai lagi. « Perbaiki proses mulai » menambahkan « - » di "
+"depan perintah (penolakannya tidak lagi menghentikan layanan)."
+
+#, python-brace-format
+msgid "Confinement : {state}"
+msgstr "Pembatasan: {state}"
+
+#, python-brace-format
+msgid ""
+"  plafond CPU {quota} · poids {weight} · cœurs {cpus} · priorité {nice}"
+msgstr "  batas CPU {quota} · bobot {weight} · inti {cpus} · prioritas {nice}"
+
+msgid "tous"
+msgstr "semua"
+
+msgid ""
+"  ⚠ Confinement perdu au redémarrage de tailscaled : « Survie » → « "
+"Appliquer le confinement »."
+msgstr ""
+"  ⚠ Pembatasan hilang saat tailscaled dimulai ulang: « Ketahanan » → « "
+"Terapkan pembatasan »."
+
+msgid "  Le confinement se règle dans « Survie »."
+msgstr "  Pembatasan diatur di « Ketahanan »."
+
+msgid "⚠ Cette session passe par Tailscale : arrêter tailscaled la couperait."
+msgstr ""
+"⚠ Sesi ini melewati Tailscale: menghentikan tailscaled akan memutusnya."
+
+msgid "SERVICE TAILSCALED"
+msgstr "LAYANAN TAILSCALED"
+
+msgid ""
+"Chaque action montre sa commande avant d'être lancée ; le mot de passe sudo "
+"se saisit dans le terminal."
+msgstr ""
+"Setiap tindakan menampilkan perintahnya sebelum dijalankan; kata sandi sudo "
+"diketik di terminal."
+
+msgid "Démarrer"
+msgstr "Mulai"
+
+msgid "Corriger le démarrage"
+msgstr "Perbaiki proses mulai"
+
+msgid "VOUS ALLEZ PERDRE CETTE SESSION"
+msgstr "ANDA AKAN KEHILANGAN SESI INI"
+
+msgid ""
+"Dernière confirmation : tailscaled sera arrêté et cette session coupée. Vous"
+" devrez le relancer depuis le réseau local ou la machine elle-même."
+msgstr ""
+"Konfirmasi terakhir: tailscaled akan dihentikan dan sesi ini diputus. Anda "
+"harus menjalankannya kembali dari jaringan lokal atau dari mesin itu "
+"sendiri."
+
+msgid "Arrêter quand même"
+msgstr "Tetap hentikan"
+
+msgid "Enregistrés dans var/settings.json, appliqués tout de suite."
+msgstr "Disimpan di var/settings.json, langsung diterapkan."
+
+msgid "Thème de l'interface"
+msgstr "Tema antarmuka"
+
+msgid "Thème des exports (rapport HTML, aide exportée)"
+msgstr "Tema ekspor (laporan HTML, bantuan yang diekspor)"
+
+msgid "Dossier des exports"
+msgstr "Folder ekspor"
+
+#, python-brace-format
+msgid "Par défaut : {path}. Laissez vide pour revenir au dossier par défaut."
+msgstr "Bawaan: {path}. Kosongkan untuk kembali ke folder bawaan."
+
+msgid "Dossier des captures d'écran"
+msgstr "Folder tangkapan layar"
+
+#, python-brace-format
+msgid "Par défaut : {path}. Capture : Ctrl+P → « Capture d'écran »."
+msgstr "Bawaan: {path}. Tangkapan: Ctrl+P → “Tangkapan layar”."
+
+msgid "Enregistrer les dossiers"
+msgstr "Simpan folder"
+
+msgid "Maintenance des dossiers"
+msgstr "Pemeliharaan folder"
+
+msgid ""
+"Supprime définitivement le contenu du dossier configuré ; le dossier reste."
+msgstr ""
+"Menghapus permanen isi folder yang dikonfigurasi; foldernya tetap ada."
+
+msgid "Vider le dossier des exports"
+msgstr "Kosongkan folder ekspor"
+
+msgid "Vider le dossier des captures"
+msgstr "Kosongkan folder tangkapan layar"
+
+msgid "des exports"
+msgstr "ekspor"
+
+msgid "des captures"
+msgstr "tangkapan layar"
+
+#, python-brace-format
+msgid "Chemin à donner en entier (commençant par / ou ~) : {path}"
+msgstr "Jalur harus ditulis lengkap (diawali / atau ~): {path}"
+
+#, python-brace-format
+msgid "Dossiers enregistrés : {paths}"
+msgstr "Folder disimpan: {paths}"
+
+#, python-brace-format
+msgid "VIDER LE DOSSIER {label} ?"
+msgstr "KOSONGKAN FOLDER {label}?"
+
+#, python-brace-format
+msgid ""
+"Supprime définitivement tout le contenu de {directory}. Le dossier reste."
+msgstr "Menghapus permanen seluruh isi {directory}. Foldernya tetap ada."
+
+#, python-brace-format
+msgid "Refusé — {path} : {reason}"
+msgstr "Ditolak — {path}: {reason}"
+
+#, python-brace-format
+msgid "{count} élément(s) supprimé(s) dans {path}."
+msgstr "{count} item dihapus di {path}."
+
+#, python-brace-format
+msgid "Non supprimés : {items}"
+msgstr "Tidak terhapus: {items}"
+
+msgid "Pairs connus"
+msgstr "Peer yang dikenal"
+
+msgid "Poignées de main"
+msgstr "Jabat tangan"
+
+msgid "Poignées de main en excès (par source)"
+msgstr "Jabat tangan berlebih (per sumber)"
+
+msgid "Sources inconnues, paquets bien formés"
+msgstr "Sumber tak dikenal, paket valid"
+
+msgid "Sources inconnues en excès (par source)"
+msgstr "Sumber tak dikenal berlebih (per sumber)"
+
+msgid "Excès de l'ensemble des sources inconnues"
+msgstr "Kelebihan seluruh sumber tak dikenal"
+
+msgid "Paquets qui ne sont pas du WireGuard"
+msgstr "Paket yang bukan WireGuard"
+
+msgid "Poser (observation)"
+msgstr "Pasang (pengamatan)"
+
+msgid "Passer en actif"
+msgstr "Beralih ke aktif"
+
+msgid "Reposer"
+msgstr "Pasang ulang"
+
+msgid "Confier à omega-fire"
+msgstr "Serahkan ke omega-fire"
+
+msgid "Reprendre la gestion"
+msgstr "Ambil alih pengelolaan"
+
+msgid "POSER LE BOUCLIER DU PORT WIREGUARD ?"
+msgstr "PASANG PERISAI PORT WIREGUARD?"
+
+msgid "CHANGER LE MODE DU BOUCLIER ?"
+msgstr "UBAH MODE PERISAI?"
+
+msgid "REPOSER LE BOUCLIER ?"
+msgstr "PASANG ULANG PERISAI?"
+
+msgid "CONFIER LE BOUCLIER À OMEGA-FIRE ?"
+msgstr "SERAHKAN PERISAI KE OMEGA-FIRE?"
+
+msgid "REPRENDRE LA GESTION DU BOUCLIER ?"
+msgstr "AMBIL ALIH PENGELOLAAN PERISAI?"
+
+msgid "RETIRER LE BOUCLIER ?"
+msgstr "LEPAS PERISAI?"
+
+msgid ""
+"Une table nftables devant tailscaled, en OBSERVATION : rien n'est refusé, "
+"les compteurs disent ce qui l'aurait été. Un service la remet en place à "
+"chaque démarrage."
+msgstr ""
+"Sebuah tabel nftables di depan tailscaled, dalam PENGAMATAN: tidak ada yang "
+"ditolak, penghitung menunjukkan apa yang seharusnya ditolak. Sebuah layanan "
+"memasangnya kembali di setiap boot."
+
+msgid ""
+"La table enregistrée est remise ; ses compteurs et la liste des pairs "
+"repartent de zéro."
+msgstr ""
+"Tabel yang tersimpan dipasang kembali; penghitung dan daftar peer dimulai "
+"dari nol."
+
+msgid ""
+"omega-fire gérera le bouclier (remise au démarrage, commandes, liste des "
+"règles). La table, ses compteurs et les pairs connus ne sont pas touchés."
+msgstr ""
+"omega-fire akan mengelola perisai (pemasangan saat boot, perintah, daftar "
+"aturan). Tabel, penghitungnya, dan peer yang dikenal tidak disentuh."
+
+msgid ""
+"omega-fire n'est plus relié : omega-tail gère de nouveau le bouclier. La "
+"table n'est pas touchée."
+msgstr ""
+"omega-fire tidak lagi terhubung: omega-tail kembali mengelola perisai. Tabel"
+" tidak disentuh."
+
+msgid ""
+"La table, ses fichiers et son service sont supprimés : tailscaled ne sera "
+"plus protégé contre les flots de paquets."
+msgstr ""
+"Tabel, berkas-berkasnya, dan layanannya dihapus: tailscaled tidak lagi "
+"terlindungi dari banjir paket."
+
+msgid ""
+"tailscaled tire son port au hasard (--port 0) : aucun bouclier possible. "
+"Fixez un port (PORT= dans /etc/default/tailscaled), puis redémarrez "
+"tailscaled."
+msgstr ""
+"tailscaled memilih port-nya secara acak (--port 0): perisai tidak mungkin "
+"dipasang. Tetapkan sebuah port (PORT= di /etc/default/tailscaled), lalu "
+"mulai ulang tailscaled."
+
+msgid "Aucune carte réseau matérielle trouvée : rien à protéger."
+msgstr ""
+"Tidak ditemukan kartu jaringan fisik: tidak ada yang perlu dilindungi."
+
+msgid "Port ou nom de carte réseau refusé."
+msgstr "Port atau nama kartu jaringan ditolak."
+
+msgid "Aucun bouclier enregistré sur cette machine."
+msgstr "Tidak ada perisai yang tersimpan di mesin ini."
+
+msgid ""
+"Le noyau a été mis à jour sans redémarrage : ses modules ne peuvent plus "
+"être chargés et la table serait refusée. Redémarrez la machine, puis "
+"recommencez."
+msgstr ""
+"Kernel diperbarui tanpa boot ulang: modulnya tidak dapat dimuat lagi dan "
+"tabel akan ditolak. Boot ulang mesin, lalu ulangi."
+
+#, python-brace-format
+msgid ""
+"Origine : {tool} (outil qui l'a demandé) · port {port}/udp · cartes réseau :"
+" {devices}"
+msgstr ""
+"Asal: {tool} (alat yang memintanya) · port {port}/udp · kartu jaringan: "
+"{devices}"
+
+#, python-brace-format
+msgid "Pairs connus : {count} (jamais limités)."
+msgstr "Peer yang dikenal: {count} (tidak pernah dibatasi)."
+
+#, python-brace-format
+msgid "Détecté : port de tailscaled {port}, cartes réseau {devices}."
+msgstr "Terdeteksi: port tailscaled {port}, kartu jaringan {devices}."
+
+msgid "au hasard"
+msgstr "acak"
+
+msgid ""
+"Noyau antérieur à 5.16 : sans liste des pairs, seuls le tri des paquets et "
+"la limite des poignées de main sont posés."
+msgstr ""
+"Kernel lebih lama dari 5.16: tanpa daftar peer, hanya pemilahan paket dan "
+"batas jabat tangan yang dipasang."
+
+#, python-brace-format
+msgid ""
+"omega-fire {version} relié : il pose et gère le bouclier ; sa liste des "
+"règles l'affiche avec l'origine omega-tail."
+msgstr ""
+"omega-fire {version} terhubung: omega-fire memasang dan mengelola perisai; "
+"daftar aturannya menampilkannya dengan asal omega-tail."
+
+#, python-brace-format
+msgid ""
+"omega-fire {version} relié, mais trop ancien pour le bouclier (il faut "
+"{needed} ou plus récent) : omega-tail le gère lui-même. Mettez omega-fire à "
+"jour."
+msgstr ""
+"omega-fire {version} terhubung, tetapi terlalu lama untuk perisai "
+"(diperlukan {needed} atau lebih baru): omega-tail mengelolanya sendiri. "
+"Perbarui omega-fire."
+
+msgid ""
+"omega-fire n'est pas relié par omega-connect : omega-tail pose et gère le "
+"bouclier lui-même, même si ufw ou firewalld sont présents."
+msgstr ""
+"omega-fire tidak terhubung melalui omega-connect: omega-tail memasang dan "
+"mengelola perisai sendiri, bahkan jika ufw atau firewalld ada."
+
+msgid ""
+"Géré par omega-fire, qui n'est plus relié : « Reprendre la gestion » le rend"
+" à omega-tail."
+msgstr ""
+"Dikelola oleh omega-fire, yang tidak lagi terhubung: « Ambil alih "
+"pengelolaan » mengembalikannya ke omega-tail."
+
+msgid ""
+"Noyau mis à jour sans redémarrage : la table ne peut pas être posée avant un"
+" redémarrage."
+msgstr ""
+"Kernel diperbarui tanpa boot ulang: tabel tidak dapat dipasang sebelum boot "
+"ulang."
+
+msgid ""
+"Système d'init inconnu : le bouclier ne sera pas remis en place au "
+"redémarrage."
+msgstr ""
+"Sistem init tidak dikenal: perisai tidak akan dipasang kembali saat boot "
+"ulang."
+
+msgid "BOUCLIER DU PORT WIREGUARD"
+msgstr "PERISAI PORT WIREGUARD"
+
+msgid ""
+"Devant tailscaled : poignées de main limitées par source, budget pour les "
+"sources qui ne sont pas des pairs connus, paquets qui ne sont pas du "
+"WireGuard refusés. Mesuré : un flot qui prenait un cœur entier à tailscaled "
+"n'en prend plus que 1 %. Commencez en observation."
+msgstr ""
+"Di depan tailscaled: jabat tangan dibatasi per sumber, anggaran untuk sumber"
+" yang bukan peer yang dikenal, paket yang bukan WireGuard ditolak. Hasil "
+"pengukuran: aliran yang memakan satu inti penuh tailscaled kini hanya "
+"memakan 1 %. Mulailah dalam pengamatan."
+
+msgid "COMPTEURS DEPUIS LA POSE"
+msgstr "PENGHITUNG SEJAK DIPASANG"
+
+msgid "Compteur"
+msgstr "Penghitung"
+
+msgid "Effet"
+msgstr "Efek"
+
+msgid "Paquets"
+msgstr "Paket"
+
+msgid "admis"
+msgstr "diizinkan"
+
+msgid "auraient été refusés"
+msgstr "seharusnya ditolak"
+
+msgid "refusés"
+msgstr "ditolak"
+
+msgid "Passer en observation"
+msgstr "Beralih ke pengamatan"
+
+#, python-brace-format
+msgid ""
+"En observation, {count} paquet(s) auraient été refusés : en actif, ils le "
+"seront. Les pairs connus ne sont jamais limités."
+msgstr ""
+"Dalam pengamatan, {count} paket seharusnya ditolak: dalam mode aktif, paket "
+"itu akan ditolak. Peer yang dikenal tidak pernah dibatasi."
+
+msgid ""
+"Plus rien n'est refusé ; les compteurs continuent de dire ce qui l'aurait "
+"été."
+msgstr ""
+"Tidak ada lagi yang ditolak; penghitung tetap menunjukkan apa yang "
+"seharusnya ditolak."
+
+#, python-brace-format
+msgid ""
+"Par omega-fire (il garde l'origine {tool} et l'inscrit à son journal "
+"d'audit)."
+msgstr ""
+"Oleh omega-fire (yang menyimpan asal {tool} dan mencatatnya di log "
+"auditnya)."
+
+msgid "systemd ne connaît pas tailscaled : confinement impossible ici."
+msgstr ""
+"systemd tidak mengenal tailscaled: pembatasan tidak mungkin dilakukan di "
+"sini."
+
+msgid "perdu (tailscaled a redémarré) : « Appliquer le confinement » le remet"
+msgstr ""
+"hilang (tailscaled dimulai ulang): « Terapkan pembatasan » memasangnya "
+"kembali"
+
+msgid "actif (groupe de contrôle d'omega-tail)"
+msgstr "aktif (grup kontrol omega-tail)"
+
+#, python-brace-format
+msgid "Confinement actuel : {state}"
+msgstr "Pembatasan saat ini: {state}"
+
+#, python-brace-format
+msgid "  plafond {quota} · poids {weight} · système d'init {init}"
+msgstr "  batas {quota} · bobot {weight} · sistem init {init}"
+
+msgid "actif, posé par omega-tail"
+msgstr "aktif, dipasang oleh omega-tail"
+
+msgid "posé par omega-tail, pas encore appliqué (rechargement ou redémarrage)"
+msgstr ""
+"dipasang oleh omega-tail, belum diterapkan (muat ulang atau mulai ulang)"
+
+msgid "actif, posé hors d'omega-tail"
+msgstr "aktif, dipasang di luar omega-tail"
+
+#, python-brace-format
+msgid "  plafond {quota} · poids {weight} · priorité {nice}"
+msgstr "  batas {quota} · bobot {weight} · prioritas {nice}"
+
+#, python-brace-format
+msgid "  Vos fichiers d'ajout (jamais modifiés) : {paths}"
+msgstr "  Berkas tambahan Anda (tidak pernah diubah): {paths}"
+
+#, python-brace-format
+msgid ""
+"Funnel COUPÉ par omega-tail depuis {since} (coupure totale) : « Rétablir "
+"maintenant » le remet à l'identique."
+msgstr ""
+"Funnel DIPUTUS oleh omega-tail sejak {since} (pemutusan total): « Pulihkan "
+"sekarang » mengembalikannya persis seperti semula."
+
+#, python-brace-format
+msgid ""
+"Funnel COUPÉ par omega-tail depuis {since}, remis en route automatiquement à"
+" {until}."
+msgstr ""
+"Funnel DIPUTUS oleh omega-tail sejak {since}, dihidupkan kembali secara "
+"otomatis pada {until}."
+
+#, python-brace-format
+msgid "Funnel ouvert : port {ports}."
+msgstr "Funnel terbuka: port {ports}."
+
+msgid "Funnel n'est pas ouvert : rien à couper."
+msgstr "Funnel tidak terbuka: tidak ada yang perlu diputus."
+
+msgid ""
+"Désactivée : sous attaque, omega-tail ouvert PROPOSE la coupure (il faut "
+"être devant la machine)."
+msgstr ""
+"Nonaktif: saat diserang, omega-tail yang terbuka MENAWARKAN pemutusan (Anda "
+"harus berada di depan mesin)."
+
+msgid ""
+"Activée mais arrêtée (aucun signe de vie) : « Activer la veille » la "
+"relance."
+msgstr ""
+"Aktif tetapi berhenti (tidak ada tanda hidup): « Aktifkan pengawasan » "
+"menjalankannya kembali."
+
+msgid ""
+"En marche, même omega-tail fermé : sous attaque, elle coupe Funnel seule et "
+"le remet seule."
+msgstr ""
+"Berjalan, bahkan saat omega-tail ditutup: saat diserang, pengawasan memutus "
+"Funnel sendiri dan menghidupkannya kembali sendiri."
+
+#, python-brace-format
+msgid ""
+"  Dépassements récents : {strikes}/{total} (fenêtre de {window} min) · "
+"prochaine coupure : {minutes} min"
+msgstr ""
+"  Pelampauan terbaru: {strikes}/{total} (jendela {window} menit) · pemutusan"
+" berikutnya: {minutes} menit"
+
+msgid ""
+"Garder la machine debout sous attaque. Chaque action montre ses commandes "
+"avant ; le mot de passe sudo se saisit dans le terminal."
+msgstr ""
+"Menjaga mesin tetap berdiri saat diserang. Setiap tindakan menampilkan "
+"perintahnya terlebih dahulu; kata sandi sudo diketik di terminal."
+
+msgid "CONFINEMENT DE TAILSCALED"
+msgstr "PEMBATASAN TAILSCALED"
+
+#, python-brace-format
+msgid "Proposé pour cette machine ({count} fils), dans {path} :"
+msgstr "Diusulkan untuk mesin ini ({count} thread), di {path}:"
+
+#, python-brace-format
+msgid ""
+"Proposé pour cette machine ({count} fils), dans un groupe de contrôle à part"
+" :"
+msgstr ""
+"Diusulkan untuk mesin ini ({count} thread), dalam grup kontrol terpisah:"
+
+#, python-brace-format
+msgid "Donner la priorité à l'accès SSH ({unit})"
+msgstr "Prioritaskan akses SSH ({unit})"
+
+msgid ""
+"Redémarrer tailscaled tout de suite (la priorité ne s'applique qu'au "
+"redémarrage ; coupure de quelques secondes)"
+msgstr ""
+"Mulai ulang tailscaled sekarang juga (prioritas hanya berlaku saat dimulai "
+"ulang; terputus beberapa detik)"
+
+msgid "Appliquer le confinement"
+msgstr "Terapkan pembatasan"
+
+msgid "Retirer le confinement"
+msgstr "Lepas pembatasan"
+
+msgid "VEILLE AUTOMATIQUE"
+msgstr "PENGAWASAN OTOMATIS"
+
+#, python-brace-format
+msgid ""
+"Pour une machine sans personne devant. Un dépassement : un seuil du "
+"disjoncteur tenu (plus bas). {strikes} dépassements dans la fenêtre : Funnel"
+" coupé {first} min, puis {second} min la fois suivante, puis {last} min à "
+"chaque fois ; toujours remis en route seul, à l'identique. Retour à {first} "
+"min après {hours} h sans coupure. Seul Funnel est coupé : tailscaled, le "
+"tailnet et SSH restent joignables."
+msgstr ""
+"Untuk mesin yang tidak ditunggui siapa pun. Satu pelampauan: satu ambang "
+"pemutus sirkuit bertahan (di bawah). {strikes} pelampauan dalam jendela "
+"waktu: Funnel diputus {first} menit, lalu {second} menit kali berikutnya, "
+"lalu {last} menit setiap kali; selalu dihidupkan kembali sendiri, persis "
+"seperti semula. Kembali ke {first} menit setelah {hours} jam tanpa "
+"pemutusan. Hanya Funnel yang diputus: tailscaled, tailnet, dan SSH tetap "
+"dapat dijangkau."
+
+msgid "Fenêtre (min)"
+msgstr "Jendela (menit)"
+
+msgid "Enregistrer"
+msgstr "Simpan"
+
+msgid "Activer la veille"
+msgstr "Aktifkan pengawasan"
+
+msgid "Désactiver la veille"
+msgstr "Nonaktifkan pengawasan"
+
+msgid ""
+"Protège tailscaled des flots de paquets envoyés sur son port (même sans "
+"Funnel)."
+msgstr ""
+"Melindungi tailscaled dari banjir paket yang dikirim ke port-nya (bahkan "
+"tanpa Funnel)."
+
+msgid "Bouclier du port WireGuard"
+msgstr "Perisai port WireGuard"
+
+msgid "DISJONCTEUR FUNNEL"
+msgstr "PEMUTUS SIRKUIT FUNNEL"
+
+msgid ""
+"Sans veille, il propose, il ne coupe jamais seul : quand un seuil est "
+"dépassé, omega-tail ouvert vous propose une coupure momentanée ou totale. "
+"Avec la veille automatique (ci-dessus), il agit seul."
+msgstr ""
+"Tanpa pengawasan, ia menawarkan, tidak pernah memutus sendiri: ketika ambang"
+" dilampaui, omega-tail yang terbuka menawarkan pemutusan sementara atau "
+"total. Dengan pengawasan otomatis (di atas), ia bertindak sendiri."
+
+msgid "CPU tailscaled ≥ (% d'un cœur)"
+msgstr "CPU tailscaled ≥ (% dari satu inti)"
+
+msgid "pendant (s)"
+msgstr "selama (dtk)"
+
+msgid "ou température ≥ (°C)"
+msgstr "atau suhu ≥ (°C)"
+
+msgid "coupure momentanée (min)"
+msgstr "pemutusan sementara (menit)"
+
+msgid "Enregistrer les seuils"
+msgstr "Simpan ambang"
+
+msgid "Rétablir maintenant"
+msgstr "Pulihkan sekarang"
+
+msgid "Journal de la veille :"
+msgstr "Log pengawasan:"
+
+msgid ""
+"Le disjoncteur demande d'être opérateur de Tailscale (tableau de bord, « "
+"Devenir opérateur ») : la remise en route programmée tourne sous votre "
+"compte, jamais en root."
+msgstr ""
+"Pemutus sirkuit mengharuskan Anda menjadi operator Tailscale (dasbor, « Jadi"
+" operator »): penghidupan kembali terjadwal berjalan di bawah akun Anda, "
+"tidak pernah sebagai root."
+
+msgid "Tailscale absent"
+msgstr "Tailscale tidak ada"
+
+#, python-brace-format
+msgid "CPU machine {cpu:.0f} %"
+msgstr "CPU mesin {cpu:.0f} %"
+
+#, python-brace-format
+msgid "CPU tailscaled {cpu:.0f} %"
+msgstr "CPU tailscaled {cpu:.0f} %"
+
+#, python-brace-format
+msgid "RAM {used:.0f} %"
+msgstr "RAM {used:.0f} %"
+
+msgid "Funnel coupé"
+msgstr "Funnel diputus"
+
+msgid "Funnel fermé"
+msgstr "Funnel tertutup"
+
+msgid "Pare-feu actif · attaque"
+msgstr "Firewall aktif · serangan"
+
+msgid "Pare-feu actif"
+msgstr "Firewall aktif"
+
+msgid "Pare-feu arrêté"
+msgstr "Firewall berhenti"
+
+msgid "Pare-feu inactif"
+msgstr "Firewall nonaktif"
+
+msgid "Veille active"
+msgstr "Pengawasan aktif"
+
+msgid "Veille arrêtée"
+msgstr "Pengawasan berhenti"
+
+msgid "Veille inactive"
+msgstr "Pengawasan nonaktif"
+
+msgid "Tailscale injoignable"
+msgstr "Tailscale tak terjangkau"
+
+msgid "Lecture de l'état…"
+msgstr "Membaca status…"

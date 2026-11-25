@@ -1,0 +1,134 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "omega-tail"
+version = "0.7.0"
+description = "Pilotage de Tailscale et protection de Funnel contre la saturation (suite omega)"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "kraynux", email = "kraynux@proton.me" }]
+requires-python = ">=3.10"
+dependencies = [
+    "omega-lib>=0.4.0",
+    "textual>=0.60",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+    "ruff>=0.6",
+    "mypy>=1.11",
+    "import-linter>=2.0",
+]
+
+[project.scripts]
+omega-tail = "omega_tail.app.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/omega_tail"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E501"]
+"src/omega_tail/domain/gate.py" = ["E501"]  # gabarit du fichier d'HAProxy : une regle par ligne
+
+[tool.mypy]
+python_version = "3.10"
+mypy_path = "src"
+disallow_untyped_defs = true
+check_untyped_defs = true
+warn_return_any = true
+warn_unused_ignores = true
+no_implicit_optional = true
+
+# Dependency Rule (meme patron que le reste de la suite).
+[tool.importlinter]
+root_package = "omega_tail"
+include_external_packages = true
+exclude_type_checking_imports = true
+
+[[tool.importlinter.contracts]]
+name = "Dependency Rule : les couches externes dependent des internes, jamais l'inverse"
+type = "layers"
+layers = [
+    "omega_tail.app",
+    "omega_tail.infrastructure | omega_tail.interfaces",
+    "omega_tail.application",
+    "omega_tail.ports",
+    "omega_tail.domain",
+    "omega_tail.core",
+]
+
+[[tool.importlinter.contracts]]
+name = "interfaces ne dependent jamais directement de infrastructure"
+type = "independence"
+modules = [
+    "omega_tail.interfaces",
+    "omega_tail.infrastructure",
+]
+
+[[tool.importlinter.contracts]]
+# Toute commande lancee sur la machine passe par infrastructure.commands (lectures, ecritures sans droits,
+# processus detache) ou infrastructure.privileged (vrai terminal, sudo) ; meme le point d'entree (app) passe par eux.
+name = "subprocess seulement dans infrastructure.commands et infrastructure.privileged"
+type = "forbidden"
+source_modules = [
+    "omega_tail.app",
+    "omega_tail.core",
+    "omega_tail.domain",
+    "omega_tail.application",
+    "omega_tail.ports",
+    "omega_tail.interfaces",
+    "omega_tail.shared",
+    "omega_tail.infrastructure",
+]
+forbidden_modules = ["subprocess"]
+ignore_imports = [
+    "omega_tail.infrastructure.commands -> subprocess",
+    "omega_tail.infrastructure.privileged.terminal -> subprocess",
+]
+
+[[tool.importlinter.contracts]]
+# Ligne de commande et interface : deux portes d'entree independantes ; ce qu'elles partagent (aide, presentation)
+# est dans interfaces.shared, qui ne depend d'aucune des deux.
+name = "interfaces.cli et interfaces.tui independantes (partage : interfaces.shared)"
+type = "independence"
+modules = [
+    "omega_tail.interfaces.cli",
+    "omega_tail.interfaces.tui",
+]
+
+[[tool.importlinter.contracts]]
+name = "interfaces.shared ne depend ni de cli ni de tui"
+type = "forbidden"
+source_modules = ["omega_tail.interfaces.shared"]
+forbidden_modules = ["omega_tail.interfaces.cli", "omega_tail.interfaces.tui", "textual"]
+
+[[tool.importlinter.contracts]]
+name = "textual seulement dans interfaces.tui"
+type = "forbidden"
+source_modules = [
+    "omega_tail.core",
+    "omega_tail.domain",
+    "omega_tail.application",
+    "omega_tail.ports",
+    "omega_tail.infrastructure",
+    "omega_tail.interfaces.cli",
+    "omega_tail.shared",
+]
+forbidden_modules = ["textual"]

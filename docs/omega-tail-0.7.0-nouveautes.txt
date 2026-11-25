@@ -1,0 +1,45 @@
+OMEGA-TAIL 0.7.0 - Ce qui change pour vous
+==========================================
+
+Première version publiée d'omega-tail : piloter Tailscale depuis une interface, et
+protéger la machine quand elle publie un site sur Internet par Tailscale Funnel. Le
+détail technique complet reste dans le CHANGELOG.
+
+
+PILOTER TAILSCALE (colonne TAILSCALE)
+-------------------------------------
+- Tableau de bord : Tailscale, la machine, ce qui est publié, et des alertes qui ouvrent
+  l'écran qui corrige.
+- Service tailscaled : démarrer, arrêter, redémarrer, avec un garde-fou si votre session
+  passe par Tailscale ; correction d'un démarrage qui lance « tailscale up ».
+- Connexion et réglages : comptes, et tous les réglages de « tailscale set », chacun
+  expliqué, montré avant → après, puis vérifié.
+- Publication : publier, retirer, suspendre Funnel, essai de bout en bout, sauvegardes.
+- Réseau et appareils, Journaux : appareils du tailnet, diagnostic réseau, journal de
+  tailscaled.
+
+
+PROTÉGER FUNNEL (colonne PROTECTION)
+------------------------------------
+- Pare-feu Funnel : une porte HAProxy entre Funnel et votre site. Elle voit l'adresse
+  réelle de chaque visiteur et refuse les abus AVANT le chiffrement (4,6 fois moins
+  coûteux qu'une connexion Funnel ordinaire). Règles par adresse et par réseau, budget
+  global, listes de confiance et noire, regroupements par empreinte, réseau d'origine et
+  pays, mode attaque automatique. Tout se pose d'abord en observation.
+- Survie : confinement de tailscaled, disjoncteur Funnel (10 minutes ou total), veille
+  automatique pour une machine sans personne devant l'écran.
+- Bouclier du port WireGuard : un flot qui prenait un cœur entier à tailscaled n'en prend
+  plus que 1 %. omega-fire 3.7.0 ou plus peut le gérer.
+- Attaques et décisions : compteurs en direct, bloquer, liste noire, confiance, gestion
+  complète de la liste noire (import, purges, exports).
+- Rapport : la machine et les attaques des 7 derniers jours, en TXT, HTML ou JSON, sans
+  données personnelles par défaut.
+
+
+POUR TOUS
+---------
+- Jamais root : sudo seulement pour les actions qui en ont besoin, commande montrée avant.
+- systemd, OpenRC ou runit, sur toute distribution Linux.
+- Interface, aide, ligne de commande et exports en 17 langues.
+- Code audité (claude-security, 2026-11-25) : les 7 points relevés sont corrigés.
+- Compatible omega-connect (registre, synchronisation, mises à jour).
